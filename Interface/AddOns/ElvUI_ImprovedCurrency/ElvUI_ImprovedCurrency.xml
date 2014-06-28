@@ -1,0 +1,13 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui/" xlmns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.blizzard.com/wow/ui/">
+	<Script file="ElvUI_ImprovedCurrency.lua"/>
+	<Frame name="ElvUIImprovedCurrency">
+		<Scripts>
+			<OnLoad>
+				EIICOnLoad(self)
+			</OnLoad>
+			<OnEvent>
+				EIICOnEvent(self,event,...)
+			</OnEvent>
+		</Scripts>
+	</Frame>
+</Ui>

@@ -1,0 +1,12 @@
+tag 0.6-Beta
+39dd9bf31571c6721900487d75c2765095495585
+root <root@db06.curselive.local>
+2011-08-01 05:07:04 +0000
+
+Tagging as 0.6-Beta
+
+
+--------------------
+
+Buzzkill:
+	- Fixed a bug that would cause php currency to sometimes show up as "0"

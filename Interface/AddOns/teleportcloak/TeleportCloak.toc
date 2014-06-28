@@ -1,0 +1,12 @@
+## Interface: 50400
+## Title: TeleportCloak
+## Notes: Automatically equip previous cloak after using a teleport cloak
+## Version: v1.1
+## Author: Jordon
+## DefaultState: Enabled
+## X-Curse-Packaged-Version: v1.1
+## X-Curse-Project-Name: TeleportCloak
+## X-Curse-Project-ID: teleportcloak
+## X-Curse-Repository-ID: wow/teleportcloak/mainline
+
+TeleportCloak.lua

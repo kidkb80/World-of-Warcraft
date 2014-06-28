@@ -1,0 +1,6 @@
+MovableDebuff: disabled
+Omen: disabled
+Recount: disabled
+AddOnSkins_Tukui: disabled
+AddOnSkins_AsphyxiaUI: disabled
+Skada: enabled
