@@ -138,14 +138,14 @@ AmrBankItems = {
 }
 AmrEquipedItems = {
 	["1"] = "|cffa335ee|Hitem:99057:0:4657:4612:0:0:0:0:90:152:491|h[Helmet of Cyclopean Dread]|h|r",
-	["9"] = "|cffa335ee|Hitem:105785:4415:0:0:0:0:0:1726796672:90:137:491|h[Vanguard's Burly Bracers]|h|r",
+	["14"] = "|cffa335ee|Hitem:94508:0:0:0:0:0:0:0:90:159:465|h[Brutal Talisman of the Shado-Pan Assault]|h|r",
 	["3"] = "|cffa335ee|Hitem:99059:4803:4612:4612:0:0:0:0:90:159:505|h[Pauldrons of Cyclopean Dread]|h|r",
 	["2"] = "|cffa335ee|Hitem:103515:0:0:0:0:0:0:1700460672:90:137:0|h[Prideful Gladiator's Choker of Accuracy]|h|r",
 	["5"] = "|cffa335ee|Hitem:105767:4419:4647:4647:4647:0:0:216473728:90:0:491|h[Hoodrych's Bloodied Chestplate]|h|r",
 	["4"] = "|cffffffff|Hitem:42360:0:0:0:0:0:0:0:90:0:0|h[Ebon Filigreed Doublet]|h|r",
 	["7"] = "|cffa335ee|Hitem:105761:4823:4647:4592:0:0:0:1129784704:90:152:491|h[Partik's Purified Legplates]|h|r",
 	["6"] = "|cffa335ee|Hitem:98616:0:4612:4612:4647:0:0:1454462464:90:140:491|h[Avenger's Trillium Waistplate]|h|r",
-	["14"] = "|cffa335ee|Hitem:94508:0:0:0:0:0:0:0:90:159:465|h[Brutal Talisman of the Shado-Pan Assault]|h|r",
+	["9"] = "|cffa335ee|Hitem:105785:4415:0:0:0:0:0:1726796672:90:137:491|h[Vanguard's Burly Bracers]|h|r",
 	["15"] = "|cffa335ee|Hitem:103513:4424:0:0:0:0:0:687814656:90:137:0|h[Prideful Gladiator's Cloak of Prowess]|h|r",
 	["16"] = "|cffa335ee|Hitem:105057:3368:4647:0:0:0:0:2025830400:90:159:505|h[Gar'tok, Strength of the Faithful]|h|r",
 	["8"] = "|cffa335ee|Hitem:104731:4429:4610:0:0:0:0:1829021568:90:140:493|h[Greaves of Sublime Superiority]|h|r",
@@ -512,6 +512,6 @@ AmrLogData = {
 	["_autoLog"] = {
 		[1136] = "disabled",
 	},
-	["_lastZone"] = "Deepholm",
 	["_lastDiff"] = 0,
+	["_lastZone"] = "Kalimdor",
 }

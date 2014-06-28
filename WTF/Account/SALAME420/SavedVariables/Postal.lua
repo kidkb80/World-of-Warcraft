@@ -1,5 +1,23 @@
 
 Postal3DB = {
+	["profileKeys"] = {
+		["Drominus - Area 52"] = "Drominus - Area 52",
+		["Gaulthain - Skywall"] = "Gaulthain - Skywall",
+		["Anaiis - Skywall"] = "Anaiis - Skywall",
+		["Oldfero - Area 52"] = "Oldfero - Area 52",
+		["Drominus - Skywall"] = "Drominus - Skywall",
+		["Dalhian - Skywall"] = "Dalhian - Skywall",
+		["Cidareth - Skywall"] = "Cidareth - Skywall",
+		["Gurund - Area 52"] = "Gurund - Area 52",
+		["Gaulthain - Area 52"] = "Gaulthain - Area 52",
+		["Feronaz - Area 52"] = "Feronaz - Area 52",
+		["Feronis - Skywall"] = "Feronis - Skywall",
+		["Malkyn - Dragonblight"] = "Malkyn - Dragonblight",
+		["Toradol - Skywall"] = "Toradol - Skywall",
+		["Noremedy - Skywall"] = "Noremedy - Skywall",
+		["Cecliann - Skywall"] = "Cecliann - Skywall",
+		["Feronaz - Skywall"] = "Feronaz - Skywall",
+	},
 	["global"] = {
 		["BlackBook"] = {
 			["alts"] = {
@@ -22,28 +40,26 @@ Postal3DB = {
 			},
 		},
 	},
-	["profileKeys"] = {
-		["Cidareth - Skywall"] = "Cidareth - Skywall",
-		["Gaulthain - Area 52"] = "Gaulthain - Area 52",
-		["Anaiis - Skywall"] = "Anaiis - Skywall",
-		["Oldfero - Area 52"] = "Oldfero - Area 52",
-		["Noremedy - Skywall"] = "Noremedy - Skywall",
-		["Dalhian - Skywall"] = "Dalhian - Skywall",
-		["Drominus - Area 52"] = "Drominus - Area 52",
-		["Toradol - Skywall"] = "Toradol - Skywall",
-		["Gaulthain - Skywall"] = "Gaulthain - Skywall",
-		["Feronaz - Area 52"] = "Feronaz - Area 52",
-		["Feronis - Skywall"] = "Feronis - Skywall",
-		["Malkyn - Dragonblight"] = "Malkyn - Dragonblight",
-		["Gurund - Area 52"] = "Gurund - Area 52",
-		["Drominus - Skywall"] = "Drominus - Skywall",
-		["Cecliann - Skywall"] = "Cecliann - Skywall",
-		["Feronaz - Skywall"] = "Feronaz - Skywall",
-	},
 	["profiles"] = {
-		["Cidareth - Skywall"] = {
+		["Drominus - Area 52"] = {
+			["BlackBook"] = {
+				["recent"] = {
+					"Gurund|Area 52|Horde", -- [1]
+					"Feronaz|Area 52|Horde", -- [2]
+					"Oldfero|Area 52|Horde", -- [3]
+					"Noremedy-skywall|Area 52|Horde", -- [4]
+				},
+			},
 		},
-		["Gaulthain - Area 52"] = {
+		["Gaulthain - Skywall"] = {
+			["BlackBook"] = {
+				["recent"] = {
+					"Dalhian|Skywall|Alliance", -- [1]
+					"Anaiis|Skywall|Alliance", -- [2]
+					"Noremedy|Skywall|Alliance", -- [3]
+					"Drominus|Skywall|Alliance", -- [4]
+				},
+			},
 		},
 		["Anaiis - Skywall"] = {
 			["BlackBook"] = {
@@ -69,14 +85,15 @@ Postal3DB = {
 				},
 			},
 		},
-		["Noremedy - Skywall"] = {
+		["Drominus - Skywall"] = {
 			["BlackBook"] = {
 				["recent"] = {
-					"Oldfero-Area 52|Skywall|Alliance", -- [1]
-					"Dalhian|Skywall|Alliance", -- [2]
-					"Anaiis|Skywall|Alliance", -- [3]
-					"Gaulthain|Skywall|Alliance", -- [4]
-					"Toradol-Skywall|Skywall|Alliance", -- [5]
+					"Feronaz|Skywall|Horde", -- [1]
+					"Anaiis|Skywall|Alliance", -- [2]
+					"Oldfero-Area 52|Skywall|Alliance", -- [3]
+					"Noremedy|Skywall|Alliance", -- [4]
+					"Dalhian|Skywall|Alliance", -- [5]
+					"Gaulthain|Skywall|Alliance", -- [6]
 				},
 			},
 		},
@@ -92,32 +109,16 @@ Postal3DB = {
 				},
 			},
 		},
-		["Drominus - Area 52"] = {
+		["Cidareth - Skywall"] = {
+		},
+		["Gurund - Area 52"] = {
 			["BlackBook"] = {
 				["recent"] = {
-					"Gurund|Area 52|Horde", -- [1]
-					"Feronaz|Area 52|Horde", -- [2]
-					"Oldfero|Area 52|Horde", -- [3]
-					"Noremedy-skywall|Area 52|Horde", -- [4]
+					"Drominus|Area 52|Horde", -- [1]
 				},
 			},
 		},
-		["Toradol - Skywall"] = {
-			["BlackBook"] = {
-				["recent"] = {
-					"Gaulthain|Skywall|Alliance", -- [1]
-				},
-			},
-		},
-		["Gaulthain - Skywall"] = {
-			["BlackBook"] = {
-				["recent"] = {
-					"Dalhian|Skywall|Alliance", -- [1]
-					"Anaiis|Skywall|Alliance", -- [2]
-					"Noremedy|Skywall|Alliance", -- [3]
-					"Drominus|Skywall|Alliance", -- [4]
-				},
-			},
+		["Gaulthain - Area 52"] = {
 		},
 		["Feronaz - Area 52"] = {
 			["BlackBook"] = {
@@ -138,22 +139,21 @@ Postal3DB = {
 				},
 			},
 		},
-		["Gurund - Area 52"] = {
+		["Toradol - Skywall"] = {
 			["BlackBook"] = {
 				["recent"] = {
-					"Drominus|Area 52|Horde", -- [1]
+					"Gaulthain|Skywall|Alliance", -- [1]
 				},
 			},
 		},
-		["Drominus - Skywall"] = {
+		["Noremedy - Skywall"] = {
 			["BlackBook"] = {
 				["recent"] = {
-					"Feronaz|Skywall|Horde", -- [1]
-					"Anaiis|Skywall|Alliance", -- [2]
-					"Oldfero-Area 52|Skywall|Alliance", -- [3]
-					"Noremedy|Skywall|Alliance", -- [4]
-					"Dalhian|Skywall|Alliance", -- [5]
-					"Gaulthain|Skywall|Alliance", -- [6]
+					"Oldfero-Area 52|Skywall|Alliance", -- [1]
+					"Dalhian|Skywall|Alliance", -- [2]
+					"Anaiis|Skywall|Alliance", -- [3]
+					"Gaulthain|Skywall|Alliance", -- [4]
+					"Toradol-Skywall|Skywall|Alliance", -- [5]
 				},
 			},
 		},
