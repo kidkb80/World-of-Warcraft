@@ -1,7 +1,5 @@
 
 SkadaPerCharDB = {
-	["sets"] = {
-	},
 	["total"] = {
 		["healingabsorbed"] = 0,
 		["dispells"] = 0,
@@ -45,46 +43,46 @@ SkadaPerCharDB = {
 				["healing"] = 0,
 				["damagetakenspells"] = {
 				},
-				["power"] = {
-				},
-				["overhealing"] = 0,
-				["name"] = "Oldfero",
-				["healingspells"] = {
-				},
-				["shielding"] = 0,
-				["healed"] = {
-				},
+				["maxhp"] = 651825,
 				["auras"] = {
-					["Tempus Repit"] = {
-						["name"] = "Tempus Repit",
-						["active"] = 2,
-						["id"] = 137590,
-						["auratype"] = "BUFF",
-						["uptime"] = 4,
-					},
 					["Toxic Power"] = {
 						["name"] = "Toxic Power",
 						["active"] = 2,
 						["id"] = 148906,
+						["uptime"] = 6,
 						["auratype"] = "BUFF",
-						["uptime"] = 4,
+					},
+					["Tempus Repit"] = {
+						["name"] = "Tempus Repit",
+						["active"] = 2,
+						["id"] = 137590,
+						["uptime"] = 6,
+						["auratype"] = "BUFF",
 					},
 					["Jade Spirit"] = {
 						["name"] = "Jade Spirit",
 						["active"] = 3,
 						["id"] = 104993,
+						["uptime"] = 13,
 						["auratype"] = "BUFF",
-						["uptime"] = 11,
 					},
 					["Cozrax: Suffering"] = {
 						["name"] = "Cozrax: Suffering",
 						["active"] = 0,
 						["id"] = 17735,
-						["auratype"] = "DEBUFF",
 						["uptime"] = 1,
+						["auratype"] = "DEBUFF",
 					},
 				},
-				["maxhp"] = 651825,
+				["name"] = "Oldfero",
+				["healed"] = {
+				},
+				["shielding"] = 0,
+				["healingspells"] = {
+				},
+				["overhealing"] = 0,
+				["power"] = {
+				},
 			}, -- [1]
 		},
 		["deaths"] = 0,
@@ -98,12 +96,12 @@ SkadaPerCharDB = {
 					},
 				},
 				["hdone"] = 0,
-				["done"] = 0,
-				["taken"] = 41528,
-				["htakenspell"] = {
-				},
-				["htaken"] = 0,
 				["hdonespell"] = {
+				},
+				["taken"] = 41528,
+				["done"] = 0,
+				["htaken"] = 0,
+				["htakenspell"] = {
 				},
 			},
 			["Outcast Necromancer"] = {
@@ -115,13 +113,13 @@ SkadaPerCharDB = {
 					},
 				},
 				["hdone"] = 0,
-				["htakenspell"] = {
-				},
-				["taken"] = 78397,
-				["done"] = 0,
-				["htaken"] = 0,
 				["hdonespell"] = {
 				},
+				["taken"] = 78397,
+				["htakenspell"] = {
+				},
+				["htaken"] = 0,
+				["done"] = 0,
 			},
 		},
 		["mobtaken"] = 119925,
@@ -131,10 +129,12 @@ SkadaPerCharDB = {
 		["overhealing"] = 0,
 		["shielding"] = 0,
 		["name"] = "Total",
-		["damagetaken"] = 0,
 		["starttime"] = 1404465581,
+		["damagetaken"] = 0,
 		["mobhdone"] = 0,
 		["last_action"] = 1404465581,
 		["mobdone"] = 0,
+	},
+	["sets"] = {
 	},
 }

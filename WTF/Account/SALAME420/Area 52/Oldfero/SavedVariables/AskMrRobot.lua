@@ -148,14 +148,14 @@ AmrBankItems = {
 }
 AmrEquipedItems = {
 	["1"] = "|cffa335ee|Hitem:104748:0:5033:4650:0:0:0:829995392:90:140:492|h[Flameslinger's Fiery Cowl]|h|r",
-	["14"] = "|cffa335ee|Hitem:104675:0:0:0:0:0:0:1799395328:90:0:505|h[Purified Bindings of Immerseus]|h|r",
+	["9"] = "|cffa335ee|Hitem:103358:4414:0:0:0:0:0:0:90:152:0|h[Prideful Gladiator's Cuffs of Prowess]|h|r",
 	["3"] = "|cffa335ee|Hitem:104810:4806:4650:4594:0:0:0:1089488640:90:140:492|h[Spaulders of Kor'kron Fealty]|h|r",
 	["2"] = "|cffa335ee|Hitem:105763:0:0:0:0:0:0:1463516160:90:0:491|h[Penate's Perilous Pendant]|h|r",
 	["5"] = "|cffa335ee|Hitem:105773:4419:4650:4650:4650:0:0:988125440:90:140:505|h[Ulmaas' Robes of Crushing Magma]|h|r",
 	["4"] = "|cffffffff|Hitem:3427:0:0:0:0:0:0:0:90:0:0|h[Stylish Black Shirt]|h|r",
 	["7"] = "|cffa335ee|Hitem:98603:4825:4623:4623:0:0:0:1253859456:90:140:491|h[Leggings of the Night Sky]|h|r",
 	["6"] = "|cffa335ee|Hitem:98612:0:4623:4623:4650:0:0:1439027072:90:140:493|h[Belt of the Night Sky]|h|r",
-	["9"] = "|cffa335ee|Hitem:103358:4414:0:0:0:0:0:0:90:152:0|h[Prideful Gladiator's Cuffs of Prowess]|h|r",
+	["14"] = "|cffa335ee|Hitem:104675:0:0:0:0:0:0:1799395328:90:0:505|h[Purified Bindings of Immerseus]|h|r",
 	["15"] = "|cffff8000|Hitem:102246:4423:4623:0:0:0:0:500442496:90:0:505|h[Xing-Ho, Breath of Yu'lon]|h|r",
 	["16"] = "|cffa335ee|Hitem:104728:4442:4650:0:0:0:0:1411087360:90:0:492|h[Gaze of Arrogance]|h|r",
 	["8"] = "|cffa335ee|Hitem:103355:4429:4623:0:0:0:0:162786304:90:0:0|h[Prideful Gladiator's Treads of Alacrity]|h|r",
@@ -175,22 +175,22 @@ AmrCurrencies = {
 	[81] = 5,
 	[384] = 10,
 	[401] = 5,
-	[676] = 5,
+	[416] = 1,
 	[515] = 10,
 	[390] = 370,
 	[241] = 1,
 	[392] = 349,
 	[393] = 13,
 	[394] = 37,
-	[416] = 1,
+	[676] = 5,
 }
 AmrProfessions = {
 	["Cooking"] = 600,
 	["Archaeology"] = 600,
 	["Alchemy"] = 600,
-	["Engineering"] = 600,
-	["First Aid"] = 600,
 	["Fishing"] = 600,
+	["First Aid"] = 600,
+	["Engineering"] = 600,
 }
 AmrSpecializations = {
 	["1"] = 267,
@@ -647,6 +647,6 @@ AmrLogData = {
 	["_autoLog"] = {
 		[1136] = "disabled",
 	},
-	["_lastZone"] = "Kalimdor",
 	["_lastDiff"] = 0,
+	["_lastZone"] = "Kalimdor",
 }

@@ -1,25 +1,25 @@
 
 MogItDB = {
-	["global"] = {
-		["version"] = "3.3.0",
-	},
 	["profileKeys"] = {
-		["Drominus - Area 52"] = "Default",
-		["Gaulthain - Skywall"] = "Default",
+		["Cidareth - Skywall"] = "Default",
+		["Gaulthain - Area 52"] = "Default",
 		["Anaiis - Skywall"] = "Default",
 		["Oldfero - Area 52"] = "Default",
-		["Drominus - Skywall"] = "Default",
+		["Noremedy - Skywall"] = "Default",
 		["Dalhian - Skywall"] = "Default",
-		["Cidareth - Skywall"] = "Default",
-		["Gurund - Area 52"] = "Default",
-		["Gaulthain - Area 52"] = "Default",
+		["Drominus - Area 52"] = "Default",
+		["Toradol - Skywall"] = "Default",
+		["Gaulthain - Skywall"] = "Default",
 		["Feronaz - Area 52"] = "Default",
 		["Feronis - Skywall"] = "Default",
 		["Malkyn - Dragonblight"] = "Default",
-		["Toradol - Skywall"] = "Default",
-		["Noremedy - Skywall"] = "Default",
+		["Gurund - Area 52"] = "Default",
+		["Drominus - Skywall"] = "Default",
 		["Cecliann - Skywall"] = "Default",
 		["Feronaz - Skywall"] = "Default",
+	},
+	["global"] = {
+		["version"] = "3.3.0",
 	},
 	["profiles"] = {
 		["Default"] = {
@@ -30,59 +30,59 @@ MogItDB = {
 			},
 			["noAnim"] = true,
 			["url"] = "Wowhead",
-			["columns"] = 4,
-			["gridHeight"] = 828.999755859375,
-			["y"] = 0,
-			["x"] = 0,
 			["previewProps"] = {
 				{
 					["y"] = 0,
-					["x"] = 0,
-					["w"] = 334.9998779296875,
 					["h"] = 384.9998779296875,
+					["w"] = 334.9998779296875,
+					["x"] = 0,
 				}, -- [1]
 			},
 			["gridWidth"] = 996.999755859375,
+			["y"] = 0,
+			["x"] = 0,
+			["columns"] = 4,
+			["gridHeight"] = 828.999755859375,
 		},
 	},
 }
 MogItWishlist = {
 	["profileKeys"] = {
-		["Drominus - Area 52"] = "Drominus - Area 52",
-		["Gaulthain - Skywall"] = "Gaulthain - Skywall",
+		["Cidareth - Skywall"] = "Cidareth - Skywall",
+		["Gaulthain - Area 52"] = "Gaulthain - Area 52",
 		["Anaiis - Skywall"] = "Anaiis - Skywall",
 		["Oldfero - Area 52"] = "Oldfero - Area 52",
-		["Drominus - Skywall"] = "Drominus - Skywall",
+		["Noremedy - Skywall"] = "Noremedy - Skywall",
 		["Dalhian - Skywall"] = "Dalhian - Skywall",
-		["Cidareth - Skywall"] = "Cidareth - Skywall",
-		["Gurund - Area 52"] = "Gurund - Area 52",
-		["Gaulthain - Area 52"] = "Gaulthain - Area 52",
+		["Drominus - Area 52"] = "Drominus - Area 52",
+		["Toradol - Skywall"] = "Toradol - Skywall",
+		["Gaulthain - Skywall"] = "Gaulthain - Skywall",
 		["Feronaz - Area 52"] = "Feronaz - Area 52",
 		["Feronis - Skywall"] = "Feronis - Skywall",
 		["Malkyn - Dragonblight"] = "Malkyn - Dragonblight",
-		["Toradol - Skywall"] = "Toradol - Skywall",
-		["Noremedy - Skywall"] = "Noremedy - Skywall",
+		["Gurund - Area 52"] = "Gurund - Area 52",
+		["Drominus - Skywall"] = "Drominus - Skywall",
 		["Cecliann - Skywall"] = "Cecliann - Skywall",
 		["Feronaz - Skywall"] = "Feronaz - Skywall",
 	},
 	["profiles"] = {
-		["Drominus - Area 52"] = {
+		["Cidareth - Skywall"] = {
 		},
-		["Gaulthain - Skywall"] = {
+		["Gaulthain - Area 52"] = {
 		},
 		["Anaiis - Skywall"] = {
 		},
 		["Oldfero - Area 52"] = {
 		},
-		["Drominus - Skywall"] = {
+		["Noremedy - Skywall"] = {
 		},
 		["Dalhian - Skywall"] = {
 		},
-		["Cidareth - Skywall"] = {
+		["Drominus - Area 52"] = {
 		},
-		["Gurund - Area 52"] = {
+		["Toradol - Skywall"] = {
 		},
-		["Gaulthain - Area 52"] = {
+		["Gaulthain - Skywall"] = {
 		},
 		["Feronaz - Area 52"] = {
 		},
@@ -90,9 +90,9 @@ MogItWishlist = {
 		},
 		["Malkyn - Dragonblight"] = {
 		},
-		["Toradol - Skywall"] = {
+		["Gurund - Area 52"] = {
 		},
-		["Noremedy - Skywall"] = {
+		["Drominus - Skywall"] = {
 		},
 		["Cecliann - Skywall"] = {
 		},

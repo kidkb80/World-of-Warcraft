@@ -1,11 +1,11 @@
 
 ElvCharacterDB = {
 	["ChatEditHistory"] = {
-		"/console CameraDistanceMaxFactor 4", -- [1]
-		"/console cameraDistanceMax 30", -- [2]
-		"/console cameraDistanceMax 36", -- [3]
-		"/console cameraDistanceMax 38", -- [4]
-		"/console cameraDistanceMax 40", -- [5]
+		" i cant say anything, i put a small 10 bars right in the middle of my screen now so i can look and pay attention", -- [1]
+		" never understood why they start out all the way at the bottom", -- [2]
+		" lol", -- [3]
+		" thats how molten core was for me in vanilla ", -- [4]
+		" fuck this, to the DK!!", -- [5]
 	},
 	["ChatLog"] = {
 		["1404458626.978"] = {
@@ -26,37 +26,19 @@ ElvCharacterDB = {
 			false, -- [15]
 			[20] = "CHAT_MSG_CHANNEL",
 		},
-		["1404457877.879"] = {
-			"Leg Sweep", -- [1]
-			"Padpaw-Area52", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Padpaw", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			67508, -- [11]
-			"0x070000000501AC23", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			[20] = "CHAT_MSG_SAY",
-		},
-		["1404464343.912"] = {
+		["1404459303.63"] = {
 			"^LFW_J", -- [1]
-			"Oldfero-Area52", -- [2]
+			"Oloric-Area52", -- [2]
 			"", -- [3]
 			"5. TCForwarder5IIll", -- [4]
-			"Oldfero", -- [5]
+			"Oloric", -- [5]
 			"", -- [6]
 			0, -- [7]
 			5, -- [8]
 			"TCForwarder5IIll", -- [9]
 			0, -- [10]
-			9401, -- [11]
-			"0x0700000005741AAE", -- [12]
+			67875, -- [11]
+			"0x07000000054B3CF0", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
@@ -98,41 +80,59 @@ ElvCharacterDB = {
 			false, -- [15]
 			[20] = "CHAT_MSG_SAY",
 		},
-		["1404462690.565"] = {
-			"^LFW_V2210", -- [1]
-			"Oldfero-Area52", -- [2]
+		["1404458421.836"] = {
+			"^LFW_J", -- [1]
+			"Nuisence-Area52", -- [2]
 			"", -- [3]
 			"5. TCForwarder5IIll", -- [4]
-			"Oldfero", -- [5]
+			"Nuisence", -- [5]
 			"", -- [6]
 			0, -- [7]
 			5, -- [8]
 			"TCForwarder5IIll", -- [9]
 			0, -- [10]
-			1009, -- [11]
-			"0x0700000005741AAE", -- [12]
+			67574, -- [11]
+			"0x07000000050B2816", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			[20] = "CHAT_MSG_CHANNEL",
 		},
-		["1404458775.361"] = {
-			"^LFW_V2210", -- [1]
-			"Valynith-Area52", -- [2]
-			"", -- [3]
-			"5. TCForwarder5IIll", -- [4]
-			"Valynith", -- [5]
+		["1404462178.644"] = {
+			"ty", -- [1]
+			"Oldfero-Area52", -- [2]
+			"Orcish", -- [3]
+			"", -- [4]
+			"Oldfero", -- [5]
 			"", -- [6]
 			0, -- [7]
-			5, -- [8]
-			"TCForwarder5IIll", -- [9]
+			0, -- [8]
+			"", -- [9]
 			0, -- [10]
-			67605, -- [11]
-			"0x070000000506E36E", -- [12]
+			115, -- [11]
+			"0x0700000005741AAE", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
-			[20] = "CHAT_MSG_CHANNEL",
+			[20] = "CHAT_MSG_PARTY",
+		},
+		["1404490586.301"] = {
+			"thats how molten core was for me in vanilla ", -- [1]
+			"|Kf5|k00000000000000|k", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			8218, -- [11]
+			false, -- [12]
+			5, -- [13]
+			false, -- [14]
+			false, -- [15]
+			[20] = "CHAT_MSG_BN_WHISPER_INFORM",
 		},
 		["1404458591.739"] = {
 			"^LFW_L", -- [1]
@@ -152,7 +152,43 @@ ElvCharacterDB = {
 			false, -- [15]
 			[20] = "CHAT_MSG_CHANNEL",
 		},
-		["1404457876.05"] = {
+		["1404490185.018"] = {
+			"that will put me at amost 40% crit", -- [1]
+			"|Kf5|k00000000000000|k", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			4210, -- [11]
+			false, -- [12]
+			5, -- [13]
+			false, -- [14]
+			false, -- [15]
+			[20] = "CHAT_MSG_BN_WHISPER",
+		},
+		["1404489877.672"] = {
+			"going to dig up a few arch sites then get started on the DK, going to have to get that pvp mount", -- [1]
+			"|Kf5|k00000000000000|k", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			1576, -- [11]
+			false, -- [12]
+			5, -- [13]
+			false, -- [14]
+			false, -- [15]
+			[20] = "CHAT_MSG_BN_WHISPER_INFORM",
+		},
+		["1404462060.768"] = {
 			"Leg Sweep", -- [1]
 			"Padpaw-Area52", -- [2]
 			"Orcish", -- [3]
@@ -163,66 +199,12 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			67505, -- [11]
+			87, -- [11]
 			"0x070000000501AC23", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			[20] = "CHAT_MSG_SAY",
-		},
-		["1404457567.504"] = {
-			" |cffffffff|Hitem:74636:0:0:0:0:0:0:146368896:90:0:0|h[Golden Carp Consomme]|h|r?", -- [1]
-			"Oldfero-Area52", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Oldfero", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			67454, -- [11]
-			"0x0700000005741AAE", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			[20] = "CHAT_MSG_PARTY",
-		},
-		["1404457576.19"] = {
-			"^LFW_L", -- [1]
-			"Tlaloç-Area52", -- [2]
-			"", -- [3]
-			"5. TCForwarder5IIll", -- [4]
-			"Tlaloç", -- [5]
-			"", -- [6]
-			0, -- [7]
-			5, -- [8]
-			"TCForwarder5IIll", -- [9]
-			0, -- [10]
-			67457, -- [11]
-			"0x07000000057507E7", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			[20] = "CHAT_MSG_CHANNEL",
-		},
-		["1404457524.725"] = {
-			"^LFW_L", -- [1]
-			"Oloric-Area52", -- [2]
-			"", -- [3]
-			"5. TCForwarder5IIll", -- [4]
-			"Oloric", -- [5]
-			"", -- [6]
-			0, -- [7]
-			5, -- [8]
-			"TCForwarder5IIll", -- [9]
-			0, -- [10]
-			67449, -- [11]
-			"0x07000000054B3CF0", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			[20] = "CHAT_MSG_CHANNEL",
 		},
 		["1404461835.812"] = {
 			"Leg Sweep", -- [1]
@@ -314,24 +296,6 @@ ElvCharacterDB = {
 			false, -- [15]
 			[20] = "CHAT_MSG_CHANNEL",
 		},
-		["1404456931.151"] = {
-			"%s has earned the achievement |cffffff00|Hachievement:31:07000000056F2D4E:1:7:3:14:4294967295:4294967295:4294967295:4294967295|h[A Simple Re-Quest]|h|r!", -- [1]
-			"Ulthor-Area52", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Ulthor", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			66847, -- [11]
-			"0x07000000056F2D4E", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			[20] = "CHAT_MSG_GUILD_ACHIEVEMENT",
-		},
 		["1404459916.434"] = {
 			" |cffffffff|Hitem:23247:0:0:0:0:0:0:1607276800:90:0:0|h[Burning Blossom]|h|r |cffffffff|Hitem:23247:0:0:0:0:0:0:1607276800:90:0:0|h[Burning Blossom]|h|r", -- [1]
 			"Hairybacon-Area52", -- [2]
@@ -350,6 +314,24 @@ ElvCharacterDB = {
 			false, -- [15]
 			[20] = "CHAT_MSG_PARTY",
 		},
+		["1404489888.8"] = {
+			"yeah i used about a stack", -- [1]
+			"|Kf5|k00000000000000|k", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			1665, -- [11]
+			false, -- [12]
+			5, -- [13]
+			false, -- [14]
+			false, -- [15]
+			[20] = "CHAT_MSG_BN_WHISPER_INFORM",
+		},
 		["1404464517.485"] = {
 			"^LFW_L", -- [1]
 			"Azlyn-Area52", -- [2]
@@ -367,6 +349,42 @@ ElvCharacterDB = {
 			false, -- [14]
 			false, -- [15]
 			[20] = "CHAT_MSG_CHANNEL",
+		},
+		["1404490234.038"] = {
+			"^LFW_J", -- [1]
+			"Mklonelystar-Area52", -- [2]
+			"", -- [3]
+			"5. TCForwarder5IIll", -- [4]
+			"Mklonelystar", -- [5]
+			"", -- [6]
+			0, -- [7]
+			5, -- [8]
+			"TCForwarder5IIll", -- [9]
+			0, -- [10]
+			4644, -- [11]
+			"0x0700000003FCC880", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			[20] = "CHAT_MSG_CHANNEL",
+		},
+		["1404490536.108"] = {
+			"never understood why they start out all the way at the bottom", -- [1]
+			"|Kf5|k00000000000000|k", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			7715, -- [11]
+			false, -- [12]
+			5, -- [13]
+			false, -- [14]
+			false, -- [15]
+			[20] = "CHAT_MSG_BN_WHISPER_INFORM",
 		},
 		["1404459915.919"] = {
 			"^LFW_L", -- [1]
@@ -404,24 +422,6 @@ ElvCharacterDB = {
 			false, -- [15]
 			[20] = "CHAT_MSG_CHANNEL",
 		},
-		["1404457394.046"] = {
-			"Leg Sweep", -- [1]
-			"Padpaw-Area52", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Padpaw", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			67411, -- [11]
-			"0x070000000501AC23", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			[20] = "CHAT_MSG_SAY",
-		},
 		["1404459120.658"] = {
 			"^LFW_J", -- [1]
 			"Imashammy-Area52", -- [2]
@@ -440,23 +440,41 @@ ElvCharacterDB = {
 			false, -- [15]
 			[20] = "CHAT_MSG_CHANNEL",
 		},
-		["1404457569.765"] = {
-			"%s has earned the achievement |cffffff00|Hachievement:6756:07000000056F2D4E:1:7:4:14:4294967295:4294967295:4294967295:4294967295|h[Heroic: Mogu'shan Palace]|h|r!", -- [1]
-			"Ulthor-Area52", -- [2]
+		["1404489853.587"] = {
+			"word", -- [1]
+			"|Kf5|k00000000000000|k", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Ulthor", -- [5]
+			"", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			67456, -- [11]
-			"0x07000000056F2D4E", -- [12]
-			0, -- [13]
+			1387, -- [11]
+			false, -- [12]
+			5, -- [13]
 			false, -- [14]
 			false, -- [15]
-			[20] = "CHAT_MSG_GUILD_ACHIEVEMENT",
+			[20] = "CHAT_MSG_BN_WHISPER",
+		},
+		["1404489981.752"] = {
+			"i just needed  |Henchant:55016|h[Nitro Boosts]|h", -- [1]
+			"|Kf5|k00000000000000|k", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			2447, -- [11]
+			false, -- [12]
+			5, -- [13]
+			false, -- [14]
+			false, -- [15]
+			[20] = "CHAT_MSG_BN_WHISPER_INFORM",
 		},
 		["1404461572.591"] = {
 			"Leg Sweep", -- [1]
@@ -476,42 +494,6 @@ ElvCharacterDB = {
 			false, -- [15]
 			[20] = "CHAT_MSG_SAY",
 		},
-		["1404456790.66"] = {
-			"Leg Sweep", -- [1]
-			"Padpaw-Area52", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Padpaw", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			66822, -- [11]
-			"0x070000000501AC23", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			[20] = "CHAT_MSG_SAY",
-		},
-		["1404458075.79"] = {
-			"^LFW_L", -- [1]
-			"Tlaloç-Area52", -- [2]
-			"", -- [3]
-			"5. TCForwarder5IIll", -- [4]
-			"Tlaloç", -- [5]
-			"", -- [6]
-			0, -- [7]
-			5, -- [8]
-			"TCForwarder5IIll", -- [9]
-			0, -- [10]
-			67526, -- [11]
-			"0x07000000057507E7", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			[20] = "CHAT_MSG_CHANNEL",
-		},
 		["1404463911.081"] = {
 			"^LFW_L", -- [1]
 			"Zylar-Area52", -- [2]
@@ -529,24 +511,6 @@ ElvCharacterDB = {
 			false, -- [14]
 			false, -- [15]
 			[20] = "CHAT_MSG_CHANNEL",
-		},
-		["1404456835.215"] = {
-			"Leg Sweep", -- [1]
-			"Padpaw-Area52", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Padpaw", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			66831, -- [11]
-			"0x070000000501AC23", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			[20] = "CHAT_MSG_SAY",
 		},
 		["1404459060.738"] = {
 			"Leg Sweep", -- [1]
@@ -566,42 +530,6 @@ ElvCharacterDB = {
 			false, -- [15]
 			[20] = "CHAT_MSG_SAY",
 		},
-		["1404456944.026"] = {
-			"^LFW_J", -- [1]
-			"Alrendir-Area52", -- [2]
-			"", -- [3]
-			"5. TCForwarder5IIll", -- [4]
-			"Alrendir", -- [5]
-			"", -- [6]
-			0, -- [7]
-			5, -- [8]
-			"TCForwarder5IIll", -- [9]
-			0, -- [10]
-			66851, -- [11]
-			"0x0700000005338598", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			[20] = "CHAT_MSG_CHANNEL",
-		},
-		["1404457378.674"] = {
-			"^LFW_J", -- [1]
-			"Oloric-Area52", -- [2]
-			"", -- [3]
-			"5. TCForwarder5IIll", -- [4]
-			"Oloric", -- [5]
-			"AFK", -- [6]
-			0, -- [7]
-			5, -- [8]
-			"TCForwarder5IIll", -- [9]
-			0, -- [10]
-			67404, -- [11]
-			"0x07000000054B3CF0", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			[20] = "CHAT_MSG_CHANNEL",
-		},
 		["1404468580.284"] = {
 			"^LFW_V2210", -- [1]
 			"Oldfero-Area52", -- [2]
@@ -620,59 +548,77 @@ ElvCharacterDB = {
 			false, -- [15]
 			[20] = "CHAT_MSG_CHANNEL",
 		},
-		["1404458106.422"] = {
-			"Leg Sweep", -- [1]
-			"Padpaw-Area52", -- [2]
-			"Orcish", -- [3]
+		["1404489736.761"] = {
+			"Well at least I know I can get it to go back to my default UI", -- [1]
+			"|Kf5|k00000000000000|k", -- [2]
+			"", -- [3]
 			"", -- [4]
-			"Padpaw", -- [5]
+			"", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			67533, -- [11]
-			"0x070000000501AC23", -- [12]
-			0, -- [13]
+			223, -- [11]
+			false, -- [12]
+			5, -- [13]
 			false, -- [14]
 			false, -- [15]
-			[20] = "CHAT_MSG_SAY",
+			[20] = "CHAT_MSG_BN_WHISPER_INFORM",
 		},
-		["1404457393.715"] = {
-			"Leg Sweep", -- [1]
-			"Padpaw-Area52", -- [2]
-			"Orcish", -- [3]
+		["1404490533.03"] = {
+			"really the sad part of why i decided to stop staring at my action bars wasn't so i didn't stand in the bad. thats what dbm is for. i never got to SEE the raids", -- [1]
+			"|Kf5|k00000000000000|k", -- [2]
+			"", -- [3]
 			"", -- [4]
-			"Padpaw", -- [5]
+			"", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			67410, -- [11]
-			"0x070000000501AC23", -- [12]
-			0, -- [13]
+			7656, -- [11]
+			false, -- [12]
+			5, -- [13]
 			false, -- [14]
 			false, -- [15]
-			[20] = "CHAT_MSG_SAY",
+			[20] = "CHAT_MSG_BN_WHISPER",
 		},
-		["1404456790.311"] = {
-			"Leg Sweep", -- [1]
-			"Padpaw-Area52", -- [2]
-			"Orcish", -- [3]
+		["1404490292.838"] = {
+			"don't stand in the smashes. do stand in the purple. then win", -- [1]
+			"|Kf5|k00000000000000|k", -- [2]
+			"", -- [3]
 			"", -- [4]
-			"Padpaw", -- [5]
+			"", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			66821, -- [11]
-			"0x070000000501AC23", -- [12]
-			0, -- [13]
+			5134, -- [11]
+			false, -- [12]
+			5, -- [13]
 			false, -- [14]
 			false, -- [15]
-			[20] = "CHAT_MSG_SAY",
+			[20] = "CHAT_MSG_BN_WHISPER",
+		},
+		["1404489810.21"] = {
+			"it was a blast", -- [1]
+			"|Kf5|k00000000000000|k", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			966, -- [11]
+			false, -- [12]
+			5, -- [13]
+			false, -- [14]
+			false, -- [15]
+			[20] = "CHAT_MSG_BN_WHISPER_INFORM",
 		},
 		["1404458388.277"] = {
 			"^LFW_J", -- [1]
@@ -710,23 +656,23 @@ ElvCharacterDB = {
 			false, -- [15]
 			[20] = "CHAT_MSG_CHANNEL",
 		},
-		["1404457873.327"] = {
-			"Leg Sweep", -- [1]
-			"Padpaw-Area52", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Padpaw", -- [5]
+		["1404490388.316"] = {
+			"^LFW_L", -- [1]
+			"Kawäiipotato-Area52", -- [2]
+			"", -- [3]
+			"5. TCForwarder5IIll", -- [4]
+			"Kawäiipotato", -- [5]
 			"", -- [6]
 			0, -- [7]
-			0, -- [8]
-			"", -- [9]
+			5, -- [8]
+			"TCForwarder5IIll", -- [9]
 			0, -- [10]
-			67502, -- [11]
-			"0x070000000501AC23", -- [12]
+			6079, -- [11]
+			"0x0700000005779ED1", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
-			[20] = "CHAT_MSG_SAY",
+			[20] = "CHAT_MSG_CHANNEL",
 		},
 		["1404461967.452"] = {
 			"no :(", -- [1]
@@ -746,23 +692,41 @@ ElvCharacterDB = {
 			false, -- [15]
 			[20] = "CHAT_MSG_PARTY",
 		},
-		["1404457875.516"] = {
-			"Leg Sweep", -- [1]
-			"Padpaw-Area52", -- [2]
-			"Orcish", -- [3]
+		["1404490551.757"] = {
+			"lol", -- [1]
+			"|Kf5|k00000000000000|k", -- [2]
+			"", -- [3]
 			"", -- [4]
-			"Padpaw", -- [5]
+			"", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			67503, -- [11]
-			"0x070000000501AC23", -- [12]
-			0, -- [13]
+			7851, -- [11]
+			false, -- [12]
+			5, -- [13]
 			false, -- [14]
 			false, -- [15]
-			[20] = "CHAT_MSG_SAY",
+			[20] = "CHAT_MSG_BN_WHISPER_INFORM",
+		},
+		["1404490158.877"] = {
+			"you and me both", -- [1]
+			"|Kf5|k00000000000000|k", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			3971, -- [11]
+			false, -- [12]
+			5, -- [13]
+			false, -- [14]
+			false, -- [15]
+			[20] = "CHAT_MSG_BN_WHISPER",
 		},
 		["1404461835.015"] = {
 			"Leg Sweep", -- [1]
@@ -782,23 +746,23 @@ ElvCharacterDB = {
 			false, -- [15]
 			[20] = "CHAT_MSG_SAY",
 		},
-		["1404456858.864"] = {
-			"^LFW_J", -- [1]
-			"Oloric-Area52", -- [2]
+		["1404490518.061"] = {
+			"i cant say anything, i put a small 10 bars right in the middle of my screen now so i can look and pay attention", -- [1]
+			"|Kf5|k00000000000000|k", -- [2]
 			"", -- [3]
-			"5. TCForwarder5IIll", -- [4]
-			"Oloric", -- [5]
-			"AFK", -- [6]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
 			0, -- [7]
-			5, -- [8]
-			"TCForwarder5IIll", -- [9]
+			0, -- [8]
+			"", -- [9]
 			0, -- [10]
-			66838, -- [11]
-			"0x07000000054B3CF0", -- [12]
-			0, -- [13]
+			7488, -- [11]
+			false, -- [12]
+			5, -- [13]
 			false, -- [14]
 			false, -- [15]
-			[20] = "CHAT_MSG_CHANNEL",
+			[20] = "CHAT_MSG_BN_WHISPER_INFORM",
 		},
 		["1404460749.43"] = {
 			"let me relog", -- [1]
@@ -836,8 +800,8 @@ ElvCharacterDB = {
 			false, -- [15]
 			[20] = "CHAT_MSG_CHANNEL",
 		},
-		["1404457522.305"] = {
-			"%s has earned the achievement |cffffff00|Hachievement:6946:0700000005741AAE:1:7:4:14:4294967295:4294967295:4294967295:4294967295|h[Empowered Spiritualist]|h|r!", -- [1]
+		["1404458914.536"] = {
+			"%s has earned the achievement |cffffff00|Hachievement:6913:0700000005741AAE:1:7:4:14:4294967295:4294967295:4294967295:4294967295|h[Scarlet Monastery: Gold]|h|r!", -- [1]
 			"Oldfero-Area52", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -847,48 +811,12 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			67445, -- [11]
+			67627, -- [11]
 			"0x0700000005741AAE", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			[20] = "CHAT_MSG_GUILD_ACHIEVEMENT",
-		},
-		["1404457875.732"] = {
-			"Leg Sweep", -- [1]
-			"Padpaw-Area52", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Padpaw", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			67504, -- [11]
-			"0x070000000501AC23", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			[20] = "CHAT_MSG_SAY",
-		},
-		["1404458097.508"] = {
-			"^LFW_L", -- [1]
-			"Anselm-Area52", -- [2]
-			"", -- [3]
-			"5. TCForwarder5IIll", -- [4]
-			"Anselm", -- [5]
-			"", -- [6]
-			0, -- [7]
-			5, -- [8]
-			"TCForwarder5IIll", -- [9]
-			0, -- [10]
-			67529, -- [11]
-			"0x0700000002B28323", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			[20] = "CHAT_MSG_CHANNEL",
 		},
 		["1404459966.959"] = {
 			"^LFW_J", -- [1]
@@ -908,6 +836,42 @@ ElvCharacterDB = {
 			false, -- [15]
 			[20] = "CHAT_MSG_CHANNEL",
 		},
+		["1404489824.098"] = {
+			"grats though! did you get your mog set already?", -- [1]
+			"|Kf5|k00000000000000|k", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			1107, -- [11]
+			false, -- [12]
+			5, -- [13]
+			false, -- [14]
+			false, -- [15]
+			[20] = "CHAT_MSG_BN_WHISPER",
+		},
+		["1404490567.509"] = {
+			"oh you should see my action bar setup on the warrior. it neatly frames the bottom of my toon. its spectacular", -- [1]
+			"|Kf5|k00000000000000|k", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			8027, -- [11]
+			false, -- [12]
+			5, -- [13]
+			false, -- [14]
+			false, -- [15]
+			[20] = "CHAT_MSG_BN_WHISPER",
+		},
 		["1404462224.546"] = {
 			"^LFW_J", -- [1]
 			"Oldfero-Area52", -- [2]
@@ -926,41 +890,23 @@ ElvCharacterDB = {
 			false, -- [15]
 			[20] = "CHAT_MSG_CHANNEL",
 		},
-		["1404457482.661"] = {
-			"^LFW_V2210", -- [1]
-			"Oloric-Area52", -- [2]
-			"", -- [3]
-			"5. TCForwarder5IIll", -- [4]
-			"Oloric", -- [5]
+		["1404461880.516"] = {
+			"Leg Sweep", -- [1]
+			"Padpaw-Area52", -- [2]
+			"Orcish", -- [3]
+			"", -- [4]
+			"Padpaw", -- [5]
 			"", -- [6]
 			0, -- [7]
-			5, -- [8]
-			"TCForwarder5IIll", -- [9]
+			0, -- [8]
+			"", -- [9]
 			0, -- [10]
-			67433, -- [11]
-			"0x07000000054B3CF0", -- [12]
+			76, -- [11]
+			"0x070000000501AC23", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
-			[20] = "CHAT_MSG_CHANNEL",
-		},
-		["1404457492.951"] = {
-			"^LFW_L", -- [1]
-			"Oloric-Area52", -- [2]
-			"", -- [3]
-			"5. TCForwarder5IIll", -- [4]
-			"Oloric", -- [5]
-			"", -- [6]
-			0, -- [7]
-			5, -- [8]
-			"TCForwarder5IIll", -- [9]
-			0, -- [10]
-			67436, -- [11]
-			"0x07000000054B3CF0", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			[20] = "CHAT_MSG_CHANNEL",
+			[20] = "CHAT_MSG_SAY",
 		},
 		["1404458671.445"] = {
 			"Leg Sweep", -- [1]
@@ -980,23 +926,23 @@ ElvCharacterDB = {
 			false, -- [15]
 			[20] = "CHAT_MSG_SAY",
 		},
-		["1404456857.501"] = {
-			"%s has earned the achievement |cffffff00|Hachievement:4476:07000000056F2D4E:1:7:3:14:4294967295:4294967295:4294967295:4294967295|h[Looking For More]|h|r!", -- [1]
-			"Ulthor-Area52", -- [2]
+		["1404469508.967"] = {
+			"^LFW_J", -- [1]
+			"Oloric-Area52", -- [2]
 			"", -- [3]
-			"", -- [4]
-			"Ulthor", -- [5]
+			"5. TCForwarder5IIll", -- [4]
+			"Oloric", -- [5]
 			"", -- [6]
 			0, -- [7]
-			0, -- [8]
-			"", -- [9]
+			5, -- [8]
+			"TCForwarder5IIll", -- [9]
 			0, -- [10]
-			66837, -- [11]
-			"0x07000000056F2D4E", -- [12]
+			5064, -- [11]
+			"0x07000000054B3CF0", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
-			[20] = "CHAT_MSG_GUILD_ACHIEVEMENT",
+			[20] = "CHAT_MSG_CHANNEL",
 		},
 		["1404469436.88"] = {
 			"^LFW_L", -- [1]
@@ -1034,23 +980,41 @@ ElvCharacterDB = {
 			false, -- [15]
 			[20] = "CHAT_MSG_CHANNEL",
 		},
-		["1404457527.254"] = {
-			"^LFW_J", -- [1]
-			"Tlaloç-Area52", -- [2]
+		["1404490621.65"] = {
+			"fuck this, to the DK!!", -- [1]
+			"|Kf5|k00000000000000|k", -- [2]
 			"", -- [3]
-			"5. TCForwarder5IIll", -- [4]
-			"Tlaloç", -- [5]
+			"", -- [4]
+			"", -- [5]
 			"", -- [6]
 			0, -- [7]
-			5, -- [8]
-			"TCForwarder5IIll", -- [9]
+			0, -- [8]
+			"", -- [9]
 			0, -- [10]
-			67450, -- [11]
-			"0x07000000057507E7", -- [12]
-			0, -- [13]
+			8534, -- [11]
+			false, -- [12]
+			5, -- [13]
 			false, -- [14]
 			false, -- [15]
-			[20] = "CHAT_MSG_CHANNEL",
+			[20] = "CHAT_MSG_BN_WHISPER_INFORM",
+		},
+		["1404490163.057"] = {
+			"still eludes me", -- [1]
+			"|Kf5|k00000000000000|k", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			4020, -- [11]
+			false, -- [12]
+			5, -- [13]
+			false, -- [14]
+			false, -- [15]
+			[20] = "CHAT_MSG_BN_WHISPER",
 		},
 		["1404460520.327"] = {
 			"^LFW_L", -- [1]
@@ -1088,6 +1052,42 @@ ElvCharacterDB = {
 			false, -- [15]
 			[20] = "CHAT_MSG_CHANNEL",
 		},
+		["1404490607.628"] = {
+			"ToC and ICC for me lmao", -- [1]
+			"|Kf5|k00000000000000|k", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			8406, -- [11]
+			false, -- [12]
+			5, -- [13]
+			false, -- [14]
+			false, -- [15]
+			[20] = "CHAT_MSG_BN_WHISPER",
+		},
+		["1404490442.368"] = {
+			"can't say too much though. i was bad about it for a looong time", -- [1]
+			"|Kf5|k00000000000000|k", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			6636, -- [11]
+			false, -- [12]
+			5, -- [13]
+			false, -- [14]
+			false, -- [15]
+			[20] = "CHAT_MSG_BN_WHISPER",
+		},
 		["1404458314.146"] = {
 			"Leg Sweep", -- [1]
 			"Padpaw-Area52", -- [2]
@@ -1124,6 +1124,24 @@ ElvCharacterDB = {
 			false, -- [15]
 			[20] = "CHAT_MSG_SAY",
 		},
+		["1404490424.638"] = {
+			"i guess not staring at your action bars is more rare than i thought", -- [1]
+			"|Kf5|k00000000000000|k", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			6465, -- [11]
+			false, -- [12]
+			5, -- [13]
+			false, -- [14]
+			false, -- [15]
+			[20] = "CHAT_MSG_BN_WHISPER",
+		},
 		["1404463535.148"] = {
 			"^LFW_J", -- [1]
 			"Zylar-Area52", -- [2]
@@ -1142,23 +1160,95 @@ ElvCharacterDB = {
 			false, -- [15]
 			[20] = "CHAT_MSG_CHANNEL",
 		},
-		["1404464032.499"] = {
-			"^LFW_L", -- [1]
-			"Oldfero-Area52", -- [2]
+		["1404489874.927"] = {
+			"did you have to use all the invisibility pots and shit?", -- [1]
+			"|Kf5|k00000000000000|k", -- [2]
 			"", -- [3]
-			"5. TCForwarder5IIll", -- [4]
-			"Oldfero", -- [5]
+			"", -- [4]
+			"", -- [5]
 			"", -- [6]
 			0, -- [7]
-			5, -- [8]
-			"TCForwarder5IIll", -- [9]
+			0, -- [8]
+			"", -- [9]
 			0, -- [10]
-			8907, -- [11]
-			"0x0700000005741AAE", -- [12]
+			1552, -- [11]
+			false, -- [12]
+			5, -- [13]
+			false, -- [14]
+			false, -- [15]
+			[20] = "CHAT_MSG_BN_WHISPER",
+		},
+		["1404458671.222"] = {
+			"Leg Sweep", -- [1]
+			"Padpaw-Area52", -- [2]
+			"Orcish", -- [3]
+			"", -- [4]
+			"Padpaw", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			67596, -- [11]
+			"0x070000000501AC23", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
-			[20] = "CHAT_MSG_CHANNEL",
+			[20] = "CHAT_MSG_SAY",
+		},
+		["1404461880.738"] = {
+			"Leg Sweep", -- [1]
+			"Padpaw-Area52", -- [2]
+			"Orcish", -- [3]
+			"", -- [4]
+			"Padpaw", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			77, -- [11]
+			"0x070000000501AC23", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			[20] = "CHAT_MSG_SAY",
+		},
+		["1404489848.031"] = {
+			"yeah, still trying to find a staff", -- [1]
+			"|Kf5|k00000000000000|k", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			1339, -- [11]
+			false, -- [12]
+			5, -- [13]
+			false, -- [14]
+			false, -- [15]
+			[20] = "CHAT_MSG_BN_WHISPER_INFORM",
+		},
+		["1404490366.718"] = {
+			"how on earth you can be hit by anything in that is beyond me. the cast times are SO SLOW", -- [1]
+			"|Kf5|k00000000000000|k", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			5874, -- [11]
+			false, -- [12]
+			5, -- [13]
+			false, -- [14]
+			false, -- [15]
+			[20] = "CHAT_MSG_BN_WHISPER",
 		},
 		["1404458444.677"] = {
 			"^LFW_V2210", -- [1]
@@ -1178,59 +1268,95 @@ ElvCharacterDB = {
 			false, -- [15]
 			[20] = "CHAT_MSG_CHANNEL",
 		},
-		["1404457994.412"] = {
-			"^LFW_J", -- [1]
-			"Tlaloç-Area52", -- [2]
-			"", -- [3]
-			"5. TCForwarder5IIll", -- [4]
-			"Tlaloç", -- [5]
-			"", -- [6]
-			0, -- [7]
-			5, -- [8]
-			"TCForwarder5IIll", -- [9]
-			0, -- [10]
-			67516, -- [11]
-			"0x07000000057507E7", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			[20] = "CHAT_MSG_CHANNEL",
-		},
-		["1404457831.104"] = {
-			"Leg Sweep", -- [1]
-			"Padpaw-Area52", -- [2]
+		["1404460287.777"] = {
+			"3 fps", -- [1]
+			"Oldfero-Area52", -- [2]
 			"Orcish", -- [3]
 			"", -- [4]
-			"Padpaw", -- [5]
+			"Oldfero", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			67493, -- [11]
-			"0x070000000501AC23", -- [12]
+			69390, -- [11]
+			"0x0700000005741AAE", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
-			[20] = "CHAT_MSG_SAY",
+			[20] = "CHAT_MSG_PARTY",
 		},
-		["1404459230.449"] = {
+		["1404490314.574"] = {
+			"so easy for melee lol", -- [1]
+			"|Kf5|k00000000000000|k", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			5359, -- [11]
+			false, -- [12]
+			5, -- [13]
+			false, -- [14]
+			false, -- [15]
+			[20] = "CHAT_MSG_BN_WHISPER_INFORM",
+		},
+		["1404490287.566"] = {
+			"i usually try to find a group on spoils", -- [1]
+			"|Kf5|k00000000000000|k", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			5100, -- [11]
+			false, -- [12]
+			5, -- [13]
+			false, -- [14]
+			false, -- [15]
+			[20] = "CHAT_MSG_BN_WHISPER_INFORM",
+		},
+		["1404490284.502"] = {
 			"^LFW_L", -- [1]
-			"Oloric-Area52", -- [2]
+			"Mklonelystar-Area52", -- [2]
 			"", -- [3]
 			"5. TCForwarder5IIll", -- [4]
-			"Oloric", -- [5]
+			"Mklonelystar", -- [5]
 			"", -- [6]
 			0, -- [7]
 			5, -- [8]
 			"TCForwarder5IIll", -- [9]
 			0, -- [10]
-			67857, -- [11]
-			"0x07000000054B3CF0", -- [12]
+			5085, -- [11]
+			"0x0700000003FCC880", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			[20] = "CHAT_MSG_CHANNEL",
+		},
+		["1404490277.338"] = {
+			"and its a glorified tank and spank", -- [1]
+			"|Kf5|k00000000000000|k", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			5020, -- [11]
+			false, -- [12]
+			5, -- [13]
+			false, -- [14]
+			false, -- [15]
+			[20] = "CHAT_MSG_BN_WHISPER",
 		},
 		["1404460735.122"] = {
 			"%s has earned the achievement |cffffff00|Hachievement:6375:0700000005741AAE:1:7:4:14:4294967295:4294967295:4294967295:4294967295|h[Challenge Conqueror: Silver]|h|r!", -- [1]
@@ -1268,23 +1394,41 @@ ElvCharacterDB = {
 			false, -- [15]
 			[20] = "CHAT_MSG_WHISPER",
 		},
-		["1404457723.72"] = {
-			"Leg Sweep", -- [1]
-			"Padpaw-Area52", -- [2]
-			"Orcish", -- [3]
+		["1404490255.876"] = {
+			"i can't even get past the first boss in wing 3 anymore", -- [1]
+			"|Kf5|k00000000000000|k", -- [2]
+			"", -- [3]
 			"", -- [4]
-			"Padpaw", -- [5]
+			"", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			67467, -- [11]
-			"0x070000000501AC23", -- [12]
-			0, -- [13]
+			4832, -- [11]
+			false, -- [12]
+			5, -- [13]
 			false, -- [14]
 			false, -- [15]
-			[20] = "CHAT_MSG_SAY",
+			[20] = "CHAT_MSG_BN_WHISPER",
+		},
+		["1404490201.817"] = {
+			"and that is just delicious", -- [1]
+			"|Kf5|k00000000000000|k", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			4341, -- [11]
+			false, -- [12]
+			5, -- [13]
+			false, -- [14]
+			false, -- [15]
+			[20] = "CHAT_MSG_BN_WHISPER",
 		},
 		["1404460043.463"] = {
 			"Leg Sweep", -- [1]
@@ -1304,41 +1448,95 @@ ElvCharacterDB = {
 			false, -- [15]
 			[20] = "CHAT_MSG_SAY",
 		},
-		["1404457698.912"] = {
-			"^LFW_J", -- [1]
-			"Oloric-Area52", -- [2]
+		["1404490182.272"] = {
+			"never even seen it, not on lfr or flex", -- [1]
+			"|Kf5|k00000000000000|k", -- [2]
 			"", -- [3]
-			"5. TCForwarder5IIll", -- [4]
-			"Oloric", -- [5]
+			"", -- [4]
+			"", -- [5]
 			"", -- [6]
 			0, -- [7]
-			5, -- [8]
-			"TCForwarder5IIll", -- [9]
+			0, -- [8]
+			"", -- [9]
 			0, -- [10]
-			67463, -- [11]
-			"0x07000000054B3CF0", -- [12]
-			0, -- [13]
+			4178, -- [11]
+			false, -- [12]
+			5, -- [13]
 			false, -- [14]
 			false, -- [15]
-			[20] = "CHAT_MSG_CHANNEL",
+			[20] = "CHAT_MSG_BN_WHISPER_INFORM",
 		},
-		["1404457187.876"] = {
-			"^LFW_L", -- [1]
-			"Alrendir-Area52", -- [2]
+		["1404489803.282"] = {
+			"hells fuck yeah", -- [1]
+			"|Kf5|k00000000000000|k", -- [2]
 			"", -- [3]
-			"5. TCForwarder5IIll", -- [4]
-			"Alrendir", -- [5]
+			"", -- [4]
+			"", -- [5]
 			"", -- [6]
 			0, -- [7]
-			5, -- [8]
-			"TCForwarder5IIll", -- [9]
+			0, -- [8]
+			"", -- [9]
 			0, -- [10]
-			66875, -- [11]
-			"0x0700000005338598", -- [12]
-			0, -- [13]
+			907, -- [11]
+			false, -- [12]
+			5, -- [13]
 			false, -- [14]
 			false, -- [15]
-			[20] = "CHAT_MSG_CHANNEL",
+			[20] = "CHAT_MSG_BN_WHISPER_INFORM",
+		},
+		["1404490037.225"] = {
+			"damn, nice", -- [1]
+			"|Kf5|k00000000000000|k", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			2923, -- [11]
+			false, -- [12]
+			5, -- [13]
+			false, -- [14]
+			false, -- [15]
+			[20] = "CHAT_MSG_BN_WHISPER_INFORM",
+		},
+		["1404489996.077"] = {
+			"oh...glyphed heroic leap would be superb then", -- [1]
+			"|Kf5|k00000000000000|k", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			2565, -- [11]
+			false, -- [12]
+			5, -- [13]
+			false, -- [14]
+			false, -- [15]
+			[20] = "CHAT_MSG_BN_WHISPER",
+		},
+		["1404489956.976"] = {
+			"you'd survive, having an ability that lets you cover some ground is helpful", -- [1]
+			"|Kf5|k00000000000000|k", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			2223, -- [11]
+			false, -- [12]
+			5, -- [13]
+			false, -- [14]
+			false, -- [15]
+			[20] = "CHAT_MSG_BN_WHISPER_INFORM",
 		},
 		["1404461957.569"] = {
 			"%s has earned the achievement |cffffff00|Hachievement:263:070000000557FE97:1:7:4:14:4294967295:4294967295:4294967295:4294967295|h[Ice the Frost Lord]|h|r!", -- [1]
@@ -1358,559 +1556,19 @@ ElvCharacterDB = {
 			false, -- [15]
 			[20] = "CHAT_MSG_GUILD_ACHIEVEMENT",
 		},
-		["1404457343.197"] = {
+		["1404489945.465"] = {
 			"^LFW_J", -- [1]
-			"Oloric-Area52", -- [2]
+			"Kawäiipotato-Area52", -- [2]
 			"", -- [3]
 			"5. TCForwarder5IIll", -- [4]
-			"Oloric", -- [5]
-			"AFK", -- [6]
-			0, -- [7]
-			5, -- [8]
-			"TCForwarder5IIll", -- [9]
-			0, -- [10]
-			67399, -- [11]
-			"0x07000000054B3CF0", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			[20] = "CHAT_MSG_CHANNEL",
-		},
-		["1404457494.066"] = {
-			"^LFW_J", -- [1]
-			"Oloric-Area52", -- [2]
-			"", -- [3]
-			"5. TCForwarder5IIll", -- [4]
-			"Oloric", -- [5]
+			"Kawäiipotato", -- [5]
 			"", -- [6]
 			0, -- [7]
 			5, -- [8]
 			"TCForwarder5IIll", -- [9]
 			0, -- [10]
-			67439, -- [11]
-			"0x07000000054B3CF0", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			[20] = "CHAT_MSG_CHANNEL",
-		},
-		["1404458106.626"] = {
-			"Leg Sweep", -- [1]
-			"Padpaw-Area52", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Padpaw", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			67534, -- [11]
-			"0x070000000501AC23", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			[20] = "CHAT_MSG_SAY",
-		},
-		["1404457876.603"] = {
-			"Leg Sweep", -- [1]
-			"Padpaw-Area52", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Padpaw", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			67507, -- [11]
-			"0x070000000501AC23", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			[20] = "CHAT_MSG_SAY",
-		},
-		["1404457776.891"] = {
-			"^LFW_L", -- [1]
-			"Oloric-Area52", -- [2]
-			"", -- [3]
-			"5. TCForwarder5IIll", -- [4]
-			"Oloric", -- [5]
-			"", -- [6]
-			0, -- [7]
-			5, -- [8]
-			"TCForwarder5IIll", -- [9]
-			0, -- [10]
-			67488, -- [11]
-			"0x07000000054B3CF0", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			[20] = "CHAT_MSG_CHANNEL",
-		},
-		["1404457121.593"] = {
-			"%s has earned the achievement |cffffff00|Hachievement:6916:0700000005741AAE:1:7:3:14:4294967295:4294967295:4294967295:4294967295|h[Scholomance: Gold]|h|r!", -- [1]
-			"Oldfero-Area52", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Oldfero", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			66871, -- [11]
-			"0x0700000005741AAE", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			[20] = "CHAT_MSG_GUILD_ACHIEVEMENT",
-		},
-		["1404460465.113"] = {
-			"yeah", -- [1]
-			"Oldfero-Area52", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Oldfero", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			19, -- [11]
-			"0x0700000005741AAE", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			[20] = "CHAT_MSG_PARTY",
-		},
-		["1404466825.693"] = {
-			"^LFW_L", -- [1]
-			"Oldfero-Area52", -- [2]
-			"", -- [3]
-			"5. TCForwarder5IIll", -- [4]
-			"Oldfero", -- [5]
-			"", -- [6]
-			0, -- [7]
-			5, -- [8]
-			"TCForwarder5IIll", -- [9]
-			0, -- [10]
-			23484, -- [11]
-			"0x0700000005741AAE", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			[20] = "CHAT_MSG_CHANNEL",
-		},
-		["1404469508.967"] = {
-			"^LFW_J", -- [1]
-			"Oloric-Area52", -- [2]
-			"", -- [3]
-			"5. TCForwarder5IIll", -- [4]
-			"Oloric", -- [5]
-			"", -- [6]
-			0, -- [7]
-			5, -- [8]
-			"TCForwarder5IIll", -- [9]
-			0, -- [10]
-			5064, -- [11]
-			"0x07000000054B3CF0", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			[20] = "CHAT_MSG_CHANNEL",
-		},
-		["1404469209.327"] = {
-			"%s has earned the achievement |cffffff00|Hachievement:6761:07000000056F2D4E:1:7:4:14:4294967295:4294967295:4294967295:4294967295|h[Heroic: Scarlet Monastery]|h|r!", -- [1]
-			"Ulthor-Area52", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Ulthor", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			3525, -- [11]
-			"0x07000000056F2D4E", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			[20] = "CHAT_MSG_GUILD_ACHIEVEMENT",
-		},
-		["1404469021.821"] = {
-			"^LFW_J", -- [1]
-			"Oloric-Area52", -- [2]
-			"", -- [3]
-			"5. TCForwarder5IIll", -- [4]
-			"Oloric", -- [5]
-			"", -- [6]
-			0, -- [7]
-			5, -- [8]
-			"TCForwarder5IIll", -- [9]
-			0, -- [10]
-			2499, -- [11]
-			"0x07000000054B3CF0", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			[20] = "CHAT_MSG_CHANNEL",
-		},
-		["1404457831.327"] = {
-			"Leg Sweep", -- [1]
-			"Padpaw-Area52", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Padpaw", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			67495, -- [11]
-			"0x070000000501AC23", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			[20] = "CHAT_MSG_SAY",
-		},
-		["1404459303.63"] = {
-			"^LFW_J", -- [1]
-			"Oloric-Area52", -- [2]
-			"", -- [3]
-			"5. TCForwarder5IIll", -- [4]
-			"Oloric", -- [5]
-			"", -- [6]
-			0, -- [7]
-			5, -- [8]
-			"TCForwarder5IIll", -- [9]
-			0, -- [10]
-			67875, -- [11]
-			"0x07000000054B3CF0", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			[20] = "CHAT_MSG_CHANNEL",
-		},
-		["1404458914.536"] = {
-			"%s has earned the achievement |cffffff00|Hachievement:6913:0700000005741AAE:1:7:4:14:4294967295:4294967295:4294967295:4294967295|h[Scarlet Monastery: Gold]|h|r!", -- [1]
-			"Oldfero-Area52", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Oldfero", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			67627, -- [11]
-			"0x0700000005741AAE", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			[20] = "CHAT_MSG_GUILD_ACHIEVEMENT",
-		},
-		["1404465986.489"] = {
-			"%s has earned the achievement |cffffff00|Hachievement:5536:07000000056D937B:1:7:4:14:4294967295:4294967295:4294967295:4294967295|h[5000 Valor Points]|h|r!", -- [1]
-			"Corvìn-Area52", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Corvìn", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			19285, -- [11]
-			"0x07000000056D937B", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			[20] = "CHAT_MSG_GUILD_ACHIEVEMENT",
-		},
-		["1404459702.069"] = {
-			"Leg Sweep", -- [1]
-			"Padpaw-Area52", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Padpaw", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			67901, -- [11]
-			"0x070000000501AC23", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			[20] = "CHAT_MSG_SAY",
-		},
-		["1404458421.836"] = {
-			"^LFW_J", -- [1]
-			"Nuisence-Area52", -- [2]
-			"", -- [3]
-			"5. TCForwarder5IIll", -- [4]
-			"Nuisence", -- [5]
-			"", -- [6]
-			0, -- [7]
-			5, -- [8]
-			"TCForwarder5IIll", -- [9]
-			0, -- [10]
-			67574, -- [11]
-			"0x07000000050B2816", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			[20] = "CHAT_MSG_CHANNEL",
-		},
-		["1404459429.86"] = {
-			"Leg Sweep", -- [1]
-			"Padpaw-Area52", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Padpaw", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			67882, -- [11]
-			"0x070000000501AC23", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			[20] = "CHAT_MSG_SAY",
-		},
-		["1404462178.644"] = {
-			"ty", -- [1]
-			"Oldfero-Area52", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Oldfero", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			115, -- [11]
-			"0x0700000005741AAE", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			[20] = "CHAT_MSG_PARTY",
-		},
-		["1404458442.172"] = {
-			"Leg Sweep", -- [1]
-			"Padpaw-Area52", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Padpaw", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			67577, -- [11]
-			"0x070000000501AC23", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			[20] = "CHAT_MSG_SAY",
-		},
-		["1404461880.516"] = {
-			"Leg Sweep", -- [1]
-			"Padpaw-Area52", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Padpaw", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			76, -- [11]
-			"0x070000000501AC23", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			[20] = "CHAT_MSG_SAY",
-		},
-		["1404457406.809"] = {
-			"%s has earned the achievement |cffffff00|Hachievement:6478:07000000056F2D4E:1:7:4:14:4294967295:4294967295:4294967295:4294967295|h[Glintrok N' Roll]|h|r!", -- [1]
-			"Ulthor-Area52", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Ulthor", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			67414, -- [11]
-			"0x07000000056F2D4E", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			[20] = "CHAT_MSG_GUILD_ACHIEVEMENT",
-		},
-		["1404457594.667"] = {
-			" |cff0070dd|Hitem:82970:4441:0:0:0:0:0:1742815616:90:0:451|h[Masterwork Forgewire Axe]|h|r", -- [1]
-			"Zawger-Area52", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Zawger", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			67458, -- [11]
-			"0x07000000051ABF85", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			[20] = "CHAT_MSG_GUILD",
-		},
-		["1404462060.768"] = {
-			"Leg Sweep", -- [1]
-			"Padpaw-Area52", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Padpaw", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			87, -- [11]
-			"0x070000000501AC23", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			[20] = "CHAT_MSG_SAY",
-		},
-		["1404457876.255"] = {
-			"Leg Sweep", -- [1]
-			"Padpaw-Area52", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Padpaw", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			67506, -- [11]
-			"0x070000000501AC23", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			[20] = "CHAT_MSG_SAY",
-		},
-		["1404456857.258"] = {
-			"%s has earned the achievement |cffffff00|Hachievement:6759:07000000056F2D4E:1:7:3:14:4294967295:4294967295:4294967295:4294967295|h[Heroic: Gate of the Setting Sun]|h|r!", -- [1]
-			"Ulthor-Area52", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Ulthor", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			66836, -- [11]
-			"0x07000000056F2D4E", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			[20] = "CHAT_MSG_GUILD_ACHIEVEMENT",
-		},
-		["1404462166.037"] = {
-			"%s has earned the achievement |cffffff00|Hachievement:6378:0700000005741AAE:1:7:4:14:4294967295:4294967295:4294967295:4294967295|h[Challenge Conqueror: Gold]|h|r!", -- [1]
-			"Oldfero-Area52", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Oldfero", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			109, -- [11]
-			"0x0700000005741AAE", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			[20] = "CHAT_MSG_GUILD_ACHIEVEMENT",
-		},
-		["1404456835.652"] = {
-			"Leg Sweep", -- [1]
-			"Padpaw-Area52", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Padpaw", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			66832, -- [11]
-			"0x070000000501AC23", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			[20] = "CHAT_MSG_SAY",
-		},
-		["1404458671.222"] = {
-			"Leg Sweep", -- [1]
-			"Padpaw-Area52", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Padpaw", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			67596, -- [11]
-			"0x070000000501AC23", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			[20] = "CHAT_MSG_SAY",
-		},
-		["1404464627.596"] = {
-			"^LFW_J", -- [1]
-			"Oldfero-Area52", -- [2]
-			"", -- [3]
-			"5. TCForwarder5IIll", -- [4]
-			"Oldfero", -- [5]
-			"", -- [6]
-			0, -- [7]
-			5, -- [8]
-			"TCForwarder5IIll", -- [9]
-			0, -- [10]
-			11287, -- [11]
-			"0x0700000005741AAE", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			[20] = "CHAT_MSG_CHANNEL",
-		},
-		["1404456717.465"] = {
-			"^LFW_L", -- [1]
-			"Tlaloç-Area52", -- [2]
-			"", -- [3]
-			"5. TCForwarder5IIll", -- [4]
-			"Tlaloç", -- [5]
-			"", -- [6]
-			0, -- [7]
-			5, -- [8]
-			"TCForwarder5IIll", -- [9]
-			0, -- [10]
-			66807, -- [11]
-			"0x07000000057507E7", -- [12]
+			2134, -- [11]
+			"0x0700000005779ED1", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
@@ -1934,26 +1592,80 @@ ElvCharacterDB = {
 			false, -- [15]
 			[20] = "CHAT_MSG_SAY",
 		},
-		["1404457288.185"] = {
-			"^LFW_J", -- [1]
-			"Anselm-Area52", -- [2]
+		["1404489915.679"] = {
+			"well i'm screwed then lol", -- [1]
+			"|Kf5|k00000000000000|k", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			1885, -- [11]
+			false, -- [12]
+			5, -- [13]
+			false, -- [14]
+			false, -- [15]
+			[20] = "CHAT_MSG_BN_WHISPER",
+		},
+		["1404459690.104"] = {
+			"^LFW_L", -- [1]
+			"Sting-Area52", -- [2]
 			"", -- [3]
 			"5. TCForwarder5IIll", -- [4]
-			"Anselm", -- [5]
+			"Sting", -- [5]
 			"", -- [6]
 			0, -- [7]
 			5, -- [8]
 			"TCForwarder5IIll", -- [9]
 			0, -- [10]
-			67376, -- [11]
-			"0x0700000002B28323", -- [12]
+			67898, -- [11]
+			"0x0700000005541CFF", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			[20] = "CHAT_MSG_CHANNEL",
 		},
-		["1404460287.777"] = {
-			"3 fps", -- [1]
+		["1404489838.673"] = {
+			"tank and healer had all the BiS stuff that was on that list", -- [1]
+			"|Kf5|k00000000000000|k", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			1243, -- [11]
+			false, -- [12]
+			5, -- [13]
+			false, -- [14]
+			false, -- [15]
+			[20] = "CHAT_MSG_BN_WHISPER_INFORM",
+		},
+		["1404489816.185"] = {
+			"wasn't super hard", -- [1]
+			"|Kf5|k00000000000000|k", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			1022, -- [11]
+			false, -- [12]
+			5, -- [13]
+			false, -- [14]
+			false, -- [15]
+			[20] = "CHAT_MSG_BN_WHISPER_INFORM",
+		},
+		["1404460465.113"] = {
+			"yeah", -- [1]
 			"Oldfero-Area52", -- [2]
 			"Orcish", -- [3]
 			"", -- [4]
@@ -1963,12 +1675,48 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			69390, -- [11]
+			19, -- [11]
 			"0x0700000005741AAE", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			[20] = "CHAT_MSG_PARTY",
+		},
+		["1404490063.848"] = {
+			"i really need to get my hands on thok's trink", -- [1]
+			"|Kf5|k00000000000000|k", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			3141, -- [11]
+			false, -- [12]
+			5, -- [13]
+			false, -- [14]
+			false, -- [15]
+			[20] = "CHAT_MSG_BN_WHISPER_INFORM",
+		},
+		["1404466825.693"] = {
+			"^LFW_L", -- [1]
+			"Oldfero-Area52", -- [2]
+			"", -- [3]
+			"5. TCForwarder5IIll", -- [4]
+			"Oldfero", -- [5]
+			"", -- [6]
+			0, -- [7]
+			5, -- [8]
+			"TCForwarder5IIll", -- [9]
+			0, -- [10]
+			23484, -- [11]
+			"0x0700000005741AAE", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			[20] = "CHAT_MSG_CHANNEL",
 		},
 		["1404465374.388"] = {
 			"im sorry to bug you but could i borrow some gold to buy some potions and a few pieces of gear. im level 22 and new to the game", -- [1]
@@ -1988,43 +1736,295 @@ ElvCharacterDB = {
 			false, -- [15]
 			[20] = "CHAT_MSG_WHISPER",
 		},
-		["1404458594.043"] = {
+		["1404489764.458"] = {
+			"Oh yeah  |Hachievement:6378:0700000005741AAE:1:7:4:14:4294967295:4294967295:4294967295:4294967295|h[Challenge Conqueror: Gold]|h", -- [1]
+			"|Kf5|k00000000000000|k", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			500, -- [11]
+			false, -- [12]
+			5, -- [13]
+			false, -- [14]
+			false, -- [15]
+			[20] = "CHAT_MSG_BN_WHISPER_INFORM",
+		},
+		["1404489703.151"] = {
 			"^LFW_V2210", -- [1]
-			"Decaìn-Area52", -- [2]
+			"Oldfero-Area52", -- [2]
 			"", -- [3]
 			"5. TCForwarder5IIll", -- [4]
-			"Decaìn", -- [5]
+			"Oldfero", -- [5]
 			"", -- [6]
 			0, -- [7]
 			5, -- [8]
 			"TCForwarder5IIll", -- [9]
 			0, -- [10]
-			67591, -- [11]
-			"0x0700000005779364", -- [12]
+			9, -- [11]
+			"0x0700000005741AAE", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			[20] = "CHAT_MSG_CHANNEL",
 		},
-		["1404457974.967"] = {
-			"^LFW_V2210", -- [1]
-			"Shoulao-Area52", -- [2]
+		["1404464343.912"] = {
+			"^LFW_J", -- [1]
+			"Oldfero-Area52", -- [2]
 			"", -- [3]
 			"5. TCForwarder5IIll", -- [4]
-			"Shoulao", -- [5]
+			"Oldfero", -- [5]
 			"", -- [6]
 			0, -- [7]
 			5, -- [8]
 			"TCForwarder5IIll", -- [9]
 			0, -- [10]
-			67513, -- [11]
-			"0x07000000053FC895", -- [12]
+			9401, -- [11]
+			"0x0700000005741AAE", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			[20] = "CHAT_MSG_CHANNEL",
 		},
-		["1404464524.974"] = {
+		["1404459702.069"] = {
+			"Leg Sweep", -- [1]
+			"Padpaw-Area52", -- [2]
+			"Orcish", -- [3]
+			"", -- [4]
+			"Padpaw", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			67901, -- [11]
+			"0x070000000501AC23", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			[20] = "CHAT_MSG_SAY",
+		},
+		["1404465986.489"] = {
+			"%s has earned the achievement |cffffff00|Hachievement:5536:07000000056D937B:1:7:4:14:4294967295:4294967295:4294967295:4294967295|h[5000 Valor Points]|h|r!", -- [1]
+			"Corvìn-Area52", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Corvìn", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			19285, -- [11]
+			"0x07000000056D937B", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			[20] = "CHAT_MSG_GUILD_ACHIEVEMENT",
+		},
+		["1404459775.16"] = {
+			"%s has earned the achievement |cffffff00|Hachievement:6910:0700000005741AAE:1:7:4:14:4294967295:4294967295:4294967295:4294967295|h[Scarlet Halls: Gold]|h|r!", -- [1]
+			"Oldfero-Area52", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Oldfero", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			67920, -- [11]
+			"0x0700000005741AAE", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			[20] = "CHAT_MSG_GUILD_ACHIEVEMENT",
+		},
+		["1404490392.55"] = {
+			"some people are just really bad about moving out of aoe", -- [1]
+			"|Kf5|k00000000000000|k", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			6118, -- [11]
+			false, -- [12]
+			5, -- [13]
+			false, -- [14]
+			false, -- [15]
+			[20] = "CHAT_MSG_BN_WHISPER_INFORM",
+		},
+		["1404459429.86"] = {
+			"Leg Sweep", -- [1]
+			"Padpaw-Area52", -- [2]
+			"Orcish", -- [3]
+			"", -- [4]
+			"Padpaw", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			67882, -- [11]
+			"0x070000000501AC23", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			[20] = "CHAT_MSG_SAY",
+		},
+		["1404462690.565"] = {
+			"^LFW_V2210", -- [1]
+			"Oldfero-Area52", -- [2]
+			"", -- [3]
+			"5. TCForwarder5IIll", -- [4]
+			"Oldfero", -- [5]
+			"", -- [6]
+			0, -- [7]
+			5, -- [8]
+			"TCForwarder5IIll", -- [9]
+			0, -- [10]
+			1009, -- [11]
+			"0x0700000005741AAE", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			[20] = "CHAT_MSG_CHANNEL",
+		},
+		["1404458775.361"] = {
+			"^LFW_V2210", -- [1]
+			"Valynith-Area52", -- [2]
+			"", -- [3]
+			"5. TCForwarder5IIll", -- [4]
+			"Valynith", -- [5]
+			"", -- [6]
+			0, -- [7]
+			5, -- [8]
+			"TCForwarder5IIll", -- [9]
+			0, -- [10]
+			67605, -- [11]
+			"0x070000000506E36E", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			[20] = "CHAT_MSG_CHANNEL",
+		},
+		["1404465527.564"] = {
+			"do you want to come open a trade with me or mail it?", -- [1]
+			"Warhammer-Area52", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Warhammer", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			16552, -- [11]
+			"0x0700000005778BCF", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			[20] = "CHAT_MSG_WHISPER_INFORM",
+		},
+		["1404489790.949"] = {
+			"oh you bastard! thats why you were farming prof kits! lol", -- [1]
+			"|Kf5|k00000000000000|k", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			767, -- [11]
+			false, -- [12]
+			5, -- [13]
+			false, -- [14]
+			false, -- [15]
+			[20] = "CHAT_MSG_BN_WHISPER",
+		},
+		["1404459230.449"] = {
+			"^LFW_L", -- [1]
+			"Oloric-Area52", -- [2]
+			"", -- [3]
+			"5. TCForwarder5IIll", -- [4]
+			"Oloric", -- [5]
+			"", -- [6]
+			0, -- [7]
+			5, -- [8]
+			"TCForwarder5IIll", -- [9]
+			0, -- [10]
+			67857, -- [11]
+			"0x07000000054B3CF0", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			[20] = "CHAT_MSG_CHANNEL",
+		},
+		["1404489905.873"] = {
+			"engineering was almost a must have", -- [1]
+			"|Kf5|k00000000000000|k", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			1792, -- [11]
+			false, -- [12]
+			5, -- [13]
+			false, -- [14]
+			false, -- [15]
+			[20] = "CHAT_MSG_BN_WHISPER_INFORM",
+		},
+		["1404462166.037"] = {
+			"%s has earned the achievement |cffffff00|Hachievement:6378:0700000005741AAE:1:7:4:14:4294967295:4294967295:4294967295:4294967295|h[Challenge Conqueror: Gold]|h|r!", -- [1]
+			"Oldfero-Area52", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Oldfero", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			109, -- [11]
+			"0x0700000005741AAE", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			[20] = "CHAT_MSG_GUILD_ACHIEVEMENT",
+		},
+		["1404459163.257"] = {
+			"^LFW_J", -- [1]
+			"Oloric-Area52", -- [2]
+			"", -- [3]
+			"5. TCForwarder5IIll", -- [4]
+			"Oloric", -- [5]
+			"", -- [6]
+			0, -- [7]
+			5, -- [8]
+			"TCForwarder5IIll", -- [9]
+			0, -- [10]
+			67843, -- [11]
+			"0x07000000054B3CF0", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			[20] = "CHAT_MSG_CHANNEL",
+		},
+		["1404464032.499"] = {
 			"^LFW_L", -- [1]
 			"Oldfero-Area52", -- [2]
 			"", -- [3]
@@ -2035,8 +2035,62 @@ ElvCharacterDB = {
 			5, -- [8]
 			"TCForwarder5IIll", -- [9]
 			0, -- [10]
-			10522, -- [11]
+			8907, -- [11]
 			"0x0700000005741AAE", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			[20] = "CHAT_MSG_CHANNEL",
+		},
+		["1404490335.709"] = {
+			"i still watch people do stupid shit though", -- [1]
+			"|Kf5|k00000000000000|k", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			5564, -- [11]
+			false, -- [12]
+			5, -- [13]
+			false, -- [14]
+			false, -- [15]
+			[20] = "CHAT_MSG_BN_WHISPER",
+		},
+		["1404465458.278"] = {
+			"i can let you have a little, i just blew most of mine as it is", -- [1]
+			"Warhammer-Area52", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Warhammer", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			16113, -- [11]
+			"0x0700000005778BCF", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			[20] = "CHAT_MSG_WHISPER_INFORM",
+		},
+		["1404469021.821"] = {
+			"^LFW_J", -- [1]
+			"Oloric-Area52", -- [2]
+			"", -- [3]
+			"5. TCForwarder5IIll", -- [4]
+			"Oloric", -- [5]
+			"", -- [6]
+			0, -- [7]
+			5, -- [8]
+			"TCForwarder5IIll", -- [9]
+			0, -- [10]
+			2499, -- [11]
+			"0x07000000054B3CF0", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
@@ -2060,73 +2114,55 @@ ElvCharacterDB = {
 			false, -- [15]
 			[20] = "CHAT_MSG_SAY",
 		},
-		["1404457354.828"] = {
-			"^LFW_L", -- [1]
-			"Oloric-Area52", -- [2]
-			"", -- [3]
-			"5. TCForwarder5IIll", -- [4]
-			"Oloric", -- [5]
-			"AFK", -- [6]
-			0, -- [7]
-			5, -- [8]
-			"TCForwarder5IIll", -- [9]
-			0, -- [10]
-			67403, -- [11]
-			"0x07000000054B3CF0", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			[20] = "CHAT_MSG_CHANNEL",
-		},
-		["1404465458.278"] = {
-			"i can let you have a little, i just blew most of mine as it is", -- [1]
-			"Warhammer-Area52", -- [2]
+		["1404490022.146"] = {
+			"30 second CD without the CD reduction trinket from galakras", -- [1]
+			"|Kf5|k00000000000000|k", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Warhammer", -- [5]
+			"", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			16113, -- [11]
-			"0x0700000005778BCF", -- [12]
+			2805, -- [11]
+			false, -- [12]
+			5, -- [13]
+			false, -- [14]
+			false, -- [15]
+			[20] = "CHAT_MSG_BN_WHISPER",
+		},
+		["1404469209.327"] = {
+			"%s has earned the achievement |cffffff00|Hachievement:6761:07000000056F2D4E:1:7:4:14:4294967295:4294967295:4294967295:4294967295|h[Heroic: Scarlet Monastery]|h|r!", -- [1]
+			"Ulthor-Area52", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Ulthor", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			3525, -- [11]
+			"0x07000000056F2D4E", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
-			[20] = "CHAT_MSG_WHISPER_INFORM",
+			[20] = "CHAT_MSG_GUILD_ACHIEVEMENT",
 		},
-		["1404456835.003"] = {
-			"^LFW_J", -- [1]
-			"Imashammy-Area52", -- [2]
+		["1404464524.974"] = {
+			"^LFW_L", -- [1]
+			"Oldfero-Area52", -- [2]
 			"", -- [3]
 			"5. TCForwarder5IIll", -- [4]
-			"Imashammy", -- [5]
+			"Oldfero", -- [5]
 			"", -- [6]
 			0, -- [7]
 			5, -- [8]
 			"TCForwarder5IIll", -- [9]
 			0, -- [10]
-			66829, -- [11]
-			"0x07000000027A6E1F", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			[20] = "CHAT_MSG_CHANNEL",
-		},
-		["1404459163.257"] = {
-			"^LFW_J", -- [1]
-			"Oloric-Area52", -- [2]
-			"", -- [3]
-			"5. TCForwarder5IIll", -- [4]
-			"Oloric", -- [5]
-			"", -- [6]
-			0, -- [7]
-			5, -- [8]
-			"TCForwarder5IIll", -- [9]
-			0, -- [10]
-			67843, -- [11]
-			"0x07000000054B3CF0", -- [12]
+			10522, -- [11]
+			"0x0700000005741AAE", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
@@ -2168,55 +2204,19 @@ ElvCharacterDB = {
 			false, -- [15]
 			[20] = "CHAT_MSG_PARTY",
 		},
-		["1404456831.646"] = {
-			"Leg Sweep", -- [1]
-			"Padpaw-Area52", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Padpaw", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			66827, -- [11]
-			"0x070000000501AC23", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			[20] = "CHAT_MSG_SAY",
-		},
-		["1404459690.104"] = {
-			"^LFW_L", -- [1]
-			"Sting-Area52", -- [2]
+		["1404458594.043"] = {
+			"^LFW_V2210", -- [1]
+			"Decaìn-Area52", -- [2]
 			"", -- [3]
 			"5. TCForwarder5IIll", -- [4]
-			"Sting", -- [5]
+			"Decaìn", -- [5]
 			"", -- [6]
 			0, -- [7]
 			5, -- [8]
 			"TCForwarder5IIll", -- [9]
 			0, -- [10]
-			67898, -- [11]
-			"0x0700000005541CFF", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			[20] = "CHAT_MSG_CHANNEL",
-		},
-		["1404458115.892"] = {
-			"^LFW_J", -- [1]
-			"Shoulao-Area52", -- [2]
-			"", -- [3]
-			"5. TCForwarder5IIll", -- [4]
-			"Shoulao", -- [5]
-			"", -- [6]
-			0, -- [7]
-			5, -- [8]
-			"TCForwarder5IIll", -- [9]
-			0, -- [10]
-			67537, -- [11]
-			"0x07000000053FC895", -- [12]
+			67591, -- [11]
+			"0x0700000005779364", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
@@ -2240,25 +2240,7 @@ ElvCharacterDB = {
 			false, -- [15]
 			[20] = "CHAT_MSG_CHANNEL",
 		},
-		["1404465527.564"] = {
-			"do you want to come open a trade with me or mail it?", -- [1]
-			"Warhammer-Area52", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Warhammer", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			16552, -- [11]
-			"0x0700000005778BCF", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			[20] = "CHAT_MSG_WHISPER_INFORM",
-		},
-		["1404461880.738"] = {
+		["1404458442.172"] = {
 			"Leg Sweep", -- [1]
 			"Padpaw-Area52", -- [2]
 			"Orcish", -- [3]
@@ -2269,30 +2251,48 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			77, -- [11]
+			67577, -- [11]
 			"0x070000000501AC23", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			[20] = "CHAT_MSG_SAY",
 		},
-		["1404459775.16"] = {
-			"%s has earned the achievement |cffffff00|Hachievement:6910:0700000005741AAE:1:7:4:14:4294967295:4294967295:4294967295:4294967295|h[Scarlet Halls: Gold]|h|r!", -- [1]
-			"Oldfero-Area52", -- [2]
+		["1404490322.867"] = {
+			"i know i love it lol", -- [1]
+			"|Kf5|k00000000000000|k", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Oldfero", -- [5]
+			"", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			67920, -- [11]
+			5417, -- [11]
+			false, -- [12]
+			5, -- [13]
+			false, -- [14]
+			false, -- [15]
+			[20] = "CHAT_MSG_BN_WHISPER",
+		},
+		["1404464627.596"] = {
+			"^LFW_J", -- [1]
+			"Oldfero-Area52", -- [2]
+			"", -- [3]
+			"5. TCForwarder5IIll", -- [4]
+			"Oldfero", -- [5]
+			"", -- [6]
+			0, -- [7]
+			5, -- [8]
+			"TCForwarder5IIll", -- [9]
+			0, -- [10]
+			11287, -- [11]
 			"0x0700000005741AAE", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
-			[20] = "CHAT_MSG_GUILD_ACHIEVEMENT",
+			[20] = "CHAT_MSG_CHANNEL",
 		},
 		["1404465573.98"] = {
 			"trade", -- [1]
