@@ -774,16 +774,16 @@ SkadaPerCharDB = {
 								{
 									["ts"] = 1404330743.68301,
 									["amount"] = -50000,
+									["srcname"] = "Ordos",
 									["hp"] = 79408,
 									["spellid"] = 144689,
-									["srcname"] = "Ordos",
 								}, -- [1]
 								{
 									["ts"] = 1404330743.80802,
 									["amount"] = -103031,
+									["srcname"] = "Feronaz",
 									["hp"] = 1,
 									["spellid"] = 144690,
-									["srcname"] = "Feronaz",
 								}, -- [2]
 								{
 									["spellname"] = "Feronaz dies",
@@ -802,30 +802,30 @@ SkadaPerCharDB = {
 								{
 									["ts"] = 1404330734.63005,
 									["amount"] = -45000,
+									["srcname"] = "Ordos",
 									["hp"] = 455922,
 									["spellid"] = 144689,
-									["srcname"] = "Ordos",
 								}, -- [5]
 								{
 									["ts"] = 1404330735.64606,
 									["amount"] = -45000,
+									["srcname"] = "Ordos",
 									["hp"] = 410922,
 									["spellid"] = 144689,
-									["srcname"] = "Ordos",
 								}, -- [6]
 								{
 									["ts"] = 1404330736.62407,
 									["amount"] = -45000,
+									["srcname"] = "Ordos",
 									["hp"] = 365922,
 									["spellid"] = 144689,
-									["srcname"] = "Ordos",
 								}, -- [7]
 								{
 									["ts"] = 1404330737.64508,
 									["amount"] = -45000,
+									["srcname"] = "Ordos",
 									["hp"] = 320922,
 									["spellid"] = 144689,
-									["srcname"] = "Ordos",
 								}, -- [8]
 								{
 									["absorb"] = 0,
@@ -838,16 +838,16 @@ SkadaPerCharDB = {
 								{
 									["ts"] = 1404330738.6331,
 									["amount"] = -45000,
+									["srcname"] = "Ordos",
 									["hp"] = 300165,
 									["spellid"] = 144689,
-									["srcname"] = "Ordos",
 								}, -- [10]
 								{
 									["ts"] = 1404330739.60711,
 									["amount"] = -45000,
+									["srcname"] = "Ordos",
 									["hp"] = 255165,
 									["spellid"] = 144689,
-									["srcname"] = "Ordos",
 								}, -- [11]
 								{
 									["absorb"] = 0,
@@ -860,23 +860,23 @@ SkadaPerCharDB = {
 								{
 									["ts"] = 1404330740.72713,
 									["amount"] = -50000,
+									["srcname"] = "Ordos",
 									["hp"] = 229408,
 									["spellid"] = 144689,
-									["srcname"] = "Ordos",
 								}, -- [13]
 								{
 									["ts"] = 1404330741.67114,
 									["amount"] = -50000,
+									["srcname"] = "Ordos",
 									["hp"] = 179408,
 									["spellid"] = 144689,
-									["srcname"] = "Ordos",
 								}, -- [14]
 								{
 									["ts"] = 1404330742.74115,
 									["amount"] = -50000,
+									["srcname"] = "Ordos",
 									["hp"] = 129408,
 									["spellid"] = 144689,
-									["srcname"] = "Ordos",
 								}, -- [15]
 								["pos"] = 4,
 							},
@@ -1909,17 +1909,17 @@ SkadaPerCharDB = {
 							["name"] = "spores",
 							["amount"] = 12826,
 						},
+						["0xF142009619010C44"] = {
+							["shielding"] = 0,
+							["class"] = "WARRIOR",
+							["name"] = "spores",
+							["amount"] = 1524,
+						},
 						["0x0200000006077B8C"] = {
 							["shielding"] = 0,
 							["class"] = "DEATHKNIGHT",
 							["name"] = "Datku-ShatteredHand",
 							["amount"] = 337909,
-						},
-						["0xF142009619010A36"] = {
-							["shielding"] = 0,
-							["class"] = "WARRIOR",
-							["name"] = "spores",
-							["amount"] = 23664,
 						},
 						["0xF130EE80002AE64C"] = {
 							["shielding"] = 0,
@@ -1945,11 +1945,11 @@ SkadaPerCharDB = {
 							["name"] = "Restoslap-Shandris",
 							["amount"] = 281471,
 						},
-						["0xF142009619010C44"] = {
+						["0xF142009619010A36"] = {
 							["shielding"] = 0,
 							["class"] = "WARRIOR",
 							["name"] = "spores",
-							["amount"] = 1524,
+							["amount"] = 23664,
 						},
 						["0x0300000008BF2542"] = {
 							["shielding"] = 0,
@@ -2079,19 +2079,19 @@ SkadaPerCharDB = {
 							["auratype"] = "BUFF",
 							["uptime"] = 15,
 						},
-						["Call of Dominance"] = {
-							["name"] = "Call of Dominance",
-							["active"] = 0,
-							["id"] = 126683,
-							["auratype"] = "BUFF",
-							["uptime"] = 20,
-						},
 						["Innervate"] = {
 							["name"] = "Innervate",
 							["active"] = 0,
 							["id"] = 29166,
 							["auratype"] = "BUFF",
 							["uptime"] = 10,
+						},
+						["Rejuvenation"] = {
+							["name"] = "Rejuvenation",
+							["active"] = 0,
+							["id"] = 774,
+							["auratype"] = "BUFF",
+							["uptime"] = 133,
 						},
 						["Displacer Beast"] = {
 							["name"] = "Displacer Beast",
@@ -2121,12 +2121,12 @@ SkadaPerCharDB = {
 							["auratype"] = "BUFF",
 							["uptime"] = 12,
 						},
-						["Rejuvenation"] = {
-							["name"] = "Rejuvenation",
+						["Call of Dominance"] = {
+							["name"] = "Call of Dominance",
 							["active"] = 0,
-							["id"] = 774,
+							["id"] = 126683,
 							["auratype"] = "BUFF",
-							["uptime"] = 133,
+							["uptime"] = 20,
 						},
 						["Incarnation: Tree of Life"] = {
 							["name"] = "Incarnation: Tree of Life",
@@ -2882,17 +2882,17 @@ SkadaPerCharDB = {
 							["overhealing"] = 997234,
 							["hits"] = 31,
 						},
-						["Uplift"] = {
+						["Mist Wave"] = {
 							["shielding"] = 0,
-							["id"] = 116670,
-							["healing"] = 1544642,
+							["id"] = 149112,
+							["healing"] = 623293,
 							["min"] = 0,
-							["name"] = "Uplift",
+							["name"] = "Mist Wave",
 							["absorbed"] = 0,
-							["critical"] = 28,
-							["max"] = 93002,
-							["overhealing"] = 2836332,
-							["hits"] = 73,
+							["critical"] = 6,
+							["max"] = 61183,
+							["overhealing"] = 181245,
+							["hits"] = 26,
 						},
 						["Renewing Mist"] = {
 							["shielding"] = 0,
@@ -2966,17 +2966,17 @@ SkadaPerCharDB = {
 							["overhealing"] = 487895,
 							["hits"] = 3,
 						},
-						["Spirit of Chi-Ji"] = {
+						["Uplift"] = {
 							["shielding"] = 0,
-							["id"] = 148009,
-							["healing"] = 690147,
+							["id"] = 116670,
+							["healing"] = 1544642,
 							["min"] = 0,
-							["name"] = "Spirit of Chi-Ji",
+							["name"] = "Uplift",
 							["absorbed"] = 0,
-							["critical"] = 0,
-							["max"] = 148631,
-							["overhealing"] = 26083,
-							["hits"] = 87,
+							["critical"] = 28,
+							["max"] = 93002,
+							["overhealing"] = 2836332,
+							["hits"] = 73,
 						},
 						["Yu'lon's Barrier"] = {
 							["shielding"] = 619338.95703125,
@@ -2990,17 +2990,17 @@ SkadaPerCharDB = {
 							["overhealing"] = 0,
 							["hits"] = 21,
 						},
-						["Mist Wave"] = {
+						["Spirit of Chi-Ji"] = {
 							["shielding"] = 0,
-							["id"] = 149112,
-							["healing"] = 623293,
+							["id"] = 148009,
+							["healing"] = 690147,
 							["min"] = 0,
-							["name"] = "Mist Wave",
+							["name"] = "Spirit of Chi-Ji",
 							["absorbed"] = 0,
-							["critical"] = 6,
-							["max"] = 61183,
-							["overhealing"] = 181245,
-							["hits"] = 26,
+							["critical"] = 0,
+							["max"] = 148631,
+							["overhealing"] = 26083,
+							["hits"] = 87,
 						},
 					},
 					["healing"] = 14772270.39453125,
@@ -3430,17 +3430,17 @@ SkadaPerCharDB = {
 					["overhealing"] = 44885478,
 					["name"] = "Restoslap",
 					["healingspells"] = {
-						["Healing Surge"] = {
+						["Healing Wave"] = {
 							["shielding"] = 0,
-							["id"] = 8004,
-							["healing"] = 707226,
+							["id"] = 331,
+							["healing"] = 0,
 							["min"] = 0,
-							["name"] = "Healing Surge",
+							["name"] = "Healing Wave",
 							["absorbed"] = 0,
-							["critical"] = 4,
-							["max"] = 138590,
-							["overhealing"] = 520174,
-							["hits"] = 8,
+							["critical"] = 0,
+							["max"] = 0,
+							["overhealing"] = 100814,
+							["hits"] = 1,
 						},
 						["Earth Shield"] = {
 							["shielding"] = 0,
@@ -3466,29 +3466,29 @@ SkadaPerCharDB = {
 							["overhealing"] = 1121280,
 							["hits"] = 104,
 						},
-						["Cleave"] = {
+						["Healing Surge"] = {
 							["shielding"] = 0,
-							["id"] = 148235,
-							["healing"] = 1931558,
+							["id"] = 8004,
+							["healing"] = 707226,
 							["min"] = 0,
-							["name"] = "Cleave",
+							["name"] = "Healing Surge",
 							["absorbed"] = 0,
-							["critical"] = 0,
-							["max"] = 157006,
-							["overhealing"] = 6789171,
-							["hits"] = 229,
+							["critical"] = 4,
+							["max"] = 138590,
+							["overhealing"] = 520174,
+							["hits"] = 8,
 						},
-						["Glyph of Healing Wave"] = {
+						["Spirit Link Totem: Spirit Link"] = {
 							["shielding"] = 0,
-							["id"] = 55533,
-							["healing"] = 20163,
-							["min"] = 20163,
-							["name"] = "Glyph of Healing Wave",
+							["id"] = 98021,
+							["healing"] = 542408,
+							["min"] = 991,
+							["name"] = "Spirit Link Totem: Spirit Link",
 							["absorbed"] = 0,
 							["critical"] = 0,
-							["max"] = 20163,
-							["overhealing"] = 0,
-							["hits"] = 1,
+							["max"] = 67195,
+							["overhealing"] = 2619,
+							["hits"] = 45,
 						},
 						["Earthliving"] = {
 							["shielding"] = 0,
@@ -3526,17 +3526,17 @@ SkadaPerCharDB = {
 							["overhealing"] = 13007944,
 							["hits"] = 629,
 						},
-						["Riptide"] = {
+						["Glyph of Healing Wave"] = {
 							["shielding"] = 0,
-							["id"] = 61295,
-							["healing"] = 446021,
-							["min"] = 0,
-							["name"] = "Riptide",
+							["id"] = 55533,
+							["healing"] = 20163,
+							["min"] = 20163,
+							["name"] = "Glyph of Healing Wave",
 							["absorbed"] = 0,
-							["critical"] = 18,
-							["max"] = 66006,
-							["overhealing"] = 748461,
-							["hits"] = 59,
+							["critical"] = 0,
+							["max"] = 20163,
+							["overhealing"] = 0,
+							["hits"] = 1,
 						},
 						["Restorative Mists"] = {
 							["shielding"] = 0,
@@ -3574,17 +3574,17 @@ SkadaPerCharDB = {
 							["overhealing"] = 13946778,
 							["hits"] = 312,
 						},
-						["Spirit Link Totem: Spirit Link"] = {
+						["Riptide"] = {
 							["shielding"] = 0,
-							["id"] = 98021,
-							["healing"] = 542408,
-							["min"] = 991,
-							["name"] = "Spirit Link Totem: Spirit Link",
+							["id"] = 61295,
+							["healing"] = 446021,
+							["min"] = 0,
+							["name"] = "Riptide",
 							["absorbed"] = 0,
-							["critical"] = 0,
-							["max"] = 67195,
-							["overhealing"] = 2619,
-							["hits"] = 45,
+							["critical"] = 18,
+							["max"] = 66006,
+							["overhealing"] = 748461,
+							["hits"] = 59,
 						},
 						["Healing Stream Totem"] = {
 							["shielding"] = 0,
@@ -3610,17 +3610,17 @@ SkadaPerCharDB = {
 							["overhealing"] = 22053,
 							["hits"] = 1,
 						},
-						["Healing Wave"] = {
+						["Cleave"] = {
 							["shielding"] = 0,
-							["id"] = 331,
-							["healing"] = 0,
+							["id"] = 148235,
+							["healing"] = 1931558,
 							["min"] = 0,
-							["name"] = "Healing Wave",
+							["name"] = "Cleave",
 							["absorbed"] = 0,
 							["critical"] = 0,
-							["max"] = 0,
-							["overhealing"] = 100814,
-							["hits"] = 1,
+							["max"] = 157006,
+							["overhealing"] = 6789171,
+							["hits"] = 229,
 						},
 					},
 					["healing"] = 32906180,
@@ -7956,17 +7956,17 @@ SkadaPerCharDB = {
 							["overhealing"] = 2098269,
 							["hits"] = 6,
 						},
-						["Efflorescence"] = {
+						["Rejuvenation"] = {
 							["shielding"] = 0,
-							["id"] = 81269,
-							["healing"] = 3135186,
+							["id"] = 774,
+							["healing"] = 1180410,
 							["min"] = 0,
-							["name"] = "Efflorescence",
+							["name"] = "Rejuvenation",
 							["absorbed"] = 0,
-							["critical"] = 74,
-							["max"] = 56699,
-							["overhealing"] = 5354270,
-							["hits"] = 358,
+							["critical"] = 40,
+							["max"] = 71646,
+							["overhealing"] = 4628259,
+							["hits"] = 144,
 						},
 						["Tranquility"] = {
 							["shielding"] = 0,
@@ -7980,18 +7980,6 @@ SkadaPerCharDB = {
 							["overhealing"] = 468145,
 							["hits"] = 80,
 						},
-						["Rejuvenation"] = {
-							["shielding"] = 0,
-							["id"] = 774,
-							["healing"] = 1180410,
-							["min"] = 0,
-							["name"] = "Rejuvenation",
-							["absorbed"] = 0,
-							["critical"] = 40,
-							["max"] = 71646,
-							["overhealing"] = 4628259,
-							["hits"] = 144,
-						},
 						["Spirit of Chi-Ji"] = {
 							["shielding"] = 0,
 							["id"] = 148009,
@@ -8003,6 +7991,18 @@ SkadaPerCharDB = {
 							["max"] = 40069,
 							["overhealing"] = 41177,
 							["hits"] = 61,
+						},
+						["Efflorescence"] = {
+							["shielding"] = 0,
+							["id"] = 81269,
+							["healing"] = 3135186,
+							["min"] = 0,
+							["name"] = "Efflorescence",
+							["absorbed"] = 0,
+							["critical"] = 74,
+							["max"] = 56699,
+							["overhealing"] = 5354270,
+							["hits"] = 358,
 						},
 						["Wild Growth"] = {
 							["shielding"] = 0,
@@ -8334,6 +8334,13 @@ SkadaPerCharDB = {
 							["auratype"] = "BUFF",
 							["uptime"] = 40,
 						},
+						["Rejuvenation"] = {
+							["name"] = "Rejuvenation",
+							["active"] = 0,
+							["id"] = 774,
+							["auratype"] = "BUFF",
+							["uptime"] = 61,
+						},
 						["Wild Mushroom: Efflorescence"] = {
 							["name"] = "Wild Mushroom: Efflorescence",
 							["active"] = 2,
@@ -8347,13 +8354,6 @@ SkadaPerCharDB = {
 							["id"] = 146200,
 							["auratype"] = "BUFF",
 							["uptime"] = 10,
-						},
-						["Rejuvenation"] = {
-							["name"] = "Rejuvenation",
-							["active"] = 0,
-							["id"] = 774,
-							["auratype"] = "BUFF",
-							["uptime"] = 61,
 						},
 						["Temporal Displacement"] = {
 							["name"] = "Temporal Displacement",
@@ -9081,12 +9081,12 @@ SkadaPerCharDB = {
 							["auratype"] = "DEBUFF",
 							["uptime"] = 28,
 						},
-						["Toxic Power"] = {
-							["name"] = "Toxic Power",
-							["active"] = 1,
-							["id"] = 148906,
+						["Invoker's Energy"] = {
+							["name"] = "Invoker's Energy",
+							["active"] = 0,
+							["id"] = 116257,
 							["auratype"] = "BUFF",
-							["uptime"] = 61,
+							["uptime"] = 179,
 						},
 						["Breath of Many Minds"] = {
 							["name"] = "Breath of Many Minds",
@@ -9095,19 +9095,19 @@ SkadaPerCharDB = {
 							["auratype"] = "BUFF",
 							["uptime"] = 28,
 						},
-						["Invoker's Energy"] = {
-							["name"] = "Invoker's Energy",
-							["active"] = 0,
-							["id"] = 116257,
-							["auratype"] = "BUFF",
-							["uptime"] = 179,
-						},
 						["Nether Tempest"] = {
 							["name"] = "Nether Tempest",
 							["active"] = 0,
 							["id"] = 114923,
 							["auratype"] = "DEBUFF",
 							["uptime"] = 185,
+						},
+						["Toxic Power"] = {
+							["name"] = "Toxic Power",
+							["active"] = 1,
+							["id"] = 148906,
+							["auratype"] = "BUFF",
+							["uptime"] = 61,
 						},
 						["Cauterize"] = {
 							["name"] = "Cauterize",
@@ -10202,9 +10202,9 @@ SkadaPerCharDB = {
 								{
 									["ts"] = 1404330668.65104,
 									["amount"] = -83250,
+									["srcname"] = "Ancient Flame",
 									["hp"] = 530341,
 									["spellid"] = 144699,
-									["srcname"] = "Ancient Flame",
 								}, -- [4]
 								{
 									["absorb"] = 0,
@@ -10225,9 +10225,9 @@ SkadaPerCharDB = {
 								{
 									["ts"] = 1404330668.98807,
 									["amount"] = -712500,
+									["srcname"] = "Ordos",
 									["hp"] = 1,
 									["spellid"] = 144688,
-									["srcname"] = "Ordos",
 								}, -- [7]
 								{
 									["spellname"] = "Drixis dies",
@@ -10236,10 +10236,10 @@ SkadaPerCharDB = {
 									["spellid"] = 41220,
 								}, -- [8]
 								{
-									["hp"] = 0,
-									["ts"] = 1404330733.619,
-									["spellid"] = 20484,
 									["srcname"] = "Hannibäl-Arathor",
+									["ts"] = 1404330733.619,
+									["hp"] = 0,
+									["spellid"] = 20484,
 								}, -- [9]
 								{
 									["hp"] = 606698,
@@ -10578,14 +10578,14 @@ SkadaPerCharDB = {
 							["max"] = 159627,
 							["damage"] = 2244240,
 						},
-						["Templar's Verdict"] = {
-							["min"] = 105254,
-							["critical"] = 4,
-							["hit"] = 20,
-							["totalhits"] = 24,
-							["id"] = 85256,
-							["max"] = 475390,
-							["damage"] = 3960901,
+						["Crusader Strike"] = {
+							["min"] = 50061,
+							["critical"] = 10,
+							["hit"] = 27,
+							["totalhits"] = 37,
+							["id"] = 35395,
+							["max"] = 191959,
+							["damage"] = 2858639,
 						},
 						["Seal of Justice"] = {
 							["min"] = 14231,
@@ -10596,14 +10596,13 @@ SkadaPerCharDB = {
 							["max"] = 55263,
 							["damage"] = 3714733,
 						},
-						["Crusader Strike"] = {
-							["min"] = 50061,
-							["critical"] = 10,
-							["hit"] = 27,
-							["totalhits"] = 37,
-							["id"] = 35395,
-							["max"] = 191959,
-							["damage"] = 2858639,
+						["Hand of Light"] = {
+							["min"] = 30974,
+							["hit"] = 81,
+							["totalhits"] = 81,
+							["id"] = 96172,
+							["max"] = 294137,
+							["damage"] = 6142034,
 						},
 						["Execution Sentence"] = {
 							["min"] = 10729,
@@ -10614,13 +10613,14 @@ SkadaPerCharDB = {
 							["max"] = 234844,
 							["damage"] = 1353651,
 						},
-						["Hand of Light"] = {
-							["min"] = 30974,
-							["hit"] = 81,
-							["totalhits"] = 81,
-							["id"] = 96172,
-							["max"] = 294137,
-							["damage"] = 6142034,
+						["Templar's Verdict"] = {
+							["min"] = 105254,
+							["critical"] = 4,
+							["hit"] = 20,
+							["totalhits"] = 24,
+							["id"] = 85256,
+							["max"] = 475390,
+							["damage"] = 3960901,
 						},
 						["Guardian of Ancient Kings: Attack"] = {
 							["min"] = 33055,
@@ -11127,17 +11127,17 @@ SkadaPerCharDB = {
 							["name"] = "Xuen",
 							["amount"] = 0,
 						},
-						["0x0380000006D8BCCB"] = {
-							["shielding"] = 0,
-							["class"] = "PALADIN",
-							["name"] = "Vaycin-Hyjal",
-							["amount"] = 8431,
-						},
 						["0x0200000006077B8C"] = {
 							["shielding"] = 0,
 							["class"] = "DEATHKNIGHT",
 							["name"] = "Datku-ShatteredHand",
 							["amount"] = 0,
+						},
+						["0x0280000006AECF37"] = {
+							["shielding"] = 0,
+							["class"] = "DEATHKNIGHT",
+							["name"] = "Drixis-Cho'gall",
+							["amount"] = 308882,
 						},
 						["0x0180000005448603"] = {
 							["shielding"] = 0,
@@ -11145,11 +11145,11 @@ SkadaPerCharDB = {
 							["name"] = "Moonriver-Dunemaul",
 							["amount"] = 145153,
 						},
-						["0x0280000006AECF37"] = {
+						["0x0380000006D8BCCB"] = {
 							["shielding"] = 0,
-							["class"] = "DEATHKNIGHT",
-							["name"] = "Drixis-Cho'gall",
-							["amount"] = 308882,
+							["class"] = "PALADIN",
+							["name"] = "Vaycin-Hyjal",
+							["amount"] = 8431,
 						},
 						["0x0300000009122AEE"] = {
 							["shielding"] = 0,
@@ -12412,9 +12412,9 @@ SkadaPerCharDB = {
 								{
 									["ts"] = 1404330553.94105,
 									["amount"] = -454546,
+									["srcname"] = "Ordos",
 									["hp"] = 1,
 									["spellid"] = 144688,
-									["srcname"] = "Ordos",
 								}, -- [5]
 								{
 									["spellname"] = "Brewlee dies",
@@ -13916,16 +13916,16 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1404330743.68301,
 								["amount"] = -50000,
+								["srcname"] = "Ordos",
 								["hp"] = 79408,
 								["spellid"] = 144689,
-								["srcname"] = "Ordos",
 							}, -- [1]
 							{
 								["ts"] = 1404330743.80802,
 								["amount"] = -103031,
+								["srcname"] = "Feronaz",
 								["hp"] = 1,
 								["spellid"] = 144690,
-								["srcname"] = "Feronaz",
 							}, -- [2]
 							{
 								["spellname"] = "Feronaz dies",
@@ -13944,30 +13944,30 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1404330734.63005,
 								["amount"] = -45000,
+								["srcname"] = "Ordos",
 								["hp"] = 455922,
 								["spellid"] = 144689,
-								["srcname"] = "Ordos",
 							}, -- [5]
 							{
 								["ts"] = 1404330735.64606,
 								["amount"] = -45000,
+								["srcname"] = "Ordos",
 								["hp"] = 410922,
 								["spellid"] = 144689,
-								["srcname"] = "Ordos",
 							}, -- [6]
 							{
 								["ts"] = 1404330736.62407,
 								["amount"] = -45000,
+								["srcname"] = "Ordos",
 								["hp"] = 365922,
 								["spellid"] = 144689,
-								["srcname"] = "Ordos",
 							}, -- [7]
 							{
 								["ts"] = 1404330737.64508,
 								["amount"] = -45000,
+								["srcname"] = "Ordos",
 								["hp"] = 320922,
 								["spellid"] = 144689,
-								["srcname"] = "Ordos",
 							}, -- [8]
 							{
 								["absorb"] = 0,
@@ -13980,16 +13980,16 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1404330738.6331,
 								["amount"] = -45000,
+								["srcname"] = "Ordos",
 								["hp"] = 300165,
 								["spellid"] = 144689,
-								["srcname"] = "Ordos",
 							}, -- [10]
 							{
 								["ts"] = 1404330739.60711,
 								["amount"] = -45000,
+								["srcname"] = "Ordos",
 								["hp"] = 255165,
 								["spellid"] = 144689,
-								["srcname"] = "Ordos",
 							}, -- [11]
 							{
 								["absorb"] = 0,
@@ -14002,23 +14002,23 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1404330740.72713,
 								["amount"] = -50000,
+								["srcname"] = "Ordos",
 								["hp"] = 229408,
 								["spellid"] = 144689,
-								["srcname"] = "Ordos",
 							}, -- [13]
 							{
 								["ts"] = 1404330741.67114,
 								["amount"] = -50000,
+								["srcname"] = "Ordos",
 								["hp"] = 179408,
 								["spellid"] = 144689,
-								["srcname"] = "Ordos",
 							}, -- [14]
 							{
 								["ts"] = 1404330742.74115,
 								["amount"] = -50000,
+								["srcname"] = "Ordos",
 								["hp"] = 129408,
 								["spellid"] = 144689,
-								["srcname"] = "Ordos",
 							}, -- [15]
 							["pos"] = 4,
 						},
@@ -15285,17 +15285,17 @@ SkadaPerCharDB = {
 						["name"] = "spores",
 						["amount"] = 12826,
 					},
+					["0xF142009619010C44"] = {
+						["shielding"] = 0,
+						["class"] = "WARRIOR",
+						["name"] = "spores",
+						["amount"] = 1524,
+					},
 					["0x0200000006077B8C"] = {
 						["shielding"] = 0,
 						["class"] = "DEATHKNIGHT",
 						["name"] = "Datku-ShatteredHand",
 						["amount"] = 337909,
-					},
-					["0xF142009619010A36"] = {
-						["shielding"] = 0,
-						["class"] = "WARRIOR",
-						["name"] = "spores",
-						["amount"] = 23664,
 					},
 					["0xF130EE80002AE64C"] = {
 						["shielding"] = 0,
@@ -15321,11 +15321,11 @@ SkadaPerCharDB = {
 						["name"] = "Restoslap-Shandris",
 						["amount"] = 281471,
 					},
-					["0xF142009619010C44"] = {
+					["0xF142009619010A36"] = {
 						["shielding"] = 0,
 						["class"] = "WARRIOR",
 						["name"] = "spores",
-						["amount"] = 1524,
+						["amount"] = 23664,
 					},
 					["0x0300000008BF2542"] = {
 						["shielding"] = 0,
@@ -15455,19 +15455,19 @@ SkadaPerCharDB = {
 						["auratype"] = "BUFF",
 						["uptime"] = 15,
 					},
-					["Call of Dominance"] = {
-						["name"] = "Call of Dominance",
-						["active"] = 0,
-						["id"] = 126683,
-						["auratype"] = "BUFF",
-						["uptime"] = 20,
-					},
 					["Innervate"] = {
 						["name"] = "Innervate",
 						["active"] = 0,
 						["id"] = 29166,
 						["auratype"] = "BUFF",
 						["uptime"] = 10,
+					},
+					["Rejuvenation"] = {
+						["name"] = "Rejuvenation",
+						["active"] = 0,
+						["id"] = 774,
+						["auratype"] = "BUFF",
+						["uptime"] = 133,
 					},
 					["Displacer Beast"] = {
 						["name"] = "Displacer Beast",
@@ -15497,12 +15497,12 @@ SkadaPerCharDB = {
 						["auratype"] = "BUFF",
 						["uptime"] = 12,
 					},
-					["Rejuvenation"] = {
-						["name"] = "Rejuvenation",
+					["Call of Dominance"] = {
+						["name"] = "Call of Dominance",
 						["active"] = 0,
-						["id"] = 774,
+						["id"] = 126683,
 						["auratype"] = "BUFF",
-						["uptime"] = 133,
+						["uptime"] = 20,
 					},
 					["Incarnation: Tree of Life"] = {
 						["name"] = "Incarnation: Tree of Life",
@@ -16486,17 +16486,17 @@ SkadaPerCharDB = {
 						["overhealing"] = 997234,
 						["hits"] = 31,
 					},
-					["Uplift"] = {
+					["Mist Wave"] = {
 						["shielding"] = 0,
-						["id"] = 116670,
-						["healing"] = 1544642,
+						["id"] = 149112,
+						["healing"] = 623293,
 						["min"] = 0,
-						["name"] = "Uplift",
+						["name"] = "Mist Wave",
 						["absorbed"] = 0,
-						["critical"] = 28,
-						["max"] = 93002,
-						["overhealing"] = 2836332,
-						["hits"] = 73,
+						["critical"] = 6,
+						["max"] = 61183,
+						["overhealing"] = 181245,
+						["hits"] = 26,
 					},
 					["Renewing Mist"] = {
 						["shielding"] = 0,
@@ -16570,17 +16570,17 @@ SkadaPerCharDB = {
 						["overhealing"] = 487895,
 						["hits"] = 3,
 					},
-					["Spirit of Chi-Ji"] = {
+					["Uplift"] = {
 						["shielding"] = 0,
-						["id"] = 148009,
-						["healing"] = 690147,
+						["id"] = 116670,
+						["healing"] = 1544642,
 						["min"] = 0,
-						["name"] = "Spirit of Chi-Ji",
+						["name"] = "Uplift",
 						["absorbed"] = 0,
-						["critical"] = 0,
-						["max"] = 148631,
-						["overhealing"] = 26083,
-						["hits"] = 87,
+						["critical"] = 28,
+						["max"] = 93002,
+						["overhealing"] = 2836332,
+						["hits"] = 73,
 					},
 					["Yu'lon's Barrier"] = {
 						["shielding"] = 619338.95703125,
@@ -16594,17 +16594,17 @@ SkadaPerCharDB = {
 						["overhealing"] = 0,
 						["hits"] = 21,
 					},
-					["Mist Wave"] = {
+					["Spirit of Chi-Ji"] = {
 						["shielding"] = 0,
-						["id"] = 149112,
-						["healing"] = 623293,
+						["id"] = 148009,
+						["healing"] = 690147,
 						["min"] = 0,
-						["name"] = "Mist Wave",
+						["name"] = "Spirit of Chi-Ji",
 						["absorbed"] = 0,
-						["critical"] = 6,
-						["max"] = 61183,
-						["overhealing"] = 181245,
-						["hits"] = 26,
+						["critical"] = 0,
+						["max"] = 148631,
+						["overhealing"] = 26083,
+						["hits"] = 87,
 					},
 				},
 				["shielding"] = 987732.39453125,
@@ -17143,17 +17143,17 @@ SkadaPerCharDB = {
 				["overhealing"] = 44885478,
 				["name"] = "Restoslap",
 				["healingspells"] = {
-					["Healing Surge"] = {
+					["Healing Wave"] = {
 						["shielding"] = 0,
-						["id"] = 8004,
-						["healing"] = 707226,
+						["id"] = 331,
+						["healing"] = 0,
 						["min"] = 0,
-						["name"] = "Healing Surge",
+						["name"] = "Healing Wave",
 						["absorbed"] = 0,
-						["critical"] = 4,
-						["max"] = 138590,
-						["overhealing"] = 520174,
-						["hits"] = 8,
+						["critical"] = 0,
+						["max"] = 0,
+						["overhealing"] = 100814,
+						["hits"] = 1,
 					},
 					["Earth Shield"] = {
 						["shielding"] = 0,
@@ -17179,29 +17179,29 @@ SkadaPerCharDB = {
 						["overhealing"] = 1121280,
 						["hits"] = 104,
 					},
-					["Cleave"] = {
+					["Healing Surge"] = {
 						["shielding"] = 0,
-						["id"] = 148235,
-						["healing"] = 1931558,
+						["id"] = 8004,
+						["healing"] = 707226,
 						["min"] = 0,
-						["name"] = "Cleave",
+						["name"] = "Healing Surge",
 						["absorbed"] = 0,
-						["critical"] = 0,
-						["max"] = 157006,
-						["overhealing"] = 6789171,
-						["hits"] = 229,
+						["critical"] = 4,
+						["max"] = 138590,
+						["overhealing"] = 520174,
+						["hits"] = 8,
 					},
-					["Glyph of Healing Wave"] = {
+					["Spirit Link Totem: Spirit Link"] = {
 						["shielding"] = 0,
-						["id"] = 55533,
-						["healing"] = 20163,
-						["min"] = 20163,
-						["name"] = "Glyph of Healing Wave",
+						["id"] = 98021,
+						["healing"] = 542408,
+						["min"] = 991,
+						["name"] = "Spirit Link Totem: Spirit Link",
 						["absorbed"] = 0,
 						["critical"] = 0,
-						["max"] = 20163,
-						["overhealing"] = 0,
-						["hits"] = 1,
+						["max"] = 67195,
+						["overhealing"] = 2619,
+						["hits"] = 45,
 					},
 					["Earthliving"] = {
 						["shielding"] = 0,
@@ -17239,17 +17239,17 @@ SkadaPerCharDB = {
 						["overhealing"] = 13007944,
 						["hits"] = 629,
 					},
-					["Riptide"] = {
+					["Glyph of Healing Wave"] = {
 						["shielding"] = 0,
-						["id"] = 61295,
-						["healing"] = 446021,
-						["min"] = 0,
-						["name"] = "Riptide",
+						["id"] = 55533,
+						["healing"] = 20163,
+						["min"] = 20163,
+						["name"] = "Glyph of Healing Wave",
 						["absorbed"] = 0,
-						["critical"] = 18,
-						["max"] = 66006,
-						["overhealing"] = 748461,
-						["hits"] = 59,
+						["critical"] = 0,
+						["max"] = 20163,
+						["overhealing"] = 0,
+						["hits"] = 1,
 					},
 					["Restorative Mists"] = {
 						["shielding"] = 0,
@@ -17287,17 +17287,17 @@ SkadaPerCharDB = {
 						["overhealing"] = 13946778,
 						["hits"] = 312,
 					},
-					["Spirit Link Totem: Spirit Link"] = {
+					["Riptide"] = {
 						["shielding"] = 0,
-						["id"] = 98021,
-						["healing"] = 542408,
-						["min"] = 991,
-						["name"] = "Spirit Link Totem: Spirit Link",
+						["id"] = 61295,
+						["healing"] = 446021,
+						["min"] = 0,
+						["name"] = "Riptide",
 						["absorbed"] = 0,
-						["critical"] = 0,
-						["max"] = 67195,
-						["overhealing"] = 2619,
-						["hits"] = 45,
+						["critical"] = 18,
+						["max"] = 66006,
+						["overhealing"] = 748461,
+						["hits"] = 59,
 					},
 					["Healing Stream Totem"] = {
 						["shielding"] = 0,
@@ -17323,17 +17323,17 @@ SkadaPerCharDB = {
 						["overhealing"] = 22053,
 						["hits"] = 1,
 					},
-					["Healing Wave"] = {
+					["Cleave"] = {
 						["shielding"] = 0,
-						["id"] = 331,
-						["healing"] = 0,
+						["id"] = 148235,
+						["healing"] = 1931558,
 						["min"] = 0,
-						["name"] = "Healing Wave",
+						["name"] = "Cleave",
 						["absorbed"] = 0,
 						["critical"] = 0,
-						["max"] = 0,
-						["overhealing"] = 100814,
-						["hits"] = 1,
+						["max"] = 157006,
+						["overhealing"] = 6789171,
+						["hits"] = 229,
 					},
 				},
 				["shielding"] = 0,
@@ -17930,9 +17930,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1404330771.522,
 						["amount"] = -61500,
+						["spellid"] = 144699,
 						["srcname"] = "Ancient Flame",
 						["hp"] = 774071,
-						["spellid"] = 144699,
 					}, -- [3]
 					{
 						["absorb"] = 0,
@@ -17999,9 +17999,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1404330770.236,
 						["amount"] = -255522,
+						["srcname"] = "Ordos",
 						["hp"] = 1054073,
 						["spellid"] = 88163,
-						["srcname"] = "Ordos",
 					}, -- [12]
 					{
 						["absorb"] = 0,
@@ -19970,16 +19970,16 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1404330767.846,
 						["amount"] = -50000,
+						["srcname"] = "Ordos",
 						["hp"] = 451363,
 						["spellid"] = 144689,
-						["srcname"] = "Ordos",
 					}, -- [1]
 					{
 						["ts"] = 1404330767.952,
 						["amount"] = -69000,
+						["srcname"] = "Xtaszi-Kil'jaeden",
 						["hp"] = 382363,
 						["spellid"] = 144690,
-						["srcname"] = "Xtaszi-Kil'jaeden",
 					}, -- [2]
 					{
 						["absorb"] = 0,
@@ -20032,9 +20032,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1404330764.897,
 						["amount"] = -50000,
+						["srcname"] = "Ordos",
 						["hp"] = 554565,
 						["spellid"] = 144689,
-						["srcname"] = "Ordos",
 					}, -- [9]
 					{
 						["absorb"] = 0,
@@ -20055,9 +20055,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1404330765.885,
 						["amount"] = -50000,
+						["srcname"] = "Ordos",
 						["hp"] = 542186,
 						["spellid"] = 144689,
-						["srcname"] = "Ordos",
 					}, -- [12]
 					{
 						["absorb"] = 0,
@@ -20070,9 +20070,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1404330766.956,
 						["amount"] = -50000,
+						["srcname"] = "Ordos",
 						["hp"] = 496871,
 						["spellid"] = 144689,
-						["srcname"] = "Ordos",
 					}, -- [14]
 					{
 						["absorb"] = 0,
@@ -21287,9 +21287,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1404330766.956,
 						["amount"] = -45000,
+						["srcname"] = "Ordos",
 						["hp"] = 492686,
 						["spellid"] = 144689,
-						["srcname"] = "Ordos",
 					}, -- [1]
 					{
 						["absorb"] = 0,
@@ -21318,16 +21318,16 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1404330767.846,
 						["amount"] = -45000,
+						["srcname"] = "Ordos",
 						["hp"] = 469021,
 						["spellid"] = 144689,
-						["srcname"] = "Ordos",
 					}, -- [5]
 					{
 						["ts"] = 1404330767.952,
 						["amount"] = -74112,
+						["srcname"] = "Zobabow-Kil'jaeden",
 						["hp"] = 394909,
 						["spellid"] = 144690,
-						["srcname"] = "Zobabow-Kil'jaeden",
 					}, -- [6]
 					{
 						["absorb"] = 0,
@@ -21356,9 +21356,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1404330764.897,
 						["amount"] = -45000,
+						["srcname"] = "Ordos",
 						["hp"] = 541042,
 						["spellid"] = 144689,
-						["srcname"] = "Ordos",
 					}, -- [10]
 					{
 						["absorb"] = 0,
@@ -21371,9 +21371,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1404330765.885,
 						["amount"] = -45000,
+						["srcname"] = "Ordos",
 						["hp"] = 500919,
 						["spellid"] = 144689,
-						["srcname"] = "Ordos",
 					}, -- [12]
 					{
 						["ts"] = 1404330766.103,
@@ -23796,17 +23796,17 @@ SkadaPerCharDB = {
 						["overhealing"] = 2098269,
 						["hits"] = 6,
 					},
-					["Efflorescence"] = {
+					["Rejuvenation"] = {
 						["shielding"] = 0,
-						["id"] = 81269,
-						["healing"] = 3135186,
+						["id"] = 774,
+						["healing"] = 1180410,
 						["min"] = 0,
-						["name"] = "Efflorescence",
+						["name"] = "Rejuvenation",
 						["absorbed"] = 0,
-						["critical"] = 74,
-						["max"] = 56699,
-						["overhealing"] = 5354270,
-						["hits"] = 358,
+						["critical"] = 40,
+						["max"] = 71646,
+						["overhealing"] = 4628259,
+						["hits"] = 144,
 					},
 					["Tranquility"] = {
 						["shielding"] = 0,
@@ -23820,18 +23820,6 @@ SkadaPerCharDB = {
 						["overhealing"] = 468145,
 						["hits"] = 80,
 					},
-					["Rejuvenation"] = {
-						["shielding"] = 0,
-						["id"] = 774,
-						["healing"] = 1180410,
-						["min"] = 0,
-						["name"] = "Rejuvenation",
-						["absorbed"] = 0,
-						["critical"] = 40,
-						["max"] = 71646,
-						["overhealing"] = 4628259,
-						["hits"] = 144,
-					},
 					["Spirit of Chi-Ji"] = {
 						["shielding"] = 0,
 						["id"] = 148009,
@@ -23843,6 +23831,18 @@ SkadaPerCharDB = {
 						["max"] = 40069,
 						["overhealing"] = 41177,
 						["hits"] = 61,
+					},
+					["Efflorescence"] = {
+						["shielding"] = 0,
+						["id"] = 81269,
+						["healing"] = 3135186,
+						["min"] = 0,
+						["name"] = "Efflorescence",
+						["absorbed"] = 0,
+						["critical"] = 74,
+						["max"] = 56699,
+						["overhealing"] = 5354270,
+						["hits"] = 358,
 					},
 					["Wild Growth"] = {
 						["shielding"] = 0,
@@ -24174,6 +24174,13 @@ SkadaPerCharDB = {
 						["auratype"] = "BUFF",
 						["uptime"] = 40,
 					},
+					["Rejuvenation"] = {
+						["name"] = "Rejuvenation",
+						["active"] = 0,
+						["id"] = 774,
+						["auratype"] = "BUFF",
+						["uptime"] = 61,
+					},
 					["Wild Mushroom: Efflorescence"] = {
 						["name"] = "Wild Mushroom: Efflorescence",
 						["active"] = 2,
@@ -24187,13 +24194,6 @@ SkadaPerCharDB = {
 						["id"] = 146200,
 						["auratype"] = "BUFF",
 						["uptime"] = 10,
-					},
-					["Rejuvenation"] = {
-						["name"] = "Rejuvenation",
-						["active"] = 0,
-						["id"] = 774,
-						["auratype"] = "BUFF",
-						["uptime"] = 61,
 					},
 					["Temporal Displacement"] = {
 						["name"] = "Temporal Displacement",
@@ -25029,9 +25029,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1404330765.885,
 						["amount"] = -50000,
+						["srcname"] = "Ordos",
 						["hp"] = 307876,
 						["spellid"] = 144689,
-						["srcname"] = "Ordos",
 					}, -- [9]
 					{
 						["absorb"] = 0,
@@ -25052,9 +25052,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1404330766.956,
 						["amount"] = -50000,
+						["srcname"] = "Ordos",
 						["hp"] = 301106,
 						["spellid"] = 144689,
-						["srcname"] = "Ordos",
 					}, -- [12]
 					{
 						["absorb"] = 0,
@@ -25067,16 +25067,16 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1404330767.846,
 						["amount"] = -50000,
+						["srcname"] = "Ordos",
 						["hp"] = 257020,
 						["spellid"] = 144689,
-						["srcname"] = "Ordos",
 					}, -- [14]
 					{
 						["ts"] = 1404330767.952,
 						["amount"] = -86578,
+						["srcname"] = "Rasspoutine-Arthas",
 						["hp"] = 170442,
 						["spellid"] = 144690,
-						["srcname"] = "Rasspoutine-Arthas",
 					}, -- [15]
 					["pos"] = 9,
 				},
@@ -25156,12 +25156,12 @@ SkadaPerCharDB = {
 						["auratype"] = "DEBUFF",
 						["uptime"] = 28,
 					},
-					["Toxic Power"] = {
-						["name"] = "Toxic Power",
-						["active"] = 1,
-						["id"] = 148906,
+					["Invoker's Energy"] = {
+						["name"] = "Invoker's Energy",
+						["active"] = 0,
+						["id"] = 116257,
 						["auratype"] = "BUFF",
-						["uptime"] = 61,
+						["uptime"] = 179,
 					},
 					["Breath of Many Minds"] = {
 						["name"] = "Breath of Many Minds",
@@ -25170,19 +25170,19 @@ SkadaPerCharDB = {
 						["auratype"] = "BUFF",
 						["uptime"] = 28,
 					},
-					["Invoker's Energy"] = {
-						["name"] = "Invoker's Energy",
-						["active"] = 0,
-						["id"] = 116257,
-						["auratype"] = "BUFF",
-						["uptime"] = 179,
-					},
 					["Nether Tempest"] = {
 						["name"] = "Nether Tempest",
 						["active"] = 0,
 						["id"] = 114923,
 						["auratype"] = "DEBUFF",
 						["uptime"] = 185,
+					},
+					["Toxic Power"] = {
+						["name"] = "Toxic Power",
+						["active"] = 1,
+						["id"] = 148906,
+						["auratype"] = "BUFF",
+						["uptime"] = 61,
 					},
 					["Cauterize"] = {
 						["name"] = "Cauterize",
@@ -26491,9 +26491,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1404330668.65104,
 								["amount"] = -83250,
+								["srcname"] = "Ancient Flame",
 								["hp"] = 530341,
 								["spellid"] = 144699,
-								["srcname"] = "Ancient Flame",
 							}, -- [4]
 							{
 								["absorb"] = 0,
@@ -26514,9 +26514,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1404330668.98807,
 								["amount"] = -712500,
+								["srcname"] = "Ordos",
 								["hp"] = 1,
 								["spellid"] = 144688,
-								["srcname"] = "Ordos",
 							}, -- [7]
 							{
 								["spellname"] = "Drixis dies",
@@ -26525,10 +26525,10 @@ SkadaPerCharDB = {
 								["spellid"] = 41220,
 							}, -- [8]
 							{
-								["hp"] = 0,
-								["ts"] = 1404330733.619,
-								["spellid"] = 20484,
 								["srcname"] = "Hannibäl-Arathor",
+								["ts"] = 1404330733.619,
+								["hp"] = 0,
+								["spellid"] = 20484,
 							}, -- [9]
 							{
 								["hp"] = 606698,
@@ -26607,9 +26607,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1404330771.827,
 						["amount"] = -11659,
+						["srcname"] = "Drixis-Cho'gall",
 						["hp"] = 494205,
 						["spellid"] = 49016,
-						["srcname"] = "Drixis-Cho'gall",
 					}, -- [4]
 					{
 						["absorb"] = 0,
@@ -26622,9 +26622,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1404330768.812,
 						["amount"] = -11659,
+						["hp"] = 336950,
 						["srcname"] = "Drixis-Cho'gall",
 						["spellid"] = 49016,
-						["hp"] = 336950,
 					}, -- [6]
 					{
 						["absorb"] = 0,
@@ -26979,14 +26979,14 @@ SkadaPerCharDB = {
 						["max"] = 159627,
 						["damage"] = 2244240,
 					},
-					["Templar's Verdict"] = {
-						["min"] = 105254,
-						["critical"] = 4,
-						["hit"] = 20,
-						["totalhits"] = 24,
-						["id"] = 85256,
-						["max"] = 475390,
-						["damage"] = 3960901,
+					["Crusader Strike"] = {
+						["min"] = 50061,
+						["critical"] = 10,
+						["hit"] = 27,
+						["totalhits"] = 37,
+						["id"] = 35395,
+						["max"] = 191959,
+						["damage"] = 2858639,
 					},
 					["Seal of Justice"] = {
 						["min"] = 14231,
@@ -26997,14 +26997,13 @@ SkadaPerCharDB = {
 						["max"] = 55263,
 						["damage"] = 3714733,
 					},
-					["Crusader Strike"] = {
-						["min"] = 50061,
-						["critical"] = 10,
-						["hit"] = 27,
-						["totalhits"] = 37,
-						["id"] = 35395,
-						["max"] = 191959,
-						["damage"] = 2858639,
+					["Hand of Light"] = {
+						["min"] = 30974,
+						["hit"] = 81,
+						["totalhits"] = 81,
+						["id"] = 96172,
+						["max"] = 294137,
+						["damage"] = 6142034,
 					},
 					["Execution Sentence"] = {
 						["min"] = 10729,
@@ -27015,13 +27014,14 @@ SkadaPerCharDB = {
 						["max"] = 234844,
 						["damage"] = 1353651,
 					},
-					["Hand of Light"] = {
-						["min"] = 30974,
-						["hit"] = 81,
-						["totalhits"] = 81,
-						["id"] = 96172,
-						["max"] = 294137,
-						["damage"] = 6142034,
+					["Templar's Verdict"] = {
+						["min"] = 105254,
+						["critical"] = 4,
+						["hit"] = 20,
+						["totalhits"] = 24,
+						["id"] = 85256,
+						["max"] = 475390,
+						["damage"] = 3960901,
 					},
 					["Guardian of Ancient Kings: Attack"] = {
 						["min"] = 33055,
@@ -27515,9 +27515,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1404330767.952,
 						["amount"] = -86577,
+						["srcname"] = "Rasspoutine-Arthas",
 						["hp"] = 445648,
 						["spellid"] = 144690,
-						["srcname"] = "Rasspoutine-Arthas",
 					}, -- [3]
 					{
 						["absorb"] = 0,
@@ -27761,17 +27761,17 @@ SkadaPerCharDB = {
 						["name"] = "Xuen",
 						["amount"] = 0,
 					},
-					["0x0380000006D8BCCB"] = {
-						["shielding"] = 0,
-						["class"] = "PALADIN",
-						["name"] = "Vaycin-Hyjal",
-						["amount"] = 8431,
-					},
 					["0x0200000006077B8C"] = {
 						["shielding"] = 0,
 						["class"] = "DEATHKNIGHT",
 						["name"] = "Datku-ShatteredHand",
 						["amount"] = 0,
+					},
+					["0x0280000006AECF37"] = {
+						["shielding"] = 0,
+						["class"] = "DEATHKNIGHT",
+						["name"] = "Drixis-Cho'gall",
+						["amount"] = 308882,
 					},
 					["0x0180000005448603"] = {
 						["shielding"] = 0,
@@ -27779,11 +27779,11 @@ SkadaPerCharDB = {
 						["name"] = "Moonriver-Dunemaul",
 						["amount"] = 145153,
 					},
-					["0x0280000006AECF37"] = {
+					["0x0380000006D8BCCB"] = {
 						["shielding"] = 0,
-						["class"] = "DEATHKNIGHT",
-						["name"] = "Drixis-Cho'gall",
-						["amount"] = 308882,
+						["class"] = "PALADIN",
+						["name"] = "Vaycin-Hyjal",
+						["amount"] = 8431,
 					},
 					["0x0300000009122AEE"] = {
 						["shielding"] = 0,
@@ -28554,9 +28554,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1404330553.94105,
 								["amount"] = -454546,
+								["srcname"] = "Ordos",
 								["hp"] = 1,
 								["spellid"] = 144688,
-								["srcname"] = "Ordos",
 							}, -- [5]
 							{
 								["spellname"] = "Brewlee dies",
