@@ -1,19 +1,20 @@
 
 TradeSkillMaster_AuctioningDB = {
-	["factionrealm"] = {
-		["Alliance - Skywall"] = {
-			["player"] = {
-				["Noremedy"] = true,
-				["Dalhian"] = true,
-			},
+	["profiles"] = {
+		["Default"] = {
 		},
-		["Horde - Area 52"] = {
-			["player"] = {
-				["Feronaz"] = true,
-				["Gurund"] = true,
-				["Drominus"] = true,
-				["Oldfero"] = true,
+	},
+	["global"] = {
+		["optionsTreeStatus"] = {
+			["groups"] = {
+				["1"] = true,
+				[3] = false,
 			},
+			["scrollvalue"] = 0,
+			["selected"] = 3,
+			["treesizable"] = true,
+			["treewidth"] = 175,
+			["fullwidth"] = 783.0001220703125,
 		},
 	},
 	["profileKeys"] = {
@@ -24,21 +25,20 @@ TradeSkillMaster_AuctioningDB = {
 		["Drominus - Area 52"] = "Default",
 		["Dalhian - Skywall"] = "Default",
 	},
-	["global"] = {
-		["optionsTreeStatus"] = {
-			["groups"] = {
-				["1"] = true,
-				[3] = false,
+	["factionrealm"] = {
+		["Horde - Area 52"] = {
+			["player"] = {
+				["Oldfero"] = true,
+				["Feronaz"] = true,
+				["Drominus"] = true,
+				["Gurund"] = true,
 			},
-			["scrollvalue"] = 0,
-			["fullwidth"] = 783.0001220703125,
-			["treesizable"] = true,
-			["treewidth"] = 175,
-			["selected"] = 3,
 		},
-	},
-	["profiles"] = {
-		["Default"] = {
+		["Alliance - Skywall"] = {
+			["player"] = {
+				["Noremedy"] = true,
+				["Dalhian"] = true,
+			},
 		},
 	},
 }
