@@ -7,8 +7,8 @@ SkadaPerCharDB = {
 			["ccbreaks"] = 0,
 			["time"] = 62,
 			["interrupts"] = 0,
+			["mobdone"] = 168571,
 			["alertDamage"] = 0,
-			["alertCount"] = 0,
 			["damage"] = 1327616,
 			["players"] = {
 				{
@@ -173,9 +173,10 @@ SkadaPerCharDB = {
 							["max"] = 12690,
 						},
 					},
-					["overhealing"] = 191034,
-					["damagetaken"] = 168571,
 					["shielding"] = 0,
+					["damagetaken"] = 168571,
+					["power"] = {
+					},
 					["id"] = "0x0100000004DDB910",
 					["first"] = 1401799051,
 					["healed"] = {
@@ -287,8 +288,7 @@ SkadaPerCharDB = {
 					},
 					["alert"] = {
 					},
-					["power"] = {
-					},
+					["overhealing"] = 191034,
 				}, -- [1]
 			},
 			["deaths"] = 0,
@@ -1607,14 +1607,6 @@ SkadaPerCharDB = {
 							["overhealing"] = 189297,
 							["hits"] = 3,
 						},
-						["Healing Stream Totem"] = {
-							["min"] = 18568,
-							["crits"] = 0,
-							["max"] = 18568,
-							["healing"] = 18568,
-							["overhealing"] = 0,
-							["hits"] = 1,
-						},
 						["Efflorescence"] = {
 							["min"] = 0,
 							["crits"] = 0,
@@ -1630,6 +1622,14 @@ SkadaPerCharDB = {
 							["healing"] = 0,
 							["overhealing"] = 154710,
 							["hits"] = 5,
+						},
+						["Healing Stream Totem"] = {
+							["min"] = 18568,
+							["crits"] = 0,
+							["max"] = 18568,
+							["healing"] = 18568,
+							["overhealing"] = 0,
+							["hits"] = 1,
 						},
 						["Holy Radiance"] = {
 							["min"] = 32135,
@@ -1699,13 +1699,13 @@ SkadaPerCharDB = {
 							["overhealing"] = 0,
 							["hits"] = 4,
 						},
-						["Rejuvenation"] = {
-							["min"] = 0,
-							["crits"] = 3,
-							["max"] = 85948,
-							["healing"] = 337625,
-							["overhealing"] = 87216,
-							["hits"] = 11,
+						["Healing Stream Totem"] = {
+							["min"] = 16880,
+							["crits"] = 0,
+							["max"] = 16880,
+							["healing"] = 16880,
+							["overhealing"] = 0,
+							["hits"] = 1,
 						},
 						["Recuperate"] = {
 							["min"] = 0,
@@ -1715,14 +1715,6 @@ SkadaPerCharDB = {
 							["overhealing"] = 68026,
 							["hits"] = 14,
 						},
-						["Healing Stream Totem"] = {
-							["min"] = 16880,
-							["crits"] = 0,
-							["max"] = 16880,
-							["healing"] = 16880,
-							["overhealing"] = 0,
-							["hits"] = 1,
-						},
 						["Efflorescence"] = {
 							["min"] = 0,
 							["crits"] = 4,
@@ -1730,6 +1722,14 @@ SkadaPerCharDB = {
 							["healing"] = 150606,
 							["overhealing"] = 88490,
 							["hits"] = 10,
+						},
+						["Rejuvenation"] = {
+							["min"] = 0,
+							["crits"] = 3,
+							["max"] = 85948,
+							["healing"] = 337625,
+							["overhealing"] = 87216,
+							["hits"] = 11,
 						},
 						["Atonement"] = {
 							["min"] = 1654,
@@ -3748,6 +3748,14 @@ SkadaPerCharDB = {
 							["overhealing"] = 0,
 							["hits"] = 1,
 						},
+						["Efflorescence"] = {
+							["min"] = 59277,
+							["crits"] = 1,
+							["max"] = 59277,
+							["healing"] = 59277,
+							["overhealing"] = 50238,
+							["hits"] = 1,
+						},
 						["Mend Pet"] = {
 							["min"] = 0,
 							["crits"] = 0,
@@ -3762,14 +3770,6 @@ SkadaPerCharDB = {
 							["max"] = 0,
 							["healing"] = 0,
 							["overhealing"] = 114176,
-							["hits"] = 1,
-						},
-						["Efflorescence"] = {
-							["min"] = 59277,
-							["crits"] = 1,
-							["max"] = 59277,
-							["healing"] = 59277,
-							["overhealing"] = 50238,
 							["hits"] = 1,
 						},
 						["Echo of Light"] = {
@@ -5275,14 +5275,6 @@ SkadaPerCharDB = {
 							["overhealing"] = 630212,
 							["hits"] = 15,
 						},
-						["Beacon of Light"] = {
-							["min"] = 0,
-							["crits"] = 0,
-							["max"] = 29137,
-							["healing"] = 168428,
-							["overhealing"] = 1279607,
-							["hits"] = 107,
-						},
 						["Eternal Flame"] = {
 							["min"] = 0,
 							["crits"] = 13,
@@ -5298,6 +5290,14 @@ SkadaPerCharDB = {
 							["healing"] = 518302,
 							["overhealing"] = 739004,
 							["hits"] = 27,
+						},
+						["Beacon of Light"] = {
+							["min"] = 0,
+							["crits"] = 0,
+							["max"] = 29137,
+							["healing"] = 168428,
+							["overhealing"] = 1279607,
+							["hits"] = 107,
 						},
 						["Holy Shock"] = {
 							["min"] = 0,
@@ -5856,13 +5856,13 @@ SkadaPerCharDB = {
 					["done"] = 0,
 					["htaken"] = 346500,
 					["htakenspell"] = {
-						["Atonement"] = {
-							["min"] = 43483,
+						["Death Strike"] = {
+							["min"] = 0,
 							["crits"] = 0,
-							["max"] = 43483,
-							["healing"] = 43483,
-							["overhealing"] = 0,
-							["hits"] = 1,
+							["max"] = 32451,
+							["healing"] = 32451,
+							["overhealing"] = 55587,
+							["hits"] = 2,
 						},
 						["Multistrike"] = {
 							["min"] = 0,
@@ -5872,13 +5872,13 @@ SkadaPerCharDB = {
 							["overhealing"] = 7000,
 							["hits"] = 2,
 						},
-						["Death Strike"] = {
+						["Wild Growth"] = {
 							["min"] = 0,
-							["crits"] = 0,
-							["max"] = 32451,
-							["healing"] = 32451,
-							["overhealing"] = 55587,
-							["hits"] = 2,
+							["crits"] = 2,
+							["max"] = 7118,
+							["healing"] = 7118,
+							["overhealing"] = 61899,
+							["hits"] = 8,
 						},
 						["Unholy Strength"] = {
 							["min"] = 15463,
@@ -5904,13 +5904,13 @@ SkadaPerCharDB = {
 							["overhealing"] = 12254,
 							["hits"] = 1,
 						},
-						["Wild Growth"] = {
-							["min"] = 0,
-							["crits"] = 2,
-							["max"] = 7118,
-							["healing"] = 7118,
-							["overhealing"] = 61899,
-							["hits"] = 8,
+						["Atonement"] = {
+							["min"] = 43483,
+							["crits"] = 0,
+							["max"] = 43483,
+							["healing"] = 43483,
+							["overhealing"] = 0,
+							["hits"] = 1,
 						},
 						["Echo of Light"] = {
 							["min"] = 16317,
@@ -5948,11 +5948,11 @@ SkadaPerCharDB = {
 							["overhealing"] = 0,
 							["hits"] = 1,
 						},
-						["Holy Radiance"] = {
-							["min"] = 31405,
+						["Healing Tide"] = {
+							["min"] = 29620,
 							["crits"] = 0,
-							["max"] = 31405,
-							["healing"] = 31405,
+							["max"] = 29620,
+							["healing"] = 29620,
 							["overhealing"] = 0,
 							["hits"] = 1,
 						},
@@ -5964,13 +5964,13 @@ SkadaPerCharDB = {
 							["overhealing"] = 73541,
 							["hits"] = 6,
 						},
-						["Healing Tide"] = {
-							["min"] = 29620,
-							["crits"] = 0,
-							["max"] = 29620,
-							["healing"] = 29620,
-							["overhealing"] = 0,
-							["hits"] = 1,
+						["Wild Growth"] = {
+							["min"] = 0,
+							["crits"] = 2,
+							["max"] = 13196,
+							["healing"] = 44594,
+							["overhealing"] = 16700,
+							["hits"] = 8,
 						},
 						["Efflorescence"] = {
 							["min"] = 0,
@@ -5980,13 +5980,13 @@ SkadaPerCharDB = {
 							["overhealing"] = 34245,
 							["hits"] = 1,
 						},
-						["Wild Growth"] = {
-							["min"] = 0,
-							["crits"] = 2,
-							["max"] = 13196,
-							["healing"] = 44594,
-							["overhealing"] = 16700,
-							["hits"] = 8,
+						["Holy Radiance"] = {
+							["min"] = 31405,
+							["crits"] = 0,
+							["max"] = 31405,
+							["healing"] = 31405,
+							["overhealing"] = 0,
+							["hits"] = 1,
 						},
 						["Spirit Bond"] = {
 							["min"] = 22066,
@@ -6020,11 +6020,11 @@ SkadaPerCharDB = {
 				},
 			},
 			["mobtaken"] = 1327616,
-			["mobdone"] = 168571,
-			["healing"] = 3704,
 			["starttime"] = 1401799051,
+			["healing"] = 3704,
 			["power"] = {
 			},
+			["alertCount"] = 0,
 			["damagetaken"] = 168571,
 			["shielding"] = 0,
 			["name"] = "Niuzao",
@@ -6040,8 +6040,8 @@ SkadaPerCharDB = {
 			["ccbreaks"] = 0,
 			["time"] = 23,
 			["interrupts"] = 0,
+			["mobdone"] = 220420,
 			["alertDamage"] = 0,
-			["alertCount"] = 0,
 			["damage"] = 1119145,
 			["players"] = {
 				{
@@ -6058,26 +6058,26 @@ SkadaPerCharDB = {
 					["alertDamage"] = 0,
 					["damage"] = 1119145,
 					["damagespells"] = {
-						["Piercing Song"] = {
+						["Frostfire Bolt"] = {
 							["DODGE"] = 0,
 							["REFLECT"] = 0,
 							["crushing"] = 0,
 							["IMMUNE"] = 0,
 							["glancing"] = 0,
-							["totalhits"] = 2,
+							["totalhits"] = 1,
 							["MISS"] = 0,
-							["damage"] = 199853,
+							["damage"] = 107032,
 							["DEFLECT"] = 0,
-							["id"] = 147170,
-							["hit"] = 2,
-							["min"] = 95402,
+							["id"] = 44614,
+							["hit"] = 0,
+							["min"] = 107032,
 							["PARRY"] = 0,
-							["critical"] = 0,
+							["critical"] = 1,
 							["ABSORB"] = 0,
 							["BLOCK"] = 0,
 							["RESIST"] = 0,
 							["EVADE"] = 0,
-							["max"] = 104451,
+							["max"] = 107032,
 						},
 						["Icicle"] = {
 							["DODGE"] = 0,
@@ -6121,26 +6121,26 @@ SkadaPerCharDB = {
 							["EVADE"] = 0,
 							["max"] = 24591,
 						},
-						["Ice Lance"] = {
+						["Piercing Song"] = {
 							["DODGE"] = 0,
 							["REFLECT"] = 0,
 							["crushing"] = 0,
 							["IMMUNE"] = 0,
 							["glancing"] = 0,
-							["totalhits"] = 8,
+							["totalhits"] = 2,
 							["MISS"] = 0,
-							["damage"] = 250324,
+							["damage"] = 199853,
 							["DEFLECT"] = 0,
-							["id"] = 30455,
-							["hit"] = 6,
-							["min"] = 10498,
+							["id"] = 147170,
+							["hit"] = 2,
+							["min"] = 95402,
 							["PARRY"] = 0,
-							["critical"] = 2,
+							["critical"] = 0,
 							["ABSORB"] = 0,
 							["BLOCK"] = 0,
 							["RESIST"] = 0,
 							["EVADE"] = 0,
-							["max"] = 143145,
+							["max"] = 104451,
 						},
 						["Frostbolt"] = {
 							["DODGE"] = 0,
@@ -6184,31 +6184,32 @@ SkadaPerCharDB = {
 							["EVADE"] = 0,
 							["max"] = 113116,
 						},
-						["Frostfire Bolt"] = {
+						["Ice Lance"] = {
 							["DODGE"] = 0,
 							["REFLECT"] = 0,
 							["crushing"] = 0,
 							["IMMUNE"] = 0,
 							["glancing"] = 0,
-							["totalhits"] = 1,
+							["totalhits"] = 8,
 							["MISS"] = 0,
-							["damage"] = 107032,
+							["damage"] = 250324,
 							["DEFLECT"] = 0,
-							["id"] = 44614,
-							["hit"] = 0,
-							["min"] = 107032,
+							["id"] = 30455,
+							["hit"] = 6,
+							["min"] = 10498,
 							["PARRY"] = 0,
-							["critical"] = 1,
+							["critical"] = 2,
 							["ABSORB"] = 0,
 							["BLOCK"] = 0,
 							["RESIST"] = 0,
 							["EVADE"] = 0,
-							["max"] = 107032,
+							["max"] = 143145,
 						},
 					},
-					["overhealing"] = 0,
-					["damagetaken"] = 220420,
 					["shielding"] = 0,
+					["damagetaken"] = 220420,
+					["power"] = {
+					},
 					["id"] = "0x0100000004DDB910",
 					["first"] = 1401798985,
 					["healed"] = {
@@ -6320,8 +6321,7 @@ SkadaPerCharDB = {
 					},
 					["alert"] = {
 					},
-					["power"] = {
-					},
+					["overhealing"] = 0,
 				}, -- [1]
 			},
 			["deaths"] = 0,
@@ -6345,11 +6345,11 @@ SkadaPerCharDB = {
 				},
 			},
 			["mobtaken"] = 1119145,
-			["mobdone"] = 220420,
-			["healing"] = 60277,
 			["starttime"] = 1401798983,
+			["healing"] = 60277,
 			["power"] = {
 			},
+			["alertCount"] = 0,
 			["damagetaken"] = 220420,
 			["shielding"] = 0,
 			["name"] = "Brilliant Windfeather",
@@ -6365,8 +6365,8 @@ SkadaPerCharDB = {
 			["ccbreaks"] = 0,
 			["time"] = 69,
 			["interrupts"] = 0,
+			["mobdone"] = 473481,
 			["alertDamage"] = 0,
-			["alertCount"] = 0,
 			["damage"] = 3525384,
 			["players"] = {
 				{
@@ -6617,9 +6617,10 @@ SkadaPerCharDB = {
 							["max"] = 14194,
 						},
 					},
-					["overhealing"] = 60277,
-					["damagetaken"] = 473481,
 					["shielding"] = 108975.046875,
+					["damagetaken"] = 473481,
+					["power"] = {
+					},
 					["id"] = "0x0100000004DDB910",
 					["first"] = 1401798893,
 					["healed"] = {
@@ -6846,8 +6847,7 @@ SkadaPerCharDB = {
 					},
 					["alert"] = {
 					},
-					["power"] = {
-					},
+					["overhealing"] = 60277,
 				}, -- [1]
 			},
 			["deaths"] = 0,
@@ -7005,11 +7005,11 @@ SkadaPerCharDB = {
 				},
 			},
 			["mobtaken"] = 3525384,
-			["mobdone"] = 473481,
-			["healing"] = 445102.046875,
 			["starttime"] = 1401798893,
+			["healing"] = 445102.046875,
 			["power"] = {
 			},
+			["alertCount"] = 0,
 			["damagetaken"] = 473481,
 			["shielding"] = 108975.046875,
 			["name"] = "Windfeather Chick",
@@ -7025,8 +7025,8 @@ SkadaPerCharDB = {
 			["ccbreaks"] = 0,
 			["time"] = 23,
 			["interrupts"] = 0,
+			["mobdone"] = 92429,
 			["alertDamage"] = 0,
-			["alertCount"] = 0,
 			["damage"] = 1517368,
 			["players"] = {
 				{
@@ -7172,9 +7172,10 @@ SkadaPerCharDB = {
 							["max"] = 28301,
 						},
 					},
-					["overhealing"] = 80030,
-					["damagetaken"] = 92429,
 					["shielding"] = 0,
+					["damagetaken"] = 92429,
+					["power"] = {
+					},
 					["id"] = "0x0100000004DDB910",
 					["first"] = 1401798601,
 					["healed"] = {
@@ -7272,8 +7273,7 @@ SkadaPerCharDB = {
 					},
 					["alert"] = {
 					},
-					["power"] = {
-					},
+					["overhealing"] = 80030,
 				}, -- [1]
 			},
 			["deaths"] = 0,
@@ -7572,11 +7572,11 @@ SkadaPerCharDB = {
 				},
 			},
 			["mobtaken"] = 1517368,
-			["mobdone"] = 92429,
-			["healing"] = 0,
 			["starttime"] = 1401798601,
+			["healing"] = 0,
 			["power"] = {
 			},
+			["alertCount"] = 0,
 			["damagetaken"] = 92429,
 			["shielding"] = 0,
 			["name"] = "Archiereus of Flame",
@@ -7592,8 +7592,8 @@ SkadaPerCharDB = {
 			["ccbreaks"] = 0,
 			["time"] = 23,
 			["interrupts"] = 0,
+			["mobdone"] = 422105,
 			["alertDamage"] = 0,
-			["alertCount"] = 0,
 			["damage"] = 1300511,
 			["players"] = {
 				{
@@ -7758,9 +7758,10 @@ SkadaPerCharDB = {
 							["max"] = 29135,
 						},
 					},
-					["overhealing"] = 29476,
-					["damagetaken"] = 422105,
 					["shielding"] = 81126.984375,
+					["damagetaken"] = 422105,
+					["power"] = {
+					},
 					["id"] = "0x0100000004DDB910",
 					["first"] = 1401798504,
 					["healed"] = {
@@ -7905,8 +7906,7 @@ SkadaPerCharDB = {
 					},
 					["alert"] = {
 					},
-					["power"] = {
-					},
+					["overhealing"] = 29476,
 				}, -- [1]
 			},
 			["deaths"] = 0,
@@ -7930,11 +7930,11 @@ SkadaPerCharDB = {
 				},
 			},
 			["mobtaken"] = 1300511,
-			["mobdone"] = 422105,
-			["healing"] = 172204.984375,
 			["starttime"] = 1401798504,
+			["healing"] = 172204.984375,
 			["power"] = {
 			},
+			["alertCount"] = 0,
 			["damagetaken"] = 422105,
 			["shielding"] = 81126.984375,
 			["name"] = "Foreboding Flame",
@@ -7950,8 +7950,8 @@ SkadaPerCharDB = {
 			["ccbreaks"] = 0,
 			["time"] = 23,
 			["interrupts"] = 0,
+			["mobdone"] = 102857,
 			["alertDamage"] = 0,
-			["alertCount"] = 0,
 			["damage"] = 1105133,
 			["players"] = {
 				{
@@ -8116,9 +8116,10 @@ SkadaPerCharDB = {
 							["max"] = 16557,
 						},
 					},
-					["overhealing"] = 124172,
-					["damagetaken"] = 102857,
 					["shielding"] = 0,
+					["damagetaken"] = 102857,
+					["power"] = {
+					},
 					["id"] = "0x0100000004DDB910",
 					["first"] = 1401798450,
 					["healed"] = {
@@ -8223,8 +8224,7 @@ SkadaPerCharDB = {
 					},
 					["alert"] = {
 					},
-					["power"] = {
-					},
+					["overhealing"] = 124172,
 				}, -- [1]
 			},
 			["deaths"] = 0,
@@ -8320,11 +8320,11 @@ SkadaPerCharDB = {
 				},
 			},
 			["mobtaken"] = 1105133,
-			["mobdone"] = 102857,
-			["healing"] = 0,
 			["starttime"] = 1401798449,
+			["healing"] = 0,
 			["power"] = {
 			},
+			["alertCount"] = 0,
 			["damagetaken"] = 102857,
 			["shielding"] = 0,
 			["name"] = "Brilliant Windfeather",
@@ -8340,8 +8340,8 @@ SkadaPerCharDB = {
 			["ccbreaks"] = 0,
 			["time"] = 23,
 			["interrupts"] = 0,
+			["mobdone"] = 148732,
 			["alertDamage"] = 0,
-			["alertCount"] = 0,
 			["damage"] = 1150460,
 			["players"] = {
 				{
@@ -8506,9 +8506,10 @@ SkadaPerCharDB = {
 							["max"] = 29040,
 						},
 					},
-					["overhealing"] = 123247,
-					["damagetaken"] = 148732,
 					["shielding"] = 0,
+					["damagetaken"] = 148732,
+					["power"] = {
+					},
 					["id"] = "0x0100000004DDB910",
 					["first"] = 1401798407,
 					["healed"] = {
@@ -8620,8 +8621,7 @@ SkadaPerCharDB = {
 					},
 					["alert"] = {
 					},
-					["power"] = {
-					},
+					["overhealing"] = 123247,
 				}, -- [1]
 			},
 			["deaths"] = 0,
@@ -8645,11 +8645,11 @@ SkadaPerCharDB = {
 				},
 			},
 			["mobtaken"] = 1150460,
-			["mobdone"] = 148732,
-			["healing"] = 117862,
 			["starttime"] = 1401798407,
+			["healing"] = 117862,
 			["power"] = {
 			},
+			["alertCount"] = 0,
 			["damagetaken"] = 148732,
 			["shielding"] = 0,
 			["name"] = "Brilliant Windfeather",
@@ -8665,8 +8665,8 @@ SkadaPerCharDB = {
 			["ccbreaks"] = 0,
 			["time"] = 21,
 			["interrupts"] = 0,
+			["mobdone"] = 100091,
 			["alertDamage"] = 0,
-			["alertCount"] = 0,
 			["damage"] = 1174870,
 			["players"] = {
 				{
@@ -8831,9 +8831,10 @@ SkadaPerCharDB = {
 							["max"] = 31024,
 						},
 					},
-					["overhealing"] = 186449,
-					["damagetaken"] = 100091,
 					["shielding"] = 0,
+					["damagetaken"] = 100091,
+					["power"] = {
+					},
 					["id"] = "0x0100000004DDB910",
 					["first"] = 1401798353,
 					["healed"] = {
@@ -8938,8 +8939,7 @@ SkadaPerCharDB = {
 					},
 					["alert"] = {
 					},
-					["power"] = {
-					},
+					["overhealing"] = 186449,
 				}, -- [1]
 			},
 			["deaths"] = 0,
@@ -8963,11 +8963,11 @@ SkadaPerCharDB = {
 				},
 			},
 			["mobtaken"] = 1174870,
-			["mobdone"] = 100091,
-			["healing"] = 58276,
 			["starttime"] = 1401798353,
+			["healing"] = 58276,
 			["power"] = {
 			},
+			["alertCount"] = 0,
 			["damagetaken"] = 100091,
 			["shielding"] = 0,
 			["name"] = "Brilliant Windfeather",
@@ -8983,8 +8983,8 @@ SkadaPerCharDB = {
 			["ccbreaks"] = 0,
 			["time"] = 19,
 			["interrupts"] = 0,
+			["mobdone"] = 123726,
 			["alertDamage"] = 0,
-			["alertCount"] = 0,
 			["damage"] = 1197893,
 			["players"] = {
 				{
@@ -9149,9 +9149,10 @@ SkadaPerCharDB = {
 							["max"] = 14129,
 						},
 					},
-					["overhealing"] = 12002,
-					["damagetaken"] = 123726,
 					["shielding"] = 108975.046875,
+					["damagetaken"] = 123726,
+					["power"] = {
+					},
 					["id"] = "0x0100000004DDB910",
 					["first"] = 1401798236,
 					["healed"] = {
@@ -9289,8 +9290,7 @@ SkadaPerCharDB = {
 					},
 					["alert"] = {
 					},
-					["power"] = {
-					},
+					["overhealing"] = 12002,
 				}, -- [1]
 			},
 			["deaths"] = 0,
@@ -9314,11 +9314,11 @@ SkadaPerCharDB = {
 				},
 			},
 			["mobtaken"] = 1197893,
-			["mobdone"] = 123726,
-			["healing"] = 217527.046875,
 			["starttime"] = 1401798236,
+			["healing"] = 217527.046875,
 			["power"] = {
 			},
+			["alertCount"] = 0,
 			["damagetaken"] = 123726,
 			["shielding"] = 108975.046875,
 			["name"] = "Jademist Dancer",
@@ -9334,8 +9334,8 @@ SkadaPerCharDB = {
 			["ccbreaks"] = 0,
 			["time"] = 23,
 			["interrupts"] = 0,
+			["mobdone"] = 290502,
 			["alertDamage"] = 0,
-			["alertCount"] = 0,
 			["damage"] = 1110046,
 			["players"] = {
 				{
@@ -9352,26 +9352,26 @@ SkadaPerCharDB = {
 					["alertDamage"] = 0,
 					["damage"] = 1110046,
 					["damagespells"] = {
-						["Piercing Song"] = {
+						["Frostfire Bolt"] = {
 							["DODGE"] = 0,
 							["REFLECT"] = 0,
 							["crushing"] = 0,
 							["IMMUNE"] = 0,
 							["glancing"] = 0,
-							["totalhits"] = 3,
+							["totalhits"] = 1,
 							["MISS"] = 0,
-							["damage"] = 287741,
+							["damage"] = 107181,
 							["DEFLECT"] = 0,
-							["id"] = 147170,
-							["hit"] = 3,
-							["min"] = 95153,
+							["id"] = 44614,
+							["hit"] = 0,
+							["min"] = 107181,
 							["PARRY"] = 0,
-							["critical"] = 0,
+							["critical"] = 1,
 							["ABSORB"] = 0,
 							["BLOCK"] = 0,
 							["RESIST"] = 0,
 							["EVADE"] = 0,
-							["max"] = 96940,
+							["max"] = 107181,
 						},
 						["Frost Bomb"] = {
 							["DODGE"] = 0,
@@ -9415,26 +9415,26 @@ SkadaPerCharDB = {
 							["EVADE"] = 0,
 							["max"] = 34383,
 						},
-						["Ice Lance"] = {
+						["Piercing Song"] = {
 							["DODGE"] = 0,
 							["REFLECT"] = 0,
 							["crushing"] = 0,
 							["IMMUNE"] = 0,
 							["glancing"] = 0,
-							["totalhits"] = 9,
+							["totalhits"] = 3,
 							["MISS"] = 0,
-							["damage"] = 101447,
+							["damage"] = 287741,
 							["DEFLECT"] = 0,
-							["id"] = 30455,
-							["hit"] = 9,
-							["min"] = 9667,
+							["id"] = 147170,
+							["hit"] = 3,
+							["min"] = 95153,
 							["PARRY"] = 0,
 							["critical"] = 0,
 							["ABSORB"] = 0,
 							["BLOCK"] = 0,
 							["RESIST"] = 0,
 							["EVADE"] = 0,
-							["max"] = 13930,
+							["max"] = 96940,
 						},
 						["Frostbolt"] = {
 							["DODGE"] = 0,
@@ -9478,31 +9478,32 @@ SkadaPerCharDB = {
 							["EVADE"] = 0,
 							["max"] = 36416,
 						},
-						["Frostfire Bolt"] = {
+						["Ice Lance"] = {
 							["DODGE"] = 0,
 							["REFLECT"] = 0,
 							["crushing"] = 0,
 							["IMMUNE"] = 0,
 							["glancing"] = 0,
-							["totalhits"] = 1,
+							["totalhits"] = 9,
 							["MISS"] = 0,
-							["damage"] = 107181,
+							["damage"] = 101447,
 							["DEFLECT"] = 0,
-							["id"] = 44614,
-							["hit"] = 0,
-							["min"] = 107181,
+							["id"] = 30455,
+							["hit"] = 9,
+							["min"] = 9667,
 							["PARRY"] = 0,
-							["critical"] = 1,
+							["critical"] = 0,
 							["ABSORB"] = 0,
 							["BLOCK"] = 0,
 							["RESIST"] = 0,
 							["EVADE"] = 0,
-							["max"] = 107181,
+							["max"] = 13930,
 						},
 					},
-					["overhealing"] = 0,
-					["damagetaken"] = 290502,
 					["shielding"] = 0,
+					["damagetaken"] = 290502,
+					["power"] = {
+					},
 					["id"] = "0x0100000004DDB910",
 					["first"] = 1401798182,
 					["healed"] = {
@@ -9621,8 +9622,7 @@ SkadaPerCharDB = {
 					},
 					["alert"] = {
 					},
-					["power"] = {
-					},
+					["overhealing"] = 0,
 				}, -- [1]
 			},
 			["deaths"] = 0,
@@ -9646,11 +9646,11 @@ SkadaPerCharDB = {
 				},
 			},
 			["mobtaken"] = 1110046,
-			["mobdone"] = 290502,
-			["healing"] = 120555,
 			["starttime"] = 1401798182,
+			["healing"] = 120555,
 			["power"] = {
 			},
+			["alertCount"] = 0,
 			["damagetaken"] = 290502,
 			["shielding"] = 0,
 			["name"] = "Brilliant Windfeather",
@@ -9682,11 +9682,11 @@ SkadaPerCharDB = {
 						["uptime"] = 700,
 						["auratype"] = "DEBUFF",
 					},
-					["Lightweave"] = {
-						["name"] = "Lightweave",
-						["active"] = 11,
-						["id"] = 125487,
-						["uptime"] = 750,
+					["Spirit Ward"] = {
+						["name"] = "Spirit Ward",
+						["active"] = 1,
+						["id"] = 147279,
+						["uptime"] = 200,
 						["auratype"] = "BUFF",
 					},
 					["Frost Bomb"] = {
@@ -9710,12 +9710,12 @@ SkadaPerCharDB = {
 						["uptime"] = 79,
 						["auratype"] = "BUFF",
 					},
-					["Frostbolt"] = {
-						["name"] = "Frostbolt",
-						["active"] = 1,
-						["id"] = 116,
-						["uptime"] = 781,
-						["auratype"] = "DEBUFF",
+					["Lightweave"] = {
+						["name"] = "Lightweave",
+						["active"] = 11,
+						["id"] = 125487,
+						["uptime"] = 750,
+						["auratype"] = "BUFF",
 					},
 					["Heart of the Valorous"] = {
 						["name"] = "Heart of the Valorous",
@@ -9892,12 +9892,12 @@ SkadaPerCharDB = {
 						["uptime"] = 6,
 						["auratype"] = "DEBUFF",
 					},
-					["Spirit Ward"] = {
-						["name"] = "Spirit Ward",
+					["Frostbolt"] = {
+						["name"] = "Frostbolt",
 						["active"] = 1,
-						["id"] = 147279,
-						["uptime"] = 200,
-						["auratype"] = "BUFF",
+						["id"] = 116,
+						["uptime"] = 781,
+						["auratype"] = "DEBUFF",
 					},
 				},
 				["healingspells"] = {
@@ -10103,6 +10103,27 @@ SkadaPerCharDB = {
 						["EVADE"] = 0,
 						["max"] = 36416,
 					},
+					["Frost Nova"] = {
+						["DODGE"] = 0,
+						["REFLECT"] = 0,
+						["crushing"] = 0,
+						["IMMUNE"] = 0,
+						["glancing"] = 0,
+						["totalhits"] = 3,
+						["MISS"] = 0,
+						["damage"] = 26366,
+						["DEFLECT"] = 0,
+						["id"] = 122,
+						["ABSORB"] = 0,
+						["min"] = 5286,
+						["PARRY"] = 0,
+						["critical"] = 1,
+						["hit"] = 2,
+						["BLOCK"] = 0,
+						["RESIST"] = 0,
+						["EVADE"] = 0,
+						["max"] = 14194,
+					},
 					["Frostfire Bolt"] = {
 						["DODGE"] = 0,
 						["REFLECT"] = 0,
@@ -10123,27 +10144,6 @@ SkadaPerCharDB = {
 						["RESIST"] = 0,
 						["EVADE"] = 0,
 						["max"] = 107197,
-					},
-					["Ice Lance"] = {
-						["DODGE"] = 0,
-						["REFLECT"] = 0,
-						["crushing"] = 0,
-						["IMMUNE"] = 0,
-						["glancing"] = 0,
-						["totalhits"] = 125,
-						["MISS"] = 0,
-						["damage"] = 3279541,
-						["DEFLECT"] = 0,
-						["id"] = 30455,
-						["ABSORB"] = 0,
-						["min"] = 4858,
-						["PARRY"] = 0,
-						["critical"] = 28,
-						["hit"] = 97,
-						["BLOCK"] = 0,
-						["RESIST"] = 0,
-						["EVADE"] = 0,
-						["max"] = 143268,
 					},
 					["Piercing Song"] = {
 						["DODGE"] = 0,
@@ -10187,26 +10187,26 @@ SkadaPerCharDB = {
 						["EVADE"] = 0,
 						["max"] = 11076,
 					},
-					["Frost Nova"] = {
+					["Ice Lance"] = {
 						["DODGE"] = 0,
 						["REFLECT"] = 0,
 						["crushing"] = 0,
 						["IMMUNE"] = 0,
 						["glancing"] = 0,
-						["totalhits"] = 3,
+						["totalhits"] = 125,
 						["MISS"] = 0,
-						["damage"] = 26366,
+						["damage"] = 3279541,
 						["DEFLECT"] = 0,
-						["id"] = 122,
+						["id"] = 30455,
 						["ABSORB"] = 0,
-						["min"] = 5286,
+						["min"] = 4858,
 						["PARRY"] = 0,
-						["critical"] = 1,
-						["hit"] = 2,
+						["critical"] = 28,
+						["hit"] = 97,
 						["BLOCK"] = 0,
 						["RESIST"] = 0,
 						["EVADE"] = 0,
-						["max"] = 14194,
+						["max"] = 143268,
 					},
 				},
 				["deaths"] = {
@@ -10216,16 +10216,16 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1401795845.39401,
 								["amount"] = -18017,
+								["spellid"] = 88163,
 								["srcname"] = "Jungle Stomper",
 								["hp"] = 72352,
-								["spellid"] = 88163,
 							}, -- [1]
 							{
 								["ts"] = 1401795845.51902,
 								["amount"] = -58952,
+								["spellid"] = 88163,
 								["srcname"] = "Dizzy",
 								["hp"] = 72352,
-								["spellid"] = 88163,
 							}, -- [2]
 							{
 								["spellname"] = "Anaiis dies",
@@ -10236,86 +10236,86 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1401795786.05704,
 								["amount"] = -21830,
+								["spellid"] = 88163,
 								["srcname"] = "Jungle Stomper",
 								["hp"] = 257276,
-								["spellid"] = 88163,
 							}, -- [4]
 							{
 								["ts"] = 1401795788.73005,
 								["amount"] = -19329,
+								["spellid"] = 88163,
 								["srcname"] = "Jungle Stomper",
 								["hp"] = 235446,
-								["spellid"] = 88163,
 							}, -- [5]
 							{
 								["ts"] = 1401795790.26806,
 								["amount"] = -16486,
+								["srcname"] = "Jungle Stomper",
 								["spellid"] = 88163,
 								["hp"] = 216117,
-								["srcname"] = "Jungle Stomper",
 							}, -- [6]
 							{
 								["ts"] = 1401795791.79907,
 								["amount"] = -16421,
+								["srcname"] = "Jungle Stomper",
 								["spellid"] = 88163,
 								["hp"] = 199631,
-								["srcname"] = "Jungle Stomper",
 							}, -- [7]
 							{
 								["ts"] = 1401795793.21108,
 								["amount"] = -29379,
+								["srcname"] = "Jungle Stomper",
 								["spellid"] = 116007,
 								["hp"] = 153831,
-								["srcname"] = "Jungle Stomper",
 							}, -- [8]
 							{
 								["ts"] = 1401795795.21209,
 								["amount"] = -21187,
+								["srcname"] = "Jungle Stomper",
 								["spellid"] = 88163,
 								["hp"] = 153831,
-								["srcname"] = "Jungle Stomper",
 							}, -- [9]
 							{
 								["ts"] = 1401795797.2171,
 								["amount"] = -15299,
+								["spellid"] = 88163,
 								["srcname"] = "Jungle Stomper",
 								["hp"] = 132644,
-								["spellid"] = 88163,
 							}, -- [10]
 							{
 								["ts"] = 1401795799.21911,
 								["amount"] = -18988,
+								["spellid"] = 88163,
 								["srcname"] = "Jungle Stomper",
 								["hp"] = 117345,
-								["spellid"] = 88163,
 							}, -- [11]
 							{
 								["ts"] = 1401795829.15112,
 								["amount"] = -15688,
+								["spellid"] = 88163,
 								["srcname"] = "Jungle Stomper",
 								["hp"] = 151696,
-								["spellid"] = 88163,
 							}, -- [12]
 							{
 								["ts"] = 1401795839.39013,
 								["amount"] = -19384,
+								["spellid"] = 88163,
 								["srcname"] = "Jungle Stomper",
 								["hp"] = 136008,
-								["spellid"] = 88163,
 							}, -- [13]
 							{
 								["ts"] = 1401795843.39514,
 								["amount"] = -22040,
+								["spellid"] = 88163,
 								["srcname"] = "Jungle Stomper",
 								["hp"] = 116624,
-								["spellid"] = 88163,
 							}, -- [14]
 							{
 								["ts"] = 1401795843.51615,
 								["amount"] = -22232,
+								["spellid"] = 88163,
 								["srcname"] = "Dizzy",
 								["hp"] = 116624,
-								["spellid"] = 88163,
 							}, -- [15]
 							["pos"] = 4,
 						},
@@ -11216,9 +11216,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1401796774.935,
 						["amount"] = -46150,
+						["spellid"] = 135006,
 						["srcname"] = "Commander Scargash",
 						["hp"] = 567825,
-						["spellid"] = 135006,
 					}, -- [2]
 					{
 						["absorb"] = 0,
@@ -11263,9 +11263,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1401796380.87,
 						["amount"] = -15083,
+						["spellid"] = 88163,
 						["srcname"] = "Jungle Stomper",
 						["hp"] = 613975,
-						["spellid"] = 88163,
 					}, -- [8]
 					{
 						["absorb"] = 0,
@@ -11278,9 +11278,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1401796763.677,
 						["amount"] = -30041,
+						["spellid"] = 88163,
 						["srcname"] = "Commander Scargash",
 						["hp"] = 613975,
-						["spellid"] = 88163,
 					}, -- [10]
 					{
 						["absorb"] = 0,
@@ -11301,9 +11301,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1401796768.817,
 						["amount"] = -17341,
+						["spellid"] = 132253,
 						["srcname"] = "Kor'kron Elite",
 						["hp"] = 596634,
-						["spellid"] = 132253,
 					}, -- [13]
 					{
 						["absorb"] = 0,
@@ -11316,9 +11316,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1401796769.008,
 						["amount"] = -21982,
+						["spellid"] = 132253,
 						["srcname"] = "Kor'kron Elite",
 						["hp"] = 591993,
-						["spellid"] = 132253,
 					}, -- [15]
 					["pos"] = 7,
 				},
@@ -11418,13 +11418,6 @@ SkadaPerCharDB = {
 						["uptime"] = 20,
 						["auratype"] = "BUFF",
 					},
-					["Crackling Jade Lightning"] = {
-						["name"] = "Crackling Jade Lightning",
-						["active"] = 0,
-						["id"] = 117952,
-						["uptime"] = 2,
-						["auratype"] = "DEBUFF",
-					},
 					["Stance of the Fierce Tiger"] = {
 						["name"] = "Stance of the Fierce Tiger",
 						["active"] = 0,
@@ -11438,6 +11431,13 @@ SkadaPerCharDB = {
 						["id"] = 115070,
 						["uptime"] = 764,
 						["auratype"] = "BUFF",
+					},
+					["Crackling Jade Lightning"] = {
+						["name"] = "Crackling Jade Lightning",
+						["active"] = 0,
+						["id"] = 117952,
+						["uptime"] = 2,
+						["auratype"] = "DEBUFF",
 					},
 					["Death Note"] = {
 						["name"] = "Death Note",
@@ -11685,65 +11685,65 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1401795795.151,
 						["amount"] = -19169,
+						["spellid"] = 88163,
 						["srcname"] = "Jungle Stomper",
 						["hp"] = 243379,
-						["spellid"] = 88163,
 					}, -- [2]
 					{
 						["ts"] = 1401795796.697,
 						["amount"] = -43346,
+						["spellid"] = 88163,
 						["srcname"] = "Jungle Stomper",
 						["hp"] = 224210,
-						["spellid"] = 88163,
 					}, -- [3]
 					{
 						["ts"] = 1401795798.232,
 						["amount"] = -17493,
+						["spellid"] = 88163,
 						["srcname"] = "Jungle Stomper",
 						["hp"] = 180864,
-						["spellid"] = 88163,
 					}, -- [4]
 					{
 						["ts"] = 1401795799.769,
 						["amount"] = -20902,
+						["spellid"] = 88163,
 						["srcname"] = "Jungle Stomper",
 						["hp"] = 163371,
-						["spellid"] = 88163,
 					}, -- [5]
 					{
 						["ts"] = 1401795801.769,
 						["amount"] = -21648,
+						["spellid"] = 88163,
 						["srcname"] = "Jungle Stomper",
 						["hp"] = 142469,
-						["spellid"] = 88163,
 					}, -- [6]
 					{
 						["ts"] = 1401795805.252,
 						["amount"] = -16433,
+						["spellid"] = 88163,
 						["srcname"] = "Jungle Stomper",
 						["hp"] = 142469,
-						["spellid"] = 88163,
 					}, -- [7]
 					{
 						["ts"] = 1401795807.246,
 						["amount"] = -21975,
+						["spellid"] = 88163,
 						["srcname"] = "Jungle Stomper",
 						["hp"] = 142469,
-						["spellid"] = 88163,
 					}, -- [8]
 					{
 						["ts"] = 1401795807.638,
 						["amount"] = -28257,
+						["srcname"] = "Jungle Stomper",
 						["spellid"] = 116007,
 						["hp"] = 114212,
-						["srcname"] = "Jungle Stomper",
 					}, -- [9]
 					{
 						["ts"] = 1401795809.252,
 						["amount"] = -19811,
+						["spellid"] = 88163,
 						["srcname"] = "Jungle Stomper",
 						["hp"] = 54156,
-						["spellid"] = 88163,
 					}, -- [10]
 					{
 						["absorb"] = 0,
@@ -11764,9 +11764,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1401795791.58,
 						["amount"] = -19662,
+						["spellid"] = 88163,
 						["srcname"] = "Jungle Stomper",
 						["hp"] = 269332,
-						["spellid"] = 88163,
 					}, -- [13]
 					{
 						["absorb"] = 0,
@@ -11779,9 +11779,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1401795793.593,
 						["amount"] = -17807,
+						["spellid"] = 88163,
 						["srcname"] = "Jungle Stomper",
 						["hp"] = 255428,
-						["spellid"] = 88163,
 					}, -- [15]
 					["pos"] = 12,
 				},
@@ -12209,16 +12209,16 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1401796787.568,
 						["amount"] = -30176,
+						["spellid"] = 88163,
 						["srcname"] = "Commander Scargash",
 						["hp"] = 246435,
-						["spellid"] = 88163,
 					}, -- [1]
 					{
 						["ts"] = 1401796788.605,
 						["amount"] = -29158,
+						["spellid"] = 134963,
 						["srcname"] = "Commander Scargash",
 						["hp"] = 187101,
-						["spellid"] = 134963,
 					}, -- [2]
 					{
 						["ts"] = 1401796788.824,
@@ -12231,9 +12231,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1401796789.575,
 						["amount"] = -29120,
+						["spellid"] = 88163,
 						["srcname"] = "Commander Scargash",
 						["hp"] = 265342,
-						["spellid"] = 88163,
 					}, -- [4]
 					{
 						["ts"] = 1401796790.133,
@@ -12246,9 +12246,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1401796790.612,
 						["amount"] = -29157,
+						["spellid"] = 134963,
 						["srcname"] = "Commander Scargash",
 						["hp"] = 372190,
-						["spellid"] = 134963,
 					}, -- [6]
 					{
 						["ts"] = 1401796791.045,
@@ -12261,58 +12261,58 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1401796762.646,
 						["amount"] = -15971,
+						["spellid"] = 132253,
 						["srcname"] = "Kor'kron Elite",
 						["hp"] = 421750,
-						["spellid"] = 132253,
 					}, -- [8]
 					{
 						["ts"] = 1401796764.473,
 						["amount"] = -10310,
+						["spellid"] = 88163,
 						["srcname"] = "Kor'kron Elite",
 						["hp"] = 421750,
-						["spellid"] = 88163,
 					}, -- [9]
 					{
 						["ts"] = 1401796764.473,
 						["amount"] = -29963,
+						["spellid"] = 88163,
 						["srcname"] = "Kor'kron Elite",
 						["hp"] = 421750,
-						["spellid"] = 88163,
 					}, -- [10]
 					{
 						["ts"] = 1401796783.114,
 						["amount"] = -17889,
+						["spellid"] = 132253,
 						["srcname"] = "Kor'kron Elite",
 						["hp"] = 363588,
-						["spellid"] = 132253,
 					}, -- [11]
 					{
 						["ts"] = 1401796783.566,
 						["amount"] = -28308,
+						["spellid"] = 88163,
 						["srcname"] = "Commander Scargash",
 						["hp"] = 363588,
-						["spellid"] = 88163,
 					}, -- [12]
 					{
 						["ts"] = 1401796784.59,
 						["amount"] = -29157,
+						["spellid"] = 134963,
 						["srcname"] = "Commander Scargash",
 						["hp"] = 306123,
-						["spellid"] = 134963,
 					}, -- [13]
 					{
 						["ts"] = 1401796785.567,
 						["amount"] = -30531,
+						["spellid"] = 88163,
 						["srcname"] = "Commander Scargash",
 						["hp"] = 306123,
-						["spellid"] = 88163,
 					}, -- [14]
 					{
 						["ts"] = 1401796786.6,
 						["amount"] = -29157,
+						["spellid"] = 134963,
 						["srcname"] = "Commander Scargash",
 						["hp"] = 246435,
-						["spellid"] = 134963,
 					}, -- [15]
 					["pos"] = 8,
 				},
@@ -12433,9 +12433,10 @@ SkadaPerCharDB = {
 						["max"] = 332,
 					},
 				},
-				["overhealing"] = 0,
-				["damagetaken"] = 0,
 				["deathlog"] = {
+				},
+				["damagetaken"] = 0,
+				["power"] = {
 				},
 				["id"] = "Venomous Snake",
 				["maxhp"] = 0,
@@ -12452,8 +12453,7 @@ SkadaPerCharDB = {
 				},
 				["alert"] = {
 				},
-				["power"] = {
-				},
+				["overhealing"] = 0,
 			}, -- [6]
 			{
 				["healingabsorbed"] = 0,
@@ -12489,9 +12489,10 @@ SkadaPerCharDB = {
 						["max"] = 892,
 					},
 				},
-				["overhealing"] = 0,
-				["damagetaken"] = 0,
 				["deathlog"] = {
+				},
+				["damagetaken"] = 0,
+				["power"] = {
 				},
 				["id"] = "Viper",
 				["maxhp"] = 0,
@@ -12508,8 +12509,7 @@ SkadaPerCharDB = {
 				},
 				["alert"] = {
 				},
-				["power"] = {
-				},
+				["overhealing"] = 0,
 			}, -- [7]
 			{
 				["healingabsorbed"] = 0,
@@ -12531,9 +12531,10 @@ SkadaPerCharDB = {
 				["damage"] = 0,
 				["damagespells"] = {
 				},
-				["overhealing"] = 0,
-				["damagetaken"] = 0,
 				["deathlog"] = {
+				},
+				["damagetaken"] = 0,
+				["power"] = {
 				},
 				["id"] = "0xF1304D7900003D8B",
 				["maxhp"] = 0,
@@ -12550,8 +12551,7 @@ SkadaPerCharDB = {
 				},
 				["alert"] = {
 				},
-				["power"] = {
-				},
+				["overhealing"] = 0,
 			}, -- [8]
 			{
 				["healingabsorbed"] = 0,
@@ -12573,9 +12573,10 @@ SkadaPerCharDB = {
 				["damage"] = 0,
 				["damagespells"] = {
 				},
-				["overhealing"] = 0,
-				["damagetaken"] = 0,
 				["deathlog"] = {
+				},
+				["damagetaken"] = 0,
+				["power"] = {
 				},
 				["id"] = "0xF1304DD100003D85",
 				["maxhp"] = 0,
@@ -12592,8 +12593,7 @@ SkadaPerCharDB = {
 				},
 				["alert"] = {
 				},
-				["power"] = {
-				},
+				["overhealing"] = 0,
 			}, -- [9]
 		},
 		["deaths"] = 1,
@@ -14165,14 +14165,6 @@ SkadaPerCharDB = {
 						["overhealing"] = 189297,
 						["hits"] = 3,
 					},
-					["Healing Stream Totem"] = {
-						["min"] = 18568,
-						["crits"] = 0,
-						["max"] = 18568,
-						["healing"] = 18568,
-						["overhealing"] = 0,
-						["hits"] = 1,
-					},
 					["Efflorescence"] = {
 						["min"] = 0,
 						["crits"] = 0,
@@ -14188,6 +14180,14 @@ SkadaPerCharDB = {
 						["healing"] = 0,
 						["overhealing"] = 180239,
 						["hits"] = 6,
+					},
+					["Healing Stream Totem"] = {
+						["min"] = 18568,
+						["crits"] = 0,
+						["max"] = 18568,
+						["healing"] = 18568,
+						["overhealing"] = 0,
+						["hits"] = 1,
 					},
 					["Holy Radiance"] = {
 						["min"] = 32135,
@@ -14257,13 +14257,13 @@ SkadaPerCharDB = {
 						["overhealing"] = 0,
 						["hits"] = 4,
 					},
-					["Rejuvenation"] = {
-						["min"] = 0,
-						["crits"] = 3,
-						["max"] = 85948,
-						["healing"] = 337625,
-						["overhealing"] = 87216,
-						["hits"] = 11,
+					["Healing Stream Totem"] = {
+						["min"] = 16880,
+						["crits"] = 0,
+						["max"] = 16880,
+						["healing"] = 16880,
+						["overhealing"] = 0,
+						["hits"] = 1,
 					},
 					["Recuperate"] = {
 						["min"] = 0,
@@ -14273,14 +14273,6 @@ SkadaPerCharDB = {
 						["overhealing"] = 68026,
 						["hits"] = 14,
 					},
-					["Healing Stream Totem"] = {
-						["min"] = 16880,
-						["crits"] = 0,
-						["max"] = 16880,
-						["healing"] = 16880,
-						["overhealing"] = 0,
-						["hits"] = 1,
-					},
 					["Efflorescence"] = {
 						["min"] = 0,
 						["crits"] = 4,
@@ -14288,6 +14280,14 @@ SkadaPerCharDB = {
 						["healing"] = 150606,
 						["overhealing"] = 88490,
 						["hits"] = 10,
+					},
+					["Rejuvenation"] = {
+						["min"] = 0,
+						["crits"] = 3,
+						["max"] = 85948,
+						["healing"] = 337625,
+						["overhealing"] = 87216,
+						["hits"] = 11,
 					},
 					["Atonement"] = {
 						["min"] = 1654,
@@ -15832,14 +15832,6 @@ SkadaPerCharDB = {
 						["overhealing"] = 630212,
 						["hits"] = 15,
 					},
-					["Beacon of Light"] = {
-						["min"] = 0,
-						["crits"] = 0,
-						["max"] = 29137,
-						["healing"] = 168428,
-						["overhealing"] = 1300074,
-						["hits"] = 111,
-					},
 					["Eternal Flame"] = {
 						["min"] = 0,
 						["crits"] = 14,
@@ -15855,6 +15847,14 @@ SkadaPerCharDB = {
 						["healing"] = 518302,
 						["overhealing"] = 739004,
 						["hits"] = 27,
+					},
+					["Beacon of Light"] = {
+						["min"] = 0,
+						["crits"] = 0,
+						["max"] = 29137,
+						["healing"] = 168428,
+						["overhealing"] = 1300074,
+						["hits"] = 111,
 					},
 					["Holy Shock"] = {
 						["min"] = 0,
@@ -17028,6 +17028,14 @@ SkadaPerCharDB = {
 						["overhealing"] = 0,
 						["hits"] = 1,
 					},
+					["Efflorescence"] = {
+						["min"] = 59277,
+						["crits"] = 1,
+						["max"] = 59277,
+						["healing"] = 59277,
+						["overhealing"] = 50238,
+						["hits"] = 1,
+					},
 					["Cascade"] = {
 						["min"] = 0,
 						["crits"] = 0,
@@ -17043,14 +17051,6 @@ SkadaPerCharDB = {
 						["healing"] = 3904,
 						["overhealing"] = 845531,
 						["hits"] = 28,
-					},
-					["Efflorescence"] = {
-						["min"] = 59277,
-						["crits"] = 1,
-						["max"] = 59277,
-						["healing"] = 59277,
-						["overhealing"] = 50238,
-						["hits"] = 1,
 					},
 					["Echo of Light"] = {
 						["min"] = 0,
@@ -18808,13 +18808,13 @@ SkadaPerCharDB = {
 				["done"] = 0,
 				["htaken"] = 346500,
 				["htakenspell"] = {
-					["Atonement"] = {
-						["min"] = 43483,
+					["Death Strike"] = {
+						["min"] = 0,
 						["crits"] = 0,
-						["max"] = 43483,
-						["healing"] = 43483,
-						["overhealing"] = 0,
-						["hits"] = 1,
+						["max"] = 32451,
+						["healing"] = 32451,
+						["overhealing"] = 55587,
+						["hits"] = 2,
 					},
 					["Multistrike"] = {
 						["min"] = 0,
@@ -18824,13 +18824,13 @@ SkadaPerCharDB = {
 						["overhealing"] = 7000,
 						["hits"] = 2,
 					},
-					["Death Strike"] = {
+					["Wild Growth"] = {
 						["min"] = 0,
-						["crits"] = 0,
-						["max"] = 32451,
-						["healing"] = 32451,
-						["overhealing"] = 55587,
-						["hits"] = 2,
+						["crits"] = 2,
+						["max"] = 7118,
+						["healing"] = 7118,
+						["overhealing"] = 61899,
+						["hits"] = 8,
 					},
 					["Unholy Strength"] = {
 						["min"] = 15463,
@@ -18856,13 +18856,13 @@ SkadaPerCharDB = {
 						["overhealing"] = 12254,
 						["hits"] = 1,
 					},
-					["Wild Growth"] = {
-						["min"] = 0,
-						["crits"] = 2,
-						["max"] = 7118,
-						["healing"] = 7118,
-						["overhealing"] = 61899,
-						["hits"] = 8,
+					["Atonement"] = {
+						["min"] = 43483,
+						["crits"] = 0,
+						["max"] = 43483,
+						["healing"] = 43483,
+						["overhealing"] = 0,
+						["hits"] = 1,
 					},
 					["Echo of Light"] = {
 						["min"] = 16317,
@@ -19077,11 +19077,11 @@ SkadaPerCharDB = {
 						["overhealing"] = 0,
 						["hits"] = 1,
 					},
-					["Holy Radiance"] = {
-						["min"] = 31405,
+					["Healing Tide"] = {
+						["min"] = 29620,
 						["crits"] = 0,
-						["max"] = 31405,
-						["healing"] = 31405,
+						["max"] = 29620,
+						["healing"] = 29620,
 						["overhealing"] = 0,
 						["hits"] = 1,
 					},
@@ -19093,13 +19093,13 @@ SkadaPerCharDB = {
 						["overhealing"] = 73541,
 						["hits"] = 6,
 					},
-					["Healing Tide"] = {
-						["min"] = 29620,
-						["crits"] = 0,
-						["max"] = 29620,
-						["healing"] = 29620,
-						["overhealing"] = 0,
-						["hits"] = 1,
+					["Wild Growth"] = {
+						["min"] = 0,
+						["crits"] = 2,
+						["max"] = 13196,
+						["healing"] = 44594,
+						["overhealing"] = 16700,
+						["hits"] = 8,
 					},
 					["Efflorescence"] = {
 						["min"] = 0,
@@ -19109,13 +19109,13 @@ SkadaPerCharDB = {
 						["overhealing"] = 34245,
 						["hits"] = 1,
 					},
-					["Wild Growth"] = {
-						["min"] = 0,
-						["crits"] = 2,
-						["max"] = 13196,
-						["healing"] = 44594,
-						["overhealing"] = 16700,
-						["hits"] = 8,
+					["Holy Radiance"] = {
+						["min"] = 31405,
+						["crits"] = 0,
+						["max"] = 31405,
+						["healing"] = 31405,
+						["overhealing"] = 0,
+						["hits"] = 1,
 					},
 					["Spirit Bond"] = {
 						["min"] = 22066,

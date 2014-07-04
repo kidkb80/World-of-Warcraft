@@ -138,9 +138,9 @@ AmrCurrencies = {
 	[515] = 16,
 	[402] = 1,
 	[416] = 3,
-	[391] = 13,
 	[241] = 36,
 	[361] = 2,
+	[391] = 13,
 	[392] = 23,
 	[393] = 9,
 	[394] = 23,
@@ -457,6 +457,6 @@ AmrLogData = {
 	["_autoLog"] = {
 		[1136] = "disabled",
 	},
-	["_lastZone"] = "Pandaria",
+	["_lastZone"] = "Kalimdor",
 	["_lastDiff"] = 0,
 }

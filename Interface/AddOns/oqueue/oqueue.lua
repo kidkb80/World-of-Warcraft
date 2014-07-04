@@ -20,8 +20,8 @@ local tbl = OQ.table ;
 -------------------------------------------------------------------------------
 local OQ_MAJOR                 = 1 ;
 local OQ_MINOR                 = 9 ;
-local OQ_REVISION              = 4 ;
-local OQ_BUILD                 = 194 ;
+local OQ_REVISION              = 5 ;
+local OQ_BUILD                 = 195 ;
 local OQ_SPECIAL_TAG           = "" ;
 local OQUEUE_VERSION           = tostring(OQ_MAJOR) ..".".. tostring(OQ_MINOR) ..".".. OQ_REVISION ;
 local OQUEUE_VERSION_SHORT     = tostring(OQ_MAJOR) ..".".. tostring(OQ_MINOR) .."".. OQ_REVISION ;
@@ -242,6 +242,7 @@ oq.WhoPoppedList_Ids =
   [32182] = L["Heroism"],
   [80353] = L["Time Warp"],
   [90355] = L["Ancient Hysteria"],
+--  [57330] = L["Horn of Winter"],  -- testing
 } ;
 
 local OQ_versions = 
@@ -2872,7 +2873,7 @@ function oq.BNSendFriendInvite( id, msg, note, name_, realm_ )
 end
 
 function oq.SendChatMessage( msg, type, lang, channel ) 
-  if (msg == nil) or (GetNumGroupMembers() == 0) then
+  if (msg == nil) or ((GetNumGroupMembers() == 0) and (type ~= "CHANNEL")) then
     return ;
   end
   
@@ -3748,6 +3749,7 @@ function oq.get_player_role()
   elseif (role == "Tank") then
     role_id = 4 ;
   end
+  player_role = role_id ;
   return role_id ;
 end
 
@@ -3755,20 +3757,11 @@ function oq.auto_set_role()
   if (oq.toon.auto_role == 0) or (InCombatLockdown()) or ((my_group == 0) or (my_slot == 0)) then
     return ;
   end
+
+  local old_role = player_role ;  
+  oq.get_player_role() ;
   
-  local role = oq.get_role() ;
-  local role_id = 1 ;
-  -- 1  dps
-  -- 2  healer
-  -- 3  none 
-  -- 4  tank
-  if (role == "Healer") then
-    role_id = 2 ;
-  elseif (role == "Tank") then
-    role_id = 4 ;
-  end
-  if (role_id ~= player_role) then
-    player_role = role_id ;
+  if (old_role ~= player_role) then
     -- insure UI update
     oq.set_role( my_group, my_slot, player_role ) ;
     oq.set_textures( my_group, my_slot ) ;
@@ -5445,7 +5438,7 @@ function oq.realid_msg( to_name, to_realm, real_id, msg, insure )
   end
         
   if (to_realm == player_realm) then
-    oq.SendAddonMessage( "OQ", msg, "WHISPER", to_name ) ;
+    oq.SendAddonMessage_now( "OQ", msg, "WHISPER", to_name ) ;
     return ;
   end
 
@@ -5463,7 +5456,6 @@ function oq.realid_msg( to_name, to_realm, real_id, msg, insure )
       return ;
     end
   end
-
   oq.BNSendFriendInvite( real_id, msg ) ;
 end
 
@@ -7611,8 +7603,8 @@ function oq.send_leave_waitlist( raid_token )
   
   if (raid_token == oq.raid.raid_token) then
     -- i've joined the raid.  just remove the entry
-    oq.pending[ raid_token ] = tbl.delete( oq.pending[ raid_token ] ) ;
     oq.set_premade_pending( raid_token, nil ) ;
+    oq.pending[ raid_token ] = tbl.delete( oq.pending[ raid_token ] ) ;
   else
     oq.realid_msg( raid.leader, raid.leader_realm, raid.leader_rid, 
                    OQ_MSGHEADER .."".. 
@@ -7621,7 +7613,8 @@ function oq.send_leave_waitlist( raid_token )
                    "0,"..
                    "leave_waitlist,"..                 
                    raid_token ..","..
-                   req.req_token 
+                   req.req_token,
+                   true -- send immediately 
                  ) ;
   end
 end
@@ -8055,10 +8048,13 @@ end
 --
 --------------------------------------------------------------------------
 function oq.on_enter_bg( ndx )
+  if (oq.raid.raid_token == nil) or (oq.raid.type ~= OQ.TYPE_BG) then
+    return ;
+  end
   PVPReadyDialogEnterBattleButton:Enable() ;
   PVPReadyDialogLeaveQueueButton:Disable() ;
   oq.reset_button( PVPReadyDialogEnterBattleButton ) ;
-  if (oq._inside_instance ~= 1) and (oq.raid.type == OQ.TYPE_BG) then
+  if (oq._inside_instance ~= 1) then
     oq.make_big( PVPReadyDialogEnterBattleButton ) ;
   end
 end
@@ -13665,6 +13661,7 @@ function oq.premade_subtype_selection( id, text )
   OQ_data._premade_subtype = id ;
   oq.tab3._subtype._edit:SetText(oq.get_raid_name(id) or text or "" ) ;
   if (id == 0) or (id == 63) then
+    OQ_data._premade_subtype = 0 ;
     oq.premade_difficulty_selection( 0 ) ;
   end
 end
@@ -15474,6 +15471,9 @@ function oq.send_pending_note(self)
     return ;
   end
   local req = oq.pending[ raid_token ] ;
+  if (req == nil) then
+    return ;
+  end
   local req_token = "" ;
   if (req and req.req_token) then
     req_token = req.req_token ;
@@ -16896,10 +16896,11 @@ function oq.on_bnet_friend_invite()
             -- inviting to be group member, bnfriend is temporary until grouped
             -- "#tok:".. req_token_ ..",#grp:".. my_group ..",#nam:".. player_name .."-".. player_realm 
             p = msg:find("#grp:") ;
-            local group_id = msg:sub( p+5, p+5 ) ;
-            if (group_id ~= nil) then
+            local group_id = tonumber(msg:sub( p+5, p+5 ) or 0) or 0 ;
+            if ((group_id) and (group_id >= 1) and (group_id <= 8)) then
               my_group = tonumber(group_id) ;
               oq.ui_player() ;
+              oq.clear_pending() ;
               oq.update_my_premade_line() ;
               local lead = oq.raid.group[ my_group ].member[1] ;
               p = msg:find("#nam:") ;
@@ -16917,7 +16918,11 @@ function oq.on_bnet_friend_invite()
                 oq.timer_oneshot( 1, BNSetFriendNote, presenceId, "" ) ; -- clear any previous note
                 oq.timer_oneshot(15, BNSetFriendNote, presenceId, "REMOVE OQ" ) ;
               end
+            else
+              BNDeclineFriendInvite( presenceId ) ; 
             end
+          else
+            BNDeclineFriendInvite( presenceId ) ; 
           end
         else  -- not my token, inc OQ msg
           -- msg thru invite note, decline invite and process msg
@@ -17265,6 +17270,8 @@ function oq.on_proxy_target( group_id, slot, enc_data, raid_token, req_token )
   my_group = group_id ;
   my_slot  = slot ;
   oq.ui_player() ;
+
+  oq.clear_pending() ;
   oq.update_my_premade_line() ;
   
   -- set group leader to prepare for invite
@@ -17754,6 +17761,7 @@ function oq.update_premade_note()
   end
   
   oq.raid.level_range      = oq.tab3_level_range ;
+  oq.raid.subtype          = OQ_data._premade_subtype ;
   oq.raid.min_ilevel       = oq.numeric_sanity( oq.tab3_min_ilevel:GetText() ) ;
   oq.raid.min_resil        = oq.numeric_sanity( oq.tab3_min_resil:GetText() ) ;
   oq.raid.min_mmr          = oq.numeric_sanity( oq.tab3_min_mmr:GetText() ) ;
@@ -17913,6 +17921,8 @@ function oq.on_invite_group( req_token, group_id, slot, raid_name, raid_leader_c
   oq.battleground_leave( 1 ) ;
   oq.battleground_leave( 2 ) ;  
   
+  oq.clear_pending() ;
+  
   raid_name  = oq.decode_name( raid_name ) ;
   raid_notes = oq.decode_note( raid_notes ) ;
 
@@ -17952,7 +17962,6 @@ function oq.on_invite_group( req_token, group_id, slot, raid_name, raid_leader_c
 --  oq.timer( "mystatus", 2, oq.send_my_status ) ; 
 
   -- remove myself from other waitlists
-  oq.clear_pending() ;
   oq.ui_player() ;
 --  oq.update_my_premade_line() ;
   oq.timer_oneshot( 3, oq.check_stats ) ;
@@ -18162,7 +18171,7 @@ function oq.update_raid_listitem( raid_tok, raid_name, ilevel, resil, mmr, battl
     -- hang onto raid completion data to be used to find eligible progression raids
     --
     local desc, raid_id, boss_dead, max_boss, curr_boss = oq.render_raid_status(pdata) ;
-    if (desc == nil) then
+    if (desc == nil) or (desc == "") then
       bg_text = battlegrounds ;
     elseif (curr_boss == 0) then
       bg_text = desc .." ".. battlegrounds ;
@@ -19410,7 +19419,21 @@ function oq.on_role_check()
 end
 
 function oq.nMembers() 
-  return max( 1, GetNumGroupMembers() ) ;
+  local instance, instanceType = IsInInstance() ;
+  if (instance == nil) then
+    return max( 1, GetNumGroupMembers() ) ;
+  end
+  -- in an instance, get the count from the group info
+  local i, j ;
+  local cnt = 0 ;
+  for i=1,8 do
+    for j=1,5 do
+      if (not oq.is_seat_empty( i, j )) then
+        cnt = cnt + 1 ;
+      end
+    end
+  end
+  return max( 1, cnt ) ;
 end
 
 function oq.strrep(value, insert, place)
@@ -20552,7 +20575,7 @@ function oq.update_bg_queue_times( g_id, slot, queue_tm1, queue_tm2 )
   end
   oq.calc_queue_pop_dt( m, lead ) ;
   
-  if (g_id == 1) and (slot == 1) then
+  if (g_id == 1) and (slot == 1) and ((my_group > 0) and (my_slot > 0)) then
     local me = oq.raid.group[my_group].member[my_slot] ;
     if (me) then
       local d1 = me.bg[1].dt ;
@@ -21056,6 +21079,13 @@ end
 function oq.decode_slot( m )
   local n = oq.decode_mime64_digits( m:sub(1,1) ) ;
   return floor( ((n-1) / 5) + 1 ), floor( (n-1) % 5 ) + 1 ;
+end
+
+function oq.get_class_type( spec_ndx )
+  if (spec_ndx == nil) or (spec_ndx == 0) then
+    return nil ;
+  end
+  return OQ.CLASS_SPEC[spec_ndx] ;
 end
 
 function oq.get_class_spec( spec_id )
@@ -21995,6 +22025,7 @@ function oq.procs_init()
   oq.bg_msgids[ "v8"              ] = 1 ;
   oq.bg_msgids[ "oq_user"         ] = 1 ;   
   oq.bg_msgids[ "oq_user_ack"     ] = 1 ;   
+  oq.bg_msgids[ "leave_waitlist"  ] = 1 ;   
 
   -- remove raid-only procs
   oq.procs_no_raid() ;
@@ -23424,6 +23455,11 @@ function oq.find_my_group_id()
   
   local n = GetNumGroupMembers() ;
   if (n == 0) then
+    if (not oq.iam_raid_leader()) then 
+      -- clean up left over group
+      oq.raid_cleanup() ;
+      oq.raid_init() ;
+    end
     return 1, 1 ;
   end
   local i, slot, g ;
@@ -23485,7 +23521,8 @@ function oq.on_party_members_changed()
     my_group, my_slot = oq.find_my_group_id() ;
   elseif ((oq.GetNumPartyMembers() == 0) and (not oq.iam_raid_leader())) then
     -- was a party member and manually left party... need to clean up
-    oq.quit_raid_now() ;
+    oq.raid_cleanup() ;
+    oq.raid_init() ;
   end
 end
 
@@ -23928,10 +23965,10 @@ function oq.on_spell_cast_success( ... )
 
   local spellId = _arg[12] ;
   local caster  = _arg[5] ;
-  if (oq.toon.who_popped_lust == 1) and (_inside_bg) and (caster ~= nil) then
+  if (oq.toon.who_popped_lust == 1) and ((_inside_bg) or (oq._inside_instance)) and (caster) then
     -- _flags holding same faction player list by player name
     -- 
-    if ((_arg[2] == "SPELL_CAST_SUCCESS") and (oq.WhoPoppedList_Ids[ spellId ] ~= nil) and (_flags ~= nil) and (_flags[caster] ~= nil)) then
+    if (_arg[2] == "SPELL_CAST_SUCCESS") and (oq.WhoPoppedList_Ids[ spellId ] ~= nil) and ((_inside_bg and (_flags and _flags[caster])) or oq._inside_instance) then
       _last_lust = OQ.LILSKULL_ICON .." ".. (caster or "(unknown)") .." popped ".. oq.WhoPoppedList_Ids[ spellId ] ;
       print( _last_lust ) ;
     end
@@ -23994,6 +24031,7 @@ function oq.register_base_events()
 end
 
 function oq.register_events() 
+  oq.msg_handler[ "ACTIVE_TALENT_GROUP_CHANGED"   ] = oq.get_player_role ;
   oq.msg_handler[ "BN_CHAT_MSG_ADDON"             ] = oq.on_bnet_addon_event ;
   oq.msg_handler[ "BN_CONNECTED"                  ] = oq.timer_bn_pingworld ;
   oq.msg_handler[ "BN_FRIEND_ACCOUNT_OFFLINE"     ] = oq.bnfriend_offline ;
@@ -24052,6 +24090,7 @@ function oq.register_events()
   --  register for events
   ------------------------------------------------------------------------
   oq.ui:RegisterEvent("PVPQUEUE_ANYWHERE_SHOW") ;
+  oq.ui:RegisterEvent("ACTIVE_TALENT_GROUP_CHANGED") ;
   oq.ui:RegisterEvent("BN_CHAT_MSG_ADDON") ;
   oq.ui:RegisterEvent("BN_CONNECTED") ;
   oq.ui:RegisterEvent("BN_SELF_ONLINE") ;
@@ -25126,6 +25165,7 @@ function oq.on_init( now )
   player_realid     = oq.get_battle_tag() ;
   player_faction    = oq.get_player_faction() ;
   player_karma      = 0 ; 
+  player_role       = oq.get_player_role() ;
   oq.player_faction = player_faction ; -- for the other modules
 
   if (oq.toon) and (oq.toon.raid) and (oq.toon.raid.type) then
@@ -25395,7 +25435,6 @@ function oq.attempt_group_recovery()
     else
       oq.raid_init() ;
     end
-    player_role = oq.toon.player_role or 3 ;
     
     -- update UI elements
     if (oq.raid.raid_token) then

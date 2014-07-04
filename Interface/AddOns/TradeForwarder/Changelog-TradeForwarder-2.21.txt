@@ -1,0 +1,33 @@
+------------------------------------------------------------------------
+r53 | syllibear | 2014-03-04 06:09:44 +0000 (Tue, 04 Mar 2014) | 1 line
+Changed paths:
+   A /tags/2.21 (from /trunk:52)
+
+tagging as 2.21
+------------------------------------------------------------------------
+r52 | syllibear | 2014-03-04 06:08:48 +0000 (Tue, 04 Mar 2014) | 1 line
+Changed paths:
+   M /trunk/TradeForwarder.lua
+
+Fix version number.
+------------------------------------------------------------------------
+r51 | syllibear | 2014-03-04 06:05:34 +0000 (Tue, 04 Mar 2014) | 1 line
+Changed paths:
+   M /trunk/TradeForwarder.lua
+
+Added chat message and changed channel to what others have been using as a stopgap measure.
+------------------------------------------------------------------------
+r47 | syllibear | 2014-03-04 02:01:06 +0000 (Tue, 04 Mar 2014) | 2 lines
+Changed paths:
+   M /trunk/TradeForwarder.lua
+   M /trunk/TradeForwarder.toc
+
+-Fix bug introduced when realm names were added to sender's name.
+-Update toc to 50400
+------------------------------------------------------------------------
+r46 | funkydude | 2013-02-08 14:37:14 +0000 (Fri, 08 Feb 2013) | 1 line
+Changed paths:
+   M /trunk/TradeForwarder.lua
+
+Stop passing an invalid channelId which breaks other addons that expect it. All custom CHAT_MSG_CHANNEL channels have an id of 0, official channels have their own id. (1 for General, 2 for Trade, 22 for LocalDefense, 23 for WorldDefense and 26 for LFG)
+------------------------------------------------------------------------

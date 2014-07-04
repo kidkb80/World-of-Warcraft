@@ -28,7 +28,6 @@ SkadaDB = {
 			["windows"] = {
 				{
 					["set"] = "total",
-					["hidden"] = true,
 					["y"] = 176.9999389648438,
 					["x"] = -5.0003662109375,
 					["mode"] = "DPS",
@@ -43,7 +42,7 @@ SkadaDB = {
 					["wipemode"] = "",
 					["set"] = "current",
 					["hidden"] = false,
-					["y"] = 167.0003204345703,
+					["y"] = 181.0004730224609,
 					["barfont"] = "Accidental Presidency",
 					["title"] = {
 						["color"] = {
@@ -81,7 +80,7 @@ SkadaDB = {
 					["snapto"] = true,
 					["background"] = {
 						["borderthickness"] = 0,
-						["height"] = 170,
+						["height"] = 154.9999694824219,
 						["color"] = {
 							["a"] = 0.2,
 							["b"] = 0.5,
@@ -92,6 +91,7 @@ SkadaDB = {
 						["margin"] = 0,
 						["texture"] = "Solid",
 					},
+					["bartexture"] = "BantoBar",
 					["buttons"] = {
 						["segment"] = true,
 						["menu"] = true,
@@ -99,8 +99,7 @@ SkadaDB = {
 						["report"] = true,
 						["reset"] = true,
 					},
-					["bartexture"] = "BantoBar",
-					["barwidth"] = 200.9996795654297,
+					["barwidth"] = 168.9994812011719,
 					["barspacing"] = 0,
 					["name"] = "Skada",
 					["clickthrough"] = false,
@@ -118,8 +117,6 @@ SkadaDB = {
 				["channel"] = "party",
 				["mode"] = "Healing",
 			},
-			["hidesolo"] = true,
-			["hidecombat"] = true,
 		},
 	},
 }

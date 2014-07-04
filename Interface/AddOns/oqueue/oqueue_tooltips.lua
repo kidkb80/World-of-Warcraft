@@ -85,10 +85,7 @@ function oq.tooltip_create()
   local y = 8 ;
   local cy = 17 ;
   tooltip.nRows = 16 ;
---  tooltip:SetWidth ( 210 ) ;
   tooltip:SetHeight( (tooltip.nRows+1)*(cy)+8 ) ;
---  pm_tooltip:SetHeight( 12 + pm_tooltip.nRows*16 ) ;
---  tooltip:SetHeight( (tooltip.nRows+1)*(15+3)+8 ) ;
   tooltip:SetWidth ( 210 ) ; -- 240
 
   tooltip.left  = tbl.new() ;
@@ -318,6 +315,10 @@ function oq.tooltip_set2( f, m, totheside, is_lead )
 
   tooltip.left [ 3]:SetText( m.bgroup ) ;
   tooltip.left [ 3]:SetTextColor( 0.8, 0.8, 0.8, 1 ) ;
+  local spec = oq.get_class_type( m.spec_id ) or oq.get_class_spec( m.spec_id ) ;
+  if (spec) then
+    tooltip.right[ 3]:SetText( spec.n:sub(4,-1) ) ;
+  end
 
   tooltip.left [ 4]:SetText( OQ.TT_KARMA ) ;
 
@@ -431,7 +432,7 @@ function oq.tooltip_set2( f, m, totheside, is_lead )
   -- adjust dimensions of the box
   local w = tooltip.left[1]:GetStringWidth() ;
   local i ;
-  for i=4,tooltip.nRows do
+  for i=3,tooltip.nRows do
     tooltip.right[i]:SetWidth( tooltip:GetWidth() - 30 ) ;
   end
 

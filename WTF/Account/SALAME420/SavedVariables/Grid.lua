@@ -55,9 +55,9 @@ GridDB = {
 		},
 		["DungeonRole"] = {
 		},
-		["GridIndicatorCornerIcons"] = {
-		},
 		["GridStatusRange"] = {
+		},
+		["GridIndicatorCornerIcons"] = {
 		},
 		["GridLayout"] = {
 			["profiles"] = {
@@ -67,6 +67,7 @@ GridDB = {
 						["raid_10"] = "By Group 40",
 					},
 					["ScaleSize"] = 0.95,
+					["FrameLock"] = true,
 					["borderSize"] = 4,
 					["borderTexture"] = "Blizzard Party",
 					["backgroundColor"] = {
@@ -75,13 +76,13 @@ GridDB = {
 						["g"] = 0.1568627450980392,
 						["r"] = 0.07058823529411765,
 					},
-					["PosY"] = -571,
+					["PosY"] = -617,
 					["layout"] = "By Group 5",
 					["anchorRel"] = "TOPLEFT",
 					["horizontal"] = true,
 					["Padding"] = 0,
 					["Spacing"] = 5,
-					["PosX"] = 258,
+					["PosX"] = 340,
 				},
 			},
 		},
@@ -150,7 +151,7 @@ GridDB = {
 		},
 		["GridStatusAggro"] = {
 		},
-		["GridStatusHeals"] = {
+		["GridStatusVoiceComm"] = {
 		},
 		["GridStatusReadyCheck"] = {
 		},
@@ -160,7 +161,7 @@ GridDB = {
 		},
 		["GridStatusHealth"] = {
 		},
-		["GridStatusVoiceComm"] = {
+		["GridStatusHeals"] = {
 		},
 		["GridStatusMana"] = {
 		},
@@ -173,8 +174,8 @@ GridDB = {
 					["buff_Riptide"] = {
 						["icon"] = "Interface\\Icons\\spell_nature_riptide",
 					},
-					["buff_PowerWord:Shield"] = {
-						["icon"] = "Interface\\Icons\\Spell_Holy_PowerWordShield",
+					["buff_BeaconofLight"] = {
+						["icon"] = "Interface\\Icons\\Ability_Paladin_BeaconofLight",
 					},
 					["advancedOptions"] = true,
 					["buff_Rejuvenation"] = {
@@ -186,8 +187,8 @@ GridDB = {
 					["buff_Regrowth"] = {
 						["icon"] = "Interface\\Icons\\Spell_Nature_ResistNature",
 					},
-					["buff_BeaconofLight"] = {
-						["icon"] = "Interface\\Icons\\Ability_Paladin_BeaconofLight",
+					["buff_PowerWord:Shield"] = {
+						["icon"] = "Interface\\Icons\\Spell_Holy_PowerWordShield",
 					},
 					["buff_Lifebloom"] = {
 						["icon"] = "Interface\\Icons\\INV_Misc_Herb_Felblossom",
@@ -200,13 +201,16 @@ GridDB = {
 		},
 	},
 	["profileKeys"] = {
-		["Feronaz - Area 52"] = "Default",
 		["Anaiis - Skywall"] = "Default",
 		["Oldfero - Area 52"] = "Default",
+		["Dalhian - Skywall"] = "Default",
+		["Drominus - Area 52"] = "Default",
+		["Feronaz - Area 52"] = "Default",
+		["Feronis - Skywall"] = "Default",
 		["Gurund - Area 52"] = "Default",
 		["Noremedy - Skywall"] = "Default",
-		["Drominus - Area 52"] = "Default",
-		["Dalhian - Skywall"] = "Default",
+		["Cidareth - Skywall"] = "Default",
+		["Toradol - Skywall"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {

@@ -914,5 +914,6 @@ OQ.gbl = { ["tts#1959"         ] = "exploiting",  -- OQ exploiter
 --           ["danbopes#1222"    ] = "exploiting",  -- OQ exploiter; gold dragon (17jun2014); probation 18jun2014
            ["calyistis#1146"   ] = "exploiting",  -- OQ exploiter; gold dragon (21jun2014)
            ["logiiii#1198"     ] = "exploiting",  -- OQ exploiter; gold dragon (22jun2014)
+           ["aeshur#1775"      ] = "exploiting",  -- OQ exploiter; gold dragon (29jun2014)
          } ;
 end

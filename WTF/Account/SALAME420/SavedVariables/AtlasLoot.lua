@@ -1,6 +1,10 @@
 
 AtlasLootDB = {
 	["namespaces"] = {
+		["WishList"] = {
+		},
+		["AtlasLootPanel"] = {
+		},
 		["DefaultFrame"] = {
 			["profiles"] = {
 				["Anaiis - Skywall"] = {
@@ -13,7 +17,7 @@ AtlasLootDB = {
 					},
 				},
 				["Oldfero - Area 52"] = {
-					["instance"] = "SiegeofOrgrimmar",
+					["instance"] = "TerraceofEndlessSpring",
 					["NEWpoint"] = {
 						"TOPRIGHT", -- [1]
 						nil, -- [2]
@@ -24,8 +28,8 @@ AtlasLootDB = {
 					["module"] = "AtlasLootMoP",
 				},
 				["Dalhian - Skywall"] = {
-					["module"] = "AtlasLootMoP",
 					["instance"] = "SiegeofOrgrimmar",
+					["module"] = "AtlasLootMoP",
 				},
 				["Drominus - Area 52"] = {
 					["module"] = "AtlasLootMoP",
@@ -40,7 +44,6 @@ AtlasLootDB = {
 				},
 				["Gaulthain - Skywall"] = {
 					["instance"] = "SiegeofOrgrimmar",
-					["module"] = "AtlasLootMoP",
 					["NEWpoint"] = {
 						"TOP", -- [1]
 						nil, -- [2]
@@ -49,6 +52,7 @@ AtlasLootDB = {
 						0, -- [5]
 					},
 					["DefaultFrameLocked"] = true,
+					["module"] = "AtlasLootMoP",
 				},
 				["Feronaz - Area 52"] = {
 					["instance"] = "BlackTemple",
@@ -60,6 +64,9 @@ AtlasLootDB = {
 						0, -- [5]
 					},
 					["module"] = "AtlasLootBurningCrusade",
+				},
+				["Gurund - Area 52"] = {
+					["instance"] = "Firelands",
 				},
 				["Noremedy - Skywall"] = {
 					["module"] = "AtlasLootMoP",
@@ -89,14 +96,9 @@ AtlasLootDB = {
 				},
 			},
 		},
-		["AtlasLootPanel"] = {
-		},
-		["WishList"] = {
-		},
 		["Filter"] = {
 		},
 	},
-	["showWarning"] = true,
 	["profileKeys"] = {
 		["Anaiis - Skywall"] = "Anaiis - Skywall",
 		["Oldfero - Area 52"] = "Oldfero - Area 52",
@@ -104,27 +106,30 @@ AtlasLootDB = {
 		["Drominus - Area 52"] = "Drominus - Area 52",
 		["Gaulthain - Skywall"] = "Gaulthain - Skywall",
 		["Feronaz - Area 52"] = "Feronaz - Area 52",
+		["Gurund - Area 52"] = "Gurund - Area 52",
 		["Drominus - Skywall"] = "Drominus - Skywall",
 		["Noremedy - Skywall"] = "Noremedy - Skywall",
 		["Feronaz - Skywall"] = "Feronaz - Skywall",
 	},
+	["showWarning"] = true,
 	["profiles"] = {
 		["Anaiis - Skywall"] = {
 		},
 		["Oldfero - Area 52"] = {
+			["LootTableType"] = "RaidFinder",
 		},
 		["Dalhian - Skywall"] = {
 			["LootTableType"] = "RaidFinder",
 		},
 		["Drominus - Area 52"] = {
+			["LootTableType"] = "RaidFinder",
 			["LastSearch"] = "sorrowpath",
-			["LootTableType"] = "Flexible",
 			["QuickLooks"] = {
 				{
 					["module"] = "AtlasLootMoP",
 					["lootPageType"] = "Flexible",
-					["lootPage"] = "SoOIronJuggernaut",
 					["savedName"] = "QuickLook 1",
+					["lootPage"] = "SoOIronJuggernaut",
 				}, -- [1]
 			},
 		},
@@ -134,6 +139,8 @@ AtlasLootDB = {
 		},
 		["Feronaz - Area 52"] = {
 			["LootTableType"] = "RaidFinder",
+		},
+		["Gurund - Area 52"] = {
 		},
 		["Drominus - Skywall"] = {
 			["LootTableType"] = "Flexible",

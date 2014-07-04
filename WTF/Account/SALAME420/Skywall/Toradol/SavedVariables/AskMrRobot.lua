@@ -38,6 +38,6 @@ AmrLogData = {
 	["_autoLog"] = {
 		[1136] = "disabled",
 	},
-	["_lastZone"] = "Eastern Kingdoms",
 	["_lastDiff"] = 0,
+	["_lastZone"] = "Eastern Kingdoms",
 }

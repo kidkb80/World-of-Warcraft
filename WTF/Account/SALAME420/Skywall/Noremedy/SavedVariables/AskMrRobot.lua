@@ -118,17 +118,17 @@ AmrBankItems = {
 	"|cff0070dd|Hitem:31110:0:0:0:0:0:0:1375609728:90:0:0|h[Druidic Helmet of Second Sight]|h|r", -- [62]
 }
 AmrEquipedItems = {
-	["14"] = "|cffa335ee|Hitem:105114:0:0:0:0:0:0:120070912:90:167:491|h[Ticking Ebon Detonator]|h|r",
+	["9"] = "|cffa335ee|Hitem:101949:4416:0:0:0:0:-345:364578632:90:138:491|h[Cranefeather Bindings of the Unerring]|h|r",
 	["1"] = "|cffa335ee|Hitem:105803:0:4656:4593:0:0:0:2030925056:90:146:491|h[Stickney's Grey-Shade Hood]|h|r",
-	["15"] = "|cffa335ee|Hitem:101917:4424:0:0:0:0:-347:655361864:90:167:491|h[Warmsun Cloak of the Savant]|h|r",
+	["8"] = "|cffa335ee|Hitem:104933:4428:4617:0:0:0:0:971523584:90:140:491|h[Stonetoe's Tormented Treads]|h|r",
 	["3"] = "|cffa335ee|Hitem:99010:4914:4617:4617:0:0:0:0:90:0:491|h[Spaulders of the Barbed Assassin]|h|r",
 	["2"] = "|cffa335ee|Hitem:104909:0:0:0:0:0:0:743988480:90:168:491|h[Immerseus' Crystalline Eye]|h|r",
 	["5"] = "|cffa335ee|Hitem:101954:4419:4593:0:0:0:-409:1719536913:90:0:491|h[Cranefeather Jerkin of the Impatient]|h|r",
 	["4"] = "|cffffffff|Hitem:4333:0:0:0:0:0:0:677277786:90:0:0|h[Dark Silk Shirt]|h|r",
 	["7"] = "|cffa335ee|Hitem:101864:4822:4617:0:0:0:-471:2017134870:90:138:491|h[Cranefeather Britches of the Galeburst]|h|r",
 	["6"] = "|cffa335ee|Hitem:105137:0:4617:4649:4649:0:0:440667264:90:146:491|h[Cord of Black Dreams]|h|r",
-	["9"] = "|cffa335ee|Hitem:101949:4416:0:0:0:0:-345:364578632:90:138:491|h[Cranefeather Bindings of the Unerring]|h|r",
-	["8"] = "|cffa335ee|Hitem:104933:4428:4617:0:0:0:0:971523584:90:140:491|h[Stonetoe's Tormented Treads]|h|r",
+	["14"] = "|cffa335ee|Hitem:105114:0:0:0:0:0:0:120070912:90:167:491|h[Ticking Ebon Detonator]|h|r",
+	["15"] = "|cffa335ee|Hitem:101917:4424:0:0:0:0:-347:655361864:90:167:491|h[Warmsun Cloak of the Savant]|h|r",
 	["16"] = "|cffa335ee|Hitem:104932:4444:4617:0:0:0:0:54013696:90:138:505|h[Softfoot's Last Resort]|h|r",
 	["17"] = "|cffa335ee|Hitem:104932:4444:4617:0:0:0:0:1238080640:90:138:505|h[Softfoot's Last Resort]|h|r",
 	["13"] = "|cffa335ee|Hitem:104974:0:0:0:0:0:0:203788416:90:0:492|h[Assurance of Consequence]|h|r",
@@ -143,13 +143,13 @@ AmrIconInfo = {
 }
 AmrCurrencies = {
 	[395] = 448,
-	[402] = 1,
-	[81] = 2,
+	[416] = 15,
+	[393] = 34,
 	[515] = 17,
 	[392] = 321,
-	[393] = 34,
+	[81] = 2,
 	[241] = 11,
-	[416] = 15,
+	[402] = 1,
 }
 AmrProfessions = {
 	["Inscription"] = 600,
@@ -454,6 +454,6 @@ AmrLogData = {
 	["_autoLog"] = {
 		[1136] = "disabled",
 	},
+	["_lastZone"] = "Eastern Kingdoms",
 	["_lastDiff"] = 0,
-	["_lastZone"] = "Pandaria",
 }

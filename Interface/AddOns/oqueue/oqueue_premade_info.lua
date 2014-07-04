@@ -954,20 +954,23 @@ function oq.render_raid_status( pdata )
   local s = "" ;
 
   -- raid & difficulty
-  if (R == 63) then
+  if (R == 0) or (OQ.raid_abbrevation[R] == nil) then
+    -- general raid
+    s = "" ;
+  elseif (R == 63) then
     -- world boss
-    s = s .. "|cffF25804" .. (OQ.raid_abbrevation[R] or "---") .."|r " ;
+    s = s .. "|cffF25804" .. (OQ.raid_abbrevation[R] or "") .."|r " ;
   else
-    s = s .. "|cff".. (OQ.difficulty_color[D] or "0000ff") .. (OQ.raid_abbrevation[R] or "---") .. string.format( OQ.difficulty_abbr[D] or "", n ) .."|r " ;
+    s = s .. "|cff".. (OQ.difficulty_color[D] or "0000ff") .. (OQ.raid_abbrevation[R] or "") .. string.format( OQ.difficulty_abbr[D] or "", n ) .."|r " ;
     -- progress
-    if (D >= 3) and (D <= 6) then
+    if (D >= 3) and (D <= 6) and (OQ.raid_abbrevation[R]) then
       s = s .. string.format( "|cff808080[|r|cff90ffff%d|r|cff808080/|r|cff90ffff%d|r|cff808080]|r ", b, B ) ;  
     end
   end
   
   -- boss
   if (i > 0) then
-    s = s .. string.format( "%s |cff909090(|r|cffc0c000%2d%%|r|cff909090)|r", oq.get_boss_name( R, i ), h*2 ) ;
+    s = s .. string.format( "%s|cff909090(|r|cffc0c000%2d%%|r|cff909090)|r", oq.get_boss_name( R, i ), h*2 ) ;
   end
   return s, R, b, B, i ;
 end

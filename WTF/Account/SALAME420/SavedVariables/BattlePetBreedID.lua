@@ -1,5 +1,6 @@
 
 BPBID_Options = {
+	["ManualChange"] = "1.1.1b",
 	["Breedtip"] = {
 		["CurrentStats25"] = 1,
 		["AllStats25Rare"] = 1,
@@ -9,7 +10,6 @@ BPBID_Options = {
 		["AllStats25"] = 1,
 	},
 	["format"] = 3,
-	["ManualChange"] = "1.1.1b",
 	["Tooltips"] = {
 		["Enabled"] = 1,
 		["FBPT"] = 1,

@@ -9,42 +9,42 @@ PetBattleMasterDb = {
 							["pets"] = {
 								{
 									["speciesId"] = 1068,
-									["name"] = "Crow",
+									["petType"] = 3,
 									["creatureId"] = 67443,
+									["name"] = "Crow",
+									["level"] = 25,
 									["abilities"] = {
 										504, -- [1]
 										256, -- [2]
 										517, -- [3]
 									},
-									["petId"] = "0x0000000001CD1885",
-									["petType"] = 3,
-									["level"] = 25,
+									["petId"] = "0x0000000002275988",
 								}, -- [1]
 								{
 									["speciesId"] = 718,
-									["name"] = "Luyu Moth",
+									["petType"] = 3,
 									["creatureId"] = 65124,
+									["name"] = "Luyu Moth",
+									["level"] = 25,
 									["abilities"] = {
 										504, -- [1]
 										506, -- [2]
 										508, -- [3]
 									},
-									["petId"] = "0x0000000000CFFE47",
-									["petType"] = 3,
-									["level"] = 25,
+									["petId"] = "0x0000000002275954",
 								}, -- [2]
 								{
 									["speciesId"] = 728,
-									["name"] = "Szechuan Chicken",
+									["petType"] = 3,
 									["creatureId"] = 63585,
+									["name"] = "Szechuan Chicken",
+									["level"] = 23,
 									["abilities"] = {
 										420, -- [1]
 										162, -- [2]
 										581, -- [3]
 									},
-									["petId"] = "0x0000000001CD43B4",
-									["petType"] = 3,
-									["level"] = 23,
+									["petId"] = "0x000000000227598A",
 								}, -- [3]
 							},
 							["name"] = "Misc",
@@ -53,43 +53,43 @@ PetBattleMasterDb = {
 						{
 							["pets"] = {
 								{
+									["speciesId"] = 1351,
+									["petType"] = 4,
+									["creatureId"] = 34770,
+									["level"] = 1,
+									["petId"] = "0x000000000227CA66",
+									["name"] = "Macabre Marionette",
+									["abilities"] = {
+										1094, -- [1]
+										214, -- [2]
+										1093, -- [3]
+									},
+								}, -- [1]
+								{
 									["speciesId"] = 1068,
+									["petType"] = 3,
+									["creatureId"] = 67443,
+									["level"] = 25,
+									["petId"] = "0x0000000002275988",
+									["name"] = "Crow",
 									["abilities"] = {
 										504, -- [1]
 										256, -- [2]
 										517, -- [3]
 									},
-									["creatureId"] = 67443,
-									["petId"] = "0x0000000001CD1885",
-									["level"] = 25,
-									["name"] = "Crow",
-									["petType"] = 3,
-								}, -- [1]
-								{
-									["speciesId"] = 728,
-									["abilities"] = {
-										112, -- [1]
-										162, -- [2]
-										581, -- [3]
-									},
-									["creatureId"] = 63585,
-									["petId"] = "0x0000000001CD43B4",
-									["level"] = 23,
-									["name"] = "Szechuan Chicken",
-									["petType"] = 3,
 								}, -- [2]
 								{
-									["speciesId"] = 548,
-									["abilities"] = {
-										112, -- [1]
-										420, -- [2]
-										581, -- [3]
-									},
-									["creatureId"] = 62900,
-									["petId"] = "0x0000000000BBB3A4",
-									["level"] = 25,
-									["name"] = "Wildhammer Gryphon Hatchling",
+									["speciesId"] = 626,
 									["petType"] = 3,
+									["creatureId"] = 61829,
+									["level"] = 25,
+									["petId"] = "0x000000000227589F",
+									["name"] = "Bat",
+									["abilities"] = {
+										110, -- [1]
+										521, -- [2]
+										517, -- [3]
+									},
 								}, -- [3]
 							},
 							["name"] = "Birds",
@@ -99,16 +99,16 @@ PetBattleMasterDb = {
 							["pets"] = {
 								{
 									["speciesId"] = 1166,
-									["petType"] = 1,
+									["name"] = "Kun-Lai Runt",
 									["creatureId"] = 68846,
+									["petType"] = 1,
+									["petId"] = "0x000000000227594F",
 									["abilities"] = {
 										202, -- [1]
 										314, -- [2]
 										124, -- [3]
 									},
 									["level"] = 25,
-									["name"] = "Kun-Lai Runt",
-									["petId"] = "0x0000000000C7F9A8",
 								}, -- [1]
 								{
 									["speciesId"] = 1211,
@@ -119,22 +119,22 @@ PetBattleMasterDb = {
 										364, -- [2]
 										919, -- [3]
 									},
-									["level"] = 25,
-									["name"] = "Zandalari Anklerender",
 									["petId"] = "0x0000000001CD14C8",
+									["name"] = "Zandalari Anklerender",
+									["level"] = 25,
 								}, -- [2]
 								{
 									["speciesId"] = 1305,
-									["petType"] = 8,
+									["name"] = "Zao, Calfling of Niuzao",
 									["creatureId"] = 72464,
+									["petType"] = 8,
+									["petId"] = "0x000000000227598E",
 									["abilities"] = {
 										377, -- [1]
 										376, -- [2]
 										1019, -- [3]
 									},
 									["level"] = 25,
-									["name"] = "Zao, Calfling of Niuzao",
-									["petId"] = "0x0000000001CD5714",
 								}, -- [3]
 							},
 							["name"] = "Beasts",
@@ -144,42 +144,42 @@ PetBattleMasterDb = {
 							["pets"] = {
 								{
 									["speciesId"] = 1238,
+									["petType"] = 4,
+									["creatureId"] = 71163,
 									["abilities"] = {
 										210, -- [1]
 										218, -- [2]
 										652, -- [3]
 									},
-									["creatureId"] = 71163,
-									["name"] = "Unborn Val'kyr",
-									["petId"] = "0x00000000013797EA",
-									["petType"] = 4,
 									["level"] = 24,
+									["name"] = "Unborn Val'kyr",
+									["petId"] = "0x000000000227597A",
 								}, -- [1]
 								{
 									["speciesId"] = 190,
-									["name"] = "Ghostly Skull",
-									["creatureId"] = 29147,
 									["petType"] = 4,
-									["level"] = 25,
+									["creatureId"] = 29147,
 									["abilities"] = {
 										210, -- [1]
 										442, -- [2]
 										321, -- [3]
 									},
-									["petId"] = "0x0000000001CD1C3A",
+									["petId"] = "0x000000000227FFE8",
+									["name"] = "Ghostly Skull",
+									["level"] = 25,
 								}, -- [2]
 								{
 									["speciesId"] = 439,
+									["petType"] = 4,
+									["creatureId"] = 61375,
 									["abilities"] = {
 										422, -- [1]
 										214, -- [2]
 										764, -- [3]
 									},
-									["creatureId"] = 61375,
-									["name"] = "Restless Shadeling",
-									["petId"] = "0x0000000000BC2867",
-									["petType"] = 4,
 									["level"] = 25,
+									["name"] = "Restless Shadeling",
+									["petId"] = "0x000000000227588F",
 								}, -- [3]
 							},
 							["name"] = "Undead",
@@ -189,16 +189,16 @@ PetBattleMasterDb = {
 							["pets"] = {
 								{
 									["speciesId"] = 1163,
-									["name"] = "Anodized Robo Cub",
+									["petType"] = 10,
 									["creatureId"] = 68839,
+									["name"] = "Anodized Robo Cub",
+									["level"] = 25,
 									["abilities"] = {
 										390, -- [1]
 										533, -- [2]
 										208, -- [3]
 									},
-									["petId"] = "0x0000000000EC0C94",
-									["petType"] = 10,
-									["level"] = 25,
+									["petId"] = "0x000000000227596C",
 								}, -- [1]
 								{
 									["speciesId"] = 1227,
@@ -209,9 +209,9 @@ PetBattleMasterDb = {
 									},
 									["creatureId"] = 71015,
 									["petType"] = 10,
-									["level"] = 25,
-									["name"] = "Menagerie Custodian",
 									["petId"] = "0x0000000001CD3E2D",
+									["name"] = "Menagerie Custodian",
+									["level"] = 25,
 								}, -- [2]
 								{
 									["speciesId"] = 116,
@@ -222,9 +222,9 @@ PetBattleMasterDb = {
 										204, -- [2]
 										209, -- [3]
 									},
-									["petId"] = "0x0000000001CD221B",
-									["petType"] = 10,
 									["level"] = 25,
+									["petType"] = 10,
+									["petId"] = "0x000000000227FFEC",
 								}, -- [3]
 							},
 							["name"] = "bots",
@@ -241,13 +241,14 @@ PetBattleMasterDb = {
 		["Oldfero - Area 52"] = "Default",
 		["Dalhian - Skywall"] = "Default",
 		["Drominus - Area 52"] = "Default",
-		["Gurund - Area 52"] = "Default",
+		["Cidareth - Skywall"] = "Default",
+		["Toradol - Skywall"] = "Default",
 		["Feronaz - Area 52"] = "Default",
 		["Feronis - Skywall"] = "Default",
 		["Noremedy - Skywall"] = "Default",
-		["Toradol - Skywall"] = "Default",
-		["Drominus - Skywall"] = "Default",
+		["Gurund - Area 52"] = "Default",
 		["Malkyn - Dragonblight"] = "Default",
+		["Drominus - Skywall"] = "Default",
 		["Feronaz - Skywall"] = "Default",
 	},
 	["profiles"] = {
