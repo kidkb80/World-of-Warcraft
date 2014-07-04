@@ -1,0 +1,13 @@
+## Interface: 40000
+## Title: hfLootLog
+## Notes: Loot logging module for hfLootRoll
+## Author: hfDixus
+## Version: 1.2.4
+## Dependencies: hfLootRoll
+## SavedVariablesPerCharacter: hfLootLogDB
+## X-Curse-Packaged-Version: 1.2.4
+## X-Curse-Project-Name: hfLootRoll
+## X-Curse-Project-ID: hflootroll
+## X-Curse-Repository-ID: wow/hflootroll/mainline
+
+hfLootLog.xml

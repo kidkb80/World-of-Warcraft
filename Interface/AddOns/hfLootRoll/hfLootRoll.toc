@@ -1,0 +1,37 @@
+## Interface: 40000
+## Title: hfLootRoll
+## Notes: Improved loot roll frames
+## Author: hfDixus
+## Version: 1.2.4
+## SavedVariablesPerCharacter: hfLootRollOptions
+## SavedVariables: hfLootRollGlobalOptions
+## X-Curse-Packaged-Version: 1.2.4
+## X-Curse-Project-Name: hfLootRoll
+## X-Curse-Project-ID: hflootroll
+## X-Curse-Repository-ID: wow/hflootroll/mainline
+
+
+
+libs\LibStub\LibStub.lua
+libs\LibDeformat-3.0\lib.xml
+
+localization\localization.default.lua
+localization\localization.ruRU.lua
+localization\localization.post.lua
+
+widgets\hfCheckBox.lua
+widgets\hfScrollableList.lua
+widgets\hfDropDownMenu.lua
+widgets\hfSlider.lua
+widgets\hfLootButton.lua
+widgets\hfLootFrame.lua
+widgets\hfLootFrameHolder.lua
+widgets\hfOptionsPanel.lua
+
+hfLootRoll_const.lua
+hfLootRoll_callbacks.lua
+hfLootRoll_core.lua
+hfLootRoll_gui.lua
+hfLootRoll_options.lua
+hfLootRoll_slash.lua
+

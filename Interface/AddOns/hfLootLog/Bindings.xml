@@ -1,0 +1,5 @@
+<Bindings>
+	<Binding name="HFLOOTLOG_TOGGLE" header="HFLOOTLOG">
+		hfLootRoll:GetModule("log_gui").frame:Toggle();
+	</Binding>
+</Bindings>

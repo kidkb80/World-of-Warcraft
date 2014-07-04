@@ -1,0 +1,159 @@
+------------------------------------------------------------------------
+r61 | hfdixus | 2010-11-12 05:20:19 +0000 (Fri, 12 Nov 2010) | 1 line
+Changed paths:
+   A /tags/1.2.4 (from /trunk:60)
+
+Tagging as 1.2.4
+------------------------------------------------------------------------
+r60 | hfdixus | 2010-11-07 23:54:10 +0000 (Sun, 07 Nov 2010) | 2 lines
+Changed paths:
+   M /trunk/hfLootRoll_gui.lua
+   M /trunk/widgets/hfLootFrame.lua
+   M /trunk/widgets/hfLootFrameHolder.lua
+
+* I hope frame sticking is fixed now
+* Fixed error when roll timed out
+------------------------------------------------------------------------
+r58 | hfdixus | 2010-10-29 08:58:59 +0000 (Fri, 29 Oct 2010) | 1 line
+Changed paths:
+   M /trunk/widgets/hfLootFrame.lua
+
+* Fixed time conversion
+------------------------------------------------------------------------
+r57 | hfdixus | 2010-10-29 08:49:34 +0000 (Fri, 29 Oct 2010) | 1 line
+Changed paths:
+   M /trunk/widgets/hfLootFrame.lua
+
+* Added timer desynchronization check before closing roll frame
+------------------------------------------------------------------------
+r55 | hfdixus | 2010-10-23 22:20:07 +0000 (Sat, 23 Oct 2010) | 1 line
+Changed paths:
+   M /trunk/hfLootRoll_options.lua
+
+* Added item icons in configuration mode
+------------------------------------------------------------------------
+r54 | hfdixus | 2010-10-23 09:05:24 +0000 (Sat, 23 Oct 2010) | 1 line
+Changed paths:
+   M /trunk/hfLootRoll.toc
+   M /trunk/hfLootRoll_gui.lua
+   M /trunk/hfLootRoll_test.lua
+   M /trunk/localization/localization.default.lua
+   M /trunk/widgets/hfLootFrameHolder.lua
+
+* Added slash command 'toggle'
+------------------------------------------------------------------------
+r53 | hfdixus | 2010-10-22 11:48:41 +0000 (Fri, 22 Oct 2010) | 1 line
+Changed paths:
+   M /trunk/widgets/hfLootFrame.lua
+
+* Fixed word wrapping
+------------------------------------------------------------------------
+r52 | hfdixus | 2010-10-21 18:51:47 +0000 (Thu, 21 Oct 2010) | 1 line
+Changed paths:
+   M /trunk/plugins/hfLootLog/hfLootLog_gui.lua
+
+* Fixed bug
+------------------------------------------------------------------------
+r51 | hfdixus | 2010-10-21 17:29:05 +0000 (Thu, 21 Oct 2010) | 1 line
+Changed paths:
+   M /trunk/plugins/hfLootLog/hfLootLog.lua
+   M /trunk/plugins/hfLootLog/hfLootLog_gui.lua
+   M /trunk/plugins/hfLootLog/localization/localization.default.lua
+   M /trunk/plugins/hfLootLog/textures
+   A /trunk/plugins/hfLootLog/textures/arrow-down.tga
+   A /trunk/plugins/hfLootLog/textures/arrow-up.tga
+   M /trunk/textures
+
+* Log frame was refined
+------------------------------------------------------------------------
+r50 | hfdixus | 2010-10-21 13:25:41 +0000 (Thu, 21 Oct 2010) | 1 line
+Changed paths:
+   M /trunk/widgets/hfLootFrame.lua
+   M /trunk/widgets/hfLootFrameHolder.lua
+
+* Bug fixes (ticket #4)
+------------------------------------------------------------------------
+r49 | hfdixus | 2010-10-20 17:10:23 +0000 (Wed, 20 Oct 2010) | 1 line
+Changed paths:
+   M /trunk/hfLootRoll_gui.lua
+   M /trunk/hfLootRoll_options.lua
+   M /trunk/hfLootRoll_slash.lua
+
+* Fixed not saving anchor visibility after using 'lock' and 'unlock' commands
+------------------------------------------------------------------------
+r48 | hfdixus | 2010-10-20 11:31:59 +0000 (Wed, 20 Oct 2010) | 1 line
+Changed paths:
+   M /trunk/widgets/hfLootFrame.lua
+
+* Implemented delay before buttons become clickable after loot frame appearance, to prevent occasional clicks
+------------------------------------------------------------------------
+r47 | hfdixus | 2010-10-19 19:41:57 +0000 (Tue, 19 Oct 2010) | 1 line
+Changed paths:
+   M /trunk/hfLootRoll_options.lua
+   M /trunk/hfLootRoll_test.lua
+   M /trunk/textures
+   A /trunk/textures/down.tga
+   A /trunk/textures/equal.tga
+   A /trunk/textures/up.tga
+   M /trunk/widgets/hfLootFrame.lua
+   M /trunk/widgets/hfLootFrameHolder.lua
+   M /trunk/widgets/hfOptionsPanel.lua
+
++ Added item level comparison (Options -> Appearance -> General -> iLvl comparison icon)
+------------------------------------------------------------------------
+r46 | hfdixus | 2010-10-19 09:41:48 +0000 (Tue, 19 Oct 2010) | 1 line
+Changed paths:
+   M /trunk/hfLootRoll_test.lua
+   M /trunk/widgets/hfLootFrame.lua
+   M /trunk/widgets/hfLootFrameHolder.lua
+
+* Added info line in item tooltip
+------------------------------------------------------------------------
+r44 | hfdixus | 2010-10-18 10:02:18 +0000 (Mon, 18 Oct 2010) | 1 line
+Changed paths:
+   M /trunk/hfLootRoll_gui.lua
+   M /trunk/localization/localization.default.lua
+   M /trunk/plugins/hfLootLog/hfLootLog.lua
+
+* Added warning in "Detailed Loot Information" tooltip
+------------------------------------------------------------------------
+r43 | hfdixus | 2010-10-17 20:21:59 +0000 (Sun, 17 Oct 2010) | 1 line
+Changed paths:
+   A /trunk/Bindings.xml
+   M /trunk/hfLootRoll.toc
+   A /trunk/localization/localization.post.lua
+   A /trunk/plugins/hfLootLog/Bindings.xml
+   M /trunk/plugins/hfLootLog/hfLootLog.xml
+   A /trunk/plugins/hfLootLog/localization/localization.post.lua
+
++ Added bindings
+------------------------------------------------------------------------
+r42 | hfdixus | 2010-10-17 15:12:27 +0000 (Sun, 17 Oct 2010) | 3 lines
+Changed paths:
+   M /trunk/hfLootRoll_core.lua
+   M /trunk/hfLootRoll_gui.lua
+   M /trunk/hfLootRoll_options.lua
+   M /trunk/localization/localization.default.lua
+   M /trunk/plugins/hfLootLog/hfLootLog_options.lua
+   M /trunk/widgets/hfDropDownMenu.lua
+   M /trunk/widgets/hfOptionsPanel.lua
+   M /trunk/widgets/hfScrollableList.lua
+
+* Context menu was disabled because of bug in UIDropDownMenu (ticket #2)
+* UIDropDownMenu was replaced by my dropdown implementation because of bug in UIDropDownMenu (ticket #2)
+* Options panel was removed from standard interface options because of bug in InterfaceOptionsFrame. Options frame still available through "/hflr settings" (ticket #2)
+------------------------------------------------------------------------
+r41 | hfdixus | 2010-10-15 19:25:01 +0000 (Fri, 15 Oct 2010) | 1 line
+Changed paths:
+   M /trunk/plugins/hfLootLog/hfLootLog.toc
+
+* Bumped hfLootLog.toc
+------------------------------------------------------------------------
+r40 | hfdixus | 2010-10-15 19:09:45 +0000 (Fri, 15 Oct 2010) | 1 line
+Changed paths:
+   M /trunk/hfLootRoll.toc
+   M /trunk/widgets/hfLootButton.lua
+   M /trunk/widgets/hfLootFrameHolder.lua
+
+* Bumped .toc
+------------------------------------------------------------------------

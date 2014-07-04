@@ -1,0 +1,9 @@
+<Bindings>
+	<Binding name="HFLOOTROLL_TOGGLE" header="HFLOOTROLL">
+		hfLootRoll:GetModule("gui").anchorFrame:Toggle();
+	</Binding>
+	<Binding name="HFLOOTROLL_OPTIONS">
+		hfLootRoll:GetModule("options").optionsFrame:Show();
+	</Binding>
+	
+</Bindings>

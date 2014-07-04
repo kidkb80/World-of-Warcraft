@@ -1,0 +1,9 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.blizzard.com/wow/ui/
+..\FrameXML\UI.xsd">
+	<Script file="localization\localization.default.lua" />
+	<Script file="localization\localization.ruRU.lua" />
+	<Script file="localization\localization.post.lua" />
+	<Script file="hfLootLog.lua" />
+	<Script file="hfLootLog_gui.lua" />
+	<Script file="hfLootLog_options.lua" />
+</Ui>
