@@ -1,7 +1,0 @@
-## Interface: 50400
-## Author: Donpeppino
-## Title: Movable Debuffs
-## Notes: Create spearate anchor for debuffs
-## RequiredDeps: Tukui
-
-core.lua
