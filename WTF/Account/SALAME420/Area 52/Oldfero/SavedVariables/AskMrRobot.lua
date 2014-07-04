@@ -4,43 +4,42 @@ AmrBagItems = {
 	"|cffffffff|Hitem:103642:0:0:0:0:0:0:1610946688:90:0:0|h[Book of the Ages]|h|r", -- [2]
 	"|cffffffff|Hitem:103641:0:0:0:0:0:0:1632967680:90:0:0|h[Singing Crystal]|h|r", -- [3]
 	"|cffffffff|Hitem:103643:0:0:0:0:0:0:1258917760:90:0:0|h[Dew of Eternal Morning]|h|r", -- [4]
-	"|cff1eff00|Hitem:95509:0:0:0:0:0:0:1172878208:90:0:0|h[Mantid Artifact Sonic Locator]|h|r", -- [5]
+	"|cffffffff|Hitem:5512:0:0:0:0:0:0:870795008:90:0:0|h[Healthstone]|h|r", -- [5]
 	"|cffffffff|Hitem:103641:0:0:0:0:0:0:194605184:90:0:0|h[Singing Crystal]|h|r", -- [6]
 	"|cffffffff|Hitem:103642:0:0:0:0:0:0:2043133824:90:0:0|h[Book of the Ages]|h|r", -- [7]
 	"|cffffffff|Hitem:104265:0:0:0:0:0:0:1466323715:90:0:0|h[Great Turtle Meat]|h|r", -- [8]
-	"|cffffffff|Hitem:74650:0:0:0:0:0:0:1360512384:90:0:0|h[Mogu Fish Stew]|h|r", -- [9]
-	"|cffffffff|Hitem:101618:0:0:0:0:0:0:0:90:0:0|h[Pandaren Treasure Noodle Soup]|h|r", -- [10]
-	"|cffffffff|Hitem:101662:0:0:0:0:0:0:930230912:90:0:0|h[Pandaren Treasure Noodle Cart Kit]|h|r", -- [11]
-	"|cffffffff|Hitem:76094:0:0:0:0:0:0:953369472:90:0:0|h[Alchemist's Rejuvenation]|h|r", -- [12]
-	"|cffffffff|Hitem:89112:0:0:0:0:0:0:161515648:90:0:0|h[Mote of Harmony]|h|r", -- [13]
-	"|cffffffff|Hitem:72235:0:0:0:0:0:0:488551936:90:0:0|h[Silkweed]|h|r", -- [14]
-	"|cff0070dd|Hitem:98083:0:0:0:0:0:0:1141605120:90:0:0|h[Sharkskin Tunic]|h|r", -- [15]
-	"|cff0070dd|Hitem:98084:0:0:0:0:0:0:2105921408:90:0:0|h[Ooze-Soaked Shirt]|h|r", -- [16]
-	"|cffa335ee|Hitem:86547:0:0:0:0:0:0:383172088:90:0:0|h[Skyshard]|h|r", -- [17]
-	"|cffffffff|Hitem:76085:0:0:0:0:0:0:1089511680:90:0:0|h[Flask of the Warm Sun]|h|r", -- [18]
-	"|cffffffff|Hitem:3371:0:0:0:0:0:0:0:90:0:0|h[Crystal Vial]|h|r", -- [19]
-	"|cff0070dd|Hitem:86425:0:0:0:0:0:0:0:90:0:0|h[Cooking School Bell]|h|r", -- [20]
-	"|cff0070dd|Hitem:19970:0:0:0:0:0:0:0:90:0:0|h[Arcanite Fishing Pole]|h|r", -- [21]
-	"|cff0070dd|Hitem:85973:0:0:0:0:0:0:1295063552:90:0:0|h[Ancient Pandaren Fishing Charm]|h|r", -- [22]
-	"|cffffffff|Hitem:90146:0:0:0:0:0:0:0:90:0:0|h[Tinker's Kit]|h|r", -- [23]
-	"|cffffffff|Hitem:87216:0:0:0:0:0:0:1288391808:90:0:0|h[Thermal Anvil]|h|r", -- [24]
-	"|cff0070dd|Hitem:92738:0:0:0:0:0:0:1726304512:90:0:0|h[Safari Hat]|h|r", -- [25]
-	"|cffffffff|Hitem:98112:0:0:0:0:0:0:1028563328:90:0:0|h[Lesser Pet Treat]|h|r", -- [26]
-	"|cff1eff00|Hitem:86143:0:0:0:0:0:0:928901824:90:0:0|h[Battle Pet Bandage]|h|r", -- [27]
-	"|cff0070dd|Hitem:85500:0:0:0:0:0:0:0:90:0:0|h[Anglers Fishing Raft]|h|r", -- [28]
-	"|cff0070dd|Hitem:104038:0:0:0:0:0:0:1559525889:90:0:0|h[Cursed Swabby Helmet]|h|r", -- [29]
-	"|cff1eff00|Hitem:71153:0:0:0:0:0:0:1050459136:90:0:0|h[Magical Pet Biscuit]|h|r", -- [30]
-	"|cffffffff|Hitem:71634:0:0:0:0:0:0:1579819008:90:0:0|h[Darkmoon Adventurer's Guide]|h|r", -- [31]
-	"|cff1eff00|Hitem:71083:0:0:0:0:0:0:322553088:90:0:0|h[Darkmoon Game Token]|h|r", -- [32]
-	"|cffffffff|Hitem:79249:0:0:0:0:0:0:0:90:0:0|h[Tome of the Clear Mind]|h|r", -- [33]
-	"|cff0070dd|Hitem:75274:0:0:0:0:0:0:1133549568:90:0:451|h[Zen Alchemist Stone]|h|r", -- [34]
-	"|cff0070dd|Hitem:87215:0:0:0:0:0:0:1395105280:90:0:0|h[Wormhole Generator: Pandaria]|h|r", -- [35]
-	"|cff0070dd|Hitem:48933:0:0:0:0:0:0:2107412736:90:0:0|h[Wormhole Generator: Northrend]|h|r", -- [36]
-	"|cff0070dd|Hitem:40768:0:0:0:0:0:0:376131456:90:0:0|h[MOLL-E]|h|r", -- [37]
-	"|cffa335ee|Hitem:49040:0:0:0:0:0:0:2108466048:90:0:0|h[Jeeves]|h|r", -- [38]
-	"|cffa335ee|Hitem:87214:0:0:0:0:0:0:573102016:90:0:0|h[Blingtron 4000]|h|r", -- [39]
-	"|cffffffff|Hitem:40772:0:0:0:0:0:0:2112156672:90:0:0|h[Gnomish Army Knife]|h|r", -- [40]
-	"|cffffffff|Hitem:6948:0:0:0:0:0:0:0:90:0:0|h[Hearthstone]|h|r", -- [41]
+	"|cffa335ee|Hitem:71141:0:0:0:0:0:0:1309953664:90:0:0|h[Eternal Ember]|h|r", -- [9]
+	"|cffa335ee|Hitem:71343:0:0:0:0:0:0:908084224:90:0:0|h[Mantle of Closed Doors]|h|r", -- [10]
+	"|cffffffff|Hitem:23247:0:0:0:0:0:0:527047168:90:0:0|h[Burning Blossom]|h|r", -- [11]
+	"|cff9d9d9d|Hitem:68198:0:0:0:0:0:0:1316197120:90:0:0|h[Ruined Embersilk Scraps]|h|r", -- [12]
+	"|cffffffff|Hitem:74650:0:0:0:0:0:0:1360512384:90:0:0|h[Mogu Fish Stew]|h|r", -- [13]
+	"|cffffffff|Hitem:101662:0:0:0:0:0:0:930230912:90:0:0|h[Pandaren Treasure Noodle Cart Kit]|h|r", -- [14]
+	"|cffffffff|Hitem:76094:0:0:0:0:0:0:953369472:90:0:0|h[Alchemist's Rejuvenation]|h|r", -- [15]
+	"|cffffffff|Hitem:89112:0:0:0:0:0:0:161515648:90:0:0|h[Mote of Harmony]|h|r", -- [16]
+	"|cffffffff|Hitem:76085:0:0:0:0:0:0:1089511680:90:0:0|h[Flask of the Warm Sun]|h|r", -- [17]
+	"|cffffffff|Hitem:3371:0:0:0:0:0:0:0:90:0:0|h[Crystal Vial]|h|r", -- [18]
+	"|cff0070dd|Hitem:86425:0:0:0:0:0:0:0:90:0:0|h[Cooking School Bell]|h|r", -- [19]
+	"|cff0070dd|Hitem:19970:0:0:0:0:0:0:0:90:0:0|h[Arcanite Fishing Pole]|h|r", -- [20]
+	"|cff0070dd|Hitem:85973:0:0:0:0:0:0:1295063552:90:0:0|h[Ancient Pandaren Fishing Charm]|h|r", -- [21]
+	"|cffffffff|Hitem:90146:0:0:0:0:0:0:0:90:0:0|h[Tinker's Kit]|h|r", -- [22]
+	"|cffffffff|Hitem:79249:0:0:0:0:0:0:0:90:0:0|h[Tome of the Clear Mind]|h|r", -- [23]
+	"|cff0070dd|Hitem:92738:0:0:0:0:0:0:1726304512:90:0:0|h[Safari Hat]|h|r", -- [24]
+	"|cffffffff|Hitem:98112:0:0:0:0:0:0:1028563328:90:0:0|h[Lesser Pet Treat]|h|r", -- [25]
+	"|cff1eff00|Hitem:86143:0:0:0:0:0:0:928901824:90:0:0|h[Battle Pet Bandage]|h|r", -- [26]
+	"|cff0070dd|Hitem:85500:0:0:0:0:0:0:0:90:0:0|h[Anglers Fishing Raft]|h|r", -- [27]
+	"|cff0070dd|Hitem:104038:0:0:0:0:0:0:1559525889:90:0:0|h[Cursed Swabby Helmet]|h|r", -- [28]
+	"|cff1eff00|Hitem:71153:0:0:0:0:0:0:1050459136:90:0:0|h[Magical Pet Biscuit]|h|r", -- [29]
+	"|cffffffff|Hitem:71634:0:0:0:0:0:0:1579819008:90:0:0|h[Darkmoon Adventurer's Guide]|h|r", -- [30]
+	"|cff1eff00|Hitem:71083:0:0:0:0:0:0:322553088:90:0:0|h[Darkmoon Game Token]|h|r", -- [31]
+	"|cffffffff|Hitem:87216:0:0:0:0:0:0:1288391808:90:0:0|h[Thermal Anvil]|h|r", -- [32]
+	"|cff0070dd|Hitem:75274:0:0:0:0:0:0:1133549568:90:0:451|h[Zen Alchemist Stone]|h|r", -- [33]
+	"|cff0070dd|Hitem:87215:0:0:0:0:0:0:1395105280:90:0:0|h[Wormhole Generator: Pandaria]|h|r", -- [34]
+	"|cff0070dd|Hitem:48933:0:0:0:0:0:0:2107412736:90:0:0|h[Wormhole Generator: Northrend]|h|r", -- [35]
+	"|cff0070dd|Hitem:40768:0:0:0:0:0:0:376131456:90:0:0|h[MOLL-E]|h|r", -- [36]
+	"|cffa335ee|Hitem:49040:0:0:0:0:0:0:2108466048:90:0:0|h[Jeeves]|h|r", -- [37]
+	"|cffa335ee|Hitem:87214:0:0:0:0:0:0:573102016:90:0:0|h[Blingtron 4000]|h|r", -- [38]
+	"|cffffffff|Hitem:40772:0:0:0:0:0:0:2112156672:90:0:0|h[Gnomish Army Knife]|h|r", -- [39]
+	"|cffffffff|Hitem:6948:0:0:0:0:0:0:0:90:0:0|h[Hearthstone]|h|r", -- [40]
 }
 AmrBankItems = {
 	"|cffa335ee|Hitem:40643:0:0:0:0:0:0:1072451328:90:0:0|h[Tabard of the Achiever]|h|r", -- [1]
@@ -137,25 +136,26 @@ AmrBankItems = {
 	"|cffffffff|Hitem:97985:0:0:0:0:0:0:1467675904:90:0:0|h[Dusty Old Robot]|h|r", -- [92]
 	"|cffffffff|Hitem:97981:0:0:0:0:0:0:1255785344:90:0:0|h[Impeccably Sharp Tooth]|h|r", -- [93]
 	"|cffa335ee|Hitem:28729:0:0:0:0:0:0:1848340992:90:0:0|h[Spiteblade]|h|r", -- [94]
-	"|cffffffff|Hitem:72235:0:0:0:0:0:0:488551936:90:0:0|h[Silkweed]|h|r", -- [95]
-	"|cff0070dd|Hitem:92676:0:0:0:0:0:0:1517201536:90:0:0|h[Flawless Critter Battle-Stone]|h|r", -- [96]
-	"|cff0070dd|Hitem:92675:0:0:0:0:0:0:1050459136:90:0:0|h[Flawless Beast Battle-Stone]|h|r", -- [97]
-	"|cffffffff|Hitem:74644:0:0:0:0:0:0:2055955200:90:0:0|h[Swirling Mist Soup]|h|r", -- [98]
-	"|cffffffff|Hitem:101616:0:0:0:0:0:0:0:90:0:0|h[Noodle Soup]|h|r", -- [99]
-	"|cff0070dd|Hitem:76643:0:0:0:0:0:0:787190144:90:0:0|h[Sensei's Wild Jade]|h|r", -- [100]
-	"|cffa335ee|Hitem:104900:0:0:0:0:0:0:1713885568:90:0:491|h[Ebon Ritual Hood]|h|r", -- [101]
-	"|cffa335ee|Hitem:51799:0:0:0:0:0:0:83221888:90:0:0|h[Halion, Staff of Forgotten Love]|h|r", -- [102]
+	"|cffa335ee|Hitem:71343:0:0:0:0:0:0:908084224:90:0:0|h[Mantle of Closed Doors]|h|r", -- [95]
+	"|cffffffff|Hitem:72235:0:0:0:0:0:0:488551936:90:0:0|h[Silkweed]|h|r", -- [96]
+	"|cff0070dd|Hitem:92676:0:0:0:0:0:0:1517201536:90:0:0|h[Flawless Critter Battle-Stone]|h|r", -- [97]
+	"|cff0070dd|Hitem:92675:0:0:0:0:0:0:1050459136:90:0:0|h[Flawless Beast Battle-Stone]|h|r", -- [98]
+	"|cffffffff|Hitem:74644:0:0:0:0:0:0:2055955200:90:0:0|h[Swirling Mist Soup]|h|r", -- [99]
+	"|cffffffff|Hitem:101616:0:0:0:0:0:0:0:90:0:0|h[Noodle Soup]|h|r", -- [100]
+	"|cff0070dd|Hitem:76643:0:0:0:0:0:0:787190144:90:0:0|h[Sensei's Wild Jade]|h|r", -- [101]
+	"|cffa335ee|Hitem:104900:0:0:0:0:0:0:1713885568:90:0:491|h[Ebon Ritual Hood]|h|r", -- [102]
+	"|cffa335ee|Hitem:51799:0:0:0:0:0:0:83221888:90:0:0|h[Halion, Staff of Forgotten Love]|h|r", -- [103]
 }
 AmrEquipedItems = {
 	["1"] = "|cffa335ee|Hitem:104748:0:5033:4650:0:0:0:829995392:90:140:492|h[Flameslinger's Fiery Cowl]|h|r",
-	["9"] = "|cffa335ee|Hitem:103358:4414:0:0:0:0:0:0:90:152:0|h[Prideful Gladiator's Cuffs of Prowess]|h|r",
+	["14"] = "|cffa335ee|Hitem:104675:0:0:0:0:0:0:1799395328:90:0:505|h[Purified Bindings of Immerseus]|h|r",
 	["3"] = "|cffa335ee|Hitem:104810:4806:4650:4594:0:0:0:1089488640:90:140:492|h[Spaulders of Kor'kron Fealty]|h|r",
 	["2"] = "|cffa335ee|Hitem:105763:0:0:0:0:0:0:1463516160:90:0:491|h[Penate's Perilous Pendant]|h|r",
 	["5"] = "|cffa335ee|Hitem:105773:4419:4650:4650:4650:0:0:988125440:90:140:505|h[Ulmaas' Robes of Crushing Magma]|h|r",
 	["4"] = "|cffffffff|Hitem:3427:0:0:0:0:0:0:0:90:0:0|h[Stylish Black Shirt]|h|r",
 	["7"] = "|cffa335ee|Hitem:98603:4825:4623:4623:0:0:0:1253859456:90:140:491|h[Leggings of the Night Sky]|h|r",
 	["6"] = "|cffa335ee|Hitem:98612:0:4623:4623:4650:0:0:1439027072:90:140:493|h[Belt of the Night Sky]|h|r",
-	["14"] = "|cffa335ee|Hitem:104675:0:0:0:0:0:0:1799395328:90:0:505|h[Purified Bindings of Immerseus]|h|r",
+	["9"] = "|cffa335ee|Hitem:103358:4414:0:0:0:0:0:0:90:152:0|h[Prideful Gladiator's Cuffs of Prowess]|h|r",
 	["15"] = "|cffff8000|Hitem:102246:4423:4623:0:0:0:0:500442496:90:0:505|h[Xing-Ho, Breath of Yu'lon]|h|r",
 	["16"] = "|cffa335ee|Hitem:104728:4442:4650:0:0:0:0:1411087360:90:0:492|h[Gaze of Arrogance]|h|r",
 	["8"] = "|cffa335ee|Hitem:103355:4429:4623:0:0:0:0:162786304:90:0:0|h[Prideful Gladiator's Treads of Alacrity]|h|r",
@@ -164,33 +164,33 @@ AmrEquipedItems = {
 	["11"] = "|cffa335ee|Hitem:104696:0:0:0:0:0:0:464935808:90:140:492|h[Petrified Pennyroyal Ring]|h|r",
 	["10"] = "|cffa335ee|Hitem:105827:4433:4650:4650:0:0:0:2822912:90:140:492|h[Kalaena's Arcane Handwraps]|h|r",
 }
-AmrGold = 833531621
+AmrGold = 17896154
 AmrRealmName = "Area 52"
 AmrCharacterName = "Oldfero"
 AmrIconInfo = {
 }
 AmrCurrencies = {
-	[395] = 1631,
+	[395] = 111,
 	[396] = 1342,
 	[81] = 5,
 	[384] = 10,
 	[401] = 5,
-	[416] = 1,
+	[676] = 5,
 	[515] = 10,
 	[390] = 370,
 	[241] = 1,
-	[392] = 349,
-	[393] = 13,
-	[394] = 37,
-	[676] = 5,
+	[392] = 1349,
+	[393] = 91,
+	[394] = 27,
+	[416] = 1,
 }
 AmrProfessions = {
 	["Cooking"] = 600,
 	["Archaeology"] = 600,
 	["Alchemy"] = 600,
-	["Fishing"] = 600,
-	["First Aid"] = 600,
 	["Engineering"] = 600,
+	["First Aid"] = 600,
+	["Fishing"] = 600,
 }
 AmrSpecializations = {
 	["1"] = 267,
@@ -342,7 +342,7 @@ AmrBankItemsAndCounts = {
 		["link"] = "|cffffffff|Hitem:75038:0:0:0:0:0:0:306835200:90:0:0|h[Mad Brewer's Breakfast]|h|r",
 	}, -- [29]
 	{
-		["count"] = 2,
+		["count"] = 7,
 		["link"] = "|cffffffff|Hitem:74648:0:0:0:0:0:0:1194106240:90:0:0|h[Sea Mist Rice Noodles]|h|r",
 	}, -- [30]
 	{
@@ -390,7 +390,7 @@ AmrBankItemsAndCounts = {
 		["link"] = "|cff0070dd|Hitem:69237:0:0:0:0:0:0:866257408:90:0:0|h[Living Ember]|h|r",
 	}, -- [41]
 	{
-		["count"] = 13,
+		["count"] = 19,
 		["link"] = "|cffa335ee|Hitem:71141:0:0:0:0:0:0:1544901760:90:0:0|h[Eternal Ember]|h|r",
 	}, -- [42]
 	{
@@ -602,37 +602,41 @@ AmrBankItemsAndCounts = {
 		["link"] = "|cffa335ee|Hitem:28729:0:0:0:0:0:0:1848340992:90:0:0|h[Spiteblade]|h|r",
 	}, -- [94]
 	{
+		["count"] = 1,
+		["link"] = "|cffa335ee|Hitem:71343:0:0:0:0:0:0:908084224:90:0:0|h[Mantle of Closed Doors]|h|r",
+	}, -- [95]
+	{
 		["count"] = 4,
 		["link"] = "|cffffffff|Hitem:72235:0:0:0:0:0:0:488551936:90:0:0|h[Silkweed]|h|r",
-	}, -- [95]
+	}, -- [96]
 	{
 		["count"] = 2,
 		["link"] = "|cff0070dd|Hitem:92676:0:0:0:0:0:0:1517201536:90:0:0|h[Flawless Critter Battle-Stone]|h|r",
-	}, -- [96]
+	}, -- [97]
 	{
 		["count"] = 1,
 		["link"] = "|cff0070dd|Hitem:92675:0:0:0:0:0:0:1050459136:90:0:0|h[Flawless Beast Battle-Stone]|h|r",
-	}, -- [97]
+	}, -- [98]
 	{
 		["count"] = 4,
 		["link"] = "|cffffffff|Hitem:74644:0:0:0:0:0:0:2055955200:90:0:0|h[Swirling Mist Soup]|h|r",
-	}, -- [98]
+	}, -- [99]
 	{
 		["count"] = 3,
 		["link"] = "|cffffffff|Hitem:101616:0:0:0:0:0:0:0:90:0:0|h[Noodle Soup]|h|r",
-	}, -- [99]
+	}, -- [100]
 	{
 		["count"] = 4,
 		["link"] = "|cff0070dd|Hitem:76643:0:0:0:0:0:0:787190144:90:0:0|h[Sensei's Wild Jade]|h|r",
-	}, -- [100]
-	{
-		["count"] = 1,
-		["link"] = "|cffa335ee|Hitem:104900:0:0:0:0:0:0:1713885568:90:0:491|h[Ebon Ritual Hood]|h|r",
 	}, -- [101]
 	{
 		["count"] = 1,
-		["link"] = "|cffa335ee|Hitem:51799:0:0:0:0:0:0:83221888:90:0:0|h[Halion, Staff of Forgotten Love]|h|r",
+		["link"] = "|cffa335ee|Hitem:104900:0:0:0:0:0:0:1713885568:90:0:491|h[Ebon Ritual Hood]|h|r",
 	}, -- [102]
+	{
+		["count"] = 1,
+		["link"] = "|cffa335ee|Hitem:51799:0:0:0:0:0:0:83221888:90:0:0|h[Halion, Staff of Forgotten Love]|h|r",
+	}, -- [103]
 }
 AmrImportString = "region=USA;realm=Area 52;name=Oldfero;faction=Horde;spec=267;talents=232211;glyphs=56218,56232,56224,58079,58094,63304;race=Orc;professions=Alchemy:600,Engineering:600;item=6:98603:0:491:r,r:4623,4623:76672,76672:4825:140;item=2:104966:0:491:r,b:4650,4650:76700,76700:4806:0;item=8:101907:-130,-360:491:0:0:0:4414:154;item=14:102246:0:505:r:4623:76672:4423:0;item=7:101905:-129,-358:491:0:0:0:4429:140;item=4:105773:0:491:r,b,b:4623,4594,4594:76672,76643,76643:4419:140;item=15:104977:0:493:b:4650:76700:4442:0;item=5:98612:0:493:r,r,p:4623,4623,4650:76672,76672,76700:0:140;item=0:104748:0:491:m,y:5033,4650:95347,76700:0:140;item=9:105827:0:491:y,y:4650,4650:76700,76700:4433:140;item=13:105150:0:493:0:0:0:0:154;item=11:103371:0:0:0:0:0:0:140;item=10:101937:-114,-359:491:0:0:0:0:137;item=1:104792:0:491:0:0:0:0:140;item=12:104924:0:493:0:0:0:0:0;"
 AmrImportDate = "05/30/14 15:07:36"
@@ -647,6 +651,6 @@ AmrLogData = {
 	["_autoLog"] = {
 		[1136] = "disabled",
 	},
+	["_lastZone"] = "Pandaria",
 	["_lastDiff"] = 0,
-	["_lastZone"] = "Kalimdor",
 }

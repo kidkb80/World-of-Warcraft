@@ -40,8 +40,8 @@ TradeSkillMaster_CraftingDB = {
 				["item:79333:0:0:0:0:0:0"] = {
 					["name"] = "Inscribed Fan",
 				},
-				["item:39151:0:0:0:0:0:0"] = {
-					["name"] = "Alabaster Pigment",
+				["item:43122:0:0:0:0:0:0"] = {
+					["name"] = "Shimmering Ink",
 				},
 				["item:61979:0:0:0:0:0:0"] = {
 					["name"] = "Ashen Pigment",
@@ -79,8 +79,8 @@ TradeSkillMaster_CraftingDB = {
 				["item:43118:0:0:0:0:0:0"] = {
 					["name"] = "Jadefire Ink",
 				},
-				["item:72096:0:0:0:0:0:0"] = {
-					["name"] = "Ghost Iron Bar",
+				["item:39151:0:0:0:0:0:0"] = {
+					["name"] = "Alabaster Pigment",
 				},
 				["item:39469:0:0:0:0:0:0"] = {
 					["name"] = "Moonglow Ink",
@@ -109,8 +109,8 @@ TradeSkillMaster_CraftingDB = {
 				["item:39340:0:0:0:0:0:0"] = {
 					["name"] = "Violet Pigment",
 				},
-				["item:52326:0:0:0:0:0:0"] = {
-					["name"] = "Volatile Water",
+				["item:39341:0:0:0:0:0:0"] = {
+					["name"] = "Silvery Pigment",
 				},
 				["item:61981:0:0:0:0:0:0"] = {
 					["name"] = "Inferno Ink",
@@ -121,8 +121,8 @@ TradeSkillMaster_CraftingDB = {
 				["item:62323:0:0:0:0:0:0"] = {
 					["name"] = "Deathwing Scale Fragment",
 				},
-				["item:43107:0:0:0:0:0:0"] = {
-					["name"] = "Sapphire Pigment",
+				["item:67319:0:0:0:0:0:0"] = {
+					["name"] = "Preserved Ogre Eye",
 				},
 				["item:43106:0:0:0:0:0:0"] = {
 					["name"] = "Ruby Pigment",
@@ -142,11 +142,11 @@ TradeSkillMaster_CraftingDB = {
 				["item:43104:0:0:0:0:0:0"] = {
 					["name"] = "Burnt Pigment",
 				},
+				["item:43107:0:0:0:0:0:0"] = {
+					["name"] = "Sapphire Pigment",
+				},
 				["item:79342:0:0:0:0:0:0"] = {
 					["name"] = "Ghost Iron Staff",
-				},
-				["item:39341:0:0:0:0:0:0"] = {
-					["name"] = "Silvery Pigment",
 				},
 				["item:79251:0:0:0:0:0:0"] = {
 					["name"] = "Shadow Pigment",
@@ -160,8 +160,8 @@ TradeSkillMaster_CraftingDB = {
 				["item:43120:0:0:0:0:0:0"] = {
 					["name"] = "Celestial Ink",
 				},
-				["item:67319:0:0:0:0:0:0"] = {
-					["name"] = "Preserved Ogre Eye",
+				["item:52326:0:0:0:0:0:0"] = {
+					["name"] = "Volatile Water",
 				},
 				["item:43119:0:0:0:0:0:0"] = {
 					["name"] = "Royal Ink",
@@ -175,8 +175,8 @@ TradeSkillMaster_CraftingDB = {
 				["item:76061:0:0:0:0:0:0"] = {
 					["name"] = "Spirit of Harmony",
 				},
-				["item:43122:0:0:0:0:0:0"] = {
-					["name"] = "Shimmering Ink",
+				["item:72096:0:0:0:0:0:0"] = {
+					["name"] = "Ghost Iron Bar",
 				},
 				["item:79731:0:0:0:0:0:0"] = {
 					["name"] = "Scroll of Wisdom",
@@ -3446,10 +3446,10 @@ TradeSkillMaster_CraftingDB = {
 					["numResult"] = 1,
 					["profession"] = "Inscription",
 					["mats"] = {
-						["item:79740:0:0:0:0:0:0"] = 1,
-						["item:76061:0:0:0:0:0:0"] = 2,
-						["item:72096:0:0:0:0:0:0"] = 3,
 						["item:79254:0:0:0:0:0:0"] = 8,
+						["item:76061:0:0:0:0:0:0"] = 2,
+						["item:79740:0:0:0:0:0:0"] = 1,
+						["item:72096:0:0:0:0:0:0"] = 3,
 					},
 					["name"] = "Ghost Iron Staff",
 					["queued"] = 0,
@@ -8363,8 +8363,8 @@ TradeSkillMaster_CraftingDB = {
 				["item:22457:0:0:0:0:0:0"] = {
 					["name"] = "Primal Mana",
 				},
-				["item:76061:0:0:0:0:0:0"] = {
-					["name"] = "Spirit of Harmony",
+				["item:76135:0:0:0:0:0:0"] = {
+					["name"] = "Roguestone",
 				},
 				["item:34249:0:0:0:0:0:0"] = {
 					["name"] = "Hula Girl Doll",
@@ -8381,8 +8381,8 @@ TradeSkillMaster_CraftingDB = {
 				["item:52327:0:0:0:0:0:0"] = {
 					["name"] = "Volatile Earth",
 				},
-				["item:36907:0:0:0:0:0:0"] = {
-					["name"] = "Talandra's Rose",
+				["item:37663:0:0:0:0:0:0"] = {
+					["name"] = "Titansteel Bar",
 				},
 				["item:2453:0:0:0:0:0:0"] = {
 					["name"] = "Bruiseweed",
@@ -8432,8 +8432,8 @@ TradeSkillMaster_CraftingDB = {
 				["item:36921:0:0:0:0:0:0"] = {
 					["name"] = "Autumn's Glow",
 				},
-				["item:36920:0:0:0:0:0:0"] = {
-					["name"] = "Sun Crystal",
+				["item:4400:0:0:0:0:0:0"] = {
+					["name"] = "Heavy Stock",
 				},
 				["item:10561:0:0:0:0:0:0"] = {
 					["name"] = "Mithril Casing",
@@ -8444,11 +8444,11 @@ TradeSkillMaster_CraftingDB = {
 				["item:53039:0:0:0:0:0:0"] = {
 					["name"] = "Hardened Elementium Bar",
 				},
-				["item:8839:0:0:0:0:0:0"] = {
-					["name"] = "Blindweed",
+				["item:1206:0:0:0:0:0:0"] = {
+					["name"] = "Moss Agate",
 				},
-				["item:52078:0:0:0:0:0:0"] = {
-					["name"] = "Chaos Orb",
+				["item:36920:0:0:0:0:0:0"] = {
+					["name"] = "Sun Crystal",
 				},
 				["item:39683:0:0:0:0:0:0"] = {
 					["name"] = "Froststeel Tube",
@@ -8483,8 +8483,8 @@ TradeSkillMaster_CraftingDB = {
 				["item:79011:0:0:0:0:0:0"] = {
 					["name"] = "Fool's Cap",
 				},
-				["item:33470:0:0:0:0:0:0"] = {
-					["name"] = "Frostweave Cloth",
+				["item:8839:0:0:0:0:0:0"] = {
+					["name"] = "Blindweed",
 				},
 				["item:4389:0:0:0:0:0:0"] = {
 					["name"] = "Gyrochronatom",
@@ -8498,14 +8498,14 @@ TradeSkillMaster_CraftingDB = {
 				["item:5956:0:0:0:0:0:0"] = {
 					["name"] = "Blacksmith Hammer",
 				},
-				["item:72104:0:0:0:0:0:0"] = {
-					["name"] = "Living Steel",
+				["item:52329:0:0:0:0:0:0"] = {
+					["name"] = "Volatile Life",
 				},
 				["item:3820:0:0:0:0:0:0"] = {
 					["name"] = "Stranglekelp",
 				},
-				["item:22829:0:0:0:0:0:0"] = {
-					["name"] = "Super Healing Potion",
+				["item:83064:0:0:0:0:0:0"] = {
+					["name"] = "Spinefish",
 				},
 				["item:4470:0:0:0:0:0:0"] = {
 					["name"] = "Simple Wood",
@@ -8546,23 +8546,23 @@ TradeSkillMaster_CraftingDB = {
 				["item:785:0:0:0:0:0:0"] = {
 					["name"] = "Mageroyal",
 				},
-				["item:36917:0:0:0:0:0:0"] = {
-					["name"] = "Bloodstone",
+				["item:22794:0:0:0:0:0:0"] = {
+					["name"] = "Fel Lotus",
 				},
 				["item:13464:0:0:0:0:0:0"] = {
 					["name"] = "Golden Sansam",
 				},
-				["item:12365:0:0:0:0:0:0"] = {
-					["name"] = "Dense Stone",
+				["item:13422:0:0:0:0:0:0"] = {
+					["name"] = "Stonescale Eel",
 				},
 				["item:3821:0:0:0:0:0:0"] = {
 					["name"] = "Goldthorn",
 				},
-				["item:83064:0:0:0:0:0:0"] = {
-					["name"] = "Spinefish",
+				["item:4375:0:0:0:0:0:0"] = {
+					["name"] = "Whirring Bronze Gizmo",
 				},
-				["item:34113:0:0:0:0:0:0"] = {
-					["name"] = "Field Repair Bot 110G",
+				["item:22451:0:0:0:0:0:0"] = {
+					["name"] = "Primal Air",
 				},
 				["item:8845:0:0:0:0:0:0"] = {
 					["name"] = "Ghost Mushroom",
@@ -8570,8 +8570,8 @@ TradeSkillMaster_CraftingDB = {
 				["item:8831:0:0:0:0:0:0"] = {
 					["name"] = "Purple Lotus",
 				},
-				["item:52329:0:0:0:0:0:0"] = {
-					["name"] = "Volatile Life",
+				["item:72104:0:0:0:0:0:0"] = {
+					["name"] = "Living Steel",
 				},
 				["item:10560:0:0:0:0:0:0"] = {
 					["name"] = "Unstable Trigger",
@@ -8582,8 +8582,8 @@ TradeSkillMaster_CraftingDB = {
 				["item:77531:0:0:0:0:0:0"] = {
 					["name"] = "Mirror Scope",
 				},
-				["item:4375:0:0:0:0:0:0"] = {
-					["name"] = "Whirring Bronze Gizmo",
+				["item:22829:0:0:0:0:0:0"] = {
+					["name"] = "Super Healing Potion",
 				},
 				["item:23449:0:0:0:0:0:0"] = {
 					["name"] = "Khorium Bar",
@@ -8591,17 +8591,17 @@ TradeSkillMaster_CraftingDB = {
 				["item:23784:0:0:0:0:0:0"] = {
 					["name"] = "Adamantite Frame",
 				},
-				["item:4625:0:0:0:0:0:0"] = {
-					["name"] = "Firebloom",
+				["item:52988:0:0:0:0:0:0"] = {
+					["name"] = "Whiptail",
 				},
 				["item:76136:0:0:0:0:0:0"] = {
 					["name"] = "Pandarian Garnet",
 				},
-				["item:56850:0:0:0:0:0:0"] = {
-					["name"] = "Deepstone Oil",
+				["item:34113:0:0:0:0:0:0"] = {
+					["name"] = "Field Repair Bot 110G",
 				},
-				["item:94113:0:0:0:0:0:0"] = {
-					["name"] = "Jard's Peculiar Energy Source",
+				["item:4625:0:0:0:0:0:0"] = {
+					["name"] = "Firebloom",
 				},
 				["item:2838:0:0:0:0:0:0"] = {
 					["name"] = "Heavy Stone",
@@ -8657,17 +8657,17 @@ TradeSkillMaster_CraftingDB = {
 				["item:23448:0:0:0:0:0:0"] = {
 					["name"] = "Felsteel Bar",
 				},
-				["item:52988:0:0:0:0:0:0"] = {
-					["name"] = "Whiptail",
+				["item:94113:0:0:0:0:0:0"] = {
+					["name"] = "Jard's Peculiar Energy Source",
 				},
-				["item:22451:0:0:0:0:0:0"] = {
-					["name"] = "Primal Air",
+				["item:56850:0:0:0:0:0:0"] = {
+					["name"] = "Deepstone Oil",
 				},
 				["item:72095:0:0:0:0:0:0"] = {
 					["name"] = "Trillium Bar",
 				},
-				["item:13422:0:0:0:0:0:0"] = {
-					["name"] = "Stonescale Eel",
+				["item:12365:0:0:0:0:0:0"] = {
+					["name"] = "Dense Stone",
 				},
 				["item:37701:0:0:0:0:0:0"] = {
 					["name"] = "Crystallized Earth",
@@ -8675,8 +8675,8 @@ TradeSkillMaster_CraftingDB = {
 				["item:37705:0:0:0:0:0:0"] = {
 					["name"] = "Crystallized Water",
 				},
-				["item:22794:0:0:0:0:0:0"] = {
-					["name"] = "Fel Lotus",
+				["item:3859:0:0:0:0:0:0"] = {
+					["name"] = "Steel Bar",
 				},
 				["item:21929:0:0:0:0:0:0"] = {
 					["name"] = "Flame Spessarite",
@@ -8693,14 +8693,14 @@ TradeSkillMaster_CraftingDB = {
 				["item:36918:0:0:0:0:0:0"] = {
 					["name"] = "Scarlet Ruby",
 				},
-				["item:3859:0:0:0:0:0:0"] = {
-					["name"] = "Steel Bar",
+				["item:36917:0:0:0:0:0:0"] = {
+					["name"] = "Bloodstone",
 				},
 				["item:21884:0:0:0:0:0:0"] = {
 					["name"] = "Primal Fire",
 				},
-				["item:1206:0:0:0:0:0:0"] = {
-					["name"] = "Moss Agate",
+				["item:33470:0:0:0:0:0:0"] = {
+					["name"] = "Frostweave Cloth",
 				},
 				["item:22793:0:0:0:0:0:0"] = {
 					["name"] = "Mana Thistle",
@@ -8708,8 +8708,8 @@ TradeSkillMaster_CraftingDB = {
 				["item:2452:0:0:0:0:0:0"] = {
 					["name"] = "Swiftthistle",
 				},
-				["item:4400:0:0:0:0:0:0"] = {
-					["name"] = "Heavy Stock",
+				["item:52078:0:0:0:0:0:0"] = {
+					["name"] = "Chaos Orb",
 				},
 				["item:52179:0:0:0:0:0:0"] = {
 					["name"] = "Alicite",
@@ -8735,11 +8735,11 @@ TradeSkillMaster_CraftingDB = {
 				["item:765:0:0:0:0:0:0"] = {
 					["name"] = "Silverleaf",
 				},
-				["item:37663:0:0:0:0:0:0"] = {
-					["name"] = "Titansteel Bar",
+				["item:36907:0:0:0:0:0:0"] = {
+					["name"] = "Talandra's Rose",
 				},
-				["item:76135:0:0:0:0:0:0"] = {
-					["name"] = "Roguestone",
+				["item:76061:0:0:0:0:0:0"] = {
+					["name"] = "Spirit of Harmony",
 				},
 				["item:4382:0:0:0:0:0:0"] = {
 					["name"] = "Bronze Framework",
@@ -8788,9 +8788,9 @@ TradeSkillMaster_CraftingDB = {
 				},
 			},
 			["craftingCostCache"] = {
-				["item:34113:0:0:0:0:0:0"] = 366246,
-				["item:18232:0:0:0:0:0:0"] = 524156,
-				["item:77467:0:0:0:0:0:0"] = 61799,
+				["item:34113:0:0:0:0:0:0"] = 359600,
+				["item:18232:0:0:0:0:0:0"] = 518520,
+				["item:77467:0:0:0:0:0:0"] = 61649,
 				["item:10505:0:0:0:0:0:0"] = 1532,
 				["item:52191:0:0:0:0:0:0"] = 493452,
 				["item:87872:0:0:0:0:0:0"] = 17825,
@@ -8802,26 +8802,28 @@ TradeSkillMaster_CraftingDB = {
 				["item:60224:0:0:0:0:0:0"] = 47357,
 				["item:52192:0:0:0:0:0:0"] = 326610,
 				["item:58088:0:0:0:0:0:0"] = 688748,
-				["item:39681:0:0:0:0:0:0"] = 35961,
+				["item:39681:0:0:0:0:0:0"] = 50237,
 				["item:10561:0:0:0:0:0:0"] = 61374,
-				["item:76140:0:0:0:0:0:0"] = 388803,
+				["item:76140:0:0:0:0:0:0"] = 404117,
 				["item:33448:0:0:0:0:0:0"] = 49399,
 				["item:58086:0:0:0:0:0:0"] = 962700,
 				["item:58480:0:0:0:0:0:0"] = 2369400,
-				["item:23786:0:0:0:0:0:0"] = 798244,
+				["item:41163:0:0:0:0:0:0"] = 485608,
+				["item:40769:0:0:0:0:0:0"] = 121402,
 				["item:39683:0:0:0:0:0:0"] = 288788,
 				["item:118:0:0:0:0:0:0"] = 16364,
+				["item:22829:0:0:0:0:0:0"] = 88488,
 				["item:58087:0:0:0:0:0:0"] = 1170332,
 				["item:76139:0:0:0:0:0:0"] = 332389,
-				["item:22829:0:0:0:0:0:0"] = 88488,
-				["item:23783:0:0:0:0:0:0"] = 50737,
+				["item:23783:0:0:0:0:0:0"] = 53776,
+				["item:76138:0:0:0:0:0:0"] = 319992,
 				["item:6370:0:0:0:0:0:0"] = 122018,
 				["item:10560:0:0:0:0:0:0"] = 27889,
-				["item:77468:0:0:0:0:0:0"] = 20600,
+				["item:77468:0:0:0:0:0:0"] = 20550,
 				["item:77531:0:0:0:0:0:0"] = 263430,
 				["item:33447:0:0:0:0:0:0"] = 77675,
-				["item:76138:0:0:0:0:0:0"] = 319992,
 				["item:76141:0:0:0:0:0:0"] = 346117,
+				["item:23786:0:0:0:0:0:0"] = 729438,
 				["item:6371:0:0:0:0:0:0"] = 63600,
 			},
 			["crafts"] = {
@@ -8932,9 +8934,9 @@ TradeSkillMaster_CraftingDB = {
 					["profession"] = "Engineering",
 					["mats"] = {
 						["item:67749:0:0:0:0:0:0"] = 6,
-						["item:60224:0:0:0:0:0:0"] = 6,
 						["item:52191:0:0:0:0:0:0"] = 2,
 						["item:53039:0:0:0:0:0:0"] = 3,
+						["item:60224:0:0:0:0:0:0"] = 6,
 						["item:58480:0:0:0:0:0:0"] = 1,
 						["item:52078:0:0:0:0:0:0"] = 1,
 					},
@@ -10829,9 +10831,9 @@ TradeSkillMaster_CraftingDB = {
 					["profession"] = "Alchemy",
 					["mats"] = {
 						["item:52326:0:0:0:0:0:0"] = 10,
+						["item:52328:0:0:0:0:0:0"] = 10,
 						["item:52325:0:0:0:0:0:0"] = 10,
 						["item:51950:0:0:0:0:0:0"] = 3,
-						["item:52328:0:0:0:0:0:0"] = 10,
 					},
 					["name"] = "Truegold",
 					["queued"] = 0,
@@ -13003,7 +13005,46 @@ TradeSkillMaster_CraftingDB = {
 				},
 			},
 			["tradeSkills"] = {
+				["Feronaz"] = {
+					["Herbalism"] = {
+						["isSecondary"] = false,
+						["level"] = 615,
+						["maxLevel"] = 615,
+					},
+					["First Aid"] = {
+						["isSecondary"] = true,
+						["level"] = 600,
+						["maxLevel"] = 600,
+					},
+					["Alchemy"] = {
+						["isSecondary"] = false,
+						["level"] = 600,
+						["maxLevel"] = 600,
+					},
+				},
 				["Gurund"] = {
+				},
+				["Drominus"] = {
+					["Herbalism"] = {
+						["isSecondary"] = false,
+						["level"] = 615,
+						["maxLevel"] = 615,
+					},
+					["Mining"] = {
+						["isSecondary"] = false,
+						["level"] = 600,
+						["maxLevel"] = 600,
+					},
+					["First Aid"] = {
+						["isSecondary"] = true,
+						["level"] = 300,
+						["maxLevel"] = 300,
+					},
+					["Cooking"] = {
+						["isSecondary"] = true,
+						["level"] = 26,
+						["maxLevel"] = 75,
+					},
 				},
 				["Oldfero"] = {
 					["Engineering"] = {
@@ -13033,45 +13074,6 @@ TradeSkillMaster_CraftingDB = {
 						["level"] = 600,
 						["accountKey"] = "Area 52270808385",
 						["prompted"] = true,
-					},
-				},
-				["Drominus"] = {
-					["Herbalism"] = {
-						["isSecondary"] = false,
-						["level"] = 615,
-						["maxLevel"] = 615,
-					},
-					["Mining"] = {
-						["isSecondary"] = false,
-						["level"] = 600,
-						["maxLevel"] = 600,
-					},
-					["First Aid"] = {
-						["isSecondary"] = true,
-						["level"] = 300,
-						["maxLevel"] = 300,
-					},
-					["Cooking"] = {
-						["isSecondary"] = true,
-						["level"] = 26,
-						["maxLevel"] = 75,
-					},
-				},
-				["Feronaz"] = {
-					["Herbalism"] = {
-						["isSecondary"] = false,
-						["level"] = 615,
-						["maxLevel"] = 615,
-					},
-					["First Aid"] = {
-						["isSecondary"] = true,
-						["level"] = 600,
-						["maxLevel"] = 600,
-					},
-					["Alchemy"] = {
-						["isSecondary"] = false,
-						["level"] = 600,
-						["maxLevel"] = 600,
 					},
 				},
 			},

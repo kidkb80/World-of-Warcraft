@@ -24,10 +24,10 @@ ElvDB = {
 		},
 		["Area 52"] = {
 			["Gaulthain"] = 83178270,
+			["Oldfero"] = 18204852,
 			["Gurund"] = 10172243,
-			["Feronaz"] = 666843,
 			["Drominus"] = 2334254,
-			["Oldfero"] = 16119238,
+			["Feronaz"] = 666843,
 		},
 		["Skywall"] = {
 			["Anaiis"] = 786930,
@@ -372,12 +372,12 @@ ElvDB = {
 				},
 				["health"] = {
 				},
+				["font"] = "2002 Bold",
+				["autoRepair"] = "PLAYER",
 				["tapped"] = {
 				},
-				["autoRepair"] = "PLAYER",
 				["castColor"] = {
 				},
-				["font"] = "2002 Bold",
 			},
 			["CBPO"] = {
 				["target"] = {
@@ -425,8 +425,11 @@ ElvDB = {
 			["bab"] = {
 				["chooseAb"] = "BAR1",
 			},
-			["bags"] = {
-				["yOffset"] = 154,
+			["bui"] = {
+				["installed"] = true,
+				["colorTheme"] = "Hearthstone",
+				["transparentDts"] = true,
+				["toggleMail"] = false,
 			},
 			["movers"] = {
 				["RaidMarkerBarAnchor"] = "TOPElvUIParentTOP-12-24",
@@ -494,13 +497,27 @@ ElvDB = {
 					["fontOutline"] = "OUTLINE",
 				},
 			},
-			["bui"] = {
-				["installed"] = true,
-				["colorTheme"] = "Hearthstone",
-				["transparentDts"] = true,
-				["toggleMail"] = false,
+			["bags"] = {
+				["yOffset"] = 154,
 			},
-			["currentTutorial"] = 1,
+			["auras"] = {
+				["timeXOffset"] = -1,
+				["fadeThreshold"] = 10,
+				["font"] = "2002 Bold",
+				["fontOutline"] = "MONOCROMEOUTLINE",
+				["consolidatedBuffs"] = {
+					["font"] = "2002 Bold",
+					["fontOutline"] = "MONOCROMEOUTLINE",
+					["fontSize"] = 12,
+				},
+				["buffs"] = {
+					["horizontalSpacing"] = 3,
+					["size"] = 38,
+				},
+				["debuffs"] = {
+					["size"] = 38,
+				},
+			},
 			["unitframe"] = {
 				["font"] = "2002 Bold",
 				["units"] = {
@@ -859,24 +876,7 @@ ElvDB = {
 				["lpauto"] = false,
 				["lpfontsize"] = 10,
 			},
-			["auras"] = {
-				["timeXOffset"] = -1,
-				["fadeThreshold"] = 10,
-				["font"] = "2002 Bold",
-				["fontOutline"] = "MONOCROMEOUTLINE",
-				["consolidatedBuffs"] = {
-					["font"] = "2002 Bold",
-					["fontOutline"] = "MONOCROMEOUTLINE",
-					["fontSize"] = 12,
-				},
-				["buffs"] = {
-					["horizontalSpacing"] = 3,
-					["size"] = 38,
-				},
-				["debuffs"] = {
-					["size"] = 38,
-				},
-			},
+			["currentTutorial"] = 1,
 		},
 		["Toradol - Skywall"] = {
 			["bui"] = {
@@ -2555,50 +2555,6 @@ ElvDB = {
 							["enable"] = false,
 						},
 					},
-					["raid25"] = {
-						["power"] = {
-							["enable"] = false,
-						},
-					},
-					["focus"] = {
-						["power"] = {
-							["height"] = 5,
-						},
-						["width"] = 122,
-						["castbar"] = {
-							["height"] = 6,
-							["width"] = 122,
-						},
-					},
-					["raid10"] = {
-						["power"] = {
-							["power"] = false,
-						},
-					},
-					["pet"] = {
-						["height"] = 17,
-						["power"] = {
-							["height"] = 5,
-						},
-						["width"] = 96,
-					},
-					["targettarget"] = {
-						["debuffs"] = {
-							["enable"] = false,
-							["sizeOverride"] = 32,
-							["bossAuras"] = true,
-						},
-						["threatStyle"] = "GLOW",
-						["power"] = {
-							["height"] = 5,
-						},
-						["height"] = 17,
-						["buffs"] = {
-							["sizeOverride"] = 26,
-							["bossAuras"] = true,
-						},
-						["width"] = 96,
-					},
 					["target"] = {
 						["debuffs"] = {
 							["anchorPoint"] = "TOPLEFT",
@@ -2638,6 +2594,50 @@ ElvDB = {
 						["aurabar"] = {
 							["enable"] = false,
 							["maxDuration"] = 120,
+						},
+					},
+					["focus"] = {
+						["power"] = {
+							["height"] = 5,
+						},
+						["width"] = 122,
+						["castbar"] = {
+							["height"] = 6,
+							["width"] = 122,
+						},
+					},
+					["raid25"] = {
+						["power"] = {
+							["enable"] = false,
+						},
+					},
+					["pet"] = {
+						["height"] = 17,
+						["power"] = {
+							["height"] = 5,
+						},
+						["width"] = 96,
+					},
+					["targettarget"] = {
+						["debuffs"] = {
+							["enable"] = false,
+							["sizeOverride"] = 32,
+							["bossAuras"] = true,
+						},
+						["threatStyle"] = "GLOW",
+						["power"] = {
+							["height"] = 5,
+						},
+						["height"] = 17,
+						["buffs"] = {
+							["sizeOverride"] = 26,
+							["bossAuras"] = true,
+						},
+						["width"] = 96,
+					},
+					["raid10"] = {
+						["power"] = {
+							["power"] = false,
 						},
 					},
 				},
@@ -3195,8 +3195,8 @@ ElvPrivateDB = {
 				},
 				["normTex"] = "Glaze2",
 				["minimapbar"] = {
-					["mouseover"] = true,
 					["backdrop"] = true,
+					["mouseover"] = true,
 				},
 			},
 			["install_complete"] = "6.9997",
@@ -3232,12 +3232,12 @@ ElvPrivateDB = {
 		},
 		["Oldfero - Area 52"] = {
 			["general"] = {
-				["chatBubbles"] = "nobackdrop",
-				["namefont"] = "ElvUI Alt-Font",
 				["minimapbar"] = {
-					["backdrop"] = true,
 					["mouseover"] = true,
+					["backdrop"] = true,
 				},
+				["namefont"] = "ElvUI Alt-Font",
+				["chatBubbles"] = "nobackdrop",
 				["minimap"] = {
 					["hideincombat"] = true,
 					["fadeindelay"] = 2,
@@ -3278,10 +3278,10 @@ ElvPrivateDB = {
 			["addonskins"] = {
 				["EmbedLeftChat"] = true,
 				["EmbedOoC"] = true,
-				["DBMFont"] = "2002",
-				["DBMFontSize"] = 14,
-				["EmbedSystem"] = true,
 				["EmbedBelowTop"] = true,
+				["DBMFontSize"] = 14,
+				["DBMFont"] = "2002",
+				["EmbedSystem"] = true,
 			},
 			["theme"] = "classic",
 			["install_complete"] = "6.9996",

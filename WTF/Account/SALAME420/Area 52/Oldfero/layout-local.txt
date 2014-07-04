@@ -2,7 +2,7 @@ Version: 1
 Frame: ChannelPulloutTab
 FrameLevel: 1
 Anchor: RIGHT
-X: 1572
+X: 1680
 Y: 167
 W: 118
 H: 32
@@ -90,10 +90,3 @@ X: 0
 Y: 128
 W: 150
 H: 42
-Frame: _NPCScanOverlayKey
-FrameLevel: 26
-Anchor: BOTTOM
-X: 397
-Y: 247
-W: 202
-H: 116

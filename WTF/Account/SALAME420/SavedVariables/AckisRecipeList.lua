@@ -33,16 +33,16 @@ ARLDB2 = {
 	["global"] = {
 		["tradeskill"] = {
 			["Area 52"] = {
-				["Feronaz"] = {
-				},
-				["Gurund"] = {
-				},
-				["Drominus"] = {
-				},
 				["Oldfero"] = {
 					["Engineering"] = "|cffffd000|Htrade:700000005741AAE:110403:202|h[Engineering]|h|r",
 					["Alchemy"] = "|cffffd000|Htrade:700000005741AAE:105206:171|h[Alchemy]|h|r",
 					["Cooking"] = "|cffffd000|Htrade:700000005741AAE:104381:185|h[Cooking]|h|r",
+				},
+				["Feronaz"] = {
+				},
+				["Drominus"] = {
+				},
+				["Gurund"] = {
 				},
 			},
 			["Skywall"] = {

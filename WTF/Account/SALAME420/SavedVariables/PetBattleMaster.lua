@@ -54,42 +54,42 @@ PetBattleMasterDb = {
 							["pets"] = {
 								{
 									["speciesId"] = 1351,
-									["petType"] = 4,
-									["creatureId"] = 34770,
-									["petId"] = "0x000000000227CA66",
-									["level"] = 1,
 									["name"] = "Macabre Marionette",
+									["creatureId"] = 34770,
+									["level"] = 1,
+									["petId"] = "0x000000000227CA66",
 									["abilities"] = {
 										1094, -- [1]
 										214, -- [2]
 										1093, -- [3]
 									},
+									["petType"] = 4,
 								}, -- [1]
 								{
 									["speciesId"] = 1068,
-									["petType"] = 3,
-									["creatureId"] = 67443,
-									["petId"] = "0x0000000002275988",
-									["level"] = 25,
 									["name"] = "Crow",
+									["creatureId"] = 67443,
+									["level"] = 25,
+									["petId"] = "0x0000000002275988",
 									["abilities"] = {
 										504, -- [1]
 										256, -- [2]
 										517, -- [3]
 									},
+									["petType"] = 3,
 								}, -- [2]
 								{
 									["speciesId"] = 626,
-									["petType"] = 3,
-									["creatureId"] = 61829,
-									["petId"] = "0x000000000227589F",
-									["level"] = 25,
 									["name"] = "Bat",
+									["creatureId"] = 61829,
+									["level"] = 25,
+									["petId"] = "0x000000000227589F",
 									["abilities"] = {
 										110, -- [1]
 										521, -- [2]
 										517, -- [3]
 									},
+									["petType"] = 3,
 								}, -- [3]
 							},
 							["name"] = "Birds",

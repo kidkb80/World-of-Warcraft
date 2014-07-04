@@ -786,25 +786,6 @@ WeakAurasSaved = {
 				},
 			},
 			["texture"] = "Textures\\SPELLCHAINEFFECTS\\SoulBeam",
-			["id"] = "New",
-			["animation"] = {
-				["start"] = {
-					["use_color"] = false,
-					["duration_type"] = "seconds",
-					["preset"] = "fade",
-					["type"] = "preset",
-				},
-				["main"] = {
-					["duration_type"] = "seconds",
-					["type"] = "preset",
-					["preset"] = "pulse",
-				},
-				["finish"] = {
-					["duration_type"] = "seconds",
-					["type"] = "preset",
-					["preset"] = "fade",
-				},
-			},
 			["trigger"] = {
 				["type"] = "status",
 				["custom_type"] = "status",
@@ -821,9 +802,28 @@ WeakAurasSaved = {
 				["use_unit"] = true,
 				["debuffType"] = "HELPFUL",
 			},
-			["selfPoint"] = "CENTER",
+			["animation"] = {
+				["start"] = {
+					["type"] = "preset",
+					["use_color"] = false,
+					["preset"] = "fade",
+					["duration_type"] = "seconds",
+				},
+				["main"] = {
+					["duration_type"] = "seconds",
+					["type"] = "preset",
+					["preset"] = "pulse",
+				},
+				["finish"] = {
+					["duration_type"] = "seconds",
+					["type"] = "preset",
+					["preset"] = "fade",
+				},
+			},
 			["additional_triggers"] = {
 			},
+			["selfPoint"] = "CENTER",
+			["id"] = "New",
 			["width"] = 1940,
 			["frameStrata"] = 2,
 			["desaturate"] = false,
@@ -844,14 +844,14 @@ WeakAurasSaved = {
 					},
 				},
 				["use_spec"] = true,
-				["use_combat"] = true,
-				["spec"] = {
-					["single"] = 3,
+				["class"] = {
+					["single"] = "WARLOCK",
 					["multi"] = {
 					},
 				},
-				["class"] = {
-					["single"] = "WARLOCK",
+				["use_combat"] = true,
+				["spec"] = {
+					["single"] = 3,
 					["multi"] = {
 					},
 				},

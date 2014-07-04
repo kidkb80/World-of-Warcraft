@@ -9,10 +9,10 @@ TradeSkillMaster_AuctioningDB = {
 		},
 		["Horde - Area 52"] = {
 			["player"] = {
-				["Gurund"] = true,
-				["Oldfero"] = true,
-				["Drominus"] = true,
 				["Feronaz"] = true,
+				["Gurund"] = true,
+				["Drominus"] = true,
+				["Oldfero"] = true,
 			},
 		},
 	},

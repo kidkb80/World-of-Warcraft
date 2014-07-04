@@ -5,6 +5,17 @@ TradeSkillMaster_ShoppingDB = {
 			["Default"] = {
 			},
 		},
+		["previousSearches"] = {
+			"rocket/Battle Pets", -- [1]
+			"golden carp/Trade Goods", -- [2]
+			"golden carp", -- [3]
+			"ghost iron bar", -- [4]
+			"golden lotus", -- [5]
+			"/Glyph/Warrior", -- [6]
+			"/Glyph", -- [7]
+			"Trillium bar", -- [8]
+			"ghost iron ore", -- [9]
+		},
 		["optionsTreeStatus"] = {
 			["groups"] = {
 				["1"] = true,
@@ -153,17 +164,6 @@ TradeSkillMaster_ShoppingDB = {
 			["item:36929:0:0:0:0:0:0"] = "Huge Citrine",
 			["item:23077:0:0:0:0:0:0"] = "Blood Garnet",
 			["item:3864:0:0:0:0:0:0"] = "Citrine",
-		},
-		["previousSearches"] = {
-			"rocket/Battle Pets", -- [1]
-			"golden carp/Trade Goods", -- [2]
-			"golden carp", -- [3]
-			"ghost iron bar", -- [4]
-			"golden lotus", -- [5]
-			"/Glyph/Warrior", -- [6]
-			"/Glyph", -- [7]
-			"Trillium bar", -- [8]
-			"ghost iron ore", -- [9]
 		},
 		["sidebarBtn"] = 5,
 	},
