@@ -9,17 +9,29 @@ COLLECTINATORDB2 = {
 		["Feronaz - Area 52"] = "Feronaz - Area 52",
 		["Gurund - Area 52"] = "Gurund - Area 52",
 		["Noremedy - Skywall"] = "Noremedy - Skywall",
-		["Gurund - Skywall"] = "Gurund - Skywall",
 		["Toradol - Skywall"] = "Toradol - Skywall",
+		["Gurund - Skywall"] = "Gurund - Skywall",
 	},
 	["profiles"] = {
+		["Oldfero - Area 52"] = {
+			["exclusionlist"] = {
+				["MOUNT"] = {
+				},
+			},
+			["frameopts"] = {
+				["offsety"] = 13.00006866455078,
+				["offsetx"] = 133.0013732910156,
+				["anchorFrom"] = "LEFT",
+				["anchorTo"] = "LEFT",
+			},
+		},
 		["Dalhian - Skywall"] = {
 			["spelltooltiplocation"] = "Bottom",
 			["includefiltered"] = true,
 			["frameopts"] = {
-				["anchorFrom"] = "RIGHT",
-				["offsetx"] = -251.9987335205078,
 				["offsety"] = -30.99992179870606,
+				["offsetx"] = -251.9987335205078,
+				["anchorFrom"] = "RIGHT",
 				["anchorTo"] = "RIGHT",
 			},
 			["exclusionlist"] = {
@@ -31,18 +43,6 @@ COLLECTINATORDB2 = {
 			["includeexcluded"] = true,
 			["acquiretooltiplocation"] = "Bottom",
 			["hidepopup"] = true,
-		},
-		["Oldfero - Area 52"] = {
-			["exclusionlist"] = {
-				["MOUNT"] = {
-				},
-			},
-			["frameopts"] = {
-				["anchorFrom"] = "LEFT",
-				["offsetx"] = 133.0013732910156,
-				["offsety"] = 13.00006866455078,
-				["anchorTo"] = "LEFT",
-			},
 		},
 	},
 }

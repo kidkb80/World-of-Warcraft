@@ -23,8 +23,8 @@ H: 32
 Frame: GridLayoutFrame
 FrameLevel: 1
 Anchor: BOTTOM
-X: -414
-Y: 208
+X: -445
+Y: 261
 W: 75
 H: 40
 Frame: OQMainFrame
