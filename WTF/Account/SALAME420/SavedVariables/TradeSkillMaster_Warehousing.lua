@@ -1,6 +1,7 @@
 
 TradeSkillMaster_WarehousingDB = {
 	["profileKeys"] = {
+		["Olegregg - Area 52"] = "Default",
 		["Feronaz - Area 52"] = "Default",
 		["Oldfero - Area 52"] = "Default",
 		["Gurund - Area 52"] = "Default",

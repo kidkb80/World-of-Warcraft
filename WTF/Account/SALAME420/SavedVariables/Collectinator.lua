@@ -1,14 +1,16 @@
 
 COLLECTINATORDB2 = {
 	["profileKeys"] = {
-		["Noremedy - Skywall"] = "Noremedy - Skywall",
-		["Feronaz - Area 52"] = "Feronaz - Area 52",
+		["Olegregg - Area 52"] = "Olegregg - Area 52",
 		["Anaiis - Skywall"] = "Anaiis - Skywall",
 		["Oldfero - Area 52"] = "Oldfero - Area 52",
-		["Toradol - Skywall"] = "Toradol - Skywall",
 		["Dalhian - Skywall"] = "Dalhian - Skywall",
 		["Drominus - Area 52"] = "Drominus - Area 52",
+		["Feronaz - Area 52"] = "Feronaz - Area 52",
 		["Gurund - Area 52"] = "Gurund - Area 52",
+		["Noremedy - Skywall"] = "Noremedy - Skywall",
+		["Gurund - Skywall"] = "Gurund - Skywall",
+		["Toradol - Skywall"] = "Toradol - Skywall",
 	},
 	["profiles"] = {
 		["Dalhian - Skywall"] = {

@@ -21,14 +21,16 @@ ARLDB2 = {
 		},
 	},
 	["profileKeys"] = {
-		["Noremedy - Skywall"] = "Noremedy - Skywall",
-		["Feronaz - Area 52"] = "Feronaz - Area 52",
+		["Olegregg - Area 52"] = "Olegregg - Area 52",
 		["Anaiis - Skywall"] = "Anaiis - Skywall",
 		["Oldfero - Area 52"] = "Noremedy - Skywall",
-		["Toradol - Skywall"] = "Toradol - Skywall",
 		["Dalhian - Skywall"] = "Dalhian - Skywall",
 		["Drominus - Area 52"] = "Drominus - Area 52",
+		["Feronaz - Area 52"] = "Feronaz - Area 52",
 		["Gurund - Area 52"] = "Gurund - Area 52",
+		["Noremedy - Skywall"] = "Noremedy - Skywall",
+		["Gurund - Skywall"] = "Gurund - Skywall",
+		["Toradol - Skywall"] = "Toradol - Skywall",
 	},
 	["global"] = {
 		["tradeskill"] = {
@@ -38,21 +40,25 @@ ARLDB2 = {
 					["Alchemy"] = "|cffffd000|Htrade:700000005741AAE:105206:171|h[Alchemy]|h|r",
 					["Cooking"] = "|cffffd000|Htrade:700000005741AAE:104381:185|h[Cooking]|h|r",
 				},
-				["Feronaz"] = {
-				},
 				["Drominus"] = {
 				},
 				["Gurund"] = {
 				},
+				["Olegregg"] = {
+				},
+				["Feronaz"] = {
+				},
 			},
 			["Skywall"] = {
-				["Toradol"] = {
-					["Alchemy"] = "|cffffd000|Htrade:10000000463F932:105206:171|h[Alchemy]|h|r",
-				},
 				["Anaiis"] = {
 				},
 				["Noremedy"] = {
 					["Inscription"] = "|cffffd000|Htrade:10000000448CEE0:110417:773|h[Inscription]|h|r",
+				},
+				["Toradol"] = {
+					["Alchemy"] = "|cffffd000|Htrade:10000000463F932:105206:171|h[Alchemy]|h|r",
+				},
+				["Gurund"] = {
 				},
 				["Dalhian"] = {
 					["Jewelcrafting"] = "|cffffd000|Htrade:100000004AA3B83:110420:755|h[Jewelcrafting]|h|r",
@@ -62,33 +68,11 @@ ARLDB2 = {
 		},
 	},
 	["profiles"] = {
-		["Noremedy - Skywall"] = {
-			["skill_view"] = true,
-			["addonversion"] = "3.0.2",
-			["closeguionskillclose"] = true,
-			["filters"] = {
-				["general"] = {
-					["faction"] = false,
-					["skill"] = false,
-				},
-			},
-			["includefiltered"] = true,
-			["includeexcluded"] = true,
-			["frameopts"] = {
-				["offsety"] = -30.00004577636719,
-				["anchorTo"] = "TOP",
-				["offsetx"] = -128.5000839233398,
-				["anchorFrom"] = "TOP",
-			},
-			["sorting"] = "Descending",
-		},
-		["Feronaz - Area 52"] = {
+		["Olegregg - Area 52"] = {
 		},
 		["Anaiis - Skywall"] = {
 		},
 		["Oldfero - Area 52"] = {
-		},
-		["Toradol - Skywall"] = {
 		},
 		["Dalhian - Skywall"] = {
 			["spelltooltiplocation"] = "Bottom",
@@ -98,7 +82,33 @@ ARLDB2 = {
 		},
 		["Drominus - Area 52"] = {
 		},
+		["Feronaz - Area 52"] = {
+		},
 		["Gurund - Area 52"] = {
+		},
+		["Noremedy - Skywall"] = {
+			["skill_view"] = true,
+			["includefiltered"] = true,
+			["includeexcluded"] = true,
+			["closeguionskillclose"] = true,
+			["frameopts"] = {
+				["anchorFrom"] = "TOP",
+				["offsetx"] = -128.5000839233398,
+				["offsety"] = -30.00004577636719,
+				["anchorTo"] = "TOP",
+			},
+			["sorting"] = "Descending",
+			["addonversion"] = "3.0.2",
+			["filters"] = {
+				["general"] = {
+					["skill"] = false,
+					["faction"] = false,
+				},
+			},
+		},
+		["Gurund - Skywall"] = {
+		},
+		["Toradol - Skywall"] = {
 		},
 	},
 }

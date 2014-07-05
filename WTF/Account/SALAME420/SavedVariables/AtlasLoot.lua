@@ -32,7 +32,7 @@ AtlasLootDB = {
 					["module"] = "AtlasLootMoP",
 				},
 				["Drominus - Area 52"] = {
-					["module"] = "AtlasLootMoP",
+					["module"] = "AtlasLootWotLK",
 					["NEWpoint"] = {
 						"RIGHT", -- [1]
 						nil, -- [2]
@@ -40,10 +40,11 @@ AtlasLootDB = {
 						-41.50016403198242, -- [4]
 						19.99993896484375, -- [5]
 					},
-					["instance"] = "ThroneofThunder",
+					["instance"] = "OnyxiasLair",
 				},
 				["Gaulthain - Skywall"] = {
 					["instance"] = "SiegeofOrgrimmar",
+					["DefaultFrameLocked"] = true,
 					["NEWpoint"] = {
 						"TOP", -- [1]
 						nil, -- [2]
@@ -51,7 +52,6 @@ AtlasLootDB = {
 						-3.500643968582153, -- [4]
 						0, -- [5]
 					},
-					["DefaultFrameLocked"] = true,
 					["module"] = "AtlasLootMoP",
 				},
 				["Feronaz - Area 52"] = {
@@ -122,14 +122,14 @@ AtlasLootDB = {
 			["LootTableType"] = "RaidFinder",
 		},
 		["Drominus - Area 52"] = {
-			["LootTableType"] = "RaidFinder",
 			["LastSearch"] = "sorrowpath",
+			["LootTableType"] = "RaidFinder",
 			["QuickLooks"] = {
 				{
 					["module"] = "AtlasLootMoP",
 					["lootPageType"] = "Flexible",
-					["savedName"] = "QuickLook 1",
 					["lootPage"] = "SoOIronJuggernaut",
+					["savedName"] = "QuickLook 1",
 				}, -- [1]
 			},
 		},

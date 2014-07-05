@@ -1,18 +1,20 @@
 
 ElvDB = {
 	["profileKeys"] = {
+		["Dalhian - Skywall"] = "Feronis - Skywall",
 		["Drominus - Area 52"] = "Feronis - Skywall",
 		["Gaulthain - Skywall"] = "Feronis - Skywall",
+		["Feronis - Skywall"] = "Feronis - Skywall",
+		["Gurund - Area 52"] = "Feronis - Skywall",
+		["Drominus - Skywall"] = "Feronis - Skywall",
+		["Olegregg - Area 52"] = "Feronis - Skywall",
 		["Anaiis - Skywall"] = "Feronis - Skywall",
 		["Oldfero - Area 52"] = "Feronis - Skywall",
-		["Drominus - Skywall"] = "Feronis - Skywall",
-		["Dalhian - Skywall"] = "Feronis - Skywall",
+		["Gurund - Skywall"] = "Gurund - Skywall",
 		["Cidareth - Skywall"] = "Cidareth - Skywall",
-		["Gurund - Area 52"] = "Feronis - Skywall",
-		["Gaulthain - Area 52"] = "Gaulthain - Area 52",
 		["Feronaz - Area 52"] = "Feronis - Skywall",
-		["Feronis - Skywall"] = "Feronis - Skywall",
 		["Malkyn - Dragonblight"] = "Malkyn - Dragonblight",
+		["Gaulthain - Area 52"] = "Gaulthain - Area 52",
 		["Toradol - Skywall"] = "Feronis - Skywall",
 		["Noremedy - Skywall"] = "Feronis - Skywall",
 		["Cecliann - Skywall"] = "Cecliann - Skywall",
@@ -24,10 +26,11 @@ ElvDB = {
 		},
 		["Area 52"] = {
 			["Gaulthain"] = 83178270,
-			["Oldfero"] = 18204852,
+			["Oldfero"] = 18587732,
+			["Drominus"] = 1426888,
 			["Gurund"] = 10172243,
-			["Drominus"] = 2334254,
-			["Feronaz"] = 666843,
+			["Olegregg"] = 2884,
+			["Feronaz"] = 666783,
 		},
 		["Skywall"] = {
 			["Anaiis"] = 786930,
@@ -40,6 +43,7 @@ ElvDB = {
 			["Cecliann"] = 2,
 			["Feronaz"] = 2408595,
 			["Drominus"] = 12935612,
+			["Gurund"] = 580,
 		},
 	},
 	["namespaces"] = {
@@ -56,17 +60,17 @@ ElvDB = {
 					["talentGroup"] = 1,
 					["specGroup"] = 1,
 				},
-				["Noremedy - Skywall"] = {
-					["profile"] = "Feronis - Skywall",
-					["specGroup"] = 1,
-					["talentGroup"] = 1,
-					["enabled"] = false,
-				},
 				["Oldfero - Area 52"] = {
 					["profile"] = "Feronis - Skywall",
 					["enabled"] = true,
 					["talentGroup"] = 2,
 					["specGroup"] = 2,
+				},
+				["Noremedy - Skywall"] = {
+					["profile"] = "Feronis - Skywall",
+					["specGroup"] = 1,
+					["talentGroup"] = 1,
+					["enabled"] = false,
 				},
 			},
 		},
@@ -309,8 +313,8 @@ ElvDB = {
 				},
 			},
 			["utils"] = {
-				["enableSystem"] = false,
 				["enableTokens"] = false,
+				["enableSystem"] = false,
 			},
 			["general"] = {
 				["totems"] = {
@@ -339,7 +343,6 @@ ElvDB = {
 				},
 				["experience"] = {
 					["textFormat"] = "CURPERC",
-					["mouseover"] = true,
 					["width"] = 412,
 				},
 				["RAGE"] = {
@@ -361,12 +364,7 @@ ElvDB = {
 					["g"] = 0.08627450980392157,
 					["b"] = 0.1176470588235294,
 				},
-				["reputation"] = {
-					["textFormat"] = "CURPERC",
-					["height"] = 14,
-					["mouseover"] = true,
-					["textSize"] = 8,
-					["width"] = 412,
+				["castColor"] = {
 				},
 				["castNoInterrupt"] = {
 				},
@@ -374,9 +372,14 @@ ElvDB = {
 				},
 				["font"] = "2002 Bold",
 				["autoRepair"] = "PLAYER",
-				["tapped"] = {
+				["reputation"] = {
+					["textFormat"] = "CURPERC",
+					["height"] = 14,
+					["mouseover"] = true,
+					["textSize"] = 8,
+					["width"] = 412,
 				},
-				["castColor"] = {
+				["tapped"] = {
 				},
 			},
 			["CBPO"] = {
@@ -425,12 +428,7 @@ ElvDB = {
 			["bab"] = {
 				["chooseAb"] = "BAR1",
 			},
-			["bui"] = {
-				["installed"] = true,
-				["colorTheme"] = "Hearthstone",
-				["transparentDts"] = true,
-				["toggleMail"] = false,
-			},
+			["currentTutorial"] = 1,
 			["movers"] = {
 				["RaidMarkerBarAnchor"] = "TOPElvUIParentTOP-12-24",
 				["MinimapButtonAnchor"] = "TOPRIGHTElvUIParentTOPRIGHT-25-283",
@@ -497,26 +495,65 @@ ElvDB = {
 					["fontOutline"] = "OUTLINE",
 				},
 			},
-			["bags"] = {
-				["yOffset"] = 154,
-			},
-			["auras"] = {
-				["timeXOffset"] = -1,
-				["fadeThreshold"] = 10,
-				["font"] = "2002 Bold",
+			["actionbar"] = {
+				["bar3"] = {
+					["buttons"] = 10,
+					["buttonspacing"] = 4,
+					["buttonsPerRow"] = 5,
+					["buttonsize"] = 28,
+				},
 				["fontOutline"] = "MONOCROMEOUTLINE",
-				["consolidatedBuffs"] = {
-					["font"] = "2002 Bold",
-					["fontOutline"] = "MONOCROMEOUTLINE",
-					["fontSize"] = 12,
+				["bar2"] = {
+					["enabled"] = true,
+					["buttons"] = 7,
+					["buttonspacing"] = 4,
+					["buttonsize"] = 26,
 				},
-				["buffs"] = {
-					["horizontalSpacing"] = 3,
-					["size"] = 38,
+				["bar1"] = {
+					["buttons"] = 6,
+					["buttonspacing"] = 4,
+					["buttonsPerRow"] = 6,
 				},
-				["debuffs"] = {
-					["size"] = 38,
+				["bar5"] = {
+					["buttons"] = 10,
+					["buttonspacing"] = 4,
+					["buttonsPerRow"] = 5,
+					["buttonsize"] = 28,
 				},
+				["font"] = "2002 Bold",
+				["bar6"] = {
+					["enabled"] = true,
+					["point"] = "TOPLEFT",
+					["backdrop"] = true,
+					["heightMult"] = 2,
+					["buttonsize"] = 30,
+				},
+				["macrotext"] = true,
+				["stanceBar"] = {
+					["style"] = "classic",
+					["buttonsize"] = 28,
+				},
+				["barPet"] = {
+					["point"] = "BOTTOMLEFT",
+					["backdrop"] = false,
+					["buttonsPerRow"] = 10,
+					["buttonsize"] = 24,
+				},
+				["bar4"] = {
+					["point"] = "BOTTOMRIGHT",
+					["buttons"] = 10,
+					["buttonspacing"] = 4,
+					["backdrop"] = false,
+					["buttonsPerRow"] = 2,
+					["buttonsize"] = 28,
+					["mouseover"] = true,
+				},
+			},
+			["bui"] = {
+				["installed"] = true,
+				["colorTheme"] = "Hearthstone",
+				["transparentDts"] = true,
+				["toggleMail"] = false,
 			},
 			["unitframe"] = {
 				["font"] = "2002 Bold",
@@ -526,8 +563,8 @@ ElvDB = {
 							["height"] = 25,
 							["width"] = 100,
 						},
-						["height"] = 25,
 						["enable"] = false,
+						["height"] = 25,
 						["width"] = 99,
 					},
 					["raid10"] = {
@@ -558,20 +595,12 @@ ElvDB = {
 					["assist"] = {
 						["enable"] = false,
 					},
-					["targettarget"] = {
-						["debuffs"] = {
-							["enable"] = false,
-							["bossAuras"] = true,
-						},
-						["threatStyle"] = "GLOW",
+					["pet"] = {
 						["power"] = {
 							["height"] = 5,
 						},
 						["width"] = 100,
 						["height"] = 18,
-						["buffs"] = {
-							["bossAuras"] = true,
-						},
 					},
 					["player"] = {
 						["debuffs"] = {
@@ -585,8 +614,8 @@ ElvDB = {
 						},
 						["classbar"] = {
 							["detachFromFrame"] = true,
-							["detachedWidth"] = 212,
 							["height"] = 8,
+							["detachedWidth"] = 212,
 						},
 						["aurabar"] = {
 							["enable"] = false,
@@ -631,9 +660,8 @@ ElvDB = {
 							["enable"] = false,
 							["maxDuration"] = 120,
 						},
-						["castbar"] = {
-							["height"] = 12,
-							["width"] = 225,
+						["power"] = {
+							["hideonnpc"] = false,
 						},
 						["health"] = {
 							["xOffset"] = 8,
@@ -648,8 +676,9 @@ ElvDB = {
 							["anchorPoint"] = "TOPLEFT",
 							["perrow"] = 9,
 						},
-						["power"] = {
-							["hideonnpc"] = false,
+						["castbar"] = {
+							["height"] = 12,
+							["width"] = 225,
 						},
 					},
 					["raid25"] = {
@@ -666,12 +695,20 @@ ElvDB = {
 							["width"] = 193,
 						},
 					},
-					["pet"] = {
+					["targettarget"] = {
+						["debuffs"] = {
+							["enable"] = false,
+							["bossAuras"] = true,
+						},
+						["threatStyle"] = "GLOW",
 						["power"] = {
 							["height"] = 5,
 						},
 						["width"] = 100,
 						["height"] = 18,
+						["buffs"] = {
+							["bossAuras"] = true,
+						},
 					},
 					["party"] = {
 						["width"] = 159,
@@ -776,7 +813,6 @@ ElvDB = {
 						["g"] = 0.9529411764705882,
 						["b"] = 0.1490196078431373,
 					},
-					["classbackdrop"] = true,
 				},
 				["fontOutline"] = "OUTLINE",
 				["statusbar"] = "Minimalist",
@@ -789,21 +825,21 @@ ElvDB = {
 					["BuiRightChatDTPanel"] = {
 						["left"] = "Durability",
 					},
+					["BuiLeftChatDTPanel"] = {
+						["right"] = "BuiMail",
+					},
+					["Actionbar5DataPanel"] = "",
+					["RightMiniPanel"] = "System",
+					["Actionbar3DataPanel"] = "",
 					["RightChatDataPanel"] = {
-						["left"] = "Cecile Meter Overlay",
 						["middle"] = "Bags",
+						["left"] = "Cecile Meter Overlay",
 					},
 					["LeftChatDataPanel"] = {
 						["right"] = "Durability",
 						["left"] = "Guild",
 						["middle"] = "Friends",
 					},
-					["RightMiniPanel"] = "System",
-					["Actionbar3DataPanel"] = "",
-					["BuiLeftChatDTPanel"] = {
-						["right"] = "BuiMail",
-					},
-					["Actionbar5DataPanel"] = "",
 				},
 				["fontOutline"] = "MONOCROMEOUTLINE",
 				["leftChatPanel"] = false,
@@ -812,60 +848,6 @@ ElvDB = {
 				["actionbar5"] = false,
 				["actionbar1"] = false,
 				["actionbar3"] = false,
-			},
-			["actionbar"] = {
-				["bar3"] = {
-					["buttons"] = 10,
-					["buttonspacing"] = 4,
-					["buttonsPerRow"] = 5,
-					["buttonsize"] = 28,
-				},
-				["fontOutline"] = "MONOCROMEOUTLINE",
-				["bar2"] = {
-					["enabled"] = true,
-					["buttons"] = 7,
-					["buttonspacing"] = 4,
-					["buttonsize"] = 26,
-				},
-				["bar1"] = {
-					["buttons"] = 6,
-					["buttonspacing"] = 4,
-					["buttonsPerRow"] = 6,
-				},
-				["bar5"] = {
-					["buttons"] = 10,
-					["buttonspacing"] = 4,
-					["buttonsPerRow"] = 5,
-					["buttonsize"] = 28,
-				},
-				["font"] = "2002 Bold",
-				["bar6"] = {
-					["enabled"] = true,
-					["point"] = "TOPLEFT",
-					["backdrop"] = true,
-					["heightMult"] = 2,
-					["buttonsize"] = 30,
-				},
-				["macrotext"] = true,
-				["stanceBar"] = {
-					["style"] = "classic",
-					["buttonsize"] = 28,
-				},
-				["barPet"] = {
-					["point"] = "BOTTOMLEFT",
-					["backdrop"] = false,
-					["buttonsPerRow"] = 10,
-					["buttonsize"] = 24,
-				},
-				["bar4"] = {
-					["point"] = "BOTTOMRIGHT",
-					["buttons"] = 10,
-					["buttonspacing"] = 4,
-					["backdrop"] = false,
-					["buttonsPerRow"] = 2,
-					["buttonsize"] = 28,
-					["mouseover"] = true,
-				},
 			},
 			["loclite"] = {
 				["dtheight"] = 16,
@@ -876,7 +858,27 @@ ElvDB = {
 				["lpauto"] = false,
 				["lpfontsize"] = 10,
 			},
-			["currentTutorial"] = 1,
+			["bags"] = {
+				["yOffset"] = 154,
+			},
+			["auras"] = {
+				["timeXOffset"] = -1,
+				["debuffs"] = {
+					["size"] = 38,
+				},
+				["fadeThreshold"] = 10,
+				["font"] = "2002 Bold",
+				["fontOutline"] = "MONOCROMEOUTLINE",
+				["consolidatedBuffs"] = {
+					["fontSize"] = 12,
+					["fontOutline"] = "MONOCROMEOUTLINE",
+					["font"] = "2002 Bold",
+				},
+				["buffs"] = {
+					["horizontalSpacing"] = 3,
+					["size"] = 38,
+				},
+			},
 		},
 		["Toradol - Skywall"] = {
 			["bui"] = {
@@ -917,6 +919,10 @@ ElvDB = {
 					},
 				},
 			},
+		},
+		["Olegregg - Area 52"] = {
+		},
+		["Gurund - Skywall"] = {
 		},
 		["Anaiis - Skywall"] = {
 			["bui"] = {
@@ -1474,6 +1480,8 @@ ElvDB = {
 			},
 			["currentTutorial"] = 2,
 		},
+		["Malkyn - Dragonblight"] = {
+		},
 		["Gaulthain - Skywall"] = {
 			["unitframe"] = {
 				["units"] = {
@@ -1508,8 +1516,6 @@ ElvDB = {
 					},
 				},
 			},
-		},
-		["Malkyn - Dragonblight"] = {
 		},
 		["Skywall"] = {
 			["currentTutorial"] = 1,
@@ -2021,6 +2027,8 @@ ElvDB = {
 					["buttonspacing"] = 4,
 				},
 			},
+		},
+		["Noremedy"] = {
 		},
 		["Default"] = {
 			["nameplate"] = {
@@ -2746,8 +2754,6 @@ ElvDB = {
 				["installed"] = true,
 			},
 		},
-		["Noremedy"] = {
-		},
 		["Noremedy - Skywall"] = {
 			["unitframe"] = {
 				["units"] = {
@@ -3170,24 +3176,43 @@ ElvDB = {
 }
 ElvPrivateDB = {
 	["profileKeys"] = {
+		["Dalhian - Skywall"] = "Dalhian - Skywall",
 		["Drominus - Area 52"] = "Drominus - Area 52",
 		["Gaulthain - Skywall"] = "Gaulthain - Skywall",
+		["Feronis - Skywall"] = "Feronis - Skywall",
+		["Gurund - Area 52"] = "Gurund - Area 52",
+		["Drominus - Skywall"] = "Drominus - Skywall",
+		["Olegregg - Area 52"] = "Olegregg - Area 52",
 		["Anaiis - Skywall"] = "Anaiis - Skywall",
 		["Oldfero - Area 52"] = "Oldfero - Area 52",
-		["Drominus - Skywall"] = "Drominus - Skywall",
-		["Dalhian - Skywall"] = "Dalhian - Skywall",
+		["Gurund - Skywall"] = "Gurund - Skywall",
 		["Cidareth - Skywall"] = "Cidareth - Skywall",
-		["Gurund - Area 52"] = "Gurund - Area 52",
-		["Gaulthain - Area 52"] = "Gaulthain - Area 52",
 		["Feronaz - Area 52"] = "Feronaz - Area 52",
-		["Feronis - Skywall"] = "Feronis - Skywall",
 		["Malkyn - Dragonblight"] = "Malkyn - Dragonblight",
+		["Gaulthain - Area 52"] = "Gaulthain - Area 52",
 		["Toradol - Skywall"] = "Toradol - Skywall",
 		["Noremedy - Skywall"] = "Noremedy - Skywall",
 		["Cecliann - Skywall"] = "Cecliann - Skywall",
 		["Feronaz - Skywall"] = "Feronaz - Skywall",
 	},
 	["profiles"] = {
+		["Dalhian - Skywall"] = {
+			["theme"] = "classic",
+			["general"] = {
+				["minimapbar"] = {
+					["mouseover"] = true,
+				},
+				["selectquestreward"] = false,
+				["autorepchange"] = false,
+				["namefont"] = "ElvUI Alt-Font",
+				["chatBubbles"] = "nobackdrop",
+				["minimap"] = {
+					["hideincombat"] = true,
+					["fadeindelay"] = 2,
+				},
+			},
+			["install_complete"] = "6.9996",
+		},
 		["Drominus - Area 52"] = {
 			["general"] = {
 				["raidmarkerbar"] = {
@@ -3227,39 +3252,17 @@ ElvPrivateDB = {
 			["theme"] = "default",
 			["install_complete"] = "6.9996",
 		},
-		["Anaiis - Skywall"] = {
+		["Feronis - Skywall"] = {
+			["theme"] = "default",
 			["install_complete"] = "6.9996",
 		},
-		["Oldfero - Area 52"] = {
+		["Gurund - Area 52"] = {
 			["general"] = {
 				["minimapbar"] = {
 					["mouseover"] = true,
-					["backdrop"] = true,
 				},
-				["namefont"] = "ElvUI Alt-Font",
-				["chatBubbles"] = "nobackdrop",
-				["minimap"] = {
-					["hideincombat"] = true,
-					["fadeindelay"] = 2,
-				},
-				["dmgfont"] = "2002 Bold",
 			},
-			["CBPO"] = {
-				["warned"] = true,
-			},
-			["theme"] = "default",
 			["install_complete"] = "6.9999",
-			["addonskins"] = {
-				["BigWigsHalfBar"] = true,
-				["DBMFontFlag"] = "THICKOUTLINE",
-				["EmbedLeftWidth"] = 132,
-				["DBMFontSize"] = 14,
-				["DBMFont"] = "Friz Quadrata TT",
-				["DBMSkinHalf"] = true,
-			},
-			["farmer"] = {
-				["enabled"] = false,
-			},
 		},
 		["Drominus - Skywall"] = {
 			["general"] = {
@@ -3286,14 +3289,25 @@ ElvPrivateDB = {
 			["theme"] = "classic",
 			["install_complete"] = "6.9996",
 		},
-		["Dalhian - Skywall"] = {
-			["theme"] = "classic",
+		["Olegregg - Area 52"] = {
 			["general"] = {
+				["chatBubbles"] = "nobackdrop",
 				["minimapbar"] = {
 					["mouseover"] = true,
 				},
-				["selectquestreward"] = false,
-				["autorepchange"] = false,
+			},
+			["install_complete"] = "6.9999",
+		},
+		["Anaiis - Skywall"] = {
+			["install_complete"] = "6.9996",
+		},
+		["Oldfero - Area 52"] = {
+			["general"] = {
+				["minimapbar"] = {
+					["mouseover"] = true,
+					["backdrop"] = true,
+				},
+				["dmgfont"] = "2002 Bold",
 				["namefont"] = "ElvUI Alt-Font",
 				["chatBubbles"] = "nobackdrop",
 				["minimap"] = {
@@ -3301,39 +3315,44 @@ ElvPrivateDB = {
 					["fadeindelay"] = 2,
 				},
 			},
-			["install_complete"] = "6.9996",
+			["CBPO"] = {
+				["warned"] = true,
+			},
+			["farmer"] = {
+				["enabled"] = false,
+			},
+			["addonskins"] = {
+				["BigWigsHalfBar"] = true,
+				["DBMFontFlag"] = "THICKOUTLINE",
+				["EmbedLeftWidth"] = 132,
+				["DBMFontSize"] = 14,
+				["DBMFont"] = "Friz Quadrata TT",
+				["DBMSkinHalf"] = true,
+			},
+			["theme"] = "default",
+			["install_complete"] = "6.9999",
+		},
+		["Gurund - Skywall"] = {
 		},
 		["Cidareth - Skywall"] = {
 		},
-		["Gurund - Area 52"] = {
-			["general"] = {
-				["minimapbar"] = {
-					["mouseover"] = true,
-				},
-			},
-			["install_complete"] = "6.9999",
-		},
-		["Gaulthain - Area 52"] = {
-			["install_complete"] = "6.9996",
-		},
 		["Feronaz - Area 52"] = {
+			["theme"] = "class",
 			["general"] = {
 				["raidmarkerbar"] = {
 					["enable"] = false,
 				},
 				["minimapbar"] = {
-					["mouseover"] = true,
 					["backdrop"] = true,
+					["mouseover"] = true,
 				},
 			},
-			["theme"] = "class",
 			["install_complete"] = "6.9998",
 		},
-		["Feronis - Skywall"] = {
-			["theme"] = "default",
-			["install_complete"] = "6.9996",
-		},
 		["Malkyn - Dragonblight"] = {
+		},
+		["Gaulthain - Area 52"] = {
+			["install_complete"] = "6.9996",
 		},
 		["Toradol - Skywall"] = {
 			["install_complete"] = "6.9996",

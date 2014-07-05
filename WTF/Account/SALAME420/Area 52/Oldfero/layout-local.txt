@@ -2,7 +2,7 @@ Version: 1
 Frame: ChannelPulloutTab
 FrameLevel: 1
 Anchor: RIGHT
-X: 1680
+X: 1788
 Y: 167
 W: 118
 H: 32
@@ -44,8 +44,8 @@ H: 18
 Frame: GridLayoutFrame
 FrameLevel: 1
 Anchor: BOTTOM
-X: -414
-Y: 208
+X: -445
+Y: 261
 W: 75
 H: 40
 Frame: OQMainFrame
@@ -90,3 +90,10 @@ X: 0
 Y: 128
 W: 150
 H: 42
+Frame: _NPCScanOverlayKey
+FrameLevel: 26
+Anchor: BOTTOM
+X: 382
+Y: 247
+W: 196
+H: 44

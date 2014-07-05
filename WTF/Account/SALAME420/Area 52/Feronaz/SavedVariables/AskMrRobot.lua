@@ -84,30 +84,25 @@ AmrBankItems = {
 	"|cffe6cc80|Hitem:42949:0:0:0:0:0:0:0:90:0:0|h[Polished Spaulders of Valor]|h|r", -- [23]
 	"|cffe6cc80|Hitem:42943:0:0:0:0:0:0:0:90:0:0|h[Bloodied Arcanite Reaper]|h|r", -- [24]
 	"|cffe6cc80|Hitem:48685:0:0:0:0:0:0:0:90:0:0|h[Polished Breastplate of Valor]|h|r", -- [25]
-	"|cffe6cc80|Hitem:48716:1900:0:0:0:0:0:0:90:0:0|h[Venerable Mass of McGowan]|h|r", -- [26]
-	"|cffe6cc80|Hitem:42992:0:0:0:0:0:0:0:90:0:0|h[Discerning Eye of the Beast]|h|r", -- [27]
-	"|cffe6cc80|Hitem:48716:1900:0:0:0:0:0:0:90:0:0|h[Venerable Mass of McGowan]|h|r", -- [28]
-	"|cffe6cc80|Hitem:61931:0:0:0:0:0:0:0:90:0:0|h[Polished Helm of Valor]|h|r", -- [29]
-	"|cffe6cc80|Hitem:42992:0:0:0:0:0:0:0:90:0:0|h[Discerning Eye of the Beast]|h|r", -- [30]
-	"|cffe6cc80|Hitem:42947:2504:0:0:0:0:0:0:90:0:0|h[Dignified Headmaster's Charge]|h|r", -- [31]
-	"|cffe6cc80|Hitem:62038:0:0:0:0:0:0:0:90:0:0|h[Worn Stoneskin Gargoyle Cape]|h|r", -- [32]
-	"|cffe6cc80|Hitem:48691:0:0:0:0:0:0:0:90:0:0|h[Tattered Dreadmist Robe]|h|r", -- [33]
-	"|cffe6cc80|Hitem:42985:0:0:0:0:0:0:0:90:0:0|h[Tattered Dreadmist Mantle]|h|r", -- [34]
-	"|cffe6cc80|Hitem:42950:0:0:0:0:0:0:0:90:0:0|h[Champion Herod's Shoulder]|h|r", -- [35]
-	"|cffe6cc80|Hitem:48677:0:0:0:0:0:0:0:90:0:0|h[Champion's Deathdealer Breastplate]|h|r", -- [36]
+	"|cffe6cc80|Hitem:42992:0:0:0:0:0:0:0:90:0:0|h[Discerning Eye of the Beast]|h|r", -- [26]
+	"|cffe6cc80|Hitem:61931:0:0:0:0:0:0:0:90:0:0|h[Polished Helm of Valor]|h|r", -- [27]
+	"|cffe6cc80|Hitem:42992:0:0:0:0:0:0:0:90:0:0|h[Discerning Eye of the Beast]|h|r", -- [28]
+	"|cffe6cc80|Hitem:42947:2504:0:0:0:0:0:0:90:0:0|h[Dignified Headmaster's Charge]|h|r", -- [29]
+	"|cffe6cc80|Hitem:48691:0:0:0:0:0:0:0:90:0:0|h[Tattered Dreadmist Robe]|h|r", -- [30]
+	"|cffe6cc80|Hitem:42985:0:0:0:0:0:0:0:90:0:0|h[Tattered Dreadmist Mantle]|h|r", -- [31]
 }
 AmrEquipedItems = {
-	["14"] = "|cffa335ee|Hitem:103688:0:0:0:0:0:0:36420992:90:0:491|h[Contemplation of Chi-Ji]|h|r",
+	["9"] = "|cffa335ee|Hitem:105100:0:0:0:0:0:0:1823652352:90:0:491|h[Bracers of the Pristine Purifier]|h|r",
 	["1"] = "|cffa335ee|Hitem:101834:0:4658:0:0:0:-394:292292886:90:0:491|h[Ordon Legend-Keeper Helm of the Feverflare]|h|r",
-	["15"] = "|cffa335ee|Hitem:101800:4423:0:0:0:0:-351:536872208:90:0:491|h[Amaranthine Cloak of the Pious]|h|r",
+	["8"] = "|cffa335ee|Hitem:101833:4429:0:0:0:0:-360:1704789696:90:147:491|h[Ordon Legend-Keeper Greaves of the Fireflash]|h|r",
 	["3"] = "|cffa335ee|Hitem:101925:4806:0:0:0:0:-347:759171509:90:167:491|h[Ordon Legend-Keeper Spaulders of the Savant]|h|r",
 	["2"] = "|cffa335ee|Hitem:105041:0:0:0:0:0:0:306170112:90:0:491|h[Ashflare Pendant]|h|r",
 	["5"] = "|cffa335ee|Hitem:101926:4419:0:0:0:0:-424:1197739281:90:167:491|h[Ordon Legend-Keeper Vest of the Wavecrest]|h|r",
 	["4"] = "|cffffffff|Hitem:45674:0:0:0:0:0:0:0:90:0:0|h[Undercity Doublet]|h|r",
 	["7"] = "|cffa335ee|Hitem:101924:4825:0:0:0:0:-422:1346899217:90:0:491|h[Ordon Legend-Keeper Legguards of the Feverflare]|h|r",
 	["6"] = "|cffa335ee|Hitem:101830:0:0:0:0:0:-363:1627719360:90:167:491|h[Ordon Legend-Keeper Belt of the Wavecrest]|h|r",
-	["9"] = "|cffa335ee|Hitem:105100:0:0:0:0:0:0:1823652352:90:0:491|h[Bracers of the Pristine Purifier]|h|r",
-	["8"] = "|cffa335ee|Hitem:101833:4429:0:0:0:0:-360:1704789696:90:147:491|h[Ordon Legend-Keeper Greaves of the Fireflash]|h|r",
+	["14"] = "|cffa335ee|Hitem:103688:0:0:0:0:0:0:36420992:90:0:491|h[Contemplation of Chi-Ji]|h|r",
+	["15"] = "|cffa335ee|Hitem:101800:4423:0:0:0:0:-351:536872208:90:0:491|h[Amaranthine Cloak of the Pious]|h|r",
 	["16"] = "|cff1eff00|Hitem:101226:4441:0:0:0:0:0:0:90:148:0|h[Streamtalker Gavel]|h|r",
 	["17"] = "|cff1eff00|Hitem:101232:0:0:0:0:0:0:0:90:147:0|h[Streamtalker Aegis]|h|r",
 	["13"] = "|cffa335ee|Hitem:103687:0:0:0:0:0:0:714236288:90:0:491|h[Yu'lon's Bite]|h|r",
@@ -123,8 +118,8 @@ AmrIconInfo = {
 AmrCurrencies = {
 	[395] = 1083,
 	[396] = 780,
-	[515] = 18,
 	[392] = 259,
+	[515] = 18,
 }
 AmrProfessions = {
 	["Herbalism"] = 615,
@@ -262,48 +257,28 @@ AmrBankItemsAndCounts = {
 	}, -- [25]
 	{
 		["count"] = 1,
-		["link"] = "|cffe6cc80|Hitem:48716:1900:0:0:0:0:0:0:90:0:0|h[Venerable Mass of McGowan]|h|r",
+		["link"] = "|cffe6cc80|Hitem:42992:0:0:0:0:0:0:0:90:0:0|h[Discerning Eye of the Beast]|h|r",
 	}, -- [26]
 	{
 		["count"] = 1,
-		["link"] = "|cffe6cc80|Hitem:42992:0:0:0:0:0:0:0:90:0:0|h[Discerning Eye of the Beast]|h|r",
+		["link"] = "|cffe6cc80|Hitem:61931:0:0:0:0:0:0:0:90:0:0|h[Polished Helm of Valor]|h|r",
 	}, -- [27]
 	{
 		["count"] = 1,
-		["link"] = "|cffe6cc80|Hitem:48716:1900:0:0:0:0:0:0:90:0:0|h[Venerable Mass of McGowan]|h|r",
+		["link"] = "|cffe6cc80|Hitem:42992:0:0:0:0:0:0:0:90:0:0|h[Discerning Eye of the Beast]|h|r",
 	}, -- [28]
 	{
 		["count"] = 1,
-		["link"] = "|cffe6cc80|Hitem:61931:0:0:0:0:0:0:0:90:0:0|h[Polished Helm of Valor]|h|r",
+		["link"] = "|cffe6cc80|Hitem:42947:2504:0:0:0:0:0:0:90:0:0|h[Dignified Headmaster's Charge]|h|r",
 	}, -- [29]
 	{
 		["count"] = 1,
-		["link"] = "|cffe6cc80|Hitem:42992:0:0:0:0:0:0:0:90:0:0|h[Discerning Eye of the Beast]|h|r",
+		["link"] = "|cffe6cc80|Hitem:48691:0:0:0:0:0:0:0:90:0:0|h[Tattered Dreadmist Robe]|h|r",
 	}, -- [30]
 	{
 		["count"] = 1,
-		["link"] = "|cffe6cc80|Hitem:42947:2504:0:0:0:0:0:0:90:0:0|h[Dignified Headmaster's Charge]|h|r",
-	}, -- [31]
-	{
-		["count"] = 1,
-		["link"] = "|cffe6cc80|Hitem:62038:0:0:0:0:0:0:0:90:0:0|h[Worn Stoneskin Gargoyle Cape]|h|r",
-	}, -- [32]
-	{
-		["count"] = 1,
-		["link"] = "|cffe6cc80|Hitem:48691:0:0:0:0:0:0:0:90:0:0|h[Tattered Dreadmist Robe]|h|r",
-	}, -- [33]
-	{
-		["count"] = 1,
 		["link"] = "|cffe6cc80|Hitem:42985:0:0:0:0:0:0:0:90:0:0|h[Tattered Dreadmist Mantle]|h|r",
-	}, -- [34]
-	{
-		["count"] = 1,
-		["link"] = "|cffe6cc80|Hitem:42950:0:0:0:0:0:0:0:90:0:0|h[Champion Herod's Shoulder]|h|r",
-	}, -- [35]
-	{
-		["count"] = 1,
-		["link"] = "|cffe6cc80|Hitem:48677:0:0:0:0:0:0:0:90:0:0|h[Champion's Deathdealer Breastplate]|h|r",
-	}, -- [36]
+	}, -- [31]
 }
 AmrImportString = "region=USA;realm=Area 52;name=Feronaz;faction=Horde;spec=262;talents=323323;glyphs=55449,55448,55446,62132,101052;race=Tauren;professions=Alchemy:600,Herbalism:615;item=2:101925:-347:491:0:0:0:4806:167;item=8:101831:-138,-361:491:0:0:0:4414:162;item=16:101232:0:0:0:0:0:4434:147;item=7:101833:-130,-360:491:0:0:0:4429:147;item=15:101226:0:0:0:0:0:4442:148;item=0:101834:-394:491:m,y:4658,4650:76885,76700:0:0;item=6:101924:-422:491:r:4622:76671:4826:0;item=4:101926:-424:491:b:4596:76645:4419:167;item=5:101830:-132,-363:491:p:4649:76699:0:167;item=14:101800:-351:491:0:0:0:4423:0;item=9:101832:-132,-363:491:0:0:0:4433:167;item=1:101805:-344:491:0:0:0:0:145;item=10:101809:-131,-362:491:0:0:0:0:151;item=11:101809:-131,-362:491:0:0:0:0:151;item=12:103687:0:491:0:0:0:0:0;item=13:103688:0:491:0:0:0:0:0;"
 AmrImportDate = "06/21/14 18:45:59"
@@ -318,6 +293,6 @@ AmrLogData = {
 	["_autoLog"] = {
 		[1136] = "disabled",
 	},
-	["_lastDiff"] = 0,
 	["_lastZone"] = "Pandaria",
+	["_lastDiff"] = 0,
 }
