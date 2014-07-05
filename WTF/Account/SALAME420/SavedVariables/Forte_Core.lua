@@ -13,15 +13,22 @@ FX_Saved = {
 		["Lord Sanguinar"] = 1,
 		["Thaladred the Darkener"] = 1,
 		["Fathom-Guard Caribdis"] = 1,
-		["Fathom-Guard Tidalvess"] = 1,
 		["Master Engineer Telonicus"] = 1,
+		["Fathom-Guard Tidalvess"] = 1,
 		["Fathom-Guard Sharkkis"] = 1,
 	},
-	["Update"] = 47969.239,
+	["Update"] = 107297.479,
 	["Profiles"] = {
 		["Active"] = 1,
 		["Characters"] = {
 			["Feronaz-Area 52"] = 1,
+		},
+		["Links"] = {
+		},
+		["Data"] = {
+			{
+				["name"] = "Feronaz-Area 52",
+			}, -- [1]
 		},
 		["Instances"] = {
 			{
@@ -142,8 +149,8 @@ FX_Saved = {
 					0, -- [3]
 				},
 				["FWHSFrame"] = {
-					["y"] = 318.0800403165813,
-					["x"] = 107.5200546216947,
+					["y"] = 18.55997763156847,
+					["x"] = 122.8800818252548,
 					["lock"] = false,
 					["scale"] = 1,
 					["alpha"] = 1,
@@ -176,6 +183,13 @@ FX_Saved = {
 				["Cooldown"] = {
 					["Active"] = 1,
 					["Instance"] = "Cooldown",
+					["Links"] = {
+					},
+					["Data"] = {
+						{
+							["name"] = "Cooldown Timer",
+						}, -- [1]
+					},
 					["Instances"] = {
 						{
 							["Soulstone"] = {
@@ -226,7 +240,7 @@ FX_Saved = {
 								0, -- [3]
 								[0] = false,
 							},
-							["x"] = 974.7201344633068,
+							["x"] = 1009.280149111743,
 							["Potion"] = {
 								0, -- [1]
 								1, -- [2]
@@ -244,16 +258,8 @@ FX_Saved = {
 								},
 							},
 							["GroupOverride"] = true,
-							["Debuff"] = {
-								1, -- [1]
-								0, -- [2]
-								0, -- [3]
-								[0] = true,
-							},
-							["MinRange"] = {
-								0, -- [1]
-								[0] = false,
-							},
+							["y"] = 202.8800124931331,
+							["Hide"] = false,
 							["Detail"] = true,
 							["Enchant"] = {
 								1, -- [1]
@@ -262,11 +268,16 @@ FX_Saved = {
 								[0] = true,
 							},
 							["Swing"] = false,
+							["Buff"] = {
+								1, -- [1]
+								1, -- [2]
+								1, -- [3]
+								[0] = true,
+							},
 							["Flip"] = false,
-							["Warn"] = true,
 							["scale"] = 1,
 							["IconTime"] = true,
-							["Height"] = 24,
+							["Test"] = false,
 							["Powerup"] = {
 								0, -- [1]
 								0.75, -- [2]
@@ -292,39 +303,27 @@ FX_Saved = {
 								[0] = true,
 							},
 							["Splash"] = true,
-							["Internal"] = {
-								0, -- [1]
-								0.6, -- [2]
-								0.85, -- [3]
+							["Item"] = {
+								1, -- [1]
+								1, -- [2]
+								0, -- [3]
 								[0] = true,
 							},
 							["MaxRange"] = {
 								3600, -- [1]
 								[0] = false,
 							},
-							["Healthstone"] = {
-								0, -- [1]
-								1, -- [2]
-								0.5, -- [3]
-								[0] = true,
-							},
-							["CustomTags"] = {
-								"0 1 10 30 60 120 300 600", -- [1]
-								[0] = true,
-							},
-							["Backdrop"] = {
-								"Interface\\AddOns\\Forte_Core\\Textures\\Background", -- [1]
-								"Interface\\AddOns\\Forte_Core\\Textures\\Border", -- [2]
-								false, -- [3]
-								16, -- [4]
-								5, -- [5]
-								3, -- [6]
-							},
-							["TextColor"] = {
+							["alpha"] = 1,
+							["Ignore"] = true,
+							["Pet"] = {
 								1, -- [1]
-								1, -- [2]
-								1, -- [3]
-								0.2, -- [4]
+								0, -- [2]
+								0.95, -- [3]
+								[0] = true,
+							},
+							["MinRemaining"] = {
+								0, -- [1]
+								[0] = false,
 							},
 							["BarColor"] = {
 								1, -- [1]
@@ -337,46 +336,54 @@ FX_Saved = {
 								[0] = false,
 							},
 							["Max"] = 300,
-							["MinRemaining"] = {
-								0, -- [1]
-								[0] = false,
-							},
-							["Pet"] = {
+							["TextColor"] = {
 								1, -- [1]
-								0, -- [2]
-								0.95, -- [3]
+								1, -- [2]
+								1, -- [3]
+								0.2, -- [4]
+							},
+							["Backdrop"] = {
+								"Interface\\AddOns\\Forte_Core\\Textures\\Background", -- [1]
+								"Interface\\AddOns\\Forte_Core\\Textures\\Border", -- [2]
+								false, -- [3]
+								16, -- [4]
+								5, -- [5]
+								3, -- [6]
+							},
+							["CustomTags"] = {
+								"0 1 10 30 60 120 300 600", -- [1]
 								[0] = true,
 							},
-							["Ignore"] = true,
-							["alpha"] = 1,
+							["Healthstone"] = {
+								0, -- [1]
+								1, -- [2]
+								0.5, -- [3]
+								[0] = true,
+							},
 							["Font"] = {
 								"Interface\\AddOns\\Forte_Core\\Fonts\\GOTHIC.TTF", -- [1]
 								11, -- [2]
 							},
-							["Item"] = {
-								1, -- [1]
-								1, -- [2]
-								0, -- [3]
+							["Internal"] = {
+								0, -- [1]
+								0.6, -- [2]
+								0.85, -- [3]
 								[0] = true,
 							},
 							["SplashFactor"] = 4,
-							["Test"] = false,
-							["Buff"] = {
+							["Height"] = 24,
+							["Warn"] = true,
+							["MinRange"] = {
+								0, -- [1]
+								[0] = false,
+							},
+							["Debuff"] = {
 								1, -- [1]
-								1, -- [2]
-								1, -- [3]
+								0, -- [2]
+								0, -- [3]
 								[0] = true,
 							},
-							["Hide"] = false,
-							["y"] = 151.0400094413755,
 						}, -- [1]
-					},
-					["Data"] = {
-						{
-							["name"] = "Cooldown Timer",
-						}, -- [1]
-					},
-					["Links"] = {
 					},
 				},
 				["TimerStrata"] = "MEDIUM",
@@ -479,8 +486,8 @@ FX_Saved = {
 				["SummonStrata"] = "MEDIUM",
 				["ExpandSubcats"] = false,
 				["FWSSFrame"] = {
-					["y"] = 364.1600487041469,
-					["x"] = 107.5200659561142,
+					["y"] = 10.23997657775931,
+					["x"] = 199.6800543594345,
 					["lock"] = false,
 					["scale"] = 1,
 					["alpha"] = 1,
@@ -495,6 +502,13 @@ FX_Saved = {
 				["Timer"] = {
 					["Active"] = 1,
 					["Instance"] = "Timer",
+					["Links"] = {
+					},
+					["Data"] = {
+						{
+							["name"] = "Spell Timer",
+						}, -- [1]
+					},
 					["Instances"] = {
 						{
 							["TargetDebuff"] = {
@@ -541,7 +555,7 @@ FX_Saved = {
 								0.3, -- [3]
 								[0] = true,
 							},
-							["y"] = 126.7200081539152,
+							["y"] = 163.1999547481537,
 							["Blink"] = {
 								3, -- [1]
 								[0] = true,
@@ -616,44 +630,36 @@ FX_Saved = {
 							["Height"] = 14,
 							["Label"] = false,
 							["Enable"] = true,
-							["Max"] = {
-								15, -- [1]
-								[0] = false,
-							},
-							["MaximizeName"] = false,
-							["Focus"] = true,
+							["x"] = 1000.320188174243,
+							["alpha"] = 1,
+							["lock"] = false,
 							["BarBackgroundAlpha"] = 0.3,
 							["Time"] = true,
-							["lock"] = false,
-							["SpacingHeight"] = 2,
+							["Focus"] = true,
+							["Test"] = false,
 							["TicksNext"] = true,
-							["HideLonger"] = {
-								30, -- [1]
-								[0] = false,
-							},
+							["Hide"] = false,
 							["Texture"] = "Interface\\AddOns\\Forte_Core\\Textures\\Aluminium",
+							["CastSparkTickOverlap"] = true,
+							["Spell"] = false,
 							["Spark"] = {
 								0.7, -- [1]
 								[0] = true,
 							},
-							["Spell"] = false,
-							["MaxTime"] = {
-								30, -- [1]
-								[0] = true,
-							},
 							["Icon"] = true,
-							["RaidDebuffs"] = true,
+							["LabelLimit"] = false,
 							["IconStacks"] = true,
 							["LabelFont"] = {
 								"Interface\\AddOns\\Forte_Core\\Fonts\\GOTHIC.TTF", -- [1]
 								11, -- [2]
 							},
 							["Width"] = 250,
-							["Curse"] = {
-								0.64, -- [1]
-								0.21, -- [2]
-								0.9300000000000001, -- [3]
-								[0] = true,
+							["TargetBgColor"] = {
+								0, -- [1]
+								0, -- [2]
+								0, -- [3]
+								1, -- [4]
+								[0] = false,
 							},
 							["CastSparkGCD"] = true,
 							["RaidTargets"] = {
@@ -667,7 +673,7 @@ FX_Saved = {
 								1, -- [4]
 								[0] = false,
 							},
-							["CastSpark"] = {
+							["Ticks"] = {
 								0.3, -- [1]
 								[0] = true,
 							},
@@ -690,18 +696,18 @@ FX_Saved = {
 							},
 							["Other"] = true,
 							["OneMax"] = true,
-							["SelfDebuffOther"] = {
-								0.5, -- [1]
-								0, -- [2]
-								0, -- [3]
-								[0] = false,
+							["HighlightColor"] = {
+								1, -- [1]
+								1, -- [2]
+								1, -- [3]
+								[0] = true,
 							},
 							["Flip"] = false,
-							["SelfBuffOther"] = {
-								0.5, -- [1]
-								0.5, -- [2]
-								0.5, -- [3]
-								[0] = false,
+							["TotemEarth"] = {
+								1, -- [1]
+								0.5600000000000001, -- [2]
+								0, -- [3]
+								[0] = true,
 							},
 							["CooldownOther"] = {
 								0.5, -- [1]
@@ -709,14 +715,20 @@ FX_Saved = {
 								0.18, -- [3]
 								[0] = false,
 							},
-							["SelfBuff"] = {
+							["NormalBgColor"] = {
 								0, -- [1]
-								0.75, -- [2]
+								0, -- [2]
+								0, -- [3]
+								0.5, -- [4]
+							},
+							["Filter"] = {
+							},
+							["Channel"] = {
+								0.42, -- [1]
+								0, -- [2]
 								1, -- [3]
 								[0] = true,
 							},
-							["UnknownTarget"] = true,
-							["LabelHeight"] = 18,
 							["TotemFire"] = {
 								1, -- [1]
 								0.37, -- [2]
@@ -738,34 +750,28 @@ FX_Saved = {
 							["Space"] = 2,
 							["Background"] = true,
 							["Outwands"] = true,
-							["Channel"] = {
-								0.42, -- [1]
-								0, -- [2]
-								1, -- [3]
-								[0] = true,
-							},
-							["Filter"] = {
-							},
-							["NormalBgColor"] = {
+							["LabelHeight"] = 18,
+							["UnknownTarget"] = true,
+							["SelfBuff"] = {
 								0, -- [1]
-								0, -- [2]
-								0, -- [3]
-								0.5, -- [4]
-							},
-							["TotemEarth"] = {
-								1, -- [1]
-								0.5600000000000001, -- [2]
-								0, -- [3]
-								[0] = true,
-							},
-							["HighlightColor"] = {
-								1, -- [1]
-								1, -- [2]
+								0.75, -- [2]
 								1, -- [3]
 								[0] = true,
+							},
+							["SelfBuffOther"] = {
+								0.5, -- [1]
+								0.5, -- [2]
+								0.5, -- [3]
+								[0] = false,
+							},
+							["SelfDebuffOther"] = {
+								0.5, -- [1]
+								0, -- [2]
+								0, -- [3]
+								[0] = false,
 							},
 							["HideLongerNoBoss"] = false,
-							["Ticks"] = {
+							["CastSpark"] = {
 								0.3, -- [1]
 								[0] = true,
 							},
@@ -775,34 +781,35 @@ FX_Saved = {
 								0.95, -- [3]
 								[0] = true,
 							},
-							["TargetBgColor"] = {
-								0, -- [1]
-								0, -- [2]
-								0, -- [3]
-								1, -- [4]
-								[0] = false,
+							["Curse"] = {
+								0.64, -- [1]
+								0.21, -- [2]
+								0.9300000000000001, -- [3]
+								[0] = true,
 							},
-							["LabelLimit"] = false,
+							["RaidDebuffs"] = true,
 							["Heal"] = {
 								0, -- [1]
 								1, -- [2]
 								0, -- [3]
 								[0] = true,
 							},
-							["CastSparkTickOverlap"] = true,
-							["Hide"] = false,
-							["Test"] = false,
+							["MaxTime"] = {
+								30, -- [1]
+								[0] = true,
+							},
+							["HideLonger"] = {
+								30, -- [1]
+								[0] = false,
+							},
+							["SpacingHeight"] = 2,
 							["ForceMax"] = false,
-							["alpha"] = 1,
-							["x"] = 974.7202427482553,
+							["MaximizeName"] = false,
+							["Max"] = {
+								15, -- [1]
+								[0] = false,
+							},
 						}, -- [1]
-					},
-					["Data"] = {
-						{
-							["name"] = "Spell Timer",
-						}, -- [1]
-					},
-					["Links"] = {
 					},
 				},
 				["FWSUFrame"] = {
@@ -813,7 +820,11 @@ FX_Saved = {
 					["alpha"] = 1,
 				},
 				["Strata"] = "MEDIUM",
-				["SummonInterval"] = 1,
+				["SummonCloseColor"] = {
+					0.6, -- [1]
+					0.6, -- [2]
+					0.6, -- [3]
+				},
 				["CancelDelay"] = 0.5,
 				["LinkCloneColor"] = {
 					1, -- [1]
@@ -827,42 +838,47 @@ FX_Saved = {
 					4, -- [2]
 					[0] = true,
 				},
-				["TimerInstantSound"] = {
-					"Sound\\Spells\\ShadowWard.wav", -- [1]
-					4, -- [2]
-					[0] = false,
-				},
 				["TimerImprove"] = false,
-				["OptionsHeaderFont"] = {
-					"Interface\\AddOns\\Forte_Core\\Fonts\\GOTHICB.TTF", -- [1]
-					11, -- [2]
+				["OptionBackgroundColor"] = {
+					0.18, -- [1]
+					0.18, -- [2]
+					0.18, -- [3]
+					0.9, -- [4]
 				},
+				["SpellGroupTips"] = true,
 				["DotTicksDelayNew"] = 1.5,
 				["HealthstoneUnknown"] = true,
-				["TalentOffsetY"] = 0,
+				["SummonFarColor"] = {
+					1, -- [1]
+					1, -- [2]
+					1, -- [3]
+				},
 				["SoulstoneExpand"] = false,
 				["UseTokens"] = "pet pettarget vehicle focus mouseover",
 				["TimeLeft"] = {
 					">> %s on %s is fading in %s <<", -- [1]
 					[0] = 1,
 				},
-				["ShamanColor"] = {
-					0, -- [1]
-					0.86, -- [2]
-					0.73, -- [3]
+				["TimeFormat"] = true,
+				["SoulstoneSpace"] = 1,
+				["Chill"] = 0.05,
+				["Output"] = {
+					"MyProChannel", -- [1]
+					[0] = true,
 				},
-				["LoadDelay"] = 1,
-				["SummonSpace"] = 1,
-				["GlobalScale"] = 1,
 				["HealthstoneTexture"] = "Interface\\AddOns\\Forte_Core\\Textures\\Aluminium",
 				["TimeLeftNoTarg"] = {
 					">> %s is fading in %s <<", -- [1]
 					[0] = 1,
 				},
-				["SummonMeetingStone"] = false,
-				["TalentOffsetX"] = 0,
+				["OptionsColums"] = 2,
+				["SummonSpace"] = 1,
 				["SummonHeight"] = 12,
-				["HealthstoneExpand"] = false,
+				["HealthstoneMinColor"] = {
+					0.9300000000000001, -- [1]
+					1, -- [2]
+					0, -- [3]
+				},
 				["TimerResistsColor"] = {
 					1, -- [1]
 					0, -- [2]
@@ -870,14 +886,15 @@ FX_Saved = {
 					[0] = true,
 				},
 				["SoulstoneAuto"] = false,
-				["SoulstoneMaxColor"] = {
-					0.64, -- [1]
-					0.21, -- [2]
-					0.9300000000000001, -- [3]
-				},
-				["SoulstoneWidth"] = 100,
+				["RightClickIconOptions"] = true,
+				["ShowReady"] = false,
 				["SoulstoneMax"] = 10,
 				["TimerSortOrder"] = "buff selfdebuff debuff cooldown notarget target",
+				["DruidColor"] = {
+					1, -- [1]
+					0.49, -- [2]
+					0.04, -- [3]
+				},
 				["DiffNoneColor"] = {
 					0, -- [1]
 					1, -- [2]
@@ -885,100 +902,94 @@ FX_Saved = {
 					0.2, -- [4]
 					[0] = false,
 				},
-				["TimerFadeSound"] = {
-					"Sound\\Spells\\ShaysBell.wav", -- [1]
-					2, -- [2]
-					[0] = true,
-				},
 				["TimerFadeSpeed"] = 0.5,
-				["DruidColor"] = {
+				["SoulstoneWidth"] = 100,
+				["SoulstoneMinColor"] = {
 					1, -- [1]
-					0.49, -- [2]
-					0.04, -- [3]
+					0, -- [2]
+					0.6, -- [3]
 				},
-				["SoulstoneFadeSound"] = {
-					"Interface\\AddOns\\Forte_Core\\Sounds\\SoulstoneExpire.mp3", -- [1]
-					1, -- [2]
-					[0] = true,
-				},
-				["OptionsHeight"] = 440,
-				["CooldownLeft"] = {
-					">> %s is ready in %s <<", -- [1]
-					[0] = 1,
-				},
-				["GlobalSpark"] = {
-					0.7, -- [1]
-					[0] = true,
-				},
-				["SoulstoneTexture"] = "Interface\\AddOns\\Forte_Core\\Textures\\Aluminium",
-				["SoulstoneHeight"] = 12,
-				["SoulstoneTextColor"] = {
-					1, -- [1]
-					1, -- [2]
-					1, -- [3]
-				},
-				["SplashStrata"] = "MEDIUM",
 				["Splash"] = {
 					["Active"] = 1,
 					["Instance"] = "Splash",
-					["Instances"] = {
-						{
-							["SplashGlow"] = true,
-							["SecondSplashMax"] = 4,
-							["Enable"] = false,
-							["lock"] = false,
-							["scale"] = 2,
-							["y"] = 384.0000304794303,
-							["alpha"] = 0.7,
-							["x"] = 614.400025329589,
-						}, -- [1]
+					["Links"] = {
 					},
 					["Data"] = {
 						{
 							["name"] = "Secondary Splash",
 						}, -- [1]
 					},
-					["Links"] = {
+					["Instances"] = {
+						{
+							["SplashGlow"] = true,
+							["SecondSplashMax"] = 4,
+							["x"] = 614.400025329589,
+							["lock"] = false,
+							["Enable"] = false,
+							["y"] = 384.0000304794303,
+							["alpha"] = 0.7,
+							["scale"] = 2,
+						}, -- [1]
 					},
 				},
-				["SoulstoneMinColor"] = {
+				["SoulstoneFadeSound"] = {
+					"Interface\\AddOns\\Forte_Core\\Sounds\\SoulstoneExpire.mp3", -- [1]
+					1, -- [2]
+					[0] = true,
+				},
+				["GlobalSpark"] = {
+					0.7, -- [1]
+					[0] = true,
+				},
+				["SoulstoneTexture"] = "Interface\\AddOns\\Forte_Core\\Textures\\Aluminium",
+				["SoulstoneTextColor"] = {
 					1, -- [1]
-					0, -- [2]
-					0.6, -- [3]
+					1, -- [2]
+					1, -- [3]
+				},
+				["SoulstoneHeight"] = 12,
+				["SplashStrata"] = "MEDIUM",
+				["OptionsHeight"] = 440,
+				["CooldownLeft"] = {
+					">> %s is ready in %s <<", -- [1]
+					[0] = 1,
 				},
 				["SoulstoneStrata"] = "MEDIUM",
-				["ShowReady"] = false,
-				["RightClickIconOptions"] = true,
+				["TimerFadeSound"] = {
+					"Sound\\Spells\\ShaysBell.wav", -- [1]
+					2, -- [2]
+					[0] = true,
+				},
+				["SoulstoneMaxColor"] = {
+					0.64, -- [1]
+					0.21, -- [2]
+					0.9300000000000001, -- [3]
+				},
 				["SoulstoneReadySound"] = {
 					"Sound\\Spells\\SimonGame_Visual_GameTick.wav", -- [1]
 					1, -- [2]
 					[0] = true,
 				},
-				["HealthstoneMinColor"] = {
-					0.9300000000000001, -- [1]
-					1, -- [2]
-					0, -- [3]
+				["HealthstoneExpand"] = false,
+				["SummonMeetingStone"] = false,
+				["TalentOffsetX"] = 0,
+				["GlobalScale"] = 1,
+				["LoadDelay"] = 1,
+				["ShamanColor"] = {
+					0, -- [1]
+					0.86, -- [2]
+					0.73, -- [3]
 				},
-				["OptionsColums"] = 2,
-				["Output"] = {
-					"MyProChannel", -- [1]
-					[0] = true,
-				},
-				["Chill"] = 0.05,
-				["SoulstoneSpace"] = 1,
-				["TimeFormat"] = true,
-				["SummonFarColor"] = {
-					1, -- [1]
-					1, -- [2]
-					1, -- [3]
-				},
+				["TalentOffsetY"] = 0,
 				["DisableMouseover"] = false,
-				["SpellGroupTips"] = true,
-				["OptionBackgroundColor"] = {
-					0.18, -- [1]
-					0.18, -- [2]
-					0.18, -- [3]
-					0.9, -- [4]
+				["OptionsHeaderFont"] = {
+					"Interface\\AddOns\\Forte_Core\\Fonts\\GOTHICB.TTF", -- [1]
+					11, -- [2]
+				},
+				["TimerInstantSound"] = {
+					"Sound\\Spells\\ShadowWard.wav", -- [1]
+					4, -- [2]
+					[0] = false,
 				},
 				["HealthstoneUnknownMaxColor"] = {
 					1, -- [1]
@@ -986,24 +997,13 @@ FX_Saved = {
 					0, -- [3]
 				},
 				["HealthstoneInterval"] = 2,
-				["SummonCloseColor"] = {
-					0.6, -- [1]
-					0.6, -- [2]
-					0.6, -- [3]
-				},
+				["SummonInterval"] = 1,
 				["DisableFocus"] = false,
 				["HealthstoneFont"] = {
 					"Interface\\AddOns\\Forte_Core\\Fonts\\GOTHIC.TTF", -- [1]
 					11, -- [2]
 				},
 			}, -- [1]
-		},
-		["Data"] = {
-			{
-				["name"] = "Feronaz-Area 52",
-			}, -- [1]
-		},
-		["Links"] = {
 		},
 	},
 	["RAID"] = false,
@@ -1015,7 +1015,7 @@ FX_Saved = {
 	["RaidStatus"] = {
 		["Feronaz"] = {
 			0, -- [1]
-			47969.239, -- [2]
+			107297.479, -- [2]
 			"SHAMAN", -- [3]
 			"v1.980.8", -- [4]
 		},

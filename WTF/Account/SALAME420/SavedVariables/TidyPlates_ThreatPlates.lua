@@ -2,7 +2,6 @@
 ThreatPlatesDB = {
 	["char"] = {
 		["Feronaz - Area 52"] = {
-			["welcome"] = true,
 			["specInfo"] = {
 				{
 					["name"] = "Elemental",
@@ -13,13 +12,14 @@ ThreatPlatesDB = {
 					["role"] = "HEALER",
 				}, -- [2]
 			},
+			["welcome"] = true,
 		},
-	},
-	["profileKeys"] = {
-		["Feronaz - Area 52"] = "Default",
 	},
 	["global"] = {
 		["version"] = "7.010-Alpha",
+	},
+	["profileKeys"] = {
+		["Feronaz - Area 52"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {
