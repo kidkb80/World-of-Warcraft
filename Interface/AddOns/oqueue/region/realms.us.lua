@@ -1,4 +1,4 @@
-﻿--[[ 
+--[[ 
   @file       realms.us.lua
   @brief      realm list for region: us
 
@@ -915,5 +915,7 @@ OQ.gbl = { ["tts#1959"         ] = "exploiting",  -- OQ exploiter
            ["calyistis#1146"   ] = "exploiting",  -- OQ exploiter; gold dragon (21jun2014)
            ["logiiii#1198"     ] = "exploiting",  -- OQ exploiter; gold dragon (22jun2014)
            ["aeshur#1775"      ] = "exploiting",  -- OQ exploiter; gold dragon (29jun2014)
+           ["taxi#1168"        ] = "exploiting",  -- OQ exploiter; silver dragon (07jul2014)
+           ["tylerr#1141"      ] = "behavior"  ,  -- general harassment, lewd comments, wanted to be banned (08sep2014)
          } ;
 end

@@ -1,11 +1,14 @@
 ## Title: oQueue
-## Version: 1.9.5
+## Version: 2.0.1
 ## Interface: 50400
 ## Author: Tiny of the Zerg
 ## Notes: Oath's premade finder using social mesh networking
 ## X-Category: PvP
 ## X-Website: http://www.solidice.com/oqueue
 ## DefaultState: enabled
+## X-Curse-Project-Name: oQueue
+## X-Curse-Project-ID: oqueue
+## X-Curse-Packaged-Version: 2.0.1
 ## SavedVariables: OQ_data
 
 oqueue.defines.lua 

@@ -1,4 +1,5 @@
 local _, AskMrRobot = ...
+local L = AskMrRobot.L;
 
 -- initialize the ExportTab class
 AskMrRobot.ExportTab = AskMrRobot.inheritsFrom(AskMrRobot.Frame)
@@ -33,7 +34,7 @@ function AskMrRobot.ExportTab:new(parent)
 
 	local text = tab:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge")
 	text:SetPoint("TOPLEFT", 0, -5)
-	text:SetText("Export Gear for Best in Bags")  
+	text:SetText(L.AMR_EXPORTTAB_EXPORT_BB)  
     
     local chooseText = CreateText(nil, tab, "GameFontWhite", text, 0, -15, "Choose a method:")
 	chooseText:SetJustifyV("MIDDLE")
@@ -41,7 +42,7 @@ function AskMrRobot.ExportTab:new(parent)
     
     local btn = CreateFrame("Button", "AmrExportManual", tab, "UIPanelButtonTemplate")
 	btn:SetPoint("TOPLEFT", text, "BOTTOMLEFT", 125, -15)
-	btn:SetText("Copy/Paste")
+	btn:SetText(L.AMR_EXPORTTAB_COPY_PASTE)
 	btn:SetWidth(120)
 	btn:SetHeight(30)
     tab.btnManual = btn
@@ -53,7 +54,7 @@ function AskMrRobot.ExportTab:new(parent)
     
     btn = CreateFrame("Button", "AmrExportAuto", tab, "UIPanelButtonTemplate")
 	btn:SetPoint("TOPLEFT", text, "BOTTOMLEFT", 275, -15)
-	btn:SetText("AMR Client")
+	btn:SetText(L.AMR_EXPORTTAB_AMR_CLIENT)
 	btn:SetWidth(120)
 	btn:SetHeight(30)
     tab.btnAuto = btn
@@ -64,9 +65,9 @@ function AskMrRobot.ExportTab:new(parent)
     end)
     
     -- copy/paste
-    text = CreateText(tab.manualElements, tab, "GameFontNormalLarge", chooseText, 0, -20, "COPY/PASTE EXPORT")
-    local text2 = CreateText(tab.manualElements, tab, "GameFontWhite", text, 0, -15, "1. Open your bank")
-    text = CreateText(tab.manualElements, tab, "GameFontWhite", text2, 0, -15, "2. Copy the text below by pressing Ctrl+C (or Cmd+C on a Mac)")
+    text = CreateText(tab.manualElements, tab, "GameFontNormalLarge", chooseText, 0, -20, L.AMR_EXPORTTAB_COPY_PASTE_EXPORT)
+    local text2 = CreateText(tab.manualElements, tab, "GameFontWhite", text, 0, -15, L.AMR_EXPORTTAB_COPY_PASTE_EXPORT_1)
+    text = CreateText(tab.manualElements, tab, "GameFontWhite", text2, 0, -15, L.AMR_EXPORTTAB_COPY_PASTE_EXPORT_2)
 
 	local txtExportString = CreateFrame("ScrollFrame", "AmrScrollFrame", tab, "InputScrollFrameTemplate")
 	txtExportString:SetPoint("TOPLEFT", text, "BOTTOMLEFT", 12, -10)
@@ -83,15 +84,15 @@ function AskMrRobot.ExportTab:new(parent)
         AskMrRobot_ReforgeFrame:Hide()
     end)
     
-    text = CreateText(tab.manualElements, tab, "GameFontWhite", txtExportString, -12, -20, "3. Go to AskMrRobot.com and paste into the IMPORT window")
-    text2 = CreateText(tab.manualElements, tab, "GameFontWhite", text, 10, -5, "(located to the right of your character name near the top of the web page, see screenshot)")
+    text = CreateText(tab.manualElements, tab, "GameFontWhite", txtExportString, -12, -20, L.AMR_EXPORTTAB_COPY_PASTE_EXPORT_3)
+    text2 = CreateText(tab.manualElements, tab, "GameFontWhite", text, 10, -5, L.AMR_EXPORTTAB_COPY_PASTE_EXPORT_4)
 
     local image = tab:CreateTexture(nil, "BACKGROUND")
 	image:SetPoint("TOPLEFT", text2, "BOTTOMLEFT", 2, -10)
 	image:SetTexture("Interface\\AddOns\\AskMrRobot\\Media\\BiBScreen")
     table.insert(tab.manualElements, image)
     
-    text = CreateText(tab.manualElements, tab, "GameFontWhite", text2, 0, -120, "NOTE: If you change something while this window is open, press the Update button below to generate a new export string.")
+    text = CreateText(tab.manualElements, tab, "GameFontWhite", text2, 0, -120, L.AMR_EXPORTTAB_COPY_PASTE_EXPORT_NOTE)
     
     btn = CreateFrame("Button", "AmrUpdateExportString", tab, "UIPanelButtonTemplate")
 	btn:SetPoint("TOPLEFT", text, "BOTTOMLEFT", 0, -5)
@@ -105,9 +106,9 @@ function AskMrRobot.ExportTab:new(parent)
     end)
     
     -- amr client
-    text = CreateText(tab.autoElements, tab, "GameFontNormalLarge", chooseText, 0, -20, "AMR CLIENT EXPORT")
-    text2 = CreateText(tab.autoElements, tab, "GameFontWhite", text, 0, -15, "1. Open your bank")
-    text = CreateText(tab.autoElements, tab, "GameFontWhite", text2, 0, -15, "2. Press the button below to update your AskMrRobot.lua file")
+    text = CreateText(tab.autoElements, tab, "GameFontNormalLarge", chooseText, 0, -20, L.AMR_EXPORTTAB_AMR_CLIENT_EXPORT)
+    text2 = CreateText(tab.autoElements, tab, "GameFontWhite", text, 0, -15, L.AMR_EXPORTTAB_AMR_CLIENT_EXPORT_1)
+    text = CreateText(tab.autoElements, tab, "GameFontWhite", text2, 0, -15, L.AMR_EXPORTTAB_AMR_CLIENT_EXPORT_2)
 
     btn = CreateFrame("Button", "AmrExportFile", tab, "UIPanelButtonTemplate")
 	btn:SetPoint("TOPLEFT", text, "BOTTOMLEFT", 12, -10)
@@ -121,8 +122,8 @@ function AskMrRobot.ExportTab:new(parent)
         ReloadUI()
     end)
 
-    text = CreateText(tab.autoElements, tab, "GameFontWhite", btn, -12, -20, "3. Go to AskMrRobot.com and press REFRESH")
-    text2 = CreateText(tab.autoElements, tab, "GameFontWhite", text, 10, -5, "(located to the right of your character name near the top of the web page, see screenshot:)")
+    text = CreateText(tab.autoElements, tab, "GameFontWhite", btn, -12, -20, L.AMR_EXPORTTAB_AMR_CLIENT_EXPORT_3)
+    text2 = CreateText(tab.autoElements, tab, "GameFontWhite", text, 10, -5, L.AMR_EXPORTTAB_AMR_CLIENT_EXPORT_4)
 
     image = tab:CreateTexture(nil, "BACKGROUND")
 	image:SetPoint("TOPLEFT", text2, "BOTTOMLEFT", 2, -10)

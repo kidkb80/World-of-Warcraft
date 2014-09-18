@@ -1,4 +1,4 @@
-﻿--[[ 
+--[[ 
   @file       oqueue.ru.lua
   @brief      localization for oqueue addon (russian)
 

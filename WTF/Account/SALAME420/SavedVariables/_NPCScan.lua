@@ -6,7 +6,6 @@ _NPCScanOptions = {
 		[50409] = "Mysterious Camel Figurine",
 		[64191] = "Ghostly Pandaren Craftsman",
 	},
-	["Version"] = 3,
 	["IgnoreList"] = {
 		["NPCs"] = {
 		},
@@ -15,6 +14,8 @@ _NPCScanOptions = {
 		["WorldID"] = {
 		},
 	},
+	["CacheWarnings"] = true,
+	["Version"] = 3,
 	["NPCWorldIDs"] = {
 		[64004] = "Pandaria",
 		[50410] = "Kalimdor",

@@ -6,51 +6,16 @@ ARLDB2 = {
 				["Noremedy - Skywall"] = {
 					["filters"] = {
 						["item"] = {
-							["inscription_off_hand"] = false,
+							["inscription_materials"] = false,
 							["inscription_created_item"] = false,
 							["inscription_scroll"] = false,
 							["inscription_trinket"] = false,
 							["inscription_item_enhancement"] = false,
 							["inscription_pet"] = false,
 							["inscription_staff"] = false,
-							["inscription_materials"] = false,
+							["inscription_off_hand"] = false,
 						},
 					},
-				},
-			},
-		},
-	},
-	["global"] = {
-		["tradeskill"] = {
-			["Skywall"] = {
-				["Anaiis"] = {
-				},
-				["Noremedy"] = {
-					["Inscription"] = "|cffffd000|Htrade:10000000448CEE0:110417:773|h[Inscription]|h|r",
-				},
-				["Toradol"] = {
-					["Alchemy"] = "|cffffd000|Htrade:10000000463F932:105206:171|h[Alchemy]|h|r",
-				},
-				["Gurund"] = {
-				},
-				["Dalhian"] = {
-					["Jewelcrafting"] = "|cffffd000|Htrade:100000004AA3B83:110420:755|h[Jewelcrafting]|h|r",
-					["Engineering"] = "|cffffd000|Htrade:100000004AA3B83:110403:202|h[Engineering]|h|r",
-				},
-			},
-			["Area 52"] = {
-				["Feronaz"] = {
-				},
-				["Olegregg"] = {
-				},
-				["Oldfero"] = {
-					["Engineering"] = "|cffffd000|Htrade:700000005741AAE:110403:202|h[Engineering]|h|r",
-					["Cooking"] = "|cffffd000|Htrade:700000005741AAE:104381:185|h[Cooking]|h|r",
-					["Alchemy"] = "|cffffd000|Htrade:700000005741AAE:105206:171|h[Alchemy]|h|r",
-				},
-				["Drominus"] = {
-				},
-				["Gurund"] = {
 				},
 			},
 		},
@@ -62,10 +27,49 @@ ARLDB2 = {
 		["Dalhian - Skywall"] = "Dalhian - Skywall",
 		["Drominus - Area 52"] = "Drominus - Area 52",
 		["Feronaz - Area 52"] = "Feronaz - Area 52",
+		["Feronis - Skywall"] = "Feronis - Skywall",
 		["Gurund - Area 52"] = "Gurund - Area 52",
 		["Noremedy - Skywall"] = "Noremedy - Skywall",
-		["Toradol - Skywall"] = "Toradol - Skywall",
 		["Gurund - Skywall"] = "Gurund - Skywall",
+		["Toradol - Skywall"] = "Toradol - Skywall",
+	},
+	["global"] = {
+		["tradeskill"] = {
+			["Area 52"] = {
+				["Gurund"] = {
+				},
+				["Drominus"] = {
+				},
+				["Feronaz"] = {
+					["Alchemy"] = "|cffffd000|Htrade:280000006F14784:105206:171|h[Alchemy]|h|r",
+				},
+				["Olegregg"] = {
+				},
+				["Oldfero"] = {
+					["Engineering"] = "|cffffd000|Htrade:280000006F308C2:110403:202|h[Engineering]|h|r",
+					["Alchemy"] = "|cffffd000|Htrade:280000006F308C2:105206:171|h[Alchemy]|h|r",
+					["Cooking"] = "|cffffd000|Htrade:280000006F308C2:104381:185|h[Cooking]|h|r",
+				},
+			},
+			["Skywall"] = {
+				["Anaiis"] = {
+				},
+				["Noremedy"] = {
+					["Inscription"] = "|cffffd000|Htrade:10000000448CEE0:110417:773|h[Inscription]|h|r",
+				},
+				["Feronis"] = {
+				},
+				["Toradol"] = {
+					["Alchemy"] = "|cffffd000|Htrade:10000000463F932:105206:171|h[Alchemy]|h|r",
+				},
+				["Gurund"] = {
+				},
+				["Dalhian"] = {
+					["Jewelcrafting"] = "|cffffd000|Htrade:100000004AA3B83:110420:755|h[Jewelcrafting]|h|r",
+					["Engineering"] = "|cffffd000|Htrade:100000004AA3B83:110403:202|h[Engineering]|h|r",
+				},
+			},
+		},
 	},
 	["profiles"] = {
 		["Olegregg - Area 52"] = {
@@ -84,31 +88,33 @@ ARLDB2 = {
 		},
 		["Feronaz - Area 52"] = {
 		},
+		["Feronis - Skywall"] = {
+		},
 		["Gurund - Area 52"] = {
 		},
 		["Noremedy - Skywall"] = {
 			["skill_view"] = true,
-			["includefiltered"] = true,
-			["includeexcluded"] = true,
+			["addonversion"] = "3.0.2",
 			["closeguionskillclose"] = true,
-			["frameopts"] = {
-				["offsety"] = -30.00004577636719,
-				["offsetx"] = -128.5000839233398,
-				["anchorFrom"] = "TOP",
-				["anchorTo"] = "TOP",
-			},
 			["filters"] = {
 				["general"] = {
-					["skill"] = false,
 					["faction"] = false,
+					["skill"] = false,
 				},
 			},
-			["addonversion"] = "3.0.2",
+			["includefiltered"] = true,
+			["includeexcluded"] = true,
+			["frameopts"] = {
+				["offsety"] = -30.00004577636719,
+				["anchorTo"] = "TOP",
+				["offsetx"] = -128.5000839233398,
+				["anchorFrom"] = "TOP",
+			},
 			["sorting"] = "Descending",
 		},
-		["Toradol - Skywall"] = {
-		},
 		["Gurund - Skywall"] = {
+		},
+		["Toradol - Skywall"] = {
 		},
 	},
 }

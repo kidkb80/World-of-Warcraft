@@ -50,6 +50,7 @@ OQ.MOON_ICON         = "|TInterface\\TARGETINGFRAME\\UI-RaidTargetingIcons.blp:1
 OQ.SQUARE_ICON       = "|TInterface\\TARGETINGFRAME\\UI-RaidTargetingIcons.blp:16:16:0:0:64:64:16:32:16:32|t";
 OQ.REDX_ICON         = "|TInterface\\TARGETINGFRAME\\UI-RaidTargetingIcons.blp:16:16:0:0:64:64:32:48:16:32|t";
 OQ.SKULL_ICON        = "|TInterface\\TARGETINGFRAME\\UI-RaidTargetingIcons.blp:16:16:0:0:64:64:48:64:16:32|t";
+OQ.LILSKULL_HDR      = "|TInterface\\TARGETINGFRAME\\UI-RaidTargetingIcons.blp:14:14:0:0:64:64:48:64:16:32|t";
 OQ.PENDING_NOTE_UP   = "INTERFACE/BUTTONS/UI-GuildButton-OfficerNote-Up.png" ;
 OQ.PENDING_NOTE_DN   = "INTERFACE/BUTTONS/UI-GuildButton-PublicNote-Up.png" ;
 OQ.PENDING_NOTE_OFF  = "INTERFACE/BUTTONS/UI-GuildButton-OfficerNote-Disabled.png" ;
@@ -125,18 +126,19 @@ OQ.DWG  = 11 ;
 OQ.NONE = 15 ;
 OQ.DKP  = 16 ;
 
-OQ.TYPE_NONE      = 'X' ;
-OQ.TYPE_BG        = 'B' ;
-OQ.TYPE_RBG       = 'A' ;
-OQ.TYPE_RAID      = 'R' ;
-OQ.TYPE_DUNGEON   = 'D' ;
-OQ.TYPE_SCENARIO  = 'S' ;
-OQ.TYPE_ARENA     = 'a' ;
-OQ.TYPE_QUESTS    = 'Q' ;
-OQ.TYPE_LADDER    = 'L' ;
-OQ.TYPE_CHALLENGE = 'C' ;
-OQ.TYPE_MISC      = 'M' ;
-OQ.TYPE_ROLEPLAY  = 'P' ;
+OQ.TYPE_NONE        = 'X' ;
+OQ.TYPE_BG          = 'B' ;
+OQ.TYPE_RBG         = 'A' ;
+OQ.TYPE_RAID        = 'R' ;
+OQ.TYPE_DUNGEON     = 'D' ;
+OQ.TYPE_SCENARIO    = 'S' ;
+OQ.TYPE_ARENA       = 'a' ;
+OQ.TYPE_QUESTS      = 'Q' ;
+OQ.TYPE_LADDER      = 'L' ;
+OQ.TYPE_CHALLENGE   = 'C' ;
+OQ.TYPE_MISC        = 'M' ;
+OQ.TYPE_ROLEPLAY    = 'P' ;
+OQ.TYPE_ALL_PENDING = 'p' ;
 
 OQ.VOIP_DOLBYAXON   = 'D' ;
 OQ.VOIP_MUMBLE      = 'M' ;
@@ -549,6 +551,19 @@ OQ.QUEUE_POPS = { [  0 ] =  4, -- green #1
                   ["nopop" ] = 10,
                 } ;
 
+OQ.ARENA_MMR_RANK_ACHIEVE = { [ 0] = "",
+                              [ 1] = "( |cFFFFD331".."1550".. "|r )",
+                              [ 2] = "( |cFFFFD331".."1750".. "|r )",
+                              [ 3] = "( |cFFFFD331".."2000".. "|r )",
+                              [ 4] = "( |cFFFFD331".."2200".. "|r )",
+                            } ;
+
+OQ.ARENA_RANK_ACHIEVE = { [ 0] = "",
+                          [ 1] = "|cFFFFD331".."1550".. "|r",
+                          [ 2] = "|cFFFFD331".."1750".. "|r",
+                          [ 3] = "|cFFFFD331".."2000".. "|r",
+                          [ 4] = "|cFFFFD331".."2200".. "|r",
+                        } ;
 
 OQ.dragon_rank = { [  0 ] = { y = 0, cx =  0, cy =  0, tag = nil },
                    [  1 ] = { y = 4, cx = 16, cy = 16, tag = "Interface\\PvPRankBadges\\PvPRank06"               }, -- bg knight

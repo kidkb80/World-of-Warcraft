@@ -14,7 +14,7 @@ MogIt_Other: enabled
 MogIt_Plate: enabled
 MogIt_Ranged: enabled
 MogIt_TwoHanded: enabled
-Auctionator: disabled
-Postal: disabled
+Auctionator: enabled
+Postal: enabled
 RareCoordinator: disabled
 Routes: disabled

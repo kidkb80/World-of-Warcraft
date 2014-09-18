@@ -1,12 +1,13 @@
 local _, AskMrRobot = ...
+local L = AskMrRobot.L;
 
 --------------------------------------------------------------------
 -- Local Reforge Utility Code
 --------------------------------------------------------------------
 
 StaticPopupDialogs["REFORGE_TAB_PLEASE_OPEN"] = {
-	text = "You need to open the reforge window for this to work",
-	button1 = "Ok",
+	text = L.AMR_REFORGESTAB_OPEN_WINDOW,
+	button1 = L.AMR_REFORGESTAB_BUTTON_OK,
 	timeout = 0,
 	whileDead = true,
 	hideOnEscape = true,
@@ -90,11 +91,11 @@ function AskMrRobot.ReforgesTab:new(parent)
 
 	local text = tab:CreateFontString("AmrReforgesHeader", "ARTWORK", "GameFontNormalLarge")
 	text:SetPoint("TOPLEFT", 0, -5)
-	text:SetText("Reforges")
+	text:SetText(L.AMR_REFORGESTAB_TITLE)
 
 	tab.stamp = AskMrRobot.RobotStamp:new(nil, tab)
 	tab.stamp:Hide()
-	tab.stamp.smallText:SetText("Your reforges are 100% optimal!")
+	tab.stamp.smallText:SetText(L.AMR_REFORGESTAB_OPTIMAL)
 	tab.stamp:SetPoint("TOPLEFT", text, "BOTTOMLEFT", 2, -15)
 	tab.stamp:SetPoint("RIGHT", tab, "RIGHT", -20, 0)
 
@@ -103,11 +104,11 @@ function AskMrRobot.ReforgesTab:new(parent)
 	tab.reforgeDetails:SetPoint("RIGHT", -30, 0)
 	tab.reforgeDetails:SetWordWrap(true)
 	tab.reforgeDetails:SetJustifyH("LEFT")
-	tab.reforgeDetails:SetText('Open a reforge window, then click the "Reforge!" button to do it automatically.')
+	tab.reforgeDetails:SetText(L.AMR_REFORGESTAB_INSTRUCTION)
 	tab.reforgeDetails:SetHeight(50)
 
 	tab.reforgeButton = CreateFrame("Button", "AmrReforgeButton", tab, "UIPanelButtonTemplate")
-	tab.reforgeButton:SetText("Reforge!")
+	tab.reforgeButton:SetText(L.AMR_REFORGESTAB_BUTTON)
 	tab.reforgeButton:SetPoint("TOPLEFT", 0, -80)
 	tab.reforgeButton:SetWidth(140)
 	tab.reforgeButton:SetHeight(20)
@@ -122,11 +123,11 @@ function AskMrRobot.ReforgesTab:new(parent)
 	tab.reforgeCost:SetText('')
 
 	tab.slotHeader = tab:CreateFontString(nil, "ARTWORK", "GameFontNormal")
-	tab.slotHeader:SetText("Slot")
+	tab.slotHeader:SetText(L.AMR_REFORGESTAB_SLOT)
 	tab.slotHeader:SetPoint("TOPLEFT", tab.reforgeButton, "BOTTOMLEFT", 0, -30)
 
 	tab.reforgeHeader = tab:CreateFontString(nil, "ARTWORK", "GameFontNormal")
-	tab.reforgeHeader:SetText("Optimal Reforge")
+	tab.reforgeHeader:SetText(L.AMR_REFORGESTAB_OPTIMAL_REFORGE)
 	tab.reforgeHeader:SetPoint("TOPLEFT", tab.slotHeader, "TOPLEFT", 100, 0)
 
 	-- pre-allocate a visual element for all possible slots; showBadReforges will set text and show the number that are needed, and hide the rest
@@ -177,7 +178,7 @@ local function GetReforgeString(fromId, toId)
 	if fromId == 0 then
 		return text
 	end
-	return 'Restore, then ' .. text
+	return L.AMR_REFORGESTAB_RESTORE_THEN .. text
 end
 
 -- draw all of the reforges that still need to be performed
@@ -206,7 +207,7 @@ function AskMrRobot.ReforgesTab:Render()
 		i = i + 1
 	end
 
-	self.reforgeCost:SetText("Total reforge cost: ~" .. math.ceil(cost / 10000) .. " Gold")
+	self.reforgeCost:SetText(L.AMR_REFORGESTAB_TOTAL_COST:format(math.ceil(cost / 10000)))
 
 	-- hide / show the headers
 	if i == 1 then

@@ -12,6 +12,9 @@
 ]]--
 local addonName, OQ = ... ;
 local L = OQ._T ; -- for literal string translations
+if (OQ.table == nil) then
+  OQ.table = {} ;
+end
 local tbl = OQ.table ;
 
 function tbl.clear(t, deep)
@@ -120,7 +123,7 @@ function tbl.find_keybyvalue(t, v)
 end
 
 function tbl.init() 
-  tbl._watchlist = tbl.new() ;
+  tbl._watchlist = tbl._watchlist or tbl.new() ;
 end
 
 function tbl.new()
@@ -139,6 +142,8 @@ function tbl.new()
     t = {} 
     tbl._count = (tbl._count or 0) + 1 ;
   end
+  tbl.track( t ) ; -- debugging
+  
   if (tbl.__inuse[t]) then
     print( debugstack() ) ;
     print( "**warning:  re-issued active table:  ".. tostring(t) ) ;
@@ -177,6 +182,36 @@ function tbl.size(t)
     n = n + 1 ;
   end
   return n ;
+end
+
+function tbl.track( t ) 
+  tbl._track = tbl._track or {} ;
+  tbl._track[t] = GetTime() ;
+end
+
+function tbl.dump_track( min_cnt, dump, sub )
+  tbl._track = tbl._track or {} ;
+  min_cnt = tonumber(min_cnt or 0) or 0 ;
+  
+  print( "-- table track dump " ) ;
+  local i,v,dt,n,cnt ;
+  local now = GetTime() ;
+  for i,v in pairs(tbl._track) do
+    n = tbl.size(i) ;
+    cnt = (cnt or 0) + 1 ;
+    if (n >= min_cnt) then
+      print( "  ".. tostring(i) .."  sz: ".. tostring(n) ) ;
+      if (dump) and (type(i) == "table") then
+        local j,x ;
+        for j,x in pairs(i) do
+          if (sub == nil) or ((sub) and (type(j) == "string") and j:find(sub)) then
+            print( "    ".. tostring(j) .." (".. type(j) ..")  [".. tostring(x) .."]" ) ;
+          end
+        end
+      end
+    end
+  end  
+  print( "# tables: ".. tostring(cnt) ) ;
 end
 
 function tbl.watch( t )

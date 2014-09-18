@@ -200,8 +200,12 @@ local function _SaveTeam(self, teamIndex)
 		end
 		pet.abilities = wipe(pet.abilities or {})
 		pet.petId, pet.abilities[1], pet.abilities[2], pet.abilities[3] = C_PetJournal.GetPetLoadOutInfo(i)
-		_SavePetData(self, pet)
-		log:Debug("_SaveTeam petId[%s]=[%s] abilities[%s %s %s]", i, pet.petId, pet.abilities[1], pet.abilities[2], pet.abilities[3])
+		if (pet.petId) then
+			_SavePetData(self, pet)
+			log:Debug("_SaveTeam petId[%s]=[%s] abilities[%s %s %s]", i, pet.petId, pet.abilities[1], pet.abilities[2], pet.abilities[3])
+		else
+			log:Debug("_SaveTeam missing petId for index %s", i)
+		end
 	end
 	_InitPortraits(self)
 	self:SendMessage("PETBM_TEAM_CHANGED", teamIndex)
@@ -234,8 +238,12 @@ end
 
 -- Returns true, if the given pet is valid (has a valid petId)
 local function _IsValidPet(pet)
-	local speciesId, customName, level = C_PetJournal.GetPetInfoByPetID(pet.petId)
-	return speciesId ~= nil
+	rtn = false
+	if (pet and pet.petId) then
+		local speciesId, customName, level = C_PetJournal.GetPetInfoByPetID(pet.petId)
+		rtn = speciesId ~= nil
+	end
+	return rtn
 end
 
 local function _CheckTeam(self, team)

@@ -92,17 +92,17 @@ AmrBankItems = {
 	"|cffe6cc80|Hitem:42985:0:0:0:0:0:0:0:90:0:0|h[Tattered Dreadmist Mantle]|h|r", -- [31]
 }
 AmrEquipedItems = {
-	["14"] = "|cffa335ee|Hitem:103688:0:0:0:0:0:0:36420992:90:0:491|h[Contemplation of Chi-Ji]|h|r",
+	["9"] = "|cffa335ee|Hitem:105100:0:0:0:0:0:0:1823652352:90:0:491|h[Bracers of the Pristine Purifier]|h|r",
 	["1"] = "|cffa335ee|Hitem:101834:0:4658:0:0:0:-394:292292886:90:0:491|h[Ordon Legend-Keeper Helm of the Feverflare]|h|r",
-	["15"] = "|cffa335ee|Hitem:101800:4423:0:0:0:0:-351:536872208:90:0:491|h[Amaranthine Cloak of the Pious]|h|r",
+	["8"] = "|cffa335ee|Hitem:101833:4429:0:0:0:0:-360:1704789696:90:147:491|h[Ordon Legend-Keeper Greaves of the Fireflash]|h|r",
 	["3"] = "|cffa335ee|Hitem:101925:4806:0:0:0:0:-347:759171509:90:167:491|h[Ordon Legend-Keeper Spaulders of the Savant]|h|r",
 	["2"] = "|cffa335ee|Hitem:105041:0:0:0:0:0:0:306170112:90:0:491|h[Ashflare Pendant]|h|r",
 	["5"] = "|cffa335ee|Hitem:101926:4419:0:0:0:0:-424:1197739281:90:167:491|h[Ordon Legend-Keeper Vest of the Wavecrest]|h|r",
 	["4"] = "|cffffffff|Hitem:45674:0:0:0:0:0:0:0:90:0:0|h[Undercity Doublet]|h|r",
 	["7"] = "|cffa335ee|Hitem:101924:4825:0:0:0:0:-422:1346899217:90:0:491|h[Ordon Legend-Keeper Legguards of the Feverflare]|h|r",
 	["6"] = "|cffa335ee|Hitem:101830:0:0:0:0:0:-363:1627719360:90:167:491|h[Ordon Legend-Keeper Belt of the Wavecrest]|h|r",
-	["9"] = "|cffa335ee|Hitem:105100:0:0:0:0:0:0:1823652352:90:0:491|h[Bracers of the Pristine Purifier]|h|r",
-	["8"] = "|cffa335ee|Hitem:101833:4429:0:0:0:0:-360:1704789696:90:147:491|h[Ordon Legend-Keeper Greaves of the Fireflash]|h|r",
+	["14"] = "|cffa335ee|Hitem:103688:0:0:0:0:0:0:36420992:90:0:491|h[Contemplation of Chi-Ji]|h|r",
+	["15"] = "|cffa335ee|Hitem:101800:4423:0:0:0:0:-351:536872208:90:0:491|h[Amaranthine Cloak of the Pious]|h|r",
 	["16"] = "|cff1eff00|Hitem:101226:4441:0:0:0:0:0:0:90:148:0|h[Streamtalker Gavel]|h|r",
 	["17"] = "|cff1eff00|Hitem:101232:0:0:0:0:0:0:0:90:147:0|h[Streamtalker Aegis]|h|r",
 	["13"] = "|cffa335ee|Hitem:103687:0:0:0:0:0:0:714236288:90:0:491|h[Yu'lon's Bite]|h|r",
@@ -118,8 +118,8 @@ AmrIconInfo = {
 AmrCurrencies = {
 	[395] = 1083,
 	[396] = 780,
-	[515] = 18,
 	[392] = 259,
+	[515] = 18,
 }
 AmrProfessions = {
 	["Herbalism"] = 615,
@@ -290,9 +290,11 @@ AmrSendSettings = {
 	["SendToType"] = "a friend",
 }
 AmrLogData = {
+	["_wipes"] = {
+	},
 	["_autoLog"] = {
 		[1136] = "disabled",
 	},
-	["_lastDiff"] = 0,
 	["_lastZone"] = "Pandaria",
+	["_lastDiff"] = 0,
 }

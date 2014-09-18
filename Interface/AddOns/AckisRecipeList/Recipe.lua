@@ -491,7 +491,9 @@ function Recipe:AddRepVendor(reputation_id, rep_level, ...)
 		local vendor_id = select(cur_var, ...)
 		cur_var = cur_var + 1
 
-		if reputation_acquire_type:GetEntity(reputation_id) then
+		local reputation = reputation_acquire_type:GetEntity(reputation_id)
+
+		if reputation then
 			if vendor_id then
 				local rep_vendor = vendor_acquire_type:GetEntity(vendor_id)
 
@@ -504,6 +506,9 @@ function Recipe:AddRepVendor(reputation_id, rep_level, ...)
 					rep_vendor.reputation_id = reputation_id
 					rep_vendor.item_list = rep_vendor.item_list or {}
 					rep_vendor.item_list[self:SpellID()] = true
+
+					reputation.item_list = reputation.item_list or {}
+					reputation.item_list[self:SpellID()] = true
 				else
 					addon:Debug("Spell ID %d (%s): Reputation Vendor ID %s does not exist in the %s AcquireType Entity table.",
 						self:SpellID(),
@@ -953,7 +958,7 @@ function Recipe:Dump(output, use_genesis)
 				else
 					saved_id = identifier
 				end
-				local vendor = private.private.AcquireTypes.Vendor:GetEntity(identifier)
+				local vendor = private.AcquireTypes.Vendor:GetEntity(identifier)
 				local quantity = vendor.item_list[self:SpellID()]
 
 				if type(quantity) == "number" then

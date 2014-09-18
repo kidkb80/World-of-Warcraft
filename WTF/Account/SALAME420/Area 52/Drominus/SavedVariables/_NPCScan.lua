@@ -5,7 +5,7 @@ _NPCScanOptionsCharacter = {
 	["TrackBeasts"] = true,
 	["AlertScreenEdgeFlash"] = true,
 	["Version"] = 3,
-	["TrackRares"] = true,
+	["TrackMouseover"] = true,
 	["Achievements"] = {
 		[7317] = true,
 		[8103] = true,
@@ -15,5 +15,6 @@ _NPCScanOptionsCharacter = {
 		[8714] = true,
 	},
 	["TargetIcon"] = 8,
+	["TrackRares"] = true,
 	["TrackVignettes"] = false,
 }

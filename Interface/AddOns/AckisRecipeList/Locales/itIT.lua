@@ -6,7 +6,7 @@ itIT localization strings for Ackis Recipe List
 File date: 2012-08-18T04:52:05Z 
 File revision: @file-revision@ 
 Project revision: @project-revision@
-Project version: 3.0.2
+Project version: 3.0.5
 ************************************************************************
 Original translated by: Pettigrow
 Currently maintained by:
@@ -890,6 +890,7 @@ L["Mob Drop"] = "Bottino da un Mostro"
 L["MOB_DROP_DESC"] = "Le ricette che sono Bottino da un Mostro devono essere incluse nella scansione."
 L["Mobus"] = true
 L["Modoru"] = true
+L["MODULE_ERROR_FORMAT"] = "L'AddOn \"Ackis Recipe List: %s\" non è stato caricato. Potrebbe essere disabilitato o non installato affatto.."
 L["Molt Thorn"] = "Spina Arsa"
 L["Moonrage Tailor"] = "Sarto Rabbialuna"
 L["Moordo"] = true

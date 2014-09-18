@@ -1,4 +1,4 @@
-﻿--[[ 
+--[[ 
   @file       oqueue.br.lua
   @brief      localization for oqueue addon (portuguese)
 

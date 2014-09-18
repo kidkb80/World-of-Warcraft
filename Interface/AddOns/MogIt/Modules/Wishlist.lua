@@ -5,6 +5,19 @@ local wishlist = mog:RegisterModule("Wishlist", mog.moduleVersion)
 mog.wishlist = wishlist
 wishlist.base = true
 
+local function convertBowSlots()
+	for i, set in ipairs(wishlist.db.profile.sets) do
+		local offhand = set.items["SecondaryHandSlot"]
+		local item = offhand and mog:GetItemInfo(offhand, "convertBowSlots")
+		if item and item.invType == "INVTYPE_RANGED" then
+			set.items["MainHandSlot"] = offhand
+			set.items["SecondaryHandSlot"] = nil
+		end
+	end
+end
+
+mog:AddItemCacheCallback("convertBowSlots", convertBowSlots)
+
 local function onProfileUpdated(self, event)
 	mog:BuildList(true, "Wishlist")
 end
@@ -20,42 +33,13 @@ function wishlist:MogItLoaded()
 	local db = LibStub("AceDB-3.0"):New("MogItWishlist", defaults)
 	self.db = db
 	
-	local function upgradeDB(dbTable)
-		db.profile.items = dbTable.wishlist.items
-		db.profile.sets = dbTable.wishlist.sets
-		for i, itemID in ipairs(db.profile.items) do
-			db.profile.items[i] = tonumber(itemID)
-		end
-		for i, set in ipairs(db.profile.sets) do
-			set.items = {}
-			for slotID, items in pairs(set) do
-				if type(slotID) == "number" then
-					local itemID = tonumber(items[1])
-					set.items[mog.slots[slotID]] = itemID
-					set[slotID] = nil
-				end
-			end
-		end
-	end
-	
-	-- convert old database
-	if MogIt_Global then -- v1.2b
-		local prevProfile = db:GetCurrentProfile()
-		db:SetProfile("Default")
-		upgradeDB(MogIt_Global)
-		db:SetProfile(prevProfile)
-		MogIt_Global = nil
-		print("MogIt: Database upgraded. Previous account wide wishlist was moved to 'Default' profile.")
-	end
-	if MogIt_Character then -- v1.2b
-		upgradeDB(MogIt_Character)
-		MogIt_Character = nil
-	end
-	
 	-- add alternate items table to sets
 	for i, set in ipairs(db.profile.sets) do
 		set.alternateItems = set.alternateItems or {}
 	end
+	
+	-- convert all bows into main hand instead of off hand
+	convertBowSlots()
 	
 	db.RegisterCallback(self, "OnProfileChanged", onProfileUpdated)
 	db.RegisterCallback(self, "OnProfileCopied", onProfileUpdated)
@@ -139,6 +123,10 @@ function wishlist:OnClick(frame, button, value)
 	end
 end
 
+local function sortAlpha(a, b)
+	return a.name < b.name
+end
+
 local list = {}
 
 function wishlist:BuildList()
@@ -146,6 +134,9 @@ function wishlist:BuildList()
 	local db = self.db.profile
 	for i, v in ipairs(db.sets) do
 		list[#list + 1] = v
+	end
+	if mog.db.profile.sortWishlist then
+		sort(list, sortAlpha)
 	end
 	for i, v in ipairs(db.items) do
 		list[#list + 1] = v
@@ -309,30 +300,38 @@ function wishlist:GetSetItems(setName, profile)
 end
 
 local setFuncs = {
-	addItem = function(self, item)
-		if wishlist:AddItem(item, self.value) then
+	addItem = function(self, set, item)
+		if wishlist:AddItem(item, set, select(9, GetItemInfo(item)) == "INVTYPE_WEAPON" and IsShiftKeyDown() and "SecondaryHandSlot" or nil) then
 			mog:BuildList(nil, "Wishlist")
 		end
 		CloseDropDownMenus()
 	end,
 }
 
-function wishlist:AddSetMenuItems(level, func, arg1, profile)
+function wishlist:AddSetMenuItems(level, func, arg2, profile)
 	local sets = self:GetSets(profile)
 	if not sets then
 		return
 	end
 	
+	local onehand
 	if type(func) ~= "function" then
 		func = setFuncs[func]
+		if select(9, GetItemInfo(arg2)) == "INVTYPE_WEAPON" then
+			onehand = true
+		end
 	end
 	for i, set in ipairs(sets) do
 		local info = UIDropDownMenu_CreateInfo()
 		info.text = set.name
-		-- info.value = value
 		info.func = func
 		info.notCheckable = true
-		info.arg1 = arg1
+		info.arg1 = set.name
+		info.arg2 = arg2
+		if onehand then
+			info.tooltipTitle = "|cffffd200"..L["Shift-click to add to off hand"].."|r"
+			info.tooltipOnButton = true
+		end
 		UIDropDownMenu_AddButton(info, level)
 	end
 end

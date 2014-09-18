@@ -1,4 +1,5 @@
 local _, AskMrRobot = ...
+local L = AskMrRobot.L;
 
 local showImportDetailsError = nil
 local showImportErrorTab = nil
@@ -102,21 +103,21 @@ function AskMrRobot.AmrUI:validateInput(input)
 	local parsed = AskMrRobot.parseAmr(input)
 
 	if not parsed.realm then
-		self:showImportError("Oops, you didn't have proper import text", "Please go back to AskMrRobot.com and grab optimizations for this character")
+		self:showImportError(L.AMR_UI_IMPORT_ERROR_IMPROPER,L.AMR_UI_IMPORT_ERROR_IMPROPER_GOTO)
 	elseif not AskMrRobot.validateCharacterName(parsed.name) then
-		self:showImportError("Oops, you've imported optimizations for " .. parsed.name, "Please go back to AskMrRobot.com and grab optimizations for this character, who is much better looking anyway!")
+		self:showImportError(L.AMR_UI_IMPORT_ERROR_CHARACTER:format(parsed.name), L.AMR_UI_IMPORT_ERROR_CHARACTER_GOTO)
 	elseif not AskMrRobot.validateRace(parsed.race) then
-		self:showImportError("It looks like your race may have changed, which affects the optimizations.", "Right now, Mr. Robot thinks you are a " .. parsed.race)
+		self:showImportError(L.AMR_UI_IMPORT_ERROR_RACE, L.AMR_UI_IMPORT_ERROR_RACE_CURRENT:format(parsed.race))
 	elseif not AskMrRobot.validateFaction(parsed.faction) then
-		self:showImportError("It looks like your faction may have changed.", "Right now, Mr. Robot thinks you belong to the " .. parsed.faction)
+		self:showImportError(L.AMR_UI_IMPORT_ERROR_FACTION, L.AMR_UI_IMPORT_ERROR_FACTION_CURRENT:format(parsed.faction))
 	elseif not AskMrRobot.validateProfessions(parsed.professions) then
-		self:showImportError("Your professions have changed, which affects the optimizations.", "You will need to make sure your in-game professions match the professions on AskMrRobot.com when importing.")
+		self:showImportError(L.AMR_UI_IMPORT_ERROR_PROFESSIONS, L.AMR_UI_IMPORT_ERROR_PROFESSIONS_GOTO)
 	elseif not AskMrRobot.validateSpec(parsed.spec) then
 		if parsed.spec and parsed.spec ~= 'nil' then			
 			local _, specName = GetSpecializationInfoByID(parsed.spec)
-			self:showImportError("WARNING! Please check your character before proceeding:", "Change your spec to " .. specName .. ".")
+			self:showImportError(L.AMR_UI_IMPORT_ERROR_SPEC, L.AMR_UI_IMPORT_ERROR_SPEC_CHANGE:format(specName))
 		else
-			self:showImportError("WARNING! Please check your character before proceeding:", "AskMrRobot.com did not expect to see a specialization.")
+			self:showImportError(L.AMR_UI_IMPORT_ERROR_SPEC, L.AMR_UI_IMPORT_ERROR_SPEC_UNEXPECTED)
 		end
 		self.mostlySuccess = true
 		self.summaryTab.badRealm = nil
@@ -148,13 +149,13 @@ local function createImportDetailsErrorTab(reforgeFrame)
 
 	local errorText1 = tab:CreateFontString("AmrImportDetailsText2", "ARTWORK", "GameFontRed")
 	errorText1:SetPoint("TOPLEFT", "AmrImportDetailsText1", "BOTTOMLEFT", 0, -20)
-	errorText1:SetText('You have no optimizations imported. Click the "Import" tab to get started.')
+	errorText1:SetText(L.AMR_UI_IMPORT_ERROR_NO_IMPORT)
 	errorText1:SetPoint("RIGHT", -10, 0)
 	errorText1:SetWidth(errorText1:GetWidth())
 	errorText1:SetJustifyH("LEFT")
 
 	showImportDetailsError = function()
-		errorText1:SetText("I can't optimize yet. Please go to the summary tab for more information.")
+		errorText1:SetText(L.AMR_UI_IMPORT_ERROR_CANT_OPTIMIZE)
 	end
 
 	showImportErrorTab = function(tabName)
@@ -216,15 +217,15 @@ function AskMrRobot.AmrUI:createTabButtons()
 		tabButton:SetScript("OnClick", onTabButtonClick)
 	end
 
-	createButton("Import", -35, false)
-	createButton("Summary", -20, false)
-	createButton("Gems", 0, true)
-	createButton("Enchants", 0, true)
-	createButton("Reforges", 0, true)
-	createButton("Shopping List", 0, true)
-	createButton("Best in Bags", -20, false)
-    createButton("Combat Log", 0, false)
-	createButton("Help", -20, false)
+	createButton(L.AMR_UI_BUTTON_IMPORT, -35, false)
+	createButton(L.AMR_UI_BUTTON_SUMMARY, -20, false)
+	createButton(L.AMR_UI_BUTTON_GEMS, 0, true)
+	createButton(L.AMR_UI_BUTTON_ENCHANTS, 0, true)
+	createButton(L.AMR_UI_BUTTON_REFORGES, 0, true)
+	createButton(L.AMR_UI_BUTTON_SHOPPING_LIST, 0, true)
+	createButton(L.AMR_UI_BUTTON_BEST_IN_BAGS, -20, false)
+    createButton(L.AMR_UI_BUTTON_COMBAT_LOG, 0, false)
+	createButton(L.AMR_UI_BUTTON_HELP, -20, false)
 
 	return buttons
 end

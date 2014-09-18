@@ -5,7 +5,7 @@ local waitFrame = nil;
 
 function AskMrRobot.wait(delay, func, ...)
   if(type(delay)~="number" or type(func)~="function") then
-    print("Bad Arguments to amr__wait");
+    print(AMR_WAIT_BAD_ARGUMENTS);
     return false;
   end
   if(waitFrame == nil) then

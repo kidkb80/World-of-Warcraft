@@ -1,4 +1,4 @@
-﻿--[[ 
+--[[ 
   @file       realms.eu.lua
   @brief      realm list for region: eu
 
@@ -1252,5 +1252,6 @@ OQ.SHORT_BGROUPS = {
 OQ.gbl = { ["scintilla#2342"   ] = "exploiting",  -- OQ exploiter; eu-yt
            ["Furïïøuz#2521"    ] = "exploiting",  -- OQ exploiter; gold dragon 
            ["zeus#2722"        ] = "exploiting",  -- OQ exploiter; gold dragon 
+           ["pumpkinhead#2172" ] = "exploiting",  -- OQ exploiter; gold dragon ;            
          } ;
 end

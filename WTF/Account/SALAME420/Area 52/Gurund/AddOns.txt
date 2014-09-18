@@ -11,3 +11,5 @@ MogIt_Other: enabled
 MogIt_Plate: enabled
 MogIt_Ranged: enabled
 MogIt_TwoHanded: enabled
+Postal: enabled
+Auctionator: enabled

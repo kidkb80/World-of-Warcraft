@@ -1,8 +1,5 @@
 
 MogItDB = {
-	["global"] = {
-		["version"] = "3.3.0",
-	},
 	["profileKeys"] = {
 		["Dalhian - Skywall"] = "Default",
 		["Drominus - Area 52"] = "Default",
@@ -16,15 +13,19 @@ MogItDB = {
 		["Cidareth - Skywall"] = "Default",
 		["Feronaz - Area 52"] = "Default",
 		["Gaulthain - Area 52"] = "Default",
-		["Malkyn - Dragonblight"] = "Default",
-		["Toradol - Skywall"] = "Default",
 		["Noremedy - Skywall"] = "Default",
+		["Toradol - Skywall"] = "Default",
+		["Malkyn - Dragonblight"] = "Default",
 		["Cecliann - Skywall"] = "Default",
 		["Feronaz - Skywall"] = "Default",
+	},
+	["global"] = {
+		["version"] = "3.3.2",
 	},
 	["profiles"] = {
 		["Default"] = {
 			["tooltipMod"] = "Shift",
+			["point"] = "TOPRIGHT",
 			["rows"] = 3,
 			["minimap"] = {
 				["minimapPos"] = 218.4430482897979,
@@ -32,18 +33,18 @@ MogItDB = {
 			["url"] = "Wowhead",
 			["columns"] = 4,
 			["tooltip"] = false,
-			["gridHeight"] = 828.999755859375,
-			["y"] = 0,
-			["x"] = 0,
+			["gridWidth"] = 987.998779296875,
+			["y"] = -14.50015258789063,
+			["x"] = -72.50130462646484,
+			["gridHeight"] = 1004.999938964844,
 			["previewProps"] = {
 				{
 					["y"] = 0,
-					["x"] = 0,
-					["w"] = 334.9998779296875,
 					["h"] = 384.9998779296875,
+					["w"] = 334.9998779296875,
+					["x"] = 0,
 				}, -- [1]
 			},
-			["gridWidth"] = 996.999755859375,
 		},
 	},
 }
@@ -61,9 +62,9 @@ MogItWishlist = {
 		["Cidareth - Skywall"] = "Cidareth - Skywall",
 		["Feronaz - Area 52"] = "Feronaz - Area 52",
 		["Gaulthain - Area 52"] = "Gaulthain - Area 52",
-		["Malkyn - Dragonblight"] = "Malkyn - Dragonblight",
-		["Toradol - Skywall"] = "Toradol - Skywall",
 		["Noremedy - Skywall"] = "Noremedy - Skywall",
+		["Toradol - Skywall"] = "Toradol - Skywall",
+		["Malkyn - Dragonblight"] = "Malkyn - Dragonblight",
 		["Cecliann - Skywall"] = "Cecliann - Skywall",
 		["Feronaz - Skywall"] = "Feronaz - Skywall",
 	},
@@ -92,11 +93,11 @@ MogItWishlist = {
 		},
 		["Gaulthain - Area 52"] = {
 		},
-		["Malkyn - Dragonblight"] = {
+		["Noremedy - Skywall"] = {
 		},
 		["Toradol - Skywall"] = {
 		},
-		["Noremedy - Skywall"] = {
+		["Malkyn - Dragonblight"] = {
 		},
 		["Cecliann - Skywall"] = {
 		},

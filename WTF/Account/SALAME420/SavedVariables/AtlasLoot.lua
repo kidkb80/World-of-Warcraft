@@ -1,10 +1,6 @@
 
 AtlasLootDB = {
 	["namespaces"] = {
-		["WishList"] = {
-		},
-		["AtlasLootPanel"] = {
-		},
 		["DefaultFrame"] = {
 			["profiles"] = {
 				["Anaiis - Skywall"] = {
@@ -17,7 +13,7 @@ AtlasLootDB = {
 					},
 				},
 				["Oldfero - Area 52"] = {
-					["instance"] = "TerraceofEndlessSpring",
+					["instance"] = "SiegeofOrgrimmar",
 					["NEWpoint"] = {
 						"TOPRIGHT", -- [1]
 						nil, -- [2]
@@ -32,18 +28,19 @@ AtlasLootDB = {
 					["module"] = "AtlasLootMoP",
 				},
 				["Drominus - Area 52"] = {
-					["module"] = "AtlasLootWotLK",
+					["module"] = "AtlasLootMoP",
 					["NEWpoint"] = {
 						"RIGHT", -- [1]
 						nil, -- [2]
 						"RIGHT", -- [3]
-						-41.50016403198242, -- [4]
+						-40.50015258789063, -- [4]
 						19.99993896484375, -- [5]
 					},
-					["instance"] = "OnyxiasLair",
+					["instance"] = "SiegeofOrgrimmar",
 				},
 				["Gaulthain - Skywall"] = {
 					["instance"] = "SiegeofOrgrimmar",
+					["module"] = "AtlasLootMoP",
 					["DefaultFrameLocked"] = true,
 					["NEWpoint"] = {
 						"TOP", -- [1]
@@ -52,7 +49,6 @@ AtlasLootDB = {
 						-3.500643968582153, -- [4]
 						0, -- [5]
 					},
-					["module"] = "AtlasLootMoP",
 				},
 				["Feronaz - Area 52"] = {
 					["instance"] = "BlackTemple",
@@ -96,9 +92,79 @@ AtlasLootDB = {
 				},
 			},
 		},
+		["AtlasLootPanel"] = {
+		},
+		["WishList"] = {
+		},
 		["Filter"] = {
+			["profiles"] = {
+				["Drominus - Area 52"] = {
+					["filterSlots"] = {
+						["Stats"] = {
+							["AGILITY"] = false,
+							["SPIRIT"] = false,
+							["SPELL_POWER"] = false,
+							["INTELLECT"] = false,
+						},
+						["Armor"] = {
+							["#a3#"] = false,
+							["#a2#"] = false,
+							["#a1#"] = false,
+						},
+						["WeaponsRanged"] = {
+							["#w3#"] = false,
+							["#w2#"] = false,
+							["#w5#"] = false,
+							["#w12#"] = false,
+						},
+						["WeaponsMeele"] = {
+							["#w13#"] = false,
+							["#w9#"] = false,
+							["#w8#"] = false,
+							["#w4#"] = false,
+						},
+					},
+					["enable"] = true,
+				},
+				["Oldfero - Area 52"] = {
+					["enable"] = true,
+					["filterSlots"] = {
+						["Stats"] = {
+							["SPIRIT"] = false,
+							["DODGE_RATING"] = false,
+							["EXPERTISE_RATING"] = false,
+							["AGILITY"] = false,
+							["STRENGTH"] = false,
+							["PARRY_RATING"] = false,
+						},
+						["Armor"] = {
+							["#a3#"] = false,
+							["#a2#"] = false,
+							["#a4#"] = false,
+						},
+						["WeaponsMeeleTwoHand"] = {
+							["#w6#"] = false,
+							["#w1#"] = false,
+							["#w10#"] = false,
+						},
+						["WeaponsRanged"] = {
+							["#w3#"] = false,
+							["#w2#"] = false,
+							["#w5#"] = false,
+						},
+						["WeaponsMeele"] = {
+							["#w13#"] = false,
+							["#w1#"] = false,
+							["#w8#"] = false,
+							["#w7#"] = false,
+							["#w6#"] = false,
+						},
+					},
+				},
+			},
 		},
 	},
+	["showWarning"] = true,
 	["profileKeys"] = {
 		["Anaiis - Skywall"] = "Anaiis - Skywall",
 		["Oldfero - Area 52"] = "Oldfero - Area 52",
@@ -111,19 +177,17 @@ AtlasLootDB = {
 		["Noremedy - Skywall"] = "Noremedy - Skywall",
 		["Feronaz - Skywall"] = "Feronaz - Skywall",
 	},
-	["showWarning"] = true,
 	["profiles"] = {
 		["Anaiis - Skywall"] = {
 		},
 		["Oldfero - Area 52"] = {
-			["LootTableType"] = "RaidFinder",
 		},
 		["Dalhian - Skywall"] = {
 			["LootTableType"] = "RaidFinder",
 		},
 		["Drominus - Area 52"] = {
 			["LastSearch"] = "sorrowpath",
-			["LootTableType"] = "RaidFinder",
+			["LootTableType"] = "Flexible",
 			["QuickLooks"] = {
 				{
 					["module"] = "AtlasLootMoP",

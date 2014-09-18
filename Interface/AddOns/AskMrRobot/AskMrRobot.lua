@@ -1,4 +1,5 @@
 local _, AskMrRobot = ...
+local L = AskMrRobot.L;
 
 AskMrRobot.eventListener = CreateFrame("FRAME"); -- Need a frame to respond to events
 AskMrRobot.eventListener:RegisterEvent("ADDON_LOADED"); -- Fired when saved variables are loaded
@@ -12,6 +13,7 @@ AskMrRobot.eventListener:RegisterEvent("CHARACTER_POINTS_CHANGED");
 AskMrRobot.eventListener:RegisterEvent("CONFIRM_TALENT_WIPE");
 AskMrRobot.eventListener:RegisterEvent("PLAYER_TALENT_UPDATE");
 AskMrRobot.eventListener:RegisterEvent("ACTIVE_TALENT_GROUP_CHANGED");
+AskMrRobot.eventListener:RegisterEvent("PLAYER_ENTERING_WORLD");
 AskMrRobot.eventListener:RegisterEvent("PLAYER_LOGOUT"); -- Fired when about to log out
 AskMrRobot.eventListener:RegisterEvent("PLAYER_LEVEL_UP");
 --AskMrRobot.eventListener:RegisterEvent("GET_ITEM_INFO_RECEIVED")
@@ -20,8 +22,8 @@ AskMrRobot.eventListener:RegisterEvent("SOCKET_INFO_UPDATE")
 AskMrRobot.eventListener:RegisterEvent("SOCKET_INFO_CLOSE")
 AskMrRobot.eventListener:RegisterEvent("BAG_UPDATE")
 AskMrRobot.eventListener:RegisterEvent("ITEM_UNLOCKED")
---AskMrRobot.eventListener:RegisterEvent("PLAYER_REGEN_DISABLED")
-AskMrRobot.eventListener:RegisterEvent("ENCOUNTER_START")
+AskMrRobot.eventListener:RegisterEvent("PLAYER_REGEN_DISABLED")
+--AskMrRobot.eventListener:RegisterEvent("ENCOUNTER_START")
 AskMrRobot.eventListener:RegisterEvent("CHAT_MSG_ADDON")
 AskMrRobot.eventListener:RegisterEvent("UPDATE_INSTANCE_INFO")
 AskMrRobot.eventListener:RegisterEvent("PLAYER_DIFFICULTY_CHANGED")
@@ -49,6 +51,22 @@ AskMrRobot.instanceIds = {
 	TerraceOfEndlessSpring = 996,
 	ThroneOfThunder = 1098
 }
+
+-- instances that we currently support logging for
+AskMrRobot.supportedInstanceIds = {
+	[1136] = true
+}
+
+-- returns true if currently in a supported instance
+function AskMrRobot.IsSupportedInstance()
+
+	local zone, _, difficultyIndex, _, _, _, _, instanceMapID = GetInstanceInfo()
+	if AskMrRobot.supportedInstanceIds[tonumber(instanceMapID)] then
+		return true
+	else
+		return false
+	end
+end
 
 -- upgrade id -> upgrade level
 local upgradeTable = {
@@ -96,7 +114,9 @@ local upgradeTable = {
   [497] = 3,
   [498] = 4,
   [504] = 3,
-  [505] = 4
+  [505] = 4,
+  [506] = 5,
+  [507] = 6
 }
 
 local professionIds = {
@@ -156,7 +176,7 @@ function AskMrRobot.eventListener:OnEvent(event, ...)
 	if event == "ADDON_LOADED" then
         local addon = select(1, ...)
         if (addon == "AskMrRobot") then
-            print("Loaded Ask Mr. Robot " .. GetAddOnMetadata(AskMrRobot.AddonName, "Version"))
+            print(L.AMR_ON_EVENT_LOADED.format(GetAddOnMetadata(AskMrRobot.AddonName, "Version")))
             
             -- listen for messages from other AMR addons
             RegisterAddonMessagePrefix(AskMrRobot.ChatPrefix)
@@ -164,11 +184,7 @@ function AskMrRobot.eventListener:OnEvent(event, ...)
             AmrRealmName = GetRealmName()
             AmrCharacterName = UnitName("player")
 
-            if not AmrLogData then AmrLogData = {} end
-			if not AmrLogData._autoLog then AmrLogData._autoLog = {} end
-			if not AmrLogData._autoLog[AskMrRobot.instanceIds.SiegeOfOrgrimmar] then 
-				AmrLogData._autoLog[AskMrRobot.instanceIds.SiegeOfOrgrimmar] = "disabled" 
-			end
+            AskMrRobot.CombatLogTab.InitializeVariable()
 
             if not AmrIconInfo then AmrIconInfo = {} end
             if not AmrBankItems then AmrBankItems = {} end
@@ -180,6 +196,10 @@ function AskMrRobot.eventListener:OnEvent(event, ...)
             if not AmrBankItemsAndCounts then AmrBankItemsAndCounts = {} end
             if not AmrImportString then AmrImportString = "" end
             if not AmrImportDate then AmrImportDate = "" end
+            
+			if not AmrSettings then AmrSettings = {} end
+			if not AmrSettings.Logins then AmrSettings.Logins = {} end
+
             if not AmrSendSettings then
                 AmrSendSettings = {
                     SendGems = true,
@@ -195,8 +215,9 @@ function AskMrRobot.eventListener:OnEvent(event, ...)
                 text = "Ask Mr. Robot",
                 icon = "Interface\\AddOns\\AskMrRobot\\Media\\icon",
                 OnClick = function()
-
-                    if IsModifiedClick("CHATLINK") then
+                	if IsControlKeyDown() then
+                		AskMrRobot_ReforgeFrame.combatLogTab:LogWipe()
+                    elseif IsModifiedClick("CHATLINK") then
                         OnExport()
                     else
                         AskMrRobot_ReforgeFrame:Toggle()
@@ -205,7 +226,7 @@ function AskMrRobot.eventListener:OnEvent(event, ...)
                 OnTooltipShow = function(tt)
                     tt:AddLine("Ask Mr. Robot", 1, 1, 1);
                     tt:AddLine(" ");
-                    tt:AddLine("Left Click to open the Ask Mr. Robot window.\n\nShift + Left Click to export your bag and bank data.")
+                    tt:AddLine(L.AMR_ON_EVENT_TOOLTIP)
                 end	
             });
 
@@ -246,13 +267,53 @@ function AskMrRobot.eventListener:OnEvent(event, ...)
 		AskMrRobot.On_ITEM_UNLOCKED()
 	elseif event == "PLAYER_LOGOUT" then
 		-- doing nothing right now, but leaving this in case we need something here	
-    elseif event == "ENCOUNTER_START" then
-        -- send data about this character when a boss fight starts
-        AskMrRobot.SaveAll()
-        AskMrRobot.ExportToAddonChat(time())
+	elseif event == "PLAYER_ENTERING_WORLD" then
+
+		-- delete entries that are more than 10 days old to prevent the table from growing indefinitely
+		if AmrSettings.Logins and #AmrSettings.Logins > 0 then
+			local now = time()
+			local oldDuration = 60 * 60 * 24 * 10
+			local entryTime
+			repeat
+				-- parse entry and get time
+				local parts = {}
+				for part in string.gmatch(AmrSettings.Logins[1], "([^;]+)") do
+					tinsert(parts, part)
+				end
+				entryTime = tonumber(parts[3])
+
+				-- entries are in order, remove first entry if it is old
+				if difftime(now, entryTime) > oldDuration then
+					tremove(AmrSettings.Logins, 1)
+				end
+			until #AmrSettings.Logins == 0 or difftime(now, entryTime) <= oldDuration
+		end
+
+		-- record the time a player logs in, used to figure out which player logged which parts of their log file
+		local key = AmrRealmName .. ";" .. AmrCharacterName .. ";"
+		local loginData = key .. time()
+		if AmrSettings.Logins and #AmrSettings.Logins > 0 then
+			local last = AmrSettings.Logins[#AmrSettings.Logins]
+			if string.len(last) >= string.len(key) and string.sub(last, 1, string.len(key)) ~= key then
+				table.insert(AmrSettings.Logins, loginData)
+			end
+		else
+			table.insert(AmrSettings.Logins, loginData)
+		end
+
+    elseif event == "PLAYER_REGEN_DISABLED" then
+
+        -- send data about this character when a player enters combat in a supported zone
+		if AskMrRobot.IsSupportedInstance() then
+			local t = time()
+			AskMrRobot.SaveAll()
+			AskMrRobot.ExportToAddonChat(t)
+			AskMrRobot.ExportLoggingData(t)
+		end
+
     elseif event == "CHAT_MSG_ADDON" then
         local chatPrefix, message = select(1, ...)
-        local isLogging = AskMrRobot_ReforgeFrame.combatLogTab:IsLogging()        
+        local isLogging = AskMrRobot_ReforgeFrame.combatLogTab:IsLogging()
         if (isLogging and chatPrefix == AskMrRobot.ChatPrefix) then
             AskMrRobot_ReforgeFrame.combatLogTab:ReadAddonMessage(message)
         end
@@ -287,12 +348,12 @@ function SlashCmdList.AMR(msg)
 		AskMrRobot_ReforgeFrame:Hide()
 	elseif msg == 'export' then
 		OnExport()
+	elseif msg == 'wipe' then
+		AskMrRobot_ReforgeFrame.combatLogTab:LogWipe()
+	elseif msg == 'unwipe' then
+		AskMrRobot_ReforgeFrame.combatLogTab:LogUnwipe()
 	else
-		print('Available AskMrRobot slash commands:\n' ..
-			'  /amr show   -- show the main window\n' ..
-			'  /amr hide   -- hide the main window\n' ..
-			'  /amr toggle -- toggle the main window\n' ..
-			'  /amr export -- export bag and bank data (uses your last selected method and either opens the copy/paste window, or saves and reloads ui)')
+		print(L.AMR_SLASH_COMMAND_TEXT_1 .. L.AMR_SLASH_COMMAND_TEXT_2 .. L.AMR_SLASH_COMMAND_TEXT_3 .. L.AMR_SLASH_COMMAND_TEXT_4 .. L.AMR_SLASH_COMMAND_TEXT_5 .. L.AMR_SLASH_COMMAND_TEXT_6 .. L.AMR_SLASH_COMMAND_TEXT_7)
 	end
 end
 
@@ -313,17 +374,23 @@ end
 
 local function InitIcon()
 	icon = LibStub("LibDBIcon-1.0");
-	icon:Register("AskMrRobot", amrLDB, AmrIconInfo);	
+	icon:Register("AskMrRobot", amrLDB, AmrIconInfo);
 end
 
-function AskMrRobot.AmrUpdateMinimap()
-	if (AmrOptions.hideMapIcon) then
-		if (icon) then
+function AskMrRobot.AmrUpdateMinimap()	
+	if AmrOptions.hideMapIcon then
+		if icon then
 			icon:Hide("AskMrRobot");
 		end
 	else
-		if (not icon) then 
+		if not icon then 
 			InitIcon() 
+		end
+		--if AskMrRobot_ReforgeFrame.combatLogTab:IsLogging() then
+		if AskMrRobot.CombatLogTab.IsLogging(nil) then
+			amrLDB.icon = 'Interface\\AddOns\\AskMrRobot\\Media\\icon_green'
+		else
+			amrLDB.icon = 'Interface\\AddOns\\AskMrRobot\\Media\\icon'
 		end
 		icon:Show("AskMrRobot");
 	end
@@ -722,13 +789,15 @@ function AskMrRobot.ExportToCompressedString(includeInventory)
     
     local profs = {}
     local noprofs = true
-    for k, v in pairs(AmrProfessions) do
-        local profval = professionIds[k]
-        if profval ~= nil then
-            noprofs = false
-            table.insert(profs, profval .. ":" .. v)
-        end
-    end
+    if AmrProfessions then
+	    for k, v in pairs(AmrProfessions) do
+	        local profval = professionIds[k]
+	        if profval ~= nil then
+	            noprofs = false
+	            table.insert(profs, profval .. ":" .. v)
+	        end
+	    end
+	end
     
     if noprofs then
         table.insert(profs, "0:0")
@@ -750,26 +819,32 @@ function AskMrRobot.ExportToCompressedString(includeInventory)
     
     -- convert items to parsed objects, sorted by id
     local itemObjects = {}
-    for k, v in pairs(AmrEquipedItems) do
-        local itemData = parseItemLink(v)
-        itemData.slot = k
-        table.insert(itemObjects, itemData)
-    end
+    if AmrEquipedItems then
+	    for k, v in pairs(AmrEquipedItems) do
+	        local itemData = parseItemLink(v)
+	        itemData.slot = k
+	        table.insert(itemObjects, itemData)
+	    end
+	end
     
     -- if desired, include bank/bag items too
     if includeInventory then
-        for i, v in ipairs(AmrBagItems) do
-            local itemData = parseItemLink(v)
-            if itemData.itemId ~= nil then
-                table.insert(itemObjects, itemData)
-            end
-        end
-        for i, v in ipairs(AmrBankItems) do
-            local itemData = parseItemLink(v)
-            if itemData.itemId ~= nil then
-                table.insert(itemObjects, itemData)
-            end
-        end
+    	if AmrBagItems then
+	        for i, v in ipairs(AmrBagItems) do
+	            local itemData = parseItemLink(v)
+	            if itemData.itemId ~= nil then
+	                table.insert(itemObjects, itemData)
+	            end
+	        end
+	    end
+	    if AmrBankItems then
+	        for i, v in ipairs(AmrBankItems) do
+	            local itemData = parseItemLink(v)
+	            if itemData.itemId ~= nil then
+	                table.insert(itemObjects, itemData)
+	            end
+	        end
+	    end
     end
     
     -- sort by item id so we can compress it more easily
@@ -809,22 +884,82 @@ function AskMrRobot.ExportToCompressedString(includeInventory)
     
         table.insert(fields, table.concat(itemParts, ""))
     end
-    
+
     return "$" .. table.concat(fields, ";") .. "$"
 end
 
+local function GetPlayerExtraData(data, index)
+
+	local unitId = "raid" .. index
+
+	local guid = UnitGUID(unitId)
+	if guid == nil then
+		return nil
+	end
+	
+	local fields = {}
+
+	local buffs = {}
+    for i=1,40 do
+    	local _,_,_,count,_,_,_,_,_,_,spellId = UnitAura(unitId, i, "HELPFUL")
+    	table.insert(buffs, spellId)
+    end
+	if #buffs == 0 then
+		table.insert(fields, "_")
+	else
+		table.insert(fields, toCompressedNumberList(buffs))
+	end
+
+	local petGuid = UnitGUID("raidpet" .. index)
+	if petGuid then
+		table.insert(fields, guid .. "," .. petGuid)
+    else
+		table.insert(fields, '_')
+	end
+
+	local name = GetRaidRosterInfo(index)
+    local realm = GetRealmName()
+    local splitPos = string.find(name, "-")
+    if splitPos ~= nil then
+        realm = string.sub(name, splitPos + 1)
+        name = string.sub(name, 1, splitPos - 1)
+    end
+
+	data[realm .. ":" .. name] = table.concat(fields, ";")
+end
+
+function AskMrRobot.ExportLoggingData(timestamp)
+
+	local isLogging = AskMrRobot_ReforgeFrame.combatLogTab:IsLogging()
+	if not isLogging then
+		return
+	end
+
+	-- we only get extra information for people if in a raid
+	if not IsInRaid() then 
+		return
+	end
+
+	local data = {}
+	for i = 1,40 do
+		GetPlayerExtraData(data, i)
+	end
+	
+	AskMrRobot.CombatLogTab.SaveExtras(data, timestamp)
+end
+
 function AskMrRobot.ExportToAddonChat(timestamp)
-    local data = AskMrRobot.ExportToCompressedString(false)
+    local msg = AskMrRobot.ExportToCompressedString(false)
     local msgPrefix = timestamp .. "\n" .. AmrRealmName .. "\n" .. AmrCharacterName .. "\n"
     
     -- break the data into 250 character chunks (to deal with the short limit on addon message size)
     local chunks = {}
     local i = 1
-    local length = string.len(data)
+    local length = string.len(msg)
     local chunkLen = 249 - string.len(msgPrefix)
     while (i <= length) do
         local endpos = math.min(i + chunkLen, length)
-        table.insert(chunks, msgPrefix .. string.sub(data, i, endpos))
+        table.insert(chunks, msgPrefix .. string.sub(msg, i, endpos))
         i = endpos + 1
     end
     

@@ -78,14 +78,14 @@ local function modelOnMouseWheel(self,v)
 	if mog.db.profile.sync then
 		mog.posZ = mog.posZ + delta;
 		for id,model in ipairs(mog.models) do
-			mog:PositionModel(model);
+			model:PositionModel();
 		end
 		for id,preview in ipairs(mog.previews) do
-			mog:PositionModel(preview.model);
+			preview.model:PositionModel();
 		end
 	else
 		self.parent.data.posZ = (self.parent.data.posZ or mog.posZ or 0) + delta;
-		mog:PositionModel(self);
+		self:PositionModel();
 	end
 end
 
@@ -148,9 +148,6 @@ end
 local function setWeaponEnchant(self, preview, enchant)
 	preview.data.weaponEnchant = enchant;
 	self.owner:Rebuild(2);
-	if enchant then
-		self.owner:Rebuild(3);
-	end
 	mog.scroll:update();
 	local mainHandItem = preview.slots["MainHandSlot"].item;
 	local offHandItem = preview.slots["SecondaryHandSlot"].item;
@@ -289,13 +286,13 @@ end
 --// Save Menu
 local newSet = {items = {}}
 
-local function onClick(self)
-	newSet.name = self.value
+local function onClick(self, set)
+	newSet.name = set
 	wipe(newSet.items)
 	for slot, v in pairs(currentPreview.slots) do
 		newSet.items[slot] = v.item
 	end
-	StaticPopup_Show("MOGIT_WISHLIST_OVERWRITE_SET", self.value, nil, newSet)
+	StaticPopup_Show("MOGIT_WISHLIST_OVERWRITE_SET", set, nil, newSet)
 end
 
 local function newSetOnClick(self)
@@ -317,14 +314,14 @@ local function saveInitialize(self, level)
 	info.func = newSetOnClick
 	info.colorCode = GREEN_FONT_COLOR_CODE
 	info.notCheckable = true
-	UIDropDownMenu_AddButton(info, level)
+	self:AddButton(info, level)
 end
 --//
 
 
 --// Load Menu
-local function onClick(self, profile)
-	mog:AddToPreview(mog.wishlist:GetSetItems(self.value, profile), currentPreview)
+local function onClick(self, set, profile)
+	mog:AddToPreview(mog.wishlist:GetSetItems(set, profile), currentPreview)
 	CloseDropDownMenus()
 end
 
@@ -338,7 +335,7 @@ local function loadInitialize(self, level)
 		info.text = L["Other profiles"]
 		info.hasArrow = true
 		info.notCheckable = true
-		UIDropDownMenu_AddButton(info, level)
+		self:AddButton(info, level)
 	elseif level == 2 then
 		local curProfile = mog.wishlist:GetCurrentProfile()
 		for i, profile in ipairs(mog.wishlist:GetProfiles()) do
@@ -347,7 +344,7 @@ local function loadInitialize(self, level)
 				info.text = profile
 				info.hasArrow = true
 				info.notCheckable = true
-				UIDropDownMenu_AddButton(info, level)
+				self:AddButton(info, level)
 			end
 		end
 	elseif level == 3 then
@@ -459,7 +456,7 @@ function mog:CreatePreview()
 	f.resize:SetSize(16, 16);
 	f.resize:SetPoint("BOTTOMRIGHT", -4, 3);
 	f.resize:EnableMouse(true);
-	f.resize:SetHitRectInsets(0, -4, 0, -3)
+	f.resize:SetHitRectInsets(0, -4, 0, -3);
 	f.resize:SetScript("OnMouseDown", resizeOnMouseDown);
 	f.resize:SetScript("OnMouseUp", resizeOnMouseUp);
 	f.resize:SetScript("OnHide", resizeOnMouseUp);
@@ -468,8 +465,7 @@ function mog:CreatePreview()
 	f.resize:SetHighlightTexture([[Interface\ChatFrame\UI-ChatIM-SizeGrabber-Highlight]])
 	
 	f.slots = {};
-	for i = 1, 13 do
-		local slotIndex = mog:GetSlot(i);
+	for i, slotIndex in ipairs(mog.slots) do
 		local slot = CreateFrame("Button", nil, f, "ItemButtonTemplate");
 		slot.slot = slotIndex;
 		if i == 1 then
@@ -477,7 +473,7 @@ function mog:CreatePreview()
 		elseif i == 8 then
 			slot:SetPoint("TOPRIGHT", f.Inset, "TOPRIGHT", -7, -8);
 		elseif i == 12 then
-			slot:SetPoint("TOP", f.slots[mog:GetSlot(11)], "BOTTOM", 0, -45);
+			slot:SetPoint("TOP", f.slots[mog:GetSlot(i-1)], "BOTTOM", 0, -45);
 		else
 			slot:SetPoint("TOP", f.slots[mog:GetSlot(i-1)], "BOTTOM", 0, -4);
 		end
@@ -674,16 +670,23 @@ function mog.view.AddItem(item, preview, forceSlot)
 			if (slot == "MainHandSlot" or slot == "SecondaryHandSlot") and preview.data.weaponEnchant then
 				item = format("item:%d:%d", item, preview.data.weaponEnchant)
 			end
+			if invType == "INVTYPE_RANGED" then
+				slot = "SecondaryHandSlot"
+			end
 			preview.model:TryOn(item, slot);
 		end
 	end
 end
 
 function mog.view.DelItem(slot,preview)
-	if not (preview and slot) then return end;
+	if not (preview and slot) or not preview.slots[slot].item then return end;
+	local invType = mog:GetItemInfo(preview.slots[slot].item).invType;
 	preview.slots[slot].item = nil;
 	slotTexture(preview,slot);
 	if preview:IsVisible() then
+		if invType == "INVTYPE_RANGED" then
+			slot = "SecondaryHandSlot"
+		end
 		preview.model:UndressSlot(GetInventorySlotInfo(slot));
 	end
 end

@@ -1,4 +1,5 @@
 local _, AskMrRobot = ...
+local L = AskMrRobot.L;
 
 AskMrRobot.SummaryTab = AskMrRobot.inheritsFrom(AskMrRobot.Frame)
 
@@ -15,12 +16,12 @@ function AskMrRobot.SummaryTab:new(parent)
 
 	local text = tab:CreateFontString("AmrSummaryText1", "ARTWORK", "GameFontNormalLarge")
 	text:SetPoint("TOPLEFT", 0, -5)
-	text:SetFormattedText("Summary")
+	text:SetFormattedText(L.AMR_SUMMARYTAB_TITLE)
 
 	-- error text
 	tab.errorText1 = tab:CreateFontString("AmrSummaryErrorText1", "ARTWORK", "GameFontRedLarge")
 	tab.errorText1:SetPoint("TOPLEFT", "AmrSummaryText1", "BOTTOMLEFT", 0, -20)
-	tab.errorText1:SetText("You have no optimizations imported.")
+	tab.errorText1:SetText(L.AMR_SUMMARYTAB_NO_IMPORT)
 	tab.errorText1:SetPoint("RIGHT", -20, 0)
 	tab.errorText1:SetWidth(tab.errorText1:GetWidth())
 	tab.errorText1:SetWordWrap(true)
@@ -31,7 +32,7 @@ function AskMrRobot.SummaryTab:new(parent)
 	tab.errorText2:SetPoint("RIGHT", -20, 0)
 	tab.errorText2:SetWidth(tab.errorText2:GetWidth())
 	tab.errorText2:SetJustifyH("LEFT")
-	tab.errorText2:SetText('Click the "Import" tab to get started.')
+	tab.errorText2:SetText(L.AMR_SUMMARYTAB_GET_STARTED)
 
 	-- bad items
 	tab.badItemSlots = {}
@@ -57,7 +58,7 @@ function AskMrRobot.SummaryTab:new(parent)
 	itemText:SetPoint("LEFT", 0, 0)
 	itemText:SetPoint("RIGHT", -30, 0)
 	itemText:SetPoint("TOP", "AmrBadItemSlot0", "TOP", 0, 0 )
-	itemText:SetText("Please upgrade the following items:")
+	itemText:SetText(L.AMR_SUMMARYTAB_GO_UPGRADE)
 	itemText:SetJustifyH("LEFT")
 	itemText:Hide()
 	tab.upgradeInstructions = itemText
@@ -67,7 +68,7 @@ function AskMrRobot.SummaryTab:new(parent)
 	itemText:SetPoint("RIGHT", "AmrBadItemSlot0", "RIGHT", 0, -20)
 	itemText:SetPoint("TOP", tab.upgradeInstructions, "BOTTOM", 0, -10 )
 	itemText:SetHeight(20)
-	itemText:SetText("Slot")
+	itemText:SetText(L.AMR_SUMMARYTAB_SLOT)
 	itemText:SetJustifyH("LEFT")
 	itemText:Hide()
 	tab.upgradeSlotHeader = itemText
@@ -77,7 +78,7 @@ function AskMrRobot.SummaryTab:new(parent)
 	itemText:SetPoint("RIGHT", "AmrBadItemName0", "RIGHT", 0, 0)
 	itemText:SetPoint("TOP", tab.upgradeSlotHeader, "TOP", 0, 0)
 	itemText:SetPoint("BOTTOM", tab.upgradeSlotHeader, "BOTTOM", 0, 0)
-	itemText:SetText("Item Name")
+	itemText:SetText(L.AMR_SUMMARYTAB_ITEM_NAME)
 	itemText:SetJustifyH("LEFT")
 	itemText:Hide()
 	tab.upgradeItemHeader = itemText
@@ -125,7 +126,7 @@ function AskMrRobot.SummaryTab:new(parent)
 	end
 
 	tab.importInfo = tab:CreateFontString(nil, "ARTWORK", "GameFontNormal")
-	tab.importInfo:SetText("Last import: ?\rThese optimizations are for ?")
+	tab.importInfo:SetText(L.AMR_SUMMARYTAB_LAST_IMPORT)
 	tab.importInfo:SetPoint("TOPLEFT", text, "BOTTOMLEFT", 0, -20)
 	tab.importInfo:SetJustifyH("LEFT")
 	tab.importInfo:Hide()
@@ -139,7 +140,7 @@ function AskMrRobot.SummaryTab:new(parent)
 
 	tab.stamp = AskMrRobot.RobotStamp:new(nil, tab)
 	tab.stamp:Hide()
-	tab.stamp.smallText:SetText("Congratulations! You are 100% optimal")
+	tab.stamp.smallText:SetText(L.AMR_SUMMARYTAB_OPTIMAL)
 	tab.stamp:SetPoint("TOPLEFT", tab.specIcon, "BOTTOMLEFT", 2, -25)
 	tab.stamp:SetPoint("RIGHT", tab, "RIGHT", -20, 0)
 	tab.stamp:Hide()
@@ -153,27 +154,27 @@ function AskMrRobot.SummaryTab:new(parent)
 
 	tab.optimizationSummary = tab:CreateFontString(nil, "ARTWORK", "GameFontNormal")
 	tab.optimizationSummary:SetPoint("TOPLEFT", tab.specIcon, "BOTTOMLEFT", 0, -15)
-	tab.optimizationSummary:SetText("You have ? optimizations to make:")
+	tab.optimizationSummary:SetText(L.AMR_SUMMARYTAB_OPTIMIZATIONS_TO_GO)
 	tab.optimizationSummary:Hide()
 
 	tab.gemCount = tab:CreateFontString(nil, "ARTWORK", "GameFontWhite")
 	tab.gemCount:SetPoint("TOPLEFT", tab.optimizationSummary, "BOTTOMLEFT", 0, -15)
-	tab.gemCount:SetText("? gems")
+	tab.gemCount:SetText(L.AMR_SUMMARYTAB_GEMS_TO_GO)
 	tab.gemCount:Hide()
 
 	tab.enchantCount = tab:CreateFontString(nil, "ARTWORK", "GameFontWhite")
 	tab.enchantCount:SetPoint("TOPLEFT", tab.gemCount, "BOTTOMLEFT", 0, -5)
-	tab.enchantCount:SetText("? enchants")
+	tab.enchantCount:SetText(L.AMR_SUMMARYTAB_ENCHANTS_TO_GO)
 	tab.enchantCount:Hide()
 
 	tab.reforgeCount = tab:CreateFontString(nil, "ARTWORK", "GameFontWhite")
 	tab.reforgeCount:SetPoint("TOPLEFT", tab.enchantCount, "BOTTOMLEFT", 0, -5)
-	tab.reforgeCount:SetText("? reforges")
+	tab.reforgeCount:SetText(L.AMR_SUMMARYTAB_REFORGES_TO_GO)
 	tab.reforgeCount:Hide()
 
 	tab.instructions = tab:CreateFontString(nil, "ARTWORK", "GameFontWhite")
 	tab.instructions:SetPoint("TOPLEFT", tab.reforgeCount, "BOTTOMLEFT", 0, -15)
-	tab.instructions:SetText("View the Gem, Enchant and Reforge tabs for suggested optimizations.")
+	tab.instructions:SetText(L.AMR_SUMMARYTAB_VIEW_TABS)
 	tab.instructions:Hide()
 
 	return tab
@@ -246,22 +247,22 @@ function AskMrRobot.SummaryTab:showBadItems()
 			end
 		end
 
-		self.gemCount:SetFormattedText("%d \1244gem:gems;", gemCount)
+		self.gemCount:SetFormattedText(L.AMR_SUMMARYTAB_GEMCOUNT, gemCount)
 
 		local enchantCount = 0
 		for slotNum, badEnchant in pairs(AskMrRobot.itemDiffs.enchants) do
 			enchantCount = enchantCount + 1
 		end
 
-		self.enchantCount:SetFormattedText("%d \1244enchant:enchants;", enchantCount)
+		self.enchantCount:SetFormattedText(L.AMR_SUMMARYTAB_ENCHANTCOUNT, enchantCount)
 
 		local reforgeCount = 0
 		for slotNum, badReforge in pairs(AskMrRobot.itemDiffs.reforges) do
 			reforgeCount = reforgeCount + 1
 		end
 
-		self.reforgeCount:SetFormattedText("%d \1244reforge:reforges;", reforgeCount)
-		self.optimizationSummary:SetFormattedText("You have %d \1244optimization:optimizations; to make:", gemCount + enchantCount + reforgeCount)
+		self.reforgeCount:SetFormattedText(L.AMR_SUMMARYTAB_REFORGECOUNT, reforgeCount)
+		self.optimizationSummary:SetFormattedText(L.AMR_SUMMARYTAB_OPTIMIZATIONCOUNT, gemCount + enchantCount + reforgeCount)
 
 		if gemCount + enchantCount + reforgeCount == 0 then
 			self.stamp:Show()
@@ -282,16 +283,16 @@ function AskMrRobot.SummaryTab:showBadItems()
 		local activeSpecGroup = GetActiveSpecGroup()
 
 		if activeSpecGroup == nil then
-			self.importInfo:SetFormattedText("Last import: %s\rThese optimizations are for %s", self.importDate, UnitName("player"))
+			self.importInfo:SetFormattedText(L.AMR_SUMMARYTAB_LAST_IMPORT_1, self.importDate, UnitName("player"))
 		else
-			self.importInfo:SetFormattedText("Last import: %s\rThese optimizations are for %s's...", self.importDate, UnitName("player"))
+			self.importInfo:SetFormattedText(L.AMR_SUMMARYTAB_LAST_IMPORT_2, self.importDate, UnitName("player"))
 			local spec = GetSpecialization(false, false, group);
 			if spec then
 				local _, name, _, icon = GetSpecializationInfo(spec);
 				if activeSpecGroup == 1 then
-					self.specText:SetFormattedText("Primary Spec - %s", name)
+					self.specText:SetFormattedText(L.AMR_SUMMARYTAB_LAST_IMPORT_PSPEC, name)
 				else
-					self.specText:SetFormattedText("Secondary Spec - %s", name)
+					self.specText:SetFormattedText(L.AMR_SUMMARYTAB_LAST_IMPORT_SSPEC, name)
 				end
 				self.specIcon:SetTexture(icon)
 			end
@@ -319,17 +320,17 @@ function AskMrRobot.SummaryTab:showBadItems()
 		self.badItemNames[1]:Show()
 		local warnings = {}
 		if self.badRealm then
-			tinsert(warnings, "a different realm: " .. self.badRealm)
+			tinsert(warnings, L.AMR_SUMMARYTAB_DIFF_REALM:format(self.badRealm))
 		end
 		if self.badTalents then
-			tinsert(warnings, "different talents")
+			tinsert(warnings, L.AMR_SUMMARYTAB_DIFF_TALENT)
 		end
 		if self.badGlyphs then
-			tinsert(warnings, "different glyphs")
+			tinsert(warnings, L.AMR_SUMMARYTAB_DIFF_GLYPHS)
 		end
-		local message = "Mr. Robot optimized a different set of gear"
+		local message = L.AMR_SUMMARYTAB_DIFF_GEAR
 		if #warnings > 0 then
-			message = message .. " (and "
+			message = message .. " (".. L.AMR_SUMMARYTAB_DIFF_AND.." "
 			for k = 1, #warnings do
 				if k > 1 then
 					message = message .. ', '
@@ -338,8 +339,8 @@ function AskMrRobot.SummaryTab:showBadItems()
 			end
 			message = message .. ")"
 		end
-		message = message .. ". Please equip the following items before proceeding with the optimizations."
-		self:showImportWarning("WARNING: Please check your character before proceeding:", message)
+		message = message .. L.AMR_SUMMARYTAB_DIFF_PLEASE_EQ
+		self:showImportWarning(L.AMR_SUMMARYTAB_DIFF_CHECK_CHAR, message)
 	end
 
 	if j == 1 then
@@ -350,17 +351,17 @@ function AskMrRobot.SummaryTab:showBadItems()
 		if i == 2 then
 			local warnings = {}
 			if self.badRealm then
-				tinsert(warnings, "a different realm: " .. self.badRealm)
+				tinsert(warnings, L.AMR_SUMMARYTAB_DIFF_REALM:format(self.badRealm))
 			end
 			if self.badTalents then
-				tinsert(warnings, "different talents")
+				tinsert(warnings, L.AMR_SUMMARYTAB_DIFF_TALENT)
 			end
 			if self.badGlyphs then
-				tinsert(warnings, "different glyphs")
+				tinsert(warnings, L.AMR_SUMMARYTAB_DIFF_GLYPHS)
 			end
 			local message = nil
 			if #warnings > 0 then 
-				message = "Mr. Robot optimized for "
+				message = L.AMR_SUMMARYTAB_DIFF_OPTIMIZED_FOR
 				for k = 1, #warnings do
 					if k > 1 then
 						message = message .. ', '
@@ -369,7 +370,7 @@ function AskMrRobot.SummaryTab:showBadItems()
 				end
 				message = message .. "."
 			end
-			self:showImportWarning("WARNING: Please check your character before proceeding:", message)
+			self:showImportWarning(L.AMR_SUMMARYTAB_DIFF_CHECK_CHAR, message)
 		end
 		self.upgradeItemHeader:Show()
 		self.upgradeSlotHeader:Show()
@@ -407,7 +408,7 @@ function AskMrRobot.SummaryTab:showImportError(text, text2)
 	self.optimizationSummary:Hide()
 	if text then
 		self.errorText1:Show()
-		self.errorText1:SetText('Error! Your import did not work:|n|n' .. text)
+		self.errorText1:SetText(L.AMR_SUMMARYTAB_IMPORT_NOT_WORK:format(text))
 		self.errorText1:Show()
 		self.errorText2:SetText(text2)
 		self.errorText2:Show()

@@ -40,13 +40,13 @@ frame:SetScript("OnShow", function(frame)
 	subtitle:SetJustifyH("LEFT")
 	subtitle:SetNonSpaceWrap(false)
 	subtitle:SetJustifyV("TOP")
-	subtitle:SetText("Mr. Robot's addon can export your item information to his website, and import your optimizations into the game.")
+	subtitle:SetText(L.AMR_CONFIG_EXIMPORT)
 	subTitleWrapper:SetHeight(subtitle:GetHeight())
 
 	local autoPopup = newCheckbox(
-		"Show minimap icon",
-		"Minimap Icon",
-		"Show the Ask Mr. Robot minimap icon.",
+		L.AMR_CONFIG_CHECKBOX_MINIMAP_LABEL,
+		L.AMR_CONFIG_CHECKBOX_MINIMAP_TOOLTIP_TITLE,
+		L.AMR_CONFIG_CHECKBOX_MINIMAP_DESCRIPTION,
 		function(self, value) 
 			if AmrOptions.hideMapIcon then
 				AmrOptions.hideMapIcon = false
@@ -60,9 +60,9 @@ frame:SetScript("OnShow", function(frame)
 	autoPopup:SetPoint("TOPLEFT", subTitleWrapper, "BOTTOMLEFT", -2, -16)
 
 	local autoReforge = newCheckbox(
-		"Automatically show Mr. Robot's reforge window at the reforger",
-		"Auto-Show Reforges",
-		"When you have suggested reforges left to complete, automatically show Mr. Robot's reforge window when you visit a reforger.",
+		L.AMR_CONFIG_CHECKBOX_AUTOREFORGE_LABEL,
+		L.AMR_CONFIG_CHECKBOX_AUTOREFORGE_TOOLTIP_TITLE,
+		L.AMR_CONFIG_CHECKBOX_AUTOREFORGE_DESCRIPTION,
 		function(self, value) 
 			if AmrOptions.manualShowReforge then
 				AmrOptions.manualShowReforge = false
@@ -75,9 +75,9 @@ frame:SetScript("OnShow", function(frame)
 	autoReforge:SetPoint("TOPLEFT", subTitleWrapper, "BOTTOMLEFT", -2, -52)
 
 	local autoAh = newCheckbox(
-		"Automatically show Mr. Robot's shopping list at the auction house",
-		"Auto-Show Shopping List",
-		"When your shopping list still has things left to buy, automatically show Mr. Robot's shopping list when you visit the auction house.",
+		L.AMR_CONFIG_CHECKBOX_AUTOAH_LABEL,
+		L.AMR_CONFIG_CHECKBOX_AUTOAH_TOOLTIP_TITLE,
+		L.AMR_CONFIG_CHECKBOX_AUTOAH_DESCRIPTION,
 		function(self, value) 
 			if AmrOptions.manualShowShop then
 				AmrOptions.manualShowShop = false
@@ -93,9 +93,9 @@ frame:SetScript("OnShow", function(frame)
 	AmrOptions.autoLog = AmrOptions.autoLog or {}
 
 	local autoCombatLog = newCheckbox(
-		"Automatically turn on combat logging for Siege of Orgrimmar",
-		"Automatically Log Siege of Orgrimmar",
-		"When entering Siege of Orgrimmar, combat logging will be turned on.  When leaving Siege of Orgrimmar, combat logging will be turned off.",
+		L.AMR_CONFIG_CHECKBOX_AUTOLOG_LABEL,
+		L.AMR_CONFIG_CHECKBOX_AUTOLOG_TOOLTIP_TITLE,
+		L.AMR_CONFIG_CHECKBOX_AUTOLOG_DESCRIPTION,
 		function(self, value)
 			if AmrOptions.autoLog[1136] then
 				AmrOptions.autoLog[1136] = false

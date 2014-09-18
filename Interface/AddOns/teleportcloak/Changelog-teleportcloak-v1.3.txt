@@ -1,0 +1,13 @@
+tag v1.3
+54e17b2a05e46ec4b18b2890478f0a5176cc241f
+Jordon <jordon@localhost>
+2014-07-15 11:35:22 -0700
+
+Tagging as v1.3
+
+
+--------------------
+
+Jordon:
+	- add support for "Boots of the Bay", "Blessed Medallion of Karabor", and "Argent Crusader's Tabard"
+	- add more Kirin Tor rings

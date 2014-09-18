@@ -74,3 +74,5 @@ TradeSkillMaster_AuctionDB: enabled
 TradeSkillMaster_Auctioning: enabled
 TradeSkillMaster_Crafting: disabled
 TradeSkillMaster_Destroying: enabled
+BattlePetBreedID: enabled
+PetBattleMaster: enabled

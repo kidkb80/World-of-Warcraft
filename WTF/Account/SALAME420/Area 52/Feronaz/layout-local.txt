@@ -33,7 +33,7 @@ Anchor: TOPLEFT
 X: -10
 Y: -23
 W: 835
-H: 689
+H: 500
 Frame: _NPCScanButton
 FrameLevel: 1
 Anchor: BOTTOM

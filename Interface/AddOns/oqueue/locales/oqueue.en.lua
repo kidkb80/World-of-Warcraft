@@ -1,4 +1,4 @@
-﻿--[[ 
+--[[ 
   @file       oqueue.en.lua
   @brief      localization for oqueue addon (english - default)
 
@@ -38,6 +38,7 @@ OQ.BUT_INVITE         = "invite" ;
 OQ.BUT_GROUPLEAD      = "group lead" ;
 OQ.BUT_INVITEGROUP    = "group (%d)" ;
 OQ.BUT_WAITLIST       = "wait list" ;
+OQ.BUT_IN_BATTLE      = "in battle" ;
 OQ.BUT_INGAME         = "in game" ;
 OQ.BUT_PENDING        = "pending" ;
 OQ.BUT_INPROGRESS     = "in battle" ;
@@ -61,6 +62,7 @@ OQ.TT_AVG_GAME_LEN    = "avg game length" ;
 OQ.TT_AVG_DOWNTIME    = "avg down time" ;
 OQ.TT_RESIL           = "resil" ;
 OQ.TT_ILEVEL          = "ilevel" ;
+OQ.TT_LOWEST          = "lowest" ;
 OQ.TT_MAXHP           = "max hp" ;
 OQ.TT_WINLOSS         = "win - loss" ;
 OQ.TT_HKS             = "total hks" ;
@@ -84,6 +86,8 @@ OQ.KARMA_ALL          = "karma all" ;
 OQ.APPROACHING_CAP    = "APPROACHING CAP" ;
 OQ.CAPPED             = "CAPPED" ;
 OQ.HDR_PREMADE_NAME   = "premades" ;
+OQ.HDR_LEADER_RANK    = OQ.LILSKULL_HDR ;
+-- OQ.HDR_LEADER_RANK    = "*" ;
 OQ.HDR_LEADER         = "leader" ;
 OQ.HDR_LEVEL_RANGE    = "level(s)" ;
 OQ.HDR_ILEVEL         = "ilevel" ;
@@ -208,7 +212,7 @@ OQ.DLG_04             = "Please enter your real-id:" ;
 OQ.DLG_05             = "Password:" ;
 OQ.DLG_06             = "Please enter real-id or name of new group leader:" ;
 OQ.DLG_07             = "\nNEW VERSION Now Available !!\n\noQueue  v%s  build  %d\n" ;
-OQ.DLG_08             = "Please leave your party to join the wait list or \nAsk your group leader to queue the whole party" ;
+OQ.DLG_08             = "You must leave your group in order to waitlist. \nLeave your group now?" ;
 OQ.DLG_09             = "Only the group leader may create an OQ Premade" ;
 OQ.DLG_10             = "The queue has popped.\n\nWhat is your decision?" ;
 OQ.DLG_11             = "Your queue has popped.  Waiting for Raid Leader to make a decision.\nPlease stand by." ;
@@ -245,6 +249,7 @@ OQ.TT_FINDMESH        = "request battle-tags from the scorekeeper\nto get connec
 OQ.TT_SUBMIT2MESH     = "submit your battle-tag to the scorekeeper\nto help grow the mesh" ;
 OQ.LABEL_TYPE         = "|cFF808080type:|r  %s" ;
 OQ.LABEL_ALL          = "all premades" ;
+OQ.LABEL_ALL_PENDING  = "all pending" ;
 OQ.LABEL_BGS          = "battlegrounds" ;
 OQ.LABEL_RBGS         = "rated bgs" ;
 OQ.LABEL_DUNGEONS     = "dungeons" ;
@@ -428,32 +433,6 @@ OQ.CONTRIBUTION_DLG = { "",
                         "beg.vent",
                         "",
                         "Have fun and have a great night!",
-                        "",
-                        "- tiny",
-                      } ;
-OQ.CONTRIBUTION2_DLG = { "",
-                        "Having fun with oQueue and public vent?",
-                        "Then send us a beer!",
-                        "",
-                        "for tiny and oQueue:",
-                        "beg.oq",
-                        "",
-                        "for Rathamus and public vent:",
-                        "beg.vent",
-                        "",
-                        "Thanks!",
-                        "",
-                        "- tiny",
-                      } ;
-OQ.TIMEVARIANCE_DLG = { "",
-                        "Warning:",
-                        "",
-                        "  Your system time is significantly ",
-                        "  different from the mesh.  You must",
-                        "  correct it before being allowed to",
-                        "  create a premade.",
-                        "",
-                        "  time variance:  %s",
                         "",
                         "- tiny",
                       } ;
@@ -1253,9 +1232,9 @@ OQ.HINTS = { [ 1] = L["</p><br/><h3 align=\"center\">|cffE9EB15Don't Panic|r</h3
              [14] = L["clicking the remove-now button will remove mesh connections.  use with caution"],
              [15] = L["right-click the red 'x' on the find-premade list to ban that group leader"],
              [16] = L["if you're confused, find tiny in public vent"],
-             [17] = L["click the spyglass at the top left of the find-premade tab to filter the list<br/><br/>you can use the following logical operators:<br/><br/> &amp; (and)<br/> | (or)<br/> ! (not)<br/><br/>ie:  rbgs | cta &amp; !yolo<br/><br/>meaning:<br/> rbgs or cta and not yolo"],
+             [17] = L["click the spyglass at the top left of the find-premade tab to filter the list<br/><br/>you can use the following logical operators:<br/><br/> &amp; (and)<br/> | (or)<br/> ! (not)<br/> r(number) min rating<br/> i(number) min ilevel<br/><br/>ie:  rbgs | cta &amp; !yolo &amp; r1600<br/><br/>meaning:<br/> rbgs or cta and not yolo<br/>and min rating 1600"],
              [18] = L["you can use wildcards in the spyglass filter<br/><br/>ie:  flex.*1"],
-             [19] = L["more advanced filters are possible<br/><br/>ie: flex.*1 | flex.*2"],
+             [19] = L["more advanced filters are possible<br/><br/>ie: flex.*1 | flex.*2<br/><br/>ie: soo &amp; i525"],
              [20] = L["leaders with good karma will have greenish names on the find-premade list.<br/><br/>leaders with bad karma will be shown in red<br/><br/>white is neutral"],
              [21] = L["your karma reflects the opinions of your performance and personality by those you've grouped with.<br/><br/>karma ranges from -25 to +25 and degrades by 1 pt, back towards 0, every 24 hours"],
              [22] = L["karma - what goes around, comes around"],

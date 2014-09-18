@@ -1,8 +1,9 @@
 local _, AskMrRobot = ...
+local L = AskMrRobot.L;
 
 StaticPopupDialogs["AUTOGEM_FINISHED"] = {
-	text = "Mr. Robot finished auto-gemming. \rIf some items aren't gemmed, you may need to acquire more gems. \rIf your belt isn't gemmed, you may still need to buy a belt buckle.",
-	button1 = "Ok",
+	text = L.AMR_GEMTAB_FINISHED,
+	button1 = L.AMR_GEMTAB_BUTTON_OK,
 	timeout = 0,
 	whileDead = true,
 	hideOnEscape = true,
@@ -10,8 +11,8 @@ StaticPopupDialogs["AUTOGEM_FINISHED"] = {
 }
 
 StaticPopupDialogs["AUTOGEM_ONCE"] = {
-	text = "Autogemming already in progress.",
-	button1 = "Ok",
+	text = L.AMR_GEMTAB_AUTOGEMMING_IN_PROGRESS,
+	button1 = L.AMR_GEMTAB_BUTTON_OK,
 	timeout = 0,
 	whileDead = true,
 	hideOnEscape = true,
@@ -35,16 +36,16 @@ function AskMrRobot.GemTab:new(name, parent)
 
 	local text = tab:CreateFontString("AmrGemsText1", "ARTWORK", "GameFontNormalLarge")
 	text:SetPoint("TOPLEFT", 0, -5)
-	text:SetText("Gems")
+	text:SetText(L.AMR_GEMTAB_GEMS)
 
 	tab.stamp = AskMrRobot.RobotStamp:new(nil, tab)
 	tab.stamp:Hide()
-	tab.stamp.smallText:SetText("Your gems are 100% optimal! You are truly, truly outrageous.")
+	tab.stamp.smallText:SetText(L.AMR_GEMTAB_OPTIMAL)
 	tab.stamp:SetPoint("TOPLEFT", text, "BOTTOMLEFT", 2, -15)
 	tab.stamp:SetPoint("RIGHT", tab, "RIGHT", -20, 0)
 
 	text = tab:CreateFontString("AmrGemsText2", "ARTWORK", "GameFontWhite")
-	text:SetText("You have X gems to optimize")
+	text:SetText(L.AMR_GEMTAB_X_OPTIMIZE)
 	text:SetPoint("TOPLEFT", "AmrGemsText1", "BOTTOMLEFT", 0, -20)
 	text:SetWidth(200)
 	text:SetJustifyH("LEFT")
@@ -54,7 +55,7 @@ function AskMrRobot.GemTab:new(name, parent)
 	tab.button = CreateFrame("Button", "AmrAutoGemButton", tab, "UIPanelButtonTemplate")	
 	tab.button:SetPoint("TOP", "AmrGemsText1", "BOTTOM", 0, -16)
 	tab.button:SetPoint("RIGHT", -40, 0)
-	tab.button:SetText("Auto Gem! (BETA)")
+	tab.button:SetText(L.AMR_GEMTAB_AUTOGEM_BUTTON)
 	tab.button:SetWidth(150)
 	tab.button:SetHeight(20)
 	tab.button:SetScript("OnClick", function() tab:startAutoGem() end)
@@ -67,27 +68,27 @@ function AskMrRobot.GemTab:new(name, parent)
 	tab.usePerfectButton:SetPoint("TOPLEFT", "AmrAutoGemButton", "BOTTOMLEFT", 0, -4)
 	tab.usePerfectButton:SetScript("OnClick", function () tab.preferPerfects = tab.usePerfectButton:GetChecked() end)
 	local text3 = getglobal(tab.usePerfectButton:GetName() .. 'Text')
-	text3:SetText("Prefer Perfect")
+	text3:SetText(L.AMR_GEMTAB_PREFER_PERFECT)
 	text3:SetWidth(150)
 	text3:SetPoint("TOPLEFT", tab.usePerfectButton, "TOPRIGHT", 2, -4)
 	tab.usePerfectButton:Hide()
 
 	tab.gemSlotHeader = tab:CreateFontString("AmrBadGemSlot0", "ARTWORK", "GameFontNormal")
 	tab.gemSlotHeader:SetPoint("TOPLEFT", "AmrGemsText2", "BOTTOMLEFT", 0, -20)
-	tab.gemSlotHeader:SetText("Slot")
+	tab.gemSlotHeader:SetText(L.AMR_GEMTAB_SLOT)
 	tab.gemSlotHeader:SetWidth(90)
 	tab.gemSlotHeader:SetJustifyH("LEFT")
 	tab.gemSlotHeader:Hide()
 	tab.gemCurrentHeader = tab:CreateFontString("AmrBadGemCurrent0_1", "ARTWORK", "GameFontNormal")
 	tab.gemCurrentHeader:SetPoint("TOPLEFT", "AmrBadGemSlot0", "TOPLEFT", 88, 0)
 	tab.gemCurrentHeader:SetWidth(110)
-	tab.gemCurrentHeader:SetText("Current")
+	tab.gemCurrentHeader:SetText(L.AMR_GEMTAB_CURRENT)
 	tab.gemCurrentHeader:SetJustifyH("LEFT")
 	tab.gemCurrentHeader:Hide()
 	tab.gemOptimizedHeader = tab:CreateFontString("AmrBadGemOptimized0_1", "ARTWORK", "GameFontNormal")
 	tab.gemOptimizedHeader:SetPoint("TOPLEFT", "AmrBadGemCurrent0_1", "TOPLEFT", 70, 0)
 	tab.gemOptimizedHeader:SetPoint("RIGHT", -30, 0)
-	tab.gemOptimizedHeader:SetText("Optimized")
+	tab.gemOptimizedHeader:SetText(L.AMR_GEMTAB_OPTIMIZED)
 	tab.gemOptimizedHeader:SetJustifyH("LEFT")
 	tab.gemOptimizedHeader:Hide()
 
@@ -138,7 +139,7 @@ function AskMrRobot.GemTab:Update()
 		end
 	end
 
-	self.gemsTextToOptimize:SetFormattedText("You have %d \1244gem:gems; to optimize", badGemTotal)
+	self.gemsTextToOptimize:SetFormattedText(L.AMR_GEMTAB_TO_OPTIMIZE, badGemTotal)
 
 	--hide/show the headers, depending on if we have any bad gems
 	if self.count == 0 then

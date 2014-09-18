@@ -1,13 +1,30 @@
 local _, AskMrRobot = ...
+local L = AskMrRobot.L;
 
 -- initialize the ExportTab class
 AskMrRobot.CombatLogTab = AskMrRobot.inheritsFrom(AskMrRobot.Frame)
+
+-- these are valid keys in AmrLogData, all others will be deleted
+local _logDataKeys = {
+	["_logging"] = true,
+	["_autoLog"] = true,
+	["_lastZone"] = true,
+	["_lastDiff"] = true,
+	["_current2"] = true,
+	["_history2"] = true,
+	["_wipes"] = true,
+	["_lastWipe"] = true,
+	["_currentExtra"] = true,
+	["_historyExtra"] = true
+};
+
+local _undoButton = false
 
 -- helper to create text for this tab
 local function CreateText(tab, font, relativeTo, xOffset, yOffset, text)
     local t = tab:CreateFontString(nil, "ARTWORK", font)
 	t:SetPoint("TOPLEFT", relativeTo, "BOTTOMLEFT", xOffset, yOffset)
-	t:SetPoint("RIGHT", tab, "RIGHT", -25, 0)
+	t:SetPoint("RIGHT", tab, "RIGHT", -5, 0)
 	t:SetWidth(t:GetWidth())
 	t:SetJustifyH("LEFT")
 	t:SetText(text)
@@ -30,50 +47,45 @@ end
 
 function AskMrRobot.CombatLogTab:new(parent)
 
-	local tab = AskMrRobot.Frame:new(nil, parent)	
+	local tab = AskMrRobot.Frame:new(nil, parent)
 	setmetatable(tab, { __index = AskMrRobot.CombatLogTab })
 	tab:SetPoint("TOPLEFT")
 	tab:SetPoint("BOTTOMRIGHT")
 	tab:Hide()
 
+	-- tab header
 	local text = tab:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge")
 	text:SetPoint("TOPLEFT", 0, -5)
 	text:SetText("Combat Logging")
+
+	--scrollframe 
+	tab.scrollframe = AskMrRobot.ScrollFrame:new(nil, tab)
+	tab.scrollframe:SetPoint("TOPLEFT", tab, "TOPLEFT", 0, -30)
+	tab.scrollframe:SetPoint("BOTTOMRIGHT", tab, "BOTTOMRIGHT", -30, 10)
+
+	local content = tab.scrollframe.content
+	content:SetHeight(730)
     
-	local manulText = CreateText(tab, "GameFontWhite", text, 0, -15, "Manual:")
-	manulText:SetJustifyV("MIDDLE")
-    manulText:SetHeight(30)
-	    
-    local btn = CreateFrame("Button", "AmrCombatLogStart", tab, "UIPanelButtonTemplate")
-	btn:SetPoint("TOPLEFT", text, "BOTTOMLEFT", 75, -15)
+    local btn = CreateFrame("Button", "AmrCombatLogStart", content, "UIPanelButtonTemplate")
+	btn:SetPoint("TOPLEFT", content, "TOPLEFT", 0, 0)
 	btn:SetText("Start Logging")
 	btn:SetWidth(120)
 	btn:SetHeight(30)
     tab.btnStart = btn
     
     btn:SetScript("OnClick", function()
-        tab:StartLogging()
+        tab:ToggleLogging()
     end)
     
-    btn = CreateFrame("Button", "AmrCombatLogEnd", tab, "UIPanelButtonTemplate")
-	btn:SetPoint("TOPLEFT", text, "BOTTOMLEFT", 225, -15)
-	btn:SetText("Stop Logging")
-	btn:SetWidth(120)
-	btn:SetHeight(30)
-    tab.btnEnd = btn
-    
-    btn:SetScript("OnClick", function()
-        tab:StopLogging()
-    end)
 
-	local autoText = CreateText(tab, "GameFontWhite", text, 0, -50, "Automatic:")
-	autoText:SetJustifyV("MIDDLE")
-    autoText:SetHeight(28)
+	text = content:CreateFontString(nil, "ARTWORK", "GameFontWhite")
+	text:SetPoint("LEFT", btn, "RIGHT", 10, 0)
+	tab.loggingStatus = text;
 
-	local autoChk = newCheckbox(tab,
-		"Always log Siege of Orgrimmar",
-		"Auto-Log Siege of Orgrimmar",
-		"Automatically start logging when you enter SoO and stop when you leave SoO.\n\nNote that you should disable similar features in other addons to avoid conflicts.",
+	local autoChk = newCheckbox(content,
+		L.AMR_COMBATLOGTAB_CHECKBOX_AUTOLOG_SOO_LABEL,
+		L.AMR_COMBATLOGTAB_CHECKBOX_AUTOLOG_SOO_TOOLTIP_TITLE,
+		L.AMR_COMBATLOGTAB_CHECKBOX_AUTOLOG_SOO_DESCRIPTION,
 		function(self, value) 
 			if value then
 				AmrLogData._autoLog[AskMrRobot.instanceIds.SiegeOfOrgrimmar] = "enabled"
@@ -87,31 +99,65 @@ function AskMrRobot.CombatLogTab:new(parent)
 		end
 	)
 	autoChk:SetChecked(AmrLogData._autoLog[AskMrRobot.instanceIds.SiegeOfOrgrimmar] == "enabled")
-	autoChk:SetPoint("TOPLEFT", text, "BOTTOMLEFT", 75, -50)
+	autoChk:SetPoint("TOPLEFT", btn, "BOTTOMLEFT", 0, -10)
     autoChk:SetHeight(30)
 
-	text = CreateText(tab, "GameFontNormalLarge", text, 0, -100, "Character Data")
 
-	btn = CreateFrame("Button", "AmrCombatLogSaveCharData", tab, "UIPanelButtonTemplate")
+	local text = CreateText(content, "GameFontNormalLarge", autoChk, 0, -20, L.AMR_COMBATLOGTAB_INFIGHT)
+
+    btn = CreateFrame("Button", "AmrCombatLogWipe", autoChk, "UIPanelButtonTemplate")
+	btn:SetPoint("TOPLEFT", text, "BOTTOMLEFT", 0, -10)
+	btn:SetText("Wipe")
+	btn:SetWidth(70)
+	btn:SetHeight(30)
+    btn:SetScript("OnClick", function()
+        tab:LogWipe()
+    end)
+
+    tab.btnWipe = btn
+
+    local text2 = CreateText(content, "GameFontWhite", text, 80, -12, L.AMR_COMBATLOGTAB_WIPE_1)
+    text2 = CreateText(content, "GameFontWhite", text2, 0, -2, L.AMR_COMBATLOGTAB_WIPE_2)
+    text2 = CreateText(content, "GameFontWhite", text2, 0, -2, L.AMR_COMBATLOGTAB_WIPE_3)
+
+    btn = CreateFrame("Button", "AmrCombatLogUnWipe", content, "UIPanelButtonTemplate")
+	btn:SetPoint("LEFT", text, "LEFT", 0, 0)
+	btn:SetPoint("TOP", text2, "BOTTOM", 0, -10)
+	btn:SetText("Undo")
+	btn:SetWidth(70)
+	btn:SetHeight(30)
+	btn:Hide() -- initially hidden
+    btn:SetScript("OnClick", function()
+        tab:LogUnwipe()
+    end)
+    tab.btnUnwipe = btn
+
+    text = content:CreateFontString(nil, "ARTWORK", "GameFontWhite")
+    text:SetPoint("LEFT", btn, "LEFT", 80, 0)
+    tab.lastWipeLabel = text
+
+	text = CreateText(tab, "GameFontNormalLarge", btn, 0, -20, L.AMR_COMBATLOGTAB_HEADLINE_OVER_BUTTON)
+
+	btn = CreateFrame("Button", "AmrCombatLogSaveCharData", content, "UIPanelButtonTemplate")
 	btn:SetPoint("TOPLEFT", text, "BOTTOMLEFT", 0, -5)
-	btn:SetText("Save Character Data")
+	btn:SetText(L.AMR_COMBATLOGTAB_SAVE_CHARACTER)
 	btn:SetWidth(150)
 	btn:SetHeight(30)
 
-	btn:SetScript("OnClick", function()
-		-- reload the UI will save character data to disk
-        ReloadUI()
-    end)
+	-- reload the UI will save character data to disk
+	btn:SetScript("OnClick", ReloadUI)
 
-    text = CreateText(tab, "GameFontNormalLarge", btn, 0, -30, "INSTRUCTIONS")
-    text = CreateText(tab, "GameFontWhite", text, 0, -10, "1. Use the Start/Stop buttons or check 'Always log Siege of Orgrimmar'.")
-    text = CreateText(tab, "GameFontWhite", text, 0, -10, "2. When you are ready to upload, press 'Save Character Data'. *")
-    text = CreateText(tab, "GameFontWhite", text, 0, -10, "3. Exit World of Warcraft. **")
-	text = CreateText(tab, "GameFontWhite", text, 0, -10, "4. Launch the Ask Mr. Robot client and follow the instructions. ***")
+	text = CreateText(content, "GameFontWhite", btn, 0, -15, L.AMR_COMBATLOGTAB_SAVE_CHARACTER_INFO)
 
-	text = CreateText(tab, "GameFontNormalSmall", text, 0, -30, "|c00999999* This will reload your UI to ensure that all collected data is saved to disk.  This step is not necessary if you log out of the game before uploading.|r")
-	text = CreateText(tab, "GameFontNormalSmall", text, 0, -10, "|c00999999** Exiting WoW before uploading your combat log is optional, but highly recommended.  This prevents your log file from getting ridiculously large and slowing down your uploads.|r")
-	text = CreateText(tab, "GameFontNormalSmall", text, 0, -10, "|c00999999*** You can download the client program at|r |c003333ffhttp://www.askmrrobot.com/wow/combatlog/upload|r|c00999999.|r")
+    text = CreateText(content, "GameFontNormalLarge", text, 0, -30, L.AMR_COMBATLOGTAB_INSTRUCTIONS)
+    text = CreateText(content, "GameFontWhite", text, 0, -10, L.AMR_COMBATLOGTAB_INSTRUCTIONS_1)
+    text = CreateText(content, "GameFontWhite", text, 0, -10, L.AMR_COMBATLOGTAB_INSTRUCTIONS_2)
+    text = CreateText(content, "GameFontWhite", text, 0, -10, L.AMR_COMBATLOGTAB_INSTRUCTIONS_3)
+	text = CreateText(content, "GameFontWhite", text, 0, -10, L.AMR_COMBATLOGTAB_INSTRUCTIONS_4)
+
+	text = CreateText(content, "GameFontNormalSmall", text, 0, -30, L.AMR_COMBATLOGTAB_INSTRUCTIONS_5)
+	text = CreateText(content, "GameFontNormalSmall", text, 0, -10, L.AMR_COMBATLOGTAB_INSTRUCTIONS_6)
+	text = CreateText(content, "GameFontNormalSmall", text, 0, -10, L.AMR_COMBATLOGTAB_INSTRUCTIONS_7)
     
 	--[[
 	btn = CreateFrame("Button", "AmrCombatLogTest", tab, "UIPanelButtonTemplate")
@@ -121,7 +167,11 @@ function AskMrRobot.CombatLogTab:new(parent)
 	btn:SetHeight(30)
     
     btn:SetScript("OnClick", function()
-        AskMrRobot.ExportToAddonChat(time())
+
+		local t = time()
+		AskMrRobot.SaveAll()
+		AskMrRobot.ExportToAddonChat(t)
+		AskMrRobot.ExportLoggingData(t)
     end)
 	]]
 
@@ -149,6 +199,9 @@ end
 
 function AskMrRobot.CombatLogTab:StartLogging()
 
+	local now = time()
+	local oldDuration = 60 * 60 * 24 * 10
+
 	-- archive the current logging session so that users don't accidentally blow away data before uploading it
 	if AmrLogData._current2 ~= nil then
 		if not AmrLogData._history2 then AmrLogData._history2 = {} end
@@ -162,11 +215,9 @@ function AskMrRobot.CombatLogTab:StartLogging()
 		end
 
 		-- delete entries that are more than 10 days old
-		local now = time()
-		local interval = 60 * 60 * 24 * 10
 		for name, timeList in AskMrRobot.spairs(AmrLogData._history2) do
 			for timestamp, dataString in AskMrRobot.spairs(timeList) do
-				if difftime(now, tonumber(timestamp)) > interval then
+				if difftime(now, tonumber(timestamp)) > oldDuration then
 					timeList[timestamp] = nil
 				end
 			end
@@ -181,15 +232,65 @@ function AskMrRobot.CombatLogTab:StartLogging()
 		end
 	end
 
+	-- same idea with extra info (auras, pets, whatever we end up adding to it)
+	if AmrLogData._currentExtra ~= nil then
+		if not AmrLogData._historyExtra then AmrLogData._historyExtra = {} end
+
+		-- add new entries
+		for name, timeList in AskMrRobot.spairs(AmrLogData._currentExtra) do
+			if not AmrLogData._historyExtra[name] then AmrLogData._historyExtra[name] = {} end
+			for timestamp, dataString in AskMrRobot.spairs(timeList) do
+				AmrLogData._historyExtra[name][timestamp] = dataString
+			end
+		end
+
+		-- delete entries that are more than 10 days old
+		for name, timeList in AskMrRobot.spairs(AmrLogData._historyExtra) do
+			for timestamp, dataString in AskMrRobot.spairs(timeList) do
+				if difftime(now, tonumber(timestamp)) > oldDuration then
+					timeList[timestamp] = nil
+				end
+			end
+			
+			local count = 0
+			for timestamp, dataString in pairs(timeList) do
+				count = count + 1
+			end
+			if count == 0 then
+				AmrLogData._historyExtra[name] = nil
+			end
+		end
+	end
+
+
+	-- delete _wipes entries that are more than 10 days old
+	if AmrLogData._wipes then
+		local i = 1
+		while i <= #AmrLogData._wipes do
+			local t = AmrLogData._wipes[i]
+			if difftime(now, t) > oldDuration then
+		        tremove(AmrLogData._wipes, i)
+		    else
+		        i = i + 1
+		    end
+		end
+	end
+
+	-- delete the _lastWipe if it is more than 10 days old
+	if AmrLogData._lastWipe and difftime(now, AmrLogData._lastWipe) > oldDuration then
+		AmrLogData_lastWipe = nil
+	end
+
 	-- clean up old-style logging data from previous versions of the addon
 	for k, v in AskMrRobot.spairs(AmrLogData) do
-		if k ~= "_logging" and k ~= "_autoLog" and k ~= "_lastZone" and k ~= "_lastDiff" and k ~= "_current2" and k ~= "_history2" then
+		if not _logDataKeys[k] then
 			AmrLogData[k] = nil
 		end
 	end
 
     -- start a new logging session
     AmrLogData._current2 = {}
+	AmrLogData._currentExtra = {}
     AmrLogData._logging = true
     
     -- always enable advanced combat logging via our addon, gathers more detailed data for better analysis
@@ -197,8 +298,10 @@ function AskMrRobot.CombatLogTab:StartLogging()
     
     LoggingCombat(true)
     self:Update()
+
+    AskMrRobot.AmrUpdateMinimap()
     
-    print("You are now logging combat, and Mr. Robot is logging character data for your raid.")
+    print(L.AMR_COMBATLOGTAB_IS_LOGGING)
 end
 
 function AskMrRobot.CombatLogTab:StopLogging()
@@ -206,7 +309,17 @@ function AskMrRobot.CombatLogTab:StopLogging()
     AmrLogData._logging = false
     self:Update()
     
-    print("Combat logging has been stopped.")
+    AskMrRobot.AmrUpdateMinimap()
+    
+    print(L.AMR_COMBATLOGTAB_STOPPED_LOGGING)
+end
+
+function AskMrRobot.CombatLogTab:ToggleLogging()
+	if self:IsLogging() then
+		self:StopLogging()
+	else
+		self:StartLogging()
+	end
 end
 
 -- update the panel and state
@@ -214,12 +327,21 @@ function AskMrRobot.CombatLogTab:Update()
     local isLogging = self:IsLogging()
     
     if isLogging then
-        self.btnStart:Disable()
-        self.btnEnd:Enable()
+    	self.btnStart:SetText(L.AMR_COMBATLOGTAB_STOP_LOGGING)
+    	self.loggingStatus:SetText(L.AMR_COMBATLOGTAB_CURRENTLY_LOGGING)
     else
-        self.btnStart:Enable()
-        self.btnEnd:Disable()
+    	self.btnStart:SetText(L.AMR_COMBATLOGTAB_START_LOGGING)
+    	self.loggingStatus:SetText("")
     end
+
+	if AmrLogData._lastWipe then
+		self.lastWipeLabel:SetText(L.AMR_COMBATLOGTAB_LASTWIPE:format(date('%B %d', AmrLogData._lastWipe), date('%I:%M %p', AmrLogData._lastWipe)))
+		self.btnUnwipe:Show()
+	else
+		self.lastWipeLabel:SetText("")
+		self.btnUnwipe:Hide()
+	end
+
 end
 
 -- called to update logging state when auto-logging is enabled
@@ -258,6 +380,63 @@ function AskMrRobot.CombatLogTab:UpdateAutoLogging()
 
 end
 
+local function RaidChatType()
+	if UnitIsGroupAssistant("player") or UnitIsGroupLeader("player") then
+		return "RAID_WARNING"
+	else
+		return "RAID"
+	end
+end
+
+-- used to store wipes to AmrLogData so that we trim data after the wipe
+function AskMrRobot.CombatLogTab:LogWipe()	
+	local t = time()
+	tinsert(AmrLogData._wipes, t)
+	AmrLogData._lastWipe = t
+
+	if GetNumGroupMembers() > 0 then
+		SendChatMessage(L.AMR_COMBATLOGTAB_WIPE_CHAT, RaidChatType())
+	end
+	print(string.format(L.AMR_COMBATLOGTAB_WIPE_MSG, date('%I:%M %p', t)))
+
+	self:Update()
+	--AskMrRobot.wait(301, AskMrRobot.CombatLogTab.Update, self)
+end
+
+-- used to undo the wipe command
+function AskMrRobot.CombatLogTab:LogUnwipe()
+	local t = AmrLogData._lastWipe
+	if not t then
+		print(L.AMR_COMBATLOGTAB_NOWIPES)
+	else
+		tremove(AmrLogData._wipes)
+		AmrLogData._lastWipe = nil
+		print(string.format(L.AMR_COMBATLOGTAB_UNWIPE_MSG, date('%I:%M %p', t)))
+	end
+	self:Update()
+end
+
+-- initialize the AmrLogData variable
+function AskMrRobot.CombatLogTab.InitializeVariable()
+    if not AmrLogData then AmrLogData = {} end
+	if not AmrLogData._autoLog then AmrLogData._autoLog = {} end
+	if not AmrLogData._autoLog[AskMrRobot.instanceIds.SiegeOfOrgrimmar] then 
+		AmrLogData._autoLog[AskMrRobot.instanceIds.SiegeOfOrgrimmar] = "disabled" 
+	end
+	AmrLogData._wipes = AmrLogData._wipes or {}
+end
+
+function AskMrRobot.CombatLogTab.SaveExtras(data, timestamp)
+
+	for name,val in pairs(data) do
+		-- record aura stuff, we never check for duplicates, need to know it at each point in time
+		if AmrLogData._currentExtra[name] == nil then
+			AmrLogData._currentExtra[name] = {}
+		end
+		AmrLogData._currentExtra[name][timestamp] = val
+	end
+end
+
 -- read a message sent to the addon channel with a player's info at the time an encounter started
 function AskMrRobot.CombatLogTab:ReadAddonMessage(message)
 
@@ -274,7 +453,7 @@ function AskMrRobot.CombatLogTab:ReadAddonMessage(message)
     if (data == "done") then
         -- we have finished receiving this message; now process it to reduce the amount of duplicate data
         local setup = AmrLogData._current2[name][timestamp]
-        
+
         if (AmrLogData._previousSetup == nil) then
             AmrLogData._previousSetup = {}
         end
@@ -288,6 +467,7 @@ function AskMrRobot.CombatLogTab:ReadAddonMessage(message)
             -- record the last-seen setup
             AmrLogData._previousSetup[name] = setup
         end
+
     else
         -- concatenate messages with the same timestamp+name
         if (AmrLogData._current2[name] == nil) then

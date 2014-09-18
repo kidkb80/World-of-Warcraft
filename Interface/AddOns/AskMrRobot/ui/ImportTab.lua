@@ -1,4 +1,5 @@
 local _, AskMrRobot = ...
+local L = AskMrRobot.L;
 
 -- initialize the ImportTab class
 AskMrRobot.ImportTab = AskMrRobot.inheritsFrom(AskMrRobot.Frame)
@@ -14,21 +15,21 @@ function AskMrRobot.ImportTab:new(parent)
 	-- import button
 	tab.button = CreateFrame("Button", "AmrImportButton", tab, "UIPanelButtonTemplate")	
 	tab.button:SetPoint("BOTTOM")
-	tab.button:SetText("Import!")
+	tab.button:SetText(L.AMR_IMPORTTAB_BUTTON)
 	tab.button:SetWidth(100)
 	tab.button:SetHeight(20)
 	tab.button:SetPoint("BOTTOM", 0, 15)
 
 	local text = tab:CreateFontString("AmrImportText1", "ARTWORK", "GameFontNormalLarge")
 	text:SetPoint("TOPLEFT", 0, -5)
-	text:SetFormattedText("Import Mr. Robot's optimizations")
+	text:SetFormattedText(L.AMR_IMPORTTAB_TITLE)
 
 	text = tab:CreateFontString("AmrImportText2", "ARTWORK", "GameFontWhite")
 	text:SetPoint("TOPLEFT", "AmrImportText1", "BOTTOMLEFT", 0, -20)
 	text:SetPoint("RIGHT", 0, -20)
 	text:SetWidth(text:GetWidth())
 	text:SetJustifyH("LEFT")
-	text:SetText("1. Go to our website, optimize, then click the 'export to addon' button found just above the stats section.")
+	text:SetText(L.AMR_IMPORTTAB_INSTRUCTIONS_1)
 
 	local image = tab:CreateTexture(nil, "BACKGROUND")
 	image:SetPoint("TOPLEFT", text, "BOTTOMLEFT", 16, -10)
@@ -40,7 +41,7 @@ function AskMrRobot.ImportTab:new(parent)
 	text:SetPoint("RIGHT", -15, 40)
 	text:SetWidth(text:GetWidth())
 	text:SetJustifyH("LEFT")
-	text:SetText("2. A window will popup, copy the text from that window.\r\r3. Return here and paste the text into the window below. To paste it, hold ctrl + v, or on a mac apple + v.\r\r4. Click the 'Import' button below")
+	text:SetText(L.AMR_IMPORTTAB_INSTRUCTIONS_2)
 
 	local scrollFrame = CreateFrame("ScrollFrame", "AmrImportScrollFrame", tab, "InputScrollFrameTemplate")
 	scrollFrame:SetPoint("TOPLEFT", text, "BOTTOMLEFT", 5, -10)
@@ -50,7 +51,7 @@ function AskMrRobot.ImportTab:new(parent)
 	scrollFrame.EditBox:SetWidth(scrollFrame:GetWidth())
 	scrollFrame.EditBox:SetMaxLetters(1100)
 	scrollFrame.CharCount:Hide()
-	scrollFrame.EditBox.PromptText:SetText("Paste text from AskMrRobot.com here.")
+	scrollFrame.EditBox.PromptText:SetText(L.AMR_IMPORTTAB_INSTRUCTIONS_3)
 	scrollFrame.EditBox:SetFocus()
 	scrollFrame.EditBox:HighlightText()
 	tab.scrollFrame = scrollFrame

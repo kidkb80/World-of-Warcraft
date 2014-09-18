@@ -101,20 +101,22 @@ local function _UpdateEntry(self, entry, team, isScrolling, isActive, isFirst, i
 	entry:SetBackdropBorderColor(unpack(borderColor))
 	
 	for petIndex=1,MAX_ACTIVE_PETS do
-		local petId = team.pets[petIndex].petId
-		local portrait = entry.portraits[petIndex]
-		if (petId and type(petId) == "string") then
-			--local speciesID, customName, level, xp, maxXp, displayID, isFavorite, name, icon, petType, creatureId = C_PetJournal.GetPetInfoByPetID(petId)
-			portrait:UpdateByPetId(petId)
-		end
-		
-		portrait.frame:ClearAllPoints()
-		if (petIndex == 1) then
-			portrait.frame:SetPoint("TOPLEFT", portrait.frame:GetParent(), "TOPLEFT", 60, -26)
-		elseif (isScrolling) then
-			portrait.frame:SetPoint("LEFT", entry.portraits[petIndex - 1].frame, "RIGHT", 15, 0)
-		else
-			portrait.frame:SetPoint("LEFT", entry.portraits[petIndex - 1].frame, "RIGHT", 20, 0)
+		if (team.pets[petIndex]) then
+			local petId = team.pets[petIndex].petId
+			local portrait = entry.portraits[petIndex]
+			if (petId and type(petId) == "string") then
+				--local speciesID, customName, level, xp, maxXp, displayID, isFavorite, name, icon, petType, creatureId = C_PetJournal.GetPetInfoByPetID(petId)
+				portrait:UpdateByPetId(petId)
+			end
+			
+			portrait.frame:ClearAllPoints()
+			if (petIndex == 1) then
+				portrait.frame:SetPoint("TOPLEFT", portrait.frame:GetParent(), "TOPLEFT", 60, -26)
+			elseif (isScrolling) then
+				portrait.frame:SetPoint("LEFT", entry.portraits[petIndex - 1].frame, "RIGHT", 15, 0)
+			else
+				portrait.frame:SetPoint("LEFT", entry.portraits[petIndex - 1].frame, "RIGHT", 20, 0)
+			end
 		end
 	end
 	
@@ -251,7 +253,7 @@ local function _PortraitOnDragStart(frame)
 			local offset = FauxScrollFrame_GetOffset(self.scrollFrame) or 0
 			local team = teams[offset + frame.teamIndex]
 			for i=1,MAX_ACTIVE_PETS do
-				if (team.pets[i].petId == petId) then
+				if (team.pets[i] and team.pets[i].petId == petId) then
 					self.dragAbilities = team.pets[i].abilities
 					break
 				end

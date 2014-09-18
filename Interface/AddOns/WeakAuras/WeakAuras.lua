@@ -248,6 +248,7 @@ local blockedFunctions = {
   getfenv = true,
   setfenv = true,
   loadstring = true,
+  pcall = true,
   -- blocked WoW API
   SendMail = true,
   SetTradeMoney = true,
@@ -267,20 +268,21 @@ local exec_env = setmetatable({}, { __index =
 
 local function_cache = {};
 function WeakAuras.LoadFunction(string)
-  if(function_cache[string]) then  return function_cache[string];
+  if function_cache[string] then
+    return function_cache[string]
   else
-  local func;
-  local loadedFunction, errorString = loadstring(string);
-  if(errorString) then
-    print(errorString);
-  else
-    func = assert(loadedFunction)();
-    if func then
-      setfenv(func, exec_env)
+    local loadedFunction, errorString = loadstring(string)
+    if errorString then
+      print(errorString)
+    else
+      setfenv(loadedFunction, exec_env)
+      local success, func = pcall(assert(loadedFunction))
+      if success then
+        function_cache[string] = func
+        return func
+      end
     end
-    function_cache[string] = func;
   end
-  return func;  end
 end
 
 local aura_cache = {};
@@ -1975,6 +1977,10 @@ function WeakAuras.EndEvent(id, triggernum, force)
 end
 
 function WeakAuras.ScanForLoads(self, event, arg1)
+  -- PET_BATTLE_CLOSE fires twice at the end of a pet battle. IsInBattle evaluates to TRUE during the
+  -- first firing, and FALSE during the second. I am not sure if this check is necessary, but the
+  -- following IF statement limits the impact of the PET_BATTLE_CLOSE event to the second one.
+  if (event == "PET_BATTLE_CLOSE" and C_PetBattles.IsInBattle()) then return end
   if(event == "PLAYER_LEVEL_UP") then
     playerLevel = arg1;
   end
@@ -2003,6 +2009,7 @@ function WeakAuras.ScanForLoads(self, event, arg1)
   local inInstance, Type = IsInInstance()
   local _, size, difficulty, instanceType, difficultyIndex;
   local incombat = UnitAffectingCombat("player") -- or UnitAffectingCombat("pet"); 
+  local inpetbattle = C_PetBattles.IsInBattle()
   if (inInstance) then
     _, instanceType, difficultyIndex = GetInstanceInfo();
     size = Type
@@ -2061,8 +2068,8 @@ function WeakAuras.ScanForLoads(self, event, arg1)
   local shouldBeLoaded, couldBeLoaded;
   for id, triggers in pairs(auras) do
   local _, data = next(triggers);
-  shouldBeLoaded = data.load and data.load("ScanForLoads_Auras", incombat, player, class, spec, playerLevel, zone, size, difficulty, role);
-  couldBeLoaded = data.load and data.load("ScanForLoads_Auras", true, player, class, spec, playerLevel, zone, size, difficulty, role);
+  shouldBeLoaded = data.load and data.load("ScanForLoads_Auras", incombat, inpetbattle, player, class, spec, playerLevel, zone, size, difficulty, role);
+  couldBeLoaded = data.load and data.load("ScanForLoads_Auras", true, true, player, class, spec, playerLevel, zone, size, difficulty, role);
   if(shouldBeLoaded and not loaded[id]) then
     WeakAuras.LoadDisplay(id);
     changed = changed + 1;
@@ -2087,8 +2094,8 @@ function WeakAuras.ScanForLoads(self, event, arg1)
   end
   for id, triggers in pairs(events) do
   local _, data = next(triggers);
-  shouldBeLoaded = data.load and data.load("ScanForLoads_Events", incombat, player, class, spec, playerLevel, zone, size, difficulty, role);
-  couldBeLoaded = data.load and data.load("ScanForLoads_Auras", true, player, class, spec, playerLevel, zone, size, difficulty, role);
+  shouldBeLoaded = data.load and data.load("ScanForLoads_Events", incombat, inpetbattle, player, class, spec, playerLevel, zone, size, difficulty, role);
+  couldBeLoaded = data.load and data.load("ScanForLoads_Events", true, true, player, class, spec, playerLevel, zone, size, difficulty, role);
   if(shouldBeLoaded and not loaded[id]) then
     WeakAuras.LoadDisplay(id);
     changed = changed + 1;
@@ -2362,7 +2369,11 @@ function WeakAuras.ScanAuras(unit)
         tooltip = current_aura.tooltip;
         debuffClass = current_aura.debuffClass;
         tooltipSize = current_aura.tooltipSize;
-        unitCaster = current_aura.unitCaster
+        if unitCaster ~= nil then
+          unitCaster = current_aura.unitCaster
+        else 
+          unitCaster = "Unknown"
+        end
         end
         
         local casGUID = unitCaster and UnitGUID(unitCaster);
@@ -4791,7 +4802,13 @@ function WeakAuras.GetAuraTooltipInfo(unit, index, filter)
   end
   local tooltipSize,_;
   if(tooltipText) then
-  _, _, tooltipSize = tooltipText:find("(%d+)")
+    local n2
+    _, _, tooltipSize, n2 = tooltipText:find("(%d+),(%d%d%d)")  -- Blizzard likes american digit grouping, e.g. "9123="9,123"   /mikk
+  if tooltipSize then
+    tooltipSize = tooltipSize..n2
+  else
+    _, _, tooltipSize = tooltipText:find("(%d+)")
+  end
   end
   return tooltipText, debuffType, tonumber(tooltipSize) or 0;
 end
@@ -5041,20 +5058,20 @@ end
 
 -- Remove GTFO options if GTFO isn't enabled and there are no saved GTFO auras
 function WeakAuras.RemoveGTFO()
-	if not (WeakAuras.loaded_events["GTFO_DISPLAY"] or (GTFO and GTFO.VersionNumber and tonumber(GTFO.VersionNumber) >= 42000)) then
-		for id, data in pairs(db.displays) do
-			if (data.trigger.event == "GTFO") then
-				return;
-			end
-			if (data.numTriggers > 1) then
-				for i, trigger in pairs(data.additional_triggers) do
-					if (trigger.trigger.event == "GTFO") then
-						return;
-					end
-				end
-			end
-		end
-		
-		WeakAuras.event_types["GTFO"] = nil;
-	end
+  if not (WeakAuras.loaded_events["GTFO_DISPLAY"] or (GTFO and GTFO.VersionNumber and tonumber(GTFO.VersionNumber) >= 42000)) then
+    for id, data in pairs(db.displays) do
+      if (data.trigger.event == "GTFO") then
+        return;
+      end
+      if (data.numTriggers > 1) then
+        for i, trigger in pairs(data.additional_triggers) do
+          if (trigger.trigger.event == "GTFO") then
+            return;
+          end
+        end
+      end
+    end
+    
+    WeakAuras.event_types["GTFO"] = nil;
+  end
 end

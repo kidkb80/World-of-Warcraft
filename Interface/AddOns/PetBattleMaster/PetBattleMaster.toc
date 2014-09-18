@@ -6,7 +6,7 @@
 ## SavedVariables: PetBattleMasterDb
 ## DefaultState: enabled
 ## Dependancies:
-## Version: 1.11.0
+## Version: 1.11.3
 ## X-Feedback: http://www.curse.com/addons/wow/petbattlemaster
 ## Dependencies: Blizzard_PetJournal
 ## OptionalDeps: PetTracker 

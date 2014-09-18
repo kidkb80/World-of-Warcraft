@@ -4,8 +4,8 @@ Mob.lua
 ************************************************************************
 File date: 2014-06-01T11:05:05Z
 File hash: e47ff84
-Project hash: 3906af6
-Project version: 3.0.2
+Project hash: 5b35dab
+Project version: 3.0.5
 ************************************************************************
 Please see http://www.wowace.com/addons/arl/ for more information.
 ************************************************************************

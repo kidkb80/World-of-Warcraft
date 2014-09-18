@@ -1,3 +1,42 @@
+[b]1.11[/b] (Sep 01, 2014)
+
+*Removed Skada AddOnSkins settings from the installer. Was causing issues on some profiles. BenikUI will style any Skada window but it won't apply any premade settings, like Embeds, fonts, bars.
+
+[b]1.10[/b] (Sep 01, 2014)
+
+*Added a new feature: Attach Castbar on the EmptyBars. Credits: Blazeflack, with his permission, based in his addon ElvUI_CastBarPowerOverlay (http://www.tukui.org/addons/index.php?act=view&id=62).
+*Moved all BenikUI Unitframe options from ElvUI Unitframes options, to their own tab.
+*During the Install, the default ElvUI chat frame Loot/Trade is moved to the left chat panel, so that any Damage meter can sit freely on the right chat panel. If the chat frame is already renamed by the user, then it has to be moved manually.
+*The last install step is now called "Addons". Amongst other things, it creates a Recount profile called "BenikUI" and adjust it's looks to fit with BenikUI. (AddOnSkins addon required).
+*Now the Player name will also hide when mouseovering the EmptyBar to show XP or Rep.
+*Minor fixes and adjustments.
+
+[b]1.09[/b] (Aug 23, 2014)
+
+*Prevented a lua error in case AddOnSkins addon is not loaded. 
+*Changed the way AddOnSkins and BenikUI interact with eachother.
+*Added BenikUI Style in Azilroka's Square Minimap Buttons addon.
+*Added options to enable/disable BenikUI style on ElvUI addons (like S&L, LocationPlus, etc) and any addon skinned by AddOnSkins and gets styled from BenikUI. (requires reload)
+
+[b]1.08[/b] (Aug 21, 2014)
+
+*Adopted latest Azilroka's AddonSkins changes. Fixed Recount Decor.
+*Added the ability to use different texture on unit power bars (Unitframe options).
+*All new BenikUI features are now marked with a yellow "!".
+
+[b]1.07[/b] (Aug 16, 2014)
+
+*Added the ElvUI_BenikUI_Fonts folder missing from v1.06.
+
+[b]1.06[/b] (Aug 16, 2014)
+
+*Fixed the portrait issue with druid, mage, warlock or priest. All player portraits should detach now.
+*Added option to change BenikUI XP and Rep bars colors.
+*Added option to change the Dashboards fonts.
+*Fixed a possible lua error when styling the bank frame.
+*Fixed a possible lua error during the install.
+*Styled the Copy Chat frame.
+
 [b]1.05[/b] (May 21, 2014)
 
 *Added an option that can show/hide the mail icon from the minimap (requires a reloadui).
@@ -99,8 +138,9 @@ TODO: Auras status bars; ain't working as intended.
 
 *Renamed the Mail datatext to BuiMail, so it doesn't conflict or show as duplicate, if another addon adds a similar datatext.
 
-[b]0.42beta
-[/b] (Apr 2, 2014)
+
+
+[b]0.42beta[/b] (Apr 2, 2014)
 
 *Added 3 color themes plus the default ElvUI. 'Diablo' (dark red), 'Mists' (dark green), 'Hearthstone' (dark blue). Available in BenikUI options or in the install (step 3).
 
@@ -183,6 +223,8 @@ TODO: Auras status bars; ain't working as intended.
 *Disabled the Auras UpdateHeader function edit (for smaller aura icons height). Isn't updating..
 
 *Minor file cleanup.
+
+
 
 [b]0.25beta[/b] (Mar 21, 2014)
 

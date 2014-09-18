@@ -6,7 +6,7 @@ deDE localization strings for Ackis Recipe List
 File date: 2012-08-18T04:52:05Z 
 File revision: @file-revision@ 
 Project revision: @project-revision@
-Project version: 3.0.2
+Project version: 3.0.5
 ************************************************************************
 Original translated by: Winkiller, Dessa
 Currently maintained by:
@@ -883,6 +883,7 @@ L["Mob Drop"] = true
 L["MOB_DROP_DESC"] = "Rezepte, welche Mob Drops sind, sollen im Scan angezeigt werden."
 L["Mobus"] = true
 L["Modoru"] = true
+L["MODULE_ERROR_FORMAT"] = "Das \"Ackis Recipe List: %s\" AddOn wurde nicht geladen. Entweder ist es nicht installiert oder deaktiviert."
 L["Molt Thorn"] = "Moosbart"
 L["Moonrage Tailor"] = "Schneider des Mondzorns"
 L["Moordo"] = true

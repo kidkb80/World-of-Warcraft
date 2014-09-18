@@ -398,7 +398,6 @@
        </Scripts>
 </Frame>
 
-
 	<Button name="OQ_MinimapButton" parent="Minimap" enableMouse="true" movable="true" hidden="true">
 		<Size>
 			<AbsDimension x="32" y="32"/>

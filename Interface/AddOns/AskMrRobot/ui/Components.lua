@@ -8,7 +8,7 @@ function AskMrRobot.inheritsFrom( baseClass )
     -- The following lines are equivalent to the SimpleClass example:
 
     -- Create the table and metatable representing the class.
-    local new_class = {}
+    local new_class = { }
 
     -- Note that this function uses class_mt as an upvalue, so every instance
     -- of the class will share the same metatable.
@@ -130,33 +130,4 @@ for slotNum = 1, #AskMrRobot.slotNames do
 		AskMrRobot.sortedSlots[slotNum] = i
 		i = i + 1
 	end
-end
-
-
--- initialize the Frame class (inherit from a dummy frame)
-AskMrRobot.FontString = AskMrRobot.inheritsFrom(AskMrRobot.Frame:new():CreateFontString(nil, "ARTWORK", "GameFontNormal"))
-
--- Frame contructor
-function AskMrRobot.FontString:new(parentFrame, name, layer, style, fontSize)
-
-	local o = parentFrame:CreateFontString(name, layer, style)	-- create a new frame (if one isn't supplied)
-
-	-- use the fontstring class
-	setmetatable(o, { __index = AskMrRobot.FontString })
-
-	if fontSize then
-		o:SetFontSize(fontSize)
-	end
-
-	return o
-end
-
-function AskMrRobot.FontString:SetFontSize(fontSize)
-	local file, _, flags = self:GetFont()
-	self:SetFont(file, fontSize, flags)
-end
-
-function AskMrRobot.SetFontSize(fontString, fontSize)
-	local file, _, flags = fontString:GetFont()
-	fontString:SetFont(file, fontSize, flags)
 end

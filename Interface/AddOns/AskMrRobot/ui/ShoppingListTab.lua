@@ -1,11 +1,12 @@
 local _, AskMrRobot = ...
+local L = AskMrRobot.L;
 
 -- initialize the ShoppingListTab class
 AskMrRobot.ShoppingListTab = AskMrRobot.inheritsFrom(AskMrRobot.Frame)
 
 StaticPopupDialogs["SHOPPING_TAB_PLEASE_OPEN"] = {
-	text = "You need to open the mail window for this to work",
-	button1 = "Ok",
+	text = L.AMR_SHOPPINGLISTTAB_OPEN_MAIL,
+	button1 = L.AMR_SHOPPINGLISTTAB_BUTTON_OK,
 	timeout = 0,
 	whileDead = true,
 	hideOnEscape = true,
@@ -32,7 +33,7 @@ function AskMrRobot.ShoppingListTab:new(parent)
 
 	tab.shoppingListHeader = AskMrRobot.FontString:new(tab, nil, "ARTWORK", "GameFontNormalLarge")
 	tab.shoppingListHeader:SetPoint("TOPLEFT", 0, -5)
-	tab.shoppingListHeader:SetText("Shopping List")
+	tab.shoppingListHeader:SetText(L.AMR_SHOPPINGLISTTAB_TITLE)
 
 	tab.shoppingPanel = AskMrRobot.Frame:new(nil, tab)
 	tab.shoppingPanel:SetPoint("TOPLEFT", tab.shoppingListHeader, "BOTTOMLEFT", 0, -10)
@@ -40,7 +41,7 @@ function AskMrRobot.ShoppingListTab:new(parent)
 
 
 	tab.sendButton = CreateFrame("Button", "AmrSendButton", tab.shoppingPanel, "UIPanelButtonTemplate")
-	tab.sendButton:SetText("send it!")
+	tab.sendButton:SetText(L.AMR_SHOPPINGLISTTAB_BUTTON_SEND)
 	tab.sendButton:SetPoint("BOTTOMLEFT", 0, 0)
 	tab.sendButton:SetHeight(25)
 	tab.sendButton:SetNormalFontObject("GameFontNormalLarge")
@@ -56,7 +57,7 @@ function AskMrRobot.ShoppingListTab:new(parent)
 	tab.enchantMaterialsCheckbox:SetPoint("TOPLEFT", tab.sendButton, "TOPLEFT", 0, 25)
 	local text3 = getglobal(tab.enchantMaterialsCheckbox:GetName() .. 'Text')
 	text3:SetFontObject("GameFontHighlightLarge")
-	text3:SetText("Enchant Materials")
+	text3:SetText(L.AMR_SHOPPINGLISTTAB_ENCHANT_MATERIALS)
 	text3:SetWidth(150)
 	text3:SetPoint("TOPLEFT", tab.enchantMaterialsCheckbox, "TOPRIGHT", 2, -4)
 
@@ -67,7 +68,7 @@ function AskMrRobot.ShoppingListTab:new(parent)
 	tab.enchantsCheckbox:SetPoint("TOPLEFT", tab.sendButton, "TOPLEFT", 0, 50)
 	local text2 = getglobal(tab.enchantsCheckbox:GetName() .. 'Text')
 	text2:SetFontObject("GameFontHighlightLarge")
-	text2:SetText("Enchants")
+	text2:SetText(L.AMR_SHOPPINGLISTTAB_ENCHANTS)
 	text2:SetWidth(150)
 	text2:SetPoint("TOPLEFT", tab.enchantsCheckbox, "TOPRIGHT", 2, -4)
 
@@ -79,30 +80,30 @@ function AskMrRobot.ShoppingListTab:new(parent)
 	tab.gemsCheckbox:SetScript("OnClick", function () AmrSendSettings.SendGems = tab.gemsCheckbox:GetChecked() end)
 	local text = getglobal(tab.gemsCheckbox:GetName() .. 'Text')
 	text:SetFontObject("GameFontHighlightLarge")
-	text:SetText("Gems")
+	text:SetText(L.AMR_SHOPPINGLISTTAB_GEMS)
 	text:SetWidth(150)
 	text:SetPoint("TOPLEFT", tab.gemsCheckbox, "TOPRIGHT", 2, -4)
 
 
 	tab.sendMessage4 = AskMrRobot.FontString:new(tab.shoppingPanel, nil, "ARTWORK", "GameFontHighlightLarge")
-	tab.sendMessage4:SetText("Include:")
+	tab.sendMessage4:SetText(L.AMR_SHOPPINGLISTTAB_INCLUDE)
 	tab.sendMessage4:SetPoint("TOPLEFT", tab.gemsCheckbox, "TOPLEFT", 0, 20)
 
 
 	tab.sendMessage3 = AskMrRobot.FontString:new(tab.shoppingPanel, nil, "ARTWORK", "GameFontHighlightLarge")
-	tab.sendMessage3:SetText("Send list to")
+	tab.sendMessage3:SetText(L.AMR_SHOPPINGLISTTAB_SEND_LIST_TO)
 	tab.sendMessage3:SetPoint("TOPLEFT", tab.sendMessage4, "TOPLEFT", 0, 25)
 
 
 	tab.sendMessage2 = AskMrRobot.FontString:new(tab.shoppingPanel, nil, "ARTWORK", "GameFontNormal")
 	tab.sendMessage2:SetTextColor(.5,.5,.5)
-	tab.sendMessage2:SetText("Whisper to a friend or send to a channel, like /raid or /guild.")
+	tab.sendMessage2:SetText(L.AMR_SHOPPINGLISTTAB_WHISPER_CHANNEL)
 	tab.sendMessage2:SetPoint("TOPLEFT", tab.sendMessage3, "TOPLEFT", 0, 25)
 
 
 	tab.sendMessage1 = AskMrRobot.FontString:new(tab.shoppingPanel, nil, "ARTWORK", "GameFontNormalLarge")
 	tab.sendMessage1:SetTextColor(0,1,0)
-	tab.sendMessage1:SetText("Send to a Jewelcraft or Enchanter friend :)")
+	tab.sendMessage1:SetText(L.AMR_SHOPPINGLISTTAB_SEND_JEWELCRAFT_ENCHANTER)
 	tab.sendMessage1:SetPoint("TOPLEFT", tab.sendMessage2, "TOPLEFT", 0, 25)
 
 
@@ -123,31 +124,31 @@ function AskMrRobot.ShoppingListTab:new(parent)
 	end)
 
 	tab.gemsHeader = AskMrRobot.FontString:new(tab.scrollParent, nil, "ARTWORK", "GameFontNormalLarge")
-	tab.gemsHeader:SetText("Gems")
+	tab.gemsHeader:SetText(L.AMR_SHOPPINGLISTTAB_GEMS)
 	tab.gemsHeader:SetPoint("TOPLEFT", tab.scrollParent, "TOPLEFT", 0, 0)
 
 	tab.gemsQuantityHeader = AskMrRobot.FontString:new(tab.scrollParent, nil, "ARTWORK", "GameFontNormalLarge")
-	tab.gemsQuantityHeader:SetText("Total")
+	tab.gemsQuantityHeader:SetText(L.AMR_SHOPPINGLISTTAB_TOTAL)
 	tab.gemsQuantityHeader:SetPoint("TOPLEFT", tab.scrollParent, "TOPLEFT", 370, 0)
 
 	tab.enchantsHeader = AskMrRobot.FontString:new(tab.scrollParent, nil, "ARTWORK", "GameFontNormalLarge")
-	tab.enchantsHeader:SetText("Enchants")
+	tab.enchantsHeader:SetText(L.AMR_SHOPPINGLISTTAB_ENCHANTS)
 
 	tab.enchantsQuantityHeader = AskMrRobot.FontString:new(tab.scrollParent, nil, "ARTWORK", "GameFontNormalLarge")
-	tab.enchantsQuantityHeader:SetText("Total")
+	tab.enchantsQuantityHeader:SetText(L.AMR_SHOPPINGLISTTAB_TOTAL)
 	tab.enchantsQuantityHeader:SetPoint("TOPLEFT", tab.enchantsHeader, "TOPLEFT", 370, 0)
 
 	tab.enchantMaterialsHeader = AskMrRobot.FontString:new(tab.scrollParent, nil, "ARTWORK", "GameFontNormalLarge")
-	tab.enchantMaterialsHeader:SetText("Enchant Materials")
+	tab.enchantMaterialsHeader:SetText(L.AMR_SHOPPINGLISTTAB_ENCHANT_MATERIALS)
 
 	tab.enchantMaterialsQuantityHeader = AskMrRobot.FontString:new(tab.scrollParent, nil, "ARTWORK", "GameFontNormalLarge")
-	tab.enchantMaterialsQuantityHeader:SetText("Total")
+	tab.enchantMaterialsQuantityHeader:SetText(L.AMR_SHOPPINGLISTTAB_TOTAL)
 	tab.enchantMaterialsQuantityHeader:SetPoint("TOPLEFT", tab.enchantMaterialsHeader, "TOPLEFT", 370, 0)
 
 	tab.stamp = AskMrRobot.RobotStamp:new(nil, tab)
 	tab.stamp:Hide()
-	tab.stamp.bigText:SetText("YOUR SHOPPING IS ALL DONE!")
-	tab.stamp.smallText:SetText("Unless you want to buy me a birthday present! I like titanium bolts and robot dogs... Or was it titanium dogs and robot bolts...")
+	tab.stamp.bigText:SetText(L.AMR_SHOPPINGLISTTAB_DONE)
+	tab.stamp.smallText:SetText(L.AMR_SHOPPINGLISTTAB_A_ROBOTS_WISHLIST)
 	tab.stamp:SetPoint("TOPLEFT", tab.shoppingListHeader, "BOTTOMLEFT", 2, -15)
 	tab.stamp:SetPoint("RIGHT", tab, "RIGHT", -30, 0)
 	tab.stamp:SetHeight(92)
@@ -186,12 +187,12 @@ function AskMrRobot.ShoppingListTab:new(parent)
 
 	-- Create and bind the initialization function to the dropdown menu
 	UIDropDownMenu_Initialize(tab.dropDown, function(self, level, menuList)
-	 UIDropDownMenu_AddButton(AddButton(self, "a friend"))
-	 UIDropDownMenu_AddButton(AddButton(self, "party"))
-	 UIDropDownMenu_AddButton(AddButton(self, "raid"))
-	 UIDropDownMenu_AddButton(AddButton(self, "guild"))
-	 UIDropDownMenu_AddButton(AddButton(self, "channel"))
-	 UIDropDownMenu_AddButton(AddButton(self, "mail"))
+	 UIDropDownMenu_AddButton(AddButton(self, L.AMR_SHOPPINGLISTTAB_DROPDOWN_FRIEND))
+	 UIDropDownMenu_AddButton(AddButton(self, L.AMR_SHOPPINGLISTTAB_DROPDOWN_PARTY))
+	 UIDropDownMenu_AddButton(AddButton(self, L.AMR_SHOPPINGLISTTAB_DROPDOWN_RAID))
+	 UIDropDownMenu_AddButton(AddButton(self, L.AMR_SHOPPINGLISTTAB_DROPDOWN_GUILD))
+	 UIDropDownMenu_AddButton(AddButton(self, L.AMR_SHOPPINGLISTTAB_DROPDOWN_CHANNEL))
+	 UIDropDownMenu_AddButton(AddButton(self, L.AMR_SHOPPINGLISTTAB_DROPDOWN_MAIL))
 	end)
 
 	function tab.dropDown:SetValue(newValue)
@@ -778,7 +779,7 @@ function AskMrRobot.ShoppingListTab:sendMail()
 		return
 	end
 
-	local message = "Mr. Robot says I need the following to optimize my gear:\n"
+	local message = L.AMR_SHOPPINGLISTTAB_MAIL_ROBOT_MESSAGE
 
 	local gemList, enchantList, enchantMaterials = self:CalculateItems()
 
@@ -824,12 +825,12 @@ function AskMrRobot.ShoppingListTab:sendMail()
 	MailFrameTab_OnClick(nil, 2)
 	if AmrSendSettings.SendGems then
 		if AmrSendSettings.SendEnchants then
-			SendMailSubjectEditBox:SetText('Request for gems and enchants')
+			SendMailSubjectEditBox:SetText(L.AMR_SHOPPINGLISTTAB_MAIL_SUBJECT_GE)
 		else
-			SendMailSubjectEditBox:SetText('Request for gems')
+			SendMailSubjectEditBox:SetText(L.AMR_SHOPPINGLISTTAB_MAIL_SUBJECT_G)
 		end
 	else
-		SendMailSubjectEditBox:SetText('Request for enchants')
+		SendMailSubjectEditBox:SetText(L.AMR_SHOPPINGLISTTAB_MAIL_SUBJECT_E)
 	end
 	SendMailNameEditBox:SetText(AmrSendSettings.SendTo)
 	SendMailBodyEditBox:SetText(message)
@@ -837,22 +838,22 @@ end
 
 function AskMrRobot.ShoppingListTab:Send()	
 	local chatType = nil
-	if AmrSendSettings.SendToType == "party" then
+	if AmrSendSettings.SendToType == L.AMR_SHOPPINGLISTTAB_DROPDOWN_PARTY then
 		chatType = "PARTY"
-	elseif AmrSendSettings.SendToType == "guild" then
+	elseif AmrSendSettings.SendToType == L.AMR_SHOPPINGLISTTAB_DROPDOWN_GUILD then
 		chatType = "GUILD"
-	elseif AmrSendSettings.SendToType == "raid" then
+	elseif AmrSendSettings.SendToType == L.AMR_SHOPPINGLISTTAB_DROPDOWN_RAID then
 		chatType = "RAID"
-	elseif AmrSendSettings.SendToType == "channel" then
+	elseif AmrSendSettings.SendToType == L.AMR_SHOPPINGLISTTAB_DROPDOWN_CHANNEL then
 		chatType = "CHANNEL"
-	elseif AmrSendSettings.SendToType == "mail" then
+	elseif AmrSendSettings.SendToType == L.AMR_SHOPPINGLISTTAB_DROPDOWN_MAIL then
 		self:sendMail()
 		return
 	else
 		chatType = "WHISPER"
 	end
 
-	local message = "Mr. Robot says I need"
+	local message = L.AMR_SHOPPINGLISTTAB_CHAT_ROBOT_MESSAGE
 	local count = 0
 
 
@@ -896,7 +897,7 @@ function AskMrRobot.ShoppingListTab:Send()
 			if count == 2 then
 				tinsert(self.messageQueue, {message = message, chatType = chatType, chatChannel = AmrSendSettings.SendTo})
 				count = 0
-				message = "Mr. Robot says I need"
+				message = L.AMR_SHOPPINGLISTTAB_CHAT_ROBOT_MESSAGE
 			end
 		end
 	end
