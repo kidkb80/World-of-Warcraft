@@ -1,6 +1,5 @@
 
 BPBID_Options = {
-	["ManualChange"] = "1.1.1b",
 	["Breedtip"] = {
 		["CurrentStats25"] = 1,
 		["Current"] = 1,
@@ -10,6 +9,7 @@ BPBID_Options = {
 		["AllStats25"] = 1,
 	},
 	["format"] = 3,
+	["ManualChange"] = "1.1.1b",
 	["Tooltips"] = {
 		["Enabled"] = 1,
 		["FBPT"] = 1,
@@ -22,8 +22,8 @@ BPBID_Options = {
 		["FBPT"] = 1,
 		["PJT"] = 1,
 		["PrimaryBattle"] = 1,
-		["BPT"] = 1,
 		["HSFUpdate"] = 1,
+		["BPT"] = 1,
 		["BattleTooltip"] = 1,
 	},
 }

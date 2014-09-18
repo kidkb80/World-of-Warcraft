@@ -109,6 +109,17 @@ PitBull4DB = {
 									["location"] = "center",
 									["attach_to"] = "Eclipse",
 								},
+								["Lua:Reputation"] = {
+									["enabled"] = false,
+									["exists"] = true,
+									["events"] = {
+										["UNIT_FACTION"] = true,
+										["UPDATE_FACTION"] = true,
+									},
+									["code"] = "local name, _, min , max, value, id = GetWatchedFactionInfo()\nif IsMouseOver() then\n  return name or ConfigMode() \nelse\n  local fs_id, fs_rep, _, _, _, _, _, fs_threshold, next_fs_threshold = GetFriendshipReputation(id)\n  if fs_id then\n    if next_fs_threshold then\n      min, max, value = fs_threshold, next_fs_threshold, fs_rep\n    else\n      min, max, value = 0, 1, 1\n    end\n  end\n  local bar_cur,bar_max = value-min,max-min\n  return \"%d/%d (%s%%)\",bar_cur,bar_max,Percent(bar_cur,bar_max)\nend",
+									["location"] = "center",
+									["attach_to"] = "ReputationBar",
+								},
 								["Lua:Name"] = {
 									["events"] = {
 										["PLAYER_FLAGS_CHANGED"] = true,
@@ -120,27 +131,16 @@ PitBull4DB = {
 									["attach_to"] = "HealthBar",
 									["size"] = 1.15,
 								},
-								["Lua:Druid mana"] = {
+								["Lua:Experience"] = {
 									["enabled"] = false,
 									["exists"] = true,
 									["events"] = {
-										["UNIT_POWER"] = true,
-										["UNIT_MAXPOWER"] = true,
+										["UNIT_PET_EXPERIENCE"] = true,
+										["PLAYER_XP_UPDATE"] = true,
 									},
-									["code"] = "if UnitPowerType(unit) ~= 0 then\n  return \"%s/%s\",Power(unit,0),MaxPower(unit,0)\nend",
+									["code"] = "local cur, max, rest = XP(unit), MaxXP(unit), RestXP(unit)\nif rest then\n  return \"%s/%s (%s%%) R: %s%%\",cur,max,Percent(cur,max),Percent(rest,max)\nelse\n  return \"%s/%s (%s%%)\",cur,max,Percent(cur,max)\nend",
 									["location"] = "center",
-									["attach_to"] = "DruidManaBar",
-								},
-								["Lua:Reputation"] = {
-									["enabled"] = false,
-									["exists"] = true,
-									["events"] = {
-										["UNIT_FACTION"] = true,
-										["UPDATE_FACTION"] = true,
-									},
-									["code"] = "local name, _, min , max, value, id = GetWatchedFactionInfo()\nif IsMouseOver() then\n  return name or ConfigMode() \nelse\n  local fs_id, fs_rep, _, _, _, _, _, fs_threshold, next_fs_threshold = GetFriendshipReputation(id)\n  if fs_id then\n    if next_fs_threshold then\n      min, max, value = fs_threshold, next_fs_threshold, fs_rep\n    else\n      min, max, value = 0, 1, 1\n    end\n  end\n  local bar_cur,bar_max = value-min,max-min\n  return \"%d/%d (%s%%)\",bar_cur,bar_max,Percent(bar_cur,bar_max)\nend",
-									["location"] = "center",
-									["attach_to"] = "ReputationBar",
+									["attach_to"] = "ExperienceBar",
 								},
 								["Lua:Power"] = {
 									["exists"] = true,
@@ -254,16 +254,16 @@ PitBull4DB = {
 									["attach_to"] = "PowerBar",
 									["size"] = 0.85,
 								},
-								["Lua:Experience"] = {
+								["Lua:Druid mana"] = {
 									["enabled"] = false,
 									["exists"] = true,
 									["events"] = {
-										["UNIT_PET_EXPERIENCE"] = true,
-										["PLAYER_XP_UPDATE"] = true,
+										["UNIT_POWER"] = true,
+										["UNIT_MAXPOWER"] = true,
 									},
-									["code"] = "local cur, max, rest = XP(unit), MaxXP(unit), RestXP(unit)\nif rest then\n  return \"%s/%s (%s%%) R: %s%%\",cur,max,Percent(cur,max),Percent(rest,max)\nelse\n  return \"%s/%s (%s%%)\",cur,max,Percent(cur,max)\nend",
+									["code"] = "if UnitPowerType(unit) ~= 0 then\n  return \"%s/%s\",Power(unit,0),MaxPower(unit,0)\nend",
 									["location"] = "center",
-									["attach_to"] = "ExperienceBar",
+									["attach_to"] = "DruidManaBar",
 								},
 								["Lua:Demonic fury"] = {
 									["enabled"] = false,
@@ -488,17 +488,6 @@ PitBull4DB = {
 									["location"] = "center",
 									["attach_to"] = "Eclipse",
 								},
-								["Lua:Druid mana"] = {
-									["enabled"] = false,
-									["events"] = {
-										["UNIT_MAXPOWER"] = true,
-										["UNIT_POWER"] = true,
-									},
-									["exists"] = true,
-									["code"] = "if UnitPowerType(unit) ~= 0 then\n  return \"%s/%s\",Power(unit,0),MaxPower(unit,0)\nend",
-									["location"] = "center",
-									["attach_to"] = "DruidManaBar",
-								},
 								["Lua:Experience"] = {
 									["enabled"] = false,
 									["events"] = {
@@ -509,6 +498,17 @@ PitBull4DB = {
 									["code"] = "local cur, max, rest = XP(unit), MaxXP(unit), RestXP(unit)\nif rest then\n  return \"%s/%s (%s%%) R: %s%%\",cur,max,Percent(cur,max),Percent(rest,max)\nelse\n  return \"%s/%s (%s%%)\",cur,max,Percent(cur,max)\nend",
 									["location"] = "center",
 									["attach_to"] = "ExperienceBar",
+								},
+								["Lua:Druid mana"] = {
+									["enabled"] = false,
+									["events"] = {
+										["UNIT_MAXPOWER"] = true,
+										["UNIT_POWER"] = true,
+									},
+									["exists"] = true,
+									["code"] = "if UnitPowerType(unit) ~= 0 then\n  return \"%s/%s\",Power(unit,0),MaxPower(unit,0)\nend",
+									["location"] = "center",
+									["attach_to"] = "DruidManaBar",
 								},
 								["Lua:Reputation"] = {
 									["enabled"] = false,
@@ -812,9 +812,14 @@ PitBull4DB = {
 				},
 			},
 		},
-		["ReputationBar"] = {
+		["RestIcon"] = {
 			["profiles"] = {
 				["Default"] = {
+					["layouts"] = {
+						["Tiny"] = {
+							["position"] = 14,
+						},
+					},
 					["global"] = {
 						["enabled"] = false,
 					},
@@ -900,14 +905,9 @@ PitBull4DB = {
 				},
 			},
 		},
-		["RestIcon"] = {
+		["ReputationBar"] = {
 			["profiles"] = {
 				["Default"] = {
-					["layouts"] = {
-						["Tiny"] = {
-							["position"] = 14,
-						},
-					},
 					["global"] = {
 						["enabled"] = false,
 					},
@@ -1276,33 +1276,33 @@ PitBull4DB = {
 				["focustarget"] = {
 					["horizontal_mirror"] = true,
 					["layout"] = "Tiny",
-					["position_y"] = -299.9993591308594,
-					["position_x"] = 237.9998168945313,
+					["position_y"] = -420.9994964599609,
+					["position_x"] = 221.9999389648438,
 				},
 				["pet"] = {
-					["position_x"] = 15.99945068359375,
-					["position_y"] = -373.0000610351563,
+					["position_x"] = 1.99945068359375,
+					["position_y"] = -489.0000686645508,
 					["layout"] = "Box",
 				},
 				["player"] = {
-					["position_x"] = -168.000244140625,
-					["position_y"] = -352.0000915527344,
+					["position_x"] = -180.0004272460938,
+					["position_y"] = -473.0002593994141,
 				},
 				["focus"] = {
-					["position_x"] = -206.0001831054688,
-					["position_y"] = -299.9999694824219,
+					["position_x"] = -221.000244140625,
+					["position_y"] = -421.0000915527344,
 					["layout"] = "Tiny",
 				},
 				["target"] = {
 					["horizontal_mirror"] = true,
-					["position_y"] = -357.9998626708984,
-					["position_x"] = 343.0016479492188,
+					["position_y"] = -474,
+					["position_x"] = 184.0018920898438,
 				},
 				["targettarget"] = {
 					["horizontal_mirror"] = true,
 					["layout"] = "Box",
-					["position_y"] = -336.0000610351563,
-					["position_x"] = 16.00128173828125,
+					["position_y"] = -456.0001983642578,
+					["position_x"] = 2.001220703125,
 				},
 				["focustargettarget"] = {
 					["enabled"] = false,
@@ -1314,9 +1314,6 @@ PitBull4DB = {
 					["position_x"] = -516.9993286132813,
 					["position_y"] = -156.9999389648438,
 				},
-			},
-			["minimap_icon"] = {
-				["hide"] = true,
 			},
 			["groups"] = {
 				["Party pets"] = {

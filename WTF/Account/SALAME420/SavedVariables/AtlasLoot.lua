@@ -1,10 +1,6 @@
 
 AtlasLootDB = {
 	["namespaces"] = {
-		["WishList"] = {
-		},
-		["AtlasLootPanel"] = {
-		},
 		["DefaultFrame"] = {
 			["profiles"] = {
 				["Anaiis - Skywall"] = {
@@ -44,6 +40,7 @@ AtlasLootDB = {
 				},
 				["Gaulthain - Skywall"] = {
 					["instance"] = "SiegeofOrgrimmar",
+					["module"] = "AtlasLootMoP",
 					["NEWpoint"] = {
 						"TOP", -- [1]
 						nil, -- [2]
@@ -52,7 +49,6 @@ AtlasLootDB = {
 						0, -- [5]
 					},
 					["DefaultFrameLocked"] = true,
-					["module"] = "AtlasLootMoP",
 				},
 				["Feronaz - Area 52"] = {
 					["instance"] = "BlackTemple",
@@ -96,9 +92,14 @@ AtlasLootDB = {
 				},
 			},
 		},
+		["AtlasLootPanel"] = {
+		},
+		["WishList"] = {
+		},
 		["Filter"] = {
 		},
 	},
+	["showWarning"] = true,
 	["profileKeys"] = {
 		["Anaiis - Skywall"] = "Anaiis - Skywall",
 		["Oldfero - Area 52"] = "Oldfero - Area 52",
@@ -111,7 +112,6 @@ AtlasLootDB = {
 		["Noremedy - Skywall"] = "Noremedy - Skywall",
 		["Feronaz - Skywall"] = "Feronaz - Skywall",
 	},
-	["showWarning"] = true,
 	["profiles"] = {
 		["Anaiis - Skywall"] = {
 		},
