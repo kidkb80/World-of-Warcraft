@@ -4,7 +4,6 @@
 ---------------------------------------------
 local ArtworkPath = "Interface\\Addons\\TidyPlates_Neon\\"
 --local font = "Interface\\Addons\\TidyPlatesHub\\shared\\AccidentalPresidency.ttf"; local fontsize = 12;
---local font = "Interface\\Addons\\TidyPlatesHub\\shared\\YanoneKaffeesatz-Regular.ttf"; local fontsize = 12;
 local font = "Interface\\Addons\\TidyPlatesHub\\shared\\RobotoCondensed-Bold.ttf"; local fontsize = 10;
 --print(font, fontsize)
 --local fontsize = 12;
@@ -90,7 +89,7 @@ DefaultStyle.spellicon = {
 
 DefaultStyle.spelltext = {
 	typeface = font,
-	size = 12,
+	size = fontsize,
 	width = 150,
 	height = 11,
 	x = CastBarHorizontalAdjustment - 10,
@@ -131,6 +130,7 @@ DefaultStyle.raidicon = {
 	x = -64,
 	y = VerticalAdjustment - 3,
 	anchor = "CENTER",
+	texture = "Interface\\TargetingFrame\\UI-RaidTargetingIcons",
 	show = true,
 }
 
@@ -252,22 +252,55 @@ StyleTextOnly.healthborder.texture = EmptyTexture
 StyleTextOnly.healthbar.texture = EmptyTexture
 StyleTextOnly.healthbar.backdrop = EmptyTexture
 StyleTextOnly.eliteicon.texture = EmptyTexture
-StyleTextOnly.customtext.size = 10
+StyleTextOnly.customtext.size = fontsize - 2
 StyleTextOnly.customtext.flags = "NONE"
 StyleTextOnly.customtext.y = VerticalAdjustment-8
-StyleTextOnly.name.size = 12
+StyleTextOnly.name.size = fontsize
 StyleTextOnly.name.y = VerticalAdjustment + 1
 StyleTextOnly.level.show = false
 StyleTextOnly.skullicon.show = false
 StyleTextOnly.eliteicon.show = false
 StyleTextOnly.highlight.texture = "Interface\\Addons\\TidyPlatesHub\\shared\\Highlight"
 StyleTextOnly.target.texture = "Interface\\Addons\\TidyPlatesHub\\shared\\Target"
-StyleTextOnly.target.height = 64
-StyleTextOnly.target.y = VerticalAdjustment -8 -16
+StyleTextOnly.target.height = 72
+StyleTextOnly.target.y = VerticalAdjustment -8 -18
+
+StyleTextOnly.raidicon.x = 0
+StyleTextOnly.raidicon.y = VerticalAdjustment - 25
 
 -- Styles
+local DefaultNoAura = CopyTable(DefaultStyle)
+local TextNoAura = CopyTable(StyleTextOnly)
+local TextNoDescription = CopyTable(StyleTextOnly)
+
+DefaultNoAura.raidicon = {
+	width = 22,
+	height = 22,
+	x = 0,
+	y = VerticalAdjustment + 20,
+	anchor = "CENTER",
+	texture = "Interface\\TargetingFrame\\UI-RaidTargetingIcons",
+	show = true,
+}
+
+TextNoAura.raidicon = DefaultNoAura.raidicon
+
+TextNoDescription.target.height = 55
+TextNoDescription.target.y = VerticalAdjustment - 17
+TextNoDescription.raidicon.x = 0
+TextNoDescription.raidicon.y = VerticalAdjustment - 22
+
+
+
+-- Active Styles
 Theme["Default"] = DefaultStyle
 Theme["NameOnly"] = StyleTextOnly
+
+Theme["Default-NoAura"] = DefaultNoAura
+
+Theme["NameOnly-NoAura"] = TextNoAura
+Theme["NameOnly-NoDescription"] = TextNoDescription
+
 
 -- Widget
 local WidgetConfig = {}
@@ -328,6 +361,7 @@ Theme.OnUpdate = TidyPlatesHubFunctions.OnUpdate
 Theme.OnContextUpdate = TidyPlatesHubFunctions.OnContextUpdate
 Theme.ShowConfigPanel = ShowTidyPlatesHubDamagePanel
 Theme.SetStyle = TidyPlatesHubFunctions.SetStyleBinary
+--Theme.SetStyle = TidyPlatesHubFunctions.SetStyleTrinary
 Theme.SetCustomText = TidyPlatesHubFunctions.SetCustomTextBinary
 Theme.OnInitialize = OnInitialize		-- Need to provide widget positions
 Theme.OnActivateTheme = OnActivateTheme -- called by Tidy Plates Core, Theme Loader
