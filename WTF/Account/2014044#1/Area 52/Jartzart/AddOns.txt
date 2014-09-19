@@ -8,7 +8,7 @@ hfLootRoll: disabled
 oqueue: disabled
 Quartz: disabled
 Skada: disabled
-StatBlockCore: disabled
+StatBlockCore: enabled
 TidyPlates: disabled
 TipTac: disabled
 TipTacItemRef: disabled

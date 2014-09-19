@@ -1,6 +1,10 @@
 
 AtlasLootDB = {
 	["namespaces"] = {
+		["WishList"] = {
+		},
+		["AtlasLootPanel"] = {
+		},
 		["DefaultFrame"] = {
 			["profiles"] = {
 				["Anaiis - Skywall"] = {
@@ -40,7 +44,7 @@ AtlasLootDB = {
 				},
 				["Gaulthain - Skywall"] = {
 					["instance"] = "SiegeofOrgrimmar",
-					["module"] = "AtlasLootMoP",
+					["DefaultFrameLocked"] = true,
 					["NEWpoint"] = {
 						"TOP", -- [1]
 						nil, -- [2]
@@ -48,7 +52,7 @@ AtlasLootDB = {
 						-3.500643968582153, -- [4]
 						0, -- [5]
 					},
-					["DefaultFrameLocked"] = true,
+					["module"] = "AtlasLootMoP",
 				},
 				["Feronaz - Area 52"] = {
 					["instance"] = "BlackTemple",
@@ -92,19 +96,15 @@ AtlasLootDB = {
 				},
 			},
 		},
-		["AtlasLootPanel"] = {
-		},
-		["WishList"] = {
-		},
 		["Filter"] = {
 		},
 	},
-	["showWarning"] = true,
 	["profileKeys"] = {
 		["Anaiis - Skywall"] = "Anaiis - Skywall",
 		["Oldfero - Area 52"] = "Oldfero - Area 52",
 		["Dalhian - Skywall"] = "Dalhian - Skywall",
 		["Drominus - Area 52"] = "Drominus - Area 52",
+		["Jartzart - Area 52"] = "Jartzart - Area 52",
 		["Gaulthain - Skywall"] = "Gaulthain - Skywall",
 		["Feronaz - Area 52"] = "Feronaz - Area 52",
 		["Gurund - Area 52"] = "Gurund - Area 52",
@@ -112,6 +112,7 @@ AtlasLootDB = {
 		["Noremedy - Skywall"] = "Noremedy - Skywall",
 		["Feronaz - Skywall"] = "Feronaz - Skywall",
 	},
+	["showWarning"] = true,
 	["profiles"] = {
 		["Anaiis - Skywall"] = {
 		},
@@ -132,6 +133,8 @@ AtlasLootDB = {
 					["lootPage"] = "SoOIronJuggernaut",
 				}, -- [1]
 			},
+		},
+		["Jartzart - Area 52"] = {
 		},
 		["Gaulthain - Skywall"] = {
 			["HidePanel"] = true,
