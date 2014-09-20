@@ -1,0 +1,38 @@
+
+FonterDB = {
+	["profileKeys"] = {
+		["Jartzart - Area 52"] = "Default",
+		["Feronaz - Area 52"] = "Default",
+	},
+	["profiles"] = {
+		["Default"] = {
+			["FontQuest"] = "Cabin",
+			["FontRaid"] = "Accidental Presidency",
+			["QuestMedium"] = 10,
+			["CenterSize"] = 16,
+			["NamePlateOutline2"] = "NIL",
+			["QuestSmall"] = 10,
+			["FontHealth"] = "Accidental Presidency",
+			["FontDamage"] = "Accidental Presidency",
+			["FontScrolling"] = "Accidental Presidency",
+			["FontNamePlate"] = "Accidental Presidency",
+			["FontChat"] = "Cabin",
+			["NamePlateLarge"] = 14,
+			["FontStacks"] = "Cabin",
+			["NamePlateMedium"] = 12,
+			["ChatOutline2"] = "NIL",
+			["StacksSmall"] = 12,
+			["StacksOutline2"] = "NIL",
+			["QuestOutline"] = "NIL",
+			["QuestOutline2"] = "NIL",
+			["StacksOutline"] = "NIL",
+			["QuestLarge"] = 12,
+			["ChatSize"] = 15,
+			["CenterOutline"] = "THICKOUTLINE",
+			["NamePlateOutline"] = "NIL",
+			["ChatOutline"] = "NIL",
+			["FontCenter"] = "Accidental Presidency",
+			["NamePlateSmall"] = 10,
+		},
+	},
+}

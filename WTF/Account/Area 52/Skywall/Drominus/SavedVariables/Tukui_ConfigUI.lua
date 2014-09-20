@@ -1,0 +1,6 @@
+
+TukuiConfigPrivate = {
+	["unitframes"] = {
+		["charportrait"] = true,
+	},
+}

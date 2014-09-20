@@ -1,0 +1,11 @@
+## Interface: 30300
+## Title: Achieved!
+## Version: 0.4
+## Author: Tuhljin
+## Notes: Customize the Achievement Earned Alert frame.
+## SavedVariables: Achieved_Settings
+## SavedVariablesPerCharacter: Achieved_CharVars
+
+TjDragIt.lua
+localization.lua
+core.lua
