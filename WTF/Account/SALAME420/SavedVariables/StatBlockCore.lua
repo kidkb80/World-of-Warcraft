@@ -1,10 +1,10 @@
 
 StatBlockCoreDB = {
 	["profileKeys"] = {
-		["Oldfero - Area 52"] = "Default",
+		["Jartzart - Area 52"] = "Default",
 		["Feronaz - Area 52"] = "Default",
 		["Drominus - Area 52"] = "Default",
-		["Jartzart - Area 52"] = "Default",
+		["Oldfero - Area 52"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {
@@ -18,12 +18,12 @@ StatBlockCoreDB = {
 					["strata"] = "HIGH",
 					["notipincombat"] = true,
 					["lock"] = true,
-					["icon"] = false,
+					["hiddenAlpha"] = 0.53,
 					["align"] = "LEFT",
 					["width"] = 41.99937057495117,
 					["posx"] = 1108.47778772359,
 					["posy"] = 656.0001415872539,
-					["hiddenAlpha"] = 0.53,
+					["icon"] = false,
 				},
 				["Raven"] = {
 					["posx"] = 473.6008097266968,
@@ -43,20 +43,17 @@ StatBlockCoreDB = {
 					["hiddenAlpha"] = 0.53,
 					["posy"] = 652.1599854230881,
 				},
-				["Latency"] = {
-					["strata"] = "HIGH",
-					["notipincombat"] = true,
-					["label"] = " LAG",
+				["Masque"] = {
+					["posx"] = 473.6008097266968,
 					["lock"] = true,
 					["hiddenAlpha"] = 0.53,
-					["align"] = "RIGHT",
-					["width"] = 45.99941253662109,
-					["posx"] = 1196.158098263782,
-					["posy"] = 656.640219697947,
+					["posy"] = 708.479984164238,
 				},
-				["WeakAuras"] = {
-					["posx"] = 967.6799002456683,
-					["posy"] = 347.5198359823262,
+				["BagnonLauncher"] = {
+					["posx"] = 473.6008097266968,
+					["lock"] = true,
+					["hiddenAlpha"] = 0.53,
+					["posy"] = 652.1599854230881,
 				},
 				["AtlasLoot"] = {
 					["posx"] = 473.6008097266968,
@@ -74,17 +71,20 @@ StatBlockCoreDB = {
 					["hiddenAlpha"] = 0.53,
 					["posy"] = 666.2399851083756,
 				},
-				["BagnonLauncher"] = {
-					["posx"] = 473.6008097266968,
-					["lock"] = true,
-					["hiddenAlpha"] = 0.53,
-					["posy"] = 652.1599854230881,
+				["WeakAuras"] = {
+					["posx"] = 967.6799002456683,
+					["posy"] = 347.5198359823262,
 				},
-				["Masque"] = {
-					["posx"] = 473.6008097266968,
+				["Latency"] = {
+					["strata"] = "HIGH",
+					["notipincombat"] = true,
+					["label"] = " LAG",
 					["lock"] = true,
 					["hiddenAlpha"] = 0.53,
-					["posy"] = 708.479984164238,
+					["align"] = "RIGHT",
+					["width"] = 45.99941253662109,
+					["posx"] = 1196.158098263782,
+					["posy"] = 656.640219697947,
 				},
 			},
 			["globalHiddenAlpha"] = 0.53,

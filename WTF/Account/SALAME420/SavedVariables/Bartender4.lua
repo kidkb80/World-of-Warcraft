@@ -6,14 +6,14 @@ Bartender4DB = {
 				["Feronaz - Area 52"] = {
 					["actionbars"] = {
 						{
+							["fadeoutalpha"] = 0,
+							["hideequipped"] = true,
+							["fadeoutdelay"] = 0.42,
 							["position"] = {
 								["y"] = 246.9582977294922,
 								["x"] = 385.7503662109375,
 								["point"] = "BOTTOMLEFT",
 							},
-							["hideequipped"] = true,
-							["fadeoutdelay"] = 0.42,
-							["buttons"] = 7,
 							["version"] = 3,
 							["hidemacrotext"] = true,
 							["visibility"] = {
@@ -21,17 +21,17 @@ Bartender4DB = {
 								["custom"] = true,
 								["nocombat"] = false,
 							},
-							["fadeoutalpha"] = 0,
+							["buttons"] = 7,
 						}, -- [1]
 						{
+							["version"] = 3,
+							["hideequipped"] = true,
+							["fadeoutalpha"] = 0,
 							["position"] = {
 								["y"] = 286.9582824707031,
 								["x"] = 423.7503967285156,
 								["point"] = "BOTTOMLEFT",
 							},
-							["hideequipped"] = true,
-							["fadeoutalpha"] = 0,
-							["buttons"] = 6,
 							["fadeoutdelay"] = 0.42,
 							["hidemacrotext"] = true,
 							["visibility"] = {
@@ -40,13 +40,13 @@ Bartender4DB = {
 								["custom"] = true,
 								["nocombat"] = false,
 							},
-							["version"] = 3,
+							["buttons"] = 6,
 						}, -- [2]
 						{
 							["buttons"] = 7,
-							["version"] = 3,
+							["fadeout"] = true,
 							["hideequipped"] = true,
-							["fadeoutdelay"] = 0.42,
+							["version"] = 3,
 							["position"] = {
 								["y"] = 246.8600616455078,
 								["x"] = 307.0420532226563,
@@ -60,17 +60,17 @@ Bartender4DB = {
 								["custom"] = true,
 								["nocombat"] = true,
 							},
-							["fadeout"] = true,
+							["fadeoutdelay"] = 0.42,
 						}, -- [3]
 						{
+							["fadeoutalpha"] = 0,
+							["hideequipped"] = true,
+							["fadeoutdelay"] = 0.42,
 							["position"] = {
 								["y"] = 286.8600463867188,
 								["x"] = 345.4799194335938,
 								["point"] = "BOTTOM",
 							},
-							["hideequipped"] = true,
-							["fadeoutdelay"] = 0.42,
-							["buttons"] = 6,
 							["version"] = 3,
 							["hidemacrotext"] = true,
 							["visibility"] = {
@@ -79,39 +79,39 @@ Bartender4DB = {
 								["custom"] = true,
 								["nocombat"] = true,
 							},
-							["fadeoutalpha"] = 0,
+							["buttons"] = 6,
 						}, -- [4]
 						{
 							["hideequipped"] = true,
 							["version"] = 3,
 							["buttons"] = 2,
-							["padding"] = 6,
-							["hidemacrotext"] = true,
-							["visibility"] = {
-								["overridebar"] = false,
-							},
 							["position"] = {
 								["y"] = 58.00000190734863,
 								["x"] = 452.2500457763672,
 								["point"] = "BOTTOMLEFT",
 								["scale"] = 1.5,
 							},
+							["padding"] = 6,
+							["visibility"] = {
+								["overridebar"] = false,
+							},
+							["hidemacrotext"] = true,
 						}, -- [5]
 						{
 							["hideequipped"] = true,
 							["version"] = 3,
 							["buttons"] = 2,
-							["padding"] = 6,
-							["hidemacrotext"] = true,
-							["visibility"] = {
-								["overridebar"] = false,
-							},
 							["position"] = {
 								["y"] = 58,
 								["x"] = 387.9172058105469,
 								["point"] = "BOTTOM",
 								["scale"] = 1.5,
 							},
+							["padding"] = 6,
+							["visibility"] = {
+								["overridebar"] = false,
+							},
+							["hidemacrotext"] = true,
 						}, -- [6]
 						{
 							["enabled"] = true,
@@ -124,17 +124,17 @@ Bartender4DB = {
 								["point"] = "RIGHT",
 								["scale"] = 1.100000023841858,
 							},
-							["version"] = 3,
+							["fadeoutdelay"] = 0.42,
 							["fadeoutalpha"] = 0,
 							["visibility"] = {
 								["overridebar"] = false,
 							},
-							["fadeoutdelay"] = 0.42,
+							["version"] = 3,
 						}, -- [7]
 						{
 							["enabled"] = true,
+							["version"] = 3,
 							["fadeoutalpha"] = 0,
-							["fadeout"] = true,
 							["buttons"] = 7,
 							["position"] = {
 								["y"] = 167.2829206831448,
@@ -147,12 +147,12 @@ Bartender4DB = {
 								["nocombat"] = false,
 								["overridebar"] = false,
 							},
-							["version"] = 3,
+							["fadeout"] = true,
 						}, -- [8]
 						{
 							["enabled"] = true,
+							["version"] = 3,
 							["fadeoutalpha"] = 0,
-							["fadeout"] = true,
 							["buttons"] = 10,
 							["fadeoutdelay"] = 1,
 							["position"] = {
@@ -165,7 +165,7 @@ Bartender4DB = {
 								["combat"] = false,
 								["nocombat"] = false,
 							},
-							["version"] = 3,
+							["fadeout"] = true,
 						}, -- [9]
 						{
 							["enabled"] = true,
@@ -178,8 +178,8 @@ Bartender4DB = {
 							},
 							["padding"] = 6,
 							["visibility"] = {
-								["vehicleui"] = false,
 								["overridebar"] = false,
+								["vehicleui"] = false,
 							},
 							["states"] = {
 								["enabled"] = true,
@@ -209,8 +209,8 @@ Bartender4DB = {
 							},
 						}, -- [2]
 						{
-							["rows"] = 12,
 							["padding"] = 5,
+							["rows"] = 12,
 							["version"] = 3,
 							["position"] = {
 								["y"] = 610,
@@ -219,8 +219,330 @@ Bartender4DB = {
 							},
 						}, -- [3]
 						{
-							["rows"] = 12,
 							["padding"] = 5,
+							["rows"] = 12,
+							["version"] = 3,
+							["position"] = {
+								["y"] = 610,
+								["x"] = -42,
+								["point"] = "BOTTOMRIGHT",
+							},
+						}, -- [4]
+						{
+							["padding"] = 6,
+							["version"] = 3,
+							["position"] = {
+								["y"] = 83,
+								["x"] = 3,
+								["point"] = "BOTTOM",
+							},
+						}, -- [5]
+						{
+							["padding"] = 6,
+							["version"] = 3,
+							["position"] = {
+								["y"] = 83,
+								["x"] = -510,
+								["point"] = "BOTTOM",
+							},
+						}, -- [6]
+						{
+						}, -- [7]
+						{
+						}, -- [8]
+						[10] = {
+						},
+					},
+				},
+				["Jartzart - Area 52"] = {
+					["actionbars"] = {
+						{
+							["padding"] = 6,
+							["version"] = 3,
+							["position"] = {
+								["y"] = 41.75,
+								["x"] = -510,
+								["point"] = "BOTTOM",
+							},
+						}, -- [1]
+						{
+							["enabled"] = false,
+							["version"] = 3,
+							["position"] = {
+								["y"] = -189.5000610351563,
+								["x"] = -231.5000915527344,
+								["point"] = "CENTER",
+							},
+						}, -- [2]
+						{
+							["padding"] = 5,
+							["rows"] = 12,
+							["version"] = 3,
+							["position"] = {
+								["y"] = 610,
+								["x"] = -82,
+								["point"] = "BOTTOMRIGHT",
+							},
+						}, -- [3]
+						{
+							["padding"] = 5,
+							["rows"] = 12,
+							["version"] = 3,
+							["position"] = {
+								["y"] = 610,
+								["x"] = -42,
+								["point"] = "BOTTOMRIGHT",
+							},
+						}, -- [4]
+						{
+							["padding"] = 6,
+							["version"] = 3,
+							["position"] = {
+								["y"] = 83,
+								["x"] = 3,
+								["point"] = "BOTTOM",
+							},
+						}, -- [5]
+						{
+							["padding"] = 6,
+							["version"] = 3,
+							["position"] = {
+								["y"] = 83,
+								["x"] = -510,
+								["point"] = "BOTTOM",
+							},
+						}, -- [6]
+						{
+						}, -- [7]
+						{
+						}, -- [8]
+						nil, -- [9]
+						{
+						}, -- [10]
+					},
+				},
+				["Dps"] = {
+					["actionbars"] = {
+						{
+							["buttons"] = 7,
+							["fadeoutalpha"] = 0.2,
+							["hideequipped"] = true,
+							["version"] = 3,
+							["position"] = {
+								["y"] = 196.6686553955078,
+								["x"] = -136.4999389648438,
+								["point"] = "BOTTOM",
+							},
+							["fadeout"] = true,
+							["hidemacrotext"] = true,
+							["visibility"] = {
+								["customdata"] = "[combat]show;fade",
+								["custom"] = true,
+								["nocombat"] = false,
+							},
+							["fadeoutdelay"] = 0.42,
+						}, -- [1]
+						{
+							["buttons"] = 6,
+							["version"] = 3,
+							["hideequipped"] = true,
+							["fadeoutalpha"] = 0.15,
+							["position"] = {
+								["y"] = 158.3879241943359,
+								["x"] = -117.5000610351563,
+								["point"] = "BOTTOM",
+							},
+							["fadeout"] = true,
+							["hidemacrotext"] = true,
+							["visibility"] = {
+								["customdata"] = "[combat]show;fade",
+								["overridebar"] = false,
+								["custom"] = true,
+								["nocombat"] = false,
+							},
+							["fadeoutdelay"] = 0.42,
+						}, -- [2]
+						{
+							["buttons"] = 6,
+							["version"] = 3,
+							["hideequipped"] = true,
+							["fadeoutalpha"] = 0.07000000000000001,
+							["position"] = {
+								["y"] = 222.0440063476563,
+								["x"] = 36.4659538269043,
+								["point"] = "BOTTOMLEFT",
+							},
+							["fadeout"] = true,
+							["hidemacrotext"] = true,
+							["visibility"] = {
+								["customdata"] = "[combat]show;fade",
+								["overridebar"] = false,
+								["custom"] = true,
+								["nocombat"] = false,
+							},
+							["fadeoutdelay"] = 0.42,
+						}, -- [3]
+						{
+							["buttons"] = 6,
+							["version"] = 3,
+							["hideequipped"] = true,
+							["fadeoutalpha"] = 0.07000000000000001,
+							["position"] = {
+								["y"] = 199.1600189208984,
+								["x"] = 176.4115600585938,
+								["point"] = "BOTTOM",
+							},
+							["fadeout"] = true,
+							["hidemacrotext"] = true,
+							["visibility"] = {
+								["customdata"] = "[combat]show;fade",
+								["overridebar"] = false,
+								["custom"] = true,
+								["nocombat"] = false,
+							},
+							["fadeoutdelay"] = 0.42,
+						}, -- [4]
+						{
+							["hideequipped"] = true,
+							["fadeout"] = true,
+							["buttons"] = 6,
+							["position"] = {
+								["y"] = 42,
+								["x"] = 404.1632385253906,
+								["point"] = "BOTTOMLEFT",
+							},
+							["hidemacrotext"] = true,
+							["visibility"] = {
+								["overridebar"] = false,
+							},
+							["version"] = 3,
+						}, -- [5]
+						{
+							["buttons"] = 5,
+							["version"] = 3,
+							["hideequipped"] = true,
+							["fadeoutalpha"] = 0,
+							["position"] = {
+								["y"] = 42,
+								["x"] = -194.0001220703125,
+								["point"] = "BOTTOMRIGHT",
+							},
+							["fadeout"] = true,
+							["hidemacrotext"] = true,
+							["visibility"] = {
+								["overridebar"] = false,
+							},
+							["fadeoutdelay"] = 0.42,
+						}, -- [6]
+						{
+							["enabled"] = true,
+							["buttons"] = 7,
+							["rows"] = 12,
+							["fadeout"] = true,
+							["position"] = {
+								["y"] = 150.1500376213699,
+								["x"] = -46.19989835131855,
+								["point"] = "RIGHT",
+								["scale"] = 1.100000023841858,
+							},
+							["version"] = 3,
+							["fadeoutalpha"] = 0,
+							["visibility"] = {
+								["overridebar"] = false,
+							},
+							["fadeoutdelay"] = 0.42,
+						}, -- [7]
+						{
+							["enabled"] = true,
+							["version"] = 3,
+							["fadeoutalpha"] = 0,
+							["buttons"] = 7,
+							["position"] = {
+								["y"] = 167.2829206831448,
+								["x"] = -3.300000858306902,
+								["point"] = "LEFT",
+								["scale"] = 1.100000023841858,
+							},
+							["rows"] = 12,
+							["visibility"] = {
+								["nocombat"] = false,
+								["overridebar"] = false,
+							},
+							["fadeout"] = true,
+						}, -- [8]
+						{
+							["enabled"] = true,
+							["fadeout"] = true,
+							["fadeoutalpha"] = 0.15,
+							["buttons"] = 10,
+							["version"] = 3,
+							["position"] = {
+								["y"] = 42,
+								["x"] = 338.4522705078125,
+								["point"] = "BOTTOM",
+							},
+							["visibility"] = {
+								["overridebar"] = false,
+								["combat"] = false,
+								["nocombat"] = false,
+							},
+							["fadeoutdelay"] = 1,
+						}, -- [9]
+						{
+							["enabled"] = true,
+							["version"] = 3,
+							["buttons"] = 10,
+							["position"] = {
+								["y"] = 58,
+								["x"] = -317.2499237060547,
+								["point"] = "BOTTOM",
+								["scale"] = 1.5,
+							},
+							["padding"] = 6,
+							["visibility"] = {
+								["vehicleui"] = false,
+								["overridebar"] = false,
+							},
+							["states"] = {
+								["enabled"] = true,
+								["possess"] = true,
+							},
+						}, -- [10]
+					},
+				},
+				["Drominus - Area 52"] = {
+					["actionbars"] = {
+						{
+							["padding"] = 6,
+							["version"] = 3,
+							["position"] = {
+								["y"] = 41.75,
+								["x"] = -510,
+								["point"] = "BOTTOM",
+							},
+						}, -- [1]
+						{
+							["enabled"] = false,
+							["version"] = 3,
+							["position"] = {
+								["y"] = -189.5000610351563,
+								["x"] = -231.5000915527344,
+								["point"] = "CENTER",
+							},
+						}, -- [2]
+						{
+							["padding"] = 5,
+							["rows"] = 12,
+							["version"] = 3,
+							["position"] = {
+								["y"] = 610,
+								["x"] = -82,
+								["point"] = "BOTTOMRIGHT",
+							},
+						}, -- [3]
+						{
+							["padding"] = 5,
+							["rows"] = 12,
 							["version"] = 3,
 							["position"] = {
 								["y"] = 610,
@@ -261,13 +583,13 @@ Bartender4DB = {
 							["fadeoutdelay"] = 0.42,
 							["buttons"] = 7,
 							["fadeout"] = true,
-							["version"] = 3,
+							["fadeoutalpha"] = 0.25,
 							["position"] = {
 								["y"] = 234.0000152587891,
 								["x"] = 381,
 								["point"] = "BOTTOMLEFT",
 							},
-							["fadeoutalpha"] = 0.25,
+							["version"] = 3,
 							["hidemacrotext"] = true,
 							["visibility"] = {
 								["custom"] = true,
@@ -277,39 +599,39 @@ Bartender4DB = {
 						}, -- [1]
 						{
 							["hideequipped"] = true,
-							["fadeout"] = true,
+							["fadeoutdelay"] = 0.42,
 							["buttons"] = 6,
-							["version"] = 3,
+							["fadeout"] = true,
 							["fadeoutalpha"] = 0.25,
 							["position"] = {
 								["y"] = 273.9999694824219,
 								["x"] = 399.9999694824219,
 								["point"] = "BOTTOMLEFT",
 							},
-							["fadeoutdelay"] = 0.42,
+							["version"] = 3,
 							["hidemacrotext"] = true,
 							["visibility"] = {
 								["custom"] = true,
-								["stance"] = {
-									[0] = false,
-								},
 								["customdata"] = "[combat]show;fade",
 								["overridebar"] = false,
 								["nocombat"] = false,
+								["stance"] = {
+									[0] = false,
+								},
 							},
 						}, -- [2]
 						{
 							["hideequipped"] = true,
 							["fadeoutdelay"] = 0.42,
 							["buttons"] = 6,
-							["fadeout"] = true,
 							["fadeoutalpha"] = 0.15,
+							["version"] = 3,
 							["position"] = {
 								["y"] = 154,
 								["x"] = 419.0000610351563,
 								["point"] = "BOTTOMLEFT",
 							},
-							["version"] = 3,
+							["fadeout"] = true,
 							["hidemacrotext"] = true,
 							["visibility"] = {
 								["custom"] = true,
@@ -320,16 +642,16 @@ Bartender4DB = {
 						}, -- [3]
 						{
 							["hideequipped"] = true,
-							["fadeout"] = true,
+							["fadeoutdelay"] = 0.42,
 							["buttons"] = 6,
-							["version"] = 3,
+							["fadeout"] = true,
 							["fadeoutalpha"] = 0.15,
 							["position"] = {
 								["y"] = 114.0000152587891,
 								["x"] = 419.0000610351563,
 								["point"] = "BOTTOMLEFT",
 							},
-							["fadeoutdelay"] = 0.42,
+							["version"] = 3,
 							["hidemacrotext"] = true,
 							["visibility"] = {
 								["custom"] = true,
@@ -375,10 +697,10 @@ Bartender4DB = {
 							},
 						}, -- [6]
 						{
-							["fadeoutdelay"] = 0.42,
+							["fadeout"] = true,
 							["enabled"] = true,
 							["buttons"] = 6,
-							["fadeout"] = true,
+							["fadeoutdelay"] = 0.42,
 							["version"] = 3,
 							["position"] = {
 								["y"] = -174.6939697265625,
@@ -407,10 +729,10 @@ Bartender4DB = {
 							},
 						}, -- [8]
 						{
-							["fadeoutdelay"] = 1,
+							["fadeout"] = true,
 							["enabled"] = true,
 							["buttons"] = 6,
-							["fadeout"] = true,
+							["fadeoutdelay"] = 1,
 							["version"] = 3,
 							["position"] = {
 								["y"] = -254.6939697265625,
@@ -445,336 +767,14 @@ Bartender4DB = {
 						}, -- [10]
 					},
 				},
-				["Dps"] = {
-					["actionbars"] = {
-						{
-							["buttons"] = 7,
-							["version"] = 3,
-							["hideequipped"] = true,
-							["fadeoutdelay"] = 0.42,
-							["position"] = {
-								["y"] = 196.6686553955078,
-								["x"] = -136.4999389648438,
-								["point"] = "BOTTOM",
-							},
-							["fadeout"] = true,
-							["hidemacrotext"] = true,
-							["visibility"] = {
-								["customdata"] = "[combat]show;fade",
-								["custom"] = true,
-								["nocombat"] = false,
-							},
-							["fadeoutalpha"] = 0.2,
-						}, -- [1]
-						{
-							["buttons"] = 6,
-							["fadeoutalpha"] = 0.15,
-							["hideequipped"] = true,
-							["fadeoutdelay"] = 0.42,
-							["position"] = {
-								["y"] = 158.3879241943359,
-								["x"] = -117.5000610351563,
-								["point"] = "BOTTOM",
-							},
-							["fadeout"] = true,
-							["hidemacrotext"] = true,
-							["visibility"] = {
-								["customdata"] = "[combat]show;fade",
-								["overridebar"] = false,
-								["custom"] = true,
-								["nocombat"] = false,
-							},
-							["version"] = 3,
-						}, -- [2]
-						{
-							["buttons"] = 6,
-							["fadeoutalpha"] = 0.07000000000000001,
-							["hideequipped"] = true,
-							["fadeoutdelay"] = 0.42,
-							["position"] = {
-								["y"] = 222.0440063476563,
-								["x"] = 36.4659538269043,
-								["point"] = "BOTTOMLEFT",
-							},
-							["fadeout"] = true,
-							["hidemacrotext"] = true,
-							["visibility"] = {
-								["customdata"] = "[combat]show;fade",
-								["overridebar"] = false,
-								["custom"] = true,
-								["nocombat"] = false,
-							},
-							["version"] = 3,
-						}, -- [3]
-						{
-							["buttons"] = 6,
-							["fadeoutalpha"] = 0.07000000000000001,
-							["hideequipped"] = true,
-							["fadeoutdelay"] = 0.42,
-							["position"] = {
-								["y"] = 199.1600189208984,
-								["x"] = 176.4115600585938,
-								["point"] = "BOTTOM",
-							},
-							["fadeout"] = true,
-							["hidemacrotext"] = true,
-							["visibility"] = {
-								["customdata"] = "[combat]show;fade",
-								["overridebar"] = false,
-								["custom"] = true,
-								["nocombat"] = false,
-							},
-							["version"] = 3,
-						}, -- [4]
-						{
-							["hideequipped"] = true,
-							["fadeout"] = true,
-							["buttons"] = 6,
-							["version"] = 3,
-							["hidemacrotext"] = true,
-							["visibility"] = {
-								["overridebar"] = false,
-							},
-							["position"] = {
-								["y"] = 42,
-								["x"] = 404.1632385253906,
-								["point"] = "BOTTOMLEFT",
-							},
-						}, -- [5]
-						{
-							["buttons"] = 5,
-							["fadeoutalpha"] = 0,
-							["hideequipped"] = true,
-							["fadeoutdelay"] = 0.42,
-							["position"] = {
-								["y"] = 42,
-								["x"] = -194.0001220703125,
-								["point"] = "BOTTOMRIGHT",
-							},
-							["fadeout"] = true,
-							["hidemacrotext"] = true,
-							["visibility"] = {
-								["overridebar"] = false,
-							},
-							["version"] = 3,
-						}, -- [6]
-						{
-							["enabled"] = true,
-							["buttons"] = 7,
-							["rows"] = 12,
-							["fadeout"] = true,
-							["position"] = {
-								["y"] = 150.1500376213699,
-								["x"] = -46.19989835131855,
-								["point"] = "RIGHT",
-								["scale"] = 1.100000023841858,
-							},
-							["fadeoutdelay"] = 0.42,
-							["fadeoutalpha"] = 0,
-							["visibility"] = {
-								["overridebar"] = false,
-							},
-							["version"] = 3,
-						}, -- [7]
-						{
-							["enabled"] = true,
-							["fadeoutalpha"] = 0,
-							["fadeout"] = true,
-							["buttons"] = 7,
-							["position"] = {
-								["y"] = 167.2829206831448,
-								["x"] = -3.300000858306902,
-								["point"] = "LEFT",
-								["scale"] = 1.100000023841858,
-							},
-							["rows"] = 12,
-							["visibility"] = {
-								["nocombat"] = false,
-								["overridebar"] = false,
-							},
-							["version"] = 3,
-						}, -- [8]
-						{
-							["enabled"] = true,
-							["fadeoutalpha"] = 0.15,
-							["fadeoutdelay"] = 1,
-							["buttons"] = 10,
-							["version"] = 3,
-							["position"] = {
-								["y"] = 42,
-								["x"] = 338.4522705078125,
-								["point"] = "BOTTOM",
-							},
-							["visibility"] = {
-								["overridebar"] = false,
-								["combat"] = false,
-								["nocombat"] = false,
-							},
-							["fadeout"] = true,
-						}, -- [9]
-						{
-							["enabled"] = true,
-							["version"] = 3,
-							["buttons"] = 10,
-							["position"] = {
-								["y"] = 58,
-								["x"] = -317.2499237060547,
-								["point"] = "BOTTOM",
-								["scale"] = 1.5,
-							},
-							["padding"] = 6,
-							["visibility"] = {
-								["overridebar"] = false,
-								["vehicleui"] = false,
-							},
-							["states"] = {
-								["enabled"] = true,
-								["possess"] = true,
-							},
-						}, -- [10]
-					},
-				},
-				["Drominus - Area 52"] = {
-					["actionbars"] = {
-						{
-							["padding"] = 6,
-							["version"] = 3,
-							["position"] = {
-								["y"] = 41.75,
-								["x"] = -510,
-								["point"] = "BOTTOM",
-							},
-						}, -- [1]
-						{
-							["enabled"] = false,
-							["version"] = 3,
-							["position"] = {
-								["y"] = -189.5000610351563,
-								["x"] = -231.5000915527344,
-								["point"] = "CENTER",
-							},
-						}, -- [2]
-						{
-							["rows"] = 12,
-							["padding"] = 5,
-							["version"] = 3,
-							["position"] = {
-								["y"] = 610,
-								["x"] = -82,
-								["point"] = "BOTTOMRIGHT",
-							},
-						}, -- [3]
-						{
-							["rows"] = 12,
-							["padding"] = 5,
-							["version"] = 3,
-							["position"] = {
-								["y"] = 610,
-								["x"] = -42,
-								["point"] = "BOTTOMRIGHT",
-							},
-						}, -- [4]
-						{
-							["padding"] = 6,
-							["version"] = 3,
-							["position"] = {
-								["y"] = 83,
-								["x"] = 3,
-								["point"] = "BOTTOM",
-							},
-						}, -- [5]
-						{
-							["padding"] = 6,
-							["version"] = 3,
-							["position"] = {
-								["y"] = 83,
-								["x"] = -510,
-								["point"] = "BOTTOM",
-							},
-						}, -- [6]
-						{
-						}, -- [7]
-						{
-						}, -- [8]
-						[10] = {
-						},
-					},
-				},
-				["Jartzart - Area 52"] = {
-					["actionbars"] = {
-						{
-							["padding"] = 6,
-							["version"] = 3,
-							["position"] = {
-								["y"] = 41.75,
-								["x"] = -510,
-								["point"] = "BOTTOM",
-							},
-						}, -- [1]
-						{
-							["enabled"] = false,
-							["version"] = 3,
-							["position"] = {
-								["y"] = -189.5000610351563,
-								["x"] = -231.5000915527344,
-								["point"] = "CENTER",
-							},
-						}, -- [2]
-						{
-							["rows"] = 12,
-							["padding"] = 5,
-							["version"] = 3,
-							["position"] = {
-								["y"] = 610,
-								["x"] = -82,
-								["point"] = "BOTTOMRIGHT",
-							},
-						}, -- [3]
-						{
-							["rows"] = 12,
-							["padding"] = 5,
-							["version"] = 3,
-							["position"] = {
-								["y"] = 610,
-								["x"] = -42,
-								["point"] = "BOTTOMRIGHT",
-							},
-						}, -- [4]
-						{
-							["padding"] = 6,
-							["version"] = 3,
-							["position"] = {
-								["y"] = 83,
-								["x"] = 3,
-								["point"] = "BOTTOM",
-							},
-						}, -- [5]
-						{
-							["padding"] = 6,
-							["version"] = 3,
-							["position"] = {
-								["y"] = 83,
-								["x"] = -510,
-								["point"] = "BOTTOM",
-							},
-						}, -- [6]
-						{
-						}, -- [7]
-						{
-						}, -- [8]
-						nil, -- [9]
-						{
-						}, -- [10]
-					},
-				},
 			},
 		},
 		["LibDualSpec-1.0"] = {
 			["char"] = {
 				["Feronaz - Area 52"] = {
 					["profile"] = "FeronazHeak",
-					["enabled"] = true,
 					["specGroup"] = 1,
+					["enabled"] = true,
 				},
 			},
 		},
@@ -797,14 +797,13 @@ Bartender4DB = {
 						["point"] = "BOTTOM",
 					},
 				},
-				["FeronazHeak"] = {
-					["position"] = {
-						["y"] = -115.3994024859712,
-						["x"] = -476.2321386699659,
-						["point"] = "CENTER",
-						["scale"] = 0.8999999761581421,
-					},
+				["Jartzart - Area 52"] = {
 					["version"] = 3,
+					["position"] = {
+						["y"] = 223,
+						["x"] = -31.49996948242188,
+						["point"] = "BOTTOM",
+					},
 				},
 				["Dps"] = {
 					["version"] = 3,
@@ -823,13 +822,14 @@ Bartender4DB = {
 						["point"] = "BOTTOM",
 					},
 				},
-				["Jartzart - Area 52"] = {
-					["version"] = 3,
+				["FeronazHeak"] = {
 					["position"] = {
-						["y"] = 223,
-						["x"] = -31.49996948242188,
-						["point"] = "BOTTOM",
+						["y"] = -115.3994024859712,
+						["x"] = -476.2321386699659,
+						["point"] = "CENTER",
+						["scale"] = 0.8999999761581421,
 					},
+					["version"] = 3,
 				},
 			},
 		},
@@ -854,15 +854,14 @@ Bartender4DB = {
 						["y"] = 41.75,
 					},
 				},
-				["FeronazHeak"] = {
-					["enabled"] = false,
+				["Jartzart - Area 52"] = {
+					["version"] = 3,
 					["position"] = {
 						["y"] = 41.75,
 						["x"] = 37.5,
 						["point"] = "BOTTOM",
 						["scale"] = 1,
 					},
-					["version"] = 3,
 				},
 				["Dps"] = {
 					["enabled"] = false,
@@ -883,14 +882,15 @@ Bartender4DB = {
 						["y"] = 41.75,
 					},
 				},
-				["Jartzart - Area 52"] = {
-					["version"] = 3,
+				["FeronazHeak"] = {
+					["enabled"] = false,
 					["position"] = {
 						["y"] = 41.75,
 						["x"] = 37.5,
 						["point"] = "BOTTOM",
 						["scale"] = 1,
 					},
+					["version"] = 3,
 				},
 			},
 		},
@@ -915,13 +915,14 @@ Bartender4DB = {
 						["point"] = "BOTTOM",
 					},
 				},
-				["FeronazHeak"] = {
+				["Jartzart - Area 52"] = {
+					["enabled"] = true,
+					["version"] = 3,
 					["position"] = {
 						["y"] = 47,
 						["x"] = -512,
 						["point"] = "BOTTOM",
 					},
-					["version"] = 3,
 				},
 				["Dps"] = {
 					["version"] = 3,
@@ -940,14 +941,13 @@ Bartender4DB = {
 						["point"] = "BOTTOM",
 					},
 				},
-				["Jartzart - Area 52"] = {
-					["enabled"] = true,
-					["version"] = 3,
+				["FeronazHeak"] = {
 					["position"] = {
 						["y"] = 47,
 						["x"] = -512,
 						["point"] = "BOTTOM",
 					},
+					["version"] = 3,
 				},
 			},
 		},
@@ -972,15 +972,14 @@ Bartender4DB = {
 						["point"] = "BOTTOM",
 					},
 				},
-				["FeronazHeak"] = {
-					["enabled"] = false,
+				["Jartzart - Area 52"] = {
 					["onebag"] = true,
+					["version"] = 3,
 					["position"] = {
 						["y"] = 41.75,
 						["x"] = 463.5,
 						["point"] = "BOTTOM",
 					},
-					["version"] = 3,
 				},
 				["Dps"] = {
 					["enabled"] = false,
@@ -1001,67 +1000,15 @@ Bartender4DB = {
 						["point"] = "BOTTOM",
 					},
 				},
-				["Jartzart - Area 52"] = {
+				["FeronazHeak"] = {
+					["enabled"] = false,
 					["onebag"] = true,
-					["version"] = 3,
 					["position"] = {
 						["y"] = 41.75,
 						["x"] = 463.5,
 						["point"] = "BOTTOM",
 					},
-				},
-			},
-		},
-		["Vehicle"] = {
-			["profiles"] = {
-				["Feronaz - Area 52"] = {
 					["version"] = 3,
-					["position"] = {
-						["y"] = 38.00000381469727,
-						["x"] = 395.2531127929688,
-						["point"] = "BOTTOMLEFT",
-					},
-				},
-				["Oldfero - Area 52"] = {
-					["version"] = 3,
-					["position"] = {
-						["y"] = 47.49993896484375,
-						["x"] = 99.50006103515625,
-						["point"] = "CENTER",
-					},
-				},
-				["FeronazHeak"] = {
-					["enabled"] = false,
-					["version"] = 3,
-					["position"] = {
-						["y"] = 38.00000381469727,
-						["x"] = 395.2531127929688,
-						["point"] = "BOTTOMLEFT",
-					},
-				},
-				["Dps"] = {
-					["version"] = 3,
-					["position"] = {
-						["y"] = 141.2000122070313,
-						["x"] = -457.8858642578125,
-						["point"] = "BOTTOMRIGHT",
-					},
-				},
-				["Drominus - Area 52"] = {
-					["version"] = 3,
-					["position"] = {
-						["y"] = 47.49993896484375,
-						["x"] = 99.50006103515625,
-						["point"] = "CENTER",
-					},
-				},
-				["Jartzart - Area 52"] = {
-					["version"] = 3,
-					["position"] = {
-						["y"] = 47.49993896484375,
-						["x"] = 99.50006103515625,
-						["point"] = "CENTER",
-					},
 				},
 			},
 		},
@@ -1083,13 +1030,13 @@ Bartender4DB = {
 						["point"] = "CENTER",
 					},
 				},
-				["FeronazHeak"] = {
-					["position"] = {
-						["y"] = -170.6606750488281,
-						["x"] = 378.3600311279297,
-						["point"] = "LEFT",
-					},
+				["Jartzart - Area 52"] = {
 					["version"] = 3,
+					["position"] = {
+						["y"] = -15.00003814697266,
+						["x"] = -82.49996948242188,
+						["point"] = "CENTER",
+					},
 				},
 				["Dps"] = {
 					["version"] = 3,
@@ -1108,12 +1055,65 @@ Bartender4DB = {
 						["y"] = 116,
 					},
 				},
+				["FeronazHeak"] = {
+					["position"] = {
+						["y"] = -170.6606750488281,
+						["x"] = 378.3600311279297,
+						["point"] = "LEFT",
+					},
+					["version"] = 3,
+				},
+			},
+		},
+		["Vehicle"] = {
+			["profiles"] = {
+				["Feronaz - Area 52"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = 38.00000381469727,
+						["x"] = 395.2531127929688,
+						["point"] = "BOTTOMLEFT",
+					},
+				},
+				["Oldfero - Area 52"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = 47.49993896484375,
+						["x"] = 99.50006103515625,
+						["point"] = "CENTER",
+					},
+				},
 				["Jartzart - Area 52"] = {
 					["version"] = 3,
 					["position"] = {
-						["y"] = -15.00003814697266,
-						["x"] = -82.49996948242188,
+						["y"] = 47.49993896484375,
+						["x"] = 99.50006103515625,
 						["point"] = "CENTER",
+					},
+				},
+				["Dps"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = 141.2000122070313,
+						["x"] = -457.8858642578125,
+						["point"] = "BOTTOMRIGHT",
+					},
+				},
+				["Drominus - Area 52"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = 47.49993896484375,
+						["x"] = 99.50006103515625,
+						["point"] = "CENTER",
+					},
+				},
+				["FeronazHeak"] = {
+					["enabled"] = false,
+					["version"] = 3,
+					["position"] = {
+						["y"] = 38.00000381469727,
+						["x"] = 395.2531127929688,
+						["point"] = "BOTTOMLEFT",
 					},
 				},
 			},
@@ -1137,21 +1137,13 @@ Bartender4DB = {
 						["point"] = "BOTTOM",
 					},
 				},
-				["FeronazHeak"] = {
-					["position"] = {
-						["y"] = 33,
-						["x"] = 423.0148315429688,
-						["point"] = "BOTTOMLEFT",
-						["scale"] = 0.75,
-					},
+				["Jartzart - Area 52"] = {
 					["version"] = 3,
-					["padding"] = 0,
-					["visibility"] = {
-						["custom"] = true,
-						["customdata"] = "[combat]show;fade",
-						["nocombat"] = false,
+					["position"] = {
+						["y"] = 116,
+						["x"] = -460,
+						["point"] = "BOTTOM",
 					},
-					["fadeout"] = true,
 				},
 				["Dps"] = {
 					["rows"] = 2,
@@ -1171,13 +1163,21 @@ Bartender4DB = {
 						["point"] = "BOTTOM",
 					},
 				},
-				["Jartzart - Area 52"] = {
-					["version"] = 3,
+				["FeronazHeak"] = {
+					["fadeout"] = true,
 					["position"] = {
-						["y"] = 116,
-						["x"] = -460,
-						["point"] = "BOTTOM",
+						["y"] = 33,
+						["x"] = 423.0148315429688,
+						["point"] = "BOTTOMLEFT",
+						["scale"] = 0.75,
 					},
+					["padding"] = 0,
+					["visibility"] = {
+						["custom"] = true,
+						["customdata"] = "[combat]show;fade",
+						["nocombat"] = false,
+					},
+					["version"] = 3,
 				},
 			},
 		},
@@ -1185,10 +1185,10 @@ Bartender4DB = {
 		},
 	},
 	["profileKeys"] = {
-		["Oldfero - Area 52"] = "FeronazHeak",
+		["Jartzart - Area 52"] = "FeronazHeak",
 		["Feronaz - Area 52"] = "FeronazHeak",
 		["Drominus - Area 52"] = "FeronazHeak",
-		["Jartzart - Area 52"] = "FeronazHeak",
+		["Oldfero - Area 52"] = "FeronazHeak",
 	},
 	["profiles"] = {
 		["Feronaz - Area 52"] = {
@@ -1202,14 +1202,10 @@ Bartender4DB = {
 			["blizzardVehicle"] = true,
 			["outofrange"] = "hotkey",
 		},
-		["FeronazHeak"] = {
-			["blizzardVehicle"] = true,
-			["snapping"] = 1,
+		["Jartzart - Area 52"] = {
 			["focuscastmodifier"] = false,
-			["minimapIcon"] = {
-				["minimapPos"] = 343.1785084014198,
-			},
-			["outofrange"] = "none",
+			["blizzardVehicle"] = true,
+			["outofrange"] = "hotkey",
 		},
 		["Dps"] = {
 			["snapping"] = 1,
@@ -1225,10 +1221,14 @@ Bartender4DB = {
 			["blizzardVehicle"] = true,
 			["outofrange"] = "hotkey",
 		},
-		["Jartzart - Area 52"] = {
-			["focuscastmodifier"] = false,
+		["FeronazHeak"] = {
 			["blizzardVehicle"] = true,
-			["outofrange"] = "hotkey",
+			["focuscastmodifier"] = false,
+			["snapping"] = 1,
+			["minimapIcon"] = {
+				["minimapPos"] = 343.1785084014198,
+			},
+			["outofrange"] = "none",
 		},
 	},
 }

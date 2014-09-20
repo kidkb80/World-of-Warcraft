@@ -4,7 +4,6 @@ SexyMap2DB = {
 	},
 	["Jartzart-Area 52"] = "global",
 	["Drominus-Area 52"] = "global",
-	["Oldfero-Area 52"] = "global",
 	["global"] = {
 		["ping"] = {
 			["showPing"] = false,
@@ -17,19 +16,19 @@ SexyMap2DB = {
 			},
 			["borderColor"] = {
 				["a"] = 0.1666665077209473,
-				["b"] = 0,
-				["g"] = 0,
 				["r"] = 0,
+				["g"] = 0,
+				["b"] = 0,
 			},
 			["locked"] = true,
-			["x"] = -45.1119384765625,
+			["y"] = -62.55685424804688,
 			["backgroundColor"] = {
 				["a"] = 0.1299999952316284,
-				["b"] = 0,
-				["g"] = 0,
 				["r"] = 0,
+				["g"] = 0,
+				["b"] = 0,
 			},
-			["y"] = -62.55685424804688,
+			["x"] = -45.1119384765625,
 		},
 		["buttons"] = {
 			["radius"] = 10,
@@ -38,19 +37,19 @@ SexyMap2DB = {
 			["visibilitySettings"] = {
 				["MinimapZoomIn"] = "never",
 				["MiniMapMailFrame"] = "always",
-				["MinimapZoneTextButton"] = "never",
-				["MiniMapWorldMapButton"] = "never",
-				["GameTimeFrame"] = "hover",
-				["LibDBIcon10_PitBull4"] = "never",
+				["MiniMapInstanceDifficulty"] = "always",
 				["TimeManagerClockButton"] = "always",
+				["GameTimeFrame"] = "hover",
+				["LibDBIcon10_Bartender4"] = "never",
+				["MiniMapWorldMapButton"] = "never",
 				["MinimapZoomOut"] = "never",
+				["LibDBIcon10_Raven"] = "never",
+				["QueueStatusMinimapButton"] = "always",
+				["LibDBIcon10_PitBull4"] = "never",
 				["MiniMapTracking"] = "always",
 				["DBMMinimapButton"] = "never",
-				["QueueStatusMinimapButton"] = "always",
-				["LibDBIcon10_Raven"] = "never",
-				["LibDBIcon10_Bartender4"] = "never",
 				["LibDBIcon10_Masque"] = "never",
-				["MiniMapInstanceDifficulty"] = "always",
+				["MinimapZoneTextButton"] = "never",
 			},
 			["dragPositions"] = {
 				["VuhDoMinimapButton"] = 193.1828064553476,
@@ -59,38 +58,38 @@ SexyMap2DB = {
 				["LibDBIcon10_Bartender4"] = 192.6972571886896,
 				["LibDBIcon10_PitBull4"] = 202.708993633329,
 				["MiniMapTracking"] = -33.85137435428399,
-				["LibDBIcon10_Skada"] = 205.9323713601766,
-				["LibDBIcon10_Masque"] = 180.4968043117369,
 				["LibDBIcon10_Raven"] = 214.5809276579555,
+				["LibDBIcon10_Masque"] = 180.4968043117369,
+				["LibDBIcon10_Skada"] = 205.9323713601766,
 			},
 			["controlVisibility"] = true,
 		},
 		["hudmap"] = {
 			["scale"] = 1.4,
-			["textColor"] = {
-				["a"] = 1,
-				["b"] = 0.5,
-				["g"] = 1,
-				["r"] = 0.5,
+			["hudColor"] = {
 			},
 			["alpha"] = 0.7,
-			["hudColor"] = {
+			["textColor"] = {
+				["a"] = 1,
+				["r"] = 0.5,
+				["g"] = 1,
+				["b"] = 0.5,
 			},
 		},
 		["zonetext"] = {
 			["bgColor"] = {
 				["a"] = 1,
-				["b"] = 0,
-				["g"] = 0,
 				["r"] = 0,
+				["g"] = 0,
+				["b"] = 0,
 			},
 			["fontColor"] = {
 			},
 			["borderColor"] = {
 				["a"] = 1,
-				["b"] = 0,
-				["g"] = 0,
 				["r"] = 0,
+				["g"] = 0,
+				["b"] = 0,
 			},
 			["xOffset"] = 0,
 			["yOffset"] = 0,
@@ -98,17 +97,17 @@ SexyMap2DB = {
 		["clock"] = {
 			["bgColor"] = {
 				["a"] = 0.1153838634490967,
-				["b"] = 0,
-				["g"] = 0,
 				["r"] = 0,
+				["g"] = 0,
+				["b"] = 0,
 			},
 			["fontColor"] = {
 			},
 			["borderColor"] = {
 				["a"] = 0.1153838634490967,
-				["b"] = 0,
-				["g"] = 0,
 				["r"] = 0,
+				["g"] = 0,
+				["b"] = 0,
 			},
 			["xOffset"] = -51,
 			["fontsize"] = 8,
@@ -122,20 +121,20 @@ SexyMap2DB = {
 				["show"] = true,
 				["textureColor"] = {
 					["a"] = 0.7307681143283844,
-					["b"] = 0,
-					["g"] = 0,
 					["r"] = 0,
+					["g"] = 0,
+					["b"] = 0,
 				},
 				["settings"] = {
+					["tile"] = false,
+					["bgFile"] = "Interface\\Buttons\\WHITE8X8",
+					["edgeSize"] = 17,
 					["insets"] = {
 						["top"] = 4,
 						["right"] = 4,
 						["left"] = 4,
 						["bottom"] = 4,
 					},
-					["bgFile"] = "Interface\\Buttons\\WHITE8X8",
-					["edgeSize"] = 17,
-					["tile"] = false,
 				},
 				["borderColor"] = {
 				},
@@ -143,6 +142,12 @@ SexyMap2DB = {
 				["alpha"] = 0.45,
 			},
 			["hideBlizzard"] = true,
+		},
+		["movers"] = {
+			["enabled"] = false,
+			["framePositions"] = {
+			},
+			["lock"] = false,
 		},
 		["core"] = {
 			["clamp"] = false,
@@ -157,12 +162,7 @@ SexyMap2DB = {
 			["shape"] = "Interface\\BUTTONS\\WHITE8X8",
 			["rightClickToConfig"] = false,
 		},
-		["movers"] = {
-			["enabled"] = false,
-			["framePositions"] = {
-			},
-			["lock"] = false,
-		},
 	},
+	["Oldfero-Area 52"] = "global",
 	["Feronaz-Area 52"] = "global",
 }

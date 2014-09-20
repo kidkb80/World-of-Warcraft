@@ -12,6 +12,7 @@ TipTac_Config = {
 	},
 	["backdropEdgeSize"] = 16,
 	["powerBar"] = false,
+	["fontFlags"] = "",
 	["showAuraCooldown"] = false,
 	["colReactBack7"] = {
 		0.02352941176470588, -- [1]
@@ -69,23 +70,26 @@ TipTac_Config = {
 	["colLevel"] = "|cffc0c0c0",
 	["reactColoredBorder"] = false,
 	["classification_minus"] = "|rLevel -%s",
-	["gradientTip"] = false,
-	["showDebuffs"] = false,
 	["fontSize"] = 12,
-	["if_showAuraCaster"] = false,
 	["if_itemQualityBorder"] = false,
 	["showBuffs"] = false,
-	["optionsBottom"] = 218.0000457763672,
 	["showTargetedBy"] = false,
-	["if_showIcon"] = false,
+	["tipBorderColor"] = {
+		1, -- [1]
+		1, -- [2]
+		1, -- [3]
+		1, -- [4]
+	},
+	["optionsLeft"] = 1071.000366210938,
 	["backdropInsets"] = 5,
-	["classification_worldboss"] = "|rLevel %s (Boss)",
-	["classification_normal"] = "|rLevel %s",
-	["classification_rareelite"] = "|rLevel %s (Rare Elite)",
+	["optionsBottom"] = 218.0000457763672,
+	["if_showIcon"] = false,
 	["if_borderlessIcons"] = true,
+	["talentOnlyInParty"] = false,
 	["colorNameByClass"] = false,
-	["colSameGuild"] = "|cffff32ff",
-	["iconAnchor"] = "TOP",
+	["hideWorldTips"] = false,
+	["classification_rareelite"] = "|rLevel %s (Rare Elite)",
+	["healthBar"] = false,
 	["colReactBack4"] = {
 		0.02352941176470588, -- [1]
 		0.02352941176470588, -- [2]
@@ -93,10 +97,10 @@ TipTac_Config = {
 		1, -- [4]
 	},
 	["classColoredBorder"] = false,
-	["healthBar"] = false,
-	["hideWorldTips"] = false,
-	["fontFlags"] = "",
-	["talentOnlyInParty"] = false,
+	["iconAnchor"] = "TOP",
+	["colSameGuild"] = "|cffff32ff",
+	["classification_normal"] = "|rLevel %s",
+	["classification_worldboss"] = "|rLevel %s (Boss)",
 	["if_showQuestLevelAndId"] = false,
 	["colReactBack6"] = {
 		0, -- [1]
@@ -104,11 +108,7 @@ TipTac_Config = {
 		0.007843137254901961, -- [3]
 		1, -- [4]
 	},
-	["optionsLeft"] = 1071.000366210938,
-	["tipBorderColor"] = {
-		1, -- [1]
-		1, -- [2]
-		1, -- [3]
-		1, -- [4]
-	},
+	["if_showAuraCaster"] = false,
+	["showDebuffs"] = false,
+	["gradientTip"] = false,
 }

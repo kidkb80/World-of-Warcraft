@@ -1,5 +1,11 @@
 
 Postal3DB = {
+	["profileKeys"] = {
+		["Jartzart - Area 52"] = "Jartzart - Area 52",
+		["Feronaz - Area 52"] = "Feronaz - Area 52",
+		["Drominus - Area 52"] = "Drominus - Area 52",
+		["Oldfero - Area 52"] = "Oldfero - Area 52",
+	},
 	["global"] = {
 		["BlackBook"] = {
 			["alts"] = {
@@ -10,20 +16,14 @@ Postal3DB = {
 			},
 		},
 	},
-	["profileKeys"] = {
-		["Oldfero - Area 52"] = "Oldfero - Area 52",
-		["Feronaz - Area 52"] = "Feronaz - Area 52",
-		["Drominus - Area 52"] = "Drominus - Area 52",
-		["Jartzart - Area 52"] = "Jartzart - Area 52",
-	},
 	["profiles"] = {
-		["Oldfero - Area 52"] = {
+		["Jartzart - Area 52"] = {
 		},
 		["Feronaz - Area 52"] = {
 		},
 		["Drominus - Area 52"] = {
 		},
-		["Jartzart - Area 52"] = {
+		["Oldfero - Area 52"] = {
 		},
 	},
 }
