@@ -30,4 +30,4 @@ TidyPlatesHub: enabled
 TidyPlatesWidgets: enabled
 WeakAurasModelPaths: enabled
 WeakAurasOptions: enabled
-WeakAurasTutorials: disabled
+WeakAurasTutorials: enabled

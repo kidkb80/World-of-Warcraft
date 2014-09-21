@@ -117,7 +117,7 @@ VuhDoOptions: enabled
 WeakAuras: enabled
 WeakAurasModelPaths: enabled
 WeakAurasOptions: enabled
-WeakAurasTutorials: disabled
+WeakAurasTutorials: enabled
 stAddonManager: enabled
 DBM-StatusBarTimers: enabled
 DBM-Core: enabled
