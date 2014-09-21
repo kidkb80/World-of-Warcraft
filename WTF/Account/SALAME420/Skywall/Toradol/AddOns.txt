@@ -1,4 +1,4 @@
-Bartender4: disabled
+Bartender4: enabled
 Claw_Resources: disabled
 Quartz: disabled
 ShadowedUF_Options: disabled

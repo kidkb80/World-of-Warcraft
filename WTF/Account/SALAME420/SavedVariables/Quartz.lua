@@ -45,37 +45,37 @@ Quartz3DB = {
 				},
 			},
 		},
+		["EnemyCasts"] = {
+		},
 		["Player"] = {
 			["profiles"] = {
 				["Default"] = {
-					["h"] = 30,
+					["h"] = 26,
 					["targetname"] = true,
 					["w"] = 270,
-					["hideicon"] = true,
+					["y"] = 309.0000915527344,
 					["font"] = "Accidental Presidency",
 					["border"] = "None",
 					["fontsize"] = 16,
-					["y"] = 254.9999847412109,
+					["hideicon"] = true,
 					["texture"] = "VuhDo - Plain",
 					["timefontsize"] = 16,
-					["x"] = 825.0006103515625,
+					["x"] = 829.9996337890625,
 				},
 				["Switch"] = {
 					["targetname"] = true,
 					["w"] = 270,
-					["x"] = 822.9998168945313,
-					["hideicon"] = true,
 					["h"] = 26,
+					["hideicon"] = true,
+					["x"] = 822.9998168945313,
 					["fontsize"] = 16,
-					["y"] = 179.9999542236328,
+					["border"] = "None",
 					["font"] = "Accidental Presidency",
 					["timefontsize"] = 16,
-					["border"] = "None",
+					["y"] = 179.9999542236328,
 					["texture"] = "VuhDo - Plain",
 				},
 			},
-		},
-		["EnemyCasts"] = {
 		},
 		["GCD"] = {
 		},
@@ -95,51 +95,25 @@ Quartz3DB = {
 					["h"] = 16,
 					["w"] = 270,
 					["hideicon"] = true,
-					["x"] = 825.0003051757813,
+					["x"] = 830.0000610351563,
 					["iconposition"] = "left",
 					["border"] = "None",
 					["texture"] = "VuhDo - Plain",
-					["y"] = 234.0000457763672,
+					["y"] = 289.0000610351563,
 					["timefontsize"] = 16,
 					["font"] = "Cabin",
 				},
 				["Switch"] = {
 					["w"] = 270,
-					["texture"] = "VuhDo - Plain",
+					["iconposition"] = "left",
 					["y"] = 159.9999237060547,
 					["x"] = 820.9998779296875,
-					["border"] = "None",
+					["font"] = "Cabin",
 					["hideicon"] = true,
 					["h"] = 16,
 					["timefontsize"] = 16,
-					["font"] = "Cabin",
-					["iconposition"] = "left",
-				},
-			},
-		},
-		["Mirror"] = {
-			["profiles"] = {
-				["Default"] = {
-					["mirroranchor"] = "free",
-					["mirrory"] = 961.9996948242188,
-					["mirrorgrowdirection"] = "down",
-					["mirrorheight"] = 20,
-					["mirrortexture"] = "VuhDo - Plain",
-					["mirrorfont"] = "Accidental Presidency",
-					["mirrorx"] = 878.0000610351563,
-					["mirrorwidth"] = 188,
-					["mirrorfontsize"] = 14,
-				},
-				["Switch"] = {
-					["mirrorwidth"] = 188,
-					["mirrorheight"] = 20,
-					["mirrortexture"] = "VuhDo - Plain",
-					["mirrorfont"] = "Accidental Presidency",
-					["mirrory"] = 1020,
-					["mirroranchor"] = "free",
-					["mirrorx"] = 878,
-					["mirrorgrowdirection"] = "down",
-					["mirrorfontsize"] = 14,
+					["border"] = "None",
+					["texture"] = "VuhDo - Plain",
 				},
 			},
 		},
@@ -160,6 +134,32 @@ Quartz3DB = {
 						0.196078431372549, -- [3]
 						1, -- [4]
 					},
+				},
+			},
+		},
+		["Mirror"] = {
+			["profiles"] = {
+				["Default"] = {
+					["mirroranchor"] = "free",
+					["mirrory"] = 1020,
+					["mirrorgrowdirection"] = "down",
+					["mirrorheight"] = 20,
+					["mirrortexture"] = "VuhDo - Plain",
+					["mirrorfont"] = "Accidental Presidency",
+					["mirrorx"] = 878,
+					["mirrorwidth"] = 188,
+					["mirrorfontsize"] = 14,
+				},
+				["Switch"] = {
+					["mirrorwidth"] = 188,
+					["mirrorheight"] = 20,
+					["mirrortexture"] = "VuhDo - Plain",
+					["mirrorfont"] = "Accidental Presidency",
+					["mirrory"] = 1020,
+					["mirroranchor"] = "free",
+					["mirrorx"] = 878,
+					["mirrorgrowdirection"] = "down",
+					["mirrorfontsize"] = 14,
 				},
 			},
 		},
@@ -189,10 +189,10 @@ Quartz3DB = {
 		},
 	},
 	["profileKeys"] = {
-		["Jartzart - Area 52"] = "Switch",
+		["Oldfero - Area 52"] = "Default",
 		["Feronaz - Area 52"] = "Default",
 		["Drominus - Area 52"] = "Default",
-		["Oldfero - Area 52"] = "Default",
+		["Jartzart - Area 52"] = "Switch",
 	},
 	["profiles"] = {
 		["Default"] = {
@@ -202,13 +202,13 @@ Quartz3DB = {
 				0.1176470588235294, -- [3]
 				1, -- [4]
 			},
-			["borderalpha"] = 0,
 			["completecolor"] = {
 				0.00392156862745098, -- [1]
 				0.03137254901960784, -- [2]
 				0.00392156862745098, -- [3]
 				1, -- [4]
 			},
+			["borderalpha"] = 0,
 			["backgroundcolor"] = {
 				nil, -- [1]
 				nil, -- [2]
@@ -222,12 +222,12 @@ Quartz3DB = {
 				1, -- [4]
 			},
 			["modules"] = {
-				["Swing"] = false,
 				["GCD"] = false,
 				["Buff"] = false,
 				["Timer"] = false,
-				["Pet"] = false,
 				["Focus"] = false,
+				["Pet"] = false,
+				["Swing"] = false,
 			},
 			["castingcolor"] = {
 				0.02352941176470588, -- [1]
@@ -244,13 +244,13 @@ Quartz3DB = {
 				0.1176470588235294, -- [3]
 				1, -- [4]
 			},
+			["backgroundalpha"] = 0.28,
 			["castingcolor"] = {
 				0.02352941176470588, -- [1]
 				0.01176470588235294, -- [2]
 				nil, -- [3]
 				1, -- [4]
 			},
-			["backgroundalpha"] = 0.28,
 			["completecolor"] = {
 				0.00392156862745098, -- [1]
 				0.03137254901960784, -- [2]
