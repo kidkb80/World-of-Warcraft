@@ -30,13 +30,13 @@ TipTac_Config = {
 		0, -- [3]
 		1, -- [4]
 	},
-	["left"] = 1795,
+	["left"] = 1798.000244140625,
 	["reactColoredBackdrop"] = false,
 	["hideAllTipsInCombat"] = true,
 	["classification_trivial"] = "|rLevel ~%s",
 	["manaBar"] = false,
 	["targetYouText"] = "[YOU]",
-	["top"] = 205.0001373291016,
+	["top"] = 209.0000457763672,
 	["barFontFace"] = "Fonts\\ARIALN.TTF",
 	["if_modifyAchievementTips"] = false,
 	["barFontSize"] = 12,

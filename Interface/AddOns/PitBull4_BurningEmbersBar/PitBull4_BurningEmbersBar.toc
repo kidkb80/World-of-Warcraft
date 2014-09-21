@@ -1,0 +1,15 @@
+## Interface: 50400
+## Title: PitBull4 |r[|cffeda55fBurning Embers bar|r]
+## Notes: Show a bar indicating the unit's Burning Embers count.
+## Author: Starinnia
+## DefaultState: enabled
+## LoadOnDemand: 1
+## Dependencies: PitBull4
+## Version: 1.0.3
+## X-Curse-Packaged-Version: 1.0.3
+## X-Curse-Project-Name: PitBull4_BurningEmbersBar
+## X-Curse-Project-ID: pitbull4_burningembersbar
+## X-Curse-Repository-ID: wow/pitbull4_burningembersbar/mainline
+
+
+load.xml

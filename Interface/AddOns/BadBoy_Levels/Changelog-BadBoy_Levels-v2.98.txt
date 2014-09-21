@@ -1,0 +1,26 @@
+------------------------------------------------------------------------
+r112 | funkydude | 2014-05-05 17:16:30 +0000 (Mon, 05 May 2014) | 1 line
+Changed paths:
+   A /tags/v2.98 (from /trunk:111)
+
+Tagging as v2.98
+------------------------------------------------------------------------
+r111 | funkydude | 2014-05-05 17:16:01 +0000 (Mon, 05 May 2014) | 1 line
+Changed paths:
+   M /trunk/BadBoy_Levels.lua
+
+zhCN update
+------------------------------------------------------------------------
+r110 | funkydude | 2014-05-05 16:43:38 +0000 (Mon, 05 May 2014) | 1 line
+Changed paths:
+   M /trunk/BadBoy_Levels.lua
+   M /trunk/BadBoy_Levels.toc
+
+Do our own player trimming.
+------------------------------------------------------------------------
+r109 | funkydude | 2013-11-13 02:25:54 +0000 (Wed, 13 Nov 2013) | 1 line
+Changed paths:
+   M /trunk/SimpleOptions.lua
+
+SimpleOptions: give the editbox a name.
+------------------------------------------------------------------------

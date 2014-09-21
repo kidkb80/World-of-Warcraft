@@ -28,6 +28,7 @@ SkadaDB = {
 		["Default"] = {
 			["windows"] = {
 				{
+					["barslocked"] = true,
 					["y"] = 176.9999389648438,
 					["x"] = -5.0003662109375,
 					["mode"] = "DPS",
@@ -91,7 +92,6 @@ SkadaDB = {
 						["margin"] = -0,
 						["texture"] = "None",
 					},
-					["bartexture"] = "VuhDo - Plain",
 					["buttons"] = {
 						["segment"] = true,
 						["menu"] = true,
@@ -99,6 +99,7 @@ SkadaDB = {
 						["report"] = true,
 						["reset"] = true,
 					},
+					["bartexture"] = "VuhDo - Plain",
 					["barwidth"] = 215.9995574951172,
 					["barspacing"] = 1,
 					["name"] = "Skada",
@@ -109,8 +110,8 @@ SkadaDB = {
 					["classcolorbars"] = true,
 					["barfontsize"] = 12,
 					["mode"] = "DPS",
-					["enabletitle"] = false,
-					["x"] = -5.99951171875,
+					["enabletitle"] = true,
+					["x"] = -1.999755859375,
 				}, -- [2]
 			},
 			["icon"] = {
@@ -121,10 +122,10 @@ SkadaDB = {
 				["mode"] = "Healing",
 			},
 			["columns"] = {
-				["Deaths_Timestamp"] = false,
-				["Death log_Percent"] = false,
-				["Damage taken_DTPS"] = false,
 				["Damage taken_Percent"] = false,
+				["Death log_Percent"] = false,
+				["Death log_Absorb"] = false,
+				["Deaths_Timestamp"] = false,
 				["Healed players_Percent"] = false,
 				["Healing_HPS"] = false,
 				["Healing taken_HPS"] = false,
@@ -136,7 +137,7 @@ SkadaDB = {
 				["Damage spell details_Percent"] = false,
 				["Overhealing_Percent"] = false,
 				["Damage spell list_Percent"] = false,
-				["Death log_Absorb"] = false,
+				["Damage taken_DTPS"] = false,
 			},
 		},
 		["Switch"] = {
@@ -184,13 +185,7 @@ SkadaDB = {
 					["snapto"] = true,
 					["point"] = "BOTTOMRIGHT",
 					["x"] = -5.99951171875,
-					["buttons"] = {
-						["report"] = true,
-						["menu"] = true,
-						["mode"] = true,
-						["segment"] = true,
-						["reset"] = true,
-					},
+					["bartexture"] = "VuhDo - Plain",
 					["barwidth"] = 215.9995574951172,
 					["barspacing"] = 1,
 					["modeincombat"] = "",
@@ -211,7 +206,13 @@ SkadaDB = {
 					["classcolorbars"] = true,
 					["clickthrough"] = false,
 					["name"] = "Skada",
-					["bartexture"] = "VuhDo - Plain",
+					["buttons"] = {
+						["report"] = true,
+						["menu"] = true,
+						["mode"] = true,
+						["segment"] = true,
+						["reset"] = true,
+					},
 					["background"] = {
 						["borderthickness"] = -0,
 						["height"] = 162.9999847412109,
@@ -228,10 +229,10 @@ SkadaDB = {
 				}, -- [2]
 			},
 			["columns"] = {
-				["Death log_Absorb"] = false,
-				["Death log_Percent"] = false,
 				["Damage taken_DTPS"] = false,
-				["Damage taken_Percent"] = false,
+				["Death log_Percent"] = false,
+				["Death log_Absorb"] = false,
+				["Deaths_Timestamp"] = false,
 				["Healed players_Percent"] = false,
 				["Healing spell list_Percent"] = false,
 				["Healing taken_HPS"] = false,
@@ -243,7 +244,7 @@ SkadaDB = {
 				["Damaged mobs_Percent"] = false,
 				["Healing taken_Percent"] = false,
 				["Damage spell list_Percent"] = false,
-				["Deaths_Timestamp"] = false,
+				["Damage taken_Percent"] = false,
 			},
 			["report"] = {
 				["mode"] = "Healing",
