@@ -4,8 +4,6 @@ hfLootRollGlobalOptions = {
 		["log"] = {
 		},
 		["options"] = {
-			["custom"] = {
-			},
 			["Default"] = {
 				["combatOpacity"] = 0.5,
 				["winnerNameFontSize"] = 14,
@@ -403,7 +401,7 @@ hfLootRollGlobalOptions = {
 					["nameShow"] = false,
 					["nameOffsetX"] = 10,
 					["opacity"] = 1,
-					["lastTime"] = 1411329950,
+					["lastTime"] = 1411344381,
 					["fontSize"] = 14,
 					["showBoP"] = false,
 				},
@@ -503,10 +501,12 @@ hfLootRollGlobalOptions = {
 					["nameShow"] = false,
 					["nameOffsetX"] = 10,
 					["direction"] = "UP",
-					["lastTime"] = 1411264600,
+					["lastTime"] = 1411344712,
 					["fontSize"] = 14,
 					["showBoP"] = false,
 				},
+			},
+			["custom"] = {
 			},
 		},
 		["slash"] = {

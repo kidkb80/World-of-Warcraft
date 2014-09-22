@@ -44,20 +44,10 @@ BlizzMoveDB = {
 	},
 	["HelpFrame"] = {
 	},
-	["GossipFrame"] = {
+	["AchievementFrame"] = {
+		["save"] = true,
 	},
-	["ColorPickerFrame"] = {
-		["default"] = {
-			["relativeTo"] = "UIParent",
-			["point"] = "CENTER",
-			["relativePoint"] = "CENTER",
-			["yOfs"] = 0,
-			["xOfs"] = 0,
-		},
-		["relativePoint"] = "CENTER",
-		["yOfs"] = 0,
-		["xOfs"] = -169.0000915527344,
-		["point"] = "CENTER",
+	["GossipFrame"] = {
 	},
 	["FriendsFrame"] = {
 		["default"] = {
@@ -73,8 +63,18 @@ BlizzMoveDB = {
 		["scale"] = 1.200000023841858,
 		["point"] = "LEFT",
 	},
-	["AchievementFrame"] = {
-		["save"] = true,
+	["ColorPickerFrame"] = {
+		["default"] = {
+			["relativeTo"] = "UIParent",
+			["point"] = "CENTER",
+			["relativePoint"] = "CENTER",
+			["yOfs"] = 0,
+			["xOfs"] = 0,
+		},
+		["relativePoint"] = "CENTER",
+		["yOfs"] = 33.99995422363281,
+		["xOfs"] = -131.0000305175781,
+		["point"] = "CENTER",
 	},
 	["QuestFrame"] = {
 		["default"] = {
@@ -104,14 +104,14 @@ BlizzMoveDB = {
 		["xOfs"] = 88.99995422363281,
 		["point"] = "LEFT",
 	},
-	["GuildBankFrame"] = {
-		["save"] = true,
+	["VideoOptionsFrame"] = {
 	},
 	["DressUpFrame"] = {
 	},
 	["WorldMapFrame"] = {
 	},
-	["VideoOptionsFrame"] = {
+	["GuildBankFrame"] = {
+		["save"] = true,
 	},
 	["PlayerTalentFrame"] = {
 		["default"] = {

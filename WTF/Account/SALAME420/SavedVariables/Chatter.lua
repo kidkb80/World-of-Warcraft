@@ -2286,65 +2286,65 @@ ChatterDB = {
 				},
 				["Default"] = {
 					["frames"] = {
-						["FRAME_4"] = {
-							["background"] = "Solid",
-							["border"] = "None",
-							["backgroundColor"] = {
-								["a"] = 0.1713336706161499,
-							},
-						},
-						["FRAME_2"] = {
-							["background"] = "Solid",
-							["border"] = "None",
-							["backgroundColor"] = {
-								["a"] = 0.2931125164031982,
-							},
-						},
-						["FRAME_3"] = {
-							["background"] = "Solid",
-							["border"] = "None",
-							["backgroundColor"] = {
-								["a"] = 0.1848645210266113,
-							},
-						},
 						["FRAME_1"] = {
 							["background"] = "Solid",
-							["border"] = "None",
 							["backgroundColor"] = {
 								["a"] = 0.2254571914672852,
 							},
+							["border"] = "None",
+						},
+						["FRAME_2"] = {
+							["background"] = "Solid",
+							["backgroundColor"] = {
+								["a"] = 0.2931125164031982,
+							},
+							["border"] = "None",
+						},
+						["FRAME_4"] = {
+							["background"] = "Solid",
+							["backgroundColor"] = {
+								["a"] = 0.1713336706161499,
+							},
+							["border"] = "None",
+						},
+						["FRAME_3"] = {
+							["background"] = "Solid",
+							["backgroundColor"] = {
+								["a"] = 0.1848645210266113,
+							},
+							["border"] = "None",
 						},
 					},
 				},
 				["Drominus"] = {
 					["frames"] = {
-						["FRAME_1"] = {
-							["background"] = "Solid",
-							["backgroundColor"] = {
-								["a"] = 0.2254571914672852,
-							},
-							["border"] = "None",
-						},
-						["FRAME_2"] = {
-							["background"] = "Solid",
-							["backgroundColor"] = {
-								["a"] = 0.2931125164031982,
-							},
-							["border"] = "None",
-						},
 						["FRAME_4"] = {
 							["background"] = "Solid",
+							["border"] = "None",
 							["backgroundColor"] = {
 								["a"] = 0.1713336706161499,
 							},
+						},
+						["FRAME_2"] = {
+							["background"] = "Solid",
 							["border"] = "None",
+							["backgroundColor"] = {
+								["a"] = 0.2931125164031982,
+							},
 						},
 						["FRAME_3"] = {
 							["background"] = "Solid",
+							["border"] = "None",
 							["backgroundColor"] = {
 								["a"] = 0.1848645210266113,
 							},
+						},
+						["FRAME_1"] = {
+							["background"] = "Solid",
 							["border"] = "None",
+							["backgroundColor"] = {
+								["a"] = 0.2254571914672852,
+							},
 						},
 					},
 				},
@@ -2360,82 +2360,82 @@ ChatterDB = {
 			["profiles"] = {
 				["Switch"] = {
 					["frames"] = {
-						["Frame1"] = false,
 						["Frame4"] = false,
+						["Frame12"] = false,
 						["Frame18"] = false,
-						["Frame16"] = false,
+						["Frame3"] = false,
 						["Frame5"] = false,
 						["Frame19"] = false,
 						["Frame6"] = false,
 						["Frame17"] = false,
-						["Frame3"] = false,
+						["Frame11"] = false,
 						["Frame13"] = false,
 						["Frame14"] = false,
 						["Frame20"] = false,
 						["Frame7"] = false,
 						["Frame15"] = false,
-						["Frame11"] = false,
-						["Frame12"] = false,
+						["Frame16"] = false,
+						["Frame1"] = false,
 					},
 				},
 				["Feronaz"] = {
 					["frames"] = {
-						["Frame4"] = false,
 						["Frame12"] = false,
+						["Frame1"] = false,
 						["Frame18"] = false,
-						["Frame3"] = false,
+						["Frame11"] = false,
 						["Frame5"] = false,
 						["Frame14"] = false,
 						["Frame6"] = false,
 						["Frame17"] = false,
-						["Frame11"] = false,
+						["Frame16"] = false,
 						["Frame7"] = false,
 						["Frame19"] = false,
 						["Frame20"] = false,
 						["Frame13"] = false,
 						["Frame15"] = false,
-						["Frame16"] = false,
-						["Frame1"] = false,
+						["Frame3"] = false,
+						["Frame4"] = false,
 					},
 				},
 				["Default"] = {
 					["frames"] = {
-						["Frame1"] = false,
 						["Frame4"] = false,
+						["Frame12"] = false,
 						["Frame18"] = false,
-						["Frame16"] = false,
+						["Frame3"] = false,
 						["Frame5"] = false,
 						["Frame19"] = false,
 						["Frame6"] = false,
 						["Frame17"] = false,
-						["Frame3"] = false,
+						["Frame11"] = false,
 						["Frame13"] = false,
 						["Frame14"] = false,
 						["Frame20"] = false,
 						["Frame7"] = false,
 						["Frame15"] = false,
-						["Frame11"] = false,
-						["Frame12"] = false,
+						["Frame16"] = false,
+						["Frame1"] = false,
 					},
 				},
 				["Drominus"] = {
 					["frames"] = {
-						["Frame1"] = false,
 						["Frame4"] = false,
+						["Frame12"] = false,
 						["Frame18"] = false,
-						["Frame16"] = false,
+						["Frame3"] = false,
 						["Frame5"] = false,
 						["Frame19"] = false,
 						["Frame6"] = false,
 						["Frame17"] = false,
-						["Frame3"] = false,
+						["Frame11"] = false,
 						["Frame13"] = false,
 						["Frame14"] = false,
 						["Frame20"] = false,
 						["Frame7"] = false,
 						["Frame15"] = false,
-						["Frame11"] = false,
-						["Frame12"] = false,
+						["Frame16"] = false,
+						["Frame1"] = false,
 					},
 				},
 			},
@@ -2463,24 +2463,24 @@ ChatterDB = {
 					["border"] = "None",
 				},
 				["Default"] = {
+					["attach"] = "TOP",
+					["border"] = "None",
 					["font"] = "Cabin",
+					["height"] = 32,
+					["background"] = "Solid",
 					["backgroundColor"] = {
 						["a"] = 0.1794871091842651,
 					},
-					["attach"] = "TOP",
-					["background"] = "Solid",
-					["border"] = "None",
-					["height"] = 32,
 				},
 				["Drominus"] = {
-					["attach"] = "TOP",
-					["border"] = "None",
 					["font"] = "Cabin",
-					["height"] = 32,
-					["background"] = "Solid",
 					["backgroundColor"] = {
 						["a"] = 0.1794871091842651,
 					},
+					["attach"] = "TOP",
+					["background"] = "Solid",
+					["border"] = "None",
+					["height"] = 32,
 				},
 			},
 		},
@@ -2523,17 +2523,17 @@ ChatterDB = {
 				["Default"] = {
 					["channels"] = {
 						["busy BN Whisper To"] = "<B>[BN:To]",
-						["Whisper From"] = "[W:Fr]",
 						["BN Whisper From"] = "[BN:Fr]",
 						["away BN Whisper To"] = "<A>[BN:To]",
+						["Whisper From"] = "[W:Fr]",
 					},
 				},
 				["Drominus"] = {
 					["channels"] = {
 						["busy BN Whisper To"] = "<B>[BN:To]",
+						["Whisper From"] = "[W:Fr]",
 						["BN Whisper From"] = "[BN:Fr]",
 						["away BN Whisper To"] = "<A>[BN:To]",
-						["Whisper From"] = "[W:Fr]",
 					},
 				},
 			},
@@ -2583,38 +2583,38 @@ ChatterDB = {
 				},
 				["Area 52"] = {
 					["history"] = {
-						" late", -- [1]
-						" r", -- [2]
+						"/bar", -- [1]
+						"/quartz", -- [2]
 						"/bar", -- [3]
 						"/bar", -- [4]
-						"/bar", -- [5]
+						"/quartz", -- [5]
 						"/bar", -- [6]
-						"/bar", -- [7]
-						"/bar", -- [8]
-						"/raven", -- [9]
+						"/fx", -- [7]
+						"/quartz", -- [8]
+						"/bar", -- [9]
 						"/bar", -- [10]
-						"/bar", -- [11]
+						"/dbm", -- [11]
 						"/bar", -- [12]
 						"/bar", -- [13]
-						"/bar", -- [14]
-						"/sexymap", -- [15]
-						"/bar", -- [16]
-						"/bar", -- [17]
-						"/bar", -- [18]
-						"/bar", -- [19]
-						"/quartz", -- [20]
-						"/bar", -- [21]
-						"/bar", -- [22]
-						"/quartz", -- [23]
-						"/bar", -- [24]
-						"/fx", -- [25]
-						"/quartz", -- [26]
+						"/skada", -- [14]
+						"/wa", -- [15]
+						"/wa", -- [16]
+						"/wa", -- [17]
+						"/wa", -- [18]
+						"/wa", -- [19]
+						"/wa", -- [20]
+						"/focus", -- [21]
+						"/raven", -- [22]
+						"/wa", -- [23]
+						"/raven", -- [24]
+						"/wa", -- [25]
+						"/bar", -- [26]
 						"/bar", -- [27]
 						"/bar", -- [28]
-						"/dbm", -- [29]
-						"/bar", -- [30]
-						"/bar", -- [31]
-						"/skada", -- [32]
+						"/bar", -- [29]
+						"/cw Zeroxi-Area52 just walked over to him", -- [30]
+						"/point", -- [31]
+						"/wa", -- [32]
 					},
 				},
 			},
@@ -2696,8 +2696,8 @@ ChatterDB = {
 				["Disable Fading"] = true,
 				["Highlights"] = false,
 				["Tell Target (/tt)"] = false,
-				["Timestamps"] = false,
 				["BNet"] = false,
+				["Timestamps"] = false,
 			},
 			["welcomeMessaged"] = true,
 		},
@@ -2717,12 +2717,12 @@ ChatterDB = {
 		},
 		["Drominus"] = {
 			["modules"] = {
+				["Disable Fading"] = true,
 				["Highlights"] = false,
 				["Tell Target (/tt)"] = false,
 				["BNet"] = false,
-				["Borders/Background"] = false,
-				["Disable Fading"] = true,
 				["Timestamps"] = false,
+				["Borders/Background"] = false,
 			},
 			["welcomeMessaged"] = true,
 		},

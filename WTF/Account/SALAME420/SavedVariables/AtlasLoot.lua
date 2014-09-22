@@ -1,10 +1,6 @@
 
 AtlasLootDB = {
 	["namespaces"] = {
-		["WishList"] = {
-		},
-		["AtlasLootPanel"] = {
-		},
 		["DefaultFrame"] = {
 			["profiles"] = {
 				["Anaiis - Skywall"] = {
@@ -44,6 +40,7 @@ AtlasLootDB = {
 				},
 				["Gaulthain - Skywall"] = {
 					["instance"] = "SiegeofOrgrimmar",
+					["module"] = "AtlasLootMoP",
 					["DefaultFrameLocked"] = true,
 					["NEWpoint"] = {
 						"TOP", -- [1]
@@ -52,7 +49,6 @@ AtlasLootDB = {
 						-3.500643968582153, -- [4]
 						0, -- [5]
 					},
-					["module"] = "AtlasLootMoP",
 				},
 				["Feronaz - Area 52"] = {
 					["instance"] = "BlackTemple",
@@ -96,9 +92,14 @@ AtlasLootDB = {
 				},
 			},
 		},
+		["AtlasLootPanel"] = {
+		},
+		["WishList"] = {
+		},
 		["Filter"] = {
 		},
 	},
+	["showWarning"] = true,
 	["profileKeys"] = {
 		["Anaiis - Skywall"] = "Anaiis - Skywall",
 		["Oldfero - Area 52"] = "Oldfero - Area 52",
@@ -112,7 +113,6 @@ AtlasLootDB = {
 		["Noremedy - Skywall"] = "Noremedy - Skywall",
 		["Feronaz - Skywall"] = "Feronaz - Skywall",
 	},
-	["showWarning"] = true,
 	["profiles"] = {
 		["Anaiis - Skywall"] = {
 		},
@@ -123,14 +123,14 @@ AtlasLootDB = {
 			["LootTableType"] = "RaidFinder",
 		},
 		["Drominus - Area 52"] = {
-			["LootTableType"] = "RaidFinder",
 			["LastSearch"] = "sorrowpath",
+			["LootTableType"] = "RaidFinder",
 			["QuickLooks"] = {
 				{
 					["module"] = "AtlasLootMoP",
 					["lootPageType"] = "Flexible",
-					["savedName"] = "QuickLook 1",
 					["lootPage"] = "SoOIronJuggernaut",
+					["savedName"] = "QuickLook 1",
 				}, -- [1]
 			},
 		},

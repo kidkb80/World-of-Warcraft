@@ -184,17 +184,16 @@ PitBull4DB = {
 									["location"] = "center",
 									["attach_to"] = "ExperienceBar",
 								},
-								["Lua:Power"] = {
+								["Lua:Druid mana"] = {
+									["enabled"] = false,
 									["events"] = {
 										["UNIT_MAXPOWER"] = true,
 										["UNIT_POWER"] = true,
 									},
 									["exists"] = true,
-									["position"] = 1.00001,
-									["location"] = "left",
-									["code"] = "local max = MaxPower(unit)\nif max > 0 then\n  if Power(unit) == max then\n    return \"%s\", Short(Power(unit),true)\n  else\n    return \"%s / %s\",Short(Power(unit),true),Short(max,true)\n  end\nend",
-									["attach_to"] = "PowerBar",
-									["size"] = 0.8,
+									["code"] = "if UnitPowerType(unit) ~= 0 then\n  return \"%s/%s\",Power(unit,0),MaxPower(unit,0)\nend",
+									["location"] = "center",
+									["attach_to"] = "DruidManaBar",
 								},
 								["Lua:Reputation"] = {
 									["enabled"] = false,
@@ -207,16 +206,16 @@ PitBull4DB = {
 									["location"] = "center",
 									["attach_to"] = "ReputationBar",
 								},
-								["Lua:Druid mana"] = {
-									["enabled"] = false,
-									["events"] = {
-										["UNIT_MAXPOWER"] = true,
-										["UNIT_POWER"] = true,
-									},
+								["Lua:Name"] = {
 									["exists"] = true,
-									["code"] = "if UnitPowerType(unit) ~= 0 then\n  return \"%s/%s\",Power(unit,0),MaxPower(unit,0)\nend",
-									["location"] = "center",
-									["attach_to"] = "DruidManaBar",
+									["code"] = "local abbr = Name(unit)\nif abbr:len() > 20 and abbr:find(\" \") then\n  abbr = abbr:gsub(\"([^ ]+) +\",\n    function(text)\n        return text:sub(1,1) .. \". \"\n    end)\nend\nreturn \"%s\", abbr;\n ",
+									["location"] = "left",
+									["events"] = {
+										["PLAYER_FLAGS_CHANGED"] = true,
+										["UNIT_NAME_UPDATE"] = true,
+									},
+									["attach_to"] = "HealthBar",
+									["size"] = 1.15,
 								},
 								["Lua:Threat"] = {
 									["enabled"] = false,
@@ -318,16 +317,17 @@ PitBull4DB = {
 									["code"] = "local dr,dg,db = DifficultyColor(unit)\nlocal form = DruidForm(unit)\nlocal classification = Classification(unit)\nif UnitIsPlayer(unit) or (not UnitIsFriend(unit,\"player\") and not IsPet(unit)) then\n  local cr,cg,cb = ClassColor(unit)\n  if form then\n    return \"%s%s|cff%02x%02x%02x%s|r |cff%02x%02x%02x%s|r (%s) %s\",classification or '',classification and ' ' or '',dr,dg,db,Level(unit),cr,cg,cb,Class(unit),form,SmartRace(unit) or ''\n  else\n    return \"%s%s|cff%02x%02x%02x%s|r |cff%02x%02x%02x%s|r %s\",classification or '',classification and ' ' or '',dr,dg,db,Level(unit),cr,cg,cb,Class(unit),SmartRace(unit) or ''\n  end\nelse\n  if form then\n    return \"%s%s|cff%02x%02x%02x%s|r (%s) %s\",classification or '',classification and ' ' or '',dr,dg,db,Level(unit),form,SmartRace(unit) or ''\n  else\n    return \"%s%s|cff%02x%02x%02x%s|r %s\",classification or '',classification and ' ' or '',dr,dg,db,Level(unit),SmartRace(unit) or ''\n  end\nend",
 									["attach_to"] = "PowerBar",
 								},
-								["Lua:Name"] = {
-									["exists"] = true,
-									["code"] = "local abbr = Name(unit)\nif abbr:len() > 20 and abbr:find(\" \") then\n  abbr = abbr:gsub(\"([^ ]+) +\",\n    function(text)\n        return text:sub(1,1) .. \". \"\n    end)\nend\nreturn \"%s\", abbr;\n ",
-									["location"] = "left",
+								["Lua:Power"] = {
 									["events"] = {
-										["PLAYER_FLAGS_CHANGED"] = true,
-										["UNIT_NAME_UPDATE"] = true,
+										["UNIT_MAXPOWER"] = true,
+										["UNIT_POWER"] = true,
 									},
-									["attach_to"] = "HealthBar",
-									["size"] = 1.15,
+									["exists"] = true,
+									["position"] = 1.00001,
+									["location"] = "left",
+									["code"] = "local max = MaxPower(unit)\nif max > 0 then\n  if Power(unit) == max then\n    return \"%s\", Short(Power(unit),true)\n  else\n    return \"%s / %s\",Short(Power(unit),true),Short(max,true)\n  end\nend",
+									["attach_to"] = "PowerBar",
+									["size"] = 0.8,
 								},
 								["Lua:Demonic fury"] = {
 									["enabled"] = false,
@@ -369,17 +369,17 @@ PitBull4DB = {
 									["code"] = "local cur, max, rest = XP(unit), MaxXP(unit), RestXP(unit)\nif rest then\n  return \"%s/%s (%s%%) R: %s%%\",cur,max,Percent(cur,max),Percent(rest,max)\nelse\n  return \"%s/%s (%s%%)\",cur,max,Percent(cur,max)\nend",
 									["attach_to"] = "ExperienceBar",
 								},
-								["Lua:Druid mana"] = {
-									["enabled"] = false,
+								["Lua:Name"] = {
 									["events"] = {
-										["UNIT_MAXPOWER"] = true,
-										["UNIT_POWER"] = true,
+										["PLAYER_FLAGS_CHANGED"] = true,
+										["UNIT_NAME_UPDATE"] = true,
 									},
 									["exists"] = true,
-									["position"] = 4,
-									["location"] = "center",
-									["code"] = "if UnitPowerType(unit) ~= 0 then\n  return \"%s/%s\",Power(unit,0),MaxPower(unit,0)\nend",
-									["attach_to"] = "DruidManaBar",
+									["position"] = 24,
+									["location"] = "left",
+									["code"] = "local abbr = Name(unit)\nif abbr:len() > 20 and abbr:find(\" \") then\n  abbr = abbr:gsub(\"([^ ]+) +\",\n    function(text)\n        return text:sub(1,1) .. \". \"\n    end)\nend\nreturn \"%s\", abbr;\n ",
+									["attach_to"] = "HealthBar",
+									["size"] = 0.95,
 								},
 								["Lua:Reputation"] = {
 									["enabled"] = false,
@@ -393,17 +393,18 @@ PitBull4DB = {
 									["code"] = "local name, _, min , max, value, id = GetWatchedFactionInfo()\nif IsMouseOver() then\n  return name or ConfigMode() \nelse\n  local fs_id, fs_rep, _, _, _, _, _, fs_threshold, next_fs_threshold = GetFriendshipReputation(id)\n  if fs_id then\n    if next_fs_threshold then\n      min, max, value = fs_threshold, next_fs_threshold, fs_rep\n    else\n      min, max, value = 0, 1, 1\n    end\n  end\n  local bar_cur,bar_max = value-min,max-min\n  return \"%d/%d (%s%%)\",bar_cur,bar_max,Percent(bar_cur,bar_max)\nend",
 									["attach_to"] = "ReputationBar",
 								},
-								["Lua:Name"] = {
+								["Lua:Power"] = {
+									["enabled"] = false,
 									["events"] = {
-										["PLAYER_FLAGS_CHANGED"] = true,
-										["UNIT_NAME_UPDATE"] = true,
+										["UNIT_MAXPOWER"] = true,
+										["UNIT_POWER"] = true,
 									},
 									["exists"] = true,
-									["position"] = 24,
+									["position"] = 29,
 									["location"] = "left",
-									["code"] = "local abbr = Name(unit)\nif abbr:len() > 20 and abbr:find(\" \") then\n  abbr = abbr:gsub(\"([^ ]+) +\",\n    function(text)\n        return text:sub(1,1) .. \". \"\n    end)\nend\nreturn \"%s\", abbr;\n ",
-									["attach_to"] = "HealthBar",
-									["size"] = 0.95,
+									["code"] = "local max = MaxPower(unit)\nif max > 0 then\n  if Power(unit) == max then\n    return \"%s\", Short(Power(unit),true)\n  else\n    return \"%s / %s\",Short(Power(unit),true),Short(max,true)\n  end\nend",
+									["attach_to"] = "PowerBar",
+									["size"] = 0.8,
 								},
 								["Lua:Threat"] = {
 									["enabled"] = false,
@@ -511,18 +512,17 @@ PitBull4DB = {
 									["code"] = "local dr,dg,db = DifficultyColor(unit)\nlocal form = DruidForm(unit)\nlocal classification = Classification(unit)\nif UnitIsPlayer(unit) or (not UnitIsFriend(unit,\"player\") and not IsPet(unit)) then\n  local cr,cg,cb = ClassColor(unit)\n  if form then\n    return \"%s%s|cff%02x%02x%02x%s|r |cff%02x%02x%02x%s|r (%s) %s\",classification or '',classification and ' ' or '',dr,dg,db,Level(unit),cr,cg,cb,Class(unit),form,SmartRace(unit) or ''\n  else\n    return \"%s%s|cff%02x%02x%02x%s|r |cff%02x%02x%02x%s|r %s\",classification or '',classification and ' ' or '',dr,dg,db,Level(unit),cr,cg,cb,Class(unit),SmartRace(unit) or ''\n  end\nelse\n  if form then\n    return \"%s%s|cff%02x%02x%02x%s|r (%s) %s\",classification or '',classification and ' ' or '',dr,dg,db,Level(unit),form,SmartRace(unit) or ''\n  else\n    return \"%s%s|cff%02x%02x%02x%s|r %s\",classification or '',classification and ' ' or '',dr,dg,db,Level(unit),SmartRace(unit) or ''\n  end\nend",
 									["attach_to"] = "PowerBar",
 								},
-								["Lua:Power"] = {
+								["Lua:Druid mana"] = {
 									["enabled"] = false,
 									["events"] = {
 										["UNIT_MAXPOWER"] = true,
 										["UNIT_POWER"] = true,
 									},
 									["exists"] = true,
-									["position"] = 29,
-									["location"] = "left",
-									["code"] = "local max = MaxPower(unit)\nif max > 0 then\n  if Power(unit) == max then\n    return \"%s\", Short(Power(unit),true)\n  else\n    return \"%s / %s\",Short(Power(unit),true),Short(max,true)\n  end\nend",
-									["attach_to"] = "PowerBar",
-									["size"] = 0.8,
+									["position"] = 4,
+									["location"] = "center",
+									["code"] = "if UnitPowerType(unit) ~= 0 then\n  return \"%s/%s\",Power(unit,0),MaxPower(unit,0)\nend",
+									["attach_to"] = "DruidManaBar",
 								},
 								["Lua:Demonic fury"] = {
 									["enabled"] = false,
@@ -563,28 +563,6 @@ PitBull4DB = {
 									["location"] = "center",
 									["attach_to"] = "ReputationBar",
 								},
-								["Lua:Name"] = {
-									["exists"] = true,
-									["code"] = "local abbr = Name(unit)\nif abbr:len() > 20 and abbr:find(\" \") then\n  abbr = abbr:gsub(\"([^ ]+) +\",\n    function(text)\n        return text:sub(1,1) .. \". \"\n    end)\nend\nreturn \"%s\", abbr;\n ",
-									["location"] = "center",
-									["events"] = {
-										["PLAYER_FLAGS_CHANGED"] = true,
-										["UNIT_NAME_UPDATE"] = true,
-									},
-									["attach_to"] = "PowerBar",
-									["size"] = 0.75,
-								},
-								["Lua:Experience"] = {
-									["enabled"] = false,
-									["events"] = {
-										["UNIT_PET_EXPERIENCE"] = true,
-										["PLAYER_XP_UPDATE"] = true,
-									},
-									["exists"] = true,
-									["code"] = "local cur, max, rest = XP(unit), MaxXP(unit), RestXP(unit)\nif rest then\n  return \"%s/%s (%s%%) R: %s%%\",cur,max,Percent(cur,max),Percent(rest,max)\nelse\n  return \"%s/%s (%s%%)\",cur,max,Percent(cur,max)\nend",
-									["location"] = "center",
-									["attach_to"] = "ExperienceBar",
-								},
 								["Lua:Power"] = {
 									["enabled"] = false,
 									["events"] = {
@@ -597,6 +575,28 @@ PitBull4DB = {
 									["code"] = "local max = MaxPower(unit)\nif max > 0 then\n  if Power(unit) == max then\n    return \"%s\", Short(Power(unit),true)\n  else\n    return \"%s / %s\",Short(Power(unit),true),Short(max,true)\n  end\nend",
 									["attach_to"] = "PowerBar",
 									["size"] = 0.8,
+								},
+								["Lua:Experience"] = {
+									["enabled"] = false,
+									["events"] = {
+										["UNIT_PET_EXPERIENCE"] = true,
+										["PLAYER_XP_UPDATE"] = true,
+									},
+									["exists"] = true,
+									["code"] = "local cur, max, rest = XP(unit), MaxXP(unit), RestXP(unit)\nif rest then\n  return \"%s/%s (%s%%) R: %s%%\",cur,max,Percent(cur,max),Percent(rest,max)\nelse\n  return \"%s/%s (%s%%)\",cur,max,Percent(cur,max)\nend",
+									["location"] = "center",
+									["attach_to"] = "ExperienceBar",
+								},
+								["Lua:Druid mana"] = {
+									["enabled"] = false,
+									["events"] = {
+										["UNIT_POWER"] = true,
+										["UNIT_MAXPOWER"] = true,
+									},
+									["exists"] = true,
+									["code"] = "if UnitPowerType(unit) ~= 0 then\n  return \"%s/%s\",Power(unit,0),MaxPower(unit,0)\nend",
+									["location"] = "center",
+									["attach_to"] = "DruidManaBar",
 								},
 								["Lua:Threat"] = {
 									["enabled"] = false,
@@ -699,16 +699,16 @@ PitBull4DB = {
 									["attach_to"] = "PowerBar",
 									["size"] = 0.85,
 								},
-								["Lua:Druid mana"] = {
-									["enabled"] = false,
-									["events"] = {
-										["UNIT_POWER"] = true,
-										["UNIT_MAXPOWER"] = true,
-									},
+								["Lua:Name"] = {
 									["exists"] = true,
-									["code"] = "if UnitPowerType(unit) ~= 0 then\n  return \"%s/%s\",Power(unit,0),MaxPower(unit,0)\nend",
+									["code"] = "local abbr = Name(unit)\nif abbr:len() > 20 and abbr:find(\" \") then\n  abbr = abbr:gsub(\"([^ ]+) +\",\n    function(text)\n        return text:sub(1,1) .. \". \"\n    end)\nend\nreturn \"%s\", abbr;\n ",
 									["location"] = "center",
-									["attach_to"] = "DruidManaBar",
+									["events"] = {
+										["PLAYER_FLAGS_CHANGED"] = true,
+										["UNIT_NAME_UPDATE"] = true,
+									},
+									["attach_to"] = "PowerBar",
+									["size"] = 0.75,
 								},
 								["Lua:Demonic fury"] = {
 									["enabled"] = false,
@@ -751,16 +751,16 @@ PitBull4DB = {
 										["UPDATE_FACTION"] = true,
 									},
 								},
-								["Lua:Druid mana"] = {
-									["enabled"] = false,
+								["Lua:Name"] = {
 									["exists"] = true,
-									["code"] = "if UnitPowerType(unit) ~= 0 then\n  return \"%s/%s\",Power(unit,0),MaxPower(unit,0)\nend",
-									["location"] = "center",
-									["attach_to"] = "DruidManaBar",
+									["code"] = "local abbr = Name(unit)\nif abbr:len() > 20 and abbr:find(\" \") then\n  abbr = abbr:gsub(\"([^ ]+) +\",\n    function(text)\n        return text:sub(1,1) .. \". \"\n    end)\nend\nreturn \"%s\", abbr;\n ",
+									["location"] = "left",
 									["events"] = {
-										["UNIT_POWER"] = true,
-										["UNIT_MAXPOWER"] = true,
+										["PLAYER_FLAGS_CHANGED"] = true,
+										["UNIT_NAME_UPDATE"] = true,
 									},
+									["attach_to"] = "HealthBar",
+									["size"] = 1.15,
 								},
 								["Lua:Experience"] = {
 									["enabled"] = false,
@@ -773,16 +773,17 @@ PitBull4DB = {
 										["PLAYER_XP_UPDATE"] = true,
 									},
 								},
-								["Lua:Name"] = {
+								["Lua:Power"] = {
 									["exists"] = true,
-									["code"] = "local abbr = Name(unit)\nif abbr:len() > 20 and abbr:find(\" \") then\n  abbr = abbr:gsub(\"([^ ]+) +\",\n    function(text)\n        return text:sub(1,1) .. \". \"\n    end)\nend\nreturn \"%s\", abbr;\n ",
-									["location"] = "left",
 									["events"] = {
-										["PLAYER_FLAGS_CHANGED"] = true,
-										["UNIT_NAME_UPDATE"] = true,
+										["UNIT_POWER"] = true,
+										["UNIT_MAXPOWER"] = true,
 									},
-									["attach_to"] = "HealthBar",
-									["size"] = 1.15,
+									["position"] = 1.00001,
+									["location"] = "left",
+									["code"] = "local max = MaxPower(unit)\nif max > 0 then\n  if Power(unit) == max then\n    return \"%s\", Short(Power(unit),true)\n  else\n    return \"%s / %s\",Short(Power(unit),true),Short(max,true)\n  end\nend",
+									["attach_to"] = "PowerBar",
+									["size"] = 0.8,
 								},
 								["Lua:Threat"] = {
 									["enabled"] = false,
@@ -884,17 +885,16 @@ PitBull4DB = {
 									["attach_to"] = "PowerBar",
 									["size"] = 0.85,
 								},
-								["Lua:Power"] = {
+								["Lua:Druid mana"] = {
+									["enabled"] = false,
 									["exists"] = true,
+									["code"] = "if UnitPowerType(unit) ~= 0 then\n  return \"%s/%s\",Power(unit,0),MaxPower(unit,0)\nend",
+									["location"] = "center",
+									["attach_to"] = "DruidManaBar",
 									["events"] = {
 										["UNIT_POWER"] = true,
 										["UNIT_MAXPOWER"] = true,
 									},
-									["position"] = 1.00001,
-									["location"] = "left",
-									["code"] = "local max = MaxPower(unit)\nif max > 0 then\n  if Power(unit) == max then\n    return \"%s\", Short(Power(unit),true)\n  else\n    return \"%s / %s\",Short(Power(unit),true),Short(max,true)\n  end\nend",
-									["attach_to"] = "PowerBar",
-									["size"] = 0.8,
 								},
 								["Lua:Demonic fury"] = {
 									["enabled"] = false,
@@ -936,17 +936,18 @@ PitBull4DB = {
 									["attach_to"] = "ReputationBar",
 									["position"] = 3,
 								},
-								["Lua:Name"] = {
+								["Lua:Power"] = {
+									["enabled"] = false,
 									["exists"] = true,
 									["events"] = {
-										["PLAYER_FLAGS_CHANGED"] = true,
-										["UNIT_NAME_UPDATE"] = true,
+										["UNIT_POWER"] = true,
+										["UNIT_MAXPOWER"] = true,
 									},
-									["position"] = 24,
+									["position"] = 29,
 									["location"] = "left",
-									["code"] = "local abbr = Name(unit)\nif abbr:len() > 20 and abbr:find(\" \") then\n  abbr = abbr:gsub(\"([^ ]+) +\",\n    function(text)\n        return text:sub(1,1) .. \". \"\n    end)\nend\nreturn \"%s\", abbr;\n ",
-									["attach_to"] = "HealthBar",
-									["size"] = 0.95,
+									["code"] = "local max = MaxPower(unit)\nif max > 0 then\n  if Power(unit) == max then\n    return \"%s\", Short(Power(unit),true)\n  else\n    return \"%s / %s\",Short(Power(unit),true),Short(max,true)\n  end\nend",
+									["attach_to"] = "PowerBar",
+									["size"] = 0.8,
 								},
 								["Lua:Experience"] = {
 									["enabled"] = false,
@@ -960,18 +961,17 @@ PitBull4DB = {
 									["attach_to"] = "ExperienceBar",
 									["position"] = 2,
 								},
-								["Lua:Power"] = {
+								["Lua:Druid mana"] = {
 									["enabled"] = false,
-									["exists"] = true,
 									["events"] = {
 										["UNIT_POWER"] = true,
 										["UNIT_MAXPOWER"] = true,
 									},
-									["position"] = 29,
-									["location"] = "left",
-									["code"] = "local max = MaxPower(unit)\nif max > 0 then\n  if Power(unit) == max then\n    return \"%s\", Short(Power(unit),true)\n  else\n    return \"%s / %s\",Short(Power(unit),true),Short(max,true)\n  end\nend",
-									["attach_to"] = "PowerBar",
-									["size"] = 0.8,
+									["code"] = "if UnitPowerType(unit) ~= 0 then\n  return \"%s/%s\",Power(unit,0),MaxPower(unit,0)\nend",
+									["location"] = "center",
+									["exists"] = true,
+									["attach_to"] = "DruidManaBar",
+									["position"] = 4,
 								},
 								["Lua:Threat"] = {
 									["enabled"] = false,
@@ -1079,17 +1079,17 @@ PitBull4DB = {
 									["attach_to"] = "PowerBar",
 									["size"] = 0.85,
 								},
-								["Lua:Druid mana"] = {
-									["enabled"] = false,
-									["events"] = {
-										["UNIT_POWER"] = true,
-										["UNIT_MAXPOWER"] = true,
-									},
-									["code"] = "if UnitPowerType(unit) ~= 0 then\n  return \"%s/%s\",Power(unit,0),MaxPower(unit,0)\nend",
-									["location"] = "center",
+								["Lua:Name"] = {
 									["exists"] = true,
-									["attach_to"] = "DruidManaBar",
-									["position"] = 4,
+									["events"] = {
+										["PLAYER_FLAGS_CHANGED"] = true,
+										["UNIT_NAME_UPDATE"] = true,
+									},
+									["position"] = 24,
+									["location"] = "left",
+									["code"] = "local abbr = Name(unit)\nif abbr:len() > 20 and abbr:find(\" \") then\n  abbr = abbr:gsub(\"([^ ]+) +\",\n    function(text)\n        return text:sub(1,1) .. \". \"\n    end)\nend\nreturn \"%s\", abbr;\n ",
+									["attach_to"] = "HealthBar",
+									["size"] = 0.95,
 								},
 								["Lua:Demonic fury"] = {
 									["enabled"] = false,
@@ -1130,18 +1130,16 @@ PitBull4DB = {
 										["PLAYER_XP_UPDATE"] = true,
 									},
 								},
-								["Lua:Power"] = {
+								["Lua:Druid mana"] = {
 									["enabled"] = false,
 									["exists"] = true,
+									["code"] = "if UnitPowerType(unit) ~= 0 then\n  return \"%s/%s\",Power(unit,0),MaxPower(unit,0)\nend",
+									["location"] = "center",
+									["attach_to"] = "DruidManaBar",
 									["events"] = {
 										["UNIT_MAXPOWER"] = true,
 										["UNIT_POWER"] = true,
 									},
-									["position"] = 1.00001,
-									["location"] = "left",
-									["code"] = "local max = MaxPower(unit)\nif max > 0 then\n  if Power(unit) == max then\n    return \"%s\", Short(Power(unit),true)\n  else\n    return \"%s / %s\",Short(Power(unit),true),Short(max,true)\n  end\nend",
-									["attach_to"] = "PowerBar",
-									["size"] = 0.8,
 								},
 								["Lua:Reputation"] = {
 									["enabled"] = false,
@@ -1154,16 +1152,16 @@ PitBull4DB = {
 										["UPDATE_FACTION"] = true,
 									},
 								},
-								["Lua:Druid mana"] = {
-									["enabled"] = false,
+								["Lua:Name"] = {
 									["exists"] = true,
-									["code"] = "if UnitPowerType(unit) ~= 0 then\n  return \"%s/%s\",Power(unit,0),MaxPower(unit,0)\nend",
+									["code"] = "local abbr = Name(unit)\nif abbr:len() > 20 and abbr:find(\" \") then\n  abbr = abbr:gsub(\"([^ ]+) +\",\n    function(text)\n        return text:sub(1,1) .. \". \"\n    end)\nend\nreturn \"%s\", abbr;\n ",
 									["location"] = "center",
-									["attach_to"] = "DruidManaBar",
 									["events"] = {
-										["UNIT_MAXPOWER"] = true,
-										["UNIT_POWER"] = true,
+										["PLAYER_FLAGS_CHANGED"] = true,
+										["UNIT_NAME_UPDATE"] = true,
 									},
+									["attach_to"] = "PowerBar",
+									["size"] = 0.75,
 								},
 								["Lua:Threat"] = {
 									["enabled"] = false,
@@ -1266,16 +1264,18 @@ PitBull4DB = {
 									["attach_to"] = "PowerBar",
 									["position"] = 1.00002,
 								},
-								["Lua:Name"] = {
+								["Lua:Power"] = {
+									["enabled"] = false,
 									["exists"] = true,
-									["code"] = "local abbr = Name(unit)\nif abbr:len() > 20 and abbr:find(\" \") then\n  abbr = abbr:gsub(\"([^ ]+) +\",\n    function(text)\n        return text:sub(1,1) .. \". \"\n    end)\nend\nreturn \"%s\", abbr;\n ",
-									["location"] = "center",
 									["events"] = {
-										["PLAYER_FLAGS_CHANGED"] = true,
-										["UNIT_NAME_UPDATE"] = true,
+										["UNIT_MAXPOWER"] = true,
+										["UNIT_POWER"] = true,
 									},
+									["position"] = 1.00001,
+									["location"] = "left",
+									["code"] = "local max = MaxPower(unit)\nif max > 0 then\n  if Power(unit) == max then\n    return \"%s\", Short(Power(unit),true)\n  else\n    return \"%s / %s\",Short(Power(unit),true),Short(max,true)\n  end\nend",
 									["attach_to"] = "PowerBar",
-									["size"] = 0.75,
+									["size"] = 0.8,
 								},
 								["Lua:Demonic fury"] = {
 									["enabled"] = false,
@@ -1577,14 +1577,14 @@ PitBull4DB = {
 					["layouts"] = {
 						["Normal"] = {
 							["enabled"] = false,
-							["position"] = 1.00001,
-							["location"] = "edge_top",
 							["background_color"] = {
 								nil, -- [1]
 								nil, -- [2]
 								nil, -- [3]
 								0.1025640964508057, -- [4]
 							},
+							["position"] = 1.00001,
+							["location"] = "edge_top",
 							["size"] = 3.3,
 						},
 					},
@@ -1603,15 +1603,15 @@ PitBull4DB = {
 								0.007843137254901961, -- [3]
 								1, -- [4]
 							},
+							["texture"] = "VuhDo - Plain",
+							["alpha"] = 0.7000000000000001,
+							["position"] = 1,
 							["custom_color"] = {
 								0.6627450980392157, -- [1]
 								0.06666666666666667, -- [2]
 								0.07843137254901961, -- [3]
 								1, -- [4]
 							},
-							["position"] = 1,
-							["alpha"] = 0.7000000000000001,
-							["texture"] = "VuhDo - Plain",
 						},
 					},
 				},
@@ -1791,14 +1791,24 @@ PitBull4DB = {
 				},
 			},
 		},
-		["ReputationBar"] = {
+		["RestIcon"] = {
 			["profiles"] = {
 				["Default"] = {
+					["layouts"] = {
+						["Tiny"] = {
+							["position"] = 14,
+						},
+					},
 					["global"] = {
 						["enabled"] = false,
 					},
 				},
 				["Switch"] = {
+					["layouts"] = {
+						["Tiny"] = {
+							["position"] = 14,
+						},
+					},
 					["global"] = {
 						["enabled"] = false,
 					},
@@ -2286,6 +2296,20 @@ PitBull4DB = {
 				},
 			},
 		},
+		["ReputationBar"] = {
+			["profiles"] = {
+				["Default"] = {
+					["global"] = {
+						["enabled"] = false,
+					},
+				},
+				["Switch"] = {
+					["global"] = {
+						["enabled"] = false,
+					},
+				},
+			},
+		},
 		["Runes"] = {
 			["profiles"] = {
 				["Default"] = {
@@ -2293,30 +2317,6 @@ PitBull4DB = {
 						["Normal"] = {
 							["enabled"] = false,
 						},
-					},
-				},
-			},
-		},
-		["RestIcon"] = {
-			["profiles"] = {
-				["Default"] = {
-					["layouts"] = {
-						["Tiny"] = {
-							["position"] = 14,
-						},
-					},
-					["global"] = {
-						["enabled"] = false,
-					},
-				},
-				["Switch"] = {
-					["layouts"] = {
-						["Tiny"] = {
-							["position"] = 14,
-						},
-					},
-					["global"] = {
-						["enabled"] = false,
 					},
 				},
 			},
@@ -2478,34 +2478,34 @@ PitBull4DB = {
 			},
 			["layouts"] = {
 				["Normal"] = {
-					["size_x"] = 240,
-					["font"] = "Accidental Presidency",
 					["bar_padding"] = 0,
+					["font"] = "Accidental Presidency",
+					["indicator_size"] = 10,
 					["bar_spacing"] = 1,
 					["indicator_spacing"] = 5,
 					["size_y"] = 65,
 					["exists"] = true,
-					["indicator_size"] = 10,
+					["size_x"] = 240,
 				},
 				["Tiny"] = {
-					["size_x"] = 160,
-					["font"] = "Accidental Presidency",
 					["bar_padding"] = 0,
+					["font"] = "Accidental Presidency",
+					["indicator_size"] = 10,
 					["bar_spacing"] = 1,
 					["indicator_spacing"] = 5,
 					["size_y"] = 32,
 					["exists"] = true,
-					["indicator_size"] = 10,
+					["size_x"] = 160,
 				},
 				["Box"] = {
-					["size_x"] = 115,
-					["font"] = "Accidental Presidency",
 					["bar_padding"] = 0,
+					["font"] = "Accidental Presidency",
+					["indicator_size"] = 10,
 					["bar_spacing"] = 1,
 					["indicator_spacing"] = 5,
 					["size_y"] = 32,
 					["exists"] = true,
-					["indicator_size"] = 10,
+					["size_x"] = 115,
 				},
 			},
 			["lock_movement"] = true,
