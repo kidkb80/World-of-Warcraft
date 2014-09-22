@@ -19,7 +19,7 @@ BagnonFrameSettings = {
 			["hasDBOFrame"] = false,
 		},
 		["bank"] = {
-			["y"] = 197.0001678466797,
+			["y"] = 197.0001525878906,
 			["x"] = 75.00002288818359,
 			["point"] = "BOTTOMLEFT",
 		},
