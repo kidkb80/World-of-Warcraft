@@ -1,8 +1,8 @@
 
 AmrBagItems = {
 	"|cffffffff|Hitem:6948:0:0:0:0:0:0:2141818908:90:0:0|h[Hearthstone]|h|r", -- [1]
-	"|cffffffff|Hitem:87216:0:0:0:0:0:0:1680068608:90:0:0|h[Thermal Anvil]|h|r", -- [2]
-	"|cffffffff|Hitem:89640:0:0:0:0:0:0:1867421952:90:0:0|h[Life Spirit]|h|r", -- [3]
+	"|cff0070dd|Hitem:63207:0:0:0:0:0:0:0:90:0:0|h[Wrap of Unity]|h|r", -- [2]
+	"|cff0070dd|Hitem:85777:0:0:0:0:0:0:2068147072:90:0:0|h[Ancient Pandaren Mining Pick]|h|r", -- [3]
 	"|cff0070dd|Hitem:86580:0:0:0:0:0:0:104650240:90:0:0|h[Overgrown Lilypad]|h|r", -- [4]
 	"|cff1eff00|Hitem:104287:0:0:0:0:0:0:104528640:90:0:0|h[Windfeather Plume]|h|r", -- [5]
 	"|cffffffff|Hitem:103643:0:0:0:0:0:0:1558680579:90:0:0|h[Dew of Eternal Morning]|h|r", -- [6]
@@ -11,32 +11,41 @@ AmrBagItems = {
 	"|cff1eff00|Hitem:104346:0:0:0:0:0:0:0:90:0:0|h[Golden Glider]|h|r", -- [9]
 	"|cffffffff|Hitem:103643:0:0:0:0:0:0:397694080:90:0:0|h[Dew of Eternal Morning]|h|r", -- [10]
 	"|cffffffff|Hitem:79249:0:0:0:0:0:0:0:90:0:0|h[Tome of the Clear Mind]|h|r", -- [11]
-	"|cffffffff|Hitem:5512:0:0:0:0:0:0:279661312:90:0:0|h[Healthstone]|h|r", -- [12]
-	"|cffa335ee|Hitem:104873:0:0:0:0:0:0:926721664:90:0:491|h[Asgorathian Blood Seal]|h|r", -- [13]
-	"|cffffffff|Hitem:76088:0:0:0:0:0:0:1373093120:90:0:0|h[Flask of Winter's Bite]|h|r", -- [14]
-	"|cffffffff|Hitem:74646:0:0:0:0:0:0:1302098304:90:0:0|h[Black Pepper Ribs and Shrimp]|h|r", -- [15]
-	"|cff0070dd|Hitem:63207:0:0:0:0:0:0:0:90:0:0|h[Wrap of Unity]|h|r", -- [16]
-	"|cff0070dd|Hitem:85777:0:0:0:0:0:0:2068147072:90:0:0|h[Ancient Pandaren Mining Pick]|h|r", -- [17]
-	"|cffffffff|Hitem:71634:0:0:0:0:0:0:1382641664:90:0:0|h[Darkmoon Adventurer's Guide]|h|r", -- [18]
-	"|cff1eff00|Hitem:71083:0:0:0:0:0:0:1957307648:90:0:0|h[Darkmoon Game Token]|h|r", -- [19]
-	"|cffffffff|Hitem:71096:0:0:0:0:0:0:679466496:90:0:0|h[Grisly Trophy]|h|r", -- [20]
-	"|cffffffff|Hitem:76076:0:0:0:0:0:0:1799203456:90:0:0|h[Mad Hozen Elixir]|h|r", -- [21]
-	"|cffffffff|Hitem:105719:0:0:0:0:0:0:0:90:0:0|h[Brew-Curried Whitefish]|h|r", -- [22]
-	"|cff1eff00|Hitem:72094:0:0:0:0:0:0:2050631040:90:0:0|h[Black Trillium Ore]|h|r", -- [23]
-	"|cff1eff00|Hitem:72103:0:0:0:0:0:0:1416464384:90:0:0|h[White Trillium Ore]|h|r", -- [24]
-	"|cffffffff|Hitem:72096:0:0:0:0:0:0:1141142400:90:0:0|h[Ghost Iron Bar]|h|r", -- [25]
-	"|cffffffff|Hitem:72092:0:0:0:0:0:0:822733056:90:0:0|h[Ghost Iron Ore]|h|r", -- [26]
-	"|cffffffff|Hitem:72092:0:0:0:0:0:0:1859624192:90:0:0|h[Ghost Iron Ore]|h|r", -- [27]
-	"|cffffffff|Hitem:72092:0:0:0:0:0:0:1854793856:90:0:0|h[Ghost Iron Ore]|h|r", -- [28]
-	"|cffffffff|Hitem:23424:0:0:0:0:0:0:2028679040:90:0:0|h[Fel Iron Ore]|h|r", -- [29]
-	"|cffffffff|Hitem:52185:0:0:0:0:0:0:375701760:90:0:0|h[Elementium Ore]|h|r", -- [30]
-	"|cffffffff|Hitem:89112:0:0:0:0:0:0:931119616:90:0:0|h[Mote of Harmony]|h|r", -- [31]
-	"|cffffffff|Hitem:8846:0:0:0:0:0:0:1336446080:90:0:0|h[Gromsblood]|h|r", -- [32]
-	"|cff0070dd|Hitem:76061:0:0:0:0:0:0:631758848:90:0:0|h[Spirit of Harmony]|h|r", -- [33]
-	"|cffffffff|Hitem:72235:0:0:0:0:0:0:2126234880:90:0:0|h[Silkweed]|h|r", -- [34]
-	"|cffffffff|Hitem:72237:0:0:0:0:0:0:1198346240:90:0:0|h[Rain Poppy]|h|r", -- [35]
-	"|cffffffff|Hitem:72234:0:0:0:0:0:0:1755659392:90:0:0|h[Green Tea Leaf]|h|r", -- [36]
-	"|cffffffff|Hitem:79011:0:0:0:0:0:0:1280652928:90:0:0|h[Fool's Cap]|h|r", -- [37]
+	"|cffffffff|Hitem:104264:0:0:0:0:0:0:1771067008:90:0:0|h[Meaty Crane Leg]|h|r", -- [12]
+	"|cffa335ee|Hitem:49318:0:0:0:0:0:0:1229667712:90:0:0|h[Netherwind Hood]|h|r", -- [13]
+	"|cffa335ee|Hitem:49307:0:0:0:0:0:0:1229667712:90:0:0|h[Fluttering Sapphiron Drape]|h|r", -- [14]
+	"|cffa335ee|Hitem:49294:0:0:0:0:0:0:1229667712:90:0:0|h[Ashen Sack of Gems]|h|r", -- [15]
+	"|cffffffff|Hitem:74839:0:0:0:0:0:0:409741696:90:0:0|h[Wildfowl Breast]|h|r", -- [16]
+	"|cffa335ee|Hitem:49315:0:0:0:0:0:0:1229667712:90:0:0|h[Nemesis Skullcover]|h|r", -- [17]
+	"|cffffffff|Hitem:101618:0:0:0:0:0:0:0:90:0:0|h[Pandaren Treasure Noodle Soup]|h|r", -- [18]
+	"|cffffffff|Hitem:38281:0:0:0:0:0:0:1836828544:90:0:0|h[Direbrew's Dire Brew]|h|r", -- [19]
+	"|cffffffff|Hitem:5512:0:0:0:0:0:0:877676928:90:0:0|h[Healthstone]|h|r", -- [20]
+	"|cff1eff00|Hitem:37829:0:0:0:0:0:0:1764954752:90:0:0|h[Brewfest Prize Token]|h|r", -- [21]
+	"|cffa335ee|Hitem:31100:0:0:0:0:0:0:2036612224:90:0:0|h[Leggings of the Forgotten Protector]|h|r", -- [22]
+	"|cffffffff|Hitem:76088:0:0:0:0:0:0:1373093120:90:0:0|h[Flask of Winter's Bite]|h|r", -- [23]
+	"|cffffffff|Hitem:74646:0:0:0:0:0:0:1302098304:90:0:0|h[Black Pepper Ribs and Shrimp]|h|r", -- [24]
+	"|cffffffff|Hitem:87216:0:0:0:0:0:0:1680068608:90:0:0|h[Thermal Anvil]|h|r", -- [25]
+	"|cffffffff|Hitem:89640:0:0:0:0:0:0:1867421952:90:0:0|h[Life Spirit]|h|r", -- [26]
+	"|cffa335ee|Hitem:32749:0:0:0:0:0:0:404657792:90:0:0|h[Pattern: Shoulders of Lightning Reflexes]|h|r", -- [27]
+	"|cffffffff|Hitem:71634:0:0:0:0:0:0:1382641664:90:0:0|h[Darkmoon Adventurer's Guide]|h|r", -- [28]
+	"|cff1eff00|Hitem:71083:0:0:0:0:0:0:1957307648:90:0:0|h[Darkmoon Game Token]|h|r", -- [29]
+	"|cffffffff|Hitem:71096:0:0:0:0:0:0:679466496:90:0:0|h[Grisly Trophy]|h|r", -- [30]
+	"|cffffffff|Hitem:76076:0:0:0:0:0:0:1799203456:90:0:0|h[Mad Hozen Elixir]|h|r", -- [31]
+	"|cffffffff|Hitem:105719:0:0:0:0:0:0:0:90:0:0|h[Brew-Curried Whitefish]|h|r", -- [32]
+	"|cff1eff00|Hitem:72094:0:0:0:0:0:0:2050631040:90:0:0|h[Black Trillium Ore]|h|r", -- [33]
+	"|cff1eff00|Hitem:72103:0:0:0:0:0:0:1416464384:90:0:0|h[White Trillium Ore]|h|r", -- [34]
+	"|cffffffff|Hitem:72096:0:0:0:0:0:0:1141142400:90:0:0|h[Ghost Iron Bar]|h|r", -- [35]
+	"|cffffffff|Hitem:72096:0:0:0:0:0:0:1963962624:90:0:0|h[Ghost Iron Bar]|h|r", -- [36]
+	"|cffffffff|Hitem:72092:0:0:0:0:0:0:454322816:90:0:0|h[Ghost Iron Ore]|h|r", -- [37]
+	"|cffffffff|Hitem:23424:0:0:0:0:0:0:2028679040:90:0:0|h[Fel Iron Ore]|h|r", -- [38]
+	"|cffffffff|Hitem:52185:0:0:0:0:0:0:375701760:90:0:0|h[Elementium Ore]|h|r", -- [39]
+	"|cffffffff|Hitem:89112:0:0:0:0:0:0:931119616:90:0:0|h[Mote of Harmony]|h|r", -- [40]
+	"|cffffffff|Hitem:8846:0:0:0:0:0:0:1336446080:90:0:0|h[Gromsblood]|h|r", -- [41]
+	"|cff0070dd|Hitem:76061:0:0:0:0:0:0:631758848:90:0:0|h[Spirit of Harmony]|h|r", -- [42]
+	"|cffffffff|Hitem:72235:0:0:0:0:0:0:2126234880:90:0:0|h[Silkweed]|h|r", -- [43]
+	"|cffffffff|Hitem:72237:0:0:0:0:0:0:1198346240:90:0:0|h[Rain Poppy]|h|r", -- [44]
+	"|cffffffff|Hitem:72234:0:0:0:0:0:0:1755659392:90:0:0|h[Green Tea Leaf]|h|r", -- [45]
+	"|cffffffff|Hitem:79011:0:0:0:0:0:0:1280652928:90:0:0|h[Fool's Cap]|h|r", -- [46]
 }
 AmrBankItems = {
 	"|cff0070dd|Hitem:89795:0:0:0:0:0:0:0:90:0:0|h[Lorewalkers Tabard]|h|r", -- [1]
@@ -98,45 +107,53 @@ AmrBankItems = {
 	"|cff0070dd|Hitem:24044:0:0:0:0:0:0:2091088512:90:0:0|h[Hellreaver]|h|r", -- [57]
 	"|cffa335ee|Hitem:32248:0:0:0:0:0:0:2092161664:90:0:0|h[Halberd of Desolation]|h|r", -- [58]
 	"|cff0070dd|Hitem:86520:0:0:0:0:0:0:1862096896:90:0:0|h[Malik's Stalwart Spear]|h|r", -- [59]
+	"|cffa335ee|Hitem:40491:0:0:0:0:0:0:181030528:90:0:0|h[Hailstorm]|h|r", -- [60]
+	"|cffa335ee|Hitem:103512:0:0:0:0:0:0:385028736:90:0:0|h[Prideful Gladiator's Cloak of Alacrity]|h|r", -- [61]
+	"|cffa335ee|Hitem:103377:0:0:0:0:0:0:731764096:90:0:0|h[Prideful Gladiator's Dreadplate Gauntlets]|h|r", -- [62]
+	"|cffa335ee|Hitem:103458:0:0:0:0:0:0:289691520:90:0:0|h[Prideful Gladiator's Warboots of Alacrity]|h|r", -- [63]
+	"|cffa335ee|Hitem:103513:4424:0:0:0:0:0:687814656:90:137:0|h[Prideful Gladiator's Cloak of Prowess]|h|r", -- [64]
+	"|cffa335ee|Hitem:102943:0:0:0:0:0:0:0:90:0:0|h[Grievous Gladiator's Signet of Accuracy]|h|r", -- [65]
+	"|cff0070dd|Hitem:102483:0:0:0:0:0:0:738287104:90:0:0|h[Crafted Malevolent Gladiator's Medallion of Tenacity]|h|r", -- [66]
+	"|cffa335ee|Hitem:103515:0:0:0:0:0:0:1700460672:90:137:0|h[Prideful Gladiator's Choker of Accuracy]|h|r", -- [67]
 }
 AmrEquipedItems = {
 	["1"] = "|cffa335ee|Hitem:104839:0:5032:4612:0:0:0:1315244928:90:154:491|h[Helm of the Night Watchman]|h|r",
-	["9"] = "|cffa335ee|Hitem:105785:4415:0:0:0:0:0:1726796672:90:137:491|h[Vanguard's Burly Bracers]|h|r",
+	["14"] = "|cffa335ee|Hitem:104885:0:0:0:0:0:0:1600793216:90:0:491|h[Skeer's Bloodsoaked Talisman]|h|r",
 	["3"] = "|cffa335ee|Hitem:99059:4803:4612:4612:0:0:0:0:90:159:505|h[Pauldrons of Cyclopean Dread]|h|r",
 	["2"] = "|cffa335ee|Hitem:105766:0:0:0:0:0:0:1989183744:90:137:491|h[Anafielle's Spiked Choker]|h|r",
 	["5"] = "|cffa335ee|Hitem:105767:4419:4647:4647:4647:0:0:216473728:90:168:491|h[Hoodrych's Bloodied Chestplate]|h|r",
 	["4"] = "|cffffffff|Hitem:42360:0:0:0:0:0:0:0:90:0:0|h[Ebon Filigreed Doublet]|h|r",
 	["7"] = "|cffa335ee|Hitem:105761:4823:4647:4592:0:0:0:1129784704:90:152:491|h[Partik's Purified Legplates]|h|r",
 	["6"] = "|cffa335ee|Hitem:98616:0:4612:4612:4647:0:0:1454462464:90:140:491|h[Avenger's Trillium Waistplate]|h|r",
-	["14"] = "|cffa335ee|Hitem:104885:0:0:0:0:0:0:1600793216:90:0:491|h[Skeer's Bloodsoaked Talisman]|h|r",
+	["9"] = "|cffa335ee|Hitem:105785:4415:0:0:0:0:0:1726796672:90:137:491|h[Vanguard's Burly Bracers]|h|r",
 	["15"] = "|cffff8000|Hitem:102249:4424:4612:0:0:0:0:1623945600:90:153:505|h[Gong-Lu, Strength of Xuen]|h|r",
 	["16"] = "|cffa335ee|Hitem:104863:3368:4647:0:0:0:0:1396256768:90:152:505|h[Britomart's Jagged Pike]|h|r",
-	["8"] = "|cffa335ee|Hitem:104731:4429:4612:0:0:0:0:1829021568:90:139:493|h[Greaves of Sublime Superiority]|h|r",
+	["8"] = "|cffa335ee|Hitem:104731:4429:4612:0:0:0:0:1829021568:90:140:493|h[Greaves of Sublime Superiority]|h|r",
 	["13"] = "|cffa335ee|Hitem:104744:0:0:0:0:0:0:1796395392:90:0:505|h[Evil Eye of Galakras]|h|r",
-	["12"] = "|cffa335ee|Hitem:101887:0:0:0:0:0:-371:1435240264:90:153:491|h[Cliffbreaker Seal of the Earthfall]|h|r",
-	["11"] = "|cffa335ee|Hitem:104864:0:4612:0:0:0:0:389812224:90:159:505|h[Devilfang Band]|h|r",
+	["12"] = "|cffa335ee|Hitem:104864:0:4612:0:0:0:0:389812224:90:159:505|h[Devilfang Band]|h|r",
+	["11"] = "|cffa335ee|Hitem:104873:0:4612:0:0:0:0:926721664:90:152:491|h[Asgorathian Blood Seal]|h|r",
 	["10"] = "|cffa335ee|Hitem:99193:4432:4612:4612:0:0:0:1959066624:90:137:505|h[Gauntlets of Cyclopean Dread]|h|r",
 }
-AmrGold = 19966979
+AmrGold = 23086241
 AmrRealmName = "Area 52"
 AmrCharacterName = "Drominus"
 AmrIconInfo = {
 }
 AmrCurrencies = {
-	[395] = 257,
-	[396] = 1800,
+	[395] = 286,
+	[396] = 1875,
 	[397] = 8,
 	[398] = 9,
 	[384] = 2,
 	[400] = 2,
 	[401] = 11,
-	[399] = 7,
+	[515] = 41,
 	[416] = 15,
 	[241] = 1,
 	[392] = 671,
 	[393] = 94,
 	[394] = 3,
-	[515] = 41,
+	[399] = 7,
 }
 AmrProfessions = {
 	["Cooking"] = 26,
@@ -415,6 +432,38 @@ AmrBankItemsAndCounts = {
 		["count"] = 1,
 		["link"] = "|cff0070dd|Hitem:86520:0:0:0:0:0:0:1862096896:90:0:0|h[Malik's Stalwart Spear]|h|r",
 	}, -- [59]
+	{
+		["count"] = 1,
+		["link"] = "|cffa335ee|Hitem:40491:0:0:0:0:0:0:181030528:90:0:0|h[Hailstorm]|h|r",
+	}, -- [60]
+	{
+		["count"] = 1,
+		["link"] = "|cffa335ee|Hitem:103512:0:0:0:0:0:0:385028736:90:0:0|h[Prideful Gladiator's Cloak of Alacrity]|h|r",
+	}, -- [61]
+	{
+		["count"] = 1,
+		["link"] = "|cffa335ee|Hitem:103377:0:0:0:0:0:0:731764096:90:0:0|h[Prideful Gladiator's Dreadplate Gauntlets]|h|r",
+	}, -- [62]
+	{
+		["count"] = 1,
+		["link"] = "|cffa335ee|Hitem:103458:0:0:0:0:0:0:289691520:90:0:0|h[Prideful Gladiator's Warboots of Alacrity]|h|r",
+	}, -- [63]
+	{
+		["count"] = 1,
+		["link"] = "|cffa335ee|Hitem:103513:4424:0:0:0:0:0:687814656:90:137:0|h[Prideful Gladiator's Cloak of Prowess]|h|r",
+	}, -- [64]
+	{
+		["count"] = 1,
+		["link"] = "|cffa335ee|Hitem:102943:0:0:0:0:0:0:0:90:0:0|h[Grievous Gladiator's Signet of Accuracy]|h|r",
+	}, -- [65]
+	{
+		["count"] = 1,
+		["link"] = "|cff0070dd|Hitem:102483:0:0:0:0:0:0:738287104:90:0:0|h[Crafted Malevolent Gladiator's Medallion of Tenacity]|h|r",
+	}, -- [66]
+	{
+		["count"] = 1,
+		["link"] = "|cffa335ee|Hitem:103515:0:0:0:0:0:0:1700460672:90:137:0|h[Prideful Gladiator's Choker of Accuracy]|h|r",
+	}, -- [67]
 }
 AmrImportString = "region=USA;realm=Area 52;name=Drominus;faction=Horde;spec=251;talents=321112;glyphs=58623,58673,58669,59307,146648,146653;race=Tauren;professions=Herbalism:615,Mining:600;item=6:105761:0:491:y,b:4647,4592:76697,76641:4823:152;item=2:99059:0:505:r,r:4612,4612:76661,76661:4803:159;item=8:105785:0:491:0:0:0:4415:137;item=4:105767:0:491:r,b,b:4647,4647,4647:76697,76697,76697:4419:168;item=7:104731:0:493:r:4612:76661:4429:140;item=15:104863:0:505:y:4647:76697:3368:152;item=5:98616:0:491:r,r,p:4612,4612,4647:76661,76661,76697:0:140;item=0:104839:0:491:m,r:5032,4612:95346,76661:0:154;item=9:99193:0:505:r,r:4612,4612:76661,76661:4432:137;item=14:102249:0:505:r:4612:76661:4424:153;item=10:104873:0:491:r:4612:76661:0:152;item=11:104864:0:505:r:4612:76661:0:159;item=1:105766:0:491:0:0:0:0:137;item=12:104744:0:505:0:0:0:0:0;item=13:104885:0:491:0:0:0:0:0;"
 AmrImportDate = "09/18/14 07:22:13"
@@ -431,6 +480,6 @@ AmrLogData = {
 	["_autoLog"] = {
 		[1136] = "disabled",
 	},
+	["_lastZone"] = "Eastern Kingdoms",
 	["_lastDiff"] = 0,
-	["_lastZone"] = "Pandaria",
 }

@@ -2,19 +2,20 @@
 AUCTIONATOR_SAVEDVARS = {
 	["_50000"] = 500,
 	["_2000"] = 100,
+	["_200000"] = 1000,
+	["STARTING_DISCOUNT"] = 5,
+	["_1000000"] = 2500,
 	["_5000000"] = 10000,
 	["LOG_DE_DATA_X"] = true,
-	["_1000000"] = 2500,
-	["_10000"] = 200,
 	["_500"] = 5,
-	["STARTING_DISCOUNT"] = 5,
-	["_200000"] = 1000,
+	["_10000"] = 200,
 }
 AUCTIONATOR_PRICING_HISTORY = {
 }
 AUCTIONATOR_SHOPPING_LISTS = {
 	{
 		["items"] = {
+			"Green Tea Leaf", -- [1]
 		},
 		["isRecents"] = 1,
 		["name"] = "Recent Searches",
@@ -33,6 +34,20 @@ AUCTIONATOR_SHOPPING_LISTS = {
 AUCTIONATOR_PRICE_DATABASE = {
 	["__dbversion"] = 4,
 	["Area 52_Horde"] = {
+		["Green Tea Leaf"] = {
+			["mr"] = 7227,
+			["cc"] = 6,
+			["id"] = "72234",
+			["H1406"] = 7227,
+			["sc"] = 6,
+		},
+		["Torn Green Tea Leaf"] = {
+			["mr"] = 3549,
+			["cc"] = 6,
+			["id"] = "97619",
+			["H1406"] = 3549,
+			["sc"] = 6,
+		},
 	},
 }
 AUCTIONATOR_LAST_SCAN_TIME = nil

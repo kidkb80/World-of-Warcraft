@@ -32,9 +32,9 @@ PetBattleMasterDb = {
 			["frames"] = {
 				["petbmTeamView"] = {
 				},
-				["petbmInfoView"] = {
-				},
 				["petbmNameIconEditor"] = {
+				},
+				["petbmInfoView"] = {
 				},
 			},
 		},

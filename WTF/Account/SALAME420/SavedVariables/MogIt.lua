@@ -1,5 +1,8 @@
 
 MogItDB = {
+	["global"] = {
+		["version"] = "3.3.2",
+	},
 	["profileKeys"] = {
 		["Dalhian - Skywall"] = "Default",
 		["Drominus - Area 52"] = "Default",
@@ -13,14 +16,11 @@ MogItDB = {
 		["Cidareth - Skywall"] = "Default",
 		["Feronaz - Area 52"] = "Default",
 		["Gaulthain - Area 52"] = "Default",
-		["Noremedy - Skywall"] = "Default",
-		["Toradol - Skywall"] = "Default",
 		["Malkyn - Dragonblight"] = "Default",
+		["Toradol - Skywall"] = "Default",
+		["Noremedy - Skywall"] = "Default",
 		["Cecliann - Skywall"] = "Default",
 		["Feronaz - Skywall"] = "Default",
-	},
-	["global"] = {
-		["version"] = "3.3.2",
 	},
 	["profiles"] = {
 		["Default"] = {
@@ -33,16 +33,16 @@ MogItDB = {
 			["url"] = "Wowhead",
 			["columns"] = 4,
 			["tooltip"] = false,
-			["gridWidth"] = 987.998779296875,
+			["gridHeight"] = 1004.999938964844,
 			["y"] = -14.50015258789063,
 			["x"] = -72.50130462646484,
-			["gridHeight"] = 1004.999938964844,
+			["gridWidth"] = 987.998779296875,
 			["previewProps"] = {
 				{
 					["y"] = 0,
-					["h"] = 384.9998779296875,
-					["w"] = 334.9998779296875,
 					["x"] = 0,
+					["w"] = 334.9998779296875,
+					["h"] = 384.9998779296875,
 				}, -- [1]
 			},
 		},
@@ -62,9 +62,9 @@ MogItWishlist = {
 		["Cidareth - Skywall"] = "Cidareth - Skywall",
 		["Feronaz - Area 52"] = "Feronaz - Area 52",
 		["Gaulthain - Area 52"] = "Gaulthain - Area 52",
-		["Noremedy - Skywall"] = "Noremedy - Skywall",
-		["Toradol - Skywall"] = "Toradol - Skywall",
 		["Malkyn - Dragonblight"] = "Malkyn - Dragonblight",
+		["Toradol - Skywall"] = "Toradol - Skywall",
+		["Noremedy - Skywall"] = "Noremedy - Skywall",
 		["Cecliann - Skywall"] = "Cecliann - Skywall",
 		["Feronaz - Skywall"] = "Feronaz - Skywall",
 	},
@@ -93,11 +93,11 @@ MogItWishlist = {
 		},
 		["Gaulthain - Area 52"] = {
 		},
-		["Noremedy - Skywall"] = {
+		["Malkyn - Dragonblight"] = {
 		},
 		["Toradol - Skywall"] = {
 		},
-		["Malkyn - Dragonblight"] = {
+		["Noremedy - Skywall"] = {
 		},
 		["Cecliann - Skywall"] = {
 		},

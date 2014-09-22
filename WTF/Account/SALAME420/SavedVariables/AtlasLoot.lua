@@ -1,6 +1,10 @@
 
 AtlasLootDB = {
 	["namespaces"] = {
+		["WishList"] = {
+		},
+		["AtlasLootPanel"] = {
+		},
 		["DefaultFrame"] = {
 			["profiles"] = {
 				["Anaiis - Skywall"] = {
@@ -40,8 +44,6 @@ AtlasLootDB = {
 				},
 				["Gaulthain - Skywall"] = {
 					["instance"] = "SiegeofOrgrimmar",
-					["module"] = "AtlasLootMoP",
-					["DefaultFrameLocked"] = true,
 					["NEWpoint"] = {
 						"TOP", -- [1]
 						nil, -- [2]
@@ -49,6 +51,8 @@ AtlasLootDB = {
 						-3.500643968582153, -- [4]
 						0, -- [5]
 					},
+					["DefaultFrameLocked"] = true,
+					["module"] = "AtlasLootMoP",
 				},
 				["Feronaz - Area 52"] = {
 					["instance"] = "BlackTemple",
@@ -92,18 +96,14 @@ AtlasLootDB = {
 				},
 			},
 		},
-		["AtlasLootPanel"] = {
-		},
-		["WishList"] = {
-		},
 		["Filter"] = {
 			["profiles"] = {
 				["Drominus - Area 52"] = {
 					["filterSlots"] = {
 						["Stats"] = {
-							["AGILITY"] = false,
 							["SPIRIT"] = false,
 							["SPELL_POWER"] = false,
+							["AGILITY"] = false,
 							["INTELLECT"] = false,
 						},
 						["Armor"] = {
@@ -111,17 +111,17 @@ AtlasLootDB = {
 							["#a2#"] = false,
 							["#a1#"] = false,
 						},
+						["WeaponsMeele"] = {
+							["#w13#"] = false,
+							["#w4#"] = false,
+							["#w9#"] = false,
+							["#w8#"] = false,
+						},
 						["WeaponsRanged"] = {
 							["#w3#"] = false,
 							["#w2#"] = false,
 							["#w5#"] = false,
 							["#w12#"] = false,
-						},
-						["WeaponsMeele"] = {
-							["#w13#"] = false,
-							["#w9#"] = false,
-							["#w8#"] = false,
-							["#w4#"] = false,
 						},
 					},
 					["enable"] = true,
@@ -133,9 +133,9 @@ AtlasLootDB = {
 							["SPIRIT"] = false,
 							["DODGE_RATING"] = false,
 							["EXPERTISE_RATING"] = false,
+							["PARRY_RATING"] = false,
 							["AGILITY"] = false,
 							["STRENGTH"] = false,
-							["PARRY_RATING"] = false,
 						},
 						["Armor"] = {
 							["#a3#"] = false,
@@ -147,11 +147,6 @@ AtlasLootDB = {
 							["#w1#"] = false,
 							["#w10#"] = false,
 						},
-						["WeaponsRanged"] = {
-							["#w3#"] = false,
-							["#w2#"] = false,
-							["#w5#"] = false,
-						},
 						["WeaponsMeele"] = {
 							["#w13#"] = false,
 							["#w1#"] = false,
@@ -159,12 +154,16 @@ AtlasLootDB = {
 							["#w7#"] = false,
 							["#w6#"] = false,
 						},
+						["WeaponsRanged"] = {
+							["#w3#"] = false,
+							["#w2#"] = false,
+							["#w5#"] = false,
+						},
 					},
 				},
 			},
 		},
 	},
-	["showWarning"] = true,
 	["profileKeys"] = {
 		["Anaiis - Skywall"] = "Anaiis - Skywall",
 		["Oldfero - Area 52"] = "Oldfero - Area 52",
@@ -177,6 +176,7 @@ AtlasLootDB = {
 		["Noremedy - Skywall"] = "Noremedy - Skywall",
 		["Feronaz - Skywall"] = "Feronaz - Skywall",
 	},
+	["showWarning"] = true,
 	["profiles"] = {
 		["Anaiis - Skywall"] = {
 		},

@@ -1,10 +1,5 @@
 
 Postal3DB = {
-	["profileKeys"] = {
-		["Feronaz - Area 52"] = "Feronaz - Area 52",
-		["Drominus - Area 52"] = "Drominus - Area 52",
-		["Oldfero - Area 52"] = "Oldfero - Area 52",
-	},
 	["global"] = {
 		["BlackBook"] = {
 			["alts"] = {
@@ -13,6 +8,11 @@ Postal3DB = {
 				"Oldfero|Area 52|Horde|90|WARLOCK", -- [3]
 			},
 		},
+	},
+	["profileKeys"] = {
+		["Feronaz - Area 52"] = "Feronaz - Area 52",
+		["Drominus - Area 52"] = "Drominus - Area 52",
+		["Oldfero - Area 52"] = "Oldfero - Area 52",
 	},
 	["profiles"] = {
 		["Feronaz - Area 52"] = {

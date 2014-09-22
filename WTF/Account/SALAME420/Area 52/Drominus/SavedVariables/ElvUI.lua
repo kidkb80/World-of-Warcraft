@@ -8,8 +8,8 @@ ElvCharacterDB = {
 		"/dbm", -- [5]
 	},
 	["ChatLog"] = {
-		["1411039459.013"] = {
-			"OQ,1C,AVDJKh,2,p8,GU9r9v,cydPTE9ZIGRlcmFlRyBkZWxsaWtT,JTImAAADAABUGsDVAAZZ,Nzg3MSMxMDF6dHRhbHM7Mzg7eW1lborD,bGxhIGRlZU4gZGFlTCAyLjIA,A,AACDAAAAAAAA,AP0AK7AavMAAA,A,0Hf/B", -- [1]
+		["1411371191.712"] = {
+			"OQ,1C,AawXhX,2,p8,GYE+Jb,cmVkaWFSIGFkbmFQIGVodCBmbyB5cm9sRwAA,JTAAAAAJAABUH9CGITZZ,MTc1NiNpaWtjdWR4OzAxO3RhcksA,IXRzcmlGIHNjaW9yZUgA,R,BDFGeBGCyAAC,PA/A////AAAAAJAmAAkAEd//DFAA//D,e,0Hf/A", -- [1]
 			"Drominus-Area52", -- [2]
 			"", -- [3]
 			"5. oqchannel", -- [4]
@@ -19,15 +19,15 @@ ElvCharacterDB = {
 			5, -- [8]
 			"oqchannel", -- [9]
 			0, -- [10]
-			2293, -- [11]
+			26828, -- [11]
 			"0x0280000006F34303", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			[20] = "CHAT_MSG_CHANNEL",
 		},
-		["1411039524.11"] = {
-			"OQ,1C,AVFZ+g,2,p8,GU68k0,a2xhbSBAIE9vUyBOMDEA,JTImAAAHAABUGsEQInZZ,MzA5NiN5bm9yYmVsOzg3O3NsbGliZWh0eWFQ,bGxhIGRlZW4A,R,BAEDfIOAAAH6,AAAAAAAAAAAAALAHAAhAQp/DCAAA//D,f,0Hf/A", -- [1]
+		["1411371047.148"] = {
+			"OQ,1C,AasYlw,1,p8,GXHu+H,MDEgaHNvcnJhRyBjaW9yZUggIQAA,JTJEAAAIAABUH9AdJEZZ,MDU0MSNyZXBhZXJteXJnOzQ4O25yb2dpVAAA,U1BE,R,BBGFfNOOwD/6,PAAA/AAwfAAABlEBAISAyK//D//B//D,f,VHf/A", -- [1]
 			"Drominus-Area52", -- [2]
 			"", -- [3]
 			"5. oqchannel", -- [4]
@@ -37,15 +37,15 @@ ElvCharacterDB = {
 			5, -- [8]
 			"oqchannel", -- [9]
 			0, -- [10]
-			2694, -- [11]
+			26134, -- [11]
 			"0x0280000006F34303", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			[20] = "CHAT_MSG_CHANNEL",
 		},
-		["1411039673.828"] = {
-			"OQ,1C,AVKDbh,1,p8,GS6WZx,MDA5MSB4L2tjb2wvZGl1cmRyIFNQRCBGTAAA,JTAAAAADAABUGsGKAAZZ,NTAzMSNjb2lubmU7Mzg7ZGV3YWxjZVIA,RFNMIHJvZiBtYWhzIGVsZSBmZXJw,a,+CCA,AAd1AAABAABCAF5AFbCAC9ACvH,A,SHf/A", -- [1]
+		["1411371098.978"] = {
+			"OQ,1C,Aat1ay,2,p8,GXgbdx,d20vcnJhdy94,JTImAAACJABUH9BDAAZ,MjU1MSNzdGhhbjs0OTtzdGhhTgAA,bWFocyBobmUgcm8gcmV0bnVo,a,ABCDAAAAAAAA,A,A,SHf/A", -- [1]
 			"Drominus-Area52", -- [2]
 			"", -- [3]
 			"5. oqchannel", -- [4]
@@ -55,15 +55,15 @@ ElvCharacterDB = {
 			5, -- [8]
 			"oqchannel", -- [9]
 			0, -- [10]
-			3650, -- [11]
+			26375, -- [11]
 			"0x0280000006F34303", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			[20] = "CHAT_MSG_CHANNEL",
 		},
-		["1411039669.303"] = {
-			"OQ,1C,AVKP/N,2,p8,GT+RDw,c29sb1kgdGxBIHond2FQ,JTAAAAAHHABUGsGPAAZZ,MjE5MSNwaWxsaWhwOzQ5O3eiw1AA,ZGFlbCBrMi4yICEgZGVwcGFjIHRlRwAA,A,BBEDAAAAAAAA,AAQAAPAAfMCAA,A,0Hf/A", -- [1]
+		["1411371128.996"] = {
+			"OQ,1C,AauvKJ,0,p8,GYV4ws,IFNOT0dBUkFQIFRBIE5BTSAwMQAA,JTI1AAADBABUH9BbIuZZ,NjE5MSNlemFsYjs5ODtibGF6RQAA,TExBIERFRU4gVFNBRiBIU09SUkFHIE5FSFQA,R,BBBDfNOOwD/6,PHDA///ABAAAB2B1AH1Avi//D/AA//D,f,0Hf/B", -- [1]
 			"Drominus-Area52", -- [2]
 			"", -- [3]
 			"5. oqchannel", -- [4]
@@ -73,15 +73,15 @@ ElvCharacterDB = {
 			5, -- [8]
 			"oqchannel", -- [9]
 			0, -- [10]
-			3629, -- [11]
+			26520, -- [11]
 			"0x0280000006F34303", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			[20] = "CHAT_MSG_CHANNEL",
 		},
-		["1411039538.804"] = {
-			"OQ,1C,AVFtgQ,1,p8,GRxPbS,cmFlbEMgT29TIE4wMQAA,JTAAAAAGUABUGsEYIhZZ,NDM5MSNoc2Ftc2VyZ3VvZDszODtvdGlycnVib2NhVAAA,a25hdCBkZXJhZWcgZGVlbiA7cHVvcmcgZGVyYWVnIHlyZVYA,R,ACEDfAOAAAAA,AAPA+5AAAAAAADAAAAMAB///DwDA//D,A,0Af/A", -- [1]
+		["1411371041.652"] = {
+			"OQ,1C,AargDn,1,p8,GRV+rr,eXJyYUcgQCBOMDEgT29T,JTIhAAAIeABUH9AGIhZZ,NTQzMSNyZXZpbG9iOzAxO3NpbW9vbEcA,LgAA,R,BBGDfNOOyD/6,AAAAAAAAAAAAAZAPABjAKN//BAAA/9D,f,0Hf/A", -- [1]
 			"Drominus-Area52", -- [2]
 			"", -- [3]
 			"5. oqchannel", -- [4]
@@ -91,15 +91,15 @@ ElvCharacterDB = {
 			5, -- [8]
 			"oqchannel", -- [9]
 			0, -- [10]
-			2800, -- [11]
+			26102, -- [11]
 			"0x0280000006F34303", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			[20] = "CHAT_MSG_CHANNEL",
 		},
-		["1411039549.099"] = {
-			"OQ,1C,AVGG0j,1,p8,GSSe8G,U1BERkwgc2xpb3BTQCBtcm9OIE9vUwAA,JTAAAAABNABUGsEjIlZZ,Mzk4MSN5c3BpZW47OTE7cnJvenhhSAAA,LgAA,R,AABDfJOAAAP6,AAAAAAAAAAAAAVAIABEAFz//BAAA/jD,f,0Hf/A", -- [1]
+		["1411371185.273"] = {
+			"OQ,1C,Aav9nj,0,p8,GXCxKb,IG51ZiByb0YgczIA,JTH0AAABABBUH9B7AAZZ,MjY3MSNlbHBwYXl6YXJjOzUxO2dursNraGN0rsNsRwAA,LgAA,a,+CCA,AARQAAAAAAACAAAAABCABMABjD,A,0BaPA", -- [1]
 			"Drominus-Area52", -- [2]
 			"", -- [3]
 			"5. oqchannel", -- [4]
@@ -109,15 +109,15 @@ ElvCharacterDB = {
 			5, -- [8]
 			"oqchannel", -- [9]
 			0, -- [10]
-			2872, -- [11]
+			26810, -- [11]
 			"0x0280000006F34303", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			[20] = "CHAT_MSG_CHANNEL",
 		},
-		["1411039683.804"] = {
-			"OQ,1C,AVKlDD,1,p8,GVIoJq,TlVSIEFPQiAtIDQgWEVMRiBIU0VSRgAA,JTI1AAABAABUGsGYI+ZZ,MDY2MiNuYWViOzM4O2t6emlG,LgAA,R,AABDAAAAAAAA,APA////AHAAAAxAQACXAOY//D/DA//D,A,0Hf/A", -- [1]
+		["1411371042.62"] = {
+			"OQ,1C,AasW0P,2,p8,GZl3h+,cmMwMDcxIHMnMiBmbCBuaWttb29i,JTAAAAACCBBUH9AdAAZZ,MTgxMSNmcmF3ZG5la251cmQ7NDk7cmFodHVyTwAA,LgAA,a,+CCA,AAaqAAABAABCADrADvCAFSAENE,A,SHf/A", -- [1]
 			"Drominus-Area52", -- [2]
 			"", -- [3]
 			"5. oqchannel", -- [4]
@@ -127,15 +127,15 @@ ElvCharacterDB = {
 			5, -- [8]
 			"oqchannel", -- [9]
 			0, -- [10]
-			3717, -- [11]
+			26104, -- [11]
 			"0x0280000006F34303", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			[20] = "CHAT_MSG_CHANNEL",
 		},
-		["1411039484.047"] = {
-			"OQ,1C,AVD1lM,1,p8,GSUDd7,c2RyYXdubyBlZ2VpUyBsYW1yb04gb29T,JTIwAAAGFABUGsDnIvZZ,NTc2MSNjaXRzYXRrbnVmOzAxO2Vub2xpdmVlaFQA,c2RyYXdubyBlZ2VpUyBsYW1yb04gb29T,R,CAEDfLOMRA/6,AAAAAAAAAAAAAMAfAAwARJ//BAAA//D,f,RHf/A", -- [1]
+		["1411371051.669"] = {
+			"OQ,1C,Aar5VK,2,p8,GZ3M8L,SCA1MiBUSEdJTElXVCBGTyBOT0lUU0FC,JTAAAAALDABUH9AQH2ZZ,MTg5MSNiaWhvcnA7NDk7bXVyb3RpYmlob3JQ,TlVSIEdPTVQgLyBETE9H,R,BCIGbAFAAAAA,AAAAAAAAAAAAATAIAA5ACkEAAAAA/fA,b,0Hf/A", -- [1]
 			"Drominus-Area52", -- [2]
 			"", -- [3]
 			"5. oqchannel", -- [4]
@@ -145,15 +145,15 @@ ElvCharacterDB = {
 			5, -- [8]
 			"oqchannel", -- [9]
 			0, -- [10]
-			2431, -- [11]
+			26149, -- [11]
 			"0x0280000006F34303", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			[20] = "CHAT_MSG_CHANNEL",
 		},
-		["1411039680.342"] = {
-			"OQ,1C,AVKb3/,0,p8,GQCiy2,bWlyZ3phTiAwMSBOIE9vUwAA,JTIhAAADHABUGsGUIiZZ,NzEyMSNyZWNuYWRldmF3OzkxO3JlY25hZGV2YVcA,U1BEIDEga25hVCAxIGRlZU4A,R,AADDfHOIdAD6,AAAAAABAAAAAANAJAA0AJ5/3CAAA/7D,f,0Hf/A", -- [1]
+		["1411371107.608"] = {
+			"OQ,1C,AatN3s,0,p8,Gaaksu,IHMyIGZsIHRzZWlycCB5bG9oIDA1NQAA,JTImAAABCABUH9AzAAZZ,MDU5MSNvdHJlYm9yOzcxMTtzdW9lbmloUAAA,c3BkIGRvb2cgZmwA,a,+CCB,BAcGBABXAB7CAFtAGpCAfAAb/V,A,0Hf/A", -- [1]
 			"Drominus-Area52", -- [2]
 			"", -- [3]
 			"5. oqchannel", -- [4]
@@ -163,15 +163,15 @@ ElvCharacterDB = {
 			5, -- [8]
 			"oqchannel", -- [9]
 			0, -- [10]
-			3696, -- [11]
+			26423, -- [11]
 			"0x0280000006F34303", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			[20] = "CHAT_MSG_CHANNEL",
 		},
-		["1411039499.922"] = {
-			"OQ,1C,AVEiKb,2,p8,GSSwNC,bnVyZGxpdWdDU0AwMU9vU0tOQVRGTAAA,JTAAAAADMABUGsD5I1Z,OTcxMSM4MHlzdHRvcDswMTt4aW5uo8NE,LgAA,R,ACBDfLOMyA/6,AABAPAHAAAAACCB7AHyAMt//DAAA//D,f,VHf/A", -- [1]
+		["1411371161.763"] = {
+			"OQ,1C,AavOWo,0,p8,GYfyNh,aHNvcnJhRyBAIE4wMSBPb1MA,JTIjAAAJRABUH9BoIRZZ,NTk3MSN5Y2FydDs0OTthbGxleXJibWFD,c2xhZWggeWxsYWljZXBzZSBsbEEgZGVlTgAA,R,BDFDfNOOyD/6,AAAADAAAAAAAAJAHAAkARj//BAAA//D,f,VHf/A", -- [1]
 			"Drominus-Area52", -- [2]
 			"", -- [3]
 			"5. oqchannel", -- [4]
@@ -181,15 +181,15 @@ ElvCharacterDB = {
 			5, -- [8]
 			"oqchannel", -- [9]
 			0, -- [10]
-			2524, -- [11]
+			26679, -- [11]
 			"0x0280000006F34303", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			[20] = "CHAT_MSG_CHANNEL",
 		},
-		["1411039554.796"] = {
-			"OQ,1C,AVF7pZ,1,p8,GTPRBL,ZG5pckcgcGFjIHMnMgAA,JTAAAAACABBUGsEeAAZZ,NDY2MSNvdHRvcmc7Mzk7b2d3ZUgA,LgAA,a,+DCA,BAZoAAAAAAACAABAABDABgABnZ,A,0Hf/A", -- [1]
+		["1411371139.041"] = {
+			"OQ,1C,Aar9bj,1,p8,GZZH2s,bmVoc3Vyb04gQCBtcm9OIE9vUwAA,JTImAAAJEABUH9ASIqZZ,MDA1MSNrY3Vwc2FrbnVmOzk5MTtrY3Vwc2FrbnVG,LgAA,R,CCFDfCODyAAC,AAAAAAAAAAAAAQAKAAxAGF//DAAA//D,f,0Hf/A", -- [1]
 			"Drominus-Area52", -- [2]
 			"", -- [3]
 			"5. oqchannel", -- [4]
@@ -199,15 +199,15 @@ ElvCharacterDB = {
 			5, -- [8]
 			"oqchannel", -- [9]
 			0, -- [10]
-			2895, -- [11]
+			26577, -- [11]
 			"0x0280000006F34303", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			[20] = "CHAT_MSG_CHANNEL",
 		},
-		["1411039518.46"] = {
-			"OQ,1C,AVEQ8h,1,p8,GNxYXR,U1BEIERFRU4gWkFOIE4wMQAA,JTAAAAABaABUGsDyIzZZ,MTE2NTEjZWtpbTs4NTtzdW9lZGRhaFQA,LgAA,R,BAADfHOAAAD6,DACAfAHAAAAAAYASABXALs//DBAA//D,f,0Hf/A", -- [1]
+		["1411371037.292"] = {
+			"OQ,1C,AasOIU,3,p8,GVoAYt,cGFjIGZsIG1haHNyIDA1NjEA,JTAAAAACAABUH9AZAAZ,ODk0MSN5ZXR1ejs1ODtpbnJhbGxpWgAA,LgAA,a,AACDAAAAAAAA,CAaKCAAZAALDAGzAFdDAReAK6c,A,0Hf/A", -- [1]
 			"Drominus-Area52", -- [2]
 			"", -- [3]
 			"5. oqchannel", -- [4]
@@ -217,15 +217,15 @@ ElvCharacterDB = {
 			5, -- [8]
 			"oqchannel", -- [9]
 			0, -- [10]
-			2659, -- [11]
+			26089, -- [11]
 			"0x0280000006F34303", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			[20] = "CHAT_MSG_CHANNEL",
 		},
-		["1411039504.695"] = {
-			"OQ,1C,AVEcfD,1,p8,GUMQgL,IHNub2VnbnVkIGNpb3JlaCB0c2Fm,JTAAAAACCABUGsD3AAZ,MDc3MiNnb2R3YWo7ODtub2l0cGVjeEUA,LgAA,D,-HD--,AAAAAAAAAAAAAAAAAAAADlAAAAAALAA,e,0Hf/A", -- [1]
+		["1411371149.159"] = {
+			"OQ,1C,Aau28F,2,p8,GY2VTW,a2xhTSAwMSBPb1MA,JTIwAAAIEABUH9BeIxZZ,NzY3MSNzaXN5ejs5NztzaXNpWgAA,IVNQRAAA,R,CCEDfIOJHAH6,PAIA/AHAGAAALSD9AjQBcr//DAAA//D,f,VHf/A", -- [1]
 			"Drominus-Area52", -- [2]
 			"", -- [3]
 			"5. oqchannel", -- [4]
@@ -235,15 +235,15 @@ ElvCharacterDB = {
 			5, -- [8]
 			"oqchannel", -- [9]
 			0, -- [10]
-			2552, -- [11]
+			26624, -- [11]
 			"0x0280000006F34303", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			[20] = "CHAT_MSG_CHANNEL",
 		},
-		["1411039509.028"] = {
-			"OQ,1C,AVE916,2,p8,GU1Dm6,c2xhaXRzZWxlYwAA,JTAAAAAGBABUGsEFIdZZ,Nzc0NiNlZWdtYWc7OTc7ZWVnbWFT,bGxh,R,BBAAAAAAAAAA,AAAAAAAHAAAAAZAJABkAJj//DAAA//D,A,0Hf/A", -- [1]
+		["1411371189.201"] = {
+			"OQ,1C,AawVdx,0,p8,GagFVS,RExPRyBNQyA7U1NPRyA7UFNN,JTAAAAAEGABUH9CFAAZZ,ODk0MSNva2VyZDs2ODtlZHVkb2tlckQA,LgAA,C,TDDD-,AJAJAJAAAAAAAAAAA,A,VHf/A", -- [1]
 			"Drominus-Area52", -- [2]
 			"", -- [3]
 			"5. oqchannel", -- [4]
@@ -253,15 +253,15 @@ ElvCharacterDB = {
 			5, -- [8]
 			"oqchannel", -- [9]
 			0, -- [10]
-			2598, -- [11]
+			26822, -- [11]
 			"0x0280000006F34303", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			[20] = "CHAT_MSG_CHANNEL",
 		},
-		["1411039498.614"] = {
-			"OQ,1C,AVEi6c,2,p8,GUUKku,ZWxwdW9jIGtjaXVxIG5lY3MgaAAA,JTAAAAABBABUGsD6AAZZ,NjgzMjEjaHNvajs0OTtpaWRkYUQA,LgAA,S,D--,AAAAAAAAAAA,A,0Hf/A", -- [1]
+		["1411371091.597"] = {
+			"OQ,1C,AatRpr,1,p8,GV2USN,dW11cnVEIHRBIFRvVAAA,JTAAAAACdABUH9A1IGZZ,Njc5MSNueXc7NDg7bnlX,LgAA,R,ABBDhGMHyAB+,PA/A/A/DBAAAAGAAAAYAAY//DAAA//D,h,0Hf/A", -- [1]
 			"Drominus-Area52", -- [2]
 			"", -- [3]
 			"5. oqchannel", -- [4]
@@ -271,15 +271,15 @@ ElvCharacterDB = {
 			5, -- [8]
 			"oqchannel", -- [9]
 			0, -- [10]
-			2516, -- [11]
+			26338, -- [11]
 			"0x0280000006F34303", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			[20] = "CHAT_MSG_CHANNEL",
 		},
-		["1411039584.86"] = {
-			"OQ,1C,AVHSRG,0,p8,GU1Dm6,c2xhaXRzZWxlYwAA,JTAAAAAIAABUGsFCILZZ,Nzc0NiNlZWdtYWc7OTc7ZWVnbWFT,bGxh,R,BBCAAAAAAAAA,AAAAAAAHAAAAAZAJABkAJj//DAAA//D,A,0Hf/A", -- [1]
+		["1411371038.038"] = {
+			"OQ,1C,AasTVp,3,p8,GaUyN9,c2xpb3BzIEAgMyB4ZWxG,JTISAAANDABUH9AbIXZZ,NTA2MSNlcG9vcHl1Zzs1ODt1ZGlrbkUA,TFcgbGx1ZgAA,R,CADOfAOAAAAA,AAAAAAAAAAAAAIADAAYABEAAAAAA/nD,f,0Hf/A", -- [1]
 			"Drominus-Area52", -- [2]
 			"", -- [3]
 			"5. oqchannel", -- [4]
@@ -289,15 +289,15 @@ ElvCharacterDB = {
 			5, -- [8]
 			"oqchannel", -- [9]
 			0, -- [10]
-			3078, -- [11]
+			26093, -- [11]
 			"0x0280000006F34303", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			[20] = "CHAT_MSG_CHANNEL",
 		},
-		["1411039737.063"] = {
-			"OQ,1C,AVNs0y,1,p8,GT+RDw,c29sb1kgdGxBIHond2FQ,JTAAAAAHGABUGsHqAAZZ,MjE5MSNwaWxsaWhwOzQ5O3eiw1AA,IXNyZWxhZUggLmRhZWwgazIuMiAhIGRlcHBhYyB0ZUcA,A,BBEDAAAAAAAA,AAQAAPAAfMCAA,A,0Hf/A", -- [1]
+		["1411371158.104"] = {
+			"OQ,1C,Aavkt7,2,p8,GRV+rr,eXJyYUcgQCBOMDEgT29T,JTIhAAAIeABUH9BxIhZZ,NTQzMSNyZXZpbG9iOzAxO3NpbW9vbEcA,LgAA,R,BBGDfNOOND/6,AAAAAAAAAAAAAZAPABjAKN//BAAA/9D,f,0Hf/A", -- [1]
 			"Drominus-Area52", -- [2]
 			"", -- [3]
 			"5. oqchannel", -- [4]
@@ -307,15 +307,15 @@ ElvCharacterDB = {
 			5, -- [8]
 			"oqchannel", -- [9]
 			0, -- [10]
-			4055, -- [11]
+			26669, -- [11]
 			"0x0280000006F34303", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			[20] = "CHAT_MSG_CHANNEL",
 		},
-		["1411039523.441"] = {
-			"OQ,1C,AVFK65,1,p8,GTK/XC,IHlyb3RjYWZyYWVGIGduaXBpblMA,JTAAAAAKAABUGsEKiYZ,OTg0MSNkaWlyOzM5O2RpaVIA,ZGl1cmRyL3dtICBrZCBkZWVu,A,BDDDAAAAAAAA,AAeAAmABEMAAA,A,SHf/A", -- [1]
+		["1411371014.147"] = {
+			"OQ,1C,AarRY3,0,p8,GYV4ws,IFNOT0dBUkFQIFRBIE5BTSAwMQAA,JTI1AAADAABUH9AAIuZZ,NjE5MSNlemFsYjs5ODtibGF6RQAA,TExBIERFRU4gVFNBRiBIU09SUkFHIE5FSFQA,R,BBBDfNOOyD/6,PHDA///ABAAAB2B1AH1Avi//D/AA//D,f,0Hf/B", -- [1]
 			"Drominus-Area52", -- [2]
 			"", -- [3]
 			"5. oqchannel", -- [4]
@@ -325,15 +325,15 @@ ElvCharacterDB = {
 			5, -- [8]
 			"oqchannel", -- [9]
 			0, -- [10]
-			2681, -- [11]
+			25984, -- [11]
 			"0x0280000006F34303", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			[20] = "CHAT_MSG_CHANNEL",
 		},
-		["1411039519.041"] = {
-			"OQ,1C,AVFGe4,0,p8,GUMFNl,cycyIHJvZiBzcGQgZkwA,JTAAAAABBABUGsEIAAZZ,NDY1MSNhbmV0aWFtOzA4O2F5aXNvcmJtQQAA,dW95ICsgeWxsYXAgeWxvaAAA,a,+BBA,AAVuAAAAAAABAAGAANBACgACoR,b,0Hf/A", -- [1]
+		["1411371141.721"] = {
+			"OQ,1C,AavO/Q,2,p8,GZG4AP,U1BEIERFRU4gTVJPTiAwMSBZUlJBRwAA,JTIwAAABQABUH9BoImZZ,NTA5MSNsb2x5dHJhbTszODt5dHJhbW5pZ3JpVgAA,U1BEIDQA,R,ABAAfOOAAH/6,AAAAAAAAAAAAA/ANADrAHN//DAAA//D,f,0Hf/A", -- [1]
 			"Drominus-Area52", -- [2]
 			"", -- [3]
 			"5. oqchannel", -- [4]
@@ -343,15 +343,15 @@ ElvCharacterDB = {
 			5, -- [8]
 			"oqchannel", -- [9]
 			0, -- [10]
-			2665, -- [11]
+			26583, -- [11]
 			"0x0280000006F34303", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			[20] = "CHAT_MSG_CHANNEL",
 		},
-		["1411039664.023"] = {
-			"OQ,1C,AVJwHo,0,p8,GRLDt9,YWhTIEAgT29TIE4wMQAA,JTISAAAHIABUGsGCIdZZ,OTE3NiN4ZWxhOzg4O3NzYWJhZHBhbFMA,LgAA,R,CBEDfDOAAAAK,AAAA/AAAAAAAAHAEAAcACI//DAAA//D,f,0Hf/A", -- [1]
+		["1411371052.57"] = {
+			"OQ,1C,AaskVp,0,p8,GaaWGf,ZXZlaWhjYSBrMi4yIHMnMgAA,JTAAAAABBBBUH9AiAAZZ,NzY0MSN5bm5lcG5pdmVrOzEzMTtoY3JhaW5tTwAA,ZGVkZWVuIHNwZCBvclAA,a,+BCA,AAVOAAAPAANCAALAAbBABsABxZ,A,THf/A", -- [1]
 			"Drominus-Area52", -- [2]
 			"", -- [3]
 			"5. oqchannel", -- [4]
@@ -361,15 +361,15 @@ ElvCharacterDB = {
 			5, -- [8]
 			"oqchannel", -- [9]
 			0, -- [10]
-			3592, -- [11]
+			26152, -- [11]
 			"0x0280000006F34303", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			[20] = "CHAT_MSG_CHANNEL",
 		},
-		["1411039594.814"] = {
-			"OQ,1C,AVHTLc,3,p8,GQVRd8,IG5laHN1cm9OIEAgT29TICEA,JTImAAABFABUGsFCI1ZZ,NzQ0MSNjaXRzaWxwbWlzOzU4O2RkYWVkbGl2RQAA,LgAA,R,AABDAAAAAAAA,AAAAAAAAAAAACIA+AHbATa//DAAA/fC,A,0Hf/A", -- [1]
+		["1411371057.624"] = {
+			"OQ,1C,AarcnZ,1,p8,GYf+D0,ICFoc2VyRiA0IHhlbEYA,JTAAAAAHeABUH9AFH9ZZ,NjM3MSNyb247Njg7cm9uYWlY,ZzJnIGtuYXQgMiBkZWVu,R,BBFOfAOAAAAA,PAAAvA/D/ZAAAEATAAMAUz//DPAA//D,f,0Hf/A", -- [1]
 			"Drominus-Area52", -- [2]
 			"", -- [3]
 			"5. oqchannel", -- [4]
@@ -379,15 +379,15 @@ ElvCharacterDB = {
 			5, -- [8]
 			"oqchannel", -- [9]
 			0, -- [10]
-			3143, -- [11]
+			26182, -- [11]
 			"0x0280000006F34303", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			[20] = "CHAT_MSG_CHANNEL",
 		},
-		["1411039563.675"] = {
-			"OQ,1C,AVGn7/,2,p8,GVGnbZ,czMvczIgZmwgeW1vb2IgdGxhIG5vIDtrMgAA,JTImAAAAAABUGsEwAAZZ,MjI2MSNnbml3b2xqOzAxO3NuZXBwYUgA,LgAA,a,+CDA,AAbuAAAAAAADAATAAJCABnABaE,A,SDf/A", -- [1]
+		["1411371088.933"] = {
+			"OQ,1C,Aatd2k,3,p8,GaUyN9,c2xpb3BzIEAgMyB4ZWxG,JTISAAANDABUH9A6IXZZ,NTA2MSNlcG9vcHl1Zzs1ODt1ZGlrbkUA,TFcgbGx1ZgAA,R,CADOfAOAAAAA,AAAAAAAAAAAAAIADAAYABEAAAAAA/nD,f,0Hf/A", -- [1]
 			"Drominus-Area52", -- [2]
 			"", -- [3]
 			"5. oqchannel", -- [4]
@@ -397,15 +397,15 @@ ElvCharacterDB = {
 			5, -- [8]
 			"oqchannel", -- [9]
 			0, -- [10]
-			2946, -- [11]
+			26330, -- [11]
 			"0x0280000006F34303", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			[20] = "CHAT_MSG_CHANNEL",
 		},
-		["1411039665.39"] = {
-			"OQ,1C,AVJ/EP,2,p8,GSMyvr,aGNhIGFuZXJhICtrMi4yIGtuaWwgdHN1bQAA,JTImA+gIACBUGsGIgCZZ,ODMzMjEjbm9kbmFyYjs0OTtsdFcA,MDYxMSAtIDAwOCA6QkEA,A,BCFDAAAAAAAA,AA3AArABiMAAB,A,SHf/A", -- [1]
+		["1411371067.337"] = {
+			"OQ,1C,Aasnw2,2,p8,GaP/pq,NjQ1IEtEIHMnMgAA,JTAAAAABBABUH9AjAAZZ,MTE1MSNyZWhjbmlsZzszODtyZWhjbmlsRwAA,LgAA,a,+CBA,BAZdAAAAAAABAEEAEdCAPnAOuD,A,0Hf/A", -- [1]
 			"Drominus-Area52", -- [2]
 			"", -- [3]
 			"5. oqchannel", -- [4]
@@ -415,15 +415,15 @@ ElvCharacterDB = {
 			5, -- [8]
 			"oqchannel", -- [9]
 			0, -- [10]
-			3593, -- [11]
+			26233, -- [11]
 			"0x0280000006F34303", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			[20] = "CHAT_MSG_CHANNEL",
 		},
-		["1411039761.002"] = {
-			"OQ,1C,AVO2Me,0,p8,GOctzz,aGFyYiBQUiB0dW8gZGVnZ2F3UwAA,JTAAAAADBABUGsIIAAZZ,OTk2NiNvZGljdXJ0OzAxO29pcmFkaWN1clQA,LgAA,P,AACA/AAAAAAA,A,/,0Hf/A", -- [1]
+		["1411371039.963"] = {
+			"OQ,1C,Aar9bj,0,p8,GZZH2s,bmVoc3Vyb04gQCBtcm9OIE9vUwAA,JTImAAAJEABUH9ASIqZZ,MDA1MSNrY3Vwc2FrbnVmOzk5MTtrY3Vwc2FrbnVG,LgAA,R,CCFDfCODyAAC,AAAAAAAAAAAAAQAKAAxAGF//DAAA//D,f,0Hf/A", -- [1]
 			"Drominus-Area52", -- [2]
 			"", -- [3]
 			"5. oqchannel", -- [4]
@@ -433,15 +433,15 @@ ElvCharacterDB = {
 			5, -- [8]
 			"oqchannel", -- [9]
 			0, -- [10]
-			4208, -- [11]
+			26099, -- [11]
 			"0x0280000006F34303", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			[20] = "CHAT_MSG_CHANNEL",
 		},
-		["1411039678.976"] = {
-			"OQ,1C,AVIBOm,0,p8,GUG/aC,cycyIEZMIGNzaUQA,JTAAAAACABBUGsFVAAZZ,NTYxMSNjYWluYW1vcnlwOzQ4O2VyYW10aGdpkcMA,U1BEIERPT0cgRkwA,a,+BBA,AAW2AAAAAAABAAAAADBABAAA9U,f,0Hf/B", -- [1]
+		["1411371171.605"] = {
+			"OQ,1C,AavkxJ,1,p8,GY3LMc,Z3VKIG5vckkgQCBPb1MgbGFtcm9OIG0wMQAA,JTIcAAAILABUH9BxIaZZ,NjMxMSN0bmFydWRuaXZlazs1MzE7cHlrYWVyRgAA,c2xhZWggMSBkZWVO,R,BCEDfFOAAAA6,AAAAAAHAAAAAAmAuAB3AKufAAAAA//D,f,0Hf/B", -- [1]
 			"Drominus-Area52", -- [2]
 			"", -- [3]
 			"5. oqchannel", -- [4]
@@ -451,15 +451,15 @@ ElvCharacterDB = {
 			5, -- [8]
 			"oqchannel", -- [9]
 			0, -- [10]
-			3692, -- [11]
+			26727, -- [11]
 			"0x0280000006F34303", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			[20] = "CHAT_MSG_CHANNEL",
 		},
-		["1411039474.689"] = {
-			"OQ,1C,AVDQ7e,0,p8,GPpz6a,KzA1NjEgcyczIHJlbGFlSCBkZWVO,JTIkAAACCBBUGsDYAAZZ,MTQ2MSNra2VpcmhzOzQwMjtkYXdwYW9T,LgAA,a,+CBA,BAayAAAKAAKBABkABqCAJSAIEE,A,SHf/B", -- [1]
+		["1411371061.619"] = {
+			"OQ,1C,Aas3gS,3,p8,GaUyN9,c2xpb3BzIEAgMyB4ZWxG,JTISAAANDABUH9AqIXZZ,NTA2MSNlcG9vcHl1Zzs1ODt1ZGlrbkUA,TFcgbGx1ZgAA,R,CADOfAOAAAAA,AAAAAAAAAAAAAIADAAYABEAAAAAA/nD,f,0Hf/A", -- [1]
 			"Drominus-Area52", -- [2]
 			"", -- [3]
 			"5. oqchannel", -- [4]
@@ -469,15 +469,15 @@ ElvCharacterDB = {
 			5, -- [8]
 			"oqchannel", -- [9]
 			0, -- [10]
-			2369, -- [11]
+			26197, -- [11]
 			"0x0280000006F34303", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			[20] = "CHAT_MSG_CHANNEL",
 		},
-		["1411039528.721"] = {
-			"OQ,1C,AVFRn/,1,p8,GSd0PV,c25hbWFoUyBAIE4gMDEgT29T,JTIcAAABAABUGsENIoZZ,Njk5NiNzaXJhbnVsOzc3O2RhenVodHdvQwAA,TExVRgAA,R,BAADfIOAAAH6,AAAAAAAAAAAAAOAHAA3Abq/PAAAA//D,f,0Af/A", -- [1]
+		["1411371121.716"] = {
+			"OQ,1C,AauRU8,0,p8,GXZ9PL,IHNrbmF0MT5OIGFoc0AgMXhlbGYA,JTIIAAAJAABUH9BPISZZ,Nzc5MSNuYWVyb2s7NDk7bmFlcm9rZGl1ckQA,IGtuYXQxPk4A,R,BCDOfCOEyAAC,AAAAAAAAAAAAADABAAJADxDAAAAA/DA,f,0Ef/B", -- [1]
 			"Drominus-Area52", -- [2]
 			"", -- [3]
 			"5. oqchannel", -- [4]
@@ -487,15 +487,15 @@ ElvCharacterDB = {
 			5, -- [8]
 			"oqchannel", -- [9]
 			0, -- [10]
-			2729, -- [11]
+			26485, -- [11]
 			"0x0280000006F34303", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			[20] = "CHAT_MSG_CHANNEL",
 		},
-		["1411039503.587"] = {
-			"OQ,1C,AVELBK,0,p8,GTPRBL,ZG5pckcgcGFjIHMnMgAA,JTAAAAACABBUGsDwAAZZ,NDY2MSNvdHRvcmc7Mzk7b2d3ZUgA,LgAA,a,+DCA,BAZMAAAAAAACAABAABDABgABnZ,A,0Hf/A", -- [1]
+		["1411371078.931"] = {
+			"OQ,1C,Aas+Fc,0,p8,GYV4ws,IFNOT0dBUkFQIFRBIE5BTSAwMQAA,JTI1AAADAABUH9AtIuZZ,NjE5MSNlemFsYjs5ODtibGF6RQAA,TExBIERFRU4gVFNBRiBIU09SUkFHIE5FSFQA,R,BBBDfNOOyD/6,PHDA///ABAAAB2B1AH1Avi//D/AA//D,f,0Hf/B", -- [1]
 			"Drominus-Area52", -- [2]
 			"", -- [3]
 			"5. oqchannel", -- [4]
@@ -505,15 +505,15 @@ ElvCharacterDB = {
 			5, -- [8]
 			"oqchannel", -- [9]
 			0, -- [10]
-			2546, -- [11]
+			26283, -- [11]
 			"0x0280000006F34303", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			[20] = "CHAT_MSG_CHANNEL",
 		},
-		["1411039559.119"] = {
-			"OQ,1C,AVGZrp,0,p8,GTWT1I,bGFlaCA+IGtsYW0gQCBPb1MgSCBkbGl1RwAA,JTI1AAAVBABUGsEqI2ZZ,OTY1MSN4aXJ0OzkxO3hpclQA,LgAA,R,BCJGfHOInAD6,DABAHA//hAAAA4AiAEqAQq//D/DA//D,f,VHf/A", -- [1]
+		["1411371108.016"] = {
+			"OQ,1C,AatdBy,0,p8,Gannpu,MSB4ZWxmIGhzZXJmIQAA,JTIcAAABAABUH9A5IsZZ,MTg1MSN5a29vcHM7OTkxO2FtYWphQgAA,LgAA,R,AABOfOOAAH/6,PPQI/f/D//BAABAAAAIADP//D/fB//D,f,VHf/A", -- [1]
 			"Drominus-Area52", -- [2]
 			"", -- [3]
 			"5. oqchannel", -- [4]
@@ -523,15 +523,15 @@ ElvCharacterDB = {
 			5, -- [8]
 			"oqchannel", -- [9]
 			0, -- [10]
-			2933, -- [11]
+			26425, -- [11]
 			"0x0280000006F34303", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			[20] = "CHAT_MSG_CHANNEL",
 		},
-		["1411039494.086"] = {
-			"OQ,1C,AVEPXY,1,p8,GU+0SU,UkFFTEMgTExVRiBsYW1yb04gb29TIE1GTAAA,JTIhAAAIEABUGsDyIoZZ,NzQxMSM0MDR6a25pb3o7Mzg7c2ltcmFrQQAA,c2tuYVQgMgAA,R,ABEDfAOAAAAA,AAAAAAAAAAAAAAAIAAAAO7//DAAAPcC,f,0Hf/A", -- [1]
+		["1411371151.638"] = {
+			"OQ,1C,AauatG,0,p8,GUNrHZ,aHNvcnJhRyBsYW1yb04A,JTImAAADAABUH9BTInZ,NjYyMSNpb2F5OzcxMTtpb2F5ZWtV,ZXZlaWhjYSBkZWVuIDtoc29ycmFHIG5P,R,ACBDfAOAAAAA,AAAAAAAAAAAAAEAJAAMAE1AAAAAA//D,f,0Hf/A", -- [1]
 			"Drominus-Area52", -- [2]
 			"", -- [3]
 			"5. oqchannel", -- [4]
@@ -541,15 +541,15 @@ ElvCharacterDB = {
 			5, -- [8]
 			"oqchannel", -- [9]
 			0, -- [10]
-			2489, -- [11]
+			26628, -- [11]
 			"0x0280000006F34303", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			[20] = "CHAT_MSG_CHANNEL",
 		},
-		["1411039513.626"] = {
-			"OQ,1C,AVE3sD,1,p8,GUsXn7,LmRhYiBlYiB0bm9kIDtzR0IgbW9kbmFS,JTIIAAAEABBUGsECAAZZ,NjgzNiNnaXdkdWw7MDE7a2F6dGVK,c25hbSAwNCBvTgAA,B,AADDAAAAAAAA,AArAASAA9IAAA,A,0Hf/A", -- [1]
+		["1411371147.355"] = {
+			"OQ,1C,AavFgm,0,p8,GVvPVw,a25hVCBkZWVOIGhzZXJGIDQgeGVsRgAA,JTIsAAAFAABUH9BkISZZ,MzIxMSNzaXRuYW1sZGc7NDk7ZXJ0ZVAA,LgAA,R,ABEOfOOAAH/6,AAAAAAAAAAAAASAXABDAFf//DAAA//D,f,0Ef/A", -- [1]
 			"Drominus-Area52", -- [2]
 			"", -- [3]
 			"5. oqchannel", -- [4]
@@ -559,15 +559,15 @@ ElvCharacterDB = {
 			5, -- [8]
 			"oqchannel", -- [9]
 			0, -- [10]
-			2620, -- [11]
+			26616, -- [11]
 			"0x0280000006F34303", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			[20] = "CHAT_MSG_CHANNEL",
 		},
-		["1411039473.344"] = {
-			"OQ,1C,AVDfB6,2,p8,GUi831,cyczIHJjIHdvbCBGTCB0ZVIgcHggazEuMgAA,JTImAAABABBUGsDeAAZZ,MTczMSNlZG9tZWx0dGFiOzQ5O2Vkb21lbHR0YUIA,cyczIHJjMCByb2YgcmVsYWVIIGRuYSByZXRudUggRkwA,a,+DDD,BAcHDABEAAsDAJ6AJFDBDXArBT,A,SDNUA", -- [1]
+		["1411371109.096"] = {
+			"OQ,1C,AauDex,0,p8,GXTKtR,U0dCUiBLMgAA,JTAAAAAIBCBUH9BJfQZZ,NTEzMSN6eHlubzs0OTtwc2l3ZWh0b2xsaVcA,IC0gIDpTdG9F,A,ACGDAAAAAAAA,AACAADAAFKAAA,A,SHf/A", -- [1]
 			"Drominus-Area52", -- [2]
 			"", -- [3]
 			"5. oqchannel", -- [4]
@@ -577,15 +577,15 @@ ElvCharacterDB = {
 			5, -- [8]
 			"oqchannel", -- [9]
 			0, -- [10]
-			2362, -- [11]
+			26432, -- [11]
 			"0x0280000006F34303", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			[20] = "CHAT_MSG_CHANNEL",
 		},
-		["1411039494.695"] = {
-			"OQ,1C,AVECJ1,0,p8,GUhD8M,ZXZvTCBvdCBlcmFoUwAA,JTAAAAABAABUGsDsIjZZ,OTg0MSM2MGxhZHJhcDs5NDI7b6PDbWFtaW9C,ZXZvTCBvdCBlcmFoUyBldmVpaGNB,D,--D--,AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,A,0Hf/A", -- [1]
+		["1411371122.657"] = {
+			"OQ,1C,Aasz5p,2,p8,GXvWc/,SFMgTklUUkFUUyBTTUNHIGtuYXQgbTFGTAAA,JTAAAAAEFABUH9AoAAZZ,MjU5MSN6bnloOzM4O3pueWhnbE0A,UkVMTEFDIFRBUlRTIEROQSBLTkFUIERFRU4A,C,DHDD-,AAAAAAAAEABAAMAMQ,f,SHf/A", -- [1]
 			"Drominus-Area52", -- [2]
 			"", -- [3]
 			"5. oqchannel", -- [4]
@@ -595,15 +595,15 @@ ElvCharacterDB = {
 			5, -- [8]
 			"oqchannel", -- [9]
 			0, -- [10]
-			2482, -- [11]
+			26487, -- [11]
 			"0x0280000006F34303", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			[20] = "CHAT_MSG_CHANNEL",
 		},
-		["1411039539.251"] = {
-			"OQ,1C,AVFwgK,1,p8,GQ6QN4,S0FMQUcgQCBOIDAxIE9vUwAA,JTImAAADMABUGsEaIqZZ,MTE2MSNlaWhjbmVyZjs1MTE7dGliYm9oeXplZXRT,a25hdCBkZWVO,R,BACDfEOAAAAa,AAAAAAAAAAAABuAyAFuAI+//BAAA//D,f,0Hf/A", -- [1]
+		["1411371089.039"] = {
+			"OQ,1C,AatOkE,0,p8,GYcuK/,bGFyZUYgMDE1IHNlaXJyYUMgczIgQlRX,JTAAAAABABBUH9AzAAZZ,MzQ4MSNzdWluaXZyb2M7OTkxO3VqdXJlUwAA,cmV2cmVzIG5hZGlsbEkgbml3IHJlUCBnMDAy,a,+DCB,BASnBAAAAAACAAAAAADAAIAAJF,A,SHf/A", -- [1]
 			"Drominus-Area52", -- [2]
 			"", -- [3]
 			"5. oqchannel", -- [4]
@@ -613,15 +613,15 @@ ElvCharacterDB = {
 			5, -- [8]
 			"oqchannel", -- [9]
 			0, -- [10]
-			2807, -- [11]
+			26336, -- [11]
 			"0x0280000006F34303", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			[20] = "CHAT_MSG_CHANNEL",
 		},
-		["1411039757.967"] = {
-			"OQ,1C,AVOsaY,1,p8,GU+0SU,UkFFTEMgTExVRiBsYW1yb04gb29TIE1GTAAA,JTImAAAIEABUGsIEIhZZ,NzQxMSM0MDR6a25pb3o7Mzg7c2ltcmFrQQAA,c2tuYVQgMgAA,R,ACDDfAOAAAAA,AAAAAAAAAAAAAAAIAAAAO7//DAAAPcC,f,0Hf/A", -- [1]
+		["1411371067.776"] = {
+			"OQ,1C,AatDM4,2,p8,GZXMy1,czIgZmwgYXRhYyBlbGUgcHhlIDAwOTEA,JTAAAAABABBUH9AvAAZZ,NjY4MSNsdW9za3JhZDs0OTt0bmVsbGVjeKvDSAAA,cGFjIGdpYiBlcmVoIGxpIDAzNQAA,a,+CCC,CAVZCAAAAABCAIVAHzCAHBAF5a,A,0Hf/B", -- [1]
 			"Drominus-Area52", -- [2]
 			"", -- [3]
 			"5. oqchannel", -- [4]
@@ -631,15 +631,15 @@ ElvCharacterDB = {
 			5, -- [8]
 			"oqchannel", -- [9]
 			0, -- [10]
-			4181, -- [11]
+			26234, -- [11]
 			"0x0280000006F34303", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			[20] = "CHAT_MSG_CHANNEL",
 		},
-		["1411039488.61"] = {
-			"OQ,1C,AVEARw,1,p8,GU/wlo,b2lyYW5lY1MgSAAA,JTIIAAADAABUGsDsAAZZ,MjA0MSNzZWx1Y3JlYm11Zzs5MTtqaWxpc3NhVgAA,bmVjcyBIIGtjaXVx,S,D-D,AAAABAAwASb,A,0Df/A", -- [1]
+		["1411371117.655"] = {
+			"OQ,1C,Aaumyd,2,p8,Gajbev,IXlycmFnIG90IGVnaWVzIG5hbSAwMSAh,JTI1AAADBABUH9BXIxZZ,Mjc1MSNyZWtyYWQ7OTc7ZGV0YnVvRAAA,bGxhIGRlZW4A,R,ABBDfLOAAA/6,AAAAAAAAAAAACVBkAMTApT/fAAAA//D,f,0Hf/A", -- [1]
 			"Drominus-Area52", -- [2]
 			"", -- [3]
 			"5. oqchannel", -- [4]
@@ -649,15 +649,15 @@ ElvCharacterDB = {
 			5, -- [8]
 			"oqchannel", -- [9]
 			0, -- [10]
-			2457, -- [11]
+			26470, -- [11]
 			"0x0280000006F34303", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			[20] = "CHAT_MSG_CHANNEL",
 		},
-		["1411039589.186"] = {
-			"OQ,1C,AVHhxH,1,p8,GU/wlo,b2lyYW5lY1MgSAAA,JTIIAAADAABUGsFIAAZZ,MjA0MSNzZWx1Y3JlYm11Zzs5MTtqaWxpc3NhVgAA,bmVjcyBIIGtjaXVx,S,D-D,AAAABAAwASb,A,0Df/A", -- [1]
+		["1411371029.196"] = {
+			"OQ,1C,Aar1v/,0,p8,GYV4ws,IFNOT0dBUkFQIFRBIE5BTSAwMQAA,JTI1AAADAABUH9APIuZZ,NjE5MSNlemFsYjs5ODtibGF6RQAA,TExBIERFRU4gVFNBRiBIU09SUkFHIE5FSFQA,R,BBBDfNOOyD/6,PHDA///ABAAAB2B1AH1Avi//D/AA//D,f,0Hf/B", -- [1]
 			"Drominus-Area52", -- [2]
 			"", -- [3]
 			"5. oqchannel", -- [4]
@@ -667,15 +667,15 @@ ElvCharacterDB = {
 			5, -- [8]
 			"oqchannel", -- [9]
 			0, -- [10]
-			3119, -- [11]
+			26050, -- [11]
 			"0x0280000006F34303", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			[20] = "CHAT_MSG_CHANNEL",
 		},
-		["1411039464.928"] = {
-			"OQ,1C,AVDF0R,0,p8,GUd5S9,c29pcmFuZWNTIGNpb3JlSAAA,JTAAAAADBABUGsDUAAZZ,NDg2MSNldGFucmFjbmk7NDAyO2J3pMNS,LgAA,S,DHD,AADABAAJABF,f,0Hf/B", -- [1]
+		["1411371125.225"] = {
+			"OQ,1C,AasmaA,0,p8,GZlvKL,OS85IG9sb2hjUy9CU1MgZGxvRyBNQwAA,JTAAAAABGABUH9AjAAaZ,OTU3MSNyZXlhbHNwaXI7NzExO2VyaWZuYUwA,IHB4RSBldmFoIHNsUAAA,C,D----,AIAIAHAAAAEAAAAAA,A,VHf/A", -- [1]
 			"Drominus-Area52", -- [2]
 			"", -- [3]
 			"5. oqchannel", -- [4]
@@ -685,15 +685,15 @@ ElvCharacterDB = {
 			5, -- [8]
 			"oqchannel", -- [9]
 			0, -- [10]
-			2316, -- [11]
+			26513, -- [11]
 			"0x0280000006F34303", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			[20] = "CHAT_MSG_CHANNEL",
 		},
-		["1411039624.892"] = {
-			"OQ,1C,AVIka2,0,p8,GRLDt9,YWhTIEAgT29TIE4wMQAA,JTISAAAHIABUGsFjIdZZ,OTE3NiN4ZWxhOzg4O3NzYWJhZHBhbFMA,LgAA,R,CBEDfDOAAAAK,AAAA/AAAAAAAAHAEAAcACI//DAAA//D,f,0Hf/A", -- [1]
+		["1411371138.091"] = {
+			"OQ,1C,AavLqa,2,p8,GaAmsH,c29kck8gY2luYWVjTwAA,JTAAAAAaBABUH9BnAAZZ,MDc3MSNhbnJhbjs4O2hheUgA,bGxhIGRlZW4A,M,AAEFfAOAAAAA,A,f,0Hf/A", -- [1]
 			"Drominus-Area52", -- [2]
 			"", -- [3]
 			"5. oqchannel", -- [4]
@@ -703,15 +703,15 @@ ElvCharacterDB = {
 			5, -- [8]
 			"oqchannel", -- [9]
 			0, -- [10]
-			3333, -- [11]
+			26570, -- [11]
 			"0x0280000006F34303", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			[20] = "CHAT_MSG_CHANNEL",
 		},
-		["1411039635.341"] = {
-			"OQ,1C,AVJEA+,0,p8,GRGzBs,IHRudW9tIHMzIHJvZiBzcGQgczIgZmwA,JTAAAAABCABUGsFwAAZZ,OTg4MSNlZHlvbGw7NTE7dHFsZWFyekEA,a2N1cyB0bm9k,a,+DEC,BAb8CAAAAAAEAA5AAuDAFTADyV,A,0Hf/A", -- [1]
+		["1411371095.126"] = {
+			"OQ,1C,Aatt+Y,0,p8,GZryza,cHYgcm9mIG5lY3No,JTAAAAADKABUH9BAAAZZ,MDAzMSNlY251bzs4Nzt2dmlzdWxF,dW95ICsgZWdhbSAwODUA,S,DDD,AAAACAAKAvH,A,0Hf/A", -- [1]
 			"Drominus-Area52", -- [2]
 			"", -- [3]
 			"5. oqchannel", -- [4]
@@ -721,15 +721,15 @@ ElvCharacterDB = {
 			5, -- [8]
 			"oqchannel", -- [9]
 			0, -- [10]
-			3396, -- [11]
+			26367, -- [11]
 			"0x0280000006F34303", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			[20] = "CHAT_MSG_CHANNEL",
 		},
-		["1411039724.976"] = {
-			"OQ,1C,AVNXX6,0,p8,GU/wlo,b2lyYW5lY1MgSAAA,JTIIAAADBABUGsHhAAZZ,MjA0MSNzZWx1Y3JlYm11Zzs5MTtqaWxpc3NhVgAA,bmVjcyBIIGtjaXVx,S,D-D,AAAABAAwASb,A,0Df/A", -- [1]
+		["1411371077.262"] = {
+			"OQ,1C,Aask8X,2,p8,GY2VTW,a2xhTSAwMSBPb1MA,JTIwAAAIDABUH9AiIxZZ,NzY3MSNzaXN5ejs5NztzaXNpWgAA,IVNQRAAA,R,CCEDfIOJUAH6,PAIA/AHAGAAALSD9AjQBcr//DAAA//D,f,VHf/A", -- [1]
 			"Drominus-Area52", -- [2]
 			"", -- [3]
 			"5. oqchannel", -- [4]
@@ -739,15 +739,15 @@ ElvCharacterDB = {
 			5, -- [8]
 			"oqchannel", -- [9]
 			0, -- [10]
-			3967, -- [11]
+			26279, -- [11]
 			"0x0280000006F34303", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			[20] = "CHAT_MSG_CHANNEL",
 		},
-		["1411039649.27"] = {
-			"OQ,1C,AVJWHI,2,p8,GUi831,cyczIHJjIHdvbCBGTCB0ZVIgcHggazEuMgAA,JTImAAABBBBUGsF4AAZZ,MTczMSNlZG9tZWx0dGFiOzQ5O2Vkb21lbHR0YUIA,cyczIHJjMCByb2YgcmVsYWVIIGRuYSByZXRudUggRkwA,a,+DDD,BAcHDABEAAsDAJ6AJFDBDXArBT,A,SDNUA", -- [1]
+		["1411371099.071"] = {
+			"OQ,1C,AatnPQ,0,p8,GZlFCP,MSB4ZWxGIGhzZXJG,JTISAAAGGABUH9A9IUZZ,MjE5MSN5cG1pZzs4Njtoc2Ftc3lwbWlH,LgAA,R,CCCOfOOBCH/6,CAAA/A/DAAAAAAAAAAAAAO//D/DA//D,f,0Hf/A", -- [1]
 			"Drominus-Area52", -- [2]
 			"", -- [3]
 			"5. oqchannel", -- [4]
@@ -757,15 +757,15 @@ ElvCharacterDB = {
 			5, -- [8]
 			"oqchannel", -- [9]
 			0, -- [10]
-			3499, -- [11]
+			26383, -- [11]
 			"0x0280000006F34303", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			[20] = "CHAT_MSG_CHANNEL",
 		},
-		["1411039638.947"] = {
-			"OQ,1C,AVIkEU,0,p8,GR1J7c,Z29yUCBkbGl1RyAtWVJSQUcgQ0lPUkVI,JTJCAAADCABUGsFjJBZZ,ODQ1MTEjZGVyOzg3O3Nzb2JkZVIA,dGhnaWYgZWh0IHdvbmsgdHN1bSA7Z29ycCBkbGl1RwAA,R,ABCFfNOAAD/6,AAPA//AwAgBAARAQABGAK3//D/XA/fA,f,VHf/A", -- [1]
+		["1411371152.765"] = {
+			"OQ,1C,AavBv3,1,p8,GUo7+L,c2xpb3BzQCBuMDEgb29T,JTImAAAEIABUH9BjIvZZ,NzUyMSM3MmR1YWxjZDs2MjE7ZWugw25zZGlsb1MA,IWd0ZyBkbmEga25hdCBkZWVO,R,ABDDfLOAAA/6,AAAAAAAAAAAABCAkADVANE//DAAA//D,f,VHf/B", -- [1]
 			"Drominus-Area52", -- [2]
 			"", -- [3]
 			"5. oqchannel", -- [4]
@@ -775,15 +775,15 @@ ElvCharacterDB = {
 			5, -- [8]
 			"oqchannel", -- [9]
 			0, -- [10]
-			3429, -- [11]
+			26631, -- [11]
 			"0x0280000006F34303", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			[20] = "CHAT_MSG_CHANNEL",
 		},
-		["1411039529.097"] = {
-			"OQ,1C,AVFd9o,1,p8,GOiyu0,czIgU1BEIEZMIGRpdXJEUiA0NDUA,JTAAAAABIBBUGsESAAZZ,MDM3MSNzZWhjdGVlbnM7Njg7aXBtYXJjUwAA,dW9ZL0RJVVJEb3RzZVIgMjQ1,a,+BBA,AAY0AAAAAAABABKABgBADzADbH,A,0Hf/A", -- [1]
+		["1411371047.65"] = {
+			"OQ,1C,AasTcA,0,p8,GXnlX1,R09NU05BUlQgSDUyQ0NJ,JTH0AAACFABUH9AbImZZ,MTIyMSN4ZXRtZXM7Mzg7ZW9zaUoA,LgAA,R,AABDOMMAAB/+,AAAAAAAAAAAAAAAAAAAAAEAAAAAAHAA,O,0Hf/A", -- [1]
 			"Drominus-Area52", -- [2]
 			"", -- [3]
 			"5. oqchannel", -- [4]
@@ -793,15 +793,15 @@ ElvCharacterDB = {
 			5, -- [8]
 			"oqchannel", -- [9]
 			0, -- [10]
-			2736, -- [11]
+			26135, -- [11]
 			"0x0280000006F34303", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			[20] = "CHAT_MSG_CHANNEL",
 		},
-		["1411039624.292"] = {
-			"OQ,1C,AVIlt5,1,p8,GUiPhT,ZW5lY1MgY2lvcmVI,JTIcAAACCABUGsFkAAZZ,ODA2MSNub2xsaWR5dm9vcmc7OTkxO3p0bGFzZWh0YUIA,LgAA,M,ABBOfAOAAAAA,A,f,VHf/A", -- [1]
+		["1411371178.968"] = {
+			"OQ,1C,Aav2C2,0,p8,GPujy5,Z2d1SiBub3JJIEAgb29TSDAx,JTIwAAAIBABUH9B3I1ZZ,MTQ0MSN0YXJ5bW11Zzs4Nzt0YXJ5bW11RwAA,UkVMQUVIIDEA,R,CDDFfFOAAAA6,AAAAAAAAAAAAAqAzADJAIr//DfAA/iD,f,VHf/A", -- [1]
 			"Drominus-Area52", -- [2]
 			"", -- [3]
 			"5. oqchannel", -- [4]
@@ -811,15 +811,15 @@ ElvCharacterDB = {
 			5, -- [8]
 			"oqchannel", -- [9]
 			0, -- [10]
-			3334, -- [11]
+			26765, -- [11]
 			"0x0280000006F34303", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			[20] = "CHAT_MSG_CHANNEL",
 		},
-		["1411039533.5"] = {
-			"OQ,1C,AVFlvj,2,p8,GSUDd7,c2RyYXdubyBlZ2VpUyBsYW1yb04gb29T,JTIwAAAGGABUGsEVIvZZ,NTc2MSNjaXRzYXRrbnVmOzAxO2Vub2xpdmVlaFQA,c2RyYXdubyBlZ2VpUyBsYW1yb04gb29T,R,CAEDfLOAAA/6,AAAAAAAAAAAAAMAgAAwARJ//BAAA//D,f,RHf/A", -- [1]
+		["1411371177.715"] = {
+			"OQ,1C,AavygU,0,p8,GWABFT,bTUyIGxsaWsgaHNvcnJhZwAA,JTI1AAAVHABUH9B2I1ZZ,NjA3MSNkZWx1cmlkaXI7OTkxO6vDZ25haEMA,LgAA,R,CCREfNOAAD/6,AAAAAACAAAAAABACAAEAAE//DBAA/nD,f,0Hf/B", -- [1]
 			"Drominus-Area52", -- [2]
 			"", -- [3]
 			"5. oqchannel", -- [4]
@@ -829,15 +829,15 @@ ElvCharacterDB = {
 			5, -- [8]
 			"oqchannel", -- [9]
 			0, -- [10]
-			2758, -- [11]
+			26763, -- [11]
 			"0x0280000006F34303", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			[20] = "CHAT_MSG_CHANNEL",
 		},
-		["1411039609.25"] = {
-			"OQ,1C,AVIB9g,1,p8,GQ6QN4,S0FMQUcgQCBOIDAxIE9vUwAA,JTImAAADMABUGsFVIqZZ,MTE2MSNlaWhjbmVyZjs1MTE7dGliYm9oeXplZXRT,a25hdCBkZWVO,R,BACDfEOAAAAa,AAAAAAAAAAAABuAyAFuAI+//BAAA//D,f,0Hf/A", -- [1]
+		["1411371188.886"] = {
+			"OQ,1C,AawW59,2,p8,GVR2kQ,aHN1UCBrMi4yIHNnYlIgcydsZWV0UwAA,JTImAAAGMCBUH9CFfQZZ,MzM1MSNyZXRoZ2lmZXJpZjs0OTtsZWV0c2RsuMND,IC0gIDpTdG9F,A,ABFDAAAAAAAA,AAEAAFAAJKAAA,A,SHf/B", -- [1]
 			"Drominus-Area52", -- [2]
 			"", -- [3]
 			"5. oqchannel", -- [4]
@@ -847,15 +847,15 @@ ElvCharacterDB = {
 			5, -- [8]
 			"oqchannel", -- [9]
 			0, -- [10]
-			3249, -- [11]
+			26817, -- [11]
 			"0x0280000006F34303", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			[20] = "CHAT_MSG_CHANNEL",
 		},
-		["1411039604.796"] = {
-			"OQ,1C,AVH8zw,2,p8,GOXL/g,c2VyIHNkcmFocyBjY2kgbmFtIDUySAAA,JTH0AAAEGABUGsFTI+ZZ,ODEyNiNnYXdzYWhwbGE7ODc7eXqgw2xD,c2VyIHNkcmFocyBjY2kgbmFtIDUySAAA,R,BADFfLOMAA/6,PP////////BAAAAFAAAAD9//D//B//D,O,VHf/A", -- [1]
+		["1411371045.105"] = {
+			"OQ,1C,AasQLf,2,p8,Gajbev,IXlycmFnIG90IGVnaWVzIG5hbSAwMSAh,JTI1AAACBABUH9AaIxZZ,Mjc1MSNyZWtyYWQ7OTc7ZGV0YnVvRAAA,bGxhIGRlZW4A,R,ABBDfLOAAA/6,AAAAAAAAAAAACVBkAMTApT/fAAAA//D,f,0Hf/A", -- [1]
 			"Drominus-Area52", -- [2]
 			"", -- [3]
 			"5. oqchannel", -- [4]
@@ -865,15 +865,15 @@ ElvCharacterDB = {
 			5, -- [8]
 			"oqchannel", -- [9]
 			0, -- [10]
-			3207, -- [11]
+			26128, -- [11]
 			"0x0280000006F34303", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			[20] = "CHAT_MSG_CHANNEL",
 		},
-		["1411039629.233"] = {
-			"OQ,1C,AVIpBm,1,p8,GSREgw,emFOIEAgMDEgT29T,JTIwAAACEABUGsFlI4ZZ,NzE2MSN0c2VwbWV0OzM5O3JvdGNlcnJ1c2VS,U1BEIGRlZU4A,R,ACADfJOAAAP6,AAAAAAAAAAAABDA1ADtAWp//DEAA//D,f,0Hf/A", -- [1]
+		["1411371062.597"] = {
+			"OQ,1C,AasKjq,0,p8,GY5cnX,Z2d1akAgMiB4ZWxG,JTIcAAAGGABUH9AXIcZZ,OTYxMSNudWpudWppYXVoczs1MTE7aWNpY2duZU0A,c2VpcnJhYyA3ODUgMiB0b2cA,R,CCCOfOOAAH/6,AAAAIAAA/AAAA5AdADYAOv//DAAA//D,f,0Hf/A", -- [1]
 			"Drominus-Area52", -- [2]
 			"", -- [3]
 			"5. oqchannel", -- [4]
@@ -883,15 +883,15 @@ ElvCharacterDB = {
 			5, -- [8]
 			"oqchannel", -- [9]
 			0, -- [10]
-			3372, -- [11]
+			26200, -- [11]
 			"0x0280000006F34303", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			[20] = "CHAT_MSG_CHANNEL",
 		},
-		["1411039483.531"] = {
-			"OQ,1C,AVDeYg,0,p8,GTWT1I,bGFlaCA+IGtsYW0gQCBPb1MgSCBkbGl1RwAA,JTI1AAAVBABUGsDeI2ZZ,OTY1MSN4aXJ0OzkxO3hpclQA,LgAA,R,BCJGfHOIyAD6,DABAHA//hAAAA4AiAEqAQq//D/DA//D,f,VHf/A", -- [1]
+		["1411371077.562"] = {
+			"OQ,1C,Aas7CP,0,p8,GXkvHP,emFuIHRhIDIgeGVsRgAA,JTIcAAADJABUH9ArIlZZ,ODU4MSNlZGxpd2trYXo7OTcxO3Bwb25zcm9X,bGx1cCBlcm9mZWIgU1BEIGVtb3MgZXN1IGRsdW9j,R,BAADAAAAAAAA,AAAAAAAAAAAAAjAJABuAJL/DAAAA//D,A,0Hf/A", -- [1]
 			"Drominus-Area52", -- [2]
 			"", -- [3]
 			"5. oqchannel", -- [4]
@@ -901,15 +901,15 @@ ElvCharacterDB = {
 			5, -- [8]
 			"oqchannel", -- [9]
 			0, -- [10]
-			2419, -- [11]
+			26281, -- [11]
 			"0x0280000006F34303", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			[20] = "CHAT_MSG_CHANNEL",
 		},
-		["1411039674.069"] = {
-			"OQ,1C,AVKOqf,1,p8,GOFhi8,T29TIGxhbXJvbiAwMSBrb2h0QAAA,JTItAAAFCABUGsGPIuZ,MTYxMSN4eW5yZWZuaTszOTt4dWhQ,WUxOTyByZWxhZWggdG5lbWVjYWxwZXIgREVFTiBrb2hUQAAA,R,ABEDfKOAAAf6,AAAAAA/DAAAAAdAGABvADn//DAAA//D,f,VCf/D", -- [1]
+		["1411371015.149"] = {
+			"OQ,1C,AaqxY7,0,p8,GXZ9PL,c3BkIDEgc2tuYXQxPk4gYWhzQCAxeGVsZgAA,JTIIAAAJDABUH8/zISZZ,Nzc5MSNuYWVyb2s7NDk7bmFlcm9rZGl1ckQA,c3BkIDEga25hdDE+TgAA,R,BCDOfCOAAAAC,AAAAAAAAAAAAADABAAJADxDAAAAA/DA,f,0Ff/B", -- [1]
 			"Drominus-Area52", -- [2]
 			"", -- [3]
 			"5. oqchannel", -- [4]
@@ -919,15 +919,15 @@ ElvCharacterDB = {
 			5, -- [8]
 			"oqchannel", -- [9]
 			0, -- [10]
-			3654, -- [11]
+			25985, -- [11]
 			"0x0280000006F34303", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			[20] = "CHAT_MSG_CHANNEL",
 		},
-		["1411039514.792"] = {
-			"OQ,1C,AVAYe9,0,p8,GUG/aC,cycyIEZMIGNzaUQA,JTAAAAABABBUGsCNAAZZ,NTYxMSNjYWluYW1vcnlwOzQ4O2VyYW10aGdpkcMA,U1BEIERPT0cgRkwA,a,+BBA,AAXCAAAAAAABAAAAADBABAAA9U,f,0Hf/B", -- [1]
+		["1411371055.109"] = {
+			"OQ,1C,AasYYU,0,p8,GZS/r5,c3JvdGNldG9ycEAgMSB4ZWxG,JTIWAAAJEABUH9AdIWZZ,NzQ1MSN0bmFpbGFnOzk5MTt0bmFpbGFH,c3JvdGNldG9ycEAgc3BkIGVtb3MgZGVlbiB0c3Vq,R,CBGOfAOAAAAA,AAAAAAAAAAAAABAAAADAADAAAAAA//A,f,0Hf/A", -- [1]
 			"Drominus-Area52", -- [2]
 			"", -- [3]
 			"5. oqchannel", -- [4]
@@ -937,15 +937,15 @@ ElvCharacterDB = {
 			5, -- [8]
 			"oqchannel", -- [9]
 			0, -- [10]
-			2622, -- [11]
+			26176, -- [11]
 			"0x0280000006F34303", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			[20] = "CHAT_MSG_CHANNEL",
 		},
-		["1411039653.768"] = {
-			"OQ,1C,AVJY4S,2,p8,GR9EAZ,c0dCIG1vZG5hUiBzZHJvbHJhVwAA,JTImAAAEBCBUGsF5AAZZ,NzYzMSNzc2FyZ3NzOzAxO3Jld29sZmVoY3VvRAAA,IDpBdG9T,B,ACCAfAOAAAAA,AAFAACAAHOAAA,f,0Hf/A", -- [1]
+		["1411371071.699"] = {
+			"OQ,1C,AasPxL,0,p8,Gannpu,MSB4ZWxmIGhzZXJmIQAA,JTIcAAABAABUH9AaIsZZ,MTg1MSN5a29vcHM7OTkxO2FtYWphQgAA,LgAA,R,AABOfOOAAH/6,PPQI/f/D//BAABAAAAIADP//D/fB//D,f,VHf/A", -- [1]
 			"Drominus-Area52", -- [2]
 			"", -- [3]
 			"5. oqchannel", -- [4]
@@ -955,15 +955,15 @@ ElvCharacterDB = {
 			5, -- [8]
 			"oqchannel", -- [9]
 			0, -- [10]
-			3518, -- [11]
+			26245, -- [11]
 			"0x0280000006F34303", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			[20] = "CHAT_MSG_CHANNEL",
 		},
-		["1411039615.324"] = {
-			"OQ,1C,AVIDBZ,1,p8,GSREgw,emFOIEAgMDEgT29T,JTIwAAACEABUGsFWI4ZZ,NzE2MSN0c2VwbWV0OzM5O3JvdGNlcnJ1c2VS,U1BEIGRlZU4A,R,ACADfJOAAAP6,AAAAAAAAAAAABDA1ADtAWp//DEAA//D,f,0Hf/A", -- [1]
+		["1411371192.732"] = {
+			"OQ,1C,Aavhjt,2,p8,Gaq/kz,VU9ZL2VsZS9uaWttb29iIHMz,JTImAAACAABUH9BwAAZZ,NjMxMSNtYXJnbmlkOzQ5O211aWNsYUMA,cmMgKzAwOTEA,a,+DCA,BAfqAAAMAASCAC1ADTDAJOAJgE,A,SHf/B", -- [1]
 			"Drominus-Area52", -- [2]
 			"", -- [3]
 			"5. oqchannel", -- [4]
@@ -973,15 +973,15 @@ ElvCharacterDB = {
 			5, -- [8]
 			"oqchannel", -- [9]
 			0, -- [10]
-			3271, -- [11]
+			26830, -- [11]
 			"0x0280000006F34303", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			[20] = "CHAT_MSG_CHANNEL",
 		},
-		["1411039732.933"] = {
-			"OQ,1C,AVNvdb,1,p8,GOFhi8,T29TIGxhbXJvbiAwMSBrb2h0QAAA,JTItAAAFDABUGsHrIuZ,MTYxMSN4eW5yZWZuaTszOTt4dWhQ,WUxOTyByZWxhZWggdG5lbWVjYWxwZXIgREVFTiBrb2hUQAAA,R,ABEDfKOLyAf6,AAAAAA/DAAAAAdAGABvADn//DAAA//D,f,VCf/D", -- [1]
+		["1411371131.634"] = {
+			"OQ,1C,Aau+no,3,p8,GXchR3,T0dFTCAhbHVvUyBub2dhckQgMDEA,JTAAAAADDABUH9BhHoZ,MDI1MSMzZ3liYm9yOzE4O2VkYWxiZGxvenRJ,LgAA,R,AACDAAAAAAAA,AAAAAAAAAAAAAAAEAAAAACAAAAAAAAA,A,0Hf/A", -- [1]
 			"Drominus-Area52", -- [2]
 			"", -- [3]
 			"5. oqchannel", -- [4]
@@ -991,15 +991,15 @@ ElvCharacterDB = {
 			5, -- [8]
 			"oqchannel", -- [9]
 			0, -- [10]
-			4021, -- [11]
+			26531, -- [11]
 			"0x0280000006F34303", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			[20] = "CHAT_MSG_CHANNEL",
 		},
-		["1411039489.027"] = {
-			"OQ,1C,AVESvk,1,p8,GPmub0,S09IVCB0YSBtMDEgT29T,JTIrAAAEJABUGsDzH7ZZ,OTQyMSNzdWZvb3I7MzgxO3N1Zm9vZHN1Zm9vUgAA,c3JlbGFlaCBkbmEgc2tuYXQgZGVlbgAA,R,AAEHfKOAAAf6,AAAAAAAAAAAAAcAKACHAD2//BAAAPHC,f,VHf/A", -- [1]
+		["1411371167.318"] = {
+			"OQ,1C,Aas2wN,0,p8,GO8H7C,cGFjIGdpYiBzMgAA,JTAAAAACABBUH9AqAAZZ,NTM2MSNva2o7Mzc7b21vcm9nYUgA,NjM1IGx2bGkgeWxvaG51IGtk,a,+CCA,AAaJAAAAAAACAAAAAACACTACED,A,0Cf/A", -- [1]
 			"Drominus-Area52", -- [2]
 			"", -- [3]
 			"5. oqchannel", -- [4]
@@ -1009,15 +1009,15 @@ ElvCharacterDB = {
 			5, -- [8]
 			"oqchannel", -- [9]
 			0, -- [10]
-			2461, -- [11]
+			26712, -- [11]
 			"0x0280000006F34303", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			[20] = "CHAT_MSG_CHANNEL",
 		},
-		["1411039458.72"] = {
-			"OQ,1C,AVChYN,0,p8,GQ1e3w,bmluaWFydCtsbGloYyBzMiBGTCBsYXJlRgAA,JTImAAACCBBUGsDFAAZZ,MDM0NiNhbW5hcjszODtvcnV6dGlI,LgAA,a,+BBA,AAYhAAAAAABBABSABaBAGHAGoF,A,0Hf/A", -- [1]
+		["1411371065.126"] = {
+			"OQ,1C,AasxIT,0,p8,GaswQu,IHN0cCBmbCBkaXVyZHIgNjM1,JTAAAAAAAABUH9AnAAZZ,NzA1MSN4aWhwYXJlczs3MzE7YXJheGlG,c3RwIHJvZiBzMyBybyBzMiBmbyBzZW1hZyB3ZUYA,a,+BAA,AAWfAAAAAAAAAAAAAABAAxAA2H,O,0Hf/A", -- [1]
 			"Drominus-Area52", -- [2]
 			"", -- [3]
 			"5. oqchannel", -- [4]
@@ -1027,15 +1027,15 @@ ElvCharacterDB = {
 			5, -- [8]
 			"oqchannel", -- [9]
 			0, -- [10]
-			2290, -- [11]
+			26226, -- [11]
 			"0x0280000006F34303", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			[20] = "CHAT_MSG_CHANNEL",
 		},
-		["1411039534.773"] = {
-			"OQ,1C,AVFmWe,0,p8,GUQCL6,Z2JuYWNoc2FydCB0YXIgd29sdGloc2dvZAAA,JTAAAAAHDCBUGsEVAAZZ,MTAyMSNuaW1vb3Q7NzIyO3lwcHVwbXV0ZUcA,MDc2IC0gMDk5IDpCQQAA,A,ADEDAAAAAAAA,AQyAK4AbqNCAA,A,SHf/B", -- [1]
+		["1411371188.138"] = {
+			"OQ,1C,AawZfU,2,p8,GZG4AP,U1BEIERFRU4gTVJPTiAwMSBZUlJBRwAA,JTIwAAABQABUH9CGImZZ,NTA5MSNsb2x5dHJhbTszODt5dHJhbW5pZ3JpVgAA,U1BEIDQA,R,ABAAfOOAAH/6,AAAAAAAAAAAAA/ANADrAHN//DAAA//D,f,0Hf/A", -- [1]
 			"Drominus-Area52", -- [2]
 			"", -- [3]
 			"5. oqchannel", -- [4]
@@ -1045,15 +1045,15 @@ ElvCharacterDB = {
 			5, -- [8]
 			"oqchannel", -- [9]
 			0, -- [10]
-			2763, -- [11]
+			26818, -- [11]
 			"0x0280000006F34303", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			[20] = "CHAT_MSG_CHANNEL",
 		},
-		["1411039463.518"] = {
-			"OQ,1C,AVDRvv,2,p8,GSUDd7,c2RyYXdubyBlZ2VpUyBsYW1yb04gb29T,JTIwAAAGFABUGsDYIvZZ,NTc2MSNjaXRzYXRrbnVmOzAxO2Vub2xpdmVlaFQA,c2RyYXdubyBlZ2VpUyBsYW1yb04gb29T,R,CAEDfLOMSA/6,AAAAAAAAAAAAAMAfAAwARJ//BAAA//D,f,RHf/A", -- [1]
+		["1411371187.32"] = {
+			"OQ,1C,AawTM4,2,p8,GY/ZgE,dHNlaXJwIHdvZGFocyA4NDUgczIA,JTIiAAACBBBUH9CEAAZZ,MDY0MSN5YWpha2FzZW1hajs0OTtoc2lrY2FN,czIgRkwgdHNlaXJwUyA4NDUA,a,+CAA,AAW8AAAAAAAAAAoAArCAIKAJVW,A,0Hf/A", -- [1]
 			"Drominus-Area52", -- [2]
 			"", -- [3]
 			"5. oqchannel", -- [4]
@@ -1063,15 +1063,15 @@ ElvCharacterDB = {
 			5, -- [8]
 			"oqchannel", -- [9]
 			0, -- [10]
-			2306, -- [11]
+			26816, -- [11]
 			"0x0280000006F34303", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			[20] = "CHAT_MSG_CHANNEL",
 		},
-		["1411039769.801"] = {
-			"OQ,1C,AVOuR4,0,p8,GTq3GM,cHhlIDAwMjIgc2xhZWggZGVlbiBzMgAA,JTAAAAABAABUGsIFAAZZ,MDM5MSNsb2x6YmF0czs0OTtveHl6emlG,LgAA,a,+DED,DAjlDAAbAAZEAHjAGDDAM+AGrb,A,0Hf/A", -- [1]
+		["1411371069.988"] = {
+			"OQ,1C,Aaqwgy,0,p8,GaFOOH,cGFDIHMy,JTAAAAABCABUH8/zAAZZ,NDc0MSN5c3A7ODc7Y2lwb1QA,c3RuaW9wIHJvZiBzJzIgbGxpaEMA,a,+AAA,AASlAAAAAAAAAAAAAAAABEABLP,A,0Hf/A", -- [1]
 			"Drominus-Area52", -- [2]
 			"", -- [3]
 			"5. oqchannel", -- [4]
@@ -1081,15 +1081,15 @@ ElvCharacterDB = {
 			5, -- [8]
 			"oqchannel", -- [9]
 			0, -- [10]
-			4261, -- [11]
+			26242, -- [11]
 			"0x0280000006F34303", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			[20] = "CHAT_MSG_CHANNEL",
 		},
-		["1411039593.709"] = {
-			"OQ,1C,AVHpGQ,2,p8,GVGnbZ,czMvczIgZmwgeW1vb2IgdGxhIG5vIDtrMgAA,JTImAAABAABUGsFLAAZZ,MjI2MSNnbml3b2xqOzAxO3NuZXBwYUgA,LgAA,a,+CDA,AAbuAAAAAAADAATAAJCABnABaE,A,SDf/A", -- [1]
+		["1411371022.564"] = {
+			"OQ,1C,AarjGm,2,p8,GacVjs,TUFQUyBORUNTSAAA,JTAAAAACCABUH9AHAAZZ,NjU3MSNuZWtjaWhjbG9naWI7OTc7Y2lyaUgA,LgAA,S,DD-,AAKAgABBAGg,V,0Bf/A", -- [1]
 			"Drominus-Area52", -- [2]
 			"", -- [3]
 			"5. oqchannel", -- [4]
@@ -1099,15 +1099,15 @@ ElvCharacterDB = {
 			5, -- [8]
 			"oqchannel", -- [9]
 			0, -- [10]
-			3139, -- [11]
+			26011, -- [11]
 			"0x0280000006F34303", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			[20] = "CHAT_MSG_CHANNEL",
 		},
-		["1411039564.256"] = {
-			"OQ,1C,AVGkZL,1,p8,GU+0SU,UkFFTEMgTExVRiBsYW1yb04gb29TIE1GTAAA,JTIhAAAIEABUGsEvIoZZ,NzQxMSM0MDR6a25pb3o7Mzg7c2ltcmFrQQAA,c2tuYVQgMgAA,R,ABEDfAOAAAAA,AAAAAAAAAAAAAAAIAAAAO7//DAAAPcC,f,0Hf/A", -- [1]
+		["1411371129.187"] = {
+			"OQ,1C,AatXpn,0,p8,GUNrHZ,aHNvcnJhRyBsYW1yb04A,JTImAAADAABUH9A3InZ,NjYyMSNpb2F5OzcxMTtpb2F5ZWtV,ZXZlaWhjYSBkZWVuIDtoc29ycmFHIG5P,R,ACBDfAOAAAAA,AAAAAAAAAAAAAEAJAAMAE1AAAAAA//D,f,0Cf/A", -- [1]
 			"Drominus-Area52", -- [2]
 			"", -- [3]
 			"5. oqchannel", -- [4]
@@ -1117,15 +1117,15 @@ ElvCharacterDB = {
 			5, -- [8]
 			"oqchannel", -- [9]
 			0, -- [10]
-			2954, -- [11]
+			26527, -- [11]
 			"0x0280000006F34303", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			[20] = "CHAT_MSG_CHANNEL",
 		},
-		["1411039518.66"] = {
-			"OQ,1C,AVFIRM,2,p8,GUUKku,ZWxwdW9jIGtjaXVxIG5lY3MgaAAA,JTAAAAABBABUGsEJAAZZ,NjgzMjEjaHNvajs0OTtpaWRkYUQA,LgAA,S,D--,AAAAAAAAAAA,A,0Hf/A", -- [1]
+		["1411371087.697"] = {
+			"OQ,1C,AatCJs,0,p8,GatBee,c3BkIGRlZW4gZG5pcmcgdG51b20gczMA,JTImAAAAAABUH9AuAAZZ,MTEyMSNoY25lcms7NzMxO2FiaXJpSwAA,ZWdhciBvbiA7c2VtYWcgbGxpaGMA,a,+BBA,AAZ9AAAHAAHBAAgAAfBAB/AB4Q,A,0Hf/A", -- [1]
 			"Drominus-Area52", -- [2]
 			"", -- [3]
 			"5. oqchannel", -- [4]
@@ -1135,15 +1135,15 @@ ElvCharacterDB = {
 			5, -- [8]
 			"oqchannel", -- [9]
 			0, -- [10]
-			2661, -- [11]
+			26328, -- [11]
 			"0x0280000006F34303", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			[20] = "CHAT_MSG_CHANNEL",
 		},
-		["1411039564.791"] = {
-			"OQ,1C,AVGeoI,1,p8,GUpIII,cmMgMDA3MSBzMiBmbCBsYXBo,JTAAAAABBABUGsEsAAZ,MDE4MjEjZ29yZmVsdHRhYjs2ODtlbbbDc3dhbUkA,LgAA,a,+CCA,BAbbAAAAAAACAB9ABnCAJnAGUR,A,0Hf/A", -- [1]
+		["1411371182.72"] = {
+			"OQ,1C,AawKCK,2,p8,GRV+rr,eXJyYUcgQCBOMDEgT29T,JTIhAAAIeABUH9CAIhZZ,NTQzMSNyZXZpbG9iOzAxO3NpbW9vbEcA,LgAA,R,BBGDfNOOID/6,AAAAAAAAAAAAAZAPABjAKN//BAAA/9D,f,0Hf/A", -- [1]
 			"Drominus-Area52", -- [2]
 			"", -- [3]
 			"5. oqchannel", -- [4]
@@ -1153,15 +1153,15 @@ ElvCharacterDB = {
 			5, -- [8]
 			"oqchannel", -- [9]
 			0, -- [10]
-			2953, -- [11]
+			26782, -- [11]
 			"0x0280000006F34303", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			[20] = "CHAT_MSG_CHANNEL",
 		},
-		["1411039474.172"] = {
-			"OQ,1C,AVDSso,0,p8,GRLDt9,YWhTIEAgT29TIE4wMQAA,JTISAAAHIABUGsDZIdZZ,OTE3NiN4ZWxhOzg4O3NzYWJhZHBhbFMA,LgAA,R,CBEDfDOEUAAK,AAAA/AAAAAAAAGAEAAYACE//DAAA//D,f,0Hf/A", -- [1]
+		["1411371181.751"] = {
+			"OQ,1C,AawFRW,2,p8,GYG7pR,IGhzZXJGIG1uIDAxT29TICAgIQAA,JTIoAAAHJABUH9B+IoZZ,MzUzNiNpaWFraWFodDs0OTtsbGlrc2hjdU0A,c2xhZWggMiBkZWVO,R,ABGDfEOAAAAa,AAAAAAAAAAAAAYAFABLAhaPACAAAP/D,A,0Hf/A", -- [1]
 			"Drominus-Area52", -- [2]
 			"", -- [3]
 			"5. oqchannel", -- [4]
@@ -1171,15 +1171,15 @@ ElvCharacterDB = {
 			5, -- [8]
 			"oqchannel", -- [9]
 			0, -- [10]
-			2372, -- [11]
+			26779, -- [11]
 			"0x0280000006F34303", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			[20] = "CHAT_MSG_CHANNEL",
 		},
-		["1411039588.913"] = {
-			"OQ,1C,AVHfcO,1,p8,GSREgw,emFOIEAgMDEgT29T,JTIwAAACEABUGsFHI4ZZ,NzE2MSN0c2VwbWV0OzM5O3JvdGNlcnJ1c2VS,U1BEIGRlZU4A,R,ACADfJOAAAP6,AAAAAAAAAAAABDA1ADtAWp//DEAA//D,f,0Hf/A", -- [1]
+		["1411371177.245"] = {
+			"OQ,1C,AawGyq,2,p8,GaP/pq,NjQ1IEtEIHMnMgAA,JTAAAAABBABUH9B/AAZZ,MTE1MSNyZWhjbmlsZzszODtyZWhjbmlsRwAA,LgAA,a,+CBA,BAZdAAAAAAABAEEAEdCAPnAOuD,A,0Hf/A", -- [1]
 			"Drominus-Area52", -- [2]
 			"", -- [3]
 			"5. oqchannel", -- [4]
@@ -1189,15 +1189,15 @@ ElvCharacterDB = {
 			5, -- [8]
 			"oqchannel", -- [9]
 			0, -- [10]
-			3111, -- [11]
+			26762, -- [11]
 			"0x0280000006F34303", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			[20] = "CHAT_MSG_CHANNEL",
 		},
-		["1411039493.337"] = {
-			"OQ,1C,AVEKFx,1,p8,GUAnxm,IGFyL1MnR0JSIEhTVVAgMDA5MQAA,JTImAAAECABUGsDwAAZZ,MTIyMSN4ZXRtZXM7Mzg7ZW9zaUoA,LgAA,A,AACDVORAAH/a,AAAAAAAAAJAAA,V,SHf/D", -- [1]
+		["1411371179.171"] = {
+			"OQ,1C,Aav63S,0,p8,GYcXgo,dW11cnVEIG1vcmYgVE9UIG1yb04A,JTAAAAAIPABUH9B6IUZZ,NzY2NiNhcnJhaGF6OzkxO2FycmFoYVoA,LgAA,R,CCEDhIMJyAH+,PHAA///jAAAAApAcABrAZ9//D/CA//D,h,0Hf/A", -- [1]
 			"Drominus-Area52", -- [2]
 			"", -- [3]
 			"5. oqchannel", -- [4]
@@ -1207,15 +1207,15 @@ ElvCharacterDB = {
 			5, -- [8]
 			"oqchannel", -- [9]
 			0, -- [10]
-			2472, -- [11]
+			26769, -- [11]
 			"0x0280000006F34303", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			[20] = "CHAT_MSG_CHANNEL",
 		},
-		["1411039499.161"] = {
-			"OQ,1C,AVEnPg,1,p8,GQCiy2,bWlyZ3phTiAwMSBOIE9vUwAA,JTIhAAADHABUGsD8IiZZ,NzEyMSNyZWNuYWRldmF3OzkxO3JlY25hZGV2YVcA,U1BEIDEga25hVCAxIGRlZU4A,R,AADDfHOIiAD6,AAAAAABAAAAAANAJAA0AJ5/3CAAA/7D,f,0Hf/A", -- [1]
+		["1411371175.279"] = {
+			"OQ,1C,AatArP,0,p8,GasYLM,aHNlckYgTVJPTiAwMSBPT1MA,JTInAAABAABUH9AuInZZ,MDQ0MSN4eGFyZXQ7ODMyO3RhYmVsSwAA,bGxBIGRlZU4A,R,AABDfAOAAAAA,AAAAAAAAAAAAAKAOAAoAQg/7BAAA//D,f,0Hf/A", -- [1]
 			"Drominus-Area52", -- [2]
 			"", -- [3]
 			"5. oqchannel", -- [4]
@@ -1225,15 +1225,15 @@ ElvCharacterDB = {
 			5, -- [8]
 			"oqchannel", -- [9]
 			0, -- [10]
-			2528, -- [11]
+			26754, -- [11]
 			"0x0280000006F34303", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			[20] = "CHAT_MSG_CHANNEL",
 		},
-		["1411039504.934"] = {
-			"OQ,1C,AVEtg8,1,p8,GU4aHk,U0pvVCAtIERMT0cA,JTAAAAACAABUGsD+AAZZ,NzUzMSNuZWtpcnVoOzAxO2Fra08A,LmxsYSBkZWVOIC5ldG9OIG5pIHB4IHRzb1AA,C,DT---,ANAMAJAASBHABRAVr,f,VHf/A", -- [1]
+		["1411371172.74"] = {
+			"OQ,1C,Aavuwj,1,p8,GZtsQa,c2xhZWggZGVlbiBoc3VwIGsyIHMz,JTAAAAADABBUH9B1bWZZ,MTEzMSNlaXR0b2hldGFyYWs7MjYxO2FkaWhjYW1vdG95TAAA,dW9ZL2ZmQS9IVQAA,a,+CDA,AAdTAAAAAAADACkACXCAH8AJZD,O,0Hf/A", -- [1]
 			"Drominus-Area52", -- [2]
 			"", -- [3]
 			"5. oqchannel", -- [4]
@@ -1243,15 +1243,15 @@ ElvCharacterDB = {
 			5, -- [8]
 			"oqchannel", -- [9]
 			0, -- [10]
-			2557, -- [11]
+			26730, -- [11]
 			"0x0280000006F34303", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			[20] = "CHAT_MSG_CHANNEL",
 		},
-		["1411039603.653"] = {
-			"OQ,1C,AVH7Fl,0,p8,GT+RDw,c29sb1kgdGxBIHond2FQ,JTAAAAAHHABUGsFSAAZZ,MjE5MSNwaWxsaWhwOzQ5O3eiw1AA,ZGFlbCBrMi4yICEgZGVwcGFjIHRlRwAA,A,BBEDAAAAAAAA,AAQAAPAAfMCAA,A,0Hf/A", -- [1]
+		["1411371169.216"] = {
+			"OQ,1C,AavzaZ,2,p8,GXTKtR,U0dCUiBLMgAA,JTAAAAAIBCBUH9B3fQZZ,NTEzMSN6eHlubzs0OTtwc2l3ZWh0b2xsaVcA,IC0gIDpTdG9F,A,ACGDAAAAAAAA,AACAADAAFKAAA,A,SHf/A", -- [1]
 			"Drominus-Area52", -- [2]
 			"", -- [3]
 			"5. oqchannel", -- [4]
@@ -1261,15 +1261,15 @@ ElvCharacterDB = {
 			5, -- [8]
 			"oqchannel", -- [9]
 			0, -- [10]
-			3203, -- [11]
+			26721, -- [11]
 			"0x0280000006F34303", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			[20] = "CHAT_MSG_CHANNEL",
 		},
-		["1411039778.965"] = {
-			"OQ,1C,AVPNYu,0,p8,GUi831,cyczIHJjIHdvbCBGTCB0ZVIgcHggazEuMgAA,JTImAAABBBBUGsIRAAZZ,MTczMSNlZG9tZWx0dGFiOzQ5O2Vkb21lbHR0YUIA,cyczIHJjMCByb2YgcmVsYWVIIGRuYSByZXRudUggRkwA,a,+DDD,BAcHDABEAAsDAJ6AJFDBDXArBT,A,SDNUA", -- [1]
+		["1411371168.096"] = {
+			"OQ,1C,Aavqv5,0,p8,GZjOKv,bmVjcyBIIHBhYyBW,JTAAAAACFABUH9BzAAZZ,MjcxMSNtdXJhbjs0OTtzYXJvRQAA,LgAA,S,HD-,ABeA1AFcAVm,f,0Hf/A", -- [1]
 			"Drominus-Area52", -- [2]
 			"", -- [3]
 			"5. oqchannel", -- [4]
@@ -1279,15 +1279,15 @@ ElvCharacterDB = {
 			5, -- [8]
 			"oqchannel", -- [9]
 			0, -- [10]
-			4317, -- [11]
+			26715, -- [11]
 			"0x0280000006F34303", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			[20] = "CHAT_MSG_CHANNEL",
 		},
-		["1411039750.433"] = {
-			"OQ,1C,AVOUU5,1,p8,GSwlCP,b29zIE1I,JTIqAAAJAABUGsH6IqZZ,NDU5MSN1b2lkYTszODtvbXVoSwAA,LgAA,R,BBCFfAOAAAAA,AAAAAAAAAAAAAEAEAAQAC2//DHAA//D,f,0CJgA", -- [1]
+		["1411371119.141"] = {
+			"OQ,1C,AauYFu,1,p8,GYkgvT,bmVjc0gA,JTAAAAADGABUH9BRAAZZ,MTAyMSNkcmF6ZHJhaGM7NDAyO2xlaW5haHRlTgAA,LgAA,S,DDD,AAQAFAAzAWK,A,0Hf/A", -- [1]
 			"Drominus-Area52", -- [2]
 			"", -- [3]
 			"5. oqchannel", -- [4]
@@ -1297,15 +1297,15 @@ ElvCharacterDB = {
 			5, -- [8]
 			"oqchannel", -- [9]
 			0, -- [10]
-			4138, -- [11]
+			26481, -- [11]
 			"0x0280000006F34303", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			[20] = "CHAT_MSG_CHANNEL",
 		},
-		["1411039569.162"] = {
-			"OQ,1C,AVHCxA,3,p8,GUfP+q,MSBnbmlXIHhlbEYgT29T,JTIIAAARJABUGsE7IJZZ,MzAxMSNkbHJvd3JlbW1pZDs1ODt0bmFoY25F,Z3RnIHNwZCBlcm9tIG93VAAA,R,CELOfAOBCAAA,AAAAAAAAAAAAAAAAAAAAAyAAAAAAAAA,f,0Hf/D", -- [1]
+		["1411371167.806"] = {
+			"OQ,1C,AavgQr,0,p8,GZgUni,U0VNQUcgREVMTElIQyBQTU9DIERPRwAA,JTAAAAACABBUH9BvAAZZ,MzI1MSNzbGVnbmF0bnVsYjs5NzE7bmFzb3R0YUQA,UkMwMDcxIFJFTEFFSCBERUVO,a,+CCA,AAaCAAAZAAlCAFUAGTCAa2AXlN,A,SHf/A", -- [1]
 			"Drominus-Area52", -- [2]
 			"", -- [3]
 			"5. oqchannel", -- [4]
@@ -1315,15 +1315,15 @@ ElvCharacterDB = {
 			5, -- [8]
 			"oqchannel", -- [9]
 			0, -- [10]
-			2995, -- [11]
+			26713, -- [11]
 			"0x0280000006F34303", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			[20] = "CHAT_MSG_CHANNEL",
 		},
-		["1411039746.404"] = {
-			"OQ,1C,AVMhgz,0,p8,GQWGFL,emFOIEAgbGFtcm9OIE9vUwAA,JTAAAAACFABUGsHLItZZ,MTUxMSNla3VsZWl0YWs7NTg7YWlodGlsYVMA,c3BkIDEgc2xhZWggMSBrbmF0IDEA,R,BABDfHOIjAD6,IAAAAA/DAAAAEECDAOgAmh//DAAA//D,A,0Hf/A", -- [1]
+		["1411371058.857"] = {
+			"OQ,1C,AasctN,0,p8,GYcXgo,dW11cnVEIG1vcmYgVE9UIG1yb04A,JTAAAAAIPABUH9AfIUZZ,NzY2NiNhcnJhaGF6OzkxO2FycmFoYVoA,LgAA,R,CCEDhIMJyAH+,PHAA///jAAAAApAcABrAZ9//D/CA//D,h,0Hf/A", -- [1]
 			"Drominus-Area52", -- [2]
 			"", -- [3]
 			"5. oqchannel", -- [4]
@@ -1333,15 +1333,15 @@ ElvCharacterDB = {
 			5, -- [8]
 			"oqchannel", -- [9]
 			0, -- [10]
-			4107, -- [11]
+			26184, -- [11]
 			"0x0280000006F34303", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			[20] = "CHAT_MSG_CHANNEL",
 		},
-		["1411039721.464"] = {
-			"OQ,1C,AVNeYM,2,p8,GUAcne,RUNPIDQgTExBIFRTRUxFQyBFQ08A,JTAAAAALAABUGsHkIpZZ,MzM3MSNyZWJtM2duaW1hbGY7ODc7c3JlaHRlVAAA,RUNPIExMQSBERUVO,R,AABAAAAAAAAA,AAAAXI/DAAAAAEAMAAPAFEDAAAAA//D,A,0Hf/A", -- [1]
+		["1411371118.042"] = {
+			"OQ,1C,AauJXG,0,p8,GWbuz3,cmFlbGMgbGx1RiBrb2hUIE41MgAA,JTIwAAAQKABUH9BLIwZZ,MTI4MSNvZW1vcjs5NzE7cmVkcm9zaWRsaWFG,LgAA,R,CDLEfKOLiAf6,AAAAAAfAAAAAARAHAAzAE6/LAAAA//D,f,0Hf/A", -- [1]
 			"Drominus-Area52", -- [2]
 			"", -- [3]
 			"5. oqchannel", -- [4]
@@ -1351,15 +1351,15 @@ ElvCharacterDB = {
 			5, -- [8]
 			"oqchannel", -- [9]
 			0, -- [10]
-			3940, -- [11]
+			26473, -- [11]
 			"0x0280000006F34303", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			[20] = "CHAT_MSG_CHANNEL",
 		},
-		["1411039598.869"] = {
-			"OQ,1C,AVHt9a,0,p8,GU+0SU,UkFFTEMgTExVRiBsYW1yb04gb29TIE1GTAAA,JTImAAAIEABUGsFNIoZZ,NzQxMSM0MDR6a25pb3o7Mzg7c2ltcmFrQQAA,c2tuYVQgMgAA,R,ABEDfAOAAAAA,AAAAAAAAAAAAAAAIAAAAO7//DAAAPcC,f,0Hf/A", -- [1]
+		["1411371037.765"] = {
+			"OQ,1C,AasQfe,2,p8,GTxOdz,cHhlIGFuZXJhICtrMi4yIGtuaWwgdHN1bQAA,JTImAAAKAABUH9Aag0ZZ,ODMzMjEjbm9kbmFyYjs0OTtsdFcA,bGFwSCBkbmEgS0QgZGVlbiA7aHN1cCBzcnMA,A,AEEDAAAAAAAA,ABaABDACdMAAB,A,SHf/A", -- [1]
 			"Drominus-Area52", -- [2]
 			"", -- [3]
 			"5. oqchannel", -- [4]
@@ -1369,15 +1369,15 @@ ElvCharacterDB = {
 			5, -- [8]
 			"oqchannel", -- [9]
 			0, -- [10]
-			3179, -- [11]
+			26091, -- [11]
 			"0x0280000006F34303", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			[20] = "CHAT_MSG_CHANNEL",
 		},
-		["1411039633.76"] = {
-			"OQ,1C,AVI3PF,0,p8,GU+0SU,UkFFTEMgTExVRiBsYW1yb04gb29TIE1GTAAA,JTImAAAIFABUGsFrIoZZ,NzQxMSM0MDR6a25pb3o7Mzg7c2ltcmFrQQAA,c2tuYVQgMgAA,R,ABEDfAOAAAAA,AAAAAAAAAAAAAAAIAAAAO7//DAAAPcC,f,0Hf/A", -- [1]
+		["1411371049.151"] = {
+			"OQ,1C,AaqASq,0,p8,GYLXyY,emFuIG5vIGRsaXVnIG0wMSBPT1MA,JTIrAAABCABUH8/fIvZZ,Nzc5MSNuYW1kYWJuaXM7NjQ7bmFtZGFibmlT,LgAA,R,AABDfJOLrAP6,AAAAAAAAAAAAAMAIAAsAK6//DAAA//D,f,VHf/A", -- [1]
 			"Drominus-Area52", -- [2]
 			"", -- [3]
 			"5. oqchannel", -- [4]
@@ -1387,15 +1387,15 @@ ElvCharacterDB = {
 			5, -- [8]
 			"oqchannel", -- [9]
 			0, -- [10]
-			3393, -- [11]
+			26145, -- [11]
 			"0x0280000006F34303", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			[20] = "CHAT_MSG_CHANNEL",
 		},
-		["1411039539.951"] = {
-			"OQ,1C,AVFmii,0,p8,GTyXjJ,czIA,JTIXBOkCDBBUGsEVAAZZ,NDc4MSM2OG9ydGVtOzk5MTtuZXlU,bmlrbW9vYiBzMgAA,a,+BAA,AAY1AAAAAAAAAAFAAFBABQABDE,A,0Hf/A", -- [1]
+		["1411371165.269"] = {
+			"OQ,1C,Aavcn5,0,p8,GWxcSf,IHdIU09SUkFHIEAgNCBYRUxG,JTIhAAAFdABUH9BuIlZZ,NDM1MSNmbG93bGF0ZW07NzExO2hha25lWgAA,U1JFTEFFSCBERUVO,R,AAFOfOOOGH/6,AAAA/A/zAAAAAgAQAB9AWs//D//D//D,f,0Hf/A", -- [1]
 			"Drominus-Area52", -- [2]
 			"", -- [3]
 			"5. oqchannel", -- [4]
@@ -1405,15 +1405,15 @@ ElvCharacterDB = {
 			5, -- [8]
 			"oqchannel", -- [9]
 			0, -- [10]
-			2805, -- [11]
+			26707, -- [11]
 			"0x0280000006F34303", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			[20] = "CHAT_MSG_CHANNEL",
 		},
-		["1411039613.709"] = {
-			"OQ,1C,AVH3n1,1,p8,GUMQgL,IHNub2VnbnVkIGNpb3JlaCB0c2Fm,JTAAAAACCABUGsFRAAZ,MDc3MiNnb2R3YWo7ODtub2l0cGVjeEUA,LgAA,D,-HD--,AAAAAAAAAAAAAAAAAAAADlAAAAAALAA,e,0Hf/A", -- [1]
+		["1411371097.412"] = {
+			"OQ,1C,AatsU3,2,p8,Gam7u8,ZGFlbCBrMi4yIGhzdXAgazEuMgAA,JTImAAAEAABUH9BAfQZZ,NzE0MSM0MnJlZ25vc2xjOzQ5O7/DZWu0w21T,Q0YgZXZhSCAubGxhIGRlZU4A,A,BCBDAAAAAAAA,AAAAAAAAAKAAA,A,SHf/B", -- [1]
 			"Drominus-Area52", -- [2]
 			"", -- [3]
 			"5. oqchannel", -- [4]
@@ -1423,15 +1423,15 @@ ElvCharacterDB = {
 			5, -- [8]
 			"oqchannel", -- [9]
 			0, -- [10]
-			3266, -- [11]
+			26372, -- [11]
 			"0x0280000006F34303", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			[20] = "CHAT_MSG_CHANNEL",
 		},
-		["1411039675.37"] = {
-			"OQ,1C,AVKaFx,1,p8,GP+LIE,eXJyYUcgQCBtcm9OIG0wMSBPb1MA,JTIrAAAGNABUGsGTIvZZ,NTQzMSNyZXZpbG9iOzAxO3RoZ2lua2VnZVYA,a25hdCBkZWVu,R,CAEDfNOAAD/6,AAAAAAAAAAAAARAGABEAIu//DAAA//D,f,0Hf/A", -- [1]
+		["1411371079.935"] = {
+			"OQ,1C,AatCEe,1,p8,GRVJy1,bGxvciBzdGVsIG5hbSA1MiAzIHhlbEYA,JTIQAAAOBABUH9AuIKZZ,MTc1MSNzcHJhaHM7MzgxO2FpcmFteWVL,LgAA,R,BFIOfAOAAAAA,AAAAAAAAAAAAAaANABPADTAAAAAA/DA,f,VHf/A", -- [1]
 			"Drominus-Area52", -- [2]
 			"", -- [3]
 			"5. oqchannel", -- [4]
@@ -1441,15 +1441,15 @@ ElvCharacterDB = {
 			5, -- [8]
 			"oqchannel", -- [9]
 			0, -- [10]
-			3659, -- [11]
+			26291, -- [11]
 			"0x0280000006F34303", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			[20] = "CHAT_MSG_CHANNEL",
 		},
-		["1411039668.064"] = {
-			"OQ,1C,AVKDYZ,1,p8,GU+0SU,UkFFTEMgTExVRiBsYW1yb04gb29TIE1GTAAA,JTImAAAIFABUGsGKIhZZ,NzQxMSM0MDR6a25pb3o7Mzg7c2ltcmFrQQAA,c2tuYVQgMgAA,R,ACDDfAOAAAAA,AAAAAAAAAAAAAAAIAAAAO7//DAAAPcC,f,0Hf/A", -- [1]
+		["1411371018.698"] = {
+			"OQ,1C,AarCn3,1,p8,GaY5q0,SDQxLzExIGtsYU0gQCAwMSBPT1Mgb3JlSAAA,JTIwAAAJBABUH8/6JFZZ,ODc3MSNkZXRzaWZvd3Q7Njg7YWpvZG5rb21T,bnVyIGRsaXVH,R,AABFfIOAAAH6,PAA/Qf////BACtCiAUjAjb//D/PA//D,f,VHf/A", -- [1]
 			"Drominus-Area52", -- [2]
 			"", -- [3]
 			"5. oqchannel", -- [4]
@@ -1459,15 +1459,15 @@ ElvCharacterDB = {
 			5, -- [8]
 			"oqchannel", -- [9]
 			0, -- [10]
-			3624, -- [11]
+			26001, -- [11]
 			"0x0280000006F34303", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			[20] = "CHAT_MSG_CHANNEL",
 		},
-		["1411039608.809"] = {
-			"OQ,1C,AVIFIP,1,p8,GU4L3m,c2VpcnJhQyBmTCB0c2VpclBTIDAzNQAA,JTAAAAABAABUGsFWAAZZ,NzM0MSNuYWlyYW9sYXM7OTkxO2h0ZXJrdW5B,LgAA,a,+AAA,AAUmAAAAAAAAAAAAAAAAAmAAqW,A,0Hf/A", -- [1]
+		["1411371057.371"] = {
+			"OQ,1C,AasnwI,2,p8,GY8Djz,TExPUiBFRVJGIFRPQiAvRFdCIEgA,JTAAAAAGDABUH9AjImZZ,OTE3MSNrY2FsYmxsYTs5NzthaGFoYW1vb2tzckQA,NTIA,R,ACEGYFGAAAA+,AAAAIGAAAAAAAAABAAAACkAAAAAAAAA,Y,SHf/A", -- [1]
 			"Drominus-Area52", -- [2]
 			"", -- [3]
 			"5. oqchannel", -- [4]
@@ -1477,15 +1477,15 @@ ElvCharacterDB = {
 			5, -- [8]
 			"oqchannel", -- [9]
 			0, -- [10]
-			3239, -- [11]
+			26181, -- [11]
 			"0x0280000006F34303", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			[20] = "CHAT_MSG_CHANNEL",
 		},
-		["1411039508.757"] = {
-			"OQ,1C,AVEpnj,1,p8,GTWT1I,bGFlaCA+IGtsYW0gQCBPb1MgSCBkbGl1RwAA,JTI1AAAVBABUGsD8I2ZZ,OTY1MSN4aXJ0OzkxO3hpclQA,LgAA,R,BCJGfHOIxAD6,DABAHA//hAAAA4AiAEqAQq//D/DA//D,f,VHf/A", -- [1]
+		["1411371162.695"] = {
+			"OQ,1C,AavbnG,0,p8,GX4XIp,ZGFlTCAzNzUgeXJyYUcgQCA0IHhlbEYA,JTIcAAAGdABUH9BtIkZZ,NDU1MiN0dGVyYmVkYWxieDs4NztzZWloZ3VvZHFlZVQA,KTogdG5lY2VkIGVC,R,BCDOfNOOZD/6,AAAAAAHAAAAAAbAVABuAMc//D/DA//D,f,0Hf/A", -- [1]
 			"Drominus-Area52", -- [2]
 			"", -- [3]
 			"5. oqchannel", -- [4]
@@ -1495,15 +1495,15 @@ ElvCharacterDB = {
 			5, -- [8]
 			"oqchannel", -- [9]
 			0, -- [10]
-			2591, -- [11]
+			26682, -- [11]
 			"0x0280000006F34303", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			[20] = "CHAT_MSG_CHANNEL",
 		},
-		["1411039628.811"] = {
-			"OQ,1C,AVItqb,1,p8,GU/wlo,b2lyYW5lY1MgSAAA,JTIIAAADBABUGsFnAAZZ,MjA0MSNzZWx1Y3JlYm11Zzs5MTtqaWxpc3NhVgAA,bmVjcyBIIGtjaXVx,S,D-D,AAAABAAwASb,A,0Df/A", -- [1]
+		["1411371137.22"] = {
+			"OQ,1C,AavAvf,2,p8,GUMYnc,ZG5pckcgbm9lZ251RCAwOS01OAAA,JSBVAAABAABUH9BiGJZZ,NzExMSNzYWFtZWlkb3JiOzM4O3N3b2RhaHNY,IHNsYWVoICYga25hdCBkZWVO,D,--D--,AAAAAAAAAAAAAAABAAAAAAAAAAAAAAA,A,0GVyA", -- [1]
 			"Drominus-Area52", -- [2]
 			"", -- [3]
 			"5. oqchannel", -- [4]
@@ -1513,15 +1513,15 @@ ElvCharacterDB = {
 			5, -- [8]
 			"oqchannel", -- [9]
 			0, -- [10]
-			3368, -- [11]
+			26565, -- [11]
 			"0x0280000006F34303", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			[20] = "CHAT_MSG_CHANNEL",
 		},
-		["1411039663.816"] = {
-			"OQ,1C,AVJjqX,0,p8,GSrrcD,c25hbWFoUyBAIDIgeGVsRgAA,JTIcAAAGBABUGsF9IdZZ,Njk4NiNlZmZ1cnRjdWQ7Mzg7b3NlcGxpc2FC,a25hdCBkZWVu,R,ADCOfAOAAAAA,AAAAAAAAAAAAAtAVACgANk/vDAAA//D,f,0Hf/A", -- [1]
+		["1411371025.068"] = {
+			"OQ,1C,AarIcp,0,p8,Gannpu,MSB4ZWxmIGhzZXJmIQAA,JTIcAAABAABUH8/8IsZZ,MTg1MSN5a29vcHM7OTkxO2FtYWphQgAA,LgAA,R,AABOfOOAAH/6,PPQI/f/D//BAABAAAAIADP//D/fB//D,f,VHf/A", -- [1]
 			"Drominus-Area52", -- [2]
 			"", -- [3]
 			"5. oqchannel", -- [4]
@@ -1531,15 +1531,15 @@ ElvCharacterDB = {
 			5, -- [8]
 			"oqchannel", -- [9]
 			0, -- [10]
-			3585, -- [11]
+			26036, -- [11]
 			"0x0280000006F34303", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			[20] = "CHAT_MSG_CHANNEL",
 		},
-		["1411039658.82"] = {
-			"OQ,1C,AVJjIR,1,p8,GUsXn7,LmRhYiBlYiB0bm9kIDtzR0IgbW9kbmFS,JTIIAAADABBUGsF9AAZZ,NjgzNiNnaXdkdWw7MDE7a2F6dGVK,c25hbSAwNCBvTgAA,B,AADDAAAAAAAA,AArAASAA9IAAA,A,0Hf/A", -- [1]
+		["1411371159.213"] = {
+			"OQ,1C,AauQ1a,0,p8,GY/w27,IHlycmFHIG4wMSBPb1MA,JTInAAABWABUH9BOInZZ,MTQ5MSN0ZmF0bWFpbGxpdzs3MzE7bGx1Ynppc2loVAAA,bGx1ZiBMVyBubyBnbml0aWFX,R,ABADfNOAAD/6,AAAA4AAAAAAAAXAIABVAF5//BAAA//D,f,0Hf/A", -- [1]
 			"Drominus-Area52", -- [2]
 			"", -- [3]
 			"5. oqchannel", -- [4]
@@ -1549,15 +1549,15 @@ ElvCharacterDB = {
 			5, -- [8]
 			"oqchannel", -- [9]
 			0, -- [10]
-			3560, -- [11]
+			26674, -- [11]
 			"0x0280000006F34303", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			[20] = "CHAT_MSG_CHANNEL",
 		},
-		["1411039655.405"] = {
-			"OQ,1C,AVJonp,3,p8,GQWGFL,emFOIEAgbGFtcm9OIE9vUwAA,JTAAAAACFABUGsF/ItZZ,MTUxMSNla3VsZWl0YWs7NTg7YWlodGlsYVMA,c3BkIDEgc2xhZWggMSBrbmF0IDEA,R,BABDfHOAAAD6,IAAAAA/DAAAAEECDAOgAmh//DAAA//D,A,0Hf/A", -- [1]
+		["1411371105.167"] = {
+			"OQ,1C,Aat/Wz,2,p8,GY/ZgE,dHNlaXJwIHdvZGFocyA4NDUgczIA,JTIiAAACBBBUH9BHAAZZ,MDY0MSN5YWpha2FzZW1hajs0OTtoc2lrY2FN,czIgRkwgdHNlaXJwUyA4NDUA,a,+CAA,AAW8AAAAAAAAAAoAArCAIKAJVW,A,0Hf/A", -- [1]
 			"Drominus-Area52", -- [2]
 			"", -- [3]
 			"5. oqchannel", -- [4]
@@ -1567,15 +1567,15 @@ ElvCharacterDB = {
 			5, -- [8]
 			"oqchannel", -- [9]
 			0, -- [10]
-			3526, -- [11]
+			26415, -- [11]
 			"0x0280000006F34303", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			[20] = "CHAT_MSG_CHANNEL",
 		},
-		["1411039654.939"] = {
-			"OQ,1C,AVI/9c,0,p8,GQ1e3w,bmluaWFydCtsbGloYyBzMiBGTCBsYXJlRgAA,JTImAAACBBBUGsFuAAZZ,MDM0NiNhbW5hcjszODtvcnV6dGlI,LgAA,a,+BBA,AAYaAAAAAABBABSABaBAGHAGpF,A,0Hf/A", -- [1]
+		["1411371157.31"] = {
+			"OQ,1C,Aavic8,2,p8,GZYMj2,SFNFUkYgMyBYRUxG,JTIXAAAPHABUH9BwIYZZ,MTI0MSNldm9seWxocDszODtvaXRhbmlkck8A,TFcgTExVRgAA,R,CDKOfAOJoAAA,AAAAAAAAAAAAAAABAAAAB0AAAAAA/DA,A,0Hf/A", -- [1]
 			"Drominus-Area52", -- [2]
 			"", -- [3]
 			"5. oqchannel", -- [4]
@@ -1585,15 +1585,15 @@ ElvCharacterDB = {
 			5, -- [8]
 			"oqchannel", -- [9]
 			0, -- [10]
-			3525, -- [11]
+			26665, -- [11]
 			"0x0280000006F34303", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			[20] = "CHAT_MSG_CHANNEL",
 		},
-		["1411039644.051"] = {
-			"OQ,1C,AVJSlE,2,p8,GMJQsX,c25hbWFocyBAIGNpb3JlaCBtMDEgT09T,JTI6AAAJAABUGsF2I8Z,NTM1MSNyZW5nYXZ2Ozk3MTtkYW9sZ262w2JickIA,cHhlIGV2YWggdHN1bSA7IG51ciBtaCA0MS85,R,DCEFfGOAAAB6,BAAAAA//AAAADuBfAUJAzE//D/fA//D,f,VFf/A", -- [1]
+		["1411371147.741"] = {
+			"OQ,1C,AavGvy,0,p8,GY/ZgE,dHNlaXJwIHdvZGFocyA4NDUgczIA,JTIiAAACBBBUH9BlAAZZ,MDY0MSN5YWpha2FzZW1hajs0OTtoc2lrY2FN,czIgRkwgdHNlaXJwUyA4NDUA,a,+CAA,AAW8AAAAAAAAAAoAArCAIKAJVW,A,0Hf/A", -- [1]
 			"Drominus-Area52", -- [2]
 			"", -- [3]
 			"5. oqchannel", -- [4]
@@ -1603,15 +1603,15 @@ ElvCharacterDB = {
 			5, -- [8]
 			"oqchannel", -- [9]
 			0, -- [10]
-			3461, -- [11]
+			26617, -- [11]
 			"0x0280000006F34303", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			[20] = "CHAT_MSG_CHANNEL",
 		},
-		["1411039614.884"] = {
-			"OQ,1C,AVIHUm,1,p8,GU/wlo,b2lyYW5lY1MgSAAA,JTIIAAADBABUGsFXAAZZ,MjA0MSNzZWx1Y3JlYm11Zzs5MTtqaWxpc3NhVgAA,bmVjcyBIIGtjaXVx,S,D-D,AAAABAAwASb,A,0Df/A", -- [1]
+		["1411371145.193"] = {
+			"OQ,1C,AavUQi,2,p8,GZrl6c,IGhzdXAgczIgZmwgZGl1cmRy,JTAAAAACDBBUH9BqAAZ,MDY4NiN5d2V0czszODurw211bEYA,cmMgMDY4MSBweCAyLjIA,a,ABBDAAAAAAAA,BAf3DABJAA5EAH/AIKCAEvADqH,A,0Hf/A", -- [1]
 			"Drominus-Area52", -- [2]
 			"", -- [3]
 			"5. oqchannel", -- [4]
@@ -1621,15 +1621,15 @@ ElvCharacterDB = {
 			5, -- [8]
 			"oqchannel", -- [9]
 			0, -- [10]
-			3270, -- [11]
+			26609, -- [11]
 			"0x0280000006F34303", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			[20] = "CHAT_MSG_CHANNEL",
 		},
-		["1411039639.248"] = {
-			"OQ,1C,AVJX4k,3,p8,GUfP+q,MSBnbmlXIHhlbEYgT29T,JTIIAAARIABUGsF4IJZZ,MzAxMSNkbHJvd3JlbW1pZDs1ODt0bmFoY25F,Z3RnIHNwZCBlcm9tIG93VAAA,R,CELOfAOBDAAA,AAAAAAAAAAAAAAAAAAAAAyAAAAAAAAA,f,0Hf/D", -- [1]
+		["1411371142.71"] = {
+			"OQ,1C,Aau/6E,0,p8,GacWuk,c3BkIGZlcnAgcycyIGZsIG9ydHNlZAAA,JTISAAACABBUH9BiAAZ,Njc5MSNzYW1vaHRjOzQ5O3NhbW9odEMA,c2VtYWcgbnVmIHJvZiBnbmlrb29sIC0gbHZsaSAwMzUA,a,+DDD,CAX0DACjAB/DAHuAHlDARuAPzf,Z,0Hf/A", -- [1]
 			"Drominus-Area52", -- [2]
 			"", -- [3]
 			"5. oqchannel", -- [4]
@@ -1639,15 +1639,15 @@ ElvCharacterDB = {
 			5, -- [8]
 			"oqchannel", -- [9]
 			0, -- [10]
-			3434, -- [11]
+			26585, -- [11]
 			"0x0280000006F34303", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			[20] = "CHAT_MSG_CHANNEL",
 		},
-		["1411039544.21"] = {
-			"OQ,1C,AVFlsd,0,p8,GPpz6a,KzA1NjEgcyczIHJlbGFlSCBkZWVO,JTIkAAACCBBUGsEVAAZZ,MTQ2MSNra2VpcmhzOzQwMjtkYXdwYW9T,LgAA,a,+CBA,BAayAAAKAAKBABkABqCAJSAIEE,A,SHf/B", -- [1]
+		["1411371032.638"] = {
+			"OQ,1C,Aar7Ye,1,p8,GXO029,bnVyIGVsdGl0IFNFb1QgbTAxIGNpb3JlaAAA,JTAAAAAJOABUH9ARInZZ,NTYyMSNub2VodGE7NDAyO3VyrcNtaU0A,c2VyIG5vIHNuZWtvdCAga25vbQAA,R,CCFFgDEAAAAO,PP///////DAAATALACYATj//D/fA//D,g,0Hf/A", -- [1]
 			"Drominus-Area52", -- [2]
 			"", -- [3]
 			"5. oqchannel", -- [4]
@@ -1657,15 +1657,15 @@ ElvCharacterDB = {
 			5, -- [8]
 			"oqchannel", -- [9]
 			0, -- [10]
-			2830, -- [11]
+			26059, -- [11]
 			"0x0280000006F34303", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			[20] = "CHAT_MSG_CHANNEL",
 		},
-		["1411039643.771"] = {
-			"OQ,1C,AVJDJP,0,p8,GU8oEs,bnVSIHRudW9NIFZTTQAA,JTImAAAFAABUGsFwI9ZZ,NDk0MSN5aHRvbW1hbTs5MTt5aHRvbW1hTQAA,LgAA,R,AAEDeAGAAAAA,PPAA/fPAAAAAAFAAAAUAGn//D/DA//B,e,0Hf/A", -- [1]
+		["1411371137.736"] = {
+			"OQ,1C,Aatx+3,0,p8,GYcuK/,bGFyZUYgMDE1IHNlaXJyYUMgczIgQlRX,JTAAAAABABBUH9BCAAZZ,MzQ4MSNzdWluaXZyb2M7OTkxO3VqdXJlUwAA,cmV2cmVzIG5hZGlsbEkgbml3IHJlUCBnMDAy,a,+DCB,BASnBAAAAAACAAAAAADAAIAAJF,A,SHf/A", -- [1]
 			"Drominus-Area52", -- [2]
 			"", -- [3]
 			"5. oqchannel", -- [4]
@@ -1675,15 +1675,15 @@ ElvCharacterDB = {
 			5, -- [8]
 			"oqchannel", -- [9]
 			0, -- [10]
-			3454, -- [11]
+			26567, -- [11]
 			"0x0280000006F34303", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			[20] = "CHAT_MSG_CHANNEL",
 		},
-		["1411039558.709"] = {
-			"OQ,1C,AVGLNF,0,p8,GUQCL6,Z2JuYWNoc2FydCB0YXIgd29sdGloc2dvZAAA,JTAAAAAHDCBUGsEkAAZZ,MTAyMSNuaW1vb3Q7NzIyO3lwcHVwbXV0ZUcA,MDk2IC0gMDEwMSA6QkEA,A,ADEDAAAAAAAA,AQyAK4AbqNCAA,A,SHf/B", -- [1]
+		["1411371157.601"] = {
+			"OQ,1C,Aavozo,3,p8,GVoAYt,cGFjIGZsIG1haHNyIDA1NjEA,JTAAAAACAABUH9BzAAZ,ODk0MSN5ZXR1ejs1ODtpbnJhbGxpWgAA,LgAA,a,AACDAAAAAAAA,CAaKCAAZAALDAGzAFdDAReAK6c,A,0Hf/A", -- [1]
 			"Drominus-Area52", -- [2]
 			"", -- [3]
 			"5. oqchannel", -- [4]
@@ -1693,15 +1693,15 @@ ElvCharacterDB = {
 			5, -- [8]
 			"oqchannel", -- [9]
 			0, -- [10]
-			2927, -- [11]
+			26667, -- [11]
 			"0x0280000006F34303", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			[20] = "CHAT_MSG_CHANNEL",
 		},
-		["1411039634.941"] = {
-			"OQ,1C,AVJCyW,1,p8,GUAnxm,IGFyL1MnR0JSIEhTVVAgMDA5MQAA,JTImAAAMCABUGsFwAAZZ,MTIyMSN4ZXRtZXM7Mzg7ZW9zaUoA,LgAA,A,AADDVORAAH/a,AAAAAAAAAJAAA,V,SHf/D", -- [1]
+		["1411371135.234"] = {
+			"OQ,1C,AauktH,0,p8,GZVE4/,dG51b20gcm9mIHMz,JTAAAAACMBBUH9BXAAZZ,ODg2MSNob2RhY2F2YTs5NzE7aHNudXJjbnBhQwAA,c25pdyB0c3VqIDtlZ2FyIG9u,a,+BBA,AAYVAAAAAAABAA3AAuBABtAB/b,A,0Hf/A", -- [1]
 			"Drominus-Area52", -- [2]
 			"", -- [3]
 			"5. oqchannel", -- [4]
@@ -1711,15 +1711,15 @@ ElvCharacterDB = {
 			5, -- [8]
 			"oqchannel", -- [9]
 			0, -- [10]
-			3395, -- [11]
+			26558, -- [11]
 			"0x0280000006F34303", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			[20] = "CHAT_MSG_CHANNEL",
 		},
-		["1411039478.735"] = {
-			"OQ,1C,AVDb3Q,1,p8,GUSCAZ,KVpFUiBNTEVIIFlMTEFQKE1OIE01MiBTRAAA,JTAAAAAGDABUGsDdINZZ,OTAyMSNpYXJvejswMTtpYXpsQQAA,LgAA,R,BBDEZAIAAAAA,AAAAAAAAAAAAAAACAAAABZAAAAAAAAA,Z,0Hf/A", -- [1]
+		["1411371075.117"] = {
+			"OQ,1C,Aas3oQ,0,p8,GYE+Jb,cmVkaWFSIGFkbmFQIGVodCBmbyB5cm9sRwAA,JTAAAAAJAABUH9AqITZZ,MTc1NiNpaWtjdWR4OzAxO3RhcksA,IXRzcmlGIHNjaW9yZUgA,R,BDFGeBGAAAAC,PA/A////AAAAAJAmAAkAEd//DFAA//D,e,0Hf/A", -- [1]
 			"Drominus-Area52", -- [2]
 			"", -- [3]
 			"5. oqchannel", -- [4]
@@ -1729,15 +1729,15 @@ ElvCharacterDB = {
 			5, -- [8]
 			"oqchannel", -- [9]
 			0, -- [10]
-			2395, -- [11]
+			26272, -- [11]
 			"0x0280000006F34303", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			[20] = "CHAT_MSG_CHANNEL",
 		},
-		["1411039509.928"] = {
-			"OQ,1C,AVE68p,3,p8,GQWGFL,emFOIEAgbGFtcm9OIE9vUwAA,JTAAAAACEABUGsEEItZZ,MTUxMSNla3VsZWl0YWs7NTg7YWlodGlsYVMA,c3BkIDEgc2xhZWggMSBrbmF0IDEA,R,BABDfHOAAAD6,IAAAAA/DAAAAEECDAOgAmh//DAAA//D,A,0Hf/A", -- [1]
+		["1411371132.755"] = {
+			"OQ,1C,Aau6Mt,2,p8,Gam7u8,ZGFlbCBrMi4yIGhzdXAgazEuMgAA,JTImAAAEAABUH9BffQZZ,NzE0MSM0MnJlZ25vc2xjOzQ5O7/DZWu0w21T,Q0YgZXZhSCAubGxhIGRlZU4A,A,BCBDAAAAAAAA,AAAAAAAAAKAAA,A,SHf/B", -- [1]
 			"Drominus-Area52", -- [2]
 			"", -- [3]
 			"5. oqchannel", -- [4]
@@ -1747,15 +1747,15 @@ ElvCharacterDB = {
 			5, -- [8]
 			"oqchannel", -- [9]
 			0, -- [10]
-			2596, -- [11]
+			26533, -- [11]
 			"0x0280000006F34303", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			[20] = "CHAT_MSG_CHANNEL",
 		},
-		["1411039619.259"] = {
-			"OQ,1C,AVIpAs,2,p8,GUa7l2,c3RudW9tIHJvZiBzMwAA,JTIhBSgCAABUGsFlAAZZ,NDk1MSNkYWVyYnJlZ25pZzs4O3Vnb3JvcnVL,LgAA,a,+ABA,AAVfAAAAAAABABNABiAABiABwZ,/,0Hf/A", -- [1]
+		["1411371127.684"] = {
+			"OQ,1C,Aaulqx,1,p8,GZeosg,c2xhZUggZGVlbiA0LzMgUkZM,JTAAAAACGABUH9BXH2ZZ,OTYxMSNub2hwZXo7NDAyO2xpcmFsaU0A,bGFlaCBkZWVuIFNQRCBkbmEga25hdCBlbGJ1b2QA,R,BBAHfAOAAAAA,PAAAAAAAAAAAAIAAAAcABwAAAAAAAAA,f,0Hf/A", -- [1]
 			"Drominus-Area52", -- [2]
 			"", -- [3]
 			"5. oqchannel", -- [4]
@@ -1765,15 +1765,15 @@ ElvCharacterDB = {
 			5, -- [8]
 			"oqchannel", -- [9]
 			0, -- [10]
-			3309, -- [11]
+			26519, -- [11]
 			"0x0280000006F34303", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			[20] = "CHAT_MSG_CHANNEL",
 		},
-		["1411039618.687"] = {
-			"OQ,1C,AVIdaH,2,p8,GU1Dm6,c2xhaXRzZWxlYwAA,JTAAAAAEAABUGsFgILZZ,Nzc0NiNlZWdtYWc7OTc7ZWVnbWFT,bGxh,R,BACAAAAAAAAA,AAAAAAAHAAAAAZAJABkAJj//DAAA//D,A,0Hf/A", -- [1]
+		["1411371127.25"] = {
+			"OQ,1C,AauSl9,2,p8,GY2VTW,a2xhTSAwMSBPb1MA,JTIwAAAIDABUH9BPIxZZ,NzY3MSNzaXN5ejs5NztzaXNpWgAA,IVNQRAAA,R,CCEDfIOJKAH6,PAIA/AHAGAAALSD9AjQBcr//DAAA//D,f,VHf/A", -- [1]
 			"Drominus-Area52", -- [2]
 			"", -- [3]
 			"5. oqchannel", -- [4]
@@ -1783,15 +1783,15 @@ ElvCharacterDB = {
 			5, -- [8]
 			"oqchannel", -- [9]
 			0, -- [10]
-			3302, -- [11]
+			26518, -- [11]
 			"0x0280000006F34303", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			[20] = "CHAT_MSG_CHANNEL",
 		},
-		["1411039544.843"] = {
-			"OQ,1C,AVFzue,1,p8,GTK/XC,IHlyb3RjYWZyYWVGIGduaXBpblMA,JTAAAAAHACBUGsEbiYZ,OTg0MSNkaWlyOzM5O2RpaVIA,LgAA,A,BDDDAAAAAAAA,AAeAAmABEMAAA,A,SHf/A", -- [1]
+		["1411371148.043"] = {
+			"OQ,1C,AavLpl,0,p8,GVR2kQ,aHN1UCBrMi4yIHNnYlIgcydsZWV0UwAA,JTImAAAGMCBUH9BnfQZZ,MzM1MSNyZXRoZ2lmZXJpZjs0OTtsZWV0c2RsuMND,IC0gIDpTdG9F,A,ABFDAAAAAAAA,AAEAAFAAJKAAA,A,SHf/B", -- [1]
 			"Drominus-Area52", -- [2]
 			"", -- [3]
 			"5. oqchannel", -- [4]
@@ -1801,33 +1801,33 @@ ElvCharacterDB = {
 			5, -- [8]
 			"oqchannel", -- [9]
 			0, -- [10]
-			2828, -- [11]
+			26618, -- [11]
 			"0x0280000006F34303", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			[20] = "CHAT_MSG_CHANNEL",
 		},
-		["1411039604.296"] = {
-			"OQ,1C,AVILYS,3,p8,GUfP+q,MSBnbmlXIHhlbEYgT29T,JTIIAAARIABUGsFZIJZZ,MzAxMSNkbHJvd3JlbW1pZDs1ODt0bmFoY25F,Z3RnIHNwZCBlcm9tIG93VAAA,R,CELOfAOAAAAA,AAAAAAAAAAAAAAAAAAAAAyAAAAAAAAA,f,0Hf/D", -- [1]
-			"Drominus-Area52", -- [2]
+		["1411371021.347"] = {
+			"%s has earned the achievement |cffffff00|Hachievement:2178:0280000006DEAC5C:1:9:22:14:4294967295:4294967295:4294967295:4294967295|h[Shocking! (10 player)]|h|r!", -- [1]
+			"Deathmending-Area52", -- [2]
 			"", -- [3]
-			"5. oqchannel", -- [4]
-			"Drominus", -- [5]
+			"", -- [4]
+			"Deathmending", -- [5]
 			"", -- [6]
 			0, -- [7]
-			5, -- [8]
-			"oqchannel", -- [9]
+			0, -- [8]
+			"", -- [9]
 			0, -- [10]
-			3208, -- [11]
-			"0x0280000006F34303", -- [12]
+			26006, -- [11]
+			"0x0280000006DEAC5C", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
-			[20] = "CHAT_MSG_CHANNEL",
+			[20] = "CHAT_MSG_GUILD_ACHIEVEMENT",
 		},
-		["1411039599.245"] = {
-			"OQ,1C,AVH8hF,2,p8,GSmCGI,c2Vpem51ZiBzMiByb2YgU1BEIEZMIHRlUgAA,JTIkAAACBBBUGsFTakZ,ODU3MSNzc2VsYXRhZDs4Nztzc2VsYXRhRAAA,bnVmIHMyIHJvZiBTUEQgRkwA,a,+DEB,CAfiBABsABgEAapAWJDAjBAXoT,A,0Hf/A", -- [1]
+		["1411371155.136"] = {
+			"OQ,1C,AavffP,0,p8,GV8GbS,TVMgUFNNIEJTUyBTSk9UIERMT0cgTUMA,JTAAAAAEdABUH9BvAAZZ,OTQxMSNoY3Rpd3NsbGlrOzk3MTtzdG9wc3RvSAAA,LgAA,C,HTDD-,AFAFAFAAAABAAAAAM,A,SHf/A", -- [1]
 			"Drominus-Area52", -- [2]
 			"", -- [3]
 			"5. oqchannel", -- [4]
@@ -1837,15 +1837,15 @@ ElvCharacterDB = {
 			5, -- [8]
 			"oqchannel", -- [9]
 			0, -- [10]
-			3185, -- [11]
+			26657, -- [11]
 			"0x0280000006F34303", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			[20] = "CHAT_MSG_CHANNEL",
 		},
-		["1411039708.413"] = {
-			"OQ,1C,AVM4zd,1,p8,GSM4uN,bmVoc3Vyb24gMSB4ZWxm,JTISAAAIAABUGsHUIQZZ,NzkzMSNhYWFkZTs3NztzZ3VqcmVkbnVoVAAA,a25hdAAA,R,BDEOfAOEXAAA,AAAAAAAAAAAAAEABAAMABdAAAAAA/DA,f,0Af/A", -- [1]
+		["1411371027.659"] = {
+			"OQ,1C,Aarjev,0,p8,GZjOKv,bmVjcyBIIHBhYyBW,JTAAAAACGABUH9AHAAZZ,MjcxMSNtdXJhbjs0OTtzYXJvRQAA,LgAA,S,HD-,ABeA1AFcAVm,f,0Hf/A", -- [1]
 			"Drominus-Area52", -- [2]
 			"", -- [3]
 			"5. oqchannel", -- [4]
@@ -1855,15 +1855,15 @@ ElvCharacterDB = {
 			5, -- [8]
 			"oqchannel", -- [9]
 			0, -- [10]
-			3857, -- [11]
+			26042, -- [11]
 			"0x0280000006F34303", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			[20] = "CHAT_MSG_CHANNEL",
 		},
-		["1411039594.251"] = {
-			"OQ,1C,AVHj04,1,p8,GUhD8M,ZXZvTCBvdCBlcmFoUwAA,JTAAAAABAABUGsFJIjZZ,OTg0MSM2MGxhZHJhcDs5NDI7b6PDbWFtaW9C,ZXZvTCBvdCBlcmFoUyBldmVpaGNB,D,--D--,AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,A,0Hf/A", -- [1]
+		["1411371101.596"] = {
+			"OQ,1C,AarDwc,0,p8,GZtsQa,c2xhZWggZGVlbiBoc3VwIGsyIHMz,JTAAAAADABBUH8/6bWZZ,MTEzMSNlaXR0b2hldGFyYWs7MjYxO2FkaWhjYW1vdG95TAAA,dW9ZL2ZmQS9IVQAA,a,+CDA,AAdTAAAAAAADACjACXCAH8AJZD,O,0Hf/A", -- [1]
 			"Drominus-Area52", -- [2]
 			"", -- [3]
 			"5. oqchannel", -- [4]
@@ -1873,15 +1873,15 @@ ElvCharacterDB = {
 			5, -- [8]
 			"oqchannel", -- [9]
 			0, -- [10]
-			3145, -- [11]
+			26386, -- [11]
 			"0x0280000006F34303", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			[20] = "CHAT_MSG_CHANNEL",
 		},
-		["1411039464.628"] = {
-			"OQ,1C,AVDYge,2,p8,GUUKku,ZWxwdW9jIGtjaXVxIG5lY3MgaAAA,JTAAAAABBABUGsDbAAZZ,NjgzMjEjaHNvajs0OTtpaWRkYUQA,LgAA,S,D--,AAAAAAAAAAA,A,0Hf/A", -- [1]
+		["1411371048.864"] = {
+			"OQ,1C,AasdLa,2,p8,GaTAsr,c2xhZWggZmwga2RocAAA,JTAAAAACAABUH9AfXcZZ,OTM3MSN6dG9nOzQ5O3p0b0cA,LgAA,a,+CCA,BAZaAAABAABCAA9AA2CABNABAD,A,SHf/A", -- [1]
 			"Drominus-Area52", -- [2]
 			"", -- [3]
 			"5. oqchannel", -- [4]
@@ -1891,15 +1891,15 @@ ElvCharacterDB = {
 			5, -- [8]
 			"oqchannel", -- [9]
 			0, -- [10]
-			2308, -- [11]
+			26138, -- [11]
 			"0x0280000006F34303", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			[20] = "CHAT_MSG_CHANNEL",
 		},
-		["1411039645.351"] = {
-			"OQ,1C,AVJO/R,1,p8,GU4L3m,c2VpcnJhQyBmTCB0c2VpclBTIDAzNQAA,JTAAAAABAABUGsF1AAZZ,NzM0MSNuYWlyYW9sYXM7OTkxO2h0ZXJrdW5B,LgAA,a,+AAA,AAUmAAAAAAAAAAAAAAAAAmAAqW,A,0Hf/A", -- [1]
+		["1411371117.272"] = {
+			"OQ,1C,AarFpa,0,p8,GZ9NvJ,ZGFlbCA5LzkgdG5vcyBkbG9n,JTAAAAAFFABUH8/7AAZZ,MzA1NiM1NG9nbm9yZDs3NztsbGF0c3JldkUA,LgAA,C,DDHTD,APAPANAAAAFAAAAEU,A,VHf/A", -- [1]
 			"Drominus-Area52", -- [2]
 			"", -- [3]
 			"5. oqchannel", -- [4]
@@ -1909,15 +1909,15 @@ ElvCharacterDB = {
 			5, -- [8]
 			"oqchannel", -- [9]
 			0, -- [10]
-			3462, -- [11]
+			26468, -- [11]
 			"0x0280000006F34303", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			[20] = "CHAT_MSG_CHANNEL",
 		},
-		["1411039468.609"] = {
-			"OQ,1C,AVDPFt,1,p8,GSzmSr,bjAxT29T,JTImAAAHGABUGsDXItZZ,MTcxMSNodHluZWFsdTszODthbWF5ZXphSwAA,LgAA,R,CBEDfIOAAAH6,PAAA/PBgHAAABoBdAGaAZP//DAAA//D,f,THf/A", -- [1]
+		["1411371112.593"] = {
+			"OQ,1C,AatwVl,2,p8,Gad+um,czIgZmwgdHNlaXJwcwAA,JTAAAAABAABUH9BBAAZZ,NDExMSNuYW1lbHNzdWg7Mzg7b3NuYW1vbEcA,c2VtYWcgbGxpaGMgO3BhYyBnaWIA,a,+BBA,AATwAAAAAAABAAFAAFBABZABbW,A,0Hf/A", -- [1]
 			"Drominus-Area52", -- [2]
 			"", -- [3]
 			"5. oqchannel", -- [4]
@@ -1927,15 +1927,15 @@ ElvCharacterDB = {
 			5, -- [8]
 			"oqchannel", -- [9]
 			0, -- [10]
-			2340, -- [11]
+			26439, -- [11]
 			"0x0280000006F34303", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			[20] = "CHAT_MSG_CHANNEL",
 		},
-		["1411039479.025"] = {
-			"OQ,1C,AVDq13,0,p8,GUsXn7,LmRhYiBlYiB0bm9kIDtzR0IgbW9kbmFS,JTIIAAAEABBUGsDjAAZZ,NjgzNiNnaXdkdWw7MDE7a2F6dGVK,c25hbSAwNCBvTgAA,B,AADDAAAAAAAA,AArAASAA9IAAA,A,0Hf/A", -- [1]
+		["1411371021.714"] = {
+			"OQ,1C,Aarmqb,2,p8,GX0Cqd,ZXJlaCB0dXAgb3QgdGFodyBrZEkA,JTAAAAAFICBUH9AJAAZZ,ODEyMSNpbGxpbWhhajs0OTtva3RpaWxsaW1oYUoA,KTAwOjQwKCBkbnVvciA6QXRvUwAA,B,ABEDAAAAAAAA,AABAABAACMAAA,A,0Hf/B", -- [1]
 			"Drominus-Area52", -- [2]
 			"", -- [3]
 			"5. oqchannel", -- [4]
@@ -1945,15 +1945,15 @@ ElvCharacterDB = {
 			5, -- [8]
 			"oqchannel", -- [9]
 			0, -- [10]
-			2401, -- [11]
+			26007, -- [11]
 			"0x0280000006F34303", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			[20] = "CHAT_MSG_CHANNEL",
 		},
-		["1411039623.742"] = {
-			"OQ,1C,AVIhnB,0,p8,GSzmSr,bjAxT29T,JTImAAAHEABUGsFiItZZ,MTcxMSNodHluZWFsdTszODthbWF5ZXphSwAA,LgAA,R,CBEDfIOAAAH6,PAAA/PBgHAAABoBdAGaAZP//DAAA//D,f,THf/A", -- [1]
+		["1411371035.25"] = {
+			"OQ,1C,AarlTo,0,p8,GY5cnX,Z2d1akAgMiB4ZWxG,JTIcAAAGGABUH9AIIcZZ,OTYxMSNudWpudWppYXVoczs1MTE7aWNpY2duZU0A,c2VpcnJhYyA3ODUgMiB0b2cA,R,CCCOfOOAAH/6,AAAAIAAA/AAAA5AdADYAOv//DAAA//D,f,0Hf/A", -- [1]
 			"Drominus-Area52", -- [2]
 			"", -- [3]
 			"5. oqchannel", -- [4]
@@ -1963,15 +1963,15 @@ ElvCharacterDB = {
 			5, -- [8]
 			"oqchannel", -- [9]
 			0, -- [10]
-			3327, -- [11]
+			26085, -- [11]
 			"0x0280000006F34303", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			[20] = "CHAT_MSG_CHANNEL",
 		},
-		["1411039469.01"] = {
-			"OQ,1C,AVDQUW,0,p8,GUQCL6,Z2JuYWNoc2FydCB0YXIgd29sdGloc2dvZAAA,JTAAAAAHDCBUGsDYAAZZ,MTAyMSNuaW1vb3Q7NzIyO3lwcHVwbXV0ZUcA,MDA2IC0gMDk4IDpCQQAA,A,ADEDAAAAAAAA,AQyAK4AbqNCAA,A,SHf/B", -- [1]
+		["1411371107.242"] = {
+			"OQ,1C,Aat9hX,1,p8,GXO029,bnVyIGVsdGl0IFNFb1QgbTAxIGNpb3JlaAAA,JTAAAAAJOABUH9BHInZZ,NTYyMSNub2VodGE7NDAyO3VyrcNtaU0A,c2VyIG5vIHNuZWtvdCAga25vbQAA,R,CCFFgDEAAAAO,PP///////DAAATALACYATj//D/fA//D,g,0Hf/A", -- [1]
 			"Drominus-Area52", -- [2]
 			"", -- [3]
 			"5. oqchannel", -- [4]
@@ -1981,15 +1981,15 @@ ElvCharacterDB = {
 			5, -- [8]
 			"oqchannel", -- [9]
 			0, -- [10]
-			2348, -- [11]
+			26421, -- [11]
 			"0x0280000006F34303", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			[20] = "CHAT_MSG_CHANNEL",
 		},
-		["1411039524.744"] = {
-			"OQ,1C,AVFMXF,0,p8,GTPYZQ,MiB4ZWxGIGhzZXJG,JTISAAAMOABUGsELIYZZ,MDM2MSNyb2Znb2xiOzkxO3JvZmdvbEIA,LgAA,R,CCIOfAOAAAAA,AAAAAAAAAAAABvA2AGqARkAAAAAA/jB,A,0Hf/A", -- [1]
+		["1411371102.676"] = {
+			"OQ,1C,Aatyz3,0,p8,GaL7+w,M3YzICAgeC94L3RzZWlycGgA,JTImAAABBABUH9BCAAZZ,MTE0NiN5bm5vdjswMTt5bm5vRgAA,LgAA,a,+CBA,AAc8AAAJAAMBAA8AAzCAClACcV,A,0HG/D", -- [1]
 			"Drominus-Area52", -- [2]
 			"", -- [3]
 			"5. oqchannel", -- [4]
@@ -1999,15 +1999,15 @@ ElvCharacterDB = {
 			5, -- [8]
 			"oqchannel", -- [9]
 			0, -- [10]
-			2685, -- [11]
+			26389, -- [11]
 			"0x0280000006F34303", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			[20] = "CHAT_MSG_CHANNEL",
 		},
-		["1411039573.657"] = {
-			"OQ,1C,AVGoBn,0,p8,GUd5S9,c29pcmFuZWNTIGNpb3JlSAAA,JTAAAAADBABUGsEwAAZZ,NDg2MSNldGFucmFjbmk7NDAyO2J3pMNS,LgAA,S,DHD,AADABAAJABF,f,0Hf/B", -- [1]
+		["1411371081.689"] = {
+			"OQ,1C,AatRm5,2,p8,GacVjs,TUFQUyBORUNTSAAA,JTAAAAACAABUH9A1AAZZ,NjU3MSNuZWtjaWhjbG9naWI7OTc7Y2lyaUgA,LgAA,S,DD-,AAKAgABBAGg,V,0Bf/A", -- [1]
 			"Drominus-Area52", -- [2]
 			"", -- [3]
 			"5. oqchannel", -- [4]
@@ -2017,15 +2017,15 @@ ElvCharacterDB = {
 			5, -- [8]
 			"oqchannel", -- [9]
 			0, -- [10]
-			3013, -- [11]
+			26295, -- [11]
 			"0x0280000006F34303", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			[20] = "CHAT_MSG_CHANNEL",
 		},
-		["1411039568.755"] = {
-			"OQ,1C,AVGyCD,1,p8,GTyXjJ,czIA,JTIXBOkCCBBUGsE0AAZZ,NDc4MSM2OG9ydGVtOzk5MTtuZXlU,bmlrbW9vYiBzMgAA,a,+BAA,AAY1AAAAAAAAAAFAAFBABQABDE,A,0Hf/A", -- [1]
+		["1411371092.79"] = {
+			"OQ,1C,AasXya,0,p8,GWGvM+,IERMT0cgSFMgLSBNQwAA,JTAAAAACEABUH9AdAAZZ,NDA2MSNrbqnDdzszNztrbmVX,dm5pIHRvcCArIGtuYVQgZGVlTgAA,C,D-D--,AJAJAIAAAAAAAAAAA,a,0Hd/A", -- [1]
 			"Drominus-Area52", -- [2]
 			"", -- [3]
 			"5. oqchannel", -- [4]
@@ -2035,15 +2035,15 @@ ElvCharacterDB = {
 			5, -- [8]
 			"oqchannel", -- [9]
 			0, -- [10]
-			2989, -- [11]
+			26342, -- [11]
 			"0x0280000006F34303", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			[20] = "CHAT_MSG_CHANNEL",
 		},
-		["1411039660.327"] = {
-			"OQ,1C,AVJ0L5,2,p8,GUUKku,ZWxwdW9jIGtjaXVxIG5lY3MgaAAA,JTAAAAABCABUGsGEAAZZ,NjgzMjEjaHNvajs0OTtpaWRkYUQA,LgAA,S,D--,AAAAAAAAAAA,A,0Hf/A", -- [1]
+		["1411371017.693"] = {
+			"OQ,1C,AareoK,2,p8,GaP/pq,NjQ1IEtEIHMnMgAA,JTAAAAABBABUH9AFAAZZ,MTE1MSNyZWhjbmlsZzszODtyZWhjbmlsRwAA,LgAA,a,+CBA,BAZdAAAAAAABAEEAEdCAPnAOuD,A,0Hf/A", -- [1]
 			"Drominus-Area52", -- [2]
 			"", -- [3]
 			"5. oqchannel", -- [4]
@@ -2053,15 +2053,15 @@ ElvCharacterDB = {
 			5, -- [8]
 			"oqchannel", -- [9]
 			0, -- [10]
-			3565, -- [11]
+			25993, -- [11]
 			"0x0280000006F34303", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			[20] = "CHAT_MSG_CHANNEL",
 		},
-		["1411039484.761"] = {
-			"OQ,1C,AVD3Pg,2,p8,GUMQgL,IHNub2VnbnVkIGNpb3JlaCB0c2Fm,JTAAAAACCABUGsDoAAZ,MDc3MiNnb2R3YWo7ODtub2l0cGVjeEUA,LgAA,D,-HD--,AAAAAAAAAAAAAAAAAAAADlAAAAAALAA,e,0Hf/A", -- [1]
+		["1411371097.633"] = {
+			"OQ,1C,Aat4Ab,2,p8,GacVjs,TUFQUyBORUNTSAAA,JTAAAAACAABUH9BEAAZZ,NjU3MSNuZWtjaWhjbG9naWI7OTc7Y2lyaUgA,LgAA,S,DD-,AAKAgABBAGg,V,0Bf/A", -- [1]
 			"Drominus-Area52", -- [2]
 			"", -- [3]
 			"5. oqchannel", -- [4]
@@ -2071,15 +2071,15 @@ ElvCharacterDB = {
 			5, -- [8]
 			"oqchannel", -- [9]
 			0, -- [10]
-			2430, -- [11]
+			26374, -- [11]
 			"0x0280000006F34303", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			[20] = "CHAT_MSG_CHANNEL",
 		},
-		["1411039584.262"] = {
-			"OQ,1C,AVHFjX,0,p8,GQjoZ3,IHBhYyBsbGloYyB5bGxhcCB5bG9oIDA1NQAA,JTAAAAACCBBUGsE8AAZ,NTYyMSNtcmVodGV0OzQ1O21yZWh0ZVQA,c3RuaW9wIGRuYSBudWYgZWdhciBvbiBwYWMgbGxpaGMA,a,ABBDAAAAAAAA,AAViAAAAAAABAAAAAABACBACER,A,0Hf/A", -- [1]
+		["1411371017.21"] = {
+			"OQ,1C,Aap6ko,1,p8,GZ3Hse,cmVsYWVIICBMVyBzJ0dCUiBvbG9Z,JTImAAAJEABUH8/dAAZZ,NjA0MSNrbm9tZmVkOzk3MTtsZXZvaFMA,a24wbWZlZC92dC5oY3Rpd1Qg,A,BAGGfOOAAH/6,ACvACkAFTJAAA,f,0Hf/A", -- [1]
 			"Drominus-Area52", -- [2]
 			"", -- [3]
 			"5. oqchannel", -- [4]
@@ -2089,15 +2089,15 @@ ElvCharacterDB = {
 			5, -- [8]
 			"oqchannel", -- [9]
 			0, -- [10]
-			3079, -- [11]
+			25992, -- [11]
 			"0x0280000006F34303", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			[20] = "CHAT_MSG_CHANNEL",
 		},
-		["1411039553.642"] = {
-			"OQ,1C,AVGPO1,2,p8,GUQraD,UkMgMDU2MSBkbnVvcmEgZWIgM3Yz,JTIXAAADBBBUGsEmAAZZ,MTM1MSNpdGFuaW11bGxpaTswMTupw2VsZWN1ckIA,c2RydHJvbiNzbXJhIDA1NSBkbmEgd3cvd20gMDU1IGh0aXcA,a,+BCA,BAZvAAAAAAACAA/AA1BAChAClQ,V,0Hf/A", -- [1]
+		["1411371018.994"] = {
+			"OQ,1C,AaqaUg,1,p8,GamfiF,aHNlckYgbTAxT29T,JTIrAAABAABUH8/qI6Z,NDgyMSN5eXlhdHJhcDs2ODulw2JtpcNta2Olw2xC,LgAA,R,AABAfAOAAAAA,AAAAAAOAAAAAADABAAJABf//DAAA//D,f,0Hf/A", -- [1]
 			"Drominus-Area52", -- [2]
 			"", -- [3]
 			"5. oqchannel", -- [4]
@@ -2107,15 +2107,15 @@ ElvCharacterDB = {
 			5, -- [8]
 			"oqchannel", -- [9]
 			0, -- [10]
-			2889, -- [11]
+			25998, -- [11]
 			"0x0280000006F34303", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			[20] = "CHAT_MSG_CHANNEL",
 		},
-		["1411039579.196"] = {
-			"OQ,1C,AVHMsv,2,p8,GUsXn7,LmRhYiBlYiB0bm9kIDtzR0IgbW9kbmFS,JTIIAAADABBUGsE/AAZZ,NjgzNiNnaXdkdWw7MDE7a2F6dGVK,c25hbSAwNCBvTgAA,B,AADDAAAAAAAA,AArAASAA9IAAA,A,0Hf/A", -- [1]
+		["1411371082.767"] = {
+			"OQ,1C,AatWbC,3,p8,GVoAYt,cGFjIGZsIG1haHNyIDA1NjEA,JTAAAAACAABUH9A3AAZ,ODk0MSN5ZXR1ejs1ODtpbnJhbGxpWgAA,LgAA,a,AACDAAAAAAAA,CAaKCAAZAALDAGzAFdDAReAK6c,A,0Hf/A", -- [1]
 			"Drominus-Area52", -- [2]
 			"", -- [3]
 			"5. oqchannel", -- [4]
@@ -2125,15 +2125,15 @@ ElvCharacterDB = {
 			5, -- [8]
 			"oqchannel", -- [9]
 			0, -- [10]
-			3055, -- [11]
+			26297, -- [11]
 			"0x0280000006F34303", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			[20] = "CHAT_MSG_CHANNEL",
 		},
-		["1411039578.885"] = {
-			"OQ,1C,AVG5eV,2,p8,GUUKku,ZWxwdW9jIGtjaXVxIG5lY3MgaAAA,JTAAAAABBABUGsE3AAZZ,NjgzMjEjaHNvajs0OTtpaWRkYUQA,LgAA,S,D--,AAAAAAAAAAA,A,0Hf/A", -- [1]
+		["1411371068.053"] = {
+			"OQ,1C,Aaq7Yj,0,p8,GZBm/x,IGZmYSBnbmlucmFlTAAA,JTAAAAABGABUH8/3AAZZ,Mzk4MSNvbmFodXJoOzc3O2Vpem9vUAAA,ZW1vY2xldyBlbm95bmEgczMgcm8gczIA,a,+BAA,AAWEAAAAAAAAAAGAAEBACkACrd,f,0Hf/A", -- [1]
 			"Drominus-Area52", -- [2]
 			"", -- [3]
 			"5. oqchannel", -- [4]
@@ -2143,15 +2143,15 @@ ElvCharacterDB = {
 			5, -- [8]
 			"oqchannel", -- [9]
 			0, -- [10]
-			3048, -- [11]
+			26236, -- [11]
 			"0x0280000006F34303", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			[20] = "CHAT_MSG_CHANNEL",
 		},
-		["1411039514.163"] = {
-			"OQ,1C,AVER6q,2,p8,GUPnnD,MDU1,JTImAAAFABBUGsDzAAZZ,NjQzMSNkYWVoenRpcmY7Mzg7enStw3JG,ZXBhciBvdCBlbGJhIGViIHRzdW0A,B,ABEDAAAAAAAA,ACFAAvAC0IAAA,A,0Hf/A", -- [1]
+		["1411371115.239"] = {
+			"OQ,1C,AauOVa,2,p8,GaMawr,cycyIGV1Z29SIDA1NQAA,JTIcAAABAABUH9BNAAZZ,MTU5MSNsbHVrczszODE7YXBwoMNO,ZXNhZWxwIG5vb3QgcnVveSB3b25r,a,+BBA,AAaFAAAAAAABAADAAFBAEjAEcZ,A,0Hf/A", -- [1]
 			"Drominus-Area52", -- [2]
 			"", -- [3]
 			"5. oqchannel", -- [4]
@@ -2161,15 +2161,15 @@ ElvCharacterDB = {
 			5, -- [8]
 			"oqchannel", -- [9]
 			0, -- [10]
-			2626, -- [11]
+			26463, -- [11]
 			"0x0280000006F34303", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			[20] = "CHAT_MSG_CHANNEL",
 		},
-		["1411039648.059"] = {
-			"OQ,1C,AVJR1B,0,p8,GQCiy2,bWlyZ3phTiAwMSBOIE9vUwAA,JTIhAAADHABUGsF2IiZZ,NzEyMSNyZWNuYWRldmF3OzkxO3JlY25hZGV2YVcA,U1BEIDEga25hVCAxIGRlZU4A,R,AADDfHOIeAD6,AAAAAABAAAAAANAJAA0AJ5/3CAAA/7D,f,0Hf/A", -- [1]
+		["1411371027.303"] = {
+			"OQ,1C,AarqtD,2,p8,Gab5xW,MiB4ZWxmIGhzZXJG,JTIXAAAIAABUH9AKIXZZ,NDM2MSN3b2RhaHM7Mzg7eWxsYXBlbGJhUgAA,c2xhZWggZG5hIHNwZCBkZWVuIHRzdWoA,R,BCDDAAAAAAAA,AAAAfAAAAAAAAWAJAB4AcJ//DBAA//D,A,0Hf/A", -- [1]
 			"Drominus-Area52", -- [2]
 			"", -- [3]
 			"5. oqchannel", -- [4]
@@ -2179,15 +2179,15 @@ ElvCharacterDB = {
 			5, -- [8]
 			"oqchannel", -- [9]
 			0, -- [10]
-			3495, -- [11]
+			26041, -- [11]
 			"0x0280000006F34303", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			[20] = "CHAT_MSG_CHANNEL",
 		},
-		["1411039574.26"] = {
-			"OQ,1C,AVHDaJ,2,p8,GTDfUN,ZWxiYWxpYXZBIG5vbW11UyBINTJDQ0kA,JTAAAAAEAABUGsE6IiZZ,NDQ3NiNsbGliOzg3O2VkYXZF,dG51b20gc2VkdWxjbmkgZGVrY29MIGduaWh0b04A,R,ABDGOAMMyAAA,AAAA8ABAAAAAAAAAAAAAAM//D/fA/jD,O,0Af/A", -- [1]
+		["1411371072.759"] = {
+			"OQ,1C,AatGbP,0,p8,GZryza,cHYgcm9mIG5lY3No,JTAAAAADKABUH9AwAAZZ,MDAzMSNlY251bzs4Nzt2dmlzdWxF,dW95ICsgZWdhbSAwODUA,S,DDD,AAAACAAKAvH,A,0Hf/A", -- [1]
 			"Drominus-Area52", -- [2]
 			"", -- [3]
 			"5. oqchannel", -- [4]
@@ -2197,15 +2197,15 @@ ElvCharacterDB = {
 			5, -- [8]
 			"oqchannel", -- [9]
 			0, -- [10]
-			3017, -- [11]
+			26248, -- [11]
 			"0x0280000006F34303", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			[20] = "CHAT_MSG_CHANNEL",
 		},
-		["1411039583.69"] = {
-			"OQ,1C,AVG4bD,1,p8,GQ6QN4,S0FMQUcgQCBOIDAxIE9vUwAA,JTImAAADMABUGsE3IqZZ,MTE2MSNlaWhjbmVyZjs1MTE7dGliYm9oeXplZXRT,a25hdCBkZWVO,R,BACDfEOAAAAa,AAAAAAAAAAAABuAyAFuAI+//BAAA//D,f,0Hf/A", -- [1]
+		["1411371111.783"] = {
+			"OQ,1C,AauFtC,0,p8,GaNiTt,IHMyIG5pIGVtIHlycmFj,JTAAAAABAABUH9BKAAZZ,NzQ1MSM1eWtzbndhaHM7NDk7cmFnYWthYU0A,LgAA,a,+ABA,AAC/AAAAAAABAAAAAAAAACAAGg,Z,0Hf/A", -- [1]
 			"Drominus-Area52", -- [2]
 			"", -- [3]
 			"5. oqchannel", -- [4]
@@ -2215,15 +2215,15 @@ ElvCharacterDB = {
 			5, -- [8]
 			"oqchannel", -- [9]
 			0, -- [10]
-			3073, -- [11]
+			26436, -- [11]
 			"0x0280000006F34303", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			[20] = "CHAT_MSG_CHANNEL",
 		},
-		["1411039548.69"] = {
-			"OQ,1C,AVFxRP,0,p8,GTPYZQ,MiB4ZWxGIGhzZXJG,JTISAAAMOABUGsEaIYZZ,MDM2MSNyb2Znb2xiOzkxO3JvZmdvbEIA,LgAA,R,CCIOfAOAAAAA,AAAAAAAAAAAABvA2AGqARkAAAAAA/jB,A,0Hf/A", -- [1]
+		["1411371085.118"] = {
+			"OQ,1C,AatYrh,2,p8,GVvPVw,a25hVCBkZWVOIGhzZXJGIDQgeGVsRgAA,JTIsAAAFAABUH9A3ISZZ,MzIxMSNzaXRuYW1sZGc7NDk7ZXJ0ZVAA,LgAA,R,ABEOfOOOIH/6,AAAAAAAAAAAAASAXABDAFf//DAAA//D,f,0Ef/A", -- [1]
 			"Drominus-Area52", -- [2]
 			"", -- [3]
 			"5. oqchannel", -- [4]
@@ -2233,15 +2233,15 @@ ElvCharacterDB = {
 			5, -- [8]
 			"oqchannel", -- [9]
 			0, -- [10]
-			2866, -- [11]
+			26323, -- [11]
 			"0x0280000006F34303", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			[20] = "CHAT_MSG_CHANNEL",
 		},
-		["1411039574.892"] = {
-			"OQ,1C,AVG/kP,2,p8,GR9EAZ,c0dCIG1vZG5hUiBzZHJvbHJhVwAA,JTImAAAEBBBUGsE6AAZZ,NzYzMSNzc2FyZ3NzOzAxO3Jld29sZmVoY3VvRAAA,emxsaWIgZWh0IHJvZiB6bGxpa1MA,B,ACCAfAOAAAAA,AAFAACAAHOAAA,f,0Hf/A", -- [1]
+		["1411371031.556"] = {
+			"OQ,1C,AasApJ,2,p8,GXgbdx,d20vcnJhdy94,JTImAAACJABUH9ATAAZ,MjU1MSNzdGhhbjs0OTtzdGhhTgAA,bWFocyBobmUgcm8gcmV0bnVo,a,ABCDAAAAAAAA,A,A,SHf/A", -- [1]
 			"Drominus-Area52", -- [2]
 			"", -- [3]
 			"5. oqchannel", -- [4]
@@ -2251,15 +2251,15 @@ ElvCharacterDB = {
 			5, -- [8]
 			"oqchannel", -- [9]
 			0, -- [10]
-			3016, -- [11]
+			26056, -- [11]
 			"0x0280000006F34303", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			[20] = "CHAT_MSG_CHANNEL",
 		},
-		["1411039554.23"] = {
-			"OQ,1C,AVGNuN,2,p8,GQBhyG,IURFUklVUUVSIFBYIE9OIERMT0cgTUMA,JTAAAAAFBABUGsElAAZZ,MjM4MSNkYXNpZXM7ODc7aWVzeXR0b0QA,LgAA,C,DDHTD,ABABABAAAABAAAAAA,A,0Hf/A", -- [1]
+		["1411371059.961"] = {
+			"OQ,1C,AasBjK,0,p8,GUSXNV,bnVSIGV2ZWloY0EgbmFNIDUyIHJhdWRsVQAA,JTAAAAADHABUH9AUIbZZ,MzU1MSNkb29sZmtjaXJ0YXA7NTExO2Rvb2xmb3JkeUgA,KTogbnVyIGV2ZWloY2EgdG51b20gbmFtIDUyIHJhdWRsdQAA,R,BACEVNRAAF/a,AAAAAAAAAAAAAAACAAAADKAAAAAAzjD,V,0Hf/A", -- [1]
 			"Drominus-Area52", -- [2]
 			"", -- [3]
 			"5. oqchannel", -- [4]
@@ -2269,15 +2269,15 @@ ElvCharacterDB = {
 			5, -- [8]
 			"oqchannel", -- [9]
 			0, -- [10]
-			2896, -- [11]
+			26191, -- [11]
 			"0x0280000006F34303", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			[20] = "CHAT_MSG_CHANNEL",
 		},
-		["1411039543.633"] = {
-			"OQ,1C,AVF6Jy,1,p8,GU4aHk,U0pvVCAtIERMT0cA,JTAAAAACAABUGsEdAAZZ,NzUzMSNuZWtpcnVoOzAxO2Fra08A,LmxsYSBkZWVOIC5ldG9OIG5pIHB4IHRzb1AA,C,DT---,ANAMAJAASBHABRAVr,f,VHf/A", -- [1]
+		["1411371087.362"] = {
+			"OQ,1C,AatTsS,1,p8,GUo7+L,c2xpb3BzQCBuMDEgb29T,JTImAAAEIABUH9A1IvZZ,NzUyMSM3MmR1YWxjZDs2MjE7ZWugw25zZGlsb1MA,IWd0ZyBkbmEga25hdCBkZWVO,R,ABDDfLOAAA/6,AAAAAAAAAAAABCAkADVANE//DAAA//D,f,VHf/B", -- [1]
 			"Drominus-Area52", -- [2]
 			"", -- [3]
 			"5. oqchannel", -- [4]
@@ -2287,15 +2287,15 @@ ElvCharacterDB = {
 			5, -- [8]
 			"oqchannel", -- [9]
 			0, -- [10]
-			2825, -- [11]
+			26327, -- [11]
 			"0x0280000006F34303", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			[20] = "CHAT_MSG_CHANNEL",
 		},
-		["1411039534.214"] = {
-			"OQ,1C,AVFuvI,2,p8,GQp6WG,T29TSCBtMDEgaHNlckYA,JTI/AAACBABUGsEZJCZ,MzU2MSNhdm9lbWFnOzg3O2F2b2VtYUcA,LgAA,R,AACFfEOGyAAa,PA/f/////bAAArARAC+AYL//D/fA//D,A,VHf/A", -- [1]
+		["1411371028.002"] = {
+			"OQ,1C,AariCF,0,p8,GYkdoQ,OTM1IGx2bGkgcGFjIHMnMiBGTCBXTQAA,JTISAAACDBBUH9AHAAZZ,MTk3MSNhZ2dhZGFnZ2F3czs0OTuyw2JlZWtT,LgAA,a,+BBA,AAXbAAAAAAABAAAAAABABzAClQ,A,0Hf/A", -- [1]
 			"Drominus-Area52", -- [2]
 			"", -- [3]
 			"5. oqchannel", -- [4]
@@ -2305,7 +2305,7 @@ ElvCharacterDB = {
 			5, -- [8]
 			"oqchannel", -- [9]
 			0, -- [10]
-			2767, -- [11]
+			26046, -- [11]
 			"0x0280000006F34303", -- [12]
 			0, -- [13]
 			false, -- [14]

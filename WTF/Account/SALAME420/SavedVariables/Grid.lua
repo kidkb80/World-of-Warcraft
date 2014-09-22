@@ -4,13 +4,22 @@ GridDB = {
 		["GridFrame"] = {
 			["profiles"] = {
 				["Default"] = {
+					["cornerSize"] = 5,
+					["enableBarColor"] = true,
+					["textlength"] = 10,
+					["texture"] = "ElvUI Norm",
+					["rightClickMenu"] = true,
+					["frameHeight"] = 30,
+					["textorientation"] = "HORIZONTAL",
+					["orientation"] = "HORIZONTAL",
+					["frameWidth"] = 65,
 					["statusmap"] = {
 						["border"] = {
 							["buff_EarthShield"] = false,
 						},
 						["iconBLcornerleft"] = {
 						},
-						["iconBRcornerleft"] = {
+						["iconBLcornerright"] = {
 						},
 						["iconTRcornerright"] = {
 						},
@@ -21,7 +30,7 @@ GridDB = {
 						["corner4"] = {
 							["unit_name"] = false,
 						},
-						["iconBLcornerright"] = {
+						["iconBRcornerleft"] = {
 						},
 						["iconTLcornerright"] = {
 						},
@@ -29,15 +38,6 @@ GridDB = {
 							["dungeonRole"] = true,
 						},
 					},
-					["enableBarColor"] = true,
-					["textlength"] = 10,
-					["texture"] = "ElvUI Norm",
-					["rightClickMenu"] = true,
-					["frameHeight"] = 30,
-					["textorientation"] = "HORIZONTAL",
-					["orientation"] = "HORIZONTAL",
-					["frameWidth"] = 65,
-					["cornerSize"] = 5,
 				},
 			},
 		},
@@ -50,119 +50,6 @@ GridDB = {
 		["GridStatusAbsorbs"] = {
 		},
 		["GridStatusTarget"] = {
-		},
-		["GridStatusRole"] = {
-		},
-		["DungeonRole"] = {
-		},
-		["GridStatusRange"] = {
-		},
-		["GridIndicatorCornerIcons"] = {
-		},
-		["GridLayout"] = {
-			["profiles"] = {
-				["Default"] = {
-					["backgroundTexture"] = "ElvUI Blank",
-					["layouts"] = {
-						["raid_10"] = "By Group 15",
-					},
-					["ScaleSize"] = 0.95,
-					["borderSize"] = 4,
-					["borderTexture"] = "Blizzard Party",
-					["backgroundColor"] = {
-						["a"] = 0.6500000059604645,
-						["b"] = 0.2117647058823529,
-						["g"] = 0.1568627450980392,
-						["r"] = 0.07058823529411765,
-					},
-					["PosY"] = -585,
-					["layout"] = "By Group 5",
-					["anchorRel"] = "TOPLEFT",
-					["horizontal"] = true,
-					["Padding"] = 0,
-					["Spacing"] = 5,
-					["PosX"] = 321,
-				},
-			},
-		},
-		["GridStatus"] = {
-			["profiles"] = {
-				["Default"] = {
-					["colors"] = {
-						["HUNTER"] = {
-							["r"] = 0.67,
-							["g"] = 0.83,
-							["b"] = 0.45,
-						},
-						["PALADIN"] = {
-							["r"] = 0.96,
-							["g"] = 0.55,
-							["b"] = 0.73,
-						},
-						["MAGE"] = {
-							["r"] = 0.41,
-							["g"] = 0.8,
-							["b"] = 0.94,
-						},
-						["DRUID"] = {
-							["r"] = 1,
-							["g"] = 0.49,
-							["b"] = 0.04,
-						},
-						["MONK"] = {
-							["r"] = 0,
-							["g"] = 1,
-							["b"] = 0.59,
-						},
-						["DEATHKNIGHT"] = {
-							["r"] = 0.77,
-							["g"] = 0.12,
-							["b"] = 0.23,
-						},
-						["PRIEST"] = {
-							["r"] = 1,
-							["g"] = 1,
-							["b"] = 1,
-						},
-						["WARLOCK"] = {
-							["r"] = 0.58,
-							["g"] = 0.51,
-							["b"] = 0.79,
-						},
-						["WARRIOR"] = {
-							["r"] = 0.78,
-							["g"] = 0.61,
-							["b"] = 0.43,
-						},
-						["SHAMAN"] = {
-							["r"] = 0,
-							["g"] = 0.44,
-							["b"] = 0.87,
-						},
-						["ROGUE"] = {
-							["r"] = 1,
-							["g"] = 0.96,
-							["b"] = 0.41,
-						},
-					},
-				},
-			},
-		},
-		["GridStatusAggro"] = {
-		},
-		["GridStatusVoiceComm"] = {
-		},
-		["GridStatusReadyCheck"] = {
-		},
-		["GridStatusName"] = {
-		},
-		["GridRoster"] = {
-		},
-		["GridStatusHealth"] = {
-		},
-		["GridStatusHeals"] = {
-		},
-		["GridStatusMana"] = {
 		},
 		["GridStatusAuras"] = {
 			["profiles"] = {
@@ -186,17 +73,130 @@ GridDB = {
 					["buff_Regrowth"] = {
 						["icon"] = "Interface\\Icons\\Spell_Nature_ResistNature",
 					},
-					["buff_PowerWord:Shield"] = {
-						["icon"] = "Interface\\Icons\\Spell_Holy_PowerWordShield",
+					["buff_LifeCocoon"] = {
+						["icon"] = "Interface\\Icons\\ability_monk_chicocoon",
 					},
 					["buff_Lifebloom"] = {
 						["icon"] = "Interface\\Icons\\INV_Misc_Herb_Felblossom",
 					},
-					["buff_LifeCocoon"] = {
-						["icon"] = "Interface\\Icons\\ability_monk_chicocoon",
+					["buff_PowerWord:Shield"] = {
+						["icon"] = "Interface\\Icons\\Spell_Holy_PowerWordShield",
 					},
 				},
 			},
+		},
+		["GridStatusMana"] = {
+		},
+		["GridStatusVoiceComm"] = {
+		},
+		["GridIndicatorCornerIcons"] = {
+		},
+		["GridStatusHealth"] = {
+		},
+		["GridStatus"] = {
+			["profiles"] = {
+				["Default"] = {
+					["colors"] = {
+						["SHAMAN"] = {
+							["b"] = 0.87,
+							["g"] = 0.44,
+							["r"] = 0,
+						},
+						["MAGE"] = {
+							["b"] = 0.94,
+							["g"] = 0.8,
+							["r"] = 0.41,
+						},
+						["DRUID"] = {
+							["b"] = 0.04,
+							["g"] = 0.49,
+							["r"] = 1,
+						},
+						["MONK"] = {
+							["b"] = 0.59,
+							["g"] = 1,
+							["r"] = 0,
+						},
+						["DEATHKNIGHT"] = {
+							["b"] = 0.23,
+							["g"] = 0.12,
+							["r"] = 0.77,
+						},
+						["PRIEST"] = {
+							["b"] = 1,
+							["g"] = 1,
+							["r"] = 1,
+						},
+						["PALADIN"] = {
+							["b"] = 0.73,
+							["g"] = 0.55,
+							["r"] = 0.96,
+						},
+						["WARLOCK"] = {
+							["b"] = 0.79,
+							["g"] = 0.51,
+							["r"] = 0.58,
+						},
+						["HUNTER"] = {
+							["b"] = 0.45,
+							["g"] = 0.83,
+							["r"] = 0.67,
+						},
+						["WARRIOR"] = {
+							["b"] = 0.43,
+							["g"] = 0.61,
+							["r"] = 0.78,
+						},
+						["ROGUE"] = {
+							["b"] = 0.41,
+							["g"] = 0.96,
+							["r"] = 1,
+						},
+					},
+				},
+			},
+		},
+		["GridStatusAggro"] = {
+		},
+		["GridStatusHeals"] = {
+		},
+		["GridStatusReadyCheck"] = {
+		},
+		["GridRoster"] = {
+		},
+		["GridStatusName"] = {
+		},
+		["GridLayout"] = {
+			["profiles"] = {
+				["Default"] = {
+					["anchorRel"] = "TOPLEFT",
+					["layouts"] = {
+						["raid_10"] = "By Group 15",
+					},
+					["ScaleSize"] = 0.95,
+					["borderSize"] = 4,
+					["borderTexture"] = "Blizzard Party",
+					["backgroundColor"] = {
+						["a"] = 0.6500000059604645,
+						["r"] = 0.07058823529411765,
+						["g"] = 0.1568627450980392,
+						["b"] = 0.2117647058823529,
+					},
+					["PosY"] = -585,
+					["layout"] = "By Group 5",
+					["backgroundTexture"] = "ElvUI Blank",
+					["Padding"] = 0,
+					["horizontal"] = true,
+					["PosX"] = 321,
+					["Spacing"] = 5,
+				},
+			},
+		},
+		["GridStatusRange"] = {
+		},
+		["DungeonRole"] = {
+		},
+		["GridStatusRole"] = {
 		},
 	},
 	["profileKeys"] = {
@@ -207,11 +207,11 @@ GridDB = {
 		["Drominus - Area 52"] = "Default",
 		["Feronaz - Area 52"] = "Default",
 		["Feronis - Skywall"] = "Default",
+		["Gurund - Area 52"] = "Default",
 		["Toradol - Skywall"] = "Default",
-		["Gurund - Skywall"] = "Default",
 		["Noremedy - Skywall"] = "Default",
 		["Cidareth - Skywall"] = "Default",
-		["Gurund - Area 52"] = "Default",
+		["Gurund - Skywall"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {
