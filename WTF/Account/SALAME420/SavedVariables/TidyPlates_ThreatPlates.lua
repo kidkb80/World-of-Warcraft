@@ -2,7 +2,6 @@
 ThreatPlatesDB = {
 	["char"] = {
 		["Toradol - Skywall"] = {
-			["welcome"] = true,
 			["specInfo"] = {
 				{
 					["name"] = "Shadow",
@@ -13,8 +12,10 @@ ThreatPlatesDB = {
 					["role"] = "HEALER",
 				}, -- [2]
 			},
+			["welcome"] = true,
 		},
 		["Feronaz - Area 52"] = {
+			["welcome"] = true,
 			["specInfo"] = {
 				{
 					["name"] = "Elemental",
@@ -25,10 +26,8 @@ ThreatPlatesDB = {
 					["role"] = "HEALER",
 				}, -- [2]
 			},
-			["welcome"] = true,
 		},
 		["Drominus - Area 52"] = {
-			["welcome"] = true,
 			["specInfo"] = {
 				{
 					["name"] = "Frost",
@@ -39,8 +38,10 @@ ThreatPlatesDB = {
 					["role"] = "DAMAGER",
 				}, -- [2]
 			},
+			["welcome"] = true,
 		},
 		["Oldfero - Area 52"] = {
+			["welcome"] = true,
 			["specInfo"] = {
 				{
 					["name"] = "Destruction",
@@ -51,11 +52,7 @@ ThreatPlatesDB = {
 					["role"] = "DAMAGER",
 				}, -- [2]
 			},
-			["welcome"] = true,
 		},
-	},
-	["global"] = {
-		["version"] = "7.010-Alpha",
 	},
 	["profileKeys"] = {
 		["Toradol - Skywall"] = "Default",
@@ -63,18 +60,21 @@ ThreatPlatesDB = {
 		["Drominus - Area 52"] = "Drominus",
 		["Oldfero - Area 52"] = "Default",
 	},
+	["global"] = {
+		["version"] = "7.010-Alpha",
+	},
 	["profiles"] = {
 		["Default"] = {
 			["nameplate"] = {
-				["toggle"] = {
-					["Totem"] = false,
-					["Neutral"] = false,
-				},
 				["scale"] = {
 					["Neutral"] = 1,
 					["Elite"] = 1,
 					["Tapped"] = 1,
 					["Boss"] = 1,
+				},
+				["toggle"] = {
+					["Totem"] = false,
+					["Neutral"] = false,
 				},
 			},
 			["blizzFadeA"] = {
@@ -222,7 +222,7 @@ ThreatPlatesDB = {
 				["healthbar"] = {
 					["texture"] = "VuhDo - Plain",
 				},
-				["healthborder"] = {
+				["castbar"] = {
 					["show"] = false,
 				},
 				["threatborder"] = {
@@ -231,8 +231,21 @@ ThreatPlatesDB = {
 				["skullicon"] = {
 					["show"] = false,
 				},
-				["castbar"] = {
-					["show"] = false,
+				["dps"] = {
+					["threatcolor"] = {
+						["LOW"] = {
+							["b"] = 1,
+							["g"] = 0.803921568627451,
+							["r"] = 0.3058823529411765,
+						},
+						["MEDIUM"] = {
+							["g"] = 0.5254901960784314,
+							["b"] = 0.2941176470588235,
+						},
+						["HIGH"] = {
+							["r"] = 0.8352941176470589,
+						},
+					},
 				},
 				["name"] = {
 					["width"] = 125,
@@ -240,36 +253,23 @@ ThreatPlatesDB = {
 					["vertical"] = "BOTTOM",
 					["size"] = 12,
 				},
-				["dps"] = {
-					["threatcolor"] = {
-						["MEDIUM"] = {
-							["g"] = 0.5254901960784314,
-							["b"] = 0.2941176470588235,
-						},
-						["LOW"] = {
-							["r"] = 0.3058823529411765,
-							["g"] = 0.803921568627451,
-							["b"] = 1,
-						},
-						["HIGH"] = {
-							["r"] = 0.8352941176470589,
-						},
-					},
+				["healthborder"] = {
+					["show"] = false,
 				},
 				["raidicon"] = {
 					["y"] = 30,
-					["scale"] = 30,
 					["anchor"] = "TOP",
+					["scale"] = 30,
 				},
 			},
-			["targetWidget"] = {
+			["healerTracker"] = {
 				["ON"] = false,
 			},
 			["tidyplatesFade"] = true,
 			["classWidget"] = {
 				["ON"] = false,
 			},
-			["healerTracker"] = {
+			["targetWidget"] = {
 				["ON"] = false,
 			},
 			["threat"] = {
@@ -280,8 +280,8 @@ ThreatPlatesDB = {
 				},
 				["dps"] = {
 					["scale"] = {
-						["MEDIUM"] = 1.25,
 						["LOW"] = 1,
+						["MEDIUM"] = 1.25,
 						["HIGH"] = 1.5,
 					},
 				},
@@ -314,28 +314,28 @@ ThreatPlatesDB = {
 				["scale"] = {
 					["Neutral"] = 1,
 					["Tapped"] = 1,
-					["Boss"] = 1,
 					["Elite"] = 1,
+					["Boss"] = 1,
 				},
 			},
 			["threat"] = {
+				["dps"] = {
+					["scale"] = {
+						["MEDIUM"] = 1.25,
+						["LOW"] = 1,
+						["HIGH"] = 1.5,
+					},
+				},
 				["art"] = {
 					["ON"] = false,
-				},
-				["tank"] = {
-					["scale"] = {
-						["LOW"] = 1.56,
-					},
 				},
 				["scaleType"] = {
 					["Normal"] = 0,
 					["Boss"] = 0,
 				},
-				["dps"] = {
+				["tank"] = {
 					["scale"] = {
-						["LOW"] = 1,
-						["MEDIUM"] = 1.25,
-						["HIGH"] = 1.5,
+						["LOW"] = 1.56,
 					},
 				},
 			},
@@ -474,14 +474,14 @@ ThreatPlatesDB = {
 				},
 				["dps"] = {
 					["threatcolor"] = {
-						["LOW"] = {
-							["b"] = 1,
-							["g"] = 0.803921568627451,
-							["r"] = 0.3058823529411765,
-						},
 						["MEDIUM"] = {
 							["g"] = 0.5254901960784314,
 							["b"] = 0.2941176470588235,
+						},
+						["LOW"] = {
+							["r"] = 0.3058823529411765,
+							["g"] = 0.803921568627451,
+							["b"] = 1,
 						},
 						["HIGH"] = {
 							["r"] = 0.8352941176470589,
@@ -497,7 +497,7 @@ ThreatPlatesDB = {
 				["spellicon"] = {
 					["show"] = false,
 				},
-				["threatborder"] = {
+				["healthborder"] = {
 					["show"] = false,
 				},
 				["elitehealthborder"] = {
@@ -509,24 +509,28 @@ ThreatPlatesDB = {
 				["name"] = {
 					["y"] = -10,
 					["vertical"] = "BOTTOM",
-					["size"] = 12,
 					["width"] = 125,
+					["size"] = 12,
 				},
 				["level"] = {
 					["show"] = false,
 				},
-				["healthborder"] = {
+				["threatborder"] = {
 					["show"] = false,
 				},
 				["raidicon"] = {
 					["y"] = 30,
-					["anchor"] = "TOP",
 					["scale"] = 30,
+					["anchor"] = "TOP",
 				},
 			},
 			["classWidget"] = {
 				["ON"] = false,
 			},
+			["targetWidget"] = {
+				["ON"] = false,
+			},
+			["tidyplatesFade"] = true,
 			["debuffWidget"] = {
 				["y"] = 2,
 				["x"] = 8,
@@ -538,10 +542,6 @@ ThreatPlatesDB = {
 				["anchor"] = "TOP",
 			},
 			["healerTracker"] = {
-				["ON"] = false,
-			},
-			["tidyplatesFade"] = true,
-			["targetWidget"] = {
 				["ON"] = false,
 			},
 		},

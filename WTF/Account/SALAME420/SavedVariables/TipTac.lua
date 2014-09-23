@@ -74,33 +74,28 @@ TipTac_Config = {
 	["if_itemQualityBorder"] = false,
 	["showBuffs"] = false,
 	["showTargetedBy"] = false,
-	["tipBorderColor"] = {
-		1, -- [1]
-		1, -- [2]
-		1, -- [3]
-		1, -- [4]
-	},
-	["optionsLeft"] = 1071.000366210938,
+	["gradientTip"] = false,
+	["showDebuffs"] = false,
 	["backdropInsets"] = 5,
-	["optionsBottom"] = 218.0000457763672,
+	["if_showAuraCaster"] = false,
 	["if_showIcon"] = false,
 	["if_borderlessIcons"] = true,
 	["talentOnlyInParty"] = false,
 	["colorNameByClass"] = false,
-	["hideWorldTips"] = false,
+	["classification_worldboss"] = "|rLevel %s (Boss)",
 	["classification_rareelite"] = "|rLevel %s (Rare Elite)",
-	["healthBar"] = false,
+	["classification_normal"] = "|rLevel %s",
 	["colReactBack4"] = {
 		0.02352941176470588, -- [1]
 		0.02352941176470588, -- [2]
 		0, -- [3]
 		1, -- [4]
 	},
-	["classColoredBorder"] = false,
-	["iconAnchor"] = "TOP",
 	["colSameGuild"] = "|cffff32ff",
-	["classification_normal"] = "|rLevel %s",
-	["classification_worldboss"] = "|rLevel %s (Boss)",
+	["iconAnchor"] = "TOP",
+	["classColoredBorder"] = false,
+	["healthBar"] = false,
+	["hideWorldTips"] = false,
 	["if_showQuestLevelAndId"] = false,
 	["colReactBack6"] = {
 		0, -- [1]
@@ -108,7 +103,12 @@ TipTac_Config = {
 		0.007843137254901961, -- [3]
 		1, -- [4]
 	},
-	["if_showAuraCaster"] = false,
-	["showDebuffs"] = false,
-	["gradientTip"] = false,
+	["optionsBottom"] = 218.0000457763672,
+	["optionsLeft"] = 1071.000366210938,
+	["tipBorderColor"] = {
+		1, -- [1]
+		1, -- [2]
+		1, -- [3]
+		1, -- [4]
+	},
 }

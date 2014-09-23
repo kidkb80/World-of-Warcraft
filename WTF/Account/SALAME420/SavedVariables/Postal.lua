@@ -1,12 +1,5 @@
 
 Postal3DB = {
-	["profileKeys"] = {
-		["Feronaz - Area 52"] = "Feronaz - Area 52",
-		["Oldfero - Area 52"] = "Oldfero - Area 52",
-		["Toradol - Skywall"] = "Toradol - Skywall",
-		["Drominus - Area 52"] = "Drominus - Area 52",
-		["Jartzart - Area 52"] = "Jartzart - Area 52",
-	},
 	["global"] = {
 		["BlackBook"] = {
 			["alts"] = {
@@ -17,6 +10,13 @@ Postal3DB = {
 				"Toradol|Skywall|Alliance|85|PRIEST", -- [5]
 			},
 		},
+	},
+	["profileKeys"] = {
+		["Feronaz - Area 52"] = "Feronaz - Area 52",
+		["Oldfero - Area 52"] = "Oldfero - Area 52",
+		["Toradol - Skywall"] = "Toradol - Skywall",
+		["Drominus - Area 52"] = "Drominus - Area 52",
+		["Jartzart - Area 52"] = "Jartzart - Area 52",
 	},
 	["profiles"] = {
 		["Feronaz - Area 52"] = {

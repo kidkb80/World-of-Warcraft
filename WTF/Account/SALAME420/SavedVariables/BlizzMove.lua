@@ -37,31 +37,26 @@ BlizzMoveDB = {
 		["relativePoint"] = "LEFT",
 		["yOfs"] = -45.99994277954102,
 		["xOfs"] = 219.9999694824219,
-		["point"] = "LEFT",
 		["scale"] = 0.9999999761581421,
+		["point"] = "LEFT",
 	},
 	["MailFrame"] = {
 	},
-	["HelpFrame"] = {
-	},
-	["AchievementFrame"] = {
-		["save"] = true,
-	},
-	["GossipFrame"] = {
-	},
-	["FriendsFrame"] = {
+	["InterfaceOptionsFrame"] = {
 		["default"] = {
 			["relativeTo"] = "UIParent",
-			["point"] = "TOPLEFT",
-			["relativePoint"] = "TOPLEFT",
-			["yOfs"] = -116,
-			["xOfs"] = 16.00000190734863,
+			["point"] = "CENTER",
+			["relativePoint"] = "CENTER",
+			["yOfs"] = 0,
+			["xOfs"] = 0,
 		},
-		["relativePoint"] = "LEFT",
-		["yOfs"] = -190.9998626708984,
-		["xOfs"] = 13.99999618530273,
-		["scale"] = 1.200000023841858,
-		["point"] = "LEFT",
+		["relativePoint"] = "TOP",
+		["yOfs"] = -11.87903594970703,
+		["xOfs"] = -219.8863220214844,
+		["scale"] = 1.099999928474426,
+		["point"] = "TOP",
+	},
+	["GossipFrame"] = {
 	},
 	["ColorPickerFrame"] = {
 		["default"] = {
@@ -76,7 +71,7 @@ BlizzMoveDB = {
 		["xOfs"] = -131.0000305175781,
 		["point"] = "CENTER",
 	},
-	["QuestFrame"] = {
+	["FriendsFrame"] = {
 		["default"] = {
 			["relativeTo"] = "UIParent",
 			["point"] = "TOPLEFT",
@@ -85,11 +80,17 @@ BlizzMoveDB = {
 			["xOfs"] = 16.00000190734863,
 		},
 		["relativePoint"] = "LEFT",
-		["yOfs"] = 50.00046157836914,
-		["xOfs"] = 59.00000762939453,
+		["yOfs"] = -190.9998626708984,
+		["xOfs"] = 13.99999618530273,
 		["point"] = "LEFT",
+		["scale"] = 1.200000023841858,
 	},
-	["BankFrame"] = {
+	["AchievementFrame"] = {
+		["save"] = true,
+	},
+	["PetJournalParent"] = {
+	},
+	["LFDParentFrame"] = {
 	},
 	["MerchantFrame"] = {
 		["default"] = {
@@ -110,8 +111,19 @@ BlizzMoveDB = {
 	},
 	["WorldMapFrame"] = {
 	},
-	["GuildBankFrame"] = {
-		["save"] = true,
+	["SpellBookFrame"] = {
+		["default"] = {
+			["relativeTo"] = "UIParent",
+			["point"] = "TOPLEFT",
+			["relativePoint"] = "TOPLEFT",
+			["yOfs"] = -116,
+			["xOfs"] = 16.00000190734863,
+		},
+		["relativePoint"] = "TOP",
+		["yOfs"] = -92.99996948242188,
+		["xOfs"] = -241.9999847412109,
+		["point"] = "TOP",
+		["scale"] = 1.000000095367432,
 	},
 	["PlayerTalentFrame"] = {
 		["default"] = {
@@ -126,24 +138,13 @@ BlizzMoveDB = {
 		["xOfs"] = 140.9996643066406,
 		["point"] = "TOP",
 	},
-	["LootFrame"] = {
+	["GuildBankFrame"] = {
 		["save"] = true,
 	},
 	["GuildFrame"] = {
 	},
-	["SpellBookFrame"] = {
-		["default"] = {
-			["relativeTo"] = "UIParent",
-			["point"] = "TOPLEFT",
-			["relativePoint"] = "TOPLEFT",
-			["yOfs"] = -116,
-			["xOfs"] = 16.00000190734863,
-		},
-		["relativePoint"] = "TOP",
-		["yOfs"] = -92.99996948242188,
-		["xOfs"] = -241.9999847412109,
-		["scale"] = 1.000000095367432,
-		["point"] = "TOP",
+	["LootFrame"] = {
+		["save"] = true,
 	},
 	["PVEFrame"] = {
 		["default"] = {
@@ -158,27 +159,26 @@ BlizzMoveDB = {
 		["xOfs"] = 292.9999084472656,
 		["point"] = "LEFT",
 	},
-	["LFDParentFrame"] = {
+	["BankFrame"] = {
 	},
-	["PetJournalParent"] = {
+	["QuestFrame"] = {
+		["default"] = {
+			["relativeTo"] = "UIParent",
+			["point"] = "TOPLEFT",
+			["relativePoint"] = "TOPLEFT",
+			["yOfs"] = -116,
+			["xOfs"] = 16.00000190734863,
+		},
+		["relativePoint"] = "LEFT",
+		["yOfs"] = 50.00046157836914,
+		["xOfs"] = 59.00000762939453,
+		["point"] = "LEFT",
 	},
 	["TradeFrame"] = {
 	},
 	["CalendarFrame"] = {
 		["save"] = true,
 	},
-	["InterfaceOptionsFrame"] = {
-		["default"] = {
-			["relativeTo"] = "UIParent",
-			["point"] = "CENTER",
-			["relativePoint"] = "CENTER",
-			["yOfs"] = 0,
-			["xOfs"] = 0,
-		},
-		["relativePoint"] = "TOP",
-		["yOfs"] = -11.87903594970703,
-		["xOfs"] = -219.8863220214844,
-		["point"] = "TOP",
-		["scale"] = 1.099999928474426,
+	["HelpFrame"] = {
 	},
 }
